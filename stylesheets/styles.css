@@ -418,39 +418,20 @@ footer {
   }
 }
 
-#linux {
-   margin:0px 3px 0px 3px;
-   float:left;
-   background-image: url('../img/linux.svg');
-   height: 30px;
-   width: 25px;
+figure {
+	height: 34px;
+	width: 25px;
+	margin:0px 3px 0px 3px;
+	float:left;
+	overflow: hidden;
 }
 
-#linux:hover {
-   background-image: url('../img/linux_hover.svg');
+.hover1 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
-#mac {
-   margin:0px 3px 0px 3px;
-   float:left;
-   background-image: url('../img/mac.svg');
-   height: 30px;
-   width: 25px;
-}
-
-#mac:hover {
-   background-image: url('../img/mac_hover.svg');
-}
-
-
-#windows {
-   margin:0px 3px 0px 3px;
-   float:left;
-   background-image: url('../img/windows.svg');
-   height: 30px;
-   width: 25px;
-}
-
-#windows:hover {
-   background-image: url('../img/windows_hover.svg');
+.hover1 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter:grayscale(0);
 }
