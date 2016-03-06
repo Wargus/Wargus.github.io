@@ -5,4 +5,11 @@ $(function()  {
 		<a href=aleona.html>Aleona's Tales</a> \
 		<a href=stratagus.html>Stratagus</a> \
 	");
+
+	$("#dlLinux").mouseenter(function() { $("#dlLinuxInfo").slideDown("slow"); });
+	$(".dlNotLinux").mouseenter(function() { $("#dlLinuxInfo").slideUp("slow"); });
+
+
+
+
 });
