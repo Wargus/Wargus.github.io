@@ -3,6 +3,7 @@ $(function()  {
 		<a href=index.html>Wargus</a> \
 		<a href=war1gus.html>War1gus</a> \
 		<a href=aleona.html>Aleona's Tales</a> \
+		<a href='https://andrettin.github.io' target=blank_>Wyrmsun</a> \
 		<a href=stratagus.html>Stratagus</a> \
 		<br><img src=img/vintage_hr.svg> \
 	");
