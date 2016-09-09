@@ -5,7 +5,6 @@ $(function()  {
 		<a href=aleona.html>Aleona's Tales</a> \
 		<a href='https://andrettin.github.io' target=blank_>Wyrmsun</a> \
 		<a href=stratagus.html>Stratagus</a> \
-		<br><img src=img/vintage_hr.svg> \
 	");
 
 	$("#dlLinux").mouseenter(function() { $("#dlLinuxInfo").slideDown("slow"); });
