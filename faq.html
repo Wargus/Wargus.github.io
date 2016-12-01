@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Frequently Asked Questions</title>
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/github-light.css">
+<script src="javascripts/scale.fix.js"></script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/stratagus.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+<header> 
+<center>
+<img src=img/general.svg><br>
+</header>
+
+<section>
+
+<center><div id=menu></div></center> <!-- Menu is in javascripts/stratagus.js --> 
+
+<h3>Frequently Asked Questions</h3>
+<ul>
+<li><a href='#1'>A Note for Windows XP users</a>
+<li><a href='#2'>How to build Wargus from sources</a>
+<li>More questions? <a href='https://github.com/Wargus/wargus/issues'>Open a new issue at github</a>
+</ul>
+
+<h3><a id='1'></a>A note for Windows XP users</h3>
+<p>
+<ul>
+<li>Change your operating system.
+<li>If that is not possible:
+	<ul>
+	  <li>The installer should work on XP, but extraction of data might not, so extract the data on some other machine and copy it into the installation folder
+	  <li>Manually download and install the Visual Studio 2015 Redistributable from Microsoft
+	  <li>Change the shortcut to launch stratagus.exe rather than wargus.exe in the installation folder directly if your game complains that it cannot find Stratagus.
+	</ul>
+</ul>
+</p>
+
+<h3><a id='2'></a>How to build Wargus from sources</h3>
+<p>
+<h4>Build depends</h4>
+
+Stratagus<br>
+	- https://github.com/Wargus/stratagus<br>
+	- Wargus and Stratagus version must match<br>
+	- Use same version or from bzr branches with the same date<br>
+<br>
+CMake<br>
+	- http://www.cmake.org/<br>
+<br>
+Gtk+<br>
+	- http://www.gtk.org/<br>
+	- Not needed for Windows<br>
+<br>
+ffmpeg2theora<br>
+	- http://v2v.cc/~j/ffmpeg2theora/<br>
+	- Needed for convert extracted audio CD tracks and video files<br>
+<br>
+cdparanoia<br>
+	- http://xiph.org/paranoia/<br>
+	- Needed for rip audio CD tracks<br>
+<br>
+cdda2wav<br>
+	- http://smithii.com/files/cdrtools-2.01-bootcd.ru-w32.zip<br>
+	- Needed for rip audio CD tracks (only for Windows)<br>
+<br>
+Original Warcraft II DOS CD<br>
+	- The Battle.Net CD is NOT supported, you must use the DOS version<br>
+	- Either the Expansion or Original CD can be used<br>
+<br>
+
+<h4>Installation Instructions</h4>
+
+For straight source builds on supported systems, you can always study .travis.yml or (for Windows) appveyor.yml, which are used by the automatic build system to build each commit.<br>
+<br>
+<ul>
+	<li>On Debian, Ubuntu, and other Debian-like systems use deb packages:<br>
+		<ol>
+			<li>create deb package:<br>
+				dpkg-buildpackage -b -rfakeroot
+
+			<li>install deb package:<br>
+				sudo dpkg -i ../wargus_<version>_<arch>.deb
+		</ol>
+
+	<li>On other systems:
+		<ol>
+
+			<li>first download, build, and install Stratagus (with game headers)
+
+			<li>generate Makefile in build dir with cmake:<br>
+				rm -rf build && mkdir build && cd build && cmake ..
+
+			<li>build tools and programs:<br>
+				cd build && make
+
+			<li>install wargus to system<br>
+				cd build && sudo make install
+		</ol>
+
+	<li>Launch the game:
+		<ul>
+			<li>wargus
+		</ul>
+</ul>
+
+On Windows you can replace steps 4-6 by generating Windows NSIS Installer which create classic Windows setup executable. Enable by cmake param -DENABLE_NSIS
+
+
+</p>
+

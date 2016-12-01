@@ -5,10 +5,21 @@ $(function()  {
 		<a href=aleona.html>Aleona's Tales</a> \
 		<a href=wyrmsun.html>Wyrmsun</a> \
 		<a href=stratagus.html>Stratagus</a> \
+		<a href=faq.html>FAQ</a> \
 	");
 
-	$("#dlLinux").mouseenter(function() { $("#dlLinuxInfo").slideDown("slow"); });
-	$(".dlNotLinux").mouseenter(function() { $("#dlLinuxInfo").slideUp("slow"); });
+	$("#dlLinuxStable").mouseenter(function() { 
+		$("#dlLinuxUnstableInfo").slideUp("slow"); 
+		$("#dlLinuxStableInfo").slideDown("slow"); 
+	});
+	$("#dlLinuxUnstable").mouseenter(function() { 
+		$("#dlLinuxStableInfo").slideUp("slow"); 
+		$("#dlLinuxUnstableInfo").slideDown("slow"); 
+	});
+	$(".dlNotLinux").mouseenter(function() { 
+		$("#dlLinuxStableInfo").slideUp("slow"); 
+		$("#dlLinuxUnstableInfo").slideUp("slow"); 
+	});
 
 
 
