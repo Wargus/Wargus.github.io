@@ -28,12 +28,13 @@
 
 <h3>Frequently Asked Questions</h3>
 <ul>
-<li><a href='#1'>A Note for Windows XP users</a>
-<li><a href='#2'>How to build Wargus from sources</a>
+<li><a href='#winxp'>A Note for Windows XP users</a>
+<li><a href='#linux'>Linux packages</a>
+<li><a href='#build'>How to build Wargus/War1gus from sources</a>
 <li>More questions? <a href='https://github.com/Wargus/wargus/issues'>Open a new issue at github</a>
 </ul>
 
-<h3><a id='1'></a>A note for Windows XP users</h3>
+<h3><a id='winxp'></a>A note for Windows XP users</h3>
 <p>
 <ul>
 <li>Change your operating system.
@@ -46,40 +47,49 @@
 </ul>
 </p>
 
-<h3><a id='2'></a>How to build Wargus from sources</h3>
+
+<h3><a id='linux'></a>Linux packages</h3>
 <p>
-<h4>Build depends</h4>
+We only provide deb packages (for deb based distributions such as Debian and
+Ubuntu). In order to install on a rpm based distrubution such as Fedora you
+may try to use the deb to rpm converter named 'alien', probably already
+available in your system. We would like to hear from you how successful you
+were with installing via alien. If you are willing to take care of rpm
+packaging of Wargus you are very welcome!
+</p>
 
-Stratagus<br>
-	- https://github.com/Wargus/stratagus<br>
-	- Wargus and Stratagus version must match<br>
-	- Use same version or from bzr branches with the same date<br>
-<br>
-CMake<br>
-	- http://www.cmake.org/<br>
-<br>
-Gtk+<br>
-	- http://www.gtk.org/<br>
-	- Not needed for Windows<br>
-<br>
-ffmpeg2theora<br>
-	- http://v2v.cc/~j/ffmpeg2theora/<br>
-	- Needed for convert extracted audio CD tracks and video files<br>
-<br>
-cdparanoia<br>
-	- http://xiph.org/paranoia/<br>
-	- Needed for rip audio CD tracks<br>
-<br>
-cdda2wav<br>
-	- http://smithii.com/files/cdrtools-2.01-bootcd.ru-w32.zip<br>
-	- Needed for rip audio CD tracks (only for Windows)<br>
-<br>
-Original Warcraft II DOS CD<br>
-	- The Battle.Net CD is NOT supported, you must use the DOS version<br>
-	- Either the Expansion or Original CD can be used<br>
-<br>
+<p>
+Another way of installing Wargus for just any supported operating system is 
+compiling it youself. See <a href='#build'>How to build Wargus from sources</a>
+</p>
 
-<h4>Installation Instructions</h4>
+
+<h3><a id='build'></a>How to build Wargus/War1gus from sources</h3>
+<p>
+
+<h4>Build dependencies</h4>
+
+<ul>
+<li>Stratagus. Get source from the same <a
+			href=https://github.com/Wargus/stratagus/releases target=blank_>release of
+			Stratagus</a> and 
+			<a href=https://github.com/Wargus/wargus/releases target=blank_>release of Wargus</a> /
+			<a href=https://github.com/Wargus/war1gus/releases target=blank_>War1gus</a>. 
+	
+<li><a href=http://www.cmake.org/>CMake</a>
+<li><a href=http://www.gtk.org/>Gtk+</a> (not needed for Windows)
+<li><a href=http://v2v.cc/~j/ffmpeg2theora/>ffmpeg2theora</a> (for converting extracted audio CD tracks and video files)
+<li><a href=http://xiph.org/paranoia/>cdparanoia</a> (for ripping audio CD tracks)
+<li><a href=http://smithii.com/files/cdrtools-2.01-bootcd.ru-w32.zip>cdda2wav</a> (for ripping audio CD tracks (Windows only))
+<li>One of the Warcraft II CDs or harddisk location:
+	<ul>
+		<li>Warcraft II DOS CD 
+		<li>Warcraft II Expansion CD 
+		<li>The Battle.Net CD is NOT supported, you must use the DOS version
+	</ul>
+</ul>
+
+<h4>Compilation and installation</h4>
 
 For straight source builds on supported systems, you can always study .travis.yml or (for Windows) appveyor.yml, which are used by the automatic build system to build each commit.<br>
 <br>
