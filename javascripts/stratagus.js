@@ -16,9 +16,15 @@ $(function()  {
 		$("#dlLinuxStableInfo").slideUp("slow"); 
 		$("#dlLinuxUnstableInfo").slideDown("slow"); 
 	});
-	$(".dlNotLinux").mouseenter(function() { 
-		$("#dlLinuxStableInfo").slideUp("slow"); 
-		$("#dlLinuxUnstableInfo").slideUp("slow"); 
+
+	// $(".dlNotLinux").mouseenter(function() { 
+	// 	$("#dlLinuxStableInfo").slideUp("slow"); 
+	// 	$("#dlLinuxUnstableInfo").slideUp("slow"); 
+	// });
+
+	$("body").on("click", ".closeImg",function() {
+		$("#dlLinuxStableInfo").slideUp("fast"); 
+		$("#dlLinuxUnstableInfo").slideUp("fast"); 
 	});
 
 
