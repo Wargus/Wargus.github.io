@@ -480,3 +480,87 @@ figure {
 .closeImg:hover {
 	opacity: 0.6;
 }
+
+#metaservers {
+    opacity: 0.6;
+    font-size: smaller;
+}
+
+#metaservers > div > div > .key:before {
+  content: "MetaServer: "
+}
+
+#metaservers > div > div > .key {
+  font-weight: bold;
+}
+
+#metaservers > div > div > div > div > .key:before {
+  content: "Game ID: "
+}
+
+#metaservers > div > div > div > div:not(.games_last_month):nth-child(2n+1) {
+  background-color: #eee;
+}
+
+#metaservers > div > div > div > div:not(.games_last_month):nth-child(2n+1) {
+  background-color: #ccc;
+}
+
+.description .key {
+  display: none;
+}
+
+.description:before {
+  content: "\"";
+}
+
+.description:after {
+  content: "\"";
+}
+
+.map {
+  display: none;
+}
+
+.openSlots {
+  display: inline;
+}
+
+.openSlots .key {
+  display: none;
+}
+
+.openSlots:before {
+  content: "Open Slots: "
+}
+
+.maxSlots {
+  display: inline;
+}
+
+.maxSlots .key {
+  display: none;
+}
+
+.maxSlots:before {
+  content: "/";
+}
+
+.games_last_month .key {
+  display: none;
+}
+
+.games_last_month:before {
+  content: "Games last month: ";
+}
+
+.games_last_month {
+  border-bottom-width: 1px !important;
+  border-bottom: #ccc;
+  border-bottom-style: solid;
+}
+
+.games_last_month:nth-child(0n+1):before {
+  content: 'No games are currently\a open on this server.\AGames last month: ';
+  white-space: pre;
+}
