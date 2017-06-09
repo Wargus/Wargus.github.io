@@ -4,6 +4,7 @@ $(function()  {
         <a href=war1gus.html>War1gus</a> \
         <a href=aleona.html>Aleona's Tales</a> \
         <a href=wyrmsun.html>Wyrmsun</a> \
+        <a href=stargus.html>Stargus (Pre-Alpha)</a> \
         <a href=stratagus.html>Stratagus</a> \
         <a href=faq.html>FAQ</a> \
     ");
