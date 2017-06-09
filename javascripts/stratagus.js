@@ -50,12 +50,14 @@ $(function()  {
     }
 
     function getMetaServers() {
-        $.getJSON("https://metaservernet.herokuapp.com/", function (data) {
-            var metaserverDivs = printJSON(data);
-            var parentDiv = $("#metaservers");
-            parentDiv.empty();
-            parentDiv.append(metaserverDivs);
-        });
+        var parentDiv = $("#metaservers");
+        if (parentDiv.length > 0) {
+            $.getJSON("https://metaservernet.herokuapp.com/", function (data) {
+                var metaserverDivs = printJSON(data);
+                parentDiv.empty();
+                parentDiv.append(metaserverDivs);
+            });
+        }
         setTimeout(getMetaServers, 5000);
     }
     setTimeout(getMetaServers, 1000);
