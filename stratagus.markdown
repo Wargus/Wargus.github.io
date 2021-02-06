@@ -27,3 +27,22 @@ can download Stratagus from [GitHub](https://github.com/Wargus/stratagus){:targe
 Stratagus is an open source software. It is developed at
 [![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
+
+### Older, detailed documentation
+
+Some slightly outdated information can be found below. While this isn't
+completely up to date, we are hoping to convert and update these pages to the
+current version soon. Nonetheless, many things are still valid in these
+documents and may be useful to get started developing or modding Stratagus
+games.
+
+See
+[development](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Wargus/stratagus/master/doc/development.html)
+for further details when wanting to help work on the engine.
+
+Information about creating sounds and graphics can be found in the [media
+documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Wargus/stratagus/master/doc/media.html)
+
+Information about Lua scripting to extend or mod games can be found in the
+    [scripting
+    documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Wargus/stratagus/master/doc/scripts/index.html).
