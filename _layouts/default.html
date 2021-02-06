@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/github-light.css">
+    <script src="/javascripts/scale.fix.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/stratagus.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+	<center>
+	  <img src=/img/{{page.icon}}><br>
+          {% if page.package_title %}
+	  <h6>Get stable</h6>
+	  <div style='width: 130px; display:inline-block'>
+	    <div class=hover1>
+	      <figure id=dlLinuxStable><img src=/img/linux.svg></figure>
+	      <figure class=dlNotLinux><a href=https://github.com/Wargus/stratagus/wiki/osx/{{page.title}}.app.tar.gz><img src=/img/mac.svg></a></figure>
+	      <figure class=dlNotLinux><a href=https://github.com/Wargus/{{page.title}}/releases/download/v{{page.version}}/{{page.title}}-{{page.version}}.exe><img src=/img/windows.svg></a></figure>
+	      <figure class=dlNotLinux><a href=faq.html#build><img src=/img/src.svg></a></figure>
+	    </div>
+	  </div>
+	  <div id=version> 
+	    version {{page.version}}<br>
+	    {{site.release_date}} <br>
+	    <a href=https://raw.githubusercontent.com/Wargus/{{page.title}}/master/debian/changelog>changelog</a>
+	  </div>
+          <br><hr>
+	  <h6>Get unstable</h6>
+	  <div style='width: 130px; display:inline-block'>
+	    <div class=hover1>
+	      <figure id=dlLinuxUnstable><img src=/img/linux.svg></figure>
+	      <figure class=dlNotLinux><a href=https://github.com/Wargus/stratagus/wiki/osx/Wargus.app.tar.gz><img src=/img/mac.svg></a></figure>
+	      <figure class=dlNotLinux><a href=https://github.com/Wargus/{{page.title}}/releases/download/master-builds/{{page.title}}-{{page.next_version}}.exe><img src=/img/windows.svg></a></figure>
+	      <figure class=dlNotLinux><a href=faq.html#build><img src=/img/src.svg></a></figure>
+	    </div>
+	  </div>
+
+	  <div id=version> 
+	    Latest features, but not really tested. Built on every github commit.<br>
+	  </div>
+
+	  <div id='dlLinuxStableInfo'>
+	    <img class=closeImg src=/img/close.svg>
+	    <div class=linuxDlLabel>Stable Debian/Ubuntu</div>
+	    sudo add-apt-repository ppa:stratagus<br>
+	    sudo apt-get update<br>
+	    sudo apt-get install {{page.package_title}}<br><br>
+	    <div class=linuxDlLabel>openSUSE Games</div>
+	    See <a href="https://software.opensuse.org/package/{{page.package_title}}">software.opensuse.org</a><br><br>
+	    <div class=linuxDlLabel>Other Linux</div>
+	    See FAQ about linux packages and building from sources
+	  </div>
+
+	  <div id='dlLinuxUnstableInfo'>
+
+	    <img class=closeImg src=/img/close.svg>
+	    <div class=linuxDlLabel>Unstable Debian/Ubuntu</div>
+	    sudo add-apt-repository ppa:stratagus<br>
+	    sudo apt-get update<br>t
+	    sudo apt-get install {{page.package_title}}<br><br>
+	    <div class=linuxDlLabel>Other Linux</div>
+	    See FAQ about linux packages and building from sources
+
+	  </div>
+          {% endif %}
+	</center> 
+      </header>
+
+      <section>
+
+        <center>
+          <div id=menu>
+            <a href=index.html>Wargus</a>
+            <a href=war1gus.html>War1gus</a>
+            <a href=aleona.html>Aleona's Tales</a> 
+            <a href=wyrmsun.html>Wyrmsun</a> 
+            <a href=stargus.html>Stargus (Pre-Alpha)</a> 
+            <a href=stratagus.html>Stratagus</a> 
+            <a href=faq.html>FAQ</a> 
+          </div>
+        </center>
+
+        {{ content }}
+
+      </section>
+    </div>
+  </body>
+</html>
