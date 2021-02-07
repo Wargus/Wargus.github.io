@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="renderer_8h" kind="file" language="C++">
+    <compoundname>renderer.h</compoundname>
+    <includes local="no">assert.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>assert.h</label>
+      </node>
+      <node id="1">
+        <label>src/video/renderer.h</label>
+        <link refid="renderer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structCPrimitives" prot="public">CPrimitives</innerclass>
+    <innerclass refid="classCRenderer" prot="public">CRenderer</innerclass>
+    <innernamespace refid="namespaceDRAW">DRAW</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="renderer_8h_1a15b97f7fb0a613ced08d2a9b788137e9" prot="public" static="no">
+        <name>BLEND16_50</name>
+        <param><defname>d</defname></param>
+        <param><defname>s</defname></param>
+        <param><defname>mask</defname></param>
+        <initializer>((((s &amp; mask) + (d &amp; mask)) &gt;&gt; 1) + (s &amp; d &amp; (~mask &amp; 0xffff)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="345" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="renderer_8h_1a34c246ba4a41cccfcf67aecc6d322ed3" prot="public" static="no">
+        <name>BLEND2x16_50</name>
+        <param><defname>d</defname></param>
+        <param><defname>s</defname></param>
+        <param><defname>mask</defname></param>
+        <initializer>	(((s &amp; (mask | mask &lt;&lt; 16)) &gt;&gt; 1) + ((d &amp; (mask | mask &lt;&lt; 16)) &gt;&gt; 1) \
+	 + (s &amp; d &amp; (~(mask | mask &lt;&lt; 16))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="372" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="renderer_8h_1aa35a6e88031ee4167ea76995764a4bea" prot="public" static="no">
+        <type><ref refid="classCRenderer" kindref="compound">CRenderer</ref>&lt; 2, 0xfbde &gt;</type>
+        <definition>typedef CRenderer&lt;2, 0xfbde&gt; Primitive16_555_t</definition>
+        <argsstring></argsstring>
+        <name>Primitive16_555_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="877" column="19" bodyfile="src/video/renderer.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="renderer_8h_1a3d14f08e18885f050e0d16f1188d61bb" prot="public" static="no">
+        <type><ref refid="classCRenderer" kindref="compound">CRenderer</ref>&lt; 2, 0xf7de &gt;</type>
+        <definition>typedef CRenderer&lt;2, 0xf7de&gt; Primitive16_565_t</definition>
+        <argsstring></argsstring>
+        <name>Primitive16_565_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="878" column="19" bodyfile="src/video/renderer.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="renderer_8h_1a1ded3be5e9a30f1a1050025e5e54f2f3" prot="public" static="no">
+        <type><ref refid="classCRenderer" kindref="compound">CRenderer</ref>&lt; 4, 0 &gt;</type>
+        <definition>typedef CRenderer&lt;4, 0&gt; Primitive32_t</definition>
+        <argsstring></argsstring>
+        <name>Primitive32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="879" column="19" bodyfile="src/video/renderer.h" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/video/renderer.h"/>
+  </compounddef>
+</doxygen>

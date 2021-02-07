@@ -1,0 +1,1190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ai_8cpp" kind="file" language="C++">
+    <compoundname>ai.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="ai_8h" local="yes">ai.h</includes>
+    <includes refid="ai__local_8h" local="yes">ai_local.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="action__attack_8h" local="yes">action/action_attack.h</includes>
+    <includes refid="commands_8h" local="yes">commands.h</includes>
+    <includes refid="iolib_8h" local="yes">iolib.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="script_8h" local="yes">script.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__manager_8h" local="yes">unit_manager.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="upgrade_8h" local="yes">upgrade.h</includes>
+    <incdepgraph>
+      <node id="42">
+        <label>list</label>
+      </node>
+      <node id="12">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>queue</label>
+      </node>
+      <node id="9">
+        <label>ai.h</label>
+        <link refid="ai_8h"/>
+      </node>
+      <node id="1">
+        <label>src/ai/ai.cpp</label>
+        <link refid="ai_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>SDL.h</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>lua.h</label>
+      </node>
+      <node id="25">
+        <label>stdint.h</label>
+      </node>
+      <node id="16">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>unit_manager.h</label>
+        <link refid="unit__manager_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>map</label>
+      </node>
+      <node id="43">
+        <label>upgrade.h</label>
+        <link refid="upgrade_8h"/>
+      </node>
+      <node id="17">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="18">
+        <label>action/action_attack.h</label>
+        <link refid="action__attack_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="38">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="39">
+        <label>climits</label>
+      </node>
+      <node id="22">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="34">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>iolib.h</label>
+        <link refid="iolib_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>set</label>
+      </node>
+      <node id="35">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>lualib.h</label>
+      </node>
+      <node id="19">
+        <label>commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>ai.cpp - The computer player AI main file.</header>
+      <memberdef kind="variable" id="ai_8cpp_1a49a81070cba57ddab0a23757fa831925" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiSleepCycles</definition>
+        <argsstring></argsstring>
+        <name>AiSleepCycles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="162" column="5" bodyfile="src/ai/ai.cpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai_8cpp_1af89f5d0deae560e905a4de7345d0a720" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCAiType" kindref="compound">CAiType</ref> * &gt;</type>
+        <definition>std::vector&lt;CAiType *&gt; AiTypes</definition>
+        <argsstring></argsstring>
+        <name>AiTypes</name>
+        <briefdescription>
+<para>Ai sleeps # cycles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="164" column="13" bodyfile="src/ai/ai.cpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai_8cpp_1a833f0fce678a1b82d6646d55cbf7fd2f" prot="public" static="no" mutable="no">
+        <type><ref refid="classAiHelper" kindref="compound">AiHelper</ref></type>
+        <definition>AiHelper AiHelpers</definition>
+        <argsstring></argsstring>
+        <name>AiHelpers</name>
+        <briefdescription>
+<para>List of all AI types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="165" column="10" bodyfile="src/ai/ai.cpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai_8cpp_1a3072dd83ffe0038d2f6a8781d5af54b9" prot="public" static="no" mutable="no">
+        <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> *</type>
+        <definition>PlayerAi* AiPlayer</definition>
+        <argsstring></argsstring>
+        <name>AiPlayer</name>
+        <briefdescription>
+<para>AI helper variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>equivalence between unittypes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="167" column="10" bodyfile="src/ai/ai.cpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a262cc69ce496bb37ea605e0ff5c1d101" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiExecuteScript</definition>
+        <argsstring>()</argsstring>
+        <name>AiExecuteScript</name>
+        <briefdescription>
+<para>Current AI player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the AI Script. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="176" column="13" bodyfile="src/ai/ai.cpp" bodystart="176" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1af73dddac53bd26051c4894a3d6a1855f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiCheckUnits</definition>
+        <argsstring>()</argsstring>
+        <name>AiCheckUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if everything is fine, send new requests to resource manager. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="191" column="13" bodyfile="src/ai/ai.cpp" bodystart="191" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a990bd6a114ad0bc7b54c531a20396c55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void SaveAiPlayer</definition>
+        <argsstring>(CFile &amp;file, int plynr, const PlayerAi &amp;ai)</argsstring>
+        <name>SaveAiPlayer</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plynr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> &amp;</type>
+          <declname>ai</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save state of player AI.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plynr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player AI. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="264" column="13" bodyfile="src/ai/ai.cpp" bodystart="264" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1ae9fa09d52f5b74a930c4ae466144eff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveAi</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SaveAi</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Free the AI resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save state of AI to file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="410" column="6" bodyfile="src/ai/ai.cpp" bodystart="410" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a56c725a0f0dd77d3a2ad650c6d57c849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiInit</definition>
+        <argsstring>(CPlayer &amp;player)</argsstring>
+        <name>AiInit</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Init AI global structures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup all at start.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player structure pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="428" column="6" bodyfile="src/ai/ai.cpp" bodystart="428" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1aa3fd8a732614c1956d2b1961a5ee8d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitAiModule</definition>
+        <argsstring>()</argsstring>
+        <name>InitAiModule</name>
+        <briefdescription>
+<para>Called each second. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize global structures of the AI </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="486" column="6" bodyfile="src/ai/ai.cpp" bodystart="486" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a8123cbd5d95a217900789de7f05bb21c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanAi</definition>
+        <argsstring>()</argsstring>
+        <name>CleanAi</name>
+        <briefdescription>
+<para>Init AI for this player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleanup the AI in order to enable to restart a game. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="495" column="6" bodyfile="src/ai/ai.cpp" bodystart="495" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a8b85d45a0ef3aa4f30522848e1a54740" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreeAi</definition>
+        <argsstring>()</argsstring>
+        <name>FreeAi</name>
+        <briefdescription>
+<para>Cleanup the AI module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Free all AI resources. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="507" column="6" bodyfile="src/ai/ai.cpp" bodystart="507" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a402168ef0253c2da97f340885cec1258" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiRemoveFromBuilt2</definition>
+        <argsstring>(PlayerAi *pai, const CUnitType &amp;type)</argsstring>
+        <name>AiRemoveFromBuilt2</name>
+        <param>
+          <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> *</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove unit-type from build list.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Computer AI player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type which is now available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, if unit-type was found in list. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="544" column="12" bodyfile="src/ai/ai.cpp" bodystart="544" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a14075ffd373d7539b8487b449e31ea7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiRemoveFromBuilt</definition>
+        <argsstring>(PlayerAi *pai, const CUnitType &amp;type)</argsstring>
+        <name>AiRemoveFromBuilt</name>
+        <param>
+          <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> *</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove unit-type from build list.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Computer AI player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type which is now available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="567" column="13" bodyfile="src/ai/ai.cpp" bodystart="567" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a2aa3bc42c579c3158a836053debdeb71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiReduceMadeInBuilt2</definition>
+        <argsstring>(PlayerAi &amp;pai, const CUnitType &amp;type)</argsstring>
+        <name>AiReduceMadeInBuilt2</name>
+        <param>
+          <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> &amp;</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduce made unit-type from build list.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Computer AI player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type which is now available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the unit-type could be reduced. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="595" column="13" bodyfile="src/ai/ai.cpp" bodystart="595" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a6557ec15bcc9c1e409e8b246c67d03ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiReduceMadeInBuilt</definition>
+        <argsstring>(PlayerAi &amp;pai, const CUnitType &amp;type)</argsstring>
+        <name>AiReduceMadeInBuilt</name>
+        <param>
+          <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> &amp;</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduce made unit-type from build list.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Computer AI player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type which is now available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="614" column="6" bodyfile="src/ai/ai.cpp" bodystart="614" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a87bcafc04e7889aa0322f7c9c3340ff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiHelpMe</definition>
+        <argsstring>(const CUnit *attacker, CUnit &amp;defender)</argsstring>
+        <name>AiHelpMe</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>defender</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit is attacked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if a Unit is Attacked</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attacker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to attacker unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit that is being attacked. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="645" column="6" bodyfile="src/ai/ai.cpp" bodystart="645" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a06b314a1812af6faa95a2691eb73ea1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiUnitKilled</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AiUnitKilled</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit is killed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if a unit is killed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="742" column="6" bodyfile="src/ai/ai.cpp" bodystart="742" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1ae45ab9f63e29e49ec2190f3df492c899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiWorkComplete</definition>
+        <argsstring>(CUnit *unit, CUnit &amp;what)</argsstring>
+        <name>AiWorkComplete</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit has completed work. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if work complete (Buildings).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit that builds the building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit building that was built. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="772" column="6" bodyfile="src/ai/ai.cpp" bodystart="772" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a4320bc05a6f9a1049a2d2b3764276b06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiCanNotBuild</definition>
+        <argsstring>(const CUnit &amp;unit, const CUnitType &amp;what)</argsstring>
+        <name>AiCanNotBuild</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit can&apos;t build. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if building can&apos;t be build.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit what builds the building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit-type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="793" column="6" bodyfile="src/ai/ai.cpp" bodystart="793" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a859b26c4eea3360f9c8ac8edc6769050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiCanNotReach</definition>
+        <argsstring>(CUnit &amp;unit, const CUnitType &amp;what)</argsstring>
+        <name>AiCanNotReach</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit can&apos;t reach building place. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if building place can&apos;t be reached.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit what builds the building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit-type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="809" column="6" bodyfile="src/ai/ai.cpp" bodystart="809" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1ab5e936d6f7164fcd113283bd3dc48896" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiMoveUnitInTheWay</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AiMoveUnitInTheWay</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Try to move a unit that&apos;s in the way </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="818" column="13" bodyfile="src/ai/ai.cpp" bodystart="818" bodyend="915"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1aa5b60b7727564e401afae4bf34aa7a28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiCanNotMove</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AiCanNotMove</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Called if an AI unit can&apos;t move. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if a unit can&apos;t move. Try to move unit in the way</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit what builds the building. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="922" column="6" bodyfile="src/ai/ai.cpp" bodystart="922" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a8bb477337402981b764f8447ff3138c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiNeedMoreSupply</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>AiNeedMoreSupply</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI needs more farms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if the AI needs more farms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>player which need supply. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="940" column="6" bodyfile="src/ai/ai.cpp" bodystart="940" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1af046955a5aadd4d99a4dfdacc00947ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiTrainingComplete</definition>
+        <argsstring>(CUnit &amp;unit, CUnit &amp;what)</argsstring>
+        <name>AiTrainingComplete</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit has completed training. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if training of a unit is completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit making. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to new ready trained unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="952" column="6" bodyfile="src/ai/ai.cpp" bodystart="952" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a922a4b4b97d02779521335976215f05c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiUpgradeToComplete</definition>
+        <argsstring>(CUnit &amp;unit, const CUnitType &amp;what)</argsstring>
+        <name>AiUpgradeToComplete</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit has completed upgrade to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if upgrading of an unit is completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit working. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new unit-type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="973" column="6" bodyfile="src/ai/ai.cpp" bodystart="973" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a7121ccbb4813a0eb2daa33edd3403c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiResearchComplete</definition>
+        <argsstring>(CUnit &amp;unit, const CUpgrade *what)</argsstring>
+        <name>AiResearchComplete</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUpgrade" kindref="compound">CUpgrade</ref> *</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Called if AI unit has completed research. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if reseaching of an unit is completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit working. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new upgrade. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="988" column="6" bodyfile="src/ai/ai.cpp" bodystart="988" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a7085819c47e26151bc163ed67ea64835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiEachCycle</definition>
+        <argsstring>(CPlayer &amp;player)</argsstring>
+        <name>AiEachCycle</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Ai sleeps # cycles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called for each player, each game cycle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player structure pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="1004" column="6" bodyfile="src/ai/ai.cpp" bodystart="1004" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="ai_8cpp_1a0d1e6ec244182fe1f05c46f49c54ba41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiEachSecond</definition>
+        <argsstring>(CPlayer &amp;player)</argsstring>
+        <name>AiEachSecond</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Called each game cycle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called for each player each second.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player structure pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai.cpp" line="1014" column="6" bodyfile="src/ai/ai.cpp" bodystart="1014" bodyend="1042"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai.cpp"/>
+  </compounddef>
+</doxygen>

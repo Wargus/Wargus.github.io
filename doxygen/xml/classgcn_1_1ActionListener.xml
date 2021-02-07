@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1ActionListener" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gcn::ActionListener</compoundname>
+    <derivedcompoundref refid="classgcn_1_1DropDown" prot="public" virt="non-virtual">gcn::DropDown</derivedcompoundref>
+    <derivedcompoundref refid="classLambdaActionListener" prot="public" virt="non-virtual">LambdaActionListener</derivedcompoundref>
+    <derivedcompoundref refid="classLuaActionListener" prot="public" virt="non-virtual">LuaActionListener</derivedcompoundref>
+    <includes refid="actionlistener_8h" local="no">actionlistener.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1ActionListener_1a15539005829890078792ce695260114b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual gcn::ActionListener::~ActionListener</definition>
+        <argsstring>()</argsstring>
+        <name>~ActionListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/actionlistener.h" line="78" column="17" bodyfile="src/guichan/include/guichan/actionlistener.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ActionListener_1a89247fdafe95afa92a4b94f74cedbdf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::ActionListener::action</definition>
+        <argsstring>(const std::string &amp;eventId)=0</argsstring>
+        <name>action</name>
+        <reimplementedby refid="classLuaActionListener_1a5e737974ab656c65ba7df6b4af746554">action</reimplementedby>
+        <reimplementedby refid="classLambdaActionListener_1a36f5a7038255c8730cbcd7bab1e334f5">action</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1ac8e2e0d75d03dc7954e1b63828d719ed">action</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eventId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called whan an action is recieved from a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is used to be able to recieve a notification that an action has occured.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the identifier of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/actionlistener.h" line="87" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Listener of action events from Widgets. To be able to listen for actions you must make a class which inherits from this class and implements the action function.</para>
+<para><simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" kindref="member">Widget::addActionListener</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>LambdaActionListener</label>
+        <link refid="classLambdaActionListener"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::DropDown</label>
+        <link refid="classgcn_1_1DropDown"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gcn::ActionListener</label>
+        <link refid="classgcn_1_1ActionListener"/>
+      </node>
+      <node id="4">
+        <label>ImageDropDownWidget</label>
+        <link refid="classImageDropDownWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DropDownWidget</label>
+        <link refid="classDropDownWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LuaActionListener</label>
+        <link refid="classLuaActionListener"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/guichan/include/guichan/actionlistener.h" line="72" column="1" bodyfile="src/guichan/include/guichan/actionlistener.h" bodystart="71" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1ActionListener_1a89247fdafe95afa92a4b94f74cedbdf2" prot="public" virt="pure-virtual"><scope>gcn::ActionListener</scope><name>action</name></member>
+      <member refid="classgcn_1_1ActionListener_1a15539005829890078792ce695260114b" prot="public" virt="virtual"><scope>gcn::ActionListener</scope><name>~ActionListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

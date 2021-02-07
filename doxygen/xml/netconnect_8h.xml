@@ -1,0 +1,783 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="netconnect_8h" kind="file" language="C++">
+    <compoundname>netconnect.h</compoundname>
+    <includes refid="net__message_8h" local="yes">net_message.h</includes>
+    <includes refid="netsockets_8h" local="yes">network/netsockets.h</includes>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="replay_8cpp" local="yes">src/game/replay.cpp</includedby>
+    <includedby refid="net__message_8cpp" local="yes">src/network/net_message.cpp</includedby>
+    <includedby refid="netconnect_8cpp" local="yes">src/network/netconnect.cpp</includedby>
+    <includedby refid="network_8cpp" local="yes">src/network/network.cpp</includedby>
+    <includedby refid="online__service_8cpp" local="yes">src/network/online_service.cpp</includedby>
+    <includedby refid="player_8cpp" local="yes">src/stratagus/player.cpp</includedby>
+    <includedby refid="stratagus_8cpp" local="yes">src/stratagus/stratagus.cpp</includedby>
+    <includedby refid="widgets_8cpp" local="yes">src/ui/widgets.cpp</includedby>
+    <includedby refid="tolua_8cpp" local="yes">build/tolua.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>net_message.h</label>
+        <link refid="net__message_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/include/netconnect.h</label>
+        <link refid="netconnect_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>src/network/netconnect.cpp</label>
+        <link refid="netconnect_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="11">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/network/network.cpp</label>
+        <link refid="network_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/network/online_service.cpp</label>
+        <link refid="online__service_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/network/net_message.cpp</label>
+        <link refid="net__message_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/ui/widgets.cpp</label>
+        <link refid="widgets_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/netconnect.h</label>
+        <link refid="netconnect_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/stratagus/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>netconnect.h - The network connection setup header file.</header>
+      <memberdef kind="define" id="netconnect_8h_1a811a8b2b491eed8a2b76ad20c1c91dfc" prot="public" static="no">
+        <name>NetworkProtocolMajorVersion</name>
+        <initializer><ref refid="version-generated_8h_1a07acf98b54053627db7beee22c5382fe" kindref="member">StratagusMajorVersion</ref></initializer>
+        <briefdescription>
+<para>Network protocol major version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="44" column="9" bodyfile="src/include/netconnect.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netconnect_8h_1a4097169219f6dabd520c30dc3545d290" prot="public" static="no">
+        <name>NetworkProtocolMinorVersion</name>
+        <initializer><ref refid="version-generated_8h_1ab58d4cfc27594c9f3d6d72793d07e437" kindref="member">StratagusMinorVersion</ref></initializer>
+        <briefdescription>
+<para>Network protocol minor version (maximum 99) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="46" column="9" bodyfile="src/include/netconnect.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netconnect_8h_1adfe92728661e6b75f87a6ddbbc4400f3" prot="public" static="no">
+        <name>NetworkProtocolPatchLevel</name>
+        <initializer><ref refid="version-generated_8h_1aa413ce3d46f08f2b9044d46e3de85397" kindref="member">StratagusPatchLevel</ref></initializer>
+        <briefdescription>
+<para>Network protocol patch level (maximum 99) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="48" column="9" bodyfile="src/include/netconnect.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netconnect_8h_1a0380b0a60a518a2de84831634bd777f6" prot="public" static="no">
+        <name>NetworkProtocolVersion</name>
+        <initializer>	(<ref refid="netconnect_8h_1a811a8b2b491eed8a2b76ad20c1c91dfc" kindref="member">NetworkProtocolMajorVersion</ref> * 10000 + <ref refid="netconnect_8h_1a4097169219f6dabd520c30dc3545d290" kindref="member">NetworkProtocolMinorVersion</ref> * 100 + \
+	 <ref refid="netconnect_8h_1adfe92728661e6b75f87a6ddbbc4400f3" kindref="member">NetworkProtocolPatchLevel</ref>)</initializer>
+        <briefdescription>
+<para>Network protocol version (1,2,3) -&gt; 10203. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="50" column="9" bodyfile="src/include/netconnect.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netconnect_8h_1aac7055481ebc3af92300866c8498a17b" prot="public" static="no">
+        <name>NetworkProtocolFormatString</name>
+        <initializer>&quot;%d.%d.%d&quot;</initializer>
+        <briefdescription>
+<para>Network protocol printf format string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="55" column="9" bodyfile="src/include/netconnect.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netconnect_8h_1a0b015e66a985e3b9264d7e02db79f5ea" prot="public" static="no">
+        <name>NetworkProtocolFormatArgs</name>
+        <param><defname>v</defname></param>
+        <initializer>(v) / 10000, ((v) / 100) % 100, (v) % 100</initializer>
+        <briefdescription>
+<para>Network protocol printf format arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="57" column="9" bodyfile="src/include/netconnect.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_net_client_con_state_</name>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686ae7c8d98535fb69003a8748ace6d3ea8a" prot="public">
+          <name>ccs_unused</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a08f28882a2f8076e04bd7f1993a8a4f2" prot="public">
+          <name>ccs_connecting</name>
+          <briefdescription>
+<para>Unused. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a452ff5114833e379ccc5f503502c6747" prot="public">
+          <name>ccs_connected</name>
+          <briefdescription>
+<para>New client. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a0fc4421c411a0718fcfba6fc1f1af932" prot="public">
+          <name>ccs_mapinfo</name>
+          <briefdescription>
+<para>Has received slot info. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686ae102a275b221fd8abec4754c10fa1f50" prot="public">
+          <name>ccs_badmap</name>
+          <briefdescription>
+<para>Has received matching map-info. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a5e6f96f3da4d78343099f50baf32a893" prot="public">
+          <name>ccs_synced</name>
+          <briefdescription>
+<para>Has received non-matching map-info. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686aacee0fd1000dc39af01f517ffc829b39" prot="public">
+          <name>ccs_async</name>
+          <briefdescription>
+<para>Client is in sync with server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a788a0453094f3e819e167cc1c13e5676" prot="public">
+          <name>ccs_changed</name>
+          <briefdescription>
+<para>Server user has changed selection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a709438e011728ea212b23326be13af7b" prot="public">
+          <name>ccs_detaching</name>
+          <briefdescription>
+<para>Client user has made menu selection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686aeb8d8a95d7acfb22a72a4d5a06592ae4" prot="public">
+          <name>ccs_disconnected</name>
+          <briefdescription>
+<para>Client user wants to detach. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a628024e4d8decce564ca025aa11bb18f" prot="public">
+          <name>ccs_unreachable</name>
+          <briefdescription>
+<para>Client has detached. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686aed9e7e1cefd169fad1a24c4c4d7c8896" prot="public">
+          <name>ccs_usercanceled</name>
+          <briefdescription>
+<para>Server is unreachable. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686ab8cad02ed84d5a10d6204638f8ad1831" prot="public">
+          <name>ccs_nofreeslots</name>
+          <briefdescription>
+<para>Connection canceled by user. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a13c6f6abee5f1e2a82780edf1a927220" prot="public">
+          <name>ccs_serverquits</name>
+          <briefdescription>
+<para>Server has no more free slots. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a2a93a462c4ea3468d9028c5b2b67c6b1" prot="public">
+          <name>ccs_goahead</name>
+          <briefdescription>
+<para>Server quits. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a13d508c4906a076a781f739560d0e6ec" prot="public">
+          <name>ccs_started</name>
+          <briefdescription>
+<para>Server wants to start game. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a2e6ebdee171706a22ff5811e6071a635" prot="public">
+          <name>ccs_incompatibleengine</name>
+          <briefdescription>
+<para>Server has started game. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a6e9c762303de19c9c98c023cf7d8ea19" prot="public">
+          <name>ccs_incompatibleluafiles</name>
+          <briefdescription>
+<para>Incompatible engine version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Incompatible lua files </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Network Client connect states </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="66" column="28" bodyfile="src/include/netconnect.h" bodystart="66" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1a7a36f73a42f4c0aea76bcd67d42992e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetPlayers</definition>
+        <argsstring></argsstring>
+        <name>NetPlayers</name>
+        <briefdescription>
+<para>Player number of local client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="91" column="12" bodyfile="src/network/netconnect.cpp" bodystart="90" bodyend="-1" declfile="src/include/netconnect.h" declline="91" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1a7b945f5aedea5d50e830677599c550cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HostsCount</definition>
+        <argsstring></argsstring>
+        <name>HostsCount</name>
+        <briefdescription>
+<para>Network players. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="93" column="12" bodyfile="src/network/netconnect.cpp" bodystart="82" bodyend="-1" declfile="src/include/netconnect.h" declline="93" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1aae5fffa932443f11ea4dcb4fe496bc03" prot="public" static="no" mutable="no">
+        <type><ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref></type>
+        <definition>CNetworkHost Hosts[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>Hosts</name>
+        <briefdescription>
+<para>Number of hosts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="94" column="21" bodyfile="src/network/netconnect.cpp" bodystart="83" bodyend="-1" declfile="src/include/netconnect.h" declline="94" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1ab28cba8e30a37d320b492fcd113815a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetConnectRunning</definition>
+        <argsstring></argsstring>
+        <name>NetConnectRunning</name>
+        <briefdescription>
+<para>Host, port, and number of all players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Host, port, and number of all players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="96" column="12" bodyfile="src/network/netconnect.cpp" bodystart="85" bodyend="-1" declfile="src/include/netconnect.h" declline="96" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1ae900b94cad9f50fa7e20ceb038aad6ad" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetConnectType</definition>
+        <argsstring></argsstring>
+        <name>NetConnectType</name>
+        <briefdescription>
+<para>Network menu: Setup mode active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="97" column="12" bodyfile="src/network/netconnect.cpp" bodystart="86" bodyend="-1" declfile="src/include/netconnect.h" declline="97" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1ad06cc883ff29dba57349dec71e7ca46f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetLocalHostsSlot</definition>
+        <argsstring></argsstring>
+        <name>NetLocalHostsSlot</name>
+        <briefdescription>
+<para>Network menu: Setup mode active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="98" column="12" bodyfile="src/network/netconnect.cpp" bodystart="87" bodyend="-1" declfile="src/include/netconnect.h" declline="98" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1ac5f5a5985001739c8f02039885745e63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetLocalPlayerNumber</definition>
+        <argsstring></argsstring>
+        <name>NetLocalPlayerNumber</name>
+        <briefdescription>
+<para>Network menu: Slot # in Hosts array of local client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="99" column="12" bodyfile="src/network/netconnect.cpp" bodystart="88" bodyend="-1" declfile="src/include/netconnect.h" declline="99" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1a4bb55efed1eb903f40e3ff7e3b08e40e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string NetworkMapName</definition>
+        <argsstring></argsstring>
+        <name>NetworkMapName</name>
+        <briefdescription>
+<para>Player number of local client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player number of local client. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="101" column="20" bodyfile="src/network/netconnect.cpp" bodystart="91" bodyend="-1" declfile="src/include/netconnect.h" declline="101" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1a63264fb5e6786f3e88ba09a167ac8f95" prot="public" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref></type>
+        <definition>CServerSetup ServerSetupState</definition>
+        <argsstring></argsstring>
+        <name>ServerSetupState</name>
+        <briefdescription>
+<para>Name of the map received with ICMMap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the map received with ICMMap. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="103" column="21" bodyfile="src/network/netconnect.cpp" bodystart="94" bodyend="-1" declfile="src/include/netconnect.h" declline="103" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1a46e88369fae125f8188bb966e02d3f2a" prot="public" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref></type>
+        <definition>CServerSetup LocalSetupState</definition>
+        <argsstring></argsstring>
+        <name>LocalSetupState</name>
+        <briefdescription>
+<para>Network menu: Multiplayer Server Menu selections state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="104" column="21" bodyfile="src/network/netconnect.cpp" bodystart="95" bodyend="-1" declfile="src/include/netconnect.h" declline="104" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8h_1a0ae7f8d8b60b59046e13ba0051bb5bdd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NoRandomPlacementMultiplayer</definition>
+        <argsstring></argsstring>
+        <name>NoRandomPlacementMultiplayer</name>
+        <briefdescription>
+<para>Network menu: Multiplayer Client Menu selections local state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Network menu: Multiplayer Client Menu selections local state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="106" column="12" bodyfile="src/network/netconnect.cpp" bodystart="92" bodyend="-1" declfile="src/include/netconnect.h" declline="106" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a07027a04458d4178de7d49276788d595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FindHostIndexBy</definition>
+        <argsstring>(const CHost &amp;host)</argsstring>
+        <name>FindHostIndexBy</name>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Disable the random placement of players in muliplayer mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="112" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1435" bodyend="1443" declfile="src/include/netconnect.h" declline="112" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a0a1814975026c5aee5bcaa9e2b724f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkServerStartGame</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkServerStartGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server user has finally hit the start game button </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="113" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1478" bodyend="1727" declfile="src/include/netconnect.h" declline="113" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1af13dd0c075c4495bf759425418a820f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkGamePrepareGameSettings</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkGamePrepareGameSettings</name>
+        <briefdescription>
+<para>Server user has finally hit the start game button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplayer network game final race and player type setup. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="114" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1797" bodyend="1862" declfile="src/include/netconnect.h" declline="114" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a650ec4f8057fa10ceb1b43e34b67374c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetNetworkState</definition>
+        <argsstring>()</argsstring>
+        <name>GetNetworkState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="116" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1430" bodyend="1433" declfile="src/include/netconnect.h" declline="116" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a589d25c0579b491f64a4b9364cac801e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkInitClientConnect</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkInitClientConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup Network connect state machine for clients </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="118" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1462" bodyend="1473" declfile="src/include/netconnect.h" declline="118" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1ac09f3756c514be1c70cbfdd151d8a894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkInitServerConnect</definition>
+        <argsstring>(int openslots)</argsstring>
+        <name>NetworkInitServerConnect</name>
+        <param>
+          <type>int</type>
+          <declname>openslots</declname>
+        </param>
+        <briefdescription>
+<para>Setup network connect state machine for clients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup Network connect state machine for the server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="119" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1764" bodyend="1782" declfile="src/include/netconnect.h" declline="119" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a706b461a799ca3057e51320c1c3e70c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NetworkParseSetupEvent</definition>
+        <argsstring>(const unsigned char *buf, int size, const CHost &amp;host)</argsstring>
+        <name>NetworkParseSetupEvent</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Setup network connect state machine for the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a setup event. (Command type &lt;= MessageInitEvent)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the received packet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>host which send the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if packet is an InitConfig message, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="120" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1386" bodyend="1418" declfile="src/include/netconnect.h" declline="120" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a52c838d4eca4854945b1ad597663d2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NetworkSetupServerAddress</definition>
+        <argsstring>(const std::string &amp;serveraddr, int port)</argsstring>
+        <name>NetworkSetupServerAddress</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>serveraddr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Parse a network connect event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the IP-Address of the network server to connect to</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serveraddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the serveraddress the user has entered</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, if error; otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="121" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1736" bodyend="1751" declfile="src/include/netconnect.h" declline="121" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a4c5b2783ffd215492fb31b9e56efb9c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkProcessClientRequest</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkProcessClientRequest</name>
+        <briefdescription>
+<para>Menu: Setup the server IP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Client Menu Loop: Send out client request messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="122" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1423" bodyend="1428" declfile="src/include/netconnect.h" declline="122" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a403a86faaeb1747e07c22c77e0cb7fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkProcessServerRequest</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkProcessServerRequest</name>
+        <briefdescription>
+<para>Menu Loop: Send out client request messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Server Menu Loop: Send out server request messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="123" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1448" bodyend="1457" declfile="src/include/netconnect.h" declline="123" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1aea846f2378c085d94a9a06c0bfc35f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkServerResyncClients</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkServerResyncClients</name>
+        <briefdescription>
+<para>Menu Loop: Send out server request messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify state change by menu user to connected clients </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="124" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1787" bodyend="1792" declfile="src/include/netconnect.h" declline="124" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a395a4273a4efd5da69031c8e8253734c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkDetachFromServer</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkDetachFromServer</name>
+        <briefdescription>
+<para>Menu Loop: Server: Mark clients state to send stateinfo message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate and detach Network connect state machine for the client </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="125" column="13" bodyfile="src/network/netconnect.cpp" bodystart="1756" bodyend="1759" declfile="src/include/netconnect.h" declline="125" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8h_1a3ee2ec8a0fe004fb0cc12f4c34068ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkSendICMessage</definition>
+        <argsstring>(CUDPSocket &amp;socket, const CHost &amp;host, const CInitMessage_Header &amp;msg)</argsstring>
+        <name>NetworkSendICMessage</name>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCInitMessage__Header" kindref="compound">CInitMessage_Header</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Menu Loop: Client: Send GoodBye to the server and detach. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/netconnect.h" line="127" column="13" bodyfile="src/network/netconnect.cpp" bodystart="215" bodyend="221" declfile="src/include/netconnect.h" declline="127" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/netconnect.h"/>
+  </compounddef>
+</doxygen>

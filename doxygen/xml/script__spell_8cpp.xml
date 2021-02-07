@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="script__spell_8cpp" kind="file" language="C++">
+    <compoundname>script_spell.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="spells_8h" local="yes">spells.h</includes>
+    <includes refid="spell__adjustvariable_8h" local="yes">spell/spell_adjustvariable.h</includes>
+    <includes refid="spell__adjustvital_8h" local="yes">spell/spell_adjustvital.h</includes>
+    <includes refid="spell__areaadjustvital_8h" local="yes">spell/spell_areaadjustvital.h</includes>
+    <includes refid="spell__areabombardment_8h" local="yes">spell/spell_areabombardment.h</includes>
+    <includes refid="spell__capture_8h" local="yes">spell/spell_capture.h</includes>
+    <includes refid="spell__demolish_8h" local="yes">spell/spell_demolish.h</includes>
+    <includes refid="spell__luacallback_8h" local="yes">spell/spell_luacallback.h</includes>
+    <includes refid="spell__polymorph_8h" local="yes">spell/spell_polymorph.h</includes>
+    <includes refid="spell__spawnmissile_8h" local="yes">spell/spell_spawnmissile.h</includes>
+    <includes refid="spell__spawnportal_8h" local="yes">spell/spell_spawnportal.h</includes>
+    <includes refid="spell__summon_8h" local="yes">spell/spell_summon.h</includes>
+    <includes refid="spell__teleport_8h" local="yes">spell/spell_teleport.h</includes>
+    <includes refid="luacallback_8h" local="yes">luacallback.h</includes>
+    <includes refid="script__sound_8h" local="yes">script_sound.h</includes>
+    <includes refid="script_8h" local="yes">script.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="upgrade_8h" local="yes">upgrade.h</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>spell/spell_areabombardment.h</label>
+        <link refid="spell__areabombardment_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>spell/spell_demolish.h</label>
+        <link refid="spell__demolish_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>lua.h</label>
+      </node>
+      <node id="38">
+        <label>stdint.h</label>
+      </node>
+      <node id="14">
+        <label>variant</label>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="28">
+        <label>spell/spell_summon.h</label>
+        <link refid="spell__summon_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>spell/spell_teleport.h</label>
+        <link refid="spell__teleport_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>spells.h</label>
+        <link refid="spells_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>spell/spell_polymorph.h</label>
+        <link refid="spell__polymorph_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>upgrade.h</label>
+        <link refid="upgrade_8h"/>
+      </node>
+      <node id="24">
+        <label>spell/spell_luacallback.h</label>
+        <link refid="spell__luacallback_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>spell/spell_spawnportal.h</label>
+        <link refid="spell__spawnportal_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="26">
+        <label>spell/spell_spawnmissile.h</label>
+        <link refid="spell__spawnmissile_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>script_sound.h</label>
+        <link refid="script__sound_8h"/>
+      </node>
+      <node id="39">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>luacallback.h</label>
+        <link refid="luacallback_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>spell/spell_areaadjustvital.h</label>
+        <link refid="spell__areaadjustvital_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>utility</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="18">
+        <label>spell/spell_adjustvariable.h</label>
+        <link refid="spell__adjustvariable_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>climits</label>
+      </node>
+      <node id="17">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="19">
+        <label>spell/spell_adjustvital.h</label>
+        <link refid="spell__adjustvital_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>algorithm</label>
+      </node>
+      <node id="1">
+        <label>src/spell/script_spell.cpp</label>
+        <link refid="script__spell_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>lualib.h</label>
+      </node>
+      <node id="22">
+        <label>spell/spell_capture.h</label>
+        <link refid="spell__capture_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>script_spell.cpp - The spell script functions..</header>
+      <memberdef kind="function" id="script__spell_8cpp_1a28ba0a9b8682ade22832eedaeb6644fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classSpellActionType" kindref="compound">SpellActionType</ref> *</type>
+        <definition>static SpellActionType* CclSpellAction</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclSpellAction</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the action for spell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/spell/script_spell.cpp" line="67" column="24" bodyfile="src/spell/script_spell.cpp" bodystart="67" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="script__spell_8cpp_1a509c70f59b102fbed37e4c0e434e5915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Ccl2Condition</definition>
+        <argsstring>(lua_State *l, const char *value)</argsstring>
+        <name>Ccl2Condition</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>return 0, 1, 2 for true, only, false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a condition value from a scm object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scm value to convert.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CONDITION_TRUE, CONDITION_FALSE, CONDITION_ONLY or -1 on error. </para>
+</simplesect>
+<simplesect kind="note"><para>This is a helper function to make CclSpellCondition shorter and easier to understand. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/spell/script_spell.cpp" line="118" column="6" bodyfile="src/spell/script_spell.cpp" bodystart="118" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="script__spell_8cpp_1a1ea7cd503ccf36627230f563ad1f5dcb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void CclSpellCondition</definition>
+        <argsstring>(lua_State *l, ConditionInfo *condition)</argsstring>
+        <name>CclSpellCondition</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classConditionInfo" kindref="compound">ConditionInfo</ref> *</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the Condition for spell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to condition to fill with data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Conditions must be allocated. All data already in is LOST. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/spell/script_spell.cpp" line="140" column="13" bodyfile="src/spell/script_spell.cpp" bodystart="140" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="script__spell_8cpp_1a094eb1470cf96397b5a39bf392ecc7ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void CclSpellAutocast</definition>
+        <argsstring>(lua_State *l, AutoCastInfo *autocast)</argsstring>
+        <name>CclSpellAutocast</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classAutoCastInfo" kindref="compound">AutoCastInfo</ref> *</type>
+          <declname>autocast</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the Condition for spell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>autocast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to autocast to fill with data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: autocast must be allocated. All data already in is LOST. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/spell/script_spell.cpp" line="231" column="13" bodyfile="src/spell/script_spell.cpp" bodystart="231" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="script__spell_8cpp_1a37a1a506b036dc16fa0a89b187cc8171" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclDefineSpell</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclDefineSpell</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse Spell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/spell/script_spell.cpp" line="293" column="12" bodyfile="src/spell/script_spell.cpp" bodystart="293" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="script__spell_8cpp_1aa87df1995b823f2b13e91083fe8a0f8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SpellCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>SpellCclRegister</name>
+        <briefdescription>
+<para>register fonction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for Spell. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/spell/script_spell.cpp" line="425" column="6" bodyfile="src/spell/script_spell.cpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/spell/script_spell.cpp"/>
+  </compounddef>
+</doxygen>

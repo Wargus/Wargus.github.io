@@ -1,0 +1,1729 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="util_8h" kind="file" language="C++">
+    <compoundname>util.h</compoundname>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="textbox_8cpp" local="yes">src/guichan/widgets/textbox.cpp</includedby>
+    <includedby refid="textfield_8cpp" local="yes">src/guichan/widgets/textfield.cpp</includedby>
+    <includedby refid="stratagus_8h" local="yes">src/include/stratagus.h</includedby>
+    <includedby refid="online__service_8cpp" local="yes">src/network/online_service.cpp</includedby>
+    <includedby refid="sound__id_8cpp" local="yes">src/sound/sound_id.cpp</includedby>
+    <includedby refid="iolib_8cpp" local="yes">src/stratagus/iolib.cpp</includedby>
+    <includedby refid="stratagus_8cpp" local="yes">src/stratagus/stratagus.cpp</includedby>
+    <includedby refid="util_8cpp" local="yes">src/stratagus/util.cpp</includedby>
+    <includedby refid="script__ui_8cpp" local="yes">src/ui/script_ui.cpp</includedby>
+    <includedby refid="unittype_8cpp" local="yes">src/unit/unittype.cpp</includedby>
+    <includedby refid="upgrade_8cpp" local="yes">src/unit/upgrade.cpp</includedby>
+    <includedby refid="metaserver_2main_8cpp" local="yes">metaserver/main.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>src/include/util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="2">
+        <label>cstdlib</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="189">
+        <label>metaserver/main.cpp</label>
+        <link refid="metaserver_2main_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/ai/script_ai.cpp</label>
+        <link refid="script__ai_8cpp"/>
+      </node>
+      <node id="153">
+        <label>src/ui/mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="138">
+        <label>src/stratagus/parameters.cpp</label>
+        <link refid="parameters_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/animation/animation_label.cpp</label>
+        <link refid="animation__label_8cpp"/>
+      </node>
+      <node id="128">
+        <label>src/spell/spell_spawnportal.cpp</label>
+        <link refid="spell__spawnportal_8cpp"/>
+      </node>
+      <node id="95">
+        <label>src/missile/script_missile.cpp</label>
+        <link refid="script__missile_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="99">
+        <label>src/network/netconnect.cpp</label>
+        <link refid="netconnect_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/action/action_upgradeto.cpp</label>
+        <link refid="action__upgradeto_8cpp"/>
+      </node>
+      <node id="85">
+        <label>src/missile/missile_parabolic.cpp</label>
+        <link refid="missile__parabolic_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/action/action_research.cpp</label>
+        <link refid="action__research_8cpp"/>
+      </node>
+      <node id="75">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="147">
+        <label>src/ui/botpanel.cpp</label>
+        <link refid="botpanel_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/action/action_build.cpp</label>
+        <link refid="action__build_8cpp"/>
+      </node>
+      <node id="120">
+        <label>src/spell/spell_adjustvital.cpp</label>
+        <link refid="spell__adjustvital_8cpp"/>
+      </node>
+      <node id="155">
+        <label>src/ui/script_ui.cpp</label>
+        <link refid="script__ui_8cpp"/>
+      </node>
+      <node id="167">
+        <label>src/unit/unit_draw.cpp</label>
+        <link refid="unit__draw_8cpp"/>
+      </node>
+      <node id="186">
+        <label>metaserver/cmd.cpp</label>
+        <link refid="cmd_8cpp"/>
+      </node>
+      <node id="146">
+        <label>src/stratagus/util.cpp</label>
+        <link refid="util_8cpp"/>
+      </node>
+      <node id="129">
+        <label>src/spell/spell_summon.cpp</label>
+        <link refid="spell__summon_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/ai/ai.cpp</label>
+        <link refid="ai_8cpp"/>
+      </node>
+      <node id="80">
+        <label>src/missile/missile_fire.cpp</label>
+        <link refid="missile__fire_8cpp"/>
+      </node>
+      <node id="48">
+        <label>src/animation/animation_setvar.cpp</label>
+        <link refid="animation__setvar_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+      </node>
+      <node id="64">
+        <label>src/guichan/sdl/sdlgraphics.cpp</label>
+        <link refid="sdlgraphics_8cpp"/>
+      </node>
+      <node id="71">
+        <label>src/map/minimap.cpp</label>
+        <link refid="minimap_8cpp"/>
+      </node>
+      <node id="68">
+        <label>src/map/map_radar.cpp</label>
+        <link refid="map__radar_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/action/action_spellcast.cpp</label>
+        <link refid="action__spellcast_8cpp"/>
+      </node>
+      <node id="133">
+        <label>src/stratagus/groups.cpp</label>
+        <link refid="groups_8cpp"/>
+      </node>
+      <node id="108">
+        <label>src/particle/staticparticle.cpp</label>
+        <link refid="staticparticle_8cpp"/>
+      </node>
+      <node id="40">
+        <label>src/animation/animation_luacallback.cpp</label>
+        <link refid="animation__luacallback_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/action/action_explore.cpp</label>
+        <link refid="action__explore_8cpp"/>
+      </node>
+      <node id="148">
+        <label>src/ui/button_checks.cpp</label>
+        <link refid="button__checks_8cpp"/>
+      </node>
+      <node id="52">
+        <label>src/animation/animation_unbreakable.cpp</label>
+        <link refid="animation__unbreakable_8cpp"/>
+      </node>
+      <node id="59">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="188">
+        <label>metaserver/games.cpp</label>
+        <link refid="games_8cpp"/>
+      </node>
+      <node id="77">
+        <label>src/missile/missile_continuous.cpp</label>
+        <link refid="missile__continuous_8cpp"/>
+      </node>
+      <node id="187">
+        <label>metaserver/db.cpp</label>
+        <link refid="db_8cpp"/>
+      </node>
+      <node id="137">
+        <label>src/stratagus/mainloop.cpp</label>
+        <link refid="mainloop_8cpp"/>
+      </node>
+      <node id="152">
+        <label>src/ui/mainscr.cpp</label>
+        <link refid="mainscr_8cpp"/>
+      </node>
+      <node id="35">
+        <label>src/animation/animation_exactframe.cpp</label>
+        <link refid="animation__exactframe_8cpp"/>
+      </node>
+      <node id="112">
+        <label>src/sound/music.cpp</label>
+        <link refid="music_8cpp"/>
+      </node>
+      <node id="185">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="158">
+        <label>src/ui/uibuttons_proc.cpp</label>
+        <link refid="uibuttons__proc_8cpp"/>
+      </node>
+      <node id="164">
+        <label>src/unit/script_unittype.cpp</label>
+        <link refid="script__unittype_8cpp"/>
+      </node>
+      <node id="149">
+        <label>src/ui/contenttype.cpp</label>
+        <link refid="contenttype_8cpp"/>
+      </node>
+      <node id="101">
+        <label>src/network/network.cpp</label>
+        <link refid="network_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/animation/animation_attack.cpp</label>
+        <link refid="animation__attack_8cpp"/>
+      </node>
+      <node id="58">
+        <label>src/editor/script_editor.cpp</label>
+        <link refid="script__editor_8cpp"/>
+      </node>
+      <node id="102">
+        <label>src/network/online_service.cpp</label>
+        <link refid="online__service_8cpp"/>
+      </node>
+      <node id="124">
+        <label>src/spell/spell_demolish.cpp</label>
+        <link refid="spell__demolish_8cpp"/>
+      </node>
+      <node id="28">
+        <label>src/ai/ai_magic.cpp</label>
+        <link refid="ai__magic_8cpp"/>
+      </node>
+      <node id="150">
+        <label>src/ui/icons.cpp</label>
+        <link refid="icons_8cpp"/>
+      </node>
+      <node id="45">
+        <label>src/animation/animation_randomwait.cpp</label>
+        <link refid="animation__randomwait_8cpp"/>
+      </node>
+      <node id="100">
+        <label>src/network/netsockets.cpp</label>
+        <link refid="netsockets_8cpp"/>
+      </node>
+      <node id="116">
+        <label>src/sound/sound_server.cpp</label>
+        <link refid="sound__server_8cpp"/>
+      </node>
+      <node id="113">
+        <label>src/sound/script_sound.cpp</label>
+        <link refid="script__sound_8cpp"/>
+      </node>
+      <node id="130">
+        <label>src/spell/spell_teleport.cpp</label>
+        <link refid="spell__teleport_8cpp"/>
+      </node>
+      <node id="90">
+        <label>src/missile/missile_stay.cpp</label>
+        <link refid="missile__stay_8cpp"/>
+      </node>
+      <node id="111">
+        <label>src/pathfinder/script_pathfinder.cpp</label>
+        <link refid="script__pathfinder_8cpp"/>
+      </node>
+      <node id="114">
+        <label>src/sound/sound.cpp</label>
+        <link refid="sound_8cpp"/>
+      </node>
+      <node id="94">
+        <label>src/missile/missileconfig.cpp</label>
+        <link refid="missileconfig_8cpp"/>
+      </node>
+      <node id="74">
+        <label>src/map/tileset.cpp</label>
+        <link refid="tileset_8cpp"/>
+      </node>
+      <node id="176">
+        <label>src/video/font.cpp</label>
+        <link refid="font_8cpp"/>
+      </node>
+      <node id="131">
+        <label>src/spell/spells.cpp</label>
+        <link refid="spells_8cpp"/>
+      </node>
+      <node id="165">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="98">
+        <label>src/network/net_message.cpp</label>
+        <link refid="net__message_8cpp"/>
+      </node>
+      <node id="110">
+        <label>src/pathfinder/pathfinder.cpp</label>
+        <link refid="pathfinder_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/animation/animation_die.cpp</label>
+        <link refid="animation__die_8cpp"/>
+      </node>
+      <node id="182">
+        <label>src/video/sdl.cpp</label>
+        <link refid="sdl_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/animation/animation_move.cpp</label>
+        <link refid="animation__move_8cpp"/>
+      </node>
+      <node id="157">
+        <label>src/ui/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/animation/animation_frame.cpp</label>
+        <link refid="animation__frame_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/action/action_train.cpp</label>
+        <link refid="action__train_8cpp"/>
+      </node>
+      <node id="76">
+        <label>src/missile/missile_cliptotarget.cpp</label>
+        <link refid="missile__cliptotarget_8cpp"/>
+      </node>
+      <node id="67">
+        <label>src/map/map_fog.cpp</label>
+        <link refid="map__fog_8cpp"/>
+      </node>
+      <node id="50">
+        <label>src/animation/animation_spawnmissile.cpp</label>
+        <link refid="animation__spawnmissile_8cpp"/>
+      </node>
+      <node id="142">
+        <label>src/stratagus/selection.cpp</label>
+        <link refid="selection_8cpp"/>
+      </node>
+      <node id="60">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="184">
+        <label>src/video/video.cpp</label>
+        <link refid="video_8cpp"/>
+      </node>
+      <node id="181">
+        <label>src/video/png.cpp</label>
+        <link refid="png_8cpp"/>
+      </node>
+      <node id="163">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/guichan/widgets/textbox.cpp</label>
+        <link refid="textbox_8cpp"/>
+      </node>
+      <node id="121">
+        <label>src/spell/spell_areaadjustvital.cpp</label>
+        <link refid="spell__areaadjustvital_8cpp"/>
+      </node>
+      <node id="140">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="151">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="83">
+        <label>src/missile/missile_landmine.cpp</label>
+        <link refid="missile__landmine_8cpp"/>
+      </node>
+      <node id="46">
+        <label>src/animation/animation_rotate.cpp</label>
+        <link refid="animation__rotate_8cpp"/>
+      </node>
+      <node id="122">
+        <label>src/spell/spell_areabombardment.cpp</label>
+        <link refid="spell__areabombardment_8cpp"/>
+      </node>
+      <node id="87">
+        <label>src/missile/missile_pointtopoint.cpp</label>
+        <link refid="missile__pointtopoint_8cpp"/>
+      </node>
+      <node id="105">
+        <label>src/particle/particlemanager.cpp</label>
+        <link refid="particlemanager_8cpp"/>
+      </node>
+      <node id="56">
+        <label>src/editor/editor.cpp</label>
+        <link refid="editor_8cpp"/>
+      </node>
+      <node id="159">
+        <label>src/ui/uitimer.cpp</label>
+        <link refid="uitimer_8cpp"/>
+      </node>
+      <node id="65">
+        <label>src/map/map.cpp</label>
+        <link refid="map_8cpp"/>
+      </node>
+      <node id="156">
+        <label>src/ui/statusline.cpp</label>
+        <link refid="statusline_8cpp"/>
+      </node>
+      <node id="72">
+        <label>src/map/script_map.cpp</label>
+        <link refid="script__map_8cpp"/>
+      </node>
+      <node id="49">
+        <label>src/animation/animation_sound.cpp</label>
+        <link refid="animation__sound_8cpp"/>
+      </node>
+      <node id="160">
+        <label>src/ui/widgets.cpp</label>
+        <link refid="widgets_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/action/action_patrol.cpp</label>
+        <link refid="action__patrol_8cpp"/>
+      </node>
+      <node id="44">
+        <label>src/animation/animation_randomsound.cpp</label>
+        <link refid="animation__randomsound_8cpp"/>
+      </node>
+      <node id="66">
+        <label>src/map/map_draw.cpp</label>
+        <link refid="map__draw_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="69">
+        <label>src/map/map_wall.cpp</label>
+        <link refid="map__wall_8cpp"/>
+      </node>
+      <node id="103">
+        <label>src/particle/chunkparticle.cpp</label>
+        <link refid="chunkparticle_8cpp"/>
+      </node>
+      <node id="78">
+        <label>src/missile/missile_cycleonce.cpp</label>
+        <link refid="missile__cycleonce_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/action/action_repair.cpp</label>
+        <link refid="action__repair_8cpp"/>
+      </node>
+      <node id="141">
+        <label>src/stratagus/script_player.cpp</label>
+        <link refid="script__player_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="169">
+        <label>src/unit/unit_manager.cpp</label>
+        <link refid="unit__manager_8cpp"/>
+      </node>
+      <node id="93">
+        <label>src/missile/missile_whirlwind.cpp</label>
+        <link refid="missile__whirlwind_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/action/action_follow.cpp</label>
+        <link refid="action__follow_8cpp"/>
+      </node>
+      <node id="136">
+        <label>src/stratagus/main.cpp</label>
+        <link refid="src_2stratagus_2main_8cpp"/>
+      </node>
+      <node id="166">
+        <label>src/unit/unit_cache.cpp</label>
+        <link refid="unit__cache_8cpp"/>
+      </node>
+      <node id="170">
+        <label>src/unit/unit_save.cpp</label>
+        <link refid="unit__save_8cpp"/>
+      </node>
+      <node id="125">
+        <label>src/spell/spell_luacallback.cpp</label>
+        <link refid="spell__luacallback_8cpp"/>
+      </node>
+      <node id="63">
+        <label>src/game/trigger.cpp</label>
+        <link refid="trigger_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="139">
+        <label>src/stratagus/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="132">
+        <label>src/stratagus/construct.cpp</label>
+        <link refid="construct_8cpp"/>
+      </node>
+      <node id="154">
+        <label>src/ui/popup.cpp</label>
+        <link refid="popup_8cpp"/>
+      </node>
+      <node id="70">
+        <label>src/map/mapfield.cpp</label>
+        <link refid="mapfield_8cpp"/>
+      </node>
+      <node id="104">
+        <label>src/particle/graphicanimation.cpp</label>
+        <link refid="graphicanimation_8cpp"/>
+      </node>
+      <node id="51">
+        <label>src/animation/animation_spawnunit.cpp</label>
+        <link refid="animation__spawnunit_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/include/stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="161">
+        <label>src/unit/build.cpp</label>
+        <link refid="build_8cpp"/>
+      </node>
+      <node id="190">
+        <label>metaserver/netdriver.cpp</label>
+        <link refid="netdriver_8cpp"/>
+      </node>
+      <node id="117">
+        <label>src/sound/unitsound.cpp</label>
+        <link refid="unitsound_8cpp"/>
+      </node>
+      <node id="89">
+        <label>src/missile/missile_pointtopointcycleonce.cpp</label>
+        <link refid="missile__pointtopointcycleonce_8cpp"/>
+      </node>
+      <node id="91">
+        <label>src/missile/missile_straightfly.cpp</label>
+        <link refid="missile__straightfly_8cpp"/>
+      </node>
+      <node id="55">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/action/action_defend.cpp</label>
+        <link refid="action__defend_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/guichan/widgets/textfield.cpp</label>
+        <link refid="textfield_8cpp"/>
+      </node>
+      <node id="175">
+        <label>src/video/cursor.cpp</label>
+        <link refid="cursor_8cpp"/>
+      </node>
+      <node id="107">
+        <label>src/particle/smokeparticle.cpp</label>
+        <link refid="smokeparticle_8cpp"/>
+      </node>
+      <node id="57">
+        <label>src/editor/edmap.cpp</label>
+        <link refid="edmap_8cpp"/>
+      </node>
+      <node id="82">
+        <label>src/missile/missile_hit.cpp</label>
+        <link refid="missile__hit_8cpp"/>
+      </node>
+      <node id="179">
+        <label>src/video/mng.cpp</label>
+        <link refid="mng_8cpp"/>
+      </node>
+      <node id="97">
+        <label>src/network/net_lowlevel.cpp</label>
+        <link refid="net__lowlevel_8cpp"/>
+      </node>
+      <node id="180">
+        <label>src/video/movie.cpp</label>
+        <link refid="movie_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/action/action_unload.cpp</label>
+        <link refid="action__unload_8cpp"/>
+      </node>
+      <node id="53">
+        <label>src/animation/animation_wait.cpp</label>
+        <link refid="animation__wait_8cpp"/>
+      </node>
+      <node id="79">
+        <label>src/missile/missile_deathcoil.cpp</label>
+        <link refid="missile__deathcoil_8cpp"/>
+      </node>
+      <node id="162">
+        <label>src/unit/depend.cpp</label>
+        <link refid="depend_8cpp"/>
+      </node>
+      <node id="81">
+        <label>src/missile/missile_flameshield.cpp</label>
+        <link refid="missile__flameshield_8cpp"/>
+      </node>
+      <node id="115">
+        <label>src/sound/sound_id.cpp</label>
+        <link refid="sound__id_8cpp"/>
+      </node>
+      <node id="42">
+        <label>src/animation/animation_randomgoto.cpp</label>
+        <link refid="animation__randomgoto_8cpp"/>
+      </node>
+      <node id="173">
+        <label>src/unit/upgrade.cpp</label>
+        <link refid="upgrade_8cpp"/>
+      </node>
+      <node id="88">
+        <label>src/missile/missile_pointtopointbounce.cpp</label>
+        <link refid="missile__pointtopointbounce_8cpp"/>
+      </node>
+      <node id="73">
+        <label>src/map/script_tileset.cpp</label>
+        <link refid="script__tileset_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="174">
+        <label>src/video/color.cpp</label>
+        <link refid="video_2color_8cpp"/>
+      </node>
+      <node id="144">
+        <label>src/stratagus/title.cpp</label>
+        <link refid="title_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/action/action_board.cpp</label>
+        <link refid="action__board_8cpp"/>
+      </node>
+      <node id="168">
+        <label>src/unit/unit_find.cpp</label>
+        <link refid="unit__find_8cpp"/>
+      </node>
+      <node id="171">
+        <label>src/unit/unitptr.cpp</label>
+        <link refid="unitptr_8cpp"/>
+      </node>
+      <node id="86">
+        <label>src/missile/missile_pointotpointwithhit.cpp</label>
+        <link refid="missile__pointotpointwithhit_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/action/action_built.cpp</label>
+        <link refid="action__built_8cpp"/>
+      </node>
+      <node id="178">
+        <label>src/video/linedraw.cpp</label>
+        <link refid="linedraw_8cpp"/>
+      </node>
+      <node id="183">
+        <label>src/video/shaders.cpp</label>
+        <link refid="shaders_8cpp"/>
+      </node>
+      <node id="145">
+        <label>src/stratagus/translate.cpp</label>
+        <link refid="translate_8cpp"/>
+      </node>
+      <node id="177">
+        <label>src/video/graphic.cpp</label>
+        <link refid="graphic_8cpp"/>
+      </node>
+      <node id="38">
+        <label>src/animation/animation_ifvar.cpp</label>
+        <link refid="animation__ifvar_8cpp"/>
+      </node>
+      <node id="134">
+        <label>src/stratagus/iolib.cpp</label>
+        <link refid="iolib_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="123">
+        <label>src/spell/spell_capture.cpp</label>
+        <link refid="spell__capture_8cpp"/>
+      </node>
+      <node id="43">
+        <label>src/animation/animation_randomrotate.cpp</label>
+        <link refid="animation__randomrotate_8cpp"/>
+      </node>
+      <node id="106">
+        <label>src/particle/radialparticle.cpp</label>
+        <link refid="radialparticle_8cpp"/>
+      </node>
+      <node id="61">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+      <node id="96">
+        <label>src/network/commands.cpp</label>
+        <link refid="commands_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/action/command.cpp</label>
+        <link refid="command_8cpp"/>
+      </node>
+      <node id="135">
+        <label>src/stratagus/luacallback.cpp</label>
+        <link refid="luacallback_8cpp"/>
+      </node>
+      <node id="172">
+        <label>src/unit/unittype.cpp</label>
+        <link refid="unittype_8cpp"/>
+      </node>
+      <node id="118">
+        <label>src/spell/script_spell.cpp</label>
+        <link refid="script__spell_8cpp"/>
+      </node>
+      <node id="92">
+        <label>src/missile/missile_tracer.cpp</label>
+        <link refid="missile__tracer_8cpp"/>
+      </node>
+      <node id="127">
+        <label>src/spell/spell_spawnmissile.cpp</label>
+        <link refid="spell__spawnmissile_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/action/action_die.cpp</label>
+        <link refid="action__die_8cpp"/>
+      </node>
+      <node id="62">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+      <node id="119">
+        <label>src/spell/spell_adjustvariable.cpp</label>
+        <link refid="spell__adjustvariable_8cpp"/>
+      </node>
+      <node id="126">
+        <label>src/spell/spell_polymorph.cpp</label>
+        <link refid="spell__polymorph_8cpp"/>
+      </node>
+      <node id="47">
+        <label>src/animation/animation_setplayervar.cpp</label>
+        <link refid="animation__setplayervar_8cpp"/>
+      </node>
+      <node id="54">
+        <label>src/beos/beos.c</label>
+        <link refid="beos_8c"/>
+      </node>
+      <node id="37">
+        <label>src/animation/animation_goto.cpp</label>
+        <link refid="animation__goto_8cpp"/>
+      </node>
+      <node id="84">
+        <label>src/missile/missile_none.cpp</label>
+        <link refid="missile__none_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>util.h - General utilities.</header>
+      <memberdef kind="define" id="util_8h_1a3b0962f967d51c4427fff94cb7f4d07f" prot="public" static="no">
+        <name>_TRUNCATE</name>
+        <initializer>((size_t)-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="88" column="9" bodyfile="src/include/util.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="util_8h_1a46a037236862ac1a534efbe605c10f42" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int errno_t</definition>
+        <argsstring></argsstring>
+        <name>errno_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="92" column="13" bodyfile="src/include/util.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8h_1a9f57699911066a5ea61011010f7828af" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned SyncRandSeed</definition>
+        <argsstring></argsstring>
+        <name>SyncRandSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="45" column="17" bodyfile="src/stratagus/util.cpp" bodystart="58" bodyend="-1" declfile="src/include/util.h" declline="45" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8h_1a30f4b713169e4fdba52893a2492f191b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FileChecksums</definition>
+        <argsstring></argsstring>
+        <name>FileChecksums</name>
+        <briefdescription>
+<para>Sync random seed value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sync random seed value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="46" column="17" bodyfile="src/stratagus/util.cpp" bodystart="59" bodyend="-1" declfile="src/include/util.h" declline="46" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8h_1adb50a0eab9fed92fc3bfc7dfa4f2c410" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* optarg</definition>
+        <argsstring></argsstring>
+        <name>optarg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="124" column="13" bodyfile="src/stratagus/util.cpp" bodystart="318" bodyend="-1" declfile="src/include/util.h" declline="124" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8h_1ad5e1c16213bbee2d5e8cc363309f418c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optind</definition>
+        <argsstring></argsstring>
+        <name>optind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="125" column="12" bodyfile="src/stratagus/util.cpp" bodystart="316" bodyend="-1" declfile="src/include/util.h" declline="125" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8h_1ae30f05ee1e2e5652f174a35c7875d25e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int opterr</definition>
+        <argsstring></argsstring>
+        <name>opterr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="125" column="19" bodyfile="src/include/util.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8h_1a475b8db98445da73e5f62a1ef6324b95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optopt</definition>
+        <argsstring></argsstring>
+        <name>optopt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="125" column="26" bodyfile="src/include/util.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1ab8c1df28e23e39176edfdced0cd74bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitSyncRand</definition>
+        <argsstring>()</argsstring>
+        <name>InitSyncRand</name>
+        <briefdescription>
+<para>checksums of all loaded lua files </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Inititalize sync rand seed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="48" column="13" bodyfile="src/stratagus/util.cpp" bodystart="64" bodyend="67" declfile="src/include/util.h" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a294fe13ed3e38a9e7bafc3eed984816e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SyncRand</definition>
+        <argsstring>()</argsstring>
+        <name>SyncRand</name>
+        <briefdescription>
+<para>Initialize the syncron rand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronized random number.</para>
+<para><simplesect kind="note"><para>This random value must be same on all machines in network game. Very simple random generations, enough for us. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="49" column="12" bodyfile="src/stratagus/util.cpp" bodystart="75" bodyend="84" declfile="src/include/util.h" declline="49" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a038af6a956dff54b300f59d3d0785587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SyncRand</definition>
+        <argsstring>(int max)</argsstring>
+        <name>SyncRand</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Syncron rand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronized random number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max value of random number to return </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="50" column="12" bodyfile="src/stratagus/util.cpp" bodystart="91" bodyend="94" declfile="src/include/util.h" declline="50" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a5665d4c73acbcb626e49749b0e4ab366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyRand</definition>
+        <argsstring>()</argsstring>
+        <name>MyRand</name>
+        <briefdescription>
+<para>Syncron rand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>rand only used on this computer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="53" column="12" bodyfile="src/stratagus/util.cpp" bodystart="98" bodyend="101" declfile="src/include/util.h" declline="53" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1ab352f2879af6b516e5d30d5b9a9525d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long isqrt</definition>
+        <argsstring>(long num)</argsstring>
+        <name>isqrt</name>
+        <param>
+          <type>long</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Compute a square root using ints. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute a square root using ints</para>
+<para>Uses John Halleck&apos;s method, see <ulink url="http://www.cc.utah.edu/~nahaj/factoring/isqrt.legalize.c.html">http://www.cc.utah.edu/~nahaj/factoring/isqrt.legalize.c.html</ulink></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Calculate the square root of this number</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The integer square root. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="60" column="13" bodyfile="src/stratagus/util.cpp" bodystart="117" bodyend="153" declfile="src/include/util.h" declline="60" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a68f6866c1b898b4397b2d321ae7a749f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int square</definition>
+        <argsstring>(int v)</argsstring>
+        <name>square</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="62" column="12" bodyfile="src/include/util.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a907be153363468870f6361aa729d0c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void clamp</definition>
+        <argsstring>(T *value, T minValue, T maxValue)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>T *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="68" column="6" bodyfile="src/include/util.h" bodystart="68" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a5f2987959fe9e7617b166ef98bb8a690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t fletcher32</definition>
+        <argsstring>(const std::string &amp;content)</argsstring>
+        <name>fletcher32</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="79" column="17" bodyfile="src/stratagus/util.cpp" bodystart="156" bodyend="177" declfile="src/include/util.h" declline="79" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a9a1c6cc25e38ba5dc489380ddfa96acb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="util_8h_1a46a037236862ac1a534efbe605c10f42" kindref="member">errno_t</ref></type>
+        <definition>errno_t strcpy_s</definition>
+        <argsstring>(char *dst, size_t dstsize, const char *src)</argsstring>
+        <name>strcpy_s</name>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dstsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="96" column="16" bodyfile="src/stratagus/util.cpp" bodystart="184" bodyend="194" declfile="src/include/util.h" declline="96" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1acd0e1f2ddf443f0017ebe3129c6b38eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="util_8h_1a46a037236862ac1a534efbe605c10f42" kindref="member">errno_t</ref></type>
+        <definition>errno_t strncpy_s</definition>
+        <argsstring>(char *dst, size_t dstsize, const char *src, size_t count)</argsstring>
+        <name>strncpy_s</name>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dstsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="100" column="16" bodyfile="src/stratagus/util.cpp" bodystart="213" bodyend="238" declfile="src/include/util.h" declline="100" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1ae8e57af8291e08d30a69cab8a7ea9697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="util_8h_1a46a037236862ac1a534efbe605c10f42" kindref="member">errno_t</ref></type>
+        <definition>errno_t strcat_s</definition>
+        <argsstring>(char *dst, size_t dstsize, const char *src)</argsstring>
+        <name>strcat_s</name>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dstsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="104" column="16" bodyfile="src/stratagus/util.cpp" bodystart="242" bodyend="261" declfile="src/include/util.h" declline="104" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a062e25079eb0e0bbd8df29cf8ef7d538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* strcasestr</definition>
+        <argsstring>(const char *str, const char *substr)</argsstring>
+        <name>strcasestr</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>substr</declname>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+<para>case insensitive strstr </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Case insensitive version of strstr</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to search in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Substring to search for</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to first occurrence of b or NULL if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="109" column="13" bodyfile="src/stratagus/util.cpp" bodystart="273" bodyend="294" declfile="src/include/util.h" declline="109" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a6dfc8c38276f4801119bae9cb5f6a859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t strnlen</definition>
+        <argsstring>(const char *str, size_t strsize)</argsstring>
+        <name>strnlen</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>strsize</declname>
+        </param>
+        <briefdescription>
+<para>determine length of a fixed-length string </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="114" column="15" bodyfile="src/stratagus/util.cpp" bodystart="198" bodyend="209" declfile="src/include/util.h" declline="114" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a5ffa4c677fc71cecd94f140ef9db624c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getopt</definition>
+        <argsstring>(int argc, char *const argv[], const char *optstring)</argsstring>
+        <name>getopt</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>optstring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="126" column="5" declfile="src/include/util.h" declline="126" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a62c0228a5dd2abb7bc91f29c88dec5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetClipboard</definition>
+        <argsstring>(std::string &amp;str)</argsstring>
+        <name>GetClipboard</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Paste text from the clipboard </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="135" column="5" bodyfile="src/stratagus/util.cpp" bodystart="382" bodyend="392" declfile="src/include/util.h" declline="135" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a1a532b81815666c3cf143c21e4a5c9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UTF8GetNext</definition>
+        <argsstring>(const std::string &amp;text, int curpos)</argsstring>
+        <name>UTF8GetNext</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>curpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="141" column="5" bodyfile="src/stratagus/util.cpp" bodystart="417" bodyend="434" declfile="src/include/util.h" declline="141" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8h_1a4ac1eaa21f2fbfe2953fce0cf3786910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UTF8GetPrev</definition>
+        <argsstring>(const std::string &amp;text, int curpos)</argsstring>
+        <name>UTF8GetPrev</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>curpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/util.h" line="142" column="5" bodyfile="src/stratagus/util.cpp" bodystart="399" bodyend="415" declfile="src/include/util.h" declline="142" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/util.h"/>
+  </compounddef>
+</doxygen>

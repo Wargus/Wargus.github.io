@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCEditor" kind="class" language="C++" prot="public">
+    <compoundname>CEditor</compoundname>
+    <includes refid="editor_8h" local="no">editor.h</includes>
+      <sectiondef kind="user-defined">
+      <header>editloop.cpp - The editor main loop.</header>
+      <memberdef kind="function" id="classCEditor_1a0b1d14f7190c834621d707e60c561fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CEditor::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create editor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="68" column="6" bodyfile="src/editor/editloop.cpp" bodystart="1635" bodyend="1733"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>editor.cpp - Editor functions.</header>
+      <memberdef kind="function" id="classCEditor_1ae2556de0d91d776da58057417acbafc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CEditor::CEditor</definition>
+        <argsstring>()</argsstring>
+        <name>CEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="65" column="1" bodyfile="src/editor/editor.cpp" bodystart="76" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>edmap.cpp - Editor map functions.</header>
+      <memberdef kind="function" id="classCEditor_1a8be2b6adddea6c7f433dfa25b1fa84f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CEditor::CreateRandomMap</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateRandomMap</name>
+        <briefdescription>
+<para>Make random map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a random map </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="70" column="6" bodyfile="src/editor/edmap.cpp" bodystart="397" bodyend="413"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCEditor_1a9c4df2fef1189730c39c03f61747b7b4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; CEditor::UnitTypes</definition>
+        <argsstring></argsstring>
+        <name>UnitTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="73" column="13" bodyfile="src/include/editor.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1af6eb1368b5fb6992cf321397324258c3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt;</type>
+        <definition>std::vector&lt;const CUnitType *&gt; CEditor::ShownUnitTypes</definition>
+        <argsstring></argsstring>
+        <name>ShownUnitTypes</name>
+        <briefdescription>
+<para>Sorted editor unit-type table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="74" column="13" bodyfile="src/include/editor.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a5494eb44fd92751516febc0c3079140e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; CEditor::ShownTileTypes</definition>
+        <argsstring></argsstring>
+        <name>ShownTileTypes</name>
+        <briefdescription>
+<para>Shown editor unit-type table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="75" column="13" bodyfile="src/include/editor.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1ae0d0432a49d4adedf66d479554c3aafa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CEditor::TerrainEditable</definition>
+        <argsstring></argsstring>
+        <name>TerrainEditable</name>
+        <briefdescription>
+<para>Shown editor tile-type table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="77" column="6" bodyfile="src/include/editor.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a144bf89b753f4223b6f312b89e092939" prot="public" static="no" mutable="no">
+        <type><ref refid="classIconConfig" kindref="compound">IconConfig</ref></type>
+        <definition>IconConfig CEditor::Select</definition>
+        <argsstring></argsstring>
+        <name>Select</name>
+        <briefdescription>
+<para>Is the terrain editable ? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="78" column="12" bodyfile="src/include/editor.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a093aa304e48da7c6844d45f14ae6f03e" prot="public" static="no" mutable="no">
+        <type><ref refid="classIconConfig" kindref="compound">IconConfig</ref></type>
+        <definition>IconConfig CEditor::Units</definition>
+        <argsstring></argsstring>
+        <name>Units</name>
+        <briefdescription>
+<para>Editor&apos;s select icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="79" column="12" bodyfile="src/include/editor.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a07d9e17d2300c1f9a31609d098b6176c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CEditor::StartUnitName</definition>
+        <argsstring></argsstring>
+        <name>StartUnitName</name>
+        <briefdescription>
+<para>Editor&apos;s units icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="80" column="13" bodyfile="src/include/editor.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a061f22da2d0250180e3a907313fbf742" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>const CUnitType* CEditor::StartUnit</definition>
+        <argsstring></argsstring>
+        <name>StartUnit</name>
+        <briefdescription>
+<para>name of the Unit used to display the start location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="81" column="17" bodyfile="src/include/editor.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a0ba0e8cff09d8ea089116a71a702de78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::UnitIndex</definition>
+        <argsstring></argsstring>
+        <name>UnitIndex</name>
+        <briefdescription>
+<para>Unit used to display the start location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="83" column="5" bodyfile="src/include/editor.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1aab002d22efad3e8b1df104eda2b98030" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::CursorUnitIndex</definition>
+        <argsstring></argsstring>
+        <name>CursorUnitIndex</name>
+        <briefdescription>
+<para>Unit icon draw index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="84" column="5" bodyfile="src/include/editor.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a98a98d9fd522675ef677a2ea747c0ca2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::SelectedUnitIndex</definition>
+        <argsstring></argsstring>
+        <name>SelectedUnitIndex</name>
+        <briefdescription>
+<para>Unit icon under cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="85" column="5" bodyfile="src/include/editor.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a7383c52623eb3b7591cc34fd86a4b93e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::TileIndex</definition>
+        <argsstring></argsstring>
+        <name>TileIndex</name>
+        <briefdescription>
+<para>Unit type to draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="87" column="5" bodyfile="src/include/editor.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a2b28307cc4b03041a50c5828457f33b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::CursorTileIndex</definition>
+        <argsstring></argsstring>
+        <name>CursorTileIndex</name>
+        <briefdescription>
+<para>tile icon draw index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="88" column="5" bodyfile="src/include/editor.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a9eead2649364dc31ba8c8aaa8becdce9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::SelectedTileIndex</definition>
+        <argsstring></argsstring>
+        <name>SelectedTileIndex</name>
+        <briefdescription>
+<para>tile icon under cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="89" column="5" bodyfile="src/include/editor.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1ad59ffad78e37c5a591d1751d829f6a74" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::CursorPlayer</definition>
+        <argsstring></argsstring>
+        <name>CursorPlayer</name>
+        <briefdescription>
+<para>tile type to draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="91" column="5" bodyfile="src/include/editor.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a65750126c2c5c385b7814d2273a56163" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::SelectedPlayer</definition>
+        <argsstring></argsstring>
+        <name>SelectedPlayer</name>
+        <briefdescription>
+<para>Player under the cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="92" column="5" bodyfile="src/include/editor.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1a0958c90a58394a5fef9dab70d905beac" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CEditor::MapLoaded</definition>
+        <argsstring></argsstring>
+        <name>MapLoaded</name>
+        <briefdescription>
+<para>Player selected for draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="94" column="6" bodyfile="src/include/editor.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1acdf1970bfc05a4b5f9a1b17a4eb0b494" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CEditor::WriteCompressedMaps</definition>
+        <argsstring></argsstring>
+        <name>WriteCompressedMaps</name>
+        <briefdescription>
+<para>Map loaded in editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="95" column="6" bodyfile="src/include/editor.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1aec83df8caf52095aa3aa6bf3f0520693" prot="public" static="no" mutable="no">
+        <type><ref refid="editor_8h_1a3018c3a1f27619abe071f278f237d51a" kindref="member">EditorRunningType</ref></type>
+        <definition>EditorRunningType CEditor::Running</definition>
+        <argsstring></argsstring>
+        <name>Running</name>
+        <briefdescription>
+<para>Use compression when saving. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="97" column="19" bodyfile="src/include/editor.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1ad4156115c1f798ae768863619375335d" prot="public" static="no" mutable="no">
+        <type><ref refid="editor_8h_1a9274da3b9d54a86b9ecd2d2edfd4b49f" kindref="member">EditorStateType</ref></type>
+        <definition>EditorStateType CEditor::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+<para>Editor is running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="99" column="17" bodyfile="src/include/editor.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1aed87f816368c87cf4a553c4dac7458f8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::PopUpX</definition>
+        <argsstring></argsstring>
+        <name>PopUpX</name>
+        <briefdescription>
+<para>Current editor state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="101" column="5" bodyfile="src/include/editor.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCEditor_1aa064e511a6424cba1ef6f6d893d62618" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CEditor::PopUpY</definition>
+        <argsstring></argsstring>
+        <name>PopUpY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="102" column="5" bodyfile="src/include/editor.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCEditor_1ab5533e121b36d62f7b96939675383c88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CEditor::~CEditor</definition>
+        <argsstring>()</argsstring>
+        <name>~CEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/editor.h" line="66" column="1" bodyfile="src/include/editor.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>CSound</label>
+        <link refid="classCSound"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Second</edgelabel>
+          <edgelabel>First</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>CIcon</label>
+        <link refid="classCIcon"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>GScale</edgelabel>
+          <edgelabel>G</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>PathFinderOutput</label>
+        <link refid="classPathFinderOutput"/>
+      </node>
+      <node id="28">
+        <label>NumberDesc</label>
+        <link refid="structNumberDesc"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>binOp</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>String</edgelabel>
+          <edgelabel>DataType</edgelabel>
+          <edgelabel>ResType</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Cond</edgelabel>
+          <edgelabel>BFalse</edgelabel>
+          <edgelabel>N</edgelabel>
+          <edgelabel>BTrue</edgelabel>
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>CPlayerColorGraphic</label>
+        <link refid="classCPlayerColorGraphic"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CConstruction</label>
+        <link refid="classCConstruction"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>File</edgelabel>
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ShadowSprite</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Frames</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CUnitSound</label>
+        <link refid="classCUnitSound"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Dead</edgelabel>
+          <edgelabel>Acknowledgement</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>WorkComplete</edgelabel>
+          <edgelabel>Selected</edgelabel>
+          <edgelabel>Build</edgelabel>
+          <edgelabel>Repair</edgelabel>
+          <edgelabel>Ready</edgelabel>
+          <edgelabel>Help</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>PathFinderData</label>
+        <link refid="classPathFinderData"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ResourceInfo</label>
+        <link refid="classResourceInfo"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>SpriteWhenLoaded</edgelabel>
+          <edgelabel>SpriteWhenEmpty</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>FileWhenEmpty</edgelabel>
+          <edgelabel>FileWhenLoaded</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>AiForceManager</label>
+        <link refid="classAiForceManager"/>
+      </node>
+      <node id="24">
+        <label>CVariable</label>
+        <link refid="classCVariable"/>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="34">
+        <label>Vec2T&lt; short int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="29">
+        <label>BinOp</label>
+        <link refid="structBinOp"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Left</edgelabel>
+          <edgelabel>Right</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gcn::ImageLoader</label>
+        <link refid="classgcn_1_1ImageLoader"/>
+      </node>
+      <node id="43">
+        <label>CUnit::_unit_anim_</label>
+        <link refid="structCUnit_1_1__unit__anim__"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>CurrAnim</edgelabel>
+          <edgelabel>Anim</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>MissileType</label>
+        <link refid="classMissileType"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ImpactSound</edgelabel>
+          <edgelabel>FiredSound</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>OnImpact</edgelabel>
+          <edgelabel>SmokeParticle</edgelabel>
+          <edgelabel>ImpactParticle</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Damage</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>G</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>Smoke</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gcn::Image</label>
+        <link refid="classgcn_1_1Image"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mImageLoader</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>CGraphic</label>
+        <link refid="classCGraphic"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>frameFlip_map</edgelabel>
+          <edgelabel>frame_map</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HashFile</edgelabel>
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>CUnit::CUnitManagerData</label>
+        <link refid="classCUnit_1_1CUnitManagerData"/>
+      </node>
+      <node id="5">
+        <label>Mng</label>
+        <link refid="classMng"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>UnitDesc</label>
+        <link refid="structUnitDesc"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>AUnit</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>CPlayer</label>
+        <link refid="classCPlayer"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>Allow</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>UnitColors</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>UpgradeTimers</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Ai</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>StartPos</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>AiName</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>CAllow</label>
+        <link refid="classCAllow"/>
+      </node>
+      <node id="32">
+        <label>CUnit</label>
+        <link refid="classCUnit"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>Goal</edgelabel>
+          <edgelabel>Workers</edgelabel>
+          <edgelabel>NextContained</edgelabel>
+          <edgelabel>UnitInside</edgelabel>
+          <edgelabel>PrevContained</edgelabel>
+          <edgelabel>Container</edgelabel>
+          <edgelabel>NextWorker</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>Seen</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>Variable</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>RescuedFrom</edgelabel>
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>Colors</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>tilePos</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>NewOrder</edgelabel>
+          <edgelabel>SavedOrder</edgelabel>
+          <edgelabel>CriticalOrder</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>WaitBackup</edgelabel>
+          <edgelabel>Anim</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>pathFinderData</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Stats</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>UnitManagerData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CUnitType</label>
+        <link refid="classCUnitType"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>NeutralMinimapColorRGB</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CorpseType</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Portrait</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>MapSound</edgelabel>
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Construction</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Icon</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>File</edgelabel>
+          <edgelabel>Name</edgelabel>
+          <edgelabel>CorpseName</edgelabel>
+          <edgelabel>Ident</edgelabel>
+          <edgelabel>DamageType</edgelabel>
+          <edgelabel>ShadowFile</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>ResInfo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>OnHit</edgelabel>
+          <edgelabel>OnReady</edgelabel>
+          <edgelabel>OnEachCycle</edgelabel>
+          <edgelabel>TeleportEffectOut</edgelabel>
+          <edgelabel>TeleportEffectIn</edgelabel>
+          <edgelabel>OnEachSecond</edgelabel>
+          <edgelabel>OnInit</edgelabel>
+          <edgelabel>DeathExplosion</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>Animations</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ShadowSprite</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>DefaultStat</edgelabel>
+          <edgelabel>MapDefaultStat</edgelabel>
+          <edgelabel>Stats</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>MissileOffsets</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>Missile</edgelabel>
+          <edgelabel>Impact</edgelabel>
+          <edgelabel>Explosion</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>CAnimations</label>
+        <link refid="classCAnimations"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>Move</edgelabel>
+          <edgelabel>Death</edgelabel>
+          <edgelabel>Train</edgelabel>
+          <edgelabel>Still</edgelabel>
+          <edgelabel>RangedAttack</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>SpellCast</edgelabel>
+          <edgelabel>Upgrade</edgelabel>
+          <edgelabel>Research</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CColor</label>
+        <link refid="classCColor"/>
+      </node>
+      <node id="17">
+        <label>IconConfig</label>
+        <link refid="classIconConfig"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Icon</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>CAiType</label>
+        <link refid="classCAiType"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Race</edgelabel>
+          <edgelabel>Class</edgelabel>
+          <edgelabel>Script</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>CGraphic::frame_pos_t</label>
+      </node>
+      <node id="38">
+        <label>CUpgradeTimers</label>
+        <link refid="classCUpgradeTimers"/>
+      </node>
+      <node id="39">
+        <label>PlayerAi</label>
+        <link refid="classPlayerAi"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>AiType</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>Force</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Script</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>CUnitStats</label>
+        <link refid="classCUnitStats"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>Variables</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CEditor</label>
+        <link refid="classCEditor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>StartUnit</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Units</edgelabel>
+          <edgelabel>Select</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>StartUnitName</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Vec2T&lt; int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="46">
+        <label>PathFinderInput</label>
+        <link refid="classPathFinderInput"/>
+      </node>
+      <node id="37">
+        <label>CUnitColors</label>
+        <link refid="classCUnitColors"/>
+      </node>
+      <node id="26">
+        <label>MissileConfig</label>
+        <link refid="classMissileConfig"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Missile</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>CUnit::_seen_stuff_</label>
+        <link refid="structCUnit_1_1__seen__stuff__"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>tilePos</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>CFrame</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>CAnimation</label>
+        <link refid="classCAnimation"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>CFont</label>
+        <link refid="classCFont"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>CConstructionFrame</label>
+        <link refid="classCConstructionFrame"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CUnitType::_portrait_</label>
+        <link refid="structCUnitType_1_1__portrait__"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Mngs</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SoundConfig</label>
+        <link refid="classSoundConfig"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="42">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+      <node id="20">
+        <label>LuaCallback</label>
+        <link refid="classLuaCallback"/>
+      </node>
+      <node id="30">
+        <label>StringDesc</label>
+        <link refid="structStringDesc"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>String</edgelabel>
+          <edgelabel>BFalse</edgelabel>
+          <edgelabel>Strings</edgelabel>
+          <edgelabel>BTrue</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Cond</edgelabel>
+          <edgelabel>MaxLen</edgelabel>
+          <edgelabel>Line</edgelabel>
+          <edgelabel>PlayerName</edgelabel>
+          <edgelabel>Begin</edgelabel>
+          <edgelabel>Number</edgelabel>
+          <edgelabel>End</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/editor.h" line="63" column="1" bodyfile="src/include/editor.h" bodystart="62" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classCEditor_1ae2556de0d91d776da58057417acbafc1" prot="public" virt="non-virtual"><scope>CEditor</scope><name>CEditor</name></member>
+      <member refid="classCEditor_1a8be2b6adddea6c7f433dfa25b1fa84f2" prot="public" virt="non-virtual"><scope>CEditor</scope><name>CreateRandomMap</name></member>
+      <member refid="classCEditor_1ad59ffad78e37c5a591d1751d829f6a74" prot="public" virt="non-virtual"><scope>CEditor</scope><name>CursorPlayer</name></member>
+      <member refid="classCEditor_1a2b28307cc4b03041a50c5828457f33b8" prot="public" virt="non-virtual"><scope>CEditor</scope><name>CursorTileIndex</name></member>
+      <member refid="classCEditor_1aab002d22efad3e8b1df104eda2b98030" prot="public" virt="non-virtual"><scope>CEditor</scope><name>CursorUnitIndex</name></member>
+      <member refid="classCEditor_1a0b1d14f7190c834621d707e60c561fb1" prot="public" virt="non-virtual"><scope>CEditor</scope><name>Init</name></member>
+      <member refid="classCEditor_1a0958c90a58394a5fef9dab70d905beac" prot="public" virt="non-virtual"><scope>CEditor</scope><name>MapLoaded</name></member>
+      <member refid="classCEditor_1aed87f816368c87cf4a553c4dac7458f8" prot="public" virt="non-virtual"><scope>CEditor</scope><name>PopUpX</name></member>
+      <member refid="classCEditor_1aa064e511a6424cba1ef6f6d893d62618" prot="public" virt="non-virtual"><scope>CEditor</scope><name>PopUpY</name></member>
+      <member refid="classCEditor_1aec83df8caf52095aa3aa6bf3f0520693" prot="public" virt="non-virtual"><scope>CEditor</scope><name>Running</name></member>
+      <member refid="classCEditor_1a144bf89b753f4223b6f312b89e092939" prot="public" virt="non-virtual"><scope>CEditor</scope><name>Select</name></member>
+      <member refid="classCEditor_1a65750126c2c5c385b7814d2273a56163" prot="public" virt="non-virtual"><scope>CEditor</scope><name>SelectedPlayer</name></member>
+      <member refid="classCEditor_1a9eead2649364dc31ba8c8aaa8becdce9" prot="public" virt="non-virtual"><scope>CEditor</scope><name>SelectedTileIndex</name></member>
+      <member refid="classCEditor_1a98a98d9fd522675ef677a2ea747c0ca2" prot="public" virt="non-virtual"><scope>CEditor</scope><name>SelectedUnitIndex</name></member>
+      <member refid="classCEditor_1a5494eb44fd92751516febc0c3079140e" prot="public" virt="non-virtual"><scope>CEditor</scope><name>ShownTileTypes</name></member>
+      <member refid="classCEditor_1af6eb1368b5fb6992cf321397324258c3" prot="public" virt="non-virtual"><scope>CEditor</scope><name>ShownUnitTypes</name></member>
+      <member refid="classCEditor_1a061f22da2d0250180e3a907313fbf742" prot="public" virt="non-virtual"><scope>CEditor</scope><name>StartUnit</name></member>
+      <member refid="classCEditor_1a07d9e17d2300c1f9a31609d098b6176c" prot="public" virt="non-virtual"><scope>CEditor</scope><name>StartUnitName</name></member>
+      <member refid="classCEditor_1ad4156115c1f798ae768863619375335d" prot="public" virt="non-virtual"><scope>CEditor</scope><name>State</name></member>
+      <member refid="classCEditor_1ae0d0432a49d4adedf66d479554c3aafa" prot="public" virt="non-virtual"><scope>CEditor</scope><name>TerrainEditable</name></member>
+      <member refid="classCEditor_1a7383c52623eb3b7591cc34fd86a4b93e" prot="public" virt="non-virtual"><scope>CEditor</scope><name>TileIndex</name></member>
+      <member refid="classCEditor_1a0ba0e8cff09d8ea089116a71a702de78" prot="public" virt="non-virtual"><scope>CEditor</scope><name>UnitIndex</name></member>
+      <member refid="classCEditor_1a093aa304e48da7c6844d45f14ae6f03e" prot="public" virt="non-virtual"><scope>CEditor</scope><name>Units</name></member>
+      <member refid="classCEditor_1a9c4df2fef1189730c39c03f61747b7b4" prot="public" virt="non-virtual"><scope>CEditor</scope><name>UnitTypes</name></member>
+      <member refid="classCEditor_1acdf1970bfc05a4b5f9a1b17a4eb0b494" prot="public" virt="non-virtual"><scope>CEditor</scope><name>WriteCompressedMaps</name></member>
+      <member refid="classCEditor_1ab5533e121b36d62f7b96939675383c88" prot="public" virt="non-virtual"><scope>CEditor</scope><name>~CEditor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

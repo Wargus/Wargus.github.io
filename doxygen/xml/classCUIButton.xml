@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCUIButton" kind="class" language="C++" prot="public">
+    <compoundname>CUIButton</compoundname>
+    <includes refid="ui_8h" local="no">ui.h</includes>
+      <sectiondef kind="user-defined">
+      <header>mouse.cpp - The mouse handling.</header>
+      <memberdef kind="function" id="classCUIButton_1a307329f8b6e103a167cd46a67e02053c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUIButton::Contains</definition>
+        <argsstring>(const PixelPos &amp;screenPos) const</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the mouse is on a button</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>screen coordinate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if mouse is on the button, False otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="132" column="6" bodyfile="src/ui/mouse.cpp" bodystart="656" bodyend="662"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCUIButton_1ae328e92c87d498e38ceb5eec9c3b2c4e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUIButton::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="135" column="5" bodyfile="src/include/ui.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUIButton_1a006e5a0f1e061cc305fc620c5f61ed1d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUIButton::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+<para>x coordinate on the screen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="136" column="5" bodyfile="src/include/ui.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUIButton_1af0e8d0cfd2f8376c580c02e677f83a81" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CUIButton::Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+<para>y coordinate on the screen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="141" column="13" bodyfile="src/include/ui.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUIButton_1a5caab9b67d36d8c7a4ea2418a8bfe998" prot="public" static="no" mutable="no">
+        <type><ref refid="classButtonStyle" kindref="compound">ButtonStyle</ref> *</type>
+        <definition>ButtonStyle* CUIButton::Style</definition>
+        <argsstring></argsstring>
+        <name>Style</name>
+        <briefdescription>
+<para>button text </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="142" column="13" bodyfile="src/include/ui.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUIButton_1a6c7ffb7b3daa85d69ce048b61542b6c0" prot="public" static="no" mutable="no">
+        <type><ref refid="classLuaActionListener" kindref="compound">LuaActionListener</ref> *</type>
+        <definition>LuaActionListener* CUIButton::Callback</definition>
+        <argsstring></argsstring>
+        <name>Callback</name>
+        <briefdescription>
+<para>button style </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="143" column="19" bodyfile="src/include/ui.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCUIButton_1ae3b924a04b25735e7dce07b4d8828024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CUIButton::CUIButton</definition>
+        <argsstring>()</argsstring>
+        <name>CUIButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="127" column="1" bodyfile="src/include/ui.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUIButton_1ada80caa7e74aa2077b33789b8e4d5823" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CUIButton::~CUIButton</definition>
+        <argsstring>()</argsstring>
+        <name>~CUIButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui.h" line="130" column="1" bodyfile="src/include/ui.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>buttons on screen themselves </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>ButtonStyleProperties</label>
+        <link refid="classButtonStyleProperties"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>BorderColorRGB</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TextReverseColor</edgelabel>
+          <edgelabel>TextNormalColor</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>TextPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>gcn::ImageLoader</label>
+        <link refid="classgcn_1_1ImageLoader"/>
+      </node>
+      <node id="11">
+        <label>gcn::Image</label>
+        <link refid="classgcn_1_1Image"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mImageLoader</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CGraphic</label>
+        <link refid="classCGraphic"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>frameFlip_map</edgelabel>
+          <edgelabel>frame_map</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>HashFile</edgelabel>
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::ActionListener</label>
+        <link refid="classgcn_1_1ActionListener"/>
+      </node>
+      <node id="9">
+        <label>CColor</label>
+        <link refid="classCColor"/>
+      </node>
+      <node id="6">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="13">
+        <label>CGraphic::frame_pos_t</label>
+      </node>
+      <node id="7">
+        <label>ButtonStyle</label>
+        <link refid="classButtonStyle"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Clicked</edgelabel>
+          <edgelabel>Hover</edgelabel>
+          <edgelabel>Default</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TextReverseColor</edgelabel>
+          <edgelabel>TextNormalColor</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CUIButton</label>
+        <link refid="classCUIButton"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Text</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Callback</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gcn::KeyListener</label>
+        <link refid="classgcn_1_1KeyListener"/>
+      </node>
+      <node id="14">
+        <label>Vec2T&lt; int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="15">
+        <label>CFont</label>
+        <link refid="classCFont"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LuaActionListener</label>
+        <link refid="classLuaActionListener"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/ui.h" line="125" column="1" bodyfile="src/include/ui.h" bodystart="124" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classCUIButton_1a6c7ffb7b3daa85d69ce048b61542b6c0" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>Callback</name></member>
+      <member refid="classCUIButton_1a307329f8b6e103a167cd46a67e02053c" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>Contains</name></member>
+      <member refid="classCUIButton_1ae3b924a04b25735e7dce07b4d8828024" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>CUIButton</name></member>
+      <member refid="classCUIButton_1a5caab9b67d36d8c7a4ea2418a8bfe998" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>Style</name></member>
+      <member refid="classCUIButton_1af0e8d0cfd2f8376c580c02e677f83a81" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>Text</name></member>
+      <member refid="classCUIButton_1ae328e92c87d498e38ceb5eec9c3b2c4e" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>X</name></member>
+      <member refid="classCUIButton_1a006e5a0f1e061cc305fc620c5f61ed1d" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>Y</name></member>
+      <member refid="classCUIButton_1ada80caa7e74aa2077b33789b8e4d5823" prot="public" virt="non-virtual"><scope>CUIButton</scope><name>~CUIButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

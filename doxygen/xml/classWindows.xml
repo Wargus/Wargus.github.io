@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classWindows" kind="class" language="C++" prot="public">
+    <compoundname>Windows</compoundname>
+    <basecompoundref refid="classgcn_1_1Window" prot="public" virt="non-virtual">gcn::Window</basecompoundref>
+    <includes refid="widgets_8h" local="no">widgets.h</includes>
+      <sectiondef kind="user-defined">
+      <header>widgets.cpp - The stratagus ui widgets.</header>
+      <memberdef kind="function" id="classWindows_1a8efc43f1e87a4de739370121bd74d0e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Windows::Windows</definition>
+        <argsstring>(const std::string &amp;text, int width, int height)</argsstring>
+        <name>Windows</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+          <defname>title</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classWindows" kindref="compound">Windows</ref> constructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="254" column="1" bodyfile="src/ui/widgets.cpp" bodystart="1109" bodyend="1117"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindows_1a4183296281481560d481ea899c6a6b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Windows::add</definition>
+        <argsstring>(gcn::Widget *widget, int x, int y)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">gcn::Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a widget in the window.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the widget in the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the widget in the window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="255" column="6" bodyfile="src/ui/widgets.cpp" bodystart="1126" bodyend="1135"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindows_1af94dbdb53833b68263acc81d1f111a7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Windows::mouseMotion</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>mouseMotion</name>
+        <reimplements refid="classgcn_1_1Window_1aa0a7738afd5041786469e8a7786f45a0">mouseMotion</reimplements>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the window when it is dragged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate of the mouse relative to the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate of the mouse relative to the widndow.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Once dragged, without release the mouse, if you go virtually outside the container then go back, you have to wait the virtual cursor are in the container. It is because x, y argument refer to a virtual cursor :( </para>
+</simplesect>
+<simplesect kind="note"><para>An another thing is strange when the container is a &quot;scrollable&quot; ScrollArea with the cursor. The cursor can go outside the visual area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="257" column="14" bodyfile="src/ui/widgets.cpp" bodystart="1151" bodyend="1204"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindows_1ae088c47dc0ad6901f42252b2d3fcaf0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Windows::setBackgroundColor</definition>
+        <argsstring>(const gcn::Color &amp;color)</argsstring>
+        <name>setBackgroundColor</name>
+        <reimplements refid="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1">setBackgroundColor</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">gcn::Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set background color of the window.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="258" column="14" bodyfile="src/ui/widgets.cpp" bodystart="1211" bodyend="1215"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindows_1ac71426379cfa705e53fc0cf4e16b32ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Windows::setBaseColor</definition>
+        <argsstring>(const gcn::Color &amp;color)</argsstring>
+        <name>setBaseColor</name>
+        <reimplements refid="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941">setBaseColor</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">gcn::Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set base color of the windows.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="259" column="14" bodyfile="src/ui/widgets.cpp" bodystart="1222" bodyend="1226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWindows_1a7ee819b64d5f63d1ebee8fe70168cfe9" prot="private" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1ScrollArea" kindref="compound">gcn::ScrollArea</ref></type>
+        <definition>gcn::ScrollArea Windows::scroll</definition>
+        <argsstring></argsstring>
+        <name>scroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="261" column="17" bodyfile="src/include/widgets.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWindows_1a0858ada14ff477b38fb09e206f57fe2f" prot="private" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Container" kindref="compound">gcn::Container</ref></type>
+        <definition>gcn::Container Windows::container</definition>
+        <argsstring></argsstring>
+        <name>container</name>
+        <briefdescription>
+<para>To use scroll bar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="262" column="16" bodyfile="src/include/widgets.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWindows_1a6897d2e5e55cf35810b6f07ffbb8a234" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Windows::blockwholewindow</definition>
+        <argsstring></argsstring>
+        <name>blockwholewindow</name>
+        <briefdescription>
+<para>data container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="263" column="6" bodyfile="src/include/widgets.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Windows</label>
+        <link refid="classWindows"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="2">
+        <label>gcn::Window</label>
+        <link refid="classgcn_1_1Window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+      </node>
+      <node id="3">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Windows</label>
+        <link refid="classWindows"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="9">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="8">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="10">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::Window</label>
+        <link refid="classgcn_1_1Window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mContent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mCaption</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="3">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/widgets.h" line="252" column="1" bodyfile="src/include/widgets.h" bodystart="251" bodyend="265"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1Window_1ac033fcf3c22075f7e12737600abea510" prot="public" virt="virtual"><scope>Windows</scope><name>_announceDeath</name></member>
+      <member refid="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" virt="virtual"><scope>Windows</scope><name>_getFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" virt="virtual"><scope>Windows</scope><name>_keyInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" virt="virtual"><scope>Windows</scope><name>_mouseInMessage</name></member>
+      <member refid="classgcn_1_1Window_1aecb7f2381d48ab23e2ed7275ed86e7ab" prot="public" virt="virtual"><scope>Windows</scope><name>_mouseInputMessage</name></member>
+      <member refid="classgcn_1_1Window_1a7d31b40ae6e937ab97d0f0c691236b4f" prot="public" virt="virtual"><scope>Windows</scope><name>_mouseOutMessage</name></member>
+      <member refid="classgcn_1_1Window_1a16ed697f4881cc143b9fb9b41311029c" prot="public" virt="virtual"><scope>Windows</scope><name>_setFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" virt="virtual"><scope>Windows</scope><name>_setParent</name></member>
+      <member refid="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" virt="non-virtual"><scope>Windows</scope><name>ActionListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" virt="non-virtual"><scope>Windows</scope><name>ActionListenerList</name></member>
+      <member refid="classWindows_1a4183296281481560d481ea899c6a6b4a" prot="public" virt="non-virtual"><scope>Windows</scope><name>add</name></member>
+      <member refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" virt="virtual"><scope>Windows</scope><name>addActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" virt="virtual"><scope>Windows</scope><name>addKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" virt="virtual"><scope>Windows</scope><name>addMouseListener</name></member>
+      <member refid="classWindows_1a6897d2e5e55cf35810b6f07ffbb8a234" prot="private" virt="non-virtual"><scope>Windows</scope><name>blockwholewindow</name></member>
+      <member refid="classWindows_1a0858ada14ff477b38fb09e206f57fe2f" prot="private" virt="non-virtual"><scope>Windows</scope><name>container</name></member>
+      <member refid="classgcn_1_1Window_1a6d41ec33f8d4389510a9071067c919e5" prot="public" virt="virtual"><scope>Windows</scope><name>draw</name></member>
+      <member refid="classgcn_1_1Window_1ae5564549656568a7932811e0f4025113" prot="public" virt="virtual"><scope>Windows</scope><name>drawBorder</name></member>
+      <member refid="classgcn_1_1Window_1a407d95b4cc6df3aa55b5256e7bb032c4" prot="public" virt="virtual"><scope>Windows</scope><name>drawContent</name></member>
+      <member refid="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" virt="virtual"><scope>Windows</scope><name>fontChanged</name></member>
+      <member refid="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" virt="non-virtual"><scope>Windows</scope><name>generateAction</name></member>
+      <member refid="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" virt="virtual"><scope>Windows</scope><name>getAbsolutePosition</name></member>
+      <member refid="classgcn_1_1Window_1a3cc7d61a822615d870b0c9b05360008e" prot="public" virt="virtual"><scope>Windows</scope><name>getAlignment</name></member>
+      <member refid="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" virt="virtual"><scope>Windows</scope><name>getBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" virt="virtual"><scope>Windows</scope><name>getBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" virt="virtual"><scope>Windows</scope><name>getBorderSize</name></member>
+      <member refid="classgcn_1_1Window_1a1c806596839d96030bf3a22afccade96" prot="public" virt="virtual"><scope>Windows</scope><name>getCaption</name></member>
+      <member refid="classgcn_1_1Window_1a64f4fe27afbd54662813c798160e84d7" prot="public" virt="virtual"><scope>Windows</scope><name>getContent</name></member>
+      <member refid="classgcn_1_1Window_1ac6ae531310cf2d7ef0a0f90efeac6b48" prot="protected" virt="virtual"><scope>Windows</scope><name>getContentDimension</name></member>
+      <member refid="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" virt="virtual"><scope>Windows</scope><name>getDimension</name></member>
+      <member refid="classgcn_1_1Window_1af2266747f4a7e494621cace807df43a0" prot="public" virt="virtual"><scope>Windows</scope><name>getDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" virt="virtual"><scope>Windows</scope><name>getDisabledColor</name></member>
+      <member refid="classgcn_1_1Window_1abac9ab216628524c23ced000919f358a" prot="public" virt="virtual"><scope>Windows</scope><name>getDrawSize</name></member>
+      <member refid="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" virt="virtual"><scope>Windows</scope><name>getEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" virt="non-virtual"><scope>Windows</scope><name>getFont</name></member>
+      <member refid="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" virt="virtual"><scope>Windows</scope><name>getForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" virt="virtual"><scope>Windows</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" virt="virtual"><scope>Windows</scope><name>getHotKey</name></member>
+      <member refid="classgcn_1_1Window_1a0ffc2761b33a76a77cd0a48695310b8d" prot="public" virt="virtual"><scope>Windows</scope><name>getPadding</name></member>
+      <member refid="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" virt="virtual"><scope>Windows</scope><name>getParent</name></member>
+      <member refid="classgcn_1_1Window_1a2093c19a399a3235f17fd6465ac6ddc9" prot="public" virt="virtual"><scope>Windows</scope><name>getTitleBarHeight</name></member>
+      <member refid="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" virt="virtual"><scope>Windows</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" virt="virtual"><scope>Windows</scope><name>getX</name></member>
+      <member refid="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" virt="virtual"><scope>Windows</scope><name>getY</name></member>
+      <member refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" virt="virtual"><scope>Windows</scope><name>gotFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" virt="virtual"><scope>Windows</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" virt="virtual"><scope>Windows</scope><name>hasModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" virt="virtual"><scope>Windows</scope><name>hasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" virt="virtual"><scope>Windows</scope><name>hotKeyPress</name></member>
+      <member refid="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" virt="virtual"><scope>Windows</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" virt="virtual"><scope>Windows</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" virt="virtual"><scope>Windows</scope><name>isEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" virt="virtual"><scope>Windows</scope><name>isFocusable</name></member>
+      <member refid="classgcn_1_1Window_1a4e07c767196d0a92608a1a27b3add0c4" prot="public" virt="virtual"><scope>Windows</scope><name>isMovable</name></member>
+      <member refid="classgcn_1_1Window_1afd6f988ede4555fce9f1299c636c3886" prot="public" virt="virtual"><scope>Windows</scope><name>isOpaque</name></member>
+      <member refid="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" virt="virtual"><scope>Windows</scope><name>isTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" virt="virtual"><scope>Windows</scope><name>isTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" virt="virtual"><scope>Windows</scope><name>isVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" virt="non-virtual"><scope>Windows</scope><name>KeyListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" virt="non-virtual"><scope>Windows</scope><name>KeyListenerList</name></member>
+      <member refid="classgcn_1_1Window_1a29d960ea69715c51a8e62b9df70bc998" prot="public" virt="virtual"><scope>Windows</scope><name>logic</name></member>
+      <member refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" virt="virtual"><scope>Windows</scope><name>lostFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mActionListeners</name></member>
+      <member refid="classgcn_1_1Window_1a728a811c36548980d35e81126f5cb64f" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mAlignment</name></member>
+      <member refid="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mBorderSize</name></member>
+      <member refid="classgcn_1_1Window_1ae068b73ce72af093c8bd4c67ac94ec1b" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mCaption</name></member>
+      <member refid="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mClickButton</name></member>
+      <member refid="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mClickCount</name></member>
+      <member refid="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mClickTimeStamp</name></member>
+      <member refid="classgcn_1_1Window_1a530d0474bbc5faa9503af95df3ee61a5" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mContent</name></member>
+      <member refid="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mCurrentFont</name></member>
+      <member refid="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mDefaultFont</name></member>
+      <member refid="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mDimension</name></member>
+      <member refid="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mHasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mKeyListeners</name></member>
+      <member refid="classgcn_1_1Window_1a1ba847ef302bd0be626973335f83f2b7" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mMouseDrag</name></member>
+      <member refid="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mMouseListeners</name></member>
+      <member refid="classgcn_1_1Window_1ab597aad01f2f8bb8ab46b88803aeaa17" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mMouseXOffset</name></member>
+      <member refid="classgcn_1_1Window_1a541c56d221a720fa8aa6eea6089a0f3c" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mMouseYOffset</name></member>
+      <member refid="classgcn_1_1Window_1aeb948d8a8869fd73e9c03510a1d60928" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mMovable</name></member>
+      <member refid="classgcn_1_1Window_1a999ce21bf07e7a9d18779fd8ba41c167" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mOpaque</name></member>
+      <member refid="classgcn_1_1MouseListener_1a9fa65220fca905750f87ffe86017e538" prot="public" virt="virtual"><scope>Windows</scope><name>mouseClick</name></member>
+      <member refid="classgcn_1_1MouseListener_1a83e5e89f6997020e7b8d0863af9f9da3" prot="public" virt="virtual"><scope>Windows</scope><name>mouseIn</name></member>
+      <member refid="classgcn_1_1MouseListener_1aa1898f8c7b93fb208b5e9ce86d6a3fb5" prot="protected" virt="non-virtual"><scope>Windows</scope><name>MouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" virt="non-virtual"><scope>Windows</scope><name>MouseListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" virt="non-virtual"><scope>Windows</scope><name>MouseListenerList</name></member>
+      <member refid="classWindows_1af94dbdb53833b68263acc81d1f111a7a" prot="private" virt="virtual"><scope>Windows</scope><name>mouseMotion</name></member>
+      <member refid="classgcn_1_1MouseListener_1a79241832fa89ba91346d8e784bbbef33" prot="public" virt="virtual"><scope>Windows</scope><name>mouseOut</name></member>
+      <member refid="classgcn_1_1Window_1a31765202f679ccbb1d66768e536d288b" prot="public" virt="virtual"><scope>Windows</scope><name>mousePress</name></member>
+      <member refid="classgcn_1_1Window_1a3f4533f2433a8681764bcada0e064fe7" prot="public" virt="virtual"><scope>Windows</scope><name>mouseRelease</name></member>
+      <member refid="classgcn_1_1MouseListener_1ae141d2c2c5d2d84083bab1c9b06e0219" prot="public" virt="virtual"><scope>Windows</scope><name>mouseWheelDown</name></member>
+      <member refid="classgcn_1_1MouseListener_1aaa5d13676e224f8cb2edbee037ba3d4d" prot="public" virt="virtual"><scope>Windows</scope><name>mouseWheelUp</name></member>
+      <member refid="classgcn_1_1Window_1a082359dc2d4a24bc97689ad328cedc68" prot="public" virt="virtual"><scope>Windows</scope><name>moveToBottom</name></member>
+      <member refid="classgcn_1_1Window_1a5c6c05920b99e5f3cd7cdf9b6a784548" prot="public" virt="virtual"><scope>Windows</scope><name>moveToTop</name></member>
+      <member refid="classgcn_1_1Window_1ac17c4428c3aa388d5a15f3043a034ad3" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mPadding</name></member>
+      <member refid="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mParent</name></member>
+      <member refid="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mTabIn</name></member>
+      <member refid="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mTabOut</name></member>
+      <member refid="classgcn_1_1Window_1a3d0f93b51bb0245494801072f7b3a8cb" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mTitleBarHeight</name></member>
+      <member refid="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mVisible</name></member>
+      <member refid="classgcn_1_1Widget_1ad350c8bb10bc2603f545039e530dcb83" prot="protected" virt="non-virtual"><scope>Windows</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" virt="virtual"><scope>Windows</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" virt="virtual"><scope>Windows</scope><name>removeActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" virt="virtual"><scope>Windows</scope><name>removeKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" virt="virtual"><scope>Windows</scope><name>removeMouseListener</name></member>
+      <member refid="classgcn_1_1Window_1aaa442a672cb993ef5a06c3fc77025942" prot="protected" virt="virtual"><scope>Windows</scope><name>repositionContent</name></member>
+      <member refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" virt="virtual"><scope>Windows</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" virt="virtual"><scope>Windows</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" virt="virtual"><scope>Windows</scope><name>requestMoveToBottom</name></member>
+      <member refid="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" virt="virtual"><scope>Windows</scope><name>requestMoveToTop</name></member>
+      <member refid="classgcn_1_1Window_1ae872e849f4a1ac39dfd549ec86ac8fb0" prot="public" virt="virtual"><scope>Windows</scope><name>resizeToContent</name></member>
+      <member refid="classWindows_1a7ee819b64d5f63d1ebee8fe70168cfe9" prot="private" virt="non-virtual"><scope>Windows</scope><name>scroll</name></member>
+      <member refid="classgcn_1_1Window_1a724060c494d787e7787da06d26a6754b" prot="public" virt="virtual"><scope>Windows</scope><name>setAlignment</name></member>
+      <member refid="classWindows_1ae088c47dc0ad6901f42252b2d3fcaf0a" prot="private" virt="virtual"><scope>Windows</scope><name>setBackgroundColor</name></member>
+      <member refid="classWindows_1ac71426379cfa705e53fc0cf4e16b32ad" prot="private" virt="virtual"><scope>Windows</scope><name>setBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" virt="virtual"><scope>Windows</scope><name>setBorderSize</name></member>
+      <member refid="classgcn_1_1Window_1a330738fb1fad89e4f698c7105cb6e2c9" prot="public" virt="virtual"><scope>Windows</scope><name>setCaption</name></member>
+      <member refid="classgcn_1_1Window_1a2288da45a4096c8e59ba9d6d044570a4" prot="public" virt="virtual"><scope>Windows</scope><name>setContent</name></member>
+      <member refid="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" virt="virtual"><scope>Windows</scope><name>setDimension</name></member>
+      <member refid="classgcn_1_1Window_1acdb7825aa181dcd52ddd5c6b3c287e5b" prot="public" virt="virtual"><scope>Windows</scope><name>setDirty</name></member>
+      <member refid="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" virt="virtual"><scope>Windows</scope><name>setDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" virt="virtual"><scope>Windows</scope><name>setEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" virt="virtual"><scope>Windows</scope><name>setEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" virt="virtual"><scope>Windows</scope><name>setFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" virt="virtual"><scope>Windows</scope><name>setFont</name></member>
+      <member refid="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" virt="virtual"><scope>Windows</scope><name>setForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" virt="non-virtual"><scope>Windows</scope><name>setGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" virt="virtual"><scope>Windows</scope><name>setHeight</name></member>
+      <member refid="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" virt="virtual"><scope>Windows</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" virt="virtual"><scope>Windows</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Window_1a5a6828f5cacb4e64c1457dbe7481f870" prot="public" virt="virtual"><scope>Windows</scope><name>setMovable</name></member>
+      <member refid="classgcn_1_1Window_1a13ac3ee8839e888fbd22fb98785d57ce" prot="public" virt="virtual"><scope>Windows</scope><name>setOpaque</name></member>
+      <member refid="classgcn_1_1Window_1af3d4c9a42d8d3a073b8f7a230571cb36" prot="public" virt="virtual"><scope>Windows</scope><name>setPadding</name></member>
+      <member refid="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" virt="virtual"><scope>Windows</scope><name>setPosition</name></member>
+      <member refid="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" virt="virtual"><scope>Windows</scope><name>setSize</name></member>
+      <member refid="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" virt="virtual"><scope>Windows</scope><name>setTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" virt="virtual"><scope>Windows</scope><name>setTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Window_1a2a1782028d1f47e1dbc2b68200ff43d9" prot="public" virt="virtual"><scope>Windows</scope><name>setTitleBarHeight</name></member>
+      <member refid="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" virt="virtual"><scope>Windows</scope><name>setVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" virt="virtual"><scope>Windows</scope><name>setWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" virt="virtual"><scope>Windows</scope><name>setX</name></member>
+      <member refid="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" virt="virtual"><scope>Windows</scope><name>setY</name></member>
+      <member refid="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" virt="non-virtual"><scope>Windows</scope><name>Widget</name></member>
+      <member refid="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" virt="non-virtual"><scope>Windows</scope><name>widgetExists</name></member>
+      <member refid="classgcn_1_1Window_1a8872caddfbb6c6ab1c6e1a652be10dbd" prot="public" virt="non-virtual"><scope>Windows</scope><name>Window</name></member>
+      <member refid="classgcn_1_1Window_1aca415f0a552927e29f4939bd7356d609" prot="public" virt="non-virtual"><scope>Windows</scope><name>Window</name></member>
+      <member refid="classgcn_1_1Window_1a261d461d2ad067e1a5aedba17a3f9f8b" prot="public" virt="non-virtual"><scope>Windows</scope><name>Window</name></member>
+      <member refid="classWindows_1a8efc43f1e87a4de739370121bd74d0e2" prot="public" virt="non-virtual"><scope>Windows</scope><name>Windows</name></member>
+      <member refid="classgcn_1_1BasicContainer_1a8b8486a14daf5809da70d19603dbf607" prot="public" virt="virtual"><scope>Windows</scope><name>~BasicContainer</name></member>
+      <member refid="classgcn_1_1MouseListener_1a418107f31e2ba41bceb6f794ef2ce101" prot="public" virt="virtual"><scope>Windows</scope><name>~MouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" virt="virtual"><scope>Windows</scope><name>~Widget</name></member>
+      <member refid="classgcn_1_1Window_1a88117e78c97004cc545d11fbc8bbee14" prot="public" virt="virtual"><scope>Windows</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

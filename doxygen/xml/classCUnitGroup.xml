@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCUnitGroup" kind="class" language="C++" prot="public">
+    <compoundname>CUnitGroup</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCUnitGroup_1af41cb80858debd67a873695e7535c56d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; CUnitGroup::units</definition>
+        <argsstring></argsstring>
+        <name>units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="109" column="13" bodyfile="src/stratagus/groups.cpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnitGroup_1a5c6ef6fcf7ffe334d73e2027db7b2b5e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CUnitGroup::tainted</definition>
+        <argsstring></argsstring>
+        <name>tainted</name>
+        <briefdescription>
+<para>Units in the group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="110" column="6" bodyfile="src/stratagus/groups.cpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCUnitGroup_1aeabbe9968c164916b078b37df51aa067" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CUnitGroup::CUnitGroup</definition>
+        <argsstring>()</argsstring>
+        <name>CUnitGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="61" column="1" bodyfile="src/stratagus/groups.cpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitGroup_1a86a05f00532cb11343d496942a950692" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitGroup::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="63" column="6" bodyfile="src/stratagus/groups.cpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitGroup_1afe7c725a9bb05590dd7b16ad3a2b7080" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnitGroup::isTainted</definition>
+        <argsstring>() const</argsstring>
+        <name>isTainted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="69" column="6" bodyfile="src/stratagus/groups.cpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitGroup_1aa17d3926724faf1afeb12f3bbee38042" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+        <definition>const std::vector&lt;CUnit *&gt;&amp; CUnitGroup::getUnits</definition>
+        <argsstring>() const</argsstring>
+        <name>getUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="70" column="19" bodyfile="src/stratagus/groups.cpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitGroup_1a986d9077ef0b8dc9cb33d5a6aaba688c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitGroup::add</definition>
+        <argsstring>(CUnit &amp;unit, unsigned int num)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="72" column="6" bodyfile="src/stratagus/groups.cpp" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitGroup_1a1f69ba4ac9f4f77418f5578316f7c612" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitGroup::remove</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="83" column="6" bodyfile="src/stratagus/groups.cpp" bodystart="83" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCUnitGroup_1ac6731e83072248f8ea03d03c7df32d9a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitGroup::updateTainted</definition>
+        <argsstring>()</argsstring>
+        <name>updateTainted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/groups.cpp" line="98" column="6" bodyfile="src/stratagus/groups.cpp" bodystart="98" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines a group of units. </para>
+    </detaileddescription>
+    <location file="src/stratagus/groups.cpp" line="59" column="1" bodyfile="src/stratagus/groups.cpp" bodystart="58" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classCUnitGroup_1a986d9077ef0b8dc9cb33d5a6aaba688c" prot="public" virt="non-virtual"><scope>CUnitGroup</scope><name>add</name></member>
+      <member refid="classCUnitGroup_1aeabbe9968c164916b078b37df51aa067" prot="public" virt="non-virtual"><scope>CUnitGroup</scope><name>CUnitGroup</name></member>
+      <member refid="classCUnitGroup_1aa17d3926724faf1afeb12f3bbee38042" prot="public" virt="non-virtual"><scope>CUnitGroup</scope><name>getUnits</name></member>
+      <member refid="classCUnitGroup_1a86a05f00532cb11343d496942a950692" prot="public" virt="non-virtual"><scope>CUnitGroup</scope><name>init</name></member>
+      <member refid="classCUnitGroup_1afe7c725a9bb05590dd7b16ad3a2b7080" prot="public" virt="non-virtual"><scope>CUnitGroup</scope><name>isTainted</name></member>
+      <member refid="classCUnitGroup_1a1f69ba4ac9f4f77418f5578316f7c612" prot="public" virt="non-virtual"><scope>CUnitGroup</scope><name>remove</name></member>
+      <member refid="classCUnitGroup_1a5c6ef6fcf7ffe334d73e2027db7b2b5e" prot="private" virt="non-virtual"><scope>CUnitGroup</scope><name>tainted</name></member>
+      <member refid="classCUnitGroup_1af41cb80858debd67a873695e7535c56d" prot="private" virt="non-virtual"><scope>CUnitGroup</scope><name>units</name></member>
+      <member refid="classCUnitGroup_1ac6731e83072248f8ea03d03c7df32d9a" prot="private" virt="non-virtual"><scope>CUnitGroup</scope><name>updateTainted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

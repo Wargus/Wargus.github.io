@@ -1,0 +1,1633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="map__fog_8cpp" kind="file" language="C++">
+    <compoundname>map_fog.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="minimap_8h" local="yes">minimap.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__manager_8h" local="yes">unit_manager.h</includes>
+    <includes refid="video_8h" local="yes">video.h</includes>
+    <includes refid="intern__video_8h" local="yes">../video/intern_video.h</includes>
+    <incdepgraph>
+      <node id="41">
+        <label>list</label>
+      </node>
+      <node id="22">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>../video/intern_video.h</label>
+        <link refid="intern__video_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>guichan/widgets/label.h</label>
+        <link refid="label_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>guichan/widgets/textfield.h</label>
+        <link refid="textfield_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>guichan/widgets/textbox.h</label>
+        <link refid="textbox_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>guichan/font.h</label>
+        <link refid="guichan_2include_2guichan_2font_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>SDL.h</label>
+      </node>
+      <node id="34">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>guichan/exception.h</label>
+        <link refid="exception_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>lua.h</label>
+      </node>
+      <node id="16">
+        <label>stdint.h</label>
+      </node>
+      <node id="73">
+        <label>guichan/widgets/dropdown.h</label>
+        <link refid="dropdown_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>unit_manager.h</label>
+        <link refid="unit__manager_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>guichan/widgets/window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="76">
+        <label>guichan/widgets/icon.h</label>
+        <link refid="icon_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>guichan/imagefont.h</label>
+        <link refid="imagefont_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>guichan/platform.h</label>
+        <link refid="platform_8h"/>
+      </node>
+      <node id="19">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="35">
+        <label>map</label>
+      </node>
+      <node id="58">
+        <label>guichan/defaultfont.h</label>
+        <link refid="defaultfont_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>guichan.h</label>
+        <link refid="guichan_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>guichan/widgets/scrollarea.h</label>
+        <link refid="scrollarea_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>guichan/rectangle.h</label>
+        <link refid="rectangle_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="1">
+        <label>src/map/map_fog.cpp</label>
+        <link refid="map__fog_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>guichan/imageloader.h</label>
+        <link refid="imageloader_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>guichan/mouseinput.h</label>
+        <link refid="mouseinput_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>guichan/mouselistener.h</label>
+        <link refid="mouselistener_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>libmng.h</label>
+      </node>
+      <node id="11">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>guichan/widgets/checkbox.h</label>
+        <link refid="checkbox_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>guichan/listmodel.h</label>
+        <link refid="listmodel_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="50">
+        <label>guichan/cliprectangle.h</label>
+        <link refid="cliprectangle_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>guichan/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>ctime</label>
+      </node>
+      <node id="56">
+        <label>guichan/focushandler.h</label>
+        <link refid="focushandler_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>guichan/key.h</label>
+        <link refid="key_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>guichan/input.h</label>
+        <link refid="input_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>guichan/color.h</label>
+        <link refid="guichan_2include_2guichan_2color_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="72">
+        <label>guichan/basiccontainer.h</label>
+        <link refid="basiccontainer_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>guichan/gui.h</label>
+        <link refid="gui_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>guichan/widgets/slider.h</label>
+        <link refid="slider_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>guichan/keyinput.h</label>
+        <link refid="keyinput_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>guichan/widgets/radiobutton.h</label>
+        <link refid="radiobutton_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="39">
+        <label>climits</label>
+      </node>
+      <node id="9">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>shaders.h</label>
+        <link refid="shaders_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>guichan/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>guichan/widgets/button.h</label>
+        <link refid="button_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="62">
+        <label>guichan/keylistener.h</label>
+        <link refid="keylistener_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>guichan/widgets/container.h</label>
+        <link refid="container_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>set</label>
+      </node>
+      <node id="57">
+        <label>guichan/widget.h</label>
+        <link refid="widget_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="24">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>guichan/widgets/listbox.h</label>
+        <link refid="listbox_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>guichan/actionlistener.h</label>
+        <link refid="actionlistener_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class__filter__flags" prot="public">_filter_flags</innerclass>
+    <innerclass refid="class__TileSeen" prot="public">_TileSeen</innerclass>
+      <sectiondef kind="user-defined">
+      <header>map_fog.cpp - The map fog of war handling.</header>
+      <memberdef kind="variable" id="map__fog_8cpp_1a6e13c9e00b4fdf7021614fc5adb78212" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FogOfWarOpacity</definition>
+        <argsstring></argsstring>
+        <name>FogOfWarOpacity</name>
+        <briefdescription>
+<para>Path to the current map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Contrast of fog of war </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="54" column="5" bodyfile="src/map/map_fog.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__fog_8cpp_1add2c902c33c86622c269f72d904fb426" prot="public" static="no" mutable="no">
+        <type>Uint32</type>
+        <definition>Uint32 FogOfWarColorSDL</definition>
+        <argsstring></argsstring>
+        <name>FogOfWarColorSDL</name>
+        <briefdescription>
+<para>Fog of war Opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="55" column="8" bodyfile="src/map/map_fog.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__fog_8cpp_1a294ffce9f215979ce40ed67e6c2fabd3" prot="public" static="no" mutable="no">
+        <type><ref refid="classCColor" kindref="compound">CColor</ref></type>
+        <definition>CColor FogOfWarColor</definition>
+        <argsstring></argsstring>
+        <name>FogOfWarColor</name>
+        <briefdescription>
+<para>fog of war color </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="56" column="8" bodyfile="src/map/map_fog.cpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__fog_8cpp_1a4356ca1cb4464c01ebff36e2f0348ff0" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FogTable[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>FogTable</name>
+        <initializer>= {
+	0, 11, 10, 2,  13, 6, 14, 3,  12, 15, 4, 1,  8, 9, 7, 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping for fog of war tiles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="63" column="18" bodyfile="src/map/map_fog.cpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__fog_8cpp_1ae8f75f4fa080a72cfb6b8187c52d9707" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; VisibleTable</definition>
+        <argsstring></argsstring>
+        <name>VisibleTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="67" column="20" bodyfile="src/map/map_fog.cpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__fog_8cpp_1a06d0baffbea27fa637e71d022891b30d" prot="public" static="yes" mutable="no">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface* OnlyFogSurface</definition>
+        <argsstring></argsstring>
+        <name>OnlyFogSurface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="69" column="20" bodyfile="src/map/map_fog.cpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__fog_8cpp_1a7f46647837fb3f6a02aa5eaa1e407c08" prot="public" static="yes" mutable="no">
+        <type><ref refid="classCGraphic" kindref="compound">CGraphic</ref> *</type>
+        <definition>CGraphic* AlphaFogG</definition>
+        <argsstring></argsstring>
+        <name>AlphaFogG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="70" column="17" bodyfile="src/map/map_fog.cpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a5d977f01362a4cb84159e21bc712fe22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MapFogFilterFlags</definition>
+        <argsstring>(CPlayer &amp;player, const unsigned int index, int mask)</argsstring>
+        <name>MapFogFilterFlags</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find out what the tile flags are a tile is covered by fog</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>player who is doing operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map location </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input mask to filter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Filtered mask after taking fog into account </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="104" column="5" bodyfile="src/map/map_fog.cpp" bodystart="104" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a0242dd8a2f1a242e4d539a13e179cd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MapFogFilterFlags</definition>
+        <argsstring>(CPlayer &amp;player, const Vec2i &amp;pos, int mask)</argsstring>
+        <name>MapFogFilterFlags</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Filter map flags through fog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="113" column="5" bodyfile="src/map/map_fog.cpp" bodystart="113" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a3487483e280f65c81fdfbe7087275e82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void UnitsOnTileMarkSeen</definition>
+        <argsstring>(const CPlayer &amp;player, CMapField &amp;mf, int cloak)</argsstring>
+        <name>UnitsOnTileMarkSeen</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMapField" kindref="compound">CMapField</ref> &amp;</type>
+          <declname>mf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cloak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark all units on a tile as now visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player this is for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>field location to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cloak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If we mark cloaked units too. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="189" column="13" bodyfile="src/map/map_fog.cpp" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a7091dda143462ddf608317d7ecb6a3f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void UnitsOnTileUnmarkSeen</definition>
+        <argsstring>(const CPlayer &amp;player, CMapField &amp;mf, int cloak)</argsstring>
+        <name>UnitsOnTileUnmarkSeen</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMapField" kindref="compound">CMapField</ref> &amp;</type>
+          <declname>mf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cloak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function unmarks units on x, y as seen. It uses a reference count.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player to mark for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>field to check if building is on, and mark as seen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cloak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If this is for cloaked units. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="202" column="13" bodyfile="src/map/map_fog.cpp" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1ab4a6f47cc0f8218a4b9ee63e4852ccaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapMarkTileSight</definition>
+        <argsstring>(const CPlayer &amp;player, const unsigned int index)</argsstring>
+        <name>MapMarkTileSight</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark a tile&apos;s sight. (Explore and make visible.)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to mark sight. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tile to mark. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="215" column="6" bodyfile="src/map/map_fog.cpp" bodystart="215" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a55819b8916d2778c202ed6acb356e670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapMarkTileSight</definition>
+        <argsstring>(const CPlayer &amp;player, const Vec2i &amp;pos)</argsstring>
+        <name>MapMarkTileSight</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="234" column="6" bodyfile="src/map/map_fog.cpp" bodystart="234" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a44e0a6bf7496d3cc116ac0a92ec323da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapUnmarkTileSight</definition>
+        <argsstring>(const CPlayer &amp;player, const unsigned int index)</argsstring>
+        <name>MapUnmarkTileSight</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unmark a tile&apos;s sight. (Explore and make visible.)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to mark sight. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tile to mark. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="246" column="6" bodyfile="src/map/map_fog.cpp" bodystart="246" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1adf17930642066b99cd489aadcf14f3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapUnmarkTileSight</definition>
+        <argsstring>(const CPlayer &amp;player, const Vec2i &amp;pos)</argsstring>
+        <name>MapUnmarkTileSight</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="270" column="6" bodyfile="src/map/map_fog.cpp" bodystart="270" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a12364746584c2b6942270549b074e081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapMarkTileDetectCloak</definition>
+        <argsstring>(const CPlayer &amp;player, const unsigned int index)</argsstring>
+        <name>MapMarkTileDetectCloak</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark a tile for cloak detection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to mark sight. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tile to mark. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="282" column="6" bodyfile="src/map/map_fog.cpp" bodystart="282" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a246d25bd763713d6cc57c9de7a5e391e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapMarkTileDetectCloak</definition>
+        <argsstring>(const CPlayer &amp;player, const Vec2i &amp;pos)</argsstring>
+        <name>MapMarkTileDetectCloak</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="293" column="6" bodyfile="src/map/map_fog.cpp" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a28fa00aed36aa23674658ab8a4876ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapUnmarkTileDetectCloak</definition>
+        <argsstring>(const CPlayer &amp;player, const unsigned int index)</argsstring>
+        <name>MapUnmarkTileDetectCloak</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unmark a tile for cloak detection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to mark sight. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tile to mark. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="304" column="6" bodyfile="src/map/map_fog.cpp" bodystart="304" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a31974e2f549ad1df6cdf5946db0d3140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapUnmarkTileDetectCloak</definition>
+        <argsstring>(const CPlayer &amp;player, const Vec2i &amp;pos)</argsstring>
+        <name>MapUnmarkTileDetectCloak</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="315" column="6" bodyfile="src/map/map_fog.cpp" bodystart="315" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a13d6a362c9b2249c38607fa1875a9ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapSight</definition>
+        <argsstring>(const CPlayer &amp;player, const Vec2i &amp;pos, int w, int h, int range, MapMarkerFunc *marker)</argsstring>
+        <name>MapSight</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type><ref refid="map_8h_1adb91ef202d7ab2ba4da1d7637ea2f146" kindref="member">MapMarkerFunc</ref> *</type>
+          <declname>marker</declname>
+        </param>
+        <briefdescription>
+<para>Mark sight changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark the sight of unit. (Explore and make visible.)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>player to mark the sight for (not unit owner) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location to mark </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width to mark, in square </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height to mark, in square </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius to mark. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to mark or unmark sight </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="330" column="6" bodyfile="src/map/map_fog.cpp" bodystart="330" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a4d2ff514698744d1122de835f713c81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UpdateFogOfWarChange</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateFogOfWarChange</name>
+        <briefdescription>
+<para>Update fog of war. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Update fog of war. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="395" column="6" bodyfile="src/map/map_fog.cpp" bodystart="395" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a63383fe816d230ee2c0ce6c3b82d2c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void VideoDrawOnlyFog</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>VideoDrawOnlyFog</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw only fog of war</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X position into video memory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y position into video memory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="425" column="6" bodyfile="src/map/map_fog.cpp" bodystart="425" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a264cf4bc924b829f95b14890f4abd5f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void GetFogOfWarTile</definition>
+        <argsstring>(int sx, int sy, int *fogTile, int *blackFogTile)</argsstring>
+        <name>GetFogOfWarTile</name>
+        <param>
+          <type>int</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>fogTile</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>blackFogTile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="453" column="13" bodyfile="src/map/map_fog.cpp" bodystart="453" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="map__fog_8cpp_1a7029a4ad9fa764d532dd6bf4f590bde2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawFogOfWarTile</definition>
+        <argsstring>(int sx, int sy, int dx, int dy)</argsstring>
+        <name>DrawFogOfWarTile</name>
+        <param>
+          <type>int</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw fog of war tile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset into fields to current tile. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start of the current row. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X position into video memory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y position into video memory. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="580" column="13" bodyfile="src/map/map_fog.cpp" bodystart="580" bodyend="600"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="map__fog_8cpp_1ab50625f71b28d4adc4eb43cdd7ea2034" prot="public" static="no">
+        <name>IsMapFieldExploredTable</name>
+        <param><defname>index</defname></param>
+        <initializer>(<ref refid="map__fog_8cpp_1ae8f75f4fa080a72cfb6b8187c52d9707" kindref="member">VisibleTable</ref>[(index)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="455" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="map__fog_8cpp_1ace461bf83cf0aad264901b14c96c039c" prot="public" static="no">
+        <name>IsMapFieldVisibleTable</name>
+        <param><defname>index</defname></param>
+        <initializer>(<ref refid="map__fog_8cpp_1ae8f75f4fa080a72cfb6b8187c52d9707" kindref="member">VisibleTable</ref>[(index)] &gt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map/map_fog.cpp" line="456" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/map/map_fog.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ai__plan_8cpp" kind="file" language="C++">
+    <compoundname>ai_plan.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="ai__local_8h" local="yes">ai_local.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="commands_8h" local="yes">commands.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="missile_8h" local="yes">missile.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="tileset_8h" local="yes">tileset.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>queue</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>lua.h</label>
+      </node>
+      <node id="21">
+        <label>stdint.h</label>
+      </node>
+      <node id="15">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="36">
+        <label>map</label>
+      </node>
+      <node id="16">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="12">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="23">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>missile.h</label>
+        <link refid="missile_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="35">
+        <label>climits</label>
+      </node>
+      <node id="18">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="32">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>set</label>
+      </node>
+      <node id="33">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="37">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>lualib.h</label>
+      </node>
+      <node id="17">
+        <label>commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class__EnemyOnMapTile" prot="public">_EnemyOnMapTile</innerclass>
+    <innerclass refid="classWallFinder" prot="public">WallFinder</innerclass>
+    <innerclass refid="classReachableTerrainMarker" prot="public">ReachableTerrainMarker</innerclass>
+    <innerclass refid="classEnemyFinderWithTransporter" prot="public">EnemyFinderWithTransporter</innerclass>
+    <innerclass refid="classIsAFreeTransporter" prot="public">IsAFreeTransporter</innerclass>
+      <sectiondef kind="user-defined">
+      <header>ai_plan.cpp - AI planning functions.</header>
+      <memberdef kind="function" id="ai__plan_8cpp_1a2a07a03a0f1636f444e751094cc4bb2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>static CUnit* EnemyOnMapTile</definition>
+        <argsstring>(const CUnit &amp;source, const Vec2i &amp;pos)</argsstring>
+        <name>EnemyOnMapTile</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Choose enemy on map tile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit which want to attack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position on map, tile-based.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns ideal target on map tile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="111" column="14" bodyfile="src/ai/ai_plan.cpp" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1a5d03ece9d393fcd37460d6b4f3af4e32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FindWall</definition>
+        <argsstring>(const CUnit &amp;unit, int range, Vec2i *wallPos)</argsstring>
+        <name>FindWall</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>wallPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="163" column="13" bodyfile="src/ai/ai_plan.cpp" bodystart="163" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1ab500cd85f4cce531bbdc7e1bcea11d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiFindWall</definition>
+        <argsstring>(AiForce *force)</argsstring>
+        <name>AiFindWall</name>
+        <param>
+          <type><ref refid="classAiForce" kindref="compound">AiForce</ref> *</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>Find a wall to attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find possible walls to target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attack force.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if wall found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="184" column="5" bodyfile="src/ai/ai_plan.cpp" bodystart="184" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1af296712adaec6075cfa1751131ac916d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void MarkReacheableTerrainType</definition>
+        <argsstring>(const CUnit &amp;unit, TerrainTraversal *terrainTraversal)</argsstring>
+        <name>MarkReacheableTerrainType</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classTerrainTraversal" kindref="compound">TerrainTraversal</ref> *</type>
+          <declname>terrainTraversal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="241" column="13" bodyfile="src/ai/ai_plan.cpp" bodystart="241" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1a79410fe8b8b23f512d23644d9322758b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiFindTarget</definition>
+        <argsstring>(const CUnit &amp;unit, const TerrainTraversal &amp;terrainTransporter, Vec2i *resultPos)</argsstring>
+        <name>AiFindTarget</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classTerrainTraversal" kindref="compound">TerrainTraversal</ref> &amp;</type>
+          <declname>terrainTransporter</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>resultPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="293" column="13" bodyfile="src/ai/ai_plan.cpp" bodystart="293" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1ae210d836cd40279c4fd8d0ce21b97348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ITERATOR</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int GetTotalBoardCapacity</definition>
+        <argsstring>(ITERATOR begin, ITERATOR end)</argsstring>
+        <name>GetTotalBoardCapacity</name>
+        <param>
+          <type>ITERATOR</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>ITERATOR</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="317" column="5" bodyfile="src/ai/ai_plan.cpp" bodystart="317" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1a54e933bd0e841a81cf7c2c9c392cf0de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool ChooseRandomUnexploredPositionNear</definition>
+        <argsstring>(const Vec2i &amp;center, Vec2i *pos)</argsstring>
+        <name>ChooseRandomUnexploredPositionNear</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="429" column="13" bodyfile="src/ai/ai_plan.cpp" bodystart="429" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1a597cad4650af3d5d1345f438ce02d770" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>static CUnit* GetBestExplorer</definition>
+        <argsstring>(const AiExplorationRequest &amp;request, Vec2i *pos)</argsstring>
+        <name>GetBestExplorer</name>
+        <param>
+          <type>const <ref refid="classAiExplorationRequest" kindref="compound">AiExplorationRequest</ref> &amp;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="448" column="14" bodyfile="src/ai/ai_plan.cpp" bodystart="448" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__plan_8cpp_1a4a4dfb92d211b5f78932af2217b83425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiSendExplorers</definition>
+        <argsstring>()</argsstring>
+        <name>AiSendExplorers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Respond to ExplorationRequests </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_plan.cpp" line="503" column="6" bodyfile="src/ai/ai_plan.cpp" bodystart="503" bodyend="528"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai_plan.cpp"/>
+  </compounddef>
+</doxygen>

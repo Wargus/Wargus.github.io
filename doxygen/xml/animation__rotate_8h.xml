@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="animation__rotate_8h" kind="file" language="C++">
+    <compoundname>animation_rotate.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="animation_8h" local="yes">animation.h</includes>
+    <includedby refid="animation_8cpp" local="yes">src/animation/animation.cpp</includedby>
+    <includedby refid="animation__randomrotate_8cpp" local="yes">src/animation/animation_randomrotate.cpp</includedby>
+    <includedby refid="animation__rotate_8cpp" local="yes">src/animation/animation_rotate.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/include/animation/animation_rotate.h</label>
+        <link refid="animation__rotate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>animation.h</label>
+        <link refid="animation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/include/animation/animation_rotate.h</label>
+        <link refid="animation__rotate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/animation/animation_rotate.cpp</label>
+        <link refid="animation__rotate_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/animation/animation_randomrotate.cpp</label>
+        <link refid="animation__randomrotate_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCAnimation__Rotate" prot="public">CAnimation_Rotate</innerclass>
+      <sectiondef kind="user-defined">
+      <header>animation_rotate.h - The animation Rotate headerfile.</header>
+      <memberdef kind="function" id="animation__rotate_8h_1a05dea39f6075635dbc7391f7964e833a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UnitRotate</definition>
+        <argsstring>(CUnit &amp;unit, int rotate)</argsstring>
+        <name>UnitRotate</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rotate a unit</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to rotate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of frames to rotate (&gt;0 clockwise, &lt;0 counterclockwise) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_rotate.h" line="50" column="13" bodyfile="src/animation/animation_rotate.cpp" bodystart="49" bodyend="53" declfile="src/include/animation/animation_rotate.h" declline="50" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/animation/animation_rotate.h"/>
+  </compounddef>
+</doxygen>

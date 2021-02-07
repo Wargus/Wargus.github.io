@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCTCPSocket" kind="class" language="C++" prot="public">
+    <compoundname>CTCPSocket</compoundname>
+    <includes refid="netsockets_8h" local="no">netsockets.h</includes>
+      <sectiondef kind="user-defined">
+      <header>netsockets.cpp - TCP and UDP sockets.</header>
+      <memberdef kind="function" id="classCTCPSocket_1a05cc8e0ae0cefa3ff085a2dab8a6276d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CTCPSocket::CTCPSocket</definition>
+        <argsstring>()</argsstring>
+        <name>CTCPSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="105" column="1" bodyfile="src/network/netsockets.cpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1a5504da31e2075574f34c71958ae5b8fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CTCPSocket::~CTCPSocket</definition>
+        <argsstring>()</argsstring>
+        <name>~CTCPSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="106" column="1" bodyfile="src/network/netsockets.cpp" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1a7201a74383df162bb0f21d56d37402d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTCPSocket::Open</definition>
+        <argsstring>(const CHost &amp;host)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="107" column="6" bodyfile="src/network/netsockets.cpp" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1a412b3887b0fb32a9d6538e7b9f5e5b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTCPSocket::Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="108" column="6" bodyfile="src/network/netsockets.cpp" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1a140adb0cffc7d92b1f8a38fad17f54e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTCPSocket::Connect</definition>
+        <argsstring>(const CHost &amp;host)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="109" column="6" bodyfile="src/network/netsockets.cpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1a5f7b8c568bc16fc33e76a0030ecd68b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTCPSocket::Send</definition>
+        <argsstring>(const void *buf, unsigned int len)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>const <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="110" column="5" bodyfile="src/network/netsockets.cpp" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1aee093f1f4489e19c86176428156faba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTCPSocket::Recv</definition>
+        <argsstring>(void *buf, int len)</argsstring>
+        <name>Recv</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="111" column="5" bodyfile="src/network/netsockets.cpp" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1af1d3f7cb429ea0276169236646510f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTCPSocket::SetNonBlocking</definition>
+        <argsstring>()</argsstring>
+        <name>SetNonBlocking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="112" column="6" bodyfile="src/network/netsockets.cpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1a2a1e666e34d428368b0505047cac5e14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTCPSocket::HasDataToRead</definition>
+        <argsstring>(int timeout)</argsstring>
+        <name>HasDataToRead</name>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="114" column="5" bodyfile="src/network/netsockets.cpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTCPSocket_1ad469833db7fb91261171d10109b80e25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTCPSocket::IsValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="115" column="6" bodyfile="src/network/netsockets.cpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCTCPSocket_1a09a58c379c7ad68aeb206af344761153" prot="private" static="no" mutable="no">
+        <type><ref refid="classCTCPSocket__Impl" kindref="compound">CTCPSocket_Impl</ref> *</type>
+        <definition>CTCPSocket_Impl* CTCPSocket::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/network/netsockets.h" line="117" column="17" bodyfile="src/include/network/netsockets.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/network/netsockets.h" line="103" column="1" bodyfile="src/include/network/netsockets.h" bodystart="102" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classCTCPSocket_1a412b3887b0fb32a9d6538e7b9f5e5b6d" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>Close</name></member>
+      <member refid="classCTCPSocket_1a140adb0cffc7d92b1f8a38fad17f54e6" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>Connect</name></member>
+      <member refid="classCTCPSocket_1a05cc8e0ae0cefa3ff085a2dab8a6276d" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>CTCPSocket</name></member>
+      <member refid="classCTCPSocket_1a2a1e666e34d428368b0505047cac5e14" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>HasDataToRead</name></member>
+      <member refid="classCTCPSocket_1ad469833db7fb91261171d10109b80e25" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>IsValid</name></member>
+      <member refid="classCTCPSocket_1a09a58c379c7ad68aeb206af344761153" prot="private" virt="non-virtual"><scope>CTCPSocket</scope><name>m_impl</name></member>
+      <member refid="classCTCPSocket_1a7201a74383df162bb0f21d56d37402d6" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>Open</name></member>
+      <member refid="classCTCPSocket_1aee093f1f4489e19c86176428156faba9" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>Recv</name></member>
+      <member refid="classCTCPSocket_1a5f7b8c568bc16fc33e76a0030ecd68b0" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>Send</name></member>
+      <member refid="classCTCPSocket_1af1d3f7cb429ea0276169236646510f44" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>SetNonBlocking</name></member>
+      <member refid="classCTCPSocket_1a5504da31e2075574f34c71958ae5b8fe" prot="public" virt="non-virtual"><scope>CTCPSocket</scope><name>~CTCPSocket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

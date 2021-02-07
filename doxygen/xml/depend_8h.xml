@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="depend_8h" kind="file" language="C++">
+    <compoundname>depend.h</compoundname>
+    <includedby refid="ai__force_8cpp" local="yes">src/ai/ai_force.cpp</includedby>
+    <includedby refid="ai__resource_8cpp" local="yes">src/ai/ai_resource.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="loadgame_8cpp" local="yes">src/game/loadgame.cpp</includedby>
+    <includedby refid="botpanel_8cpp" local="yes">src/ui/botpanel.cpp</includedby>
+    <includedby refid="button__checks_8cpp" local="yes">src/ui/button_checks.cpp</includedby>
+    <includedby refid="popup_8cpp" local="yes">src/ui/popup.cpp</includedby>
+    <includedby refid="depend_8cpp" local="yes">src/unit/depend.cpp</includedby>
+    <includedby refid="upgrade_8cpp" local="yes">src/unit/upgrade.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/ui/botpanel.cpp</label>
+        <link refid="botpanel_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/ui/button_checks.cpp</label>
+        <link refid="button__checks_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/ui/popup.cpp</label>
+        <link refid="popup_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/unit/depend.cpp</label>
+        <link refid="depend_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/depend.h</label>
+        <link refid="depend_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/unit/upgrade.cpp</label>
+        <link refid="upgrade_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDependRule" prot="public">DependRule</innerclass>
+      <sectiondef kind="user-defined">
+      <header>depend.h - The units/upgrade dependencies headerfile.</header>
+      <memberdef kind="enum" id="depend_8h_1a05589fbab0657f08285ebdfe93f5ec9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@13</name>
+        <enumvalue id="depend_8h_1a05589fbab0657f08285ebdfe93f5ec9ea207533cf848a8cbb62a5f2cf15da89e7" prot="public">
+          <name>DependRuleUnitType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="depend_8h_1a05589fbab0657f08285ebdfe93f5ec9ea81363d1210b4b1e7c0af6dcd9ca788d0" prot="public">
+          <name>DependRuleUpgrade</name>
+          <briefdescription>
+<para>Kind is an unit-type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Kind is an upgrade </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="100" column="6" bodyfile="src/include/depend.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="depend_8h_1acd906971151c8787452475da67b7d673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DependenciesCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>DependenciesCclRegister</name>
+        <briefdescription>
+<para>Register CCL features for dependencies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for dependencies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="124" column="13" bodyfile="src/unit/depend.cpp" bodystart="505" bodyend="510" declfile="src/include/depend.h" declline="124" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="depend_8h_1a7fae18d8a62aea7d504d6ae27538cf32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitDependencies</definition>
+        <argsstring>()</argsstring>
+        <name>InitDependencies</name>
+        <briefdescription>
+<para>Init the dependencies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize unit and upgrade dependencies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="126" column="13" bodyfile="src/unit/depend.cpp" bodystart="377" bodyend="379" declfile="src/include/depend.h" declline="126" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="depend_8h_1af1f862707a3b4657ae105b277aaea246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanDependencies</definition>
+        <argsstring>()</argsstring>
+        <name>CleanDependencies</name>
+        <briefdescription>
+<para>Cleanup dependencies module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up unit and upgrade dependencies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="128" column="13" bodyfile="src/unit/depend.cpp" bodystart="384" bodyend="413" declfile="src/include/depend.h" declline="128" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="depend_8h_1ac3189a609e5dcdc5fce11d4eba9bb465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PrintDependencies</definition>
+        <argsstring>(const CPlayer &amp;player, const ButtonAction &amp;button)</argsstring>
+        <name>PrintDependencies</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classButtonAction" kindref="compound">ButtonAction</ref> &amp;</type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Print all unit dependencies into string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this upgrade or unit is available.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For this player available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit or Upgrade.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if available, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="131" column="20" bodyfile="src/unit/depend.cpp" bodystart="236" bodyend="316" declfile="src/include/depend.h" declline="131" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="depend_8h_1a43e82a61a2add3e8a8372a54d84a58ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CheckDependByIdent</definition>
+        <argsstring>(const CPlayer &amp;player, const std::string &amp;target)</argsstring>
+        <name>CheckDependByIdent</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Check a dependency by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this upgrade or unit is available.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For this player available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit or Upgrade.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if available, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="133" column="13" bodyfile="src/unit/depend.cpp" bodystart="326" bodyend="352" declfile="src/include/depend.h" declline="133" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="depend_8h_1a6683469cd01394504dd3544673cb7f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CheckDependByType</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnitType &amp;type)</argsstring>
+        <name>CheckDependByType</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Check a dependency by unit type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this upgrade or unit is available.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For this player available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit or Upgrade.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if available, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/depend.h" line="135" column="13" bodyfile="src/unit/depend.cpp" bodystart="362" bodyend="372" declfile="src/include/depend.h" declline="135" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/depend.h"/>
+  </compounddef>
+</doxygen>

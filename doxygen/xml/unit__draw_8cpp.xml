@@ -1,0 +1,1985 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="unit__draw_8cpp" kind="file" language="C++">
+    <compoundname>unit_draw.cpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="action__build_8h" local="yes">action/action_build.h</includes>
+    <includes refid="action__built_8h" local="yes">action/action_built.h</includes>
+    <includes refid="action__upgradeto_8h" local="yes">action/action_upgradeto.h</includes>
+    <includes refid="construct_8h" local="yes">construct.h</includes>
+    <includes refid="cursor_8h" local="yes">cursor.h</includes>
+    <includes refid="editor_8h" local="yes">editor.h</includes>
+    <includes local="yes">font.h</includes>
+    <includes refid="interface_8h" local="yes">interface.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="script_8h" local="yes">script.h</includes>
+    <includes refid="settings_8h" local="yes">settings.h</includes>
+    <includes refid="sound_8h" local="yes">sound.h</includes>
+    <includes refid="translate_8h" local="yes">translate.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="unitsound_8h" local="yes">unitsound.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="video_8h" local="yes">video.h</includes>
+    <incdepgraph>
+      <node id="69">
+        <label>list</label>
+      </node>
+      <node id="23">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>guichan/widgets/label.h</label>
+        <link refid="label_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>editor.h</label>
+        <link refid="editor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>queue</label>
+      </node>
+      <node id="39">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="54">
+        <label>video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/unit/unit_draw.cpp</label>
+        <link refid="unit__draw_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>guichan/widgets/textfield.h</label>
+        <link refid="textfield_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>guichan/widgets/textbox.h</label>
+        <link refid="textbox_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>guichan/font.h</label>
+        <link refid="guichan_2include_2guichan_2font_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>translate.h</label>
+        <link refid="translate_8h"/>
+      </node>
+      <node id="38">
+        <label>SDL.h</label>
+      </node>
+      <node id="53">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>guichan/exception.h</label>
+        <link refid="exception_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>lua.h</label>
+      </node>
+      <node id="20">
+        <label>font.h</label>
+      </node>
+      <node id="29">
+        <label>stdint.h</label>
+      </node>
+      <node id="85">
+        <label>guichan/widgets/dropdown.h</label>
+        <link refid="dropdown_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>action/action_upgradeto.h</label>
+        <link refid="action__upgradeto_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>guichan/widgets/window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="36">
+        <label>settings.h</label>
+        <link refid="settings_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>guichan/widgets/icon.h</label>
+        <link refid="icon_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>guichan/imagefont.h</label>
+        <link refid="imagefont_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>guichan/platform.h</label>
+        <link refid="platform_8h"/>
+      </node>
+      <node id="50">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="45">
+        <label>map</label>
+      </node>
+      <node id="70">
+        <label>guichan/defaultfont.h</label>
+        <link refid="defaultfont_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>guichan.h</label>
+        <link refid="guichan_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>guichan/widgets/scrollarea.h</label>
+        <link refid="scrollarea_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>guichan/rectangle.h</label>
+        <link refid="rectangle_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="65">
+        <label>guichan/imageloader.h</label>
+        <link refid="imageloader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>guichan/mouseinput.h</label>
+        <link refid="mouseinput_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>guichan/mouselistener.h</label>
+        <link refid="mouselistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>libmng.h</label>
+      </node>
+      <node id="26">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>guichan/widgets/checkbox.h</label>
+        <link refid="checkbox_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>guichan/listmodel.h</label>
+        <link refid="listmodel_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="61">
+        <label>guichan/cliprectangle.h</label>
+        <link refid="cliprectangle_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>action/action_built.h</label>
+        <link refid="action__built_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>guichan/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>ctime</label>
+      </node>
+      <node id="37">
+        <label>sound.h</label>
+        <link refid="sound_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>guichan/focushandler.h</label>
+        <link refid="focushandler_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>guichan/key.h</label>
+        <link refid="key_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>guichan/input.h</label>
+        <link refid="input_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>guichan/color.h</label>
+        <link refid="guichan_2include_2guichan_2color_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>action/action_build.h</label>
+        <link refid="action__build_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>stack</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="84">
+        <label>guichan/basiccontainer.h</label>
+        <link refid="basiccontainer_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>guichan/gui.h</label>
+        <link refid="gui_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>guichan/widgets/slider.h</label>
+        <link refid="slider_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>construct.h</label>
+        <link refid="construct_8h"/>
+      </node>
+      <node id="28">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>guichan/keyinput.h</label>
+        <link refid="keyinput_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>guichan/widgets/radiobutton.h</label>
+        <link refid="radiobutton_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="44">
+        <label>climits</label>
+      </node>
+      <node id="24">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>shaders.h</label>
+        <link refid="shaders_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>guichan/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>guichan/widgets/button.h</label>
+        <link refid="button_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="74">
+        <label>guichan/keylistener.h</label>
+        <link refid="keylistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>guichan/widgets/container.h</label>
+        <link refid="container_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>set</label>
+      </node>
+      <node id="68">
+        <label>guichan/widget.h</label>
+        <link refid="widget_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>guichan/widgets/listbox.h</label>
+        <link refid="listbox_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>guichan/actionlistener.h</label>
+        <link refid="actionlistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classDecoration" prot="public">Decoration</innerclass>
+    <innerclass refid="classDecoSpriteType" prot="public">DecoSpriteType</innerclass>
+      <sectiondef kind="user-defined">
+      <header>unit_draw.cpp - The draw routines for units.</header>
+      <memberdef kind="variable" id="unit__draw_8cpp_1a244a8bb1652216dc61a210fcad0286ba" prot="public" static="yes" mutable="no">
+        <type><ref refid="classDecoSpriteType" kindref="compound">DecoSpriteType</ref></type>
+        <definition>DecoSpriteType DecoSprite</definition>
+        <argsstring></argsstring>
+        <name>DecoSprite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="95" column="23" bodyfile="src/unit/unit_draw.cpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unit__draw_8cpp_1ac24b422f481aaaa98efdca92597ce06a" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long ShowOrdersCount</definition>
+        <argsstring></argsstring>
+        <name>ShowOrdersCount</name>
+        <briefdescription>
+<para>All sprite&apos;s infos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000032"><xreftitle>Todo</xreftitle><xrefdescription><para>could be moved into the user interface ? </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="97" column="15" bodyfile="src/unit/unit_draw.cpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unit__draw_8cpp_1a7e626c1dc03c3eeeaaa179d3b27778a1" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long ShowNameDelay</definition>
+        <argsstring></argsstring>
+        <name>ShowNameDelay</name>
+        <briefdescription>
+<para>Show orders for some time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="99" column="15" bodyfile="src/unit/unit_draw.cpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unit__draw_8cpp_1a134fbd59ae1989a86befde659c28b21c" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long ShowNameTime</definition>
+        <argsstring></argsstring>
+        <name>ShowNameTime</name>
+        <briefdescription>
+<para>Delay to show unit&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="100" column="15" bodyfile="src/unit/unit_draw.cpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unit__draw_8cpp_1af19e38c3efcce1aa357bcf805e4a0e03" prot="public" static="no" mutable="no">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref>(*</type>
+        <definition>void(* DrawSelection) (IntColor color, int x1, int y1, int x2, int y2)</definition>
+        <argsstring>)(IntColor color, int x1, int y1, int x2, int y2)</argsstring>
+        <name>DrawSelection</name>
+        <initializer>= <ref refid="unit__draw_8cpp_1a4f35369198f80f6908f9b109737c68dd" kindref="member">DrawSelectionNone</ref></initializer>
+        <briefdescription>
+<para>Show unit&apos;s name for some time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Show that units are selected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FIXME </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="112" column="1" bodyfile="src/unit/unit_draw.cpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unit__draw_8cpp_1ab84b66048d91172e61beac1c6504bfe4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> *</type>
+        <definition>const CViewport* CurrentViewport</definition>
+        <argsstring></argsstring>
+        <name>CurrentViewport</name>
+        <briefdescription>
+<para>Config: spend resources for building with multiple workers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="121" column="17" bodyfile="src/unit/unit_draw.cpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a1f2144d28ae6735c518f22d03b2b810b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawUnitSelection</definition>
+        <argsstring>(const CViewport &amp;vp, const CUnit &amp;unit)</argsstring>
+        <name>DrawUnitSelection</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>FIXME: quick hack for split screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CurrentViewport.</para>
+<para>Show selection marker around a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="130" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="130" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a4f35369198f80f6908f9b109737c68dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawSelectionNone</definition>
+        <argsstring>(IntColor, int, int, int, int)</argsstring>
+        <name>DrawSelectionNone</name>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Draw nothing around unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Don&apos;t show selected units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to draw, nothing in this case. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="179" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a28930b31a5ca2864791cbd7bd96d70eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawSelectionCircle</definition>
+        <argsstring>(IntColor color, int x1, int y1, int x2, int y2)</argsstring>
+        <name>DrawSelectionCircle</name>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+<para>Draw circle around unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Show selected units with circle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to draw circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="190" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="190" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1af3a2562b0e54d54c0ec2773c71942d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawSelectionCircleWithTrans</definition>
+        <argsstring>(IntColor color, int x1, int y1, int x2, int y2)</argsstring>
+        <name>DrawSelectionCircleWithTrans</name>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+<para>Draw circle filled with alpha around unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Show selected units with circle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to draw and fill circle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="203" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="203" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a79e44ff39251e6ba79b1293b9157f362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawSelectionRectangle</definition>
+        <argsstring>(IntColor color, int x1, int y1, int x2, int y2)</argsstring>
+        <name>DrawSelectionRectangle</name>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+<para>Draw rectangle around unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw selected rectangle around the unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to draw rectangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="218" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a1b63332fa581fe1c6797bfe2875d685c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawSelectionRectangleWithTrans</definition>
+        <argsstring>(IntColor color, int x1, int y1, int x2, int y2)</argsstring>
+        <name>DrawSelectionRectangleWithTrans</name>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+<para>Draw rectangle filled with alpha around unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw selected rectangle around the unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to draw and fill rectangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="230" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="230" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a71ce7bef7fe688f4db27e5fa5b7744ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawSelectionCorners</definition>
+        <argsstring>(IntColor color, int x1, int y1, int x2, int y2)</argsstring>
+        <name>DrawSelectionCorners</name>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+<para>Draw corners around unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw selected corners around the unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classColor" kindref="compound">Color</ref> to draw corners. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the top left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinates of the bottom right corner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="244" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="244" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a2e10a9aacbe53e98bc13e4f5fe686a2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetSpriteIndex</definition>
+        <argsstring>(const char *SpriteName)</argsstring>
+        <name>GetSpriteIndex</name>
+        <param>
+          <type>const char *</type>
+          <declname>SpriteName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the index of the sprite named SpriteName.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SpriteName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the sprite.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index of the sprite. -1 if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="269" column="5" bodyfile="src/unit/unit_draw.cpp" bodystart="269" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a3a0de3b4915b4b6c2781e60a2be6c0e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclDefineSprites</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclDefineSprites</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the sprite to show variables.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua_state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="285" column="12" bodyfile="src/unit/unit_draw.cpp" bodystart="285" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a42c07e8d4794ee6c35b87a0d3e990b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DecorationCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>DecorationCclRegister</name>
+        <briefdescription>
+<para>Register CCL decorations features. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for decorations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="333" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="333" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a3253ea99a385bded0939b00dcd4edc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LoadDecorations</definition>
+        <argsstring>()</argsstring>
+        <name>LoadDecorations</name>
+        <briefdescription>
+<para>Load the decorations (health,mana) of units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load decoration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="344" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="344" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1ae34006b0883475a1c105e7f205e920c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanDecorations</definition>
+        <argsstring>()</argsstring>
+        <name>CleanDecorations</name>
+        <briefdescription>
+<para>Clean the decorations (health,mana) of units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean decorations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="357" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="357" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a7a4aaa822ca0f4153f06e37dfaf56394" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawDecoration</definition>
+        <argsstring>(const CUnit &amp;unit, const CUnitType &amp;type, const PixelPos &amp;screenPos)</argsstring>
+        <name>DrawDecoration</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw decoration (invis, for the unit.)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Screen position of the unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="542" column="13" bodyfile="src/unit/unit_draw.cpp" bodystart="542" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a13fb43f5e7ea13632fc4032b8d6949cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawShadow</definition>
+        <argsstring>(const CUnitType &amp;type, int frame, const PixelPos &amp;screenPos)</argsstring>
+        <name>DrawShadow</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+<para>Draw unit&apos;s shadow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw unit&apos;s shadow.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the unit type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Screen position of the unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000111"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: combine new shadow code with old shadow code. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="606" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="606" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1adb1fb3f556d7f97520b8ec18a7d20179" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ShowOrder</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>ShowOrder</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Show a unit&apos;s orders. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Show the current order of a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="647" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="647" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a508dfaa23f4acb1fc3fabb8cd5b70b3f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawInformations</definition>
+        <argsstring>(const CUnit &amp;unit, const CUnitType &amp;type, const PixelPos &amp;screenPos)</argsstring>
+        <name>DrawInformations</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw additional informations of a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit pointer of drawn unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>screen pixel (top left) position of unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000112"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: The different styles should become a function call. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="690" column="13" bodyfile="src/unit/unit_draw.cpp" bodystart="690" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a4a65a77f010f18d6f8ca3110f275e712" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawConstructionShadow</definition>
+        <argsstring>(const CUnitType &amp;type, const CConstructionFrame *cframe, int frame, const PixelPos &amp;screenPos)</argsstring>
+        <name>DrawConstructionShadow</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCConstructionFrame" kindref="compound">CConstructionFrame</ref> *</type>
+          <declname>cframe</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw construction shadow.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cframe</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Construction frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame number to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>screen (top left) position of the unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="754" column="13" bodyfile="src/unit/unit_draw.cpp" bodystart="754" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1afc0218b15f03c36a4632327222c39ee0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawConstruction</definition>
+        <argsstring>(const int player, const CConstructionFrame *cframe, const CUnitType &amp;type, int frame, const PixelPos &amp;screenPos)</argsstring>
+        <name>DrawConstruction</name>
+        <param>
+          <type>const int</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCConstructionFrame" kindref="compound">CConstructionFrame</ref> *</type>
+          <declname>cframe</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw construction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cframe</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Construction frame to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>screen (top left) position of the unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="794" column="13" bodyfile="src/unit/unit_draw.cpp" bodystart="794" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a1cb807e2aa3cdff3bac775b8a6bfa47f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool DrawLevelCompare</definition>
+        <argsstring>(const CUnit *c1, const CUnit *c2)</argsstring>
+        <name>DrawLevelCompare</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare what order 2 units should be drawn on the map</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Unit to compare (*Unit) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Unit to compare (*Unit) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="948" column="20" bodyfile="src/unit/unit_draw.cpp" bodystart="948" bodyend="963"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__draw_8cpp_1a5926ad214489ae392845ac34708aa309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FindAndSortUnits</definition>
+        <argsstring>(const CViewport &amp;vp, std::vector&lt; CUnit * &gt; &amp;table)</argsstring>
+        <name>FindAndSortUnits</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+<para>Draw all units visible on map in viewport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find all units to draw in viewport.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table of units to return in sorted order </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_draw.cpp" line="972" column="5" bodyfile="src/unit/unit_draw.cpp" bodystart="972" bodyend="992"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/unit/unit_draw.cpp"/>
+  </compounddef>
+</doxygen>

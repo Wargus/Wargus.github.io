@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classEnemyUnitFinder" kind="class" language="C++" prot="public">
+    <compoundname>EnemyUnitFinder</compoundname>
+      <sectiondef kind="user-defined">
+      <header>ai_force.cpp - AI force functions.</header>
+      <memberdef kind="function" id="classEnemyUnitFinder_1a08349700ae676f118c60f2d714a3ef01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pathfinder_8h_1a586f8717564d1a04b2da1a21ad53ed8e" kindref="member">VisitResult</ref></type>
+        <definition>VisitResult EnemyUnitFinder::Visit</definition>
+        <argsstring>(TerrainTraversal &amp;terrainTraversal, const Vec2i &amp;pos, const Vec2i &amp;from)</argsstring>
+        <name>Visit</name>
+        <param>
+          <type><ref refid="classTerrainTraversal" kindref="compound">TerrainTraversal</ref> &amp;</type>
+          <declname>terrainTraversal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="73" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="82" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEnemyUnitFinder_1a7c9175287cc2a90bc1d4714e08c5ff20" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+        <definition>const CUnit&amp; EnemyUnitFinder::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="75" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnemyUnitFinder_1a2b15ab2182cbbb485dd53fe27567e956" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int EnemyUnitFinder::movemask</definition>
+        <argsstring></argsstring>
+        <name>movemask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="76" column="14" bodyfile="src/ai/ai_force.cpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnemyUnitFinder_1a00f08b01b9b459bb8a5b50213def91c7" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int EnemyUnitFinder::attackrange</definition>
+        <argsstring></argsstring>
+        <name>attackrange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="77" column="11" bodyfile="src/ai/ai_force.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnemyUnitFinder_1a734d74f080d2a675be5e76ba036a51c2" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int EnemyUnitFinder::find_type</definition>
+        <argsstring></argsstring>
+        <name>find_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="78" column="11" bodyfile="src/ai/ai_force.cpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnemyUnitFinder_1a2f46fc9b6dd7bb89766f070c11c0388d" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+        <definition>CUnit** EnemyUnitFinder::result_unit</definition>
+        <argsstring></argsstring>
+        <name>result_unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="79" column="7" bodyfile="src/ai/ai_force.cpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEnemyUnitFinder_1aa955deeea6cbc2c39f62d78377a735e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EnemyUnitFinder::EnemyUnitFinder</definition>
+        <argsstring>(const CUnit &amp;unit, CUnit **result_unit, int find_type)</argsstring>
+        <name>EnemyUnitFinder</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+          <declname>result_unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>find_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="63" column="1" bodyfile="src/ai/ai_force.cpp" bodystart="63" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai_force.cpp" line="61" column="1" bodyfile="src/ai/ai_force.cpp" bodystart="60" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classEnemyUnitFinder_1a00f08b01b9b459bb8a5b50213def91c7" prot="private" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>attackrange</name></member>
+      <member refid="classEnemyUnitFinder_1aa955deeea6cbc2c39f62d78377a735e3" prot="public" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>EnemyUnitFinder</name></member>
+      <member refid="classEnemyUnitFinder_1a734d74f080d2a675be5e76ba036a51c2" prot="private" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>find_type</name></member>
+      <member refid="classEnemyUnitFinder_1a2b15ab2182cbbb485dd53fe27567e956" prot="private" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>movemask</name></member>
+      <member refid="classEnemyUnitFinder_1a2f46fc9b6dd7bb89766f070c11c0388d" prot="private" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>result_unit</name></member>
+      <member refid="classEnemyUnitFinder_1a7c9175287cc2a90bc1d4714e08c5ff20" prot="private" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>unit</name></member>
+      <member refid="classEnemyUnitFinder_1a08349700ae676f118c60f2d714a3ef01" prot="public" virt="non-virtual"><scope>EnemyUnitFinder</scope><name>Visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

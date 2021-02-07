@@ -1,0 +1,2819 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCUnit" kind="class" language="C++" prot="public">
+    <compoundname>CUnit</compoundname>
+    <includes refid="unit_8h" local="no">unit.h</includes>
+    <innerclass refid="structCUnit_1_1__seen__stuff__" prot="public">CUnit::_seen_stuff_</innerclass>
+    <innerclass refid="structCUnit_1_1__unit__anim__" prot="public">CUnit::_unit_anim_</innerclass>
+    <innerclass refid="classCUnit_1_1CUnitManagerData" prot="public">CUnit::CUnitManagerData</innerclass>
+      <sectiondef kind="user-defined">
+      <header>map_radar.cpp - The map radar handling.</header>
+      <memberdef kind="function" id="classCUnit_1a6aeca155c00bfe6369c1caadc42b3825" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsVisibleOnRadar</definition>
+        <argsstring>(const CPlayer &amp;pradar) const</argsstring>
+        <name>IsVisibleOnRadar</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>pradar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="262" column="6" bodyfile="src/map/map_radar.cpp" bodystart="80" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>unit.cpp - The units.</header>
+      <memberdef kind="function" id="classCUnit_1a11fc3cb5629dbb25836b2067ea6c58cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="139" column="6" bodyfile="src/unit/unit.cpp" bodystart="404" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a1c1b4b0b87235646d56fc3de7250a7d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::CurrentAction</definition>
+        <argsstring>() const</argsstring>
+        <name>CurrentAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="143" column="14" bodyfile="src/unit/unit.cpp" bodystart="558" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a3ff563775b3354a1b738cbc8fc6b7ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsIdle</definition>
+        <argsstring>() const</argsstring>
+        <name>IsIdle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="145" column="6" bodyfile="src/unit/unit.cpp" bodystart="573" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1af82855bc1c3f4d8662beb7164ce34318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::ClearAction</definition>
+        <argsstring>()</argsstring>
+        <name>ClearAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="147" column="6" bodyfile="src/unit/unit.cpp" bodystart="563" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a19fb57d32f8c552fded0241e0305e1a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::RefsIncrease</definition>
+        <argsstring>()</argsstring>
+        <name>RefsIncrease</name>
+        <briefdescription>
+<para>Increase a unit&apos;s reference count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase a unit&apos;s reference count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="150" column="6" bodyfile="src/unit/unit.cpp" bodystart="378" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a765f74cddc13a564681b764cde6eb52a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::RefsDecrease</definition>
+        <argsstring>()</argsstring>
+        <name>RefsDecrease</name>
+        <briefdescription>
+<para>Decrease a unit&apos;s reference count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrease a unit&apos;s reference count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="152" column="6" bodyfile="src/unit/unit.cpp" bodystart="389" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a848d991c9ec0516d1d7b5528b3e4cc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::Init</definition>
+        <argsstring>(const CUnitType &amp;type)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Initialize unit structure with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the unit slot with default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="155" column="6" bodyfile="src/unit/unit.cpp" bodystart="595" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a1fd51178aef3c59de99fba1400e57300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::AssignToPlayer</definition>
+        <argsstring>(CPlayer &amp;player)</argsstring>
+        <name>AssignToPlayer</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Assign unit to player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Assigns a unit to a player, adjusting buildings, food and totals</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>player which have the unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="157" column="6" bodyfile="src/unit/unit.cpp" bodystart="711" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a25df5168aed690ff0c277bd271e5974a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::Place</definition>
+        <argsstring>(const Vec2i &amp;pos)</argsstring>
+        <name>Place</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Place a unit on map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Place unit on map.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="162" column="6" bodyfile="src/unit/unit.cpp" bodystart="1101" bodyend="1129"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ae4b45c1d99cb53f8cf1eadd85dc46ef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::MoveToXY</definition>
+        <argsstring>(const Vec2i &amp;pos)</argsstring>
+        <name>MoveToXY</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Move unit to tile(pos). (Do special stuff : vision, cachelist, pathfinding) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Move a unit (with units inside) to tile (pos). (Do stuff with vision, cachelist and pathfinding).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="165" column="6" bodyfile="src/unit/unit.cpp" bodystart="1079" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ac1239d4d9aef684d759b5c4f9e22a61e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::AddInContainer</definition>
+        <argsstring>(CUnit &amp;host)</argsstring>
+        <name>AddInContainer</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Add a unit inside a container. Only deal with list stuff. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add unit to a container. It only updates linked list stuff.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to container. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="167" column="6" bodyfile="src/unit/unit.cpp" bodystart="1009" bodyend="1023"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1aad2131b754a8656e6d877dda51a4d0a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::ChangeOwner</definition>
+        <argsstring>(CPlayer &amp;newplayer)</argsstring>
+        <name>ChangeOwner</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>newplayer</declname>
+        </param>
+        <briefdescription>
+<para>Change owner of unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the unit&apos;s owner</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newplayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New owning player. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="169" column="6" bodyfile="src/unit/unit.cpp" bodystart="1771" bodyend="1839"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a0d48b0bf776fa87ba82c2d4d558c1444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::Remove</definition>
+        <argsstring>(CUnit *host)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Remove unit from map/groups/... </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove unit from map.</para>
+<para>Update selection. Update panels. Update map.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to housing unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="172" column="6" bodyfile="src/unit/unit.cpp" bodystart="1219" bodyend="1260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ac2b6c07279368490e8393bda424e6143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::AssignWorkerToMine</definition>
+        <argsstring>(CUnit &amp;mine)</argsstring>
+        <name>AssignWorkerToMine</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>mine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="174" column="6" bodyfile="src/unit/unit.cpp" bodystart="1852" bodyend="1871"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a8aa4bd7b5225414f81b6f68fb4add2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::DeAssignWorkerFromMine</definition>
+        <argsstring>(CUnit &amp;mine)</argsstring>
+        <name>DeAssignWorkerFromMine</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>mine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="175" column="6" bodyfile="src/unit/unit.cpp" bodystart="1873" bodyend="1904"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a5c48e81a8b55113878f45220895ecbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::Release</definition>
+        <argsstring>(bool final=false)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>bool</type>
+          <declname>final</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release a unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Release an unit.</para>
+<para>The unit is only released, if all references are dropped. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="178" column="6" bodyfile="src/unit/unit.cpp" bodystart="488" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a69f448df74384f850c0e7c6c253de4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::RestoreOrder</definition>
+        <argsstring>()</argsstring>
+        <name>RestoreOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restore the saved order</para>
+<para><simplesect kind="return"><para>True if the saved order was restored </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="180" column="6" bodyfile="src/unit/unit.cpp" bodystart="663" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1accf120995f80c5529f2de0cb887d82cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::CanStoreOrder</definition>
+        <argsstring>(COrder *order)</argsstring>
+        <name>CanStoreOrder</name>
+        <param>
+          <type><ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can store this order</para>
+<para><simplesect kind="return"><para>True if the order could be saved </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="181" column="6" bodyfile="src/unit/unit.cpp" bodystart="693" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a326bb4a47b26d06590217aac2514c977" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsVisible</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsVisible</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Returns true, if unit is directly seen by an allied unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true, if the unit is visible. It check the Viscount of the player and everyone who shares vision with him.</para>
+<para><simplesect kind="note"><para>This understands shared vision, and should be used all around.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="191" column="6" bodyfile="src/unit/unit.cpp" bodystart="1676" bodyend="1690"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a922f275546a202a031333b026b6b4a90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsAlive</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAlive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if unit is alive. Another unit can interact only with alive map units.</para>
+<para><simplesect kind="return"><para>True if alive, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="205" column="6" bodyfile="src/unit/unit.cpp" bodystart="578" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a6058e576a93fe712baf144149e2a3894" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsVisibleOnMinimap</definition>
+        <argsstring>() const</argsstring>
+        <name>IsVisibleOnMinimap</name>
+        <briefdescription>
+<para>Returns true if unit is visible on minimap. Only for ThisPlayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true, if unit is shown on minimap.</para>
+<para><simplesect kind="warning"><para>This is for <ref refid="player_8cpp_1a539a5aa222220aa978fe7710f9739d7a" kindref="member">ThisPlayer</ref> only. </para>
+</simplesect>
+<xrefsect id="todo_1_todo000099"><xreftitle>Todo</xreftitle><xrefdescription><para>radar support</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>True if visible, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="259" column="6" bodyfile="src/unit/unit.cpp" bodystart="1700" bodyend="1715"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a959a01097e3d002d776c0537fee82259" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsVisibleInViewport</definition>
+        <argsstring>(const CViewport &amp;vp) const</argsstring>
+        <name>IsVisibleInViewport</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if unit is visible in a viewport. Only for ThisPlayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true, if unit is visible in viewport.</para>
+<para><simplesect kind="warning"><para>This is only true for <ref refid="player_8cpp_1a539a5aa222220aa978fe7710f9739d7a" kindref="member">ThisPlayer</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport pointer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if visible, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="265" column="6" bodyfile="src/unit/unit.cpp" bodystart="1726" bodyend="1764"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ac75f1b63d65c090163e3c978bd1e3b8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsEnemy</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player is an enemy</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="267" column="6" bodyfile="src/unit/unit.cpp" bodystart="3279" bodyend="3282"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ad4e90952d613b37b1148f1f5171d3935" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsEnemy</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is an enemy</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="268" column="6" bodyfile="src/unit/unit.cpp" bodystart="3289" bodyend="3292"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1aab7dd9f3b99448a65893b1a39ccc923a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsAllied</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsAllied</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player is an ally</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="269" column="6" bodyfile="src/unit/unit.cpp" bodystart="3299" bodyend="3302"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a7006741c575f144fbdd737d74f8e6299" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsAllied</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsAllied</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is an ally</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="270" column="6" bodyfile="src/unit/unit.cpp" bodystart="3309" bodyend="3312"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a974d7fd1d8ea250acda4aa4e75c2d0f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::HasSharedVisionWith</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>HasSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if unit shares vision with the player</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="271" column="6" bodyfile="src/unit/unit.cpp" bodystart="3319" bodyend="3322"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1aa6d832d3cb0713109008f4a55665e1d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::HasSharedVisionWith</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>HasSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit shares vision with the unit</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="272" column="6" bodyfile="src/unit/unit.cpp" bodystart="3329" bodyend="3332"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1aac71d1b0d1540f071a298d63a23522a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::HasMutualSharedVisionWith</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>HasMutualSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if both players share vision</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="273" column="6" bodyfile="src/unit/unit.cpp" bodystart="3339" bodyend="3342"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a788414cb1cebaf0bda4d77f13461555e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::HasMutualSharedVisionWith</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>HasMutualSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if both units share vision</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="274" column="6" bodyfile="src/unit/unit.cpp" bodystart="3349" bodyend="3352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1af3c37d40a0f2e51d56aa0cbe38981136" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsTeamed</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsTeamed</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player is on the same team</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="275" column="6" bodyfile="src/unit/unit.cpp" bodystart="3359" bodyend="3362"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a9b15458b21889f0642a0dcb782f38574" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsTeamed</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsTeamed</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is on the same team</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="276" column="6" bodyfile="src/unit/unit.cpp" bodystart="3369" bodyend="3372"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ac1ee548874cf88e3a810687639b418b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsUnusable</definition>
+        <argsstring>(bool ignore_built_state=false) const</argsstring>
+        <name>IsUnusable</name>
+        <param>
+          <type>bool</type>
+          <declname>ignore_built_state</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is unusable (for attacking...) <xrefsect id="todo_1_todo000105"><xreftitle>Todo</xreftitle><xrefdescription><para>look if correct used (UnitActionBuilt is no problem if attacked)? </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="278" column="6" bodyfile="src/unit/unit.cpp" bodystart="3378" bodyend="3381"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a16e78d1886e8e2203176800fd7c83a16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CUnit::MapDistanceTo</definition>
+        <argsstring>(const Vec2i &amp;pos) const</argsstring>
+        <name>MapDistanceTo</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the map distance to unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The distance between in tiles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="292" column="5" bodyfile="src/unit/unit.cpp" bodystart="3121" bodyend="3137"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1ac778a58081ac185fb12a7b90d6ed8383" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CUnit::GetDrawLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDrawLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="302" column="5" bodyfile="src/unit/unit.cpp" bodystart="583" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a73888946807380b61df37225c8b5253a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsAttackRanged</definition>
+        <argsstring>(CUnit *goal, const Vec2i &amp;goalPos)</argsstring>
+        <name>IsAttackRanged</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit attacking its goal will result in a ranged attack </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="304" column="6" bodyfile="src/unit/unit.cpp" bodystart="3386" bodyend="3413"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a25ae08b5471d23fc9efa150173fc16af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CUnit::GetMapPixelPosTopLeft</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMapPixelPosTopLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="306" column="10" bodyfile="src/unit/unit.cpp" bodystart="2341" bodyend="2345"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1abd809323c149d99c82b3e9219c4cd64c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CUnit::GetMapPixelPosCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMapPixelPosCenter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="307" column="10" bodyfile="src/unit/unit.cpp" bodystart="2347" bodyend="2350"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>unit_draw.cpp - The draw routines for units.</header>
+      <memberdef kind="function" id="classCUnit_1a21d1523dabb91f0bf1ea012faf1636cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnit::Draw</definition>
+        <argsstring>(const CViewport &amp;vp) const</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <briefdescription>
+<para>Draw a single unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Units on map: Draw unit on map. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="160" column="6" bodyfile="src/unit/unit_draw.cpp" bodystart="824" bodyend="939"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCUnit_1a7a49869695db49bd45f2658e15a6a9b5" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::Refs</definition>
+        <argsstring></argsstring>
+        <name>Refs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="323" column="18" bodyfile="src/include/unit.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ab950fac4b4015cdd4f473125cbc789a0" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::ReleaseCycle</definition>
+        <argsstring></argsstring>
+        <name>ReleaseCycle</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="324" column="18" bodyfile="src/include/unit.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ae6b31a997c3a8001b3076485cbd3f3f1" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit_1_1CUnitManagerData" kindref="compound">CUnitManagerData</ref></type>
+        <definition>CUnitManagerData CUnit::UnitManagerData</definition>
+        <argsstring></argsstring>
+        <name>UnitManagerData</name>
+        <briefdescription>
+<para>When this unit could be recycled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="325" column="18" bodyfile="src/include/unit.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ab85c077393d8195340140b007e9d3b12" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CUnit::PlayerSlot</definition>
+        <argsstring></argsstring>
+        <name>PlayerSlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="326" column="8" bodyfile="src/include/unit.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a04b6b49376fd16a69b197c25ef01fc17" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::InsideCount</definition>
+        <argsstring></argsstring>
+        <name>InsideCount</name>
+        <briefdescription>
+<para>index in Player-&gt;Units </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="328" column="8" bodyfile="src/include/unit.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a5a8baad6496619d39a52de14e4e38382" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::BoardCount</definition>
+        <argsstring></argsstring>
+        <name>BoardCount</name>
+        <briefdescription>
+<para>Number of units inside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="329" column="8" bodyfile="src/include/unit.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ad71ee80c451480fa691fdf1f9fd39650" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::UnitInside</definition>
+        <argsstring></argsstring>
+        <name>UnitInside</name>
+        <briefdescription>
+<para>Number of units transported inside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="330" column="7" bodyfile="src/include/unit.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1af6efe35ccf7462deb1d23441a4b5533e" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::Container</definition>
+        <argsstring></argsstring>
+        <name>Container</name>
+        <briefdescription>
+<para>Pointer to one of the units inside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="331" column="7" bodyfile="src/include/unit.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a0ceec48dcf027ed670eba48fd11f2e53" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::NextContained</definition>
+        <argsstring></argsstring>
+        <name>NextContained</name>
+        <briefdescription>
+<para>Pointer to the unit containing it (or 0) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="332" column="7" bodyfile="src/include/unit.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a6e74a2cdcc243c56885eb22cff25b475" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::PrevContained</definition>
+        <argsstring></argsstring>
+        <name>PrevContained</name>
+        <briefdescription>
+<para>Next unit in the container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="333" column="7" bodyfile="src/include/unit.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a73551cb2848addb8d13dbfa2f5902096" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::NextWorker</definition>
+        <argsstring></argsstring>
+        <name>NextWorker</name>
+        <briefdescription>
+<para>Previous unit in the container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="335" column="7" bodyfile="src/include/unit.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aae18079bcea347922fae4c1c08c9add8" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::Workers</definition>
+        <argsstring></argsstring>
+        <name>Workers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="337" column="7" bodyfile="src/include/unit.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1abb303327ffe02e021b62c9043ba9f666" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::Assigned</definition>
+        <argsstring></argsstring>
+        <name>Assigned</name>
+        <briefdescription>
+<para>pointer to first assigned worker to this resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="338" column="5" bodyfile="src/include/unit.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ad7054624897666b08ae403a8ebba804b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <briefdescription>
+<para>how many units are assigned to harvesting from the resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="339" column="5" bodyfile="src/include/unit.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1afdc18fc4535bfa6f5f9dd2b3f147e488" prot="public" static="no" mutable="no">
+        <type>struct CUnit::@37</type>
+        <definition>struct CUnit::@37 CUnit::Resource</definition>
+        <argsstring></argsstring>
+        <name>Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="340" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a1f65d30c06f16731c89ccfb38dee51ba" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i CUnit::tilePos</definition>
+        <argsstring></argsstring>
+        <name>tilePos</name>
+        <briefdescription>
+<para>Resource still. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="342" column="7" bodyfile="src/include/unit.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a3b96aed2cbf82246015377722f2de08c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::Offset</definition>
+        <argsstring></argsstring>
+        <name>Offset</name>
+        <briefdescription>
+<para>Map position X. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="344" column="14" bodyfile="src/include/unit.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1af29455cc1ab173b6a47b9663cc9105a5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>const CUnitType* CUnit::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+<para>Map position as flat index offset (x + y * w) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="346" column="18" bodyfile="src/include/unit.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aeb828040b5b1aed93d42521ac504b36c" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> *</type>
+        <definition>CPlayer* CUnit::Player</definition>
+        <argsstring></argsstring>
+        <name>Player</name>
+        <briefdescription>
+<para>Pointer to unit-type (peon,...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="347" column="12" bodyfile="src/include/unit.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ae82298e3bcac78599507519f899fcc18" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classCUnitStats" kindref="compound">CUnitStats</ref> *</type>
+        <definition>const CUnitStats* CUnit::Stats</definition>
+        <argsstring></argsstring>
+        <name>Stats</name>
+        <briefdescription>
+<para>Owner of this unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="348" column="18" bodyfile="src/include/unit.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a51855b5961b63bbebaaaef83fe6b9a42" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::CurrentSightRange</definition>
+        <argsstring></argsstring>
+        <name>CurrentSightRange</name>
+        <briefdescription>
+<para>Current unit stats. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="349" column="13" bodyfile="src/include/unit.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a6cef1db21dfdf86b9486da52c607c9a6" prot="public" static="no" mutable="no">
+        <type><ref refid="classPathFinderData" kindref="compound">PathFinderData</ref> *</type>
+        <definition>PathFinderData* CUnit::pathFinderData</definition>
+        <argsstring></argsstring>
+        <name>pathFinderData</name>
+        <briefdescription>
+<para>Unit&apos;s Current Sight Range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="352" column="16" bodyfile="src/include/unit.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a5ca8c48345fa369a32995653cd739db5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::Frame</definition>
+        <argsstring></argsstring>
+        <name>Frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="355" column="13" bodyfile="src/include/unit.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aca9f0971a8dbdc9874c424fc84f091ae" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitColors" kindref="compound">CUnitColors</ref> *</type>
+        <definition>CUnitColors* CUnit::Colors</definition>
+        <argsstring></argsstring>
+        <name>Colors</name>
+        <briefdescription>
+<para><ref refid="classImage" kindref="compound">Image</ref> frame: &lt;0 is mirrored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="356" column="13" bodyfile="src/include/unit.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aeda744e60ebd0375e7dc64b46962f5e1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CUnit::IndividualUpgrades[UpgradeMax]</definition>
+        <argsstring>[UpgradeMax]</argsstring>
+        <name>IndividualUpgrades</name>
+        <briefdescription>
+<para>Player colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="357" column="6" bodyfile="src/include/unit.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a41532cac526077aba85d452df3d29878" prot="public" static="no" mutable="no">
+        <type>signed char</type>
+        <definition>signed char CUnit::IX</definition>
+        <argsstring></argsstring>
+        <name>IX</name>
+        <briefdescription>
+<para>individual upgrades which the unit has </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="359" column="13" bodyfile="src/include/unit.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a4022e4c4a2f75e297e6b59f2e3583b22" prot="public" static="no" mutable="no">
+        <type>signed char</type>
+        <definition>signed char CUnit::IY</definition>
+        <argsstring></argsstring>
+        <name>IY</name>
+        <briefdescription>
+<para>X image displacement to map position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="360" column="13" bodyfile="src/include/unit.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a2115a484d7919f66de2b8d1ec15538a5" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CUnit::Direction</definition>
+        <argsstring></argsstring>
+        <name>Direction</name>
+        <briefdescription>
+<para>Y image displacement to map position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="361" column="15" bodyfile="src/include/unit.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ad19b1558e2cccb89f8b7ee82cf468f38" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CUnit::CurrentResource</definition>
+        <argsstring></argsstring>
+        <name>CurrentResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="362" column="15" bodyfile="src/include/unit.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a7a7c7d511844d3e83ec9986934e1b66e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::ResourcesHeld</definition>
+        <argsstring></argsstring>
+        <name>ResourcesHeld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="363" column="5" bodyfile="src/include/unit.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ab5e38a71019717f4ee41a4f4261ba334" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CUnit::DamagedType</definition>
+        <argsstring></argsstring>
+        <name>DamagedType</name>
+        <briefdescription>
+<para>Resources Held by a unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="365" column="15" bodyfile="src/include/unit.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aa214c8de3279c4c58f9906f4bdf1a28f" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CUnit::Attacked</definition>
+        <argsstring></argsstring>
+        <name>Attacked</name>
+        <briefdescription>
+<para>Index of damage type of unit which damaged this unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="366" column="15" bodyfile="src/include/unit.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a7c0826e7e244fb0231f4c1b6abd0dca6" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CUnit::Summoned</definition>
+        <argsstring></argsstring>
+        <name>Summoned</name>
+        <briefdescription>
+<para>gamecycle unit was last attacked </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="367" column="15" bodyfile="src/include/unit.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aa8f2f9182e4d4c3e35ea71ddf462adf8" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Blink</definition>
+        <argsstring></argsstring>
+        <name>Blink</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+<para>GameCycle unit was summoned using spells. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="368" column="10" bodyfile="src/include/unit.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1acdffbbee37e453deaa4f02b74c43549d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Moving</definition>
+        <argsstring></argsstring>
+        <name>Moving</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Let selection rectangle blink. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="369" column="10" bodyfile="src/include/unit.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a1dcd4d459cc6cb427d76e482da4cc231" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::ReCast</definition>
+        <argsstring></argsstring>
+        <name>ReCast</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>The unit is moving. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="370" column="10" bodyfile="src/include/unit.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a0328a7c641b408e74eb520e92a916ea4" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::AutoRepair</definition>
+        <argsstring></argsstring>
+        <name>AutoRepair</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Recast again next cycle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="371" column="10" bodyfile="src/include/unit.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a6d41899c81951326a22461c2ff68f301" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Burning</definition>
+        <argsstring></argsstring>
+        <name>Burning</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>True if unit tries to repair on still action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="373" column="10" bodyfile="src/include/unit.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a5acb42b913bf6a685f00b2da1e186990" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Destroyed</definition>
+        <argsstring></argsstring>
+        <name>Destroyed</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>unit is burning </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="374" column="10" bodyfile="src/include/unit.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a0a56800c7cf5d077f633b42ec13367df" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Removed</definition>
+        <argsstring></argsstring>
+        <name>Removed</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>unit is destroyed pending reference </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="375" column="10" bodyfile="src/include/unit.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a6bb491e665ea3bfac805ef7263787c25" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Selected</definition>
+        <argsstring></argsstring>
+        <name>Selected</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>unit is removed (not on map) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="376" column="10" bodyfile="src/include/unit.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ab6d5f6999af59059a14ebd853881869a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Constructed</definition>
+        <argsstring></argsstring>
+        <name>Constructed</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>unit is selected </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="378" column="10" bodyfile="src/include/unit.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ab2d261e4bcb91744fe70ef1c3cc35179" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Unit is in construction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="379" column="10" bodyfile="src/include/unit.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aeebadafbb8a16d44a14768bef23fbefa" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Boarded</definition>
+        <argsstring></argsstring>
+        <name>Boarded</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Unit is active for AI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="380" column="10" bodyfile="src/include/unit.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ac878a65764a8989ebb587375d6aae913" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::CacheLock</definition>
+        <argsstring></argsstring>
+        <name>CacheLock</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Unit is on board a transporter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="381" column="10" bodyfile="src/include/unit.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ac709f354d5b056ff8353d8542fb802de" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::Waiting</definition>
+        <argsstring></argsstring>
+        <name>Waiting</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Unit is on lock by unitcache operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="383" column="10" bodyfile="src/include/unit.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a112f9ea7ca198b1e27ea4d4e3da1342b" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::MineLow</definition>
+        <argsstring></argsstring>
+        <name>MineLow</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Unit is waiting and playing its still animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="384" column="10" bodyfile="src/include/unit.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aa3fc1f740dc4e256f92e33ca9855742b" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CUnit::TeamSelected</definition>
+        <argsstring></argsstring>
+        <name>TeamSelected</name>
+        <briefdescription>
+<para>This mine got a notification about its resources being low. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="386" column="10" bodyfile="src/include/unit.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aab59631cbecd53fec43482bb0b086a18" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> *</type>
+        <definition>CPlayer* CUnit::RescuedFrom</definition>
+        <argsstring></argsstring>
+        <name>RescuedFrom</name>
+        <briefdescription>
+<para>unit is selected by a team member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="387" column="9" bodyfile="src/include/unit.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a04719b9fd80ad3ae425f64768a59a0c8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::VisCount[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>VisCount</name>
+        <briefdescription>
+<para>NULL if the unit was not rescued. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The original owner of a rescued unit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="390" column="5" bodyfile="src/include/unit.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a58cd343448dc6f70761028d186e2e425" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structCUnit_1_1__seen__stuff__" kindref="compound">CUnit::_seen_stuff_</ref></type>
+        <definition>struct CUnit::_seen_stuff_ CUnit::Seen</definition>
+        <argsstring></argsstring>
+        <name>Seen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="403" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a6e69541e33dc70c88a7e7c0278c6eb66" prot="public" static="no" mutable="no">
+        <type><ref refid="classCVariable" kindref="compound">CVariable</ref> *</type>
+        <definition>CVariable* CUnit::Variable</definition>
+        <argsstring></argsstring>
+        <name>Variable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="405" column="11" bodyfile="src/include/unit.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a75bbd9d8b7bc7a7bd2791c0f6da1e768" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CUnit::TTL</definition>
+        <argsstring></argsstring>
+        <name>TTL</name>
+        <briefdescription>
+<para>array of User Defined variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="407" column="15" bodyfile="src/include/unit.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a7240a5c00a5587bc3918c58a7aa4afeb" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::GroupId</definition>
+        <argsstring></argsstring>
+        <name>GroupId</name>
+        <briefdescription>
+<para>time to live </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="409" column="14" bodyfile="src/include/unit.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a34d8f0f9b8af53c821a27aa63248995c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::LastGroup</definition>
+        <argsstring></argsstring>
+        <name>LastGroup</name>
+        <briefdescription>
+<para>unit belongs to this group id </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="410" column="14" bodyfile="src/include/unit.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a506a72fd064a7b33291bc8c1c7df8ee4" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnit::Wait</definition>
+        <argsstring></argsstring>
+        <name>Wait</name>
+        <briefdescription>
+<para>unit belongs to this last group </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="412" column="14" bodyfile="src/include/unit.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a7408d9f59904d24d71daa1fdca463e94" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::Threshold</definition>
+        <argsstring></argsstring>
+        <name>Threshold</name>
+        <briefdescription>
+<para>action counter </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="413" column="5" bodyfile="src/include/unit.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1aaa3a1a41bb3d7d46e4f398d9ab8d6a23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CUnit::UnderAttack</definition>
+        <argsstring></argsstring>
+        <name>UnderAttack</name>
+        <briefdescription>
+<para>The counter while ai unit couldn&apos;t change target. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="414" column="5" bodyfile="src/include/unit.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a4337330d111ca30e27711b49398d7d72" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structCUnit_1_1__unit__anim__" kindref="compound">CUnit::_unit_anim_</ref></type>
+        <definition>struct CUnit::_unit_anim_ CUnit::Anim</definition>
+        <argsstring></argsstring>
+        <name>Anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="421" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ac2bbd88459539238e614de6e12a553d4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structCUnit_1_1__unit__anim__" kindref="compound">CUnit::_unit_anim_</ref></type>
+        <definition>struct CUnit::_unit_anim_ CUnit::WaitBackup</definition>
+        <argsstring></argsstring>
+        <name>WaitBackup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="421" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a7295d6d82d3f433d468cc80ef9f30592" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCOrder" kindref="compound">COrder</ref> * &gt;</type>
+        <definition>std::vector&lt;COrder *&gt; CUnit::Orders</definition>
+        <argsstring></argsstring>
+        <name>Orders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="424" column="13" bodyfile="src/include/unit.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1ab3bf9e1cdae7578a0d89638b097af1ea" prot="public" static="no" mutable="no">
+        <type><ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* CUnit::SavedOrder</definition>
+        <argsstring></argsstring>
+        <name>SavedOrder</name>
+        <briefdescription>
+<para>orders to process </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="425" column="8" bodyfile="src/include/unit.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1abb4408ee27c75be57fba8b00f3a44fa2" prot="public" static="no" mutable="no">
+        <type><ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* CUnit::NewOrder</definition>
+        <argsstring></argsstring>
+        <name>NewOrder</name>
+        <briefdescription>
+<para>order to continue after current </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="426" column="8" bodyfile="src/include/unit.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a039abac20fe328c6007f8ba8e8796ce3" prot="public" static="no" mutable="no">
+        <type><ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* CUnit::CriticalOrder</definition>
+        <argsstring></argsstring>
+        <name>CriticalOrder</name>
+        <briefdescription>
+<para>order for new trained units </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="427" column="8" bodyfile="src/include/unit.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a764fc10dd488125cb24cda3014a4198d" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* CUnit::AutoCastSpell</definition>
+        <argsstring></argsstring>
+        <name>AutoCastSpell</name>
+        <briefdescription>
+<para>order to do as possible in breakable animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="429" column="6" bodyfile="src/include/unit.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1a52cbce101385febeac70ecab4369c297" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* CUnit::SpellCoolDownTimers</definition>
+        <argsstring></argsstring>
+        <name>SpellCoolDownTimers</name>
+        <briefdescription>
+<para>spells to auto cast </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="430" column="5" bodyfile="src/include/unit.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnit_1acabe0bc4de93ab79c228e0297b48976c" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnit::Goal</definition>
+        <argsstring></argsstring>
+        <name>Goal</name>
+        <briefdescription>
+<para>how much time unit need to wait before spell will be ready </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="432" column="7" bodyfile="src/include/unit.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCUnit_1af94af33f7e89ad04a27e77479f78eb4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CUnit::CUnit</definition>
+        <argsstring>()</argsstring>
+        <name>CUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="137" column="1" bodyfile="src/include/unit.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1aa78ad53feb09c8589f2457a9db61581c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* CUnit::CurrentOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>CurrentOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="141" column="8" bodyfile="src/include/unit.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a331ebed691c351c1990eec117595be12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsAgressive</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAgressive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="184" column="6" bodyfile="src/include/unit.h" bodystart="184" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a8f4df0ddc4df0e1d4712cd660ea04709" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsInvisibile</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsInvisibile</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="193" column="13" bodyfile="src/include/unit.h" bodystart="193" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a43623dbbf464c5b0ae47ed06f1a239e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsAliveOnMap</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAliveOnMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if unit is alive and on the map. Another unit can interact only with alive map units.</para>
+<para><simplesect kind="return"><para>True if alive, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="213" column="13" bodyfile="src/include/unit.h" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1add460dd69e9c2c5ee354a3d1821509fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsVisibleAsGoal</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsVisibleAsGoal</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true, if unit is visible as an action goal for a player on the map.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if visible, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="225" column="13" bodyfile="src/include/unit.h" bodystart="225" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a7b3f2df20c891c0940d9246b6280c384" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::IsVisibleOnMap</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsVisibleOnMap</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true, if unit is visible for this player on the map. The unit has to be out of fog of war and alive</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if visible, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="253" column="13" bodyfile="src/include/unit.h" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1acc9ef8c534df116c824b90ef347877e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CUnit::MapDistanceTo</definition>
+        <argsstring>(const CUnit &amp;dst) const</argsstring>
+        <name>MapDistanceTo</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the map distance between this unit and dst units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance to this unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The distance between in tiles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="287" column="5" bodyfile="src/include/unit.h" bodystart="287" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnit_1a2e600979acb9c181f3c5066763e38c04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnit::CanMove</definition>
+        <argsstring>() const</argsstring>
+        <name>CanMove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if unit can move. For the moment only check for move animation.</para>
+<para><simplesect kind="return"><para>true if unit can move. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit.h" line="300" column="6" bodyfile="src/include/unit.h" bodystart="300" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The big unit structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>#include &quot;unit.h&quot;</para>
+<para>Everything belonging to a unit. FIXME: rearrange for less memory.</para>
+<para>This class contains all information about a unit in game. A unit could be anything: a man, a vehicle, a ship, or a building. Currently only a tile, a unit, or a missile could be placed on the map.</para>
+<para>The unit structure members:</para>
+<para><ref refid="classCUnit_1a7a49869695db49bd45f2658e15a6a9b5" kindref="member">CUnit::Refs</ref></para>
+<para>The reference counter of the unit. If the pointer to the unit is stored the counter must be incremented and if this reference is destroyed the counter must be decremented. Alternative it would be possible to implement a garbage collector for this.</para>
+<para>CUnit::Slot</para>
+<para>This is the unique slot number. It is not possible that two units have the same slot number at the same time. The slot numbers are reused. This field could be accessed by the macro <ref refid="unit_8h_1a1884b076681dd1b8cbc8abf9debbceb4" kindref="member">UnitNumber(Unit *)</ref>.</para>
+<para>CUnit::UnitSlot</para>
+<para>This is the index into #Units[], where the unit pointer is stored. #Units[] is a table of all units currently active in game. This pointer is only needed to speed up, the remove of the unit pointer from #Units[], it didn&apos;t must be searched in the table.</para>
+<para><ref refid="classCUnit_1ab85c077393d8195340140b007e9d3b12" kindref="member">CUnit::PlayerSlot</ref></para>
+<para>The index into Player::Units[], where the unit pointer is stored. Player::Units[] is a table of all units currently belonging to a player. This pointer is only needed to speed up, the remove of the unit pointer from Player::Units[].</para>
+<para><ref refid="classCUnit_1af6efe35ccf7462deb1d23441a4b5533e" kindref="member">CUnit::Container</ref></para>
+<para>Pointer to the unit containing it, or NULL if the unit is free. This points to the transporter for units on board, or to the building for peasants inside(when they are mining).</para>
+<para><ref refid="classCUnit_1ad71ee80c451480fa691fdf1f9fd39650" kindref="member">CUnit::UnitInside</ref></para>
+<para>Pointer to the last unit added inside. Order doesn&apos;t really matter. All units inside are kept in a circular linked list. This is NULL if there are no units inside. Multiple levels of inclusion are allowed, though not very useful right now</para>
+<para><ref refid="classCUnit_1a0ceec48dcf027ed670eba48fd11f2e53" kindref="member">CUnit::NextContained</ref>, <ref refid="classCUnit_1a6e74a2cdcc243c56885eb22cff25b475" kindref="member">CUnit::PrevContained</ref></para>
+<para>The next and previous element in the curent container. Bogus values allowed for units not contained.</para>
+<para><ref refid="classCUnit_1a04b6b49376fd16a69b197c25ef01fc17" kindref="member">CUnit::InsideCount</ref></para>
+<para>The number of units inside the container.</para>
+<para><ref refid="classCUnit_1a5a8baad6496619d39a52de14e4e38382" kindref="member">CUnit::BoardCount</ref></para>
+<para>The number of units transported inside the container. This does not include for instance stuff like harvesters returning cargo.</para>
+<para><ref refid="classCUnit_1a1f65d30c06f16731c89ccfb38dee51ba" kindref="member">CUnit::tilePos</ref></para>
+<para>The tile map coordinates of the unit. 0,0 is the upper left on the map.</para>
+<para><ref refid="classCUnit_1af29455cc1ab173b6a47b9663cc9105a5" kindref="member">CUnit::Type</ref></para>
+<para>Pointer to the unit-type (::UnitType). The unit-type contains all information that all units of the same type shares. (Animations, Name, Stats, ...)</para>
+<para>CUnit::SeenType Pointer to the unit-type that this unit was, when last seen. Currently only used by buildings.</para>
+<para><ref refid="classCUnit_1aeb828040b5b1aed93d42521ac504b36c" kindref="member">CUnit::Player</ref></para>
+<para>Pointer to the owner of this unit (::Player). An unit could only be owned by one player.</para>
+<para><ref refid="classCUnit_1ae82298e3bcac78599507519f899fcc18" kindref="member">CUnit::Stats</ref></para>
+<para>Pointer to the current status (::UnitStats) of a unit. The units of the same player and the same type could share the same stats. The status contains all values which could be different for each player. This f.e. the upgradeable abilities of an unit. (CUnit::Stats::SightRange, CUnit::Stats::Armor, CUnit::Stats::HitPoints, ...)</para>
+<para><ref refid="classCUnit_1a51855b5961b63bbebaaaef83fe6b9a42" kindref="member">CUnit::CurrentSightRange</ref></para>
+<para>Current sight range of a unit, this changes when a unit enters a transporter or building or exits one of these.</para>
+<para><ref refid="classCUnit_1aca9f0971a8dbdc9874c424fc84f091ae" kindref="member">CUnit::Colors</ref></para>
+<para>Player colors of the unit. Contains the hardware dependent pixel values for the player colors (palette index #208-#211). Setup from the global palette. This is a pointer. <simplesect kind="note"><para>Index #208-#211 are various SHADES of the team color (#208 is brightest shade, #211 is darkest shade) .... these numbers are NOT red=#208, blue=#209, etc</para>
+</simplesect>
+<ref refid="classCUnit_1a41532cac526077aba85d452df3d29878" kindref="member">CUnit::IX</ref> <ref refid="classCUnit_1a4022e4c4a2f75e297e6b59f2e3583b22" kindref="member">CUnit::IY</ref></para>
+<para>Coordinate displacement in pixels or coordinates inside a tile. Currently only !=0, if the unit is moving from one tile to another (0-32 and for ships/flyers 0-64).</para>
+<para><ref refid="classCUnit_1a5ca8c48345fa369a32995653cd739db5" kindref="member">CUnit::Frame</ref></para>
+<para>Current graphic image of the animation sequence. The high bit (128) is used to flip this image horizontal (x direction). This also limits the number of different frames/image to 126.</para>
+<para>CUnit::SeenFrame</para>
+<para>Graphic image (see <ref refid="classCUnit_1a5ca8c48345fa369a32995653cd739db5" kindref="member">CUnit::Frame</ref>) what the player on this computer has last seen. If UnitNotSeen the player haven&apos;t seen this unit yet.</para>
+<para><ref refid="classCUnit_1a2115a484d7919f66de2b8d1ec15538a5" kindref="member">CUnit::Direction</ref></para>
+<para>Contains the binary angle (0-255) in which the direction the unit looks. 0, 32, 64, 128, 160, 192, 224, 256 corresponds to 0�, 45�, 90�, 135�, 180�, 225�, 270�, 315�, 360� or north, north-east, east, south-east, south, south-west, west, north-west, north. Currently only 8 directions are used, this is more for the future.</para>
+<para><ref refid="classCUnit_1aa214c8de3279c4c58f9906f4bdf1a28f" kindref="member">CUnit::Attacked</ref></para>
+<para>Last cycle the unit was attacked. 0 means never.</para>
+<para><ref refid="classCUnit_1a6d41899c81951326a22461c2ff68f301" kindref="member">CUnit::Burning</ref></para>
+<para>If Burning is non-zero, the unit is burning.</para>
+<para><ref refid="classCUnit_1a04719b9fd80ad3ae425f64768a59a0c8" kindref="member">CUnit::VisCount</ref>[PlayerMax] <verbatim>        Used to keep track of visible units on the map, it counts the
+        Number of seen tiles for each player. This is only modified
+        in UnitsMarkSeen and UnitsUnmarkSeen, from fow.
+        We keep track of visilibty for each player, and combine with
+        Shared vision ONLY when querying and such.
+</verbatim></para>
+<para>CUnit::SeenByPlayer <verbatim>        This is a bitmask of 1 and 0 values. SeenByPlayer &amp; (1&lt;&lt;p) is 0
+        If p never saw the unit and 1 if it did. This is important for
+        keeping track of dead units under fog. We only keep track of units
+        that are visible under fog with this.
+</verbatim></para>
+<para><ref refid="classCUnit_1a5acb42b913bf6a685f00b2da1e186990" kindref="member">CUnit::Destroyed</ref></para>
+<para><xrefsect id="todo_1_todo000095"><xreftitle>Todo</xreftitle><xrefdescription><para>docu. If you need more information, please send me an email or write it self.</para>
+</xrefdescription></xrefsect></para>
+<para><ref refid="classCUnit_1a0a56800c7cf5d077f633b42ec13367df" kindref="member">CUnit::Removed</ref></para>
+<para>This flag means the unit is not active on map. This flag have workers set if they are inside a building, units that are on board of a transporter.</para>
+<para><ref refid="classCUnit_1a6bb491e665ea3bfac805ef7263787c25" kindref="member">CUnit::Selected</ref></para>
+<para>Unit is selected. (So you can give it orders)</para>
+<para><ref refid="classCUnit_1ab6d5f6999af59059a14ebd853881869a" kindref="member">CUnit::Constructed</ref> Set when a building is under construction, and still using the generic building animation.</para>
+<para>CUnit::SeenConstructed Last seen state of construction. Used to draw correct building frame. See <ref refid="classCUnit_1ab6d5f6999af59059a14ebd853881869a" kindref="member">CUnit::Constructed</ref> for more information.</para>
+<para>CUnit::SeenState The Seen State of the building. 01 The building in being built when last seen. 10 The building was been upgraded when last seen.</para>
+<para><ref refid="classCUnit_1aeebadafbb8a16d44a14768bef23fbefa" kindref="member">CUnit::Boarded</ref></para>
+<para>This is 1 if the unit is on board a transporter.</para>
+<para>CUnit::XP</para>
+<para>Number of XP of the unit.</para>
+<para>CUnit::Kills</para>
+<para>How many units have been killed by the unit.</para>
+<para><ref refid="classCUnit_1a7240a5c00a5587bc3918c58a7aa4afeb" kindref="member">CUnit::GroupId</ref></para>
+<para>Number of the group to that the unit belongs. This is the main group showed on map, a unit can belong to many groups.</para>
+<para><ref refid="classCUnit_1a34d8f0f9b8af53c821a27aa63248995c" kindref="member">CUnit::LastGroup</ref></para>
+<para>Automatic group number, to reselect the same units. When the user selects more than one unit all units is given the next same number. (Used for ALT-CLICK)</para>
+<para>CUnit::Value</para>
+<para>This values hold the amount of resources in a resource or in in a harvester. <xrefsect id="todo_1_todo000096"><xreftitle>Todo</xreftitle><xrefdescription><para>continue documentation</para>
+</xrefdescription></xrefsect></para>
+<para><ref refid="classCUnit_1a506a72fd064a7b33291bc8c1c7df8ee4" kindref="member">CUnit::Wait</ref></para>
+<para>The unit is forced too wait for that many cycles. Be careful, setting this to 0 will lock the unit.</para>
+<para>CUnit::State</para>
+<para>Animation state, currently position in the animation script. 0 if an animation has just started, it should only be changed inside of actions.</para>
+<para>CUnit::Reset</para>
+<para><xrefsect id="todo_1_todo000097"><xreftitle>Todo</xreftitle><xrefdescription><para>continue documentation</para>
+</xrefdescription></xrefsect></para>
+<para><ref refid="classCUnit_1aa8f2f9182e4d4c3e35ea71ddf462adf8" kindref="member">CUnit::Blink</ref></para>
+<para><ref refid="classCUnit_1acdffbbee37e453deaa4f02b74c43549d" kindref="member">CUnit::Moving</ref></para>
+<para><ref refid="classCUnit_1aab59631cbecd53fec43482bb0b086a18" kindref="member">CUnit::RescuedFrom</ref></para>
+<para>Pointer to the original owner of a unit. It will be NULL if the unit was not rescued.</para>
+<para><ref refid="classCUnit_1a7295d6d82d3f433d468cc80ef9f30592" kindref="member">CUnit::Orders</ref></para>
+<para>Contains all orders of the unit. Slot 0 is always used.</para>
+<para><ref refid="classCUnit_1ab3bf9e1cdae7578a0d89638b097af1ea" kindref="member">CUnit::SavedOrder</ref></para>
+<para>This order is executed, if the current order is finished. This is used for attacking units, to return to the old place or for patrolling units to return to patrol after killing some enemies. Any new order given to the unit, clears this saved order.</para>
+<para><ref refid="classCUnit_1abb4408ee27c75be57fba8b00f3a44fa2" kindref="member">CUnit::NewOrder</ref></para>
+<para>This field is only used by buildings and this order is assigned to any by this building new trained unit. This is can be used to set the exit or gathering point of a building.</para>
+<para><ref refid="classCUnit_1acabe0bc4de93ab79c228e0297b48976c" kindref="member">CUnit::Goal</ref></para>
+<para>Generic goal pointer. Used by teleporters to point to circle of power.</para>
+<para><xrefsect id="todo_1_todo000098"><xreftitle>Todo</xreftitle><xrefdescription><para>continue documentation</para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>CSound</label>
+        <link refid="classCSound"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Second</edgelabel>
+          <edgelabel>First</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>CIcon</label>
+        <link refid="classCIcon"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>GScale</edgelabel>
+          <edgelabel>G</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>PathFinderOutput</label>
+        <link refid="classPathFinderOutput"/>
+      </node>
+      <node id="28">
+        <label>NumberDesc</label>
+        <link refid="structNumberDesc"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>binOp</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>String</edgelabel>
+          <edgelabel>DataType</edgelabel>
+          <edgelabel>ResType</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Cond</edgelabel>
+          <edgelabel>BFalse</edgelabel>
+          <edgelabel>N</edgelabel>
+          <edgelabel>BTrue</edgelabel>
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>CPlayerColorGraphic</label>
+        <link refid="classCPlayerColorGraphic"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CConstruction</label>
+        <link refid="classCConstruction"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>File</edgelabel>
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ShadowSprite</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Frames</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CUnitSound</label>
+        <link refid="classCUnitSound"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Dead</edgelabel>
+          <edgelabel>Acknowledgement</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>WorkComplete</edgelabel>
+          <edgelabel>Selected</edgelabel>
+          <edgelabel>Build</edgelabel>
+          <edgelabel>Repair</edgelabel>
+          <edgelabel>Ready</edgelabel>
+          <edgelabel>Help</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>PathFinderData</label>
+        <link refid="classPathFinderData"/>
+        <childnode refid="46" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ResourceInfo</label>
+        <link refid="classResourceInfo"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>SpriteWhenLoaded</edgelabel>
+          <edgelabel>SpriteWhenEmpty</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>FileWhenEmpty</edgelabel>
+          <edgelabel>FileWhenLoaded</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>AiForceManager</label>
+        <link refid="classAiForceManager"/>
+      </node>
+      <node id="24">
+        <label>CVariable</label>
+        <link refid="classCVariable"/>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="35">
+        <label>Vec2T&lt; short int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="29">
+        <label>BinOp</label>
+        <link refid="structBinOp"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Left</edgelabel>
+          <edgelabel>Right</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gcn::ImageLoader</label>
+        <link refid="classgcn_1_1ImageLoader"/>
+      </node>
+      <node id="44">
+        <label>CUnit::_unit_anim_</label>
+        <link refid="structCUnit_1_1__unit__anim__"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>CurrAnim</edgelabel>
+          <edgelabel>Anim</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>MissileType</label>
+        <link refid="classMissileType"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ImpactSound</edgelabel>
+          <edgelabel>FiredSound</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>OnImpact</edgelabel>
+          <edgelabel>SmokeParticle</edgelabel>
+          <edgelabel>ImpactParticle</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Damage</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>G</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>Smoke</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gcn::Image</label>
+        <link refid="classgcn_1_1Image"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mImageLoader</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>CGraphic</label>
+        <link refid="classCGraphic"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>frameFlip_map</edgelabel>
+          <edgelabel>frame_map</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HashFile</edgelabel>
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>CUnit::CUnitManagerData</label>
+        <link refid="classCUnit_1_1CUnitManagerData"/>
+      </node>
+      <node id="5">
+        <label>Mng</label>
+        <link refid="classMng"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>UnitDesc</label>
+        <link refid="structUnitDesc"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>AUnit</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>CPlayer</label>
+        <link refid="classCPlayer"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>Allow</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>UnitColors</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>UpgradeTimers</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>Ai</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>StartPos</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>AiName</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>CAllow</label>
+        <link refid="classCAllow"/>
+      </node>
+      <node id="1">
+        <label>CUnit</label>
+        <link refid="classCUnit"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Goal</edgelabel>
+          <edgelabel>Workers</edgelabel>
+          <edgelabel>NextContained</edgelabel>
+          <edgelabel>UnitInside</edgelabel>
+          <edgelabel>PrevContained</edgelabel>
+          <edgelabel>Container</edgelabel>
+          <edgelabel>NextWorker</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>Seen</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>Variable</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>RescuedFrom</edgelabel>
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>Colors</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>tilePos</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>NewOrder</edgelabel>
+          <edgelabel>SavedOrder</edgelabel>
+          <edgelabel>CriticalOrder</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>WaitBackup</edgelabel>
+          <edgelabel>Anim</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>pathFinderData</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Stats</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>UnitManagerData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CUnitType</label>
+        <link refid="classCUnitType"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>NeutralMinimapColorRGB</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CorpseType</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Portrait</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>MapSound</edgelabel>
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Construction</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Icon</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>File</edgelabel>
+          <edgelabel>Name</edgelabel>
+          <edgelabel>CorpseName</edgelabel>
+          <edgelabel>Ident</edgelabel>
+          <edgelabel>DamageType</edgelabel>
+          <edgelabel>ShadowFile</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>ResInfo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>OnHit</edgelabel>
+          <edgelabel>OnReady</edgelabel>
+          <edgelabel>OnEachCycle</edgelabel>
+          <edgelabel>TeleportEffectOut</edgelabel>
+          <edgelabel>TeleportEffectIn</edgelabel>
+          <edgelabel>OnEachSecond</edgelabel>
+          <edgelabel>OnInit</edgelabel>
+          <edgelabel>DeathExplosion</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>Animations</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ShadowSprite</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>DefaultStat</edgelabel>
+          <edgelabel>MapDefaultStat</edgelabel>
+          <edgelabel>Stats</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>MissileOffsets</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>Missile</edgelabel>
+          <edgelabel>Impact</edgelabel>
+          <edgelabel>Explosion</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>CAnimations</label>
+        <link refid="classCAnimations"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>Move</edgelabel>
+          <edgelabel>Death</edgelabel>
+          <edgelabel>Train</edgelabel>
+          <edgelabel>Still</edgelabel>
+          <edgelabel>RangedAttack</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>SpellCast</edgelabel>
+          <edgelabel>Upgrade</edgelabel>
+          <edgelabel>Research</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CColor</label>
+        <link refid="classCColor"/>
+      </node>
+      <node id="17">
+        <label>IconConfig</label>
+        <link refid="classIconConfig"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Icon</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>CAiType</label>
+        <link refid="classCAiType"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Race</edgelabel>
+          <edgelabel>Class</edgelabel>
+          <edgelabel>Script</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>CGraphic::frame_pos_t</label>
+      </node>
+      <node id="39">
+        <label>CUpgradeTimers</label>
+        <link refid="classCUpgradeTimers"/>
+      </node>
+      <node id="40">
+        <label>PlayerAi</label>
+        <link refid="classPlayerAi"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>AiType</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>Force</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Script</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>CUnitStats</label>
+        <link refid="classCUnitStats"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>Variables</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Vec2T&lt; int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="47">
+        <label>PathFinderInput</label>
+        <link refid="classPathFinderInput"/>
+      </node>
+      <node id="38">
+        <label>CUnitColors</label>
+        <link refid="classCUnitColors"/>
+      </node>
+      <node id="26">
+        <label>MissileConfig</label>
+        <link refid="classMissileConfig"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Missile</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>CUnit::_seen_stuff_</label>
+        <link refid="structCUnit_1_1__seen__stuff__"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>tilePos</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>CFrame</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>CAnimation</label>
+        <link refid="classCAnimation"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>CFont</label>
+        <link refid="classCFont"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>CConstructionFrame</label>
+        <link refid="classCConstructionFrame"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CUnitType::_portrait_</label>
+        <link refid="structCUnitType_1_1__portrait__"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Mngs</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SoundConfig</label>
+        <link refid="classSoundConfig"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="43">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+      <node id="20">
+        <label>LuaCallback</label>
+        <link refid="classLuaCallback"/>
+      </node>
+      <node id="30">
+        <label>StringDesc</label>
+        <link refid="structStringDesc"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>String</edgelabel>
+          <edgelabel>BFalse</edgelabel>
+          <edgelabel>Strings</edgelabel>
+          <edgelabel>BTrue</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Cond</edgelabel>
+          <edgelabel>MaxLen</edgelabel>
+          <edgelabel>Line</edgelabel>
+          <edgelabel>PlayerName</edgelabel>
+          <edgelabel>Begin</edgelabel>
+          <edgelabel>Number</edgelabel>
+          <edgelabel>End</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/unit.h" line="135" column="1" bodyfile="src/include/unit.h" bodystart="134" bodyend="433"/>
+    <listofallmembers>
+      <member refid="classCUnit_1ad7054624897666b08ae403a8ebba804b" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Active</name></member>
+      <member refid="classCUnit_1ab2d261e4bcb91744fe70ef1c3cc35179" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Active</name></member>
+      <member refid="classCUnit_1ac1239d4d9aef684d759b5c4f9e22a61e" prot="public" virt="non-virtual"><scope>CUnit</scope><name>AddInContainer</name></member>
+      <member refid="classCUnit_1a4337330d111ca30e27711b49398d7d72" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Anim</name></member>
+      <member refid="classCUnit_1abb303327ffe02e021b62c9043ba9f666" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Assigned</name></member>
+      <member refid="classCUnit_1a1fd51178aef3c59de99fba1400e57300" prot="public" virt="non-virtual"><scope>CUnit</scope><name>AssignToPlayer</name></member>
+      <member refid="classCUnit_1ac2b6c07279368490e8393bda424e6143" prot="public" virt="non-virtual"><scope>CUnit</scope><name>AssignWorkerToMine</name></member>
+      <member refid="classCUnit_1aa214c8de3279c4c58f9906f4bdf1a28f" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Attacked</name></member>
+      <member refid="classCUnit_1a764fc10dd488125cb24cda3014a4198d" prot="public" virt="non-virtual"><scope>CUnit</scope><name>AutoCastSpell</name></member>
+      <member refid="classCUnit_1a0328a7c641b408e74eb520e92a916ea4" prot="public" virt="non-virtual"><scope>CUnit</scope><name>AutoRepair</name></member>
+      <member refid="classCUnit_1aa8f2f9182e4d4c3e35ea71ddf462adf8" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Blink</name></member>
+      <member refid="classCUnit_1a5a8baad6496619d39a52de14e4e38382" prot="public" virt="non-virtual"><scope>CUnit</scope><name>BoardCount</name></member>
+      <member refid="classCUnit_1aeebadafbb8a16d44a14768bef23fbefa" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Boarded</name></member>
+      <member refid="classCUnit_1a6d41899c81951326a22461c2ff68f301" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Burning</name></member>
+      <member refid="classCUnit_1ac878a65764a8989ebb587375d6aae913" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CacheLock</name></member>
+      <member refid="classCUnit_1a2e600979acb9c181f3c5066763e38c04" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CanMove</name></member>
+      <member refid="classCUnit_1accf120995f80c5529f2de0cb887d82cf" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CanStoreOrder</name></member>
+      <member refid="classCUnit_1aad2131b754a8656e6d877dda51a4d0a8" prot="public" virt="non-virtual"><scope>CUnit</scope><name>ChangeOwner</name></member>
+      <member refid="classCUnit_1af82855bc1c3f4d8662beb7164ce34318" prot="public" virt="non-virtual"><scope>CUnit</scope><name>ClearAction</name></member>
+      <member refid="classCUnit_1aca9f0971a8dbdc9874c424fc84f091ae" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Colors</name></member>
+      <member refid="classCUnit_1ab6d5f6999af59059a14ebd853881869a" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Constructed</name></member>
+      <member refid="classCUnit_1af6efe35ccf7462deb1d23441a4b5533e" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Container</name></member>
+      <member refid="classCUnit_1a039abac20fe328c6007f8ba8e8796ce3" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CriticalOrder</name></member>
+      <member refid="classCUnit_1af94af33f7e89ad04a27e77479f78eb4a" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CUnit</name></member>
+      <member refid="classCUnit_1a1c1b4b0b87235646d56fc3de7250a7d1" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CurrentAction</name></member>
+      <member refid="classCUnit_1aa78ad53feb09c8589f2457a9db61581c" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CurrentOrder</name></member>
+      <member refid="classCUnit_1ad19b1558e2cccb89f8b7ee82cf468f38" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CurrentResource</name></member>
+      <member refid="classCUnit_1a51855b5961b63bbebaaaef83fe6b9a42" prot="public" virt="non-virtual"><scope>CUnit</scope><name>CurrentSightRange</name></member>
+      <member refid="classCUnit_1ab5e38a71019717f4ee41a4f4261ba334" prot="public" virt="non-virtual"><scope>CUnit</scope><name>DamagedType</name></member>
+      <member refid="classCUnit_1a8aa4bd7b5225414f81b6f68fb4add2a6" prot="public" virt="non-virtual"><scope>CUnit</scope><name>DeAssignWorkerFromMine</name></member>
+      <member refid="classCUnit_1a5acb42b913bf6a685f00b2da1e186990" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Destroyed</name></member>
+      <member refid="classCUnit_1a2115a484d7919f66de2b8d1ec15538a5" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Direction</name></member>
+      <member refid="classCUnit_1a21d1523dabb91f0bf1ea012faf1636cb" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Draw</name></member>
+      <member refid="classCUnit_1a5ca8c48345fa369a32995653cd739db5" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Frame</name></member>
+      <member refid="classCUnit_1ac778a58081ac185fb12a7b90d6ed8383" prot="public" virt="non-virtual"><scope>CUnit</scope><name>GetDrawLevel</name></member>
+      <member refid="classCUnit_1abd809323c149d99c82b3e9219c4cd64c" prot="public" virt="non-virtual"><scope>CUnit</scope><name>GetMapPixelPosCenter</name></member>
+      <member refid="classCUnit_1a25ae08b5471d23fc9efa150173fc16af" prot="public" virt="non-virtual"><scope>CUnit</scope><name>GetMapPixelPosTopLeft</name></member>
+      <member refid="classCUnit_1acabe0bc4de93ab79c228e0297b48976c" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Goal</name></member>
+      <member refid="classCUnit_1a7240a5c00a5587bc3918c58a7aa4afeb" prot="public" virt="non-virtual"><scope>CUnit</scope><name>GroupId</name></member>
+      <member refid="classCUnit_1aac71d1b0d1540f071a298d63a23522a9" prot="public" virt="non-virtual"><scope>CUnit</scope><name>HasMutualSharedVisionWith</name></member>
+      <member refid="classCUnit_1a788414cb1cebaf0bda4d77f13461555e" prot="public" virt="non-virtual"><scope>CUnit</scope><name>HasMutualSharedVisionWith</name></member>
+      <member refid="classCUnit_1a974d7fd1d8ea250acda4aa4e75c2d0f3" prot="public" virt="non-virtual"><scope>CUnit</scope><name>HasSharedVisionWith</name></member>
+      <member refid="classCUnit_1aa6d832d3cb0713109008f4a55665e1d1" prot="public" virt="non-virtual"><scope>CUnit</scope><name>HasSharedVisionWith</name></member>
+      <member refid="classCUnit_1aeda744e60ebd0375e7dc64b46962f5e1" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IndividualUpgrades</name></member>
+      <member refid="classCUnit_1a11fc3cb5629dbb25836b2067ea6c58cb" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Init</name></member>
+      <member refid="classCUnit_1a848d991c9ec0516d1d7b5528b3e4cc15" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Init</name></member>
+      <member refid="classCUnit_1a04b6b49376fd16a69b197c25ef01fc17" prot="public" virt="non-virtual"><scope>CUnit</scope><name>InsideCount</name></member>
+      <member refid="classCUnit_1a331ebed691c351c1990eec117595be12" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsAgressive</name></member>
+      <member refid="classCUnit_1a922f275546a202a031333b026b6b4a90" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsAlive</name></member>
+      <member refid="classCUnit_1a43623dbbf464c5b0ae47ed06f1a239e1" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsAliveOnMap</name></member>
+      <member refid="classCUnit_1aab7dd9f3b99448a65893b1a39ccc923a" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsAllied</name></member>
+      <member refid="classCUnit_1a7006741c575f144fbdd737d74f8e6299" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsAllied</name></member>
+      <member refid="classCUnit_1a73888946807380b61df37225c8b5253a" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsAttackRanged</name></member>
+      <member refid="classCUnit_1ac75f1b63d65c090163e3c978bd1e3b8e" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsEnemy</name></member>
+      <member refid="classCUnit_1ad4e90952d613b37b1148f1f5171d3935" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsEnemy</name></member>
+      <member refid="classCUnit_1a3ff563775b3354a1b738cbc8fc6b7ed2" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsIdle</name></member>
+      <member refid="classCUnit_1a8f4df0ddc4df0e1d4712cd660ea04709" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsInvisibile</name></member>
+      <member refid="classCUnit_1af3c37d40a0f2e51d56aa0cbe38981136" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsTeamed</name></member>
+      <member refid="classCUnit_1a9b15458b21889f0642a0dcb782f38574" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsTeamed</name></member>
+      <member refid="classCUnit_1ac1ee548874cf88e3a810687639b418b9" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsUnusable</name></member>
+      <member refid="classCUnit_1a326bb4a47b26d06590217aac2514c977" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsVisible</name></member>
+      <member refid="classCUnit_1add460dd69e9c2c5ee354a3d1821509fc" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsVisibleAsGoal</name></member>
+      <member refid="classCUnit_1a959a01097e3d002d776c0537fee82259" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsVisibleInViewport</name></member>
+      <member refid="classCUnit_1a7b3f2df20c891c0940d9246b6280c384" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsVisibleOnMap</name></member>
+      <member refid="classCUnit_1a6058e576a93fe712baf144149e2a3894" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsVisibleOnMinimap</name></member>
+      <member refid="classCUnit_1a6aeca155c00bfe6369c1caadc42b3825" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IsVisibleOnRadar</name></member>
+      <member refid="classCUnit_1a41532cac526077aba85d452df3d29878" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IX</name></member>
+      <member refid="classCUnit_1a4022e4c4a2f75e297e6b59f2e3583b22" prot="public" virt="non-virtual"><scope>CUnit</scope><name>IY</name></member>
+      <member refid="classCUnit_1a34d8f0f9b8af53c821a27aa63248995c" prot="public" virt="non-virtual"><scope>CUnit</scope><name>LastGroup</name></member>
+      <member refid="classCUnit_1acc9ef8c534df116c824b90ef347877e1" prot="public" virt="non-virtual"><scope>CUnit</scope><name>MapDistanceTo</name></member>
+      <member refid="classCUnit_1a16e78d1886e8e2203176800fd7c83a16" prot="public" virt="non-virtual"><scope>CUnit</scope><name>MapDistanceTo</name></member>
+      <member refid="classCUnit_1a112f9ea7ca198b1e27ea4d4e3da1342b" prot="public" virt="non-virtual"><scope>CUnit</scope><name>MineLow</name></member>
+      <member refid="classCUnit_1ae4b45c1d99cb53f8cf1eadd85dc46ef2" prot="public" virt="non-virtual"><scope>CUnit</scope><name>MoveToXY</name></member>
+      <member refid="classCUnit_1acdffbbee37e453deaa4f02b74c43549d" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Moving</name></member>
+      <member refid="classCUnit_1abb4408ee27c75be57fba8b00f3a44fa2" prot="public" virt="non-virtual"><scope>CUnit</scope><name>NewOrder</name></member>
+      <member refid="classCUnit_1a0ceec48dcf027ed670eba48fd11f2e53" prot="public" virt="non-virtual"><scope>CUnit</scope><name>NextContained</name></member>
+      <member refid="classCUnit_1a73551cb2848addb8d13dbfa2f5902096" prot="public" virt="non-virtual"><scope>CUnit</scope><name>NextWorker</name></member>
+      <member refid="classCUnit_1a3b96aed2cbf82246015377722f2de08c" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Offset</name></member>
+      <member refid="classCUnit_1a7295d6d82d3f433d468cc80ef9f30592" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Orders</name></member>
+      <member refid="classCUnit_1a6cef1db21dfdf86b9486da52c607c9a6" prot="public" virt="non-virtual"><scope>CUnit</scope><name>pathFinderData</name></member>
+      <member refid="classCUnit_1a25df5168aed690ff0c277bd271e5974a" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Place</name></member>
+      <member refid="classCUnit_1aeb828040b5b1aed93d42521ac504b36c" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Player</name></member>
+      <member refid="classCUnit_1ab85c077393d8195340140b007e9d3b12" prot="public" virt="non-virtual"><scope>CUnit</scope><name>PlayerSlot</name></member>
+      <member refid="classCUnit_1a6e74a2cdcc243c56885eb22cff25b475" prot="public" virt="non-virtual"><scope>CUnit</scope><name>PrevContained</name></member>
+      <member refid="classCUnit_1a1dcd4d459cc6cb427d76e482da4cc231" prot="public" virt="non-virtual"><scope>CUnit</scope><name>ReCast</name></member>
+      <member refid="classCUnit_1a7a49869695db49bd45f2658e15a6a9b5" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Refs</name></member>
+      <member refid="classCUnit_1a765f74cddc13a564681b764cde6eb52a" prot="public" virt="non-virtual"><scope>CUnit</scope><name>RefsDecrease</name></member>
+      <member refid="classCUnit_1a19fb57d32f8c552fded0241e0305e1a9" prot="public" virt="non-virtual"><scope>CUnit</scope><name>RefsIncrease</name></member>
+      <member refid="classCUnit_1a5c48e81a8b55113878f45220895ecbbd" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Release</name></member>
+      <member refid="classCUnit_1ab950fac4b4015cdd4f473125cbc789a0" prot="public" virt="non-virtual"><scope>CUnit</scope><name>ReleaseCycle</name></member>
+      <member refid="classCUnit_1a0d48b0bf776fa87ba82c2d4d558c1444" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Remove</name></member>
+      <member refid="classCUnit_1a0a56800c7cf5d077f633b42ec13367df" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Removed</name></member>
+      <member refid="classCUnit_1aab59631cbecd53fec43482bb0b086a18" prot="public" virt="non-virtual"><scope>CUnit</scope><name>RescuedFrom</name></member>
+      <member refid="classCUnit_1afdc18fc4535bfa6f5f9dd2b3f147e488" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Resource</name></member>
+      <member refid="classCUnit_1a7a7c7d511844d3e83ec9986934e1b66e" prot="public" virt="non-virtual"><scope>CUnit</scope><name>ResourcesHeld</name></member>
+      <member refid="classCUnit_1a69f448df74384f850c0e7c6c253de4b5" prot="public" virt="non-virtual"><scope>CUnit</scope><name>RestoreOrder</name></member>
+      <member refid="classCUnit_1ab3bf9e1cdae7578a0d89638b097af1ea" prot="public" virt="non-virtual"><scope>CUnit</scope><name>SavedOrder</name></member>
+      <member refid="classCUnit_1a58cd343448dc6f70761028d186e2e425" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Seen</name></member>
+      <member refid="classCUnit_1a6bb491e665ea3bfac805ef7263787c25" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Selected</name></member>
+      <member refid="classCUnit_1a52cbce101385febeac70ecab4369c297" prot="public" virt="non-virtual"><scope>CUnit</scope><name>SpellCoolDownTimers</name></member>
+      <member refid="classCUnit_1ae82298e3bcac78599507519f899fcc18" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Stats</name></member>
+      <member refid="classCUnit_1a7c0826e7e244fb0231f4c1b6abd0dca6" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Summoned</name></member>
+      <member refid="classCUnit_1aa3fc1f740dc4e256f92e33ca9855742b" prot="public" virt="non-virtual"><scope>CUnit</scope><name>TeamSelected</name></member>
+      <member refid="classCUnit_1a7408d9f59904d24d71daa1fdca463e94" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Threshold</name></member>
+      <member refid="classCUnit_1a1f65d30c06f16731c89ccfb38dee51ba" prot="public" virt="non-virtual"><scope>CUnit</scope><name>tilePos</name></member>
+      <member refid="classCUnit_1a75bbd9d8b7bc7a7bd2791c0f6da1e768" prot="public" virt="non-virtual"><scope>CUnit</scope><name>TTL</name></member>
+      <member refid="classCUnit_1af29455cc1ab173b6a47b9663cc9105a5" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Type</name></member>
+      <member refid="classCUnit_1aaa3a1a41bb3d7d46e4f398d9ab8d6a23" prot="public" virt="non-virtual"><scope>CUnit</scope><name>UnderAttack</name></member>
+      <member refid="classCUnit_1ad71ee80c451480fa691fdf1f9fd39650" prot="public" virt="non-virtual"><scope>CUnit</scope><name>UnitInside</name></member>
+      <member refid="classCUnit_1ae6b31a997c3a8001b3076485cbd3f3f1" prot="public" virt="non-virtual"><scope>CUnit</scope><name>UnitManagerData</name></member>
+      <member refid="classCUnit_1a6e69541e33dc70c88a7e7c0278c6eb66" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Variable</name></member>
+      <member refid="classCUnit_1a04719b9fd80ad3ae425f64768a59a0c8" prot="public" virt="non-virtual"><scope>CUnit</scope><name>VisCount</name></member>
+      <member refid="classCUnit_1a506a72fd064a7b33291bc8c1c7df8ee4" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Wait</name></member>
+      <member refid="classCUnit_1ac2bbd88459539238e614de6e12a553d4" prot="public" virt="non-virtual"><scope>CUnit</scope><name>WaitBackup</name></member>
+      <member refid="classCUnit_1ac709f354d5b056ff8353d8542fb802de" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Waiting</name></member>
+      <member refid="classCUnit_1aae18079bcea347922fae4c1c08c9add8" prot="public" virt="non-virtual"><scope>CUnit</scope><name>Workers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

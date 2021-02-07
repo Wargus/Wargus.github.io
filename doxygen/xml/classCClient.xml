@@ -1,0 +1,869 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCClient" kind="class" language="C++" prot="public">
+    <compoundname>CClient</compoundname>
+      <sectiondef kind="user-defined">
+      <header>netconnect.cpp - The network high level connection code.</header>
+      <memberdef kind="function" id="classCClient_1a0da4049dd0134b5bddc976f5e16373f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Init</definition>
+        <argsstring>(const std::string &amp;name, CUDPSocket *socket, CServerSetup *serverSetup, CServerSetup *localSetup, unsigned long tick)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> *</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> *</type>
+          <declname>serverSetup</declname>
+        </param>
+        <param>
+          <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> *</type>
+          <declname>localSetup</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="135" column="6" bodyfile="src/network/netconnect.cpp" bodystart="342" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a82d834d0f8e9bafd88686a3a9300d9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Parse</definition>
+        <argsstring>(const unsigned char *buf, const CHost &amp;host)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="138" column="6" bodyfile="src/network/netconnect.cpp" bodystart="640" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1af08d5bfdfb816f3507ebb4ebe37a0611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="139" column="6" bodyfile="src/network/netconnect.cpp" bodystart="583" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a9e05fd630cec0f6bdf1bcef7f4d3435b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::DetachFromServer</definition>
+        <argsstring>()</argsstring>
+        <name>DetachFromServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="141" column="6" bodyfile="src/network/netconnect.cpp" bodystart="354" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a4cd30c4e457b5748a11f94b2b245a76b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_disconnected</definition>
+        <argsstring>()</argsstring>
+        <name>Update_disconnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="146" column="6" bodyfile="src/network/netconnect.cpp" bodystart="360" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a0364ad6d029349530ee811bf60626993" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_detaching</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_detaching</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="147" column="6" bodyfile="src/network/netconnect.cpp" bodystart="373" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a711f5611d41a476a4cae2b2d83e4b6d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_connecting</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_connecting</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="148" column="6" bodyfile="src/network/netconnect.cpp" bodystart="387" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a970179900541e6525f8194ce0ba12840" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_connected</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_connected</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="149" column="6" bodyfile="src/network/netconnect.cpp" bodystart="401" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a6be262de0a00dc533e92e1dba4220584" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_synced</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_synced</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="150" column="6" bodyfile="src/network/netconnect.cpp" bodystart="421" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a5d4b41e8e3d6782132184d62feedb7d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_changed</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_changed</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="151" column="6" bodyfile="src/network/netconnect.cpp" bodystart="434" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1ac3e69e15db333974356ec184ae1879d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_async</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_async</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="152" column="6" bodyfile="src/network/netconnect.cpp" bodystart="448" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a38ebc784bf8865f7d2f3a07aa9e82c09" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_mapinfo</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_mapinfo</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="153" column="6" bodyfile="src/network/netconnect.cpp" bodystart="462" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1aa4bd7f8ba5d56ae29480f22d08c18aba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_badmap</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_badmap</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="154" column="6" bodyfile="src/network/netconnect.cpp" bodystart="477" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a9768c5d6e785b0db9c8e6137149cec84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_goahead</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_goahead</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="155" column="6" bodyfile="src/network/netconnect.cpp" bodystart="491" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a017cd6f5f35a3042076c2690bf66d9b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CClient::Update_started</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Update_started</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="156" column="6" bodyfile="src/network/netconnect.cpp" bodystart="505" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a0959c9ae148d01f3eb44c9a5194930fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_Go</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_Go</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="158" column="6" bodyfile="src/network/netconnect.cpp" bodystart="517" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1ac4f96710c3abf7bcecb7aca1952949d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_Config</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_Config</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="159" column="6" bodyfile="src/network/netconnect.cpp" bodystart="524" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1afd2999a31e6a0afd0f192d50c5e22e63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_MapUidMismatch</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_MapUidMismatch</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="160" column="6" bodyfile="src/network/netconnect.cpp" bodystart="531" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a70d6827e743ff7ed84a70780bd8353e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_Map</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_Map</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="161" column="6" bodyfile="src/network/netconnect.cpp" bodystart="538" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a045c60733f1013a3a3d8d9a9e8666856" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_Resync</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_Resync</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="162" column="6" bodyfile="src/network/netconnect.cpp" bodystart="545" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a8a582be09bf018ab24efc2655d978a95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_State</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_State</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="163" column="6" bodyfile="src/network/netconnect.cpp" bodystart="552" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a1612bf42ba41c5876e0ed34683ea225c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_Waiting</definition>
+        <argsstring>(unsigned long tick, unsigned long msec)</argsstring>
+        <name>Send_Waiting</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>msec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="164" column="6" bodyfile="src/network/netconnect.cpp" bodystart="559" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a12481500359ede6524633bf082205a14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_Hello</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_Hello</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="165" column="6" bodyfile="src/network/netconnect.cpp" bodystart="566" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a03f89f299ca651c0eb564aac8f18957b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Send_GoodBye</definition>
+        <argsstring>(unsigned long tick)</argsstring>
+        <name>Send_GoodBye</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="166" column="6" bodyfile="src/network/netconnect.cpp" bodystart="573" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a685b753770e84e130a8add47d444b016" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::SendRateLimited</definition>
+        <argsstring>(const T &amp;msg, unsigned long tick, unsigned long msecs)</argsstring>
+        <name>SendRateLimited</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>msecs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a message to the server, but only if the last packet was a while ago</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current tick </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>microseconds to delay </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="169" column="6" bodyfile="src/network/netconnect.cpp" bodystart="301" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1ac1a1c79146ecac3060e1ffb1c7002df5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::SetConfig</definition>
+        <argsstring>(const CInitMessage_Config &amp;msg)</argsstring>
+        <name>SetConfig</name>
+        <param>
+          <type>const <ref refid="classCInitMessage__Config" kindref="compound">CInitMessage_Config</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="171" column="6" bodyfile="src/network/netconnect.cpp" bodystart="602" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a01a1efebd90d655c238bf4cee869bbf9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_GameFull</definition>
+        <argsstring>()</argsstring>
+        <name>Parse_GameFull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="173" column="6" bodyfile="src/network/netconnect.cpp" bodystart="859" bodyend="867"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a5d3d7e56f3bad1b57bebe5b29e645e28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_LuaMismatch</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_LuaMismatch</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="174" column="6" bodyfile="src/network/netconnect.cpp" bodystart="869" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a1678080ebb3170eba5d3b96d9e73189d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_EngineMismatch</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_EngineMismatch</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="175" column="6" bodyfile="src/network/netconnect.cpp" bodystart="884" bodyend="896"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a23209982fb70cf1cd661f7c8f1ab02ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_Resync</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_Resync</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="176" column="6" bodyfile="src/network/netconnect.cpp" bodystart="839" bodyend="857"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a6c296e66ced742f2b2dff6112251dc24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_Config</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_Config</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="177" column="6" bodyfile="src/network/netconnect.cpp" bodystart="826" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a2f1d1f2d9faa4d281818588b981bb9f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_State</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_State</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="178" column="6" bodyfile="src/network/netconnect.cpp" bodystart="803" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1aedd0c7cc2be3bea1bb8b7b23192b64d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_Welcome</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_Welcome</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="179" column="6" bodyfile="src/network/netconnect.cpp" bodystart="774" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a5e344c9b1c6b46a435c124be247c7cf3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_Map</definition>
+        <argsstring>(const unsigned char *buf)</argsstring>
+        <name>Parse_Map</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="180" column="6" bodyfile="src/network/netconnect.cpp" bodystart="748" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a3d45ca0e1ccaabbdaaacf028e17d9881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::Parse_AreYouThere</definition>
+        <argsstring>()</argsstring>
+        <name>Parse_AreYouThere</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a network menu AreYouThere keepalive packet and reply IAmHere.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message received </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="181" column="6" bodyfile="src/network/netconnect.cpp" bodystart="903" bodyend="908"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1af645658dadccecf70c872c760a6bc7e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::SendRateLimited</definition>
+        <argsstring>(const CInitMessage_Header &amp;msg, unsigned long tick, unsigned long msecs)</argsstring>
+        <name>SendRateLimited</name>
+        <param>
+          <type>const <ref refid="classCInitMessage__Header" kindref="compound">CInitMessage_Header</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>msecs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="322" column="1" bodyfile="src/network/netconnect.cpp" bodystart="322" bodyend="340"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCClient_1a5ad87c0643068a8a83a20bb40014e069" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CClient::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="184" column="13" bodyfile="src/network/netconnect.cpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCClient_1a738ca284b521a899e42272460f685b30" prot="private" static="no" mutable="no">
+        <type><ref refid="classCHost" kindref="compound">CHost</ref></type>
+        <definition>CHost CClient::serverHost</definition>
+        <argsstring></argsstring>
+        <name>serverHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="185" column="7" bodyfile="src/network/netconnect.cpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCClient_1a308cf0b16b29eb6589afaba624f03ca8" prot="private" static="no" mutable="no">
+        <type><ref refid="structNetworkState" kindref="compound">NetworkState</ref></type>
+        <definition>NetworkState CClient::networkState</definition>
+        <argsstring></argsstring>
+        <name>networkState</name>
+        <briefdescription>
+<para>IP:port of server to join. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="186" column="14" bodyfile="src/network/netconnect.cpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCClient_1a4bdbe7fdd0fb35a2d0a832d17b1ff09a" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CClient::lastMsgTypeSent</definition>
+        <argsstring></argsstring>
+        <name>lastMsgTypeSent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="187" column="15" bodyfile="src/network/netconnect.cpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCClient_1a6c8f553f1058e5d7471a1d65d32ed496" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> *</type>
+        <definition>CUDPSocket* CClient::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+<para>Subtype of last InitConfig message sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="188" column="12" bodyfile="src/network/netconnect.cpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCClient_1aa45045d064a1e6ac69f3266e722599c0" prot="private" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> *</type>
+        <definition>CServerSetup* CClient::serverSetup</definition>
+        <argsstring></argsstring>
+        <name>serverSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="189" column="14" bodyfile="src/network/netconnect.cpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCClient_1ae8ff637dddbaa1e65c26a07abbe67f11" prot="private" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> *</type>
+        <definition>CServerSetup* CClient::localSetup</definition>
+        <argsstring></argsstring>
+        <name>localSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="190" column="14" bodyfile="src/network/netconnect.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCClient_1abaacf7c47eacf12a0a7c84d27e73ccbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CClient::SetServerHost</definition>
+        <argsstring>(const CHost &amp;host)</argsstring>
+        <name>SetServerHost</name>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="136" column="6" bodyfile="src/network/netconnect.cpp" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCClient_1a6645506b7c9a44f3d8f6f5058a9c0c3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CClient::GetNetworkState</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNetworkState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="143" column="5" bodyfile="src/network/netconnect.cpp" bodystart="143" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/network/netconnect.cpp" line="133" column="1" bodyfile="src/network/netconnect.cpp" bodystart="132" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classCClient_1a9e05fd630cec0f6bdf1bcef7f4d3435b" prot="public" virt="non-virtual"><scope>CClient</scope><name>DetachFromServer</name></member>
+      <member refid="classCClient_1a6645506b7c9a44f3d8f6f5058a9c0c3b" prot="public" virt="non-virtual"><scope>CClient</scope><name>GetNetworkState</name></member>
+      <member refid="classCClient_1a0da4049dd0134b5bddc976f5e16373f9" prot="public" virt="non-virtual"><scope>CClient</scope><name>Init</name></member>
+      <member refid="classCClient_1a4bdbe7fdd0fb35a2d0a832d17b1ff09a" prot="private" virt="non-virtual"><scope>CClient</scope><name>lastMsgTypeSent</name></member>
+      <member refid="classCClient_1ae8ff637dddbaa1e65c26a07abbe67f11" prot="private" virt="non-virtual"><scope>CClient</scope><name>localSetup</name></member>
+      <member refid="classCClient_1a5ad87c0643068a8a83a20bb40014e069" prot="private" virt="non-virtual"><scope>CClient</scope><name>name</name></member>
+      <member refid="classCClient_1a308cf0b16b29eb6589afaba624f03ca8" prot="private" virt="non-virtual"><scope>CClient</scope><name>networkState</name></member>
+      <member refid="classCClient_1a82d834d0f8e9bafd88686a3a9300d9ac" prot="public" virt="non-virtual"><scope>CClient</scope><name>Parse</name></member>
+      <member refid="classCClient_1a3d45ca0e1ccaabbdaaacf028e17d9881" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_AreYouThere</name></member>
+      <member refid="classCClient_1a6c296e66ced742f2b2dff6112251dc24" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_Config</name></member>
+      <member refid="classCClient_1a1678080ebb3170eba5d3b96d9e73189d" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_EngineMismatch</name></member>
+      <member refid="classCClient_1a01a1efebd90d655c238bf4cee869bbf9" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_GameFull</name></member>
+      <member refid="classCClient_1a5d3d7e56f3bad1b57bebe5b29e645e28" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_LuaMismatch</name></member>
+      <member refid="classCClient_1a5e344c9b1c6b46a435c124be247c7cf3" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_Map</name></member>
+      <member refid="classCClient_1a23209982fb70cf1cd661f7c8f1ab02ee" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_Resync</name></member>
+      <member refid="classCClient_1a2f1d1f2d9faa4d281818588b981bb9f7" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_State</name></member>
+      <member refid="classCClient_1aedd0c7cc2be3bea1bb8b7b23192b64d1" prot="private" virt="non-virtual"><scope>CClient</scope><name>Parse_Welcome</name></member>
+      <member refid="classCClient_1ac4f96710c3abf7bcecb7aca1952949d0" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_Config</name></member>
+      <member refid="classCClient_1a0959c9ae148d01f3eb44c9a5194930fd" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_Go</name></member>
+      <member refid="classCClient_1a03f89f299ca651c0eb564aac8f18957b" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_GoodBye</name></member>
+      <member refid="classCClient_1a12481500359ede6524633bf082205a14" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_Hello</name></member>
+      <member refid="classCClient_1a70d6827e743ff7ed84a70780bd8353e9" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_Map</name></member>
+      <member refid="classCClient_1afd2999a31e6a0afd0f192d50c5e22e63" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_MapUidMismatch</name></member>
+      <member refid="classCClient_1a045c60733f1013a3a3d8d9a9e8666856" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_Resync</name></member>
+      <member refid="classCClient_1a8a582be09bf018ab24efc2655d978a95" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_State</name></member>
+      <member refid="classCClient_1a1612bf42ba41c5876e0ed34683ea225c" prot="private" virt="non-virtual"><scope>CClient</scope><name>Send_Waiting</name></member>
+      <member refid="classCClient_1a685b753770e84e130a8add47d444b016" prot="private" virt="non-virtual"><scope>CClient</scope><name>SendRateLimited</name></member>
+      <member refid="classCClient_1af645658dadccecf70c872c760a6bc7e6" prot="private" virt="non-virtual"><scope>CClient</scope><name>SendRateLimited</name></member>
+      <member refid="classCClient_1a738ca284b521a899e42272460f685b30" prot="private" virt="non-virtual"><scope>CClient</scope><name>serverHost</name></member>
+      <member refid="classCClient_1aa45045d064a1e6ac69f3266e722599c0" prot="private" virt="non-virtual"><scope>CClient</scope><name>serverSetup</name></member>
+      <member refid="classCClient_1ac1a1c79146ecac3060e1ffb1c7002df5" prot="private" virt="non-virtual"><scope>CClient</scope><name>SetConfig</name></member>
+      <member refid="classCClient_1abaacf7c47eacf12a0a7c84d27e73ccbe" prot="public" virt="non-virtual"><scope>CClient</scope><name>SetServerHost</name></member>
+      <member refid="classCClient_1a6c8f553f1058e5d7471a1d65d32ed496" prot="private" virt="non-virtual"><scope>CClient</scope><name>socket</name></member>
+      <member refid="classCClient_1af08d5bfdfb816f3507ebb4ebe37a0611" prot="public" virt="non-virtual"><scope>CClient</scope><name>Update</name></member>
+      <member refid="classCClient_1ac3e69e15db333974356ec184ae1879d5" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_async</name></member>
+      <member refid="classCClient_1aa4bd7f8ba5d56ae29480f22d08c18aba" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_badmap</name></member>
+      <member refid="classCClient_1a5d4b41e8e3d6782132184d62feedb7d8" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_changed</name></member>
+      <member refid="classCClient_1a970179900541e6525f8194ce0ba12840" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_connected</name></member>
+      <member refid="classCClient_1a711f5611d41a476a4cae2b2d83e4b6d4" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_connecting</name></member>
+      <member refid="classCClient_1a0364ad6d029349530ee811bf60626993" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_detaching</name></member>
+      <member refid="classCClient_1a4cd30c4e457b5748a11f94b2b245a76b" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_disconnected</name></member>
+      <member refid="classCClient_1a9768c5d6e785b0db9c8e6137149cec84" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_goahead</name></member>
+      <member refid="classCClient_1a38ebc784bf8865f7d2f3a07aa9e82c09" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_mapinfo</name></member>
+      <member refid="classCClient_1a017cd6f5f35a3042076c2690bf66d9b6" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_started</name></member>
+      <member refid="classCClient_1a6be262de0a00dc533e92e1dba4220584" prot="private" virt="non-virtual"><scope>CClient</scope><name>Update_synced</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

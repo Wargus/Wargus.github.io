@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpell__LuaCallback" kind="class" language="C++" prot="public">
+    <compoundname>Spell_LuaCallback</compoundname>
+    <basecompoundref refid="classSpellActionType" prot="public" virt="non-virtual">SpellActionType</basecompoundref>
+    <includes refid="spell__luacallback_8h" local="no">spell_luacallback.h</includes>
+      <sectiondef kind="user-defined">
+      <header>spell_adjustvariable.cpp - The spell LuaCallback.</header>
+      <memberdef kind="function" id="classSpell__LuaCallback_1a13b2423f0d27f4a7b146d1b696e57146" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Spell_LuaCallback::Cast</definition>
+        <argsstring>(CUnit &amp;caster, const SpellType &amp;spell, CUnit *&amp;target, const Vec2i &amp;goalPos)</argsstring>
+        <name>Cast</name>
+        <reimplements refid="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0">Cast</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call a lua callback to make user actions in Lua script</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that casts the spell </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell-type pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goalPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coord of target spot when/if target does not exist</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>=!0 if spell should be repeated, 0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_luacallback.h" line="47" column="13" bodyfile="src/spell/spell_luacallback.cpp" bodystart="59" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpell__LuaCallback_1a71b8377e67c16a40439359567d2187b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Spell_LuaCallback::Parse</definition>
+        <argsstring>(lua_State *l, int startIndex, int endIndex)</argsstring>
+        <name>Parse</name>
+        <reimplements refid="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8">Parse</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_luacallback.h" line="49" column="14" bodyfile="src/spell/spell_luacallback.cpp" bodystart="40" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpell__LuaCallback_1a736c881460744376dd48149d50eaf08c" prot="private" static="no" mutable="no">
+        <type><ref refid="classLuaCallback" kindref="compound">LuaCallback</ref> *</type>
+        <definition>LuaCallback* Spell_LuaCallback::Func</definition>
+        <argsstring></argsstring>
+        <name>Func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_luacallback.h" line="52" column="13" bodyfile="src/include/spell/spell_luacallback.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpell__LuaCallback_1aa1cc3b5780f794a47fb49bc532bbf8e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Spell_LuaCallback::Spell_LuaCallback</definition>
+        <argsstring>()</argsstring>
+        <name>Spell_LuaCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_luacallback.h" line="45" column="1" bodyfile="src/include/spell/spell_luacallback.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpell__LuaCallback_1a424d00b184e3638582d43cdaf4cf1e1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Spell_LuaCallback::~Spell_LuaCallback</definition>
+        <argsstring>()</argsstring>
+        <name>~Spell_LuaCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_luacallback.h" line="46" column="1" bodyfile="src/include/spell/spell_luacallback.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Spell_LuaCallback</label>
+        <link refid="classSpell__LuaCallback"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Spell_LuaCallback</label>
+        <link refid="classSpell__LuaCallback"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/spell/spell_luacallback.h" line="43" column="1" bodyfile="src/include/spell/spell_luacallback.h" bodystart="42" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classSpell__LuaCallback_1a13b2423f0d27f4a7b146d1b696e57146" prot="public" virt="virtual"><scope>Spell_LuaCallback</scope><name>Cast</name></member>
+      <member refid="classSpell__LuaCallback_1a736c881460744376dd48149d50eaf08c" prot="private" virt="non-virtual"><scope>Spell_LuaCallback</scope><name>Func</name></member>
+      <member refid="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" virt="non-virtual"><scope>Spell_LuaCallback</scope><name>ModifyManaCaster</name></member>
+      <member refid="classSpell__LuaCallback_1a71b8377e67c16a40439359567d2187b3" prot="public" virt="virtual"><scope>Spell_LuaCallback</scope><name>Parse</name></member>
+      <member refid="classSpell__LuaCallback_1aa1cc3b5780f794a47fb49bc532bbf8e1" prot="public" virt="non-virtual"><scope>Spell_LuaCallback</scope><name>Spell_LuaCallback</name></member>
+      <member refid="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" virt="non-virtual"><scope>Spell_LuaCallback</scope><name>SpellActionType</name></member>
+      <member refid="classSpell__LuaCallback_1a424d00b184e3638582d43cdaf4cf1e1b" prot="public" virt="non-virtual"><scope>Spell_LuaCallback</scope><name>~Spell_LuaCallback</name></member>
+      <member refid="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" virt="virtual"><scope>Spell_LuaCallback</scope><name>~SpellActionType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

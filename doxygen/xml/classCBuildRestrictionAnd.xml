@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCBuildRestrictionAnd" kind="class" language="C++" prot="public">
+    <compoundname>CBuildRestrictionAnd</compoundname>
+    <basecompoundref refid="classCBuildRestriction" prot="public" virt="non-virtual">CBuildRestriction</basecompoundref>
+    <includes refid="unittype_8h" local="no">unittype.h</includes>
+      <sectiondef kind="user-defined">
+      <header>build.cpp - The units.</header>
+      <memberdef kind="function" id="classCBuildRestrictionAnd_1aac80bbb23fe872806871085174fbd1ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool CBuildRestrictionAnd::Check</definition>
+        <argsstring>(const CUnit *builder, const CUnitType &amp;type, const Vec2i &amp;pos, CUnit *&amp;ontoptarget) const</argsstring>
+        <name>Check</name>
+        <reimplements refid="classCBuildRestriction_1ac16d34e5573c15c844e9ca0b0cf3455d">Check</reimplements>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>builder</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>ontoptarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check And Restriction </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="375" column="14" bodyfile="src/unit/build.cpp" bodystart="100" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCBuildRestrictionAnd_1a4178c9796a89b9f1aef5877ac532ea2e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCBuildRestriction" kindref="compound">CBuildRestriction</ref> * &gt;</type>
+        <definition>std::vector&lt;CBuildRestriction *&gt; CBuildRestrictionAnd::_or_list</definition>
+        <argsstring></argsstring>
+        <name>_or_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="379" column="13" bodyfile="src/include/unittype.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCBuildRestrictionAnd_1a0f6987a02dbd15a8096d2172118aa0e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CBuildRestrictionAnd::~CBuildRestrictionAnd</definition>
+        <argsstring>()</argsstring>
+        <name>~CBuildRestrictionAnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="360" column="9" bodyfile="src/include/unittype.h" bodystart="360" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classCBuildRestrictionAnd_1a401e85b524270f86ef81966f204c7a5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CBuildRestrictionAnd::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <reimplements refid="classCBuildRestriction_1a3850d873eac77dee0a858ad4a3c7c251">Init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="368" column="14" bodyfile="src/include/unittype.h" bodystart="368" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classCBuildRestrictionAnd_1a1cf083564b0585b94711af659eafd64c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CBuildRestrictionAnd::push_back</definition>
+        <argsstring>(CBuildRestriction *restriction)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type><ref refid="classCBuildRestriction" kindref="compound">CBuildRestriction</ref> *</type>
+          <declname>restriction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="377" column="6" bodyfile="src/include/unittype.h" bodystart="377" bodyend="377"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CBuildRestrictionAnd</label>
+        <link refid="classCBuildRestrictionAnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CBuildRestriction</label>
+        <link refid="classCBuildRestriction"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CBuildRestrictionAnd</label>
+        <link refid="classCBuildRestrictionAnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CBuildRestriction</label>
+        <link refid="classCBuildRestriction"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/unittype.h" line="358" column="1" bodyfile="src/include/unittype.h" bodystart="357" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classCBuildRestrictionAnd_1a4178c9796a89b9f1aef5877ac532ea2e" prot="public" virt="non-virtual"><scope>CBuildRestrictionAnd</scope><name>_or_list</name></member>
+      <member refid="classCBuildRestrictionAnd_1aac80bbb23fe872806871085174fbd1ef" prot="public" virt="virtual"><scope>CBuildRestrictionAnd</scope><name>Check</name></member>
+      <member refid="classCBuildRestrictionAnd_1a401e85b524270f86ef81966f204c7a5d" prot="public" virt="virtual"><scope>CBuildRestrictionAnd</scope><name>Init</name></member>
+      <member refid="classCBuildRestrictionAnd_1a1cf083564b0585b94711af659eafd64c" prot="public" virt="non-virtual"><scope>CBuildRestrictionAnd</scope><name>push_back</name></member>
+      <member refid="classCBuildRestriction_1a74dff9cf703cfe69ae0f5f34a2e85e81" prot="public" virt="virtual"><scope>CBuildRestrictionAnd</scope><name>~CBuildRestriction</name></member>
+      <member refid="classCBuildRestrictionAnd_1a0f6987a02dbd15a8096d2172118aa0e6" prot="public" virt="virtual"><scope>CBuildRestrictionAnd</scope><name>~CBuildRestrictionAnd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

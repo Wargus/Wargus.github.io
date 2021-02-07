@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classLambdaActionListener" kind="class" language="C++" prot="public">
+    <compoundname>LambdaActionListener</compoundname>
+    <basecompoundref refid="classgcn_1_1ActionListener" prot="public" virt="non-virtual">gcn::ActionListener</basecompoundref>
+    <includes refid="widgets_8h" local="no">widgets.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLambdaActionListener_1aaeb60cdfbfdf37c1ea8347915df0d54b" prot="private" static="no" mutable="no">
+        <type>std::function&lt; <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref>(const std::string &amp;)&gt;</type>
+        <definition>std::function&lt;void(const std::string &amp;)&gt; LambdaActionListener::lambda</definition>
+        <argsstring></argsstring>
+        <name>lambda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="73" column="15" bodyfile="src/include/widgets.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLambdaActionListener_1a5bd62c5ce26c0f604c5ab135a857a015" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LambdaActionListener::LambdaActionListener</definition>
+        <argsstring>(std::function&lt; void(const std::string &amp;)&gt; l)</argsstring>
+        <name>LambdaActionListener</name>
+        <param>
+          <type>std::function&lt; <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref>(const std::string &amp;)&gt;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="75" column="1" bodyfile="src/include/widgets.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classLambdaActionListener_1a36f5a7038255c8730cbcd7bab1e334f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void LambdaActionListener::action</definition>
+        <argsstring>(const std::string &amp;eventId)</argsstring>
+        <name>action</name>
+        <reimplements refid="classgcn_1_1ActionListener_1a89247fdafe95afa92a4b94f74cedbdf2">action</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eventId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called whan an action is recieved from a Widget. It is used to be able to recieve a notification that an action has occured.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the identifier of the Widget. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="80" column="14" bodyfile="src/include/widgets.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LambdaActionListener</label>
+        <link refid="classLambdaActionListener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::ActionListener</label>
+        <link refid="classgcn_1_1ActionListener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LambdaActionListener</label>
+        <link refid="classLambdaActionListener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::ActionListener</label>
+        <link refid="classgcn_1_1ActionListener"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/widgets.h" line="72" column="1" bodyfile="src/include/widgets.h" bodystart="71" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classLambdaActionListener_1a36f5a7038255c8730cbcd7bab1e334f5" prot="public" virt="virtual"><scope>LambdaActionListener</scope><name>action</name></member>
+      <member refid="classLambdaActionListener_1aaeb60cdfbfdf37c1ea8347915df0d54b" prot="private" virt="non-virtual"><scope>LambdaActionListener</scope><name>lambda</name></member>
+      <member refid="classLambdaActionListener_1a5bd62c5ce26c0f604c5ab135a857a015" prot="public" virt="non-virtual"><scope>LambdaActionListener</scope><name>LambdaActionListener</name></member>
+      <member refid="classgcn_1_1ActionListener_1a15539005829890078792ce695260114b" prot="public" virt="virtual"><scope>LambdaActionListener</scope><name>~ActionListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

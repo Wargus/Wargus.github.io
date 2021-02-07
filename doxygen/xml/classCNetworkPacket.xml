@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCNetworkPacket" kind="class" language="C++" prot="public">
+    <compoundname>CNetworkPacket</compoundname>
+    <includes refid="net__message_8h" local="no">net_message.h</includes>
+      <sectiondef kind="user-defined">
+      <header>net_message.cpp - The network message code.</header>
+      <memberdef kind="function" id="classCNetworkPacket_1a36a72fd65861865b85fb18f3deb29557" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t CNetworkPacket::Serialize</definition>
+        <argsstring>(unsigned char *buf, int numcommands) const</argsstring>
+        <name>Serialize</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numcommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="461" column="8" bodyfile="src/network/net_message.cpp" bodystart="760" bodyend="769"/>
+      </memberdef>
+      <memberdef kind="function" id="classCNetworkPacket_1a5941cc88e83d5218be4b327e4d7cb071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CNetworkPacket::Deserialize</definition>
+        <argsstring>(const unsigned char *buf, unsigned int len, int *numcommands)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>numcommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="462" column="6" bodyfile="src/network/net_message.cpp" bodystart="771" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="classCNetworkPacket_1a09618c8e060f8cacc8e9833944b1dd3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t CNetworkPacket::Size</definition>
+        <argsstring>(int numcommands) const</argsstring>
+        <name>Size</name>
+        <param>
+          <type>int</type>
+          <declname>numcommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="463" column="8" bodyfile="src/network/net_message.cpp" bodystart="784" bodyend="793"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCNetworkPacket_1a3d8777c94d7c642a9ccf9d357feb00a1" prot="public" static="no" mutable="no">
+        <type><ref refid="classCNetworkPacketHeader" kindref="compound">CNetworkPacketHeader</ref></type>
+        <definition>CNetworkPacketHeader CNetworkPacket::Header</definition>
+        <argsstring></argsstring>
+        <name>Header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="465" column="22" bodyfile="src/include/net_message.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCNetworkPacket_1a1329d72ef759ae736534127d6843ccf7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; CNetworkPacket::Command[MaxNetworkCommands]</definition>
+        <argsstring>[MaxNetworkCommands]</argsstring>
+        <name>Command</name>
+        <briefdescription>
+<para>Packet Header Info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="466" column="13" bodyfile="src/include/net_message.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Network packet.</para>
+<para>This is sent over the network. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CNetworkPacket</label>
+        <link refid="classCNetworkPacket"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Header</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CNetworkPacketHeader</label>
+        <link refid="classCNetworkPacketHeader"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/net_message.h" line="459" column="1" bodyfile="src/include/net_message.h" bodystart="458" bodyend="467"/>
+    <listofallmembers>
+      <member refid="classCNetworkPacket_1a1329d72ef759ae736534127d6843ccf7" prot="public" virt="non-virtual"><scope>CNetworkPacket</scope><name>Command</name></member>
+      <member refid="classCNetworkPacket_1a5941cc88e83d5218be4b327e4d7cb071" prot="public" virt="non-virtual"><scope>CNetworkPacket</scope><name>Deserialize</name></member>
+      <member refid="classCNetworkPacket_1a3d8777c94d7c642a9ccf9d357feb00a1" prot="public" virt="non-virtual"><scope>CNetworkPacket</scope><name>Header</name></member>
+      <member refid="classCNetworkPacket_1a36a72fd65861865b85fb18f3deb29557" prot="public" virt="non-virtual"><scope>CNetworkPacket</scope><name>Serialize</name></member>
+      <member refid="classCNetworkPacket_1a09618c8e060f8cacc8e9833944b1dd3e" prot="public" virt="non-virtual"><scope>CNetworkPacket</scope><name>Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

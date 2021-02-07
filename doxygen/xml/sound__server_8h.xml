@@ -1,0 +1,853 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="sound__server_8h" kind="file" language="C++">
+    <compoundname>sound_server.h</compoundname>
+    <includes refid="sound_8h" local="yes">sound.h</includes>
+    <includedby refid="editloop_8cpp" local="yes">src/editor/editloop.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="loadgame_8cpp" local="yes">src/game/loadgame.cpp</includedby>
+    <includedby refid="music_8cpp" local="yes">src/sound/music.cpp</includedby>
+    <includedby refid="script__sound_8cpp" local="yes">src/sound/script_sound.cpp</includedby>
+    <includedby refid="sound_8cpp" local="yes">src/sound/sound.cpp</includedby>
+    <includedby refid="sound__id_8cpp" local="yes">src/sound/sound_id.cpp</includedby>
+    <includedby refid="sound__server_8cpp" local="yes">src/sound/sound_server.cpp</includedby>
+    <includedby refid="unitsound_8cpp" local="yes">src/sound/unitsound.cpp</includedby>
+    <includedby refid="stratagus_8cpp" local="yes">src/stratagus/stratagus.cpp</includedby>
+    <includedby refid="title_8cpp" local="yes">src/stratagus/title.cpp</includedby>
+    <includedby refid="interface_8cpp" local="yes">src/ui/interface.cpp</includedby>
+    <includedby refid="unit_8cpp" local="yes">src/unit/unit.cpp</includedby>
+    <includedby refid="movie_8cpp" local="yes">src/video/movie.cpp</includedby>
+    <includedby refid="sdl_8cpp" local="yes">src/video/sdl.cpp</includedby>
+    <includedby refid="tolua_8cpp" local="yes">build/tolua.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="6">
+        <label>SDL.h</label>
+      </node>
+      <node id="2">
+        <label>sound.h</label>
+        <link refid="sound_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/include/sound_server.h</label>
+        <link refid="sound__server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/sound/music.cpp</label>
+        <link refid="music_8cpp"/>
+      </node>
+      <node id="17">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/sound/sound_server.cpp</label>
+        <link refid="sound__server_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/sound/script_sound.cpp</label>
+        <link refid="script__sound_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/sound/sound.cpp</label>
+        <link refid="sound_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/video/sdl.cpp</label>
+        <link refid="sdl_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/sound/unitsound.cpp</label>
+        <link refid="unitsound_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/video/movie.cpp</label>
+        <link refid="movie_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/sound/sound_id.cpp</label>
+        <link refid="sound__id_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/stratagus/title.cpp</label>
+        <link refid="title_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/sound_server.h</label>
+        <link refid="sound__server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>sound_server.h - The sound server header file.</header>
+      <memberdef kind="define" id="sound__server_8h_1afc1fb975e223077e0b1826d4261621bf" prot="public" static="no">
+        <name>MaxVolume</name>
+        <initializer>255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="46" column="9" bodyfile="src/include/sound_server.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sound__server_8h_1aa52f01af28f06d86cb018369410639d7" prot="public" static="no">
+        <name>SOUND_BUFFER_SIZE</name>
+        <initializer>65536</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="47" column="9" bodyfile="src/include/sound_server.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a7d8020ba99073b29dbe77203dbadc4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SetChannelVolume</definition>
+        <argsstring>(int channel, int volume)</argsstring>
+        <name>SetChannelVolume</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Set the channel volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the channel volume</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New volume 0-255, &lt;0 will not set the volume</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current volume of the channel, -1 for error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="54" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="119" bodyend="122" declfile="src/include/sound_server.h" declline="54" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a90eaedeb31c7c76efbce8b6cb10dc073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetChannelStereo</definition>
+        <argsstring>(int channel, int stereo)</argsstring>
+        <name>SetChannelStereo</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stereo</declname>
+        </param>
+        <briefdescription>
+<para>Set the channel stereo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the channel stereo</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stereo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>-128 to 127, out of range will not set the stereo</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current stereo of the channel, -1 for error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="56" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="132" bodyend="147" declfile="src/include/sound_server.h" declline="56" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a338e08b171c7a7823ca7fe2729569463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetChannelFinishedCallback</definition>
+        <argsstring>(int channel, void(*callback)(int channel))</argsstring>
+        <name>SetChannelFinishedCallback</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref>(*)(int channel)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Set the channel&apos;s callback for when a sound finishes playing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the channel&apos;s callback for when a sound finishes playing</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback to call when the sound finishes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="58" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="155" bodyend="161" declfile="src/include/sound_server.h" declline="58" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a93862bccc5bf3982df06e38446d850bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Mix_Chunk *</type>
+        <definition>Mix_Chunk* GetChannelSample</definition>
+        <argsstring>(int channel)</argsstring>
+        <name>GetChannelSample</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Get the sample playing on a channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the sample playing on a channel </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="60" column="18" bodyfile="src/sound/sound_server.cpp" bodystart="166" bodyend="172" declfile="src/include/sound_server.h" declline="60" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ac260d79ff1e9ad6cda23f4f20752a985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void StopChannel</definition>
+        <argsstring>(int channel)</argsstring>
+        <name>StopChannel</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Stop a channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop a channel</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to stop </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="62" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="179" bodyend="182" declfile="src/include/sound_server.h" declline="62" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ae00fd85fc5ee2cda542426422b73ecfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void StopAllChannels</definition>
+        <argsstring>()</argsstring>
+        <name>StopAllChannels</name>
+        <briefdescription>
+<para>Stop all channels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop all channels </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="64" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="187" bodyend="190" declfile="src/include/sound_server.h" declline="64" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1aff53cd67ffb0db33c039960a65404b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnitSoundIsPlaying</definition>
+        <argsstring>(Origin *origin)</argsstring>
+        <name>UnitSoundIsPlaying</name>
+        <param>
+          <type><ref refid="structOrigin" kindref="compound">Origin</ref> *</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Check if this unit plays some sound. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="67" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="88" bodyend="97" declfile="src/include/sound_server.h" declline="67" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a331194e8044604dec4e1d69ba0d31ed7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SampleIsPlaying</definition>
+        <argsstring>(Mix_Chunk *sample)</argsstring>
+        <name>SampleIsPlaying</name>
+        <param>
+          <type>Mix_Chunk *</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para>Check, if this sample is already playing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this sound is already playing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="69" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="78" bodyend="86" declfile="src/include/sound_server.h" declline="69" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ae00ad4cff7780a2922fba9bca3d436d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Mix_Music *</type>
+        <definition>Mix_Music* LoadMusic</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>LoadMusic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Load music. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a music file</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Mix_Music pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="71" column="18" bodyfile="src/sound/sound_server.cpp" bodystart="237" bodyend="246" declfile="src/include/sound_server.h" declline="71" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a95c59fa233441b7521063f04769989c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Mix_Chunk *</type>
+        <definition>Mix_Chunk* LoadSample</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>LoadSample</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Load a sample. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a sample</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name of sample (short version).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>General sample loaded from file into memory.</para>
+</simplesect>
+<xrefsect id="todo_1_todo000056"><xreftitle>Todo</xreftitle><xrefdescription><para>Add streaming, caching support. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="73" column="18" bodyfile="src/sound/sound_server.cpp" bodystart="257" bodyend="266" declfile="src/include/sound_server.h" declline="73" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a993a5ca387197ff750d5c1147764156c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlaySample</definition>
+        <argsstring>(Mix_Chunk *sample, Origin *origin=NULL)</argsstring>
+        <name>PlaySample</name>
+        <param>
+          <type>Mix_Chunk *</type>
+          <declname>sample</declname>
+        </param>
+        <param>
+          <type><ref refid="structOrigin" kindref="compound">Origin</ref> *</type>
+          <declname>origin</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Play a sample. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Play a sound sample</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sample to play</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Channel number, -1 for error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="75" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="275" bodyend="290" declfile="src/include/sound_server.h" declline="75" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1aa2cd38a9e88a66ca82d556330955138f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlaySoundFile</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>PlaySoundFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Play a sound file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="77" column="12" declfile="src/include/sound_server.h" declline="77" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a775aff7653ee79e2c8b89a49f105526f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetEffectsVolume</definition>
+        <argsstring>(int volume)</argsstring>
+        <name>SetEffectsVolume</name>
+        <param>
+          <type>int</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Set effects volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the global sound volume.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sound volume 0-255 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="80" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="297" bodyend="300" declfile="src/include/sound_server.h" declline="80" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ae40dc82d9cb7452495583e5e3f563e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetEffectsVolume</definition>
+        <argsstring>()</argsstring>
+        <name>GetEffectsVolume</name>
+        <briefdescription>
+<para>Get effects volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get effects volume </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="82" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="305" bodyend="308" declfile="src/include/sound_server.h" declline="82" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a6db347540da5e114d88b11810619335a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetEffectsEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>SetEffectsEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Set effects enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set effects enabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="84" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="313" bodyend="316" declfile="src/include/sound_server.h" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1af7c4464eca5237efd65b9f49c1296339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsEffectsEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsEffectsEnabled</name>
+        <briefdescription>
+<para>Check if effects are enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if effects are enabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="86" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="321" bodyend="324" declfile="src/include/sound_server.h" declline="86" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1aaac2f308cfce04107e0486431edee97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetMusicFinishedCallback</definition>
+        <argsstring>(void(*callback)())</argsstring>
+        <name>SetMusicFinishedCallback</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref>(*)()</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Set the music finished callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the music finished callback </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="89" column="6" bodyfile="src/sound/sound_server.cpp" bodystart="333" bodyend="336" declfile="src/include/sound_server.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ac6af70fb19ca419696c29b047364b0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlayMusic</definition>
+        <argsstring>(Mix_Music *sample)</argsstring>
+        <name>PlayMusic</name>
+        <param>
+          <type>Mix_Music *</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para>Play a music file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Play a music file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Music sample.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if music is playing, -1 if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="91" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="345" bodyend="356" declfile="src/include/sound_server.h" declline="91" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a82d0c73b0a5aa9494a6989916c44c837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlayMusic</definition>
+        <argsstring>(const std::string &amp;file)</argsstring>
+        <name>PlayMusic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Play a music file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Play a music file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of music file, format is automatically detected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if music is playing, -1 if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="93" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="365" bodyend="380" declfile="src/include/sound_server.h" declline="93" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1af1ac1eaa9dfc988f5428f5715a0609b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void StopMusic</definition>
+        <argsstring>()</argsstring>
+        <name>StopMusic</name>
+        <briefdescription>
+<para>Stop music playing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the current playing music. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="95" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="385" bodyend="388" declfile="src/include/sound_server.h" declline="95" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a856d0287f90181550e7df84ce74a7262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetMusicVolume</definition>
+        <argsstring>(int volume)</argsstring>
+        <name>SetMusicVolume</name>
+        <param>
+          <type>int</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Set music volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the music volume.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the music volume 0-255 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="97" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="395" bodyend="401" declfile="src/include/sound_server.h" declline="97" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ac09a5219d7225e8ac26943b9204ce53f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetMusicVolume</definition>
+        <argsstring>()</argsstring>
+        <name>GetMusicVolume</name>
+        <briefdescription>
+<para>Get music volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get music volume </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="99" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="406" bodyend="409" declfile="src/include/sound_server.h" declline="99" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a83d48a19678c5c3c2d57fc26bc17f1d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetMusicEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>SetMusicEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Set music enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set music enabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="101" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="414" bodyend="422" declfile="src/include/sound_server.h" declline="101" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1ae84686c2536c251ee6c899c071380ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsMusicEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsMusicEnabled</name>
+        <briefdescription>
+<para>Check if music is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if music is enabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="103" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="427" bodyend="430" declfile="src/include/sound_server.h" declline="103" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a53d32d644554d55a93c378edd79ea00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsMusicPlaying</definition>
+        <argsstring>()</argsstring>
+        <name>IsMusicPlaying</name>
+        <briefdescription>
+<para>Check if music is playing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if music is playing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="105" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="435" bodyend="438" declfile="src/include/sound_server.h" declline="105" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a69e0dd3a5373ff0804b04ab24662d7aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoundEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>SoundEnabled</name>
+        <briefdescription>
+<para>Check if sound is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if sound is enabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="108" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="447" bodyend="450" declfile="src/include/sound_server.h" declline="108" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a05d0ff746200f59b25fb77e50e7c081f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int InitSound</definition>
+        <argsstring>()</argsstring>
+        <name>InitSound</name>
+        <briefdescription>
+<para>Initialize the sound card. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize sound card.</para>
+<para><simplesect kind="return"><para>True if failure, false if everything ok. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="110" column="12" bodyfile="src/sound/sound_server.cpp" bodystart="486" bodyend="503" declfile="src/include/sound_server.h" declline="110" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__server_8h_1a9b707464dc74fea7e560f96e2b85251a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void QuitSound</definition>
+        <argsstring>()</argsstring>
+        <name>QuitSound</name>
+        <briefdescription>
+<para>Cleanup sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleanup sound server. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound_server.h" line="112" column="13" bodyfile="src/sound/sound_server.cpp" bodystart="508" bodyend="513" declfile="src/include/sound_server.h" declline="112" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/sound_server.h"/>
+  </compounddef>
+</doxygen>

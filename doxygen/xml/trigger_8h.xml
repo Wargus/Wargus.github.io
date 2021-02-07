@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="trigger_8h" kind="file" language="C++">
+    <compoundname>trigger.h</compoundname>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="loadgame_8cpp" local="yes">src/game/loadgame.cpp</includedby>
+    <includedby refid="savegame_8cpp" local="yes">src/game/savegame.cpp</includedby>
+    <includedby refid="trigger_8cpp" local="yes">src/game/trigger.cpp</includedby>
+    <includedby refid="missile_8cpp" local="yes">src/missile/missile.cpp</includedby>
+    <includedby refid="mainloop_8cpp" local="yes">src/stratagus/mainloop.cpp</includedby>
+    <includedby refid="script_8cpp" local="yes">src/stratagus/script.cpp</includedby>
+    <includedby refid="botpanel_8cpp" local="yes">src/ui/botpanel.cpp</includedby>
+    <includedby refid="mainscr_8cpp" local="yes">src/ui/mainscr.cpp</includedby>
+    <includedby refid="popup_8cpp" local="yes">src/ui/popup.cpp</includedby>
+    <includedby refid="depend_8cpp" local="yes">src/unit/depend.cpp</includedby>
+    <includedby refid="script__unit_8cpp" local="yes">src/unit/script_unit.cpp</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/ui/botpanel.cpp</label>
+        <link refid="botpanel_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/stratagus/mainloop.cpp</label>
+        <link refid="mainloop_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/ui/mainscr.cpp</label>
+        <link refid="mainscr_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/game/trigger.cpp</label>
+        <link refid="trigger_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/ui/popup.cpp</label>
+        <link refid="popup_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/trigger.h</label>
+        <link refid="trigger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/unit/depend.cpp</label>
+        <link refid="depend_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCTimer" prot="public">CTimer</innerclass>
+    <innerclass refid="structTriggerDataType" prot="public">TriggerDataType</innerclass>
+      <sectiondef kind="user-defined">
+      <header>trigger.h - The game trigger headerfile.</header>
+      <memberdef kind="define" id="trigger_8h_1a8610088b4bf4115f2a784f58589a454f" prot="public" static="no">
+        <name>ANY_UNIT</name>
+        <initializer>((const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *)0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="69" column="9" bodyfile="src/include/trigger.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="trigger_8h_1a950c346a39a49bc57d0a69852ea4c3c9" prot="public" static="no">
+        <name>ALL_FOODUNITS</name>
+        <initializer>((const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *)-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="70" column="9" bodyfile="src/include/trigger.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="trigger_8h_1a69ecaed94b716bf64362ce72d083c691" prot="public" static="no">
+        <name>ALL_BUILDINGS</name>
+        <initializer>((const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *)-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="71" column="9" bodyfile="src/include/trigger.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="trigger_8h_1aaa3938a6512b0685239999ccf093e1da" prot="public" static="no" mutable="no">
+        <type><ref refid="classCTimer" kindref="compound">CTimer</ref></type>
+        <definition>CTimer GameTimer</definition>
+        <argsstring></argsstring>
+        <name>GameTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="88" column="15" bodyfile="src/game/trigger.cpp" bodystart="54" bodyend="-1" declfile="src/include/trigger.h" declline="88" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="trigger_8h_1a0b87d4631ba498de9de963328077fe80" prot="public" static="no" mutable="no">
+        <type><ref refid="structTriggerDataType" kindref="compound">TriggerDataType</ref></type>
+        <definition>TriggerDataType TriggerData</definition>
+        <argsstring></argsstring>
+        <name>TriggerData</name>
+        <briefdescription>
+<para>the game timer </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some data accessible for script during the game.</para>
+<para>the game timer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="91" column="24" bodyfile="src/game/trigger.cpp" bodystart="59" bodyend="-1" declfile="src/include/trigger.h" declline="91" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1a1ff0b4cf018c87f7dbddc9e3cedf15d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TriggerGetPlayer</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>TriggerGetPlayer</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get player number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The player number, -1 matches any. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="97" column="12" bodyfile="src/game/trigger.cpp" bodystart="73" bodyend="90" declfile="src/include/trigger.h" declline="97" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1a9beef908faed441ed55f6349adb25a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>const CUnitType* TriggerGetUnitType</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>TriggerGetUnitType</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>get player number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the unit-type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unit-type pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="98" column="24" bodyfile="src/game/trigger.cpp" bodystart="99" bodyend="111" declfile="src/include/trigger.h" declline="98" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1ae81b218e1d2f12efa9ccfaad7e14b8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void TriggersEachCycle</definition>
+        <argsstring>()</argsstring>
+        <name>TriggersEachCycle</name>
+        <briefdescription>
+<para>get the unit-type </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check trigger each game cycle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="99" column="13" bodyfile="src/game/trigger.cpp" bodystart="535" bodyend="574" declfile="src/include/trigger.h" declline="99" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1a7f868673dfbcb637b4cd57955896aa0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void TriggerCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>TriggerCclRegister</name>
+        <briefdescription>
+<para>test triggers </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for triggers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="101" column="13" bodyfile="src/game/trigger.cpp" bodystart="579" bodyend="587" declfile="src/include/trigger.h" declline="101" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1a38963021a5358e25b9a19319603fb08a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveTriggers</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SaveTriggers</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Register ccl features. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save the trigger module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structOpen" kindref="compound">Open</ref> file to print to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="102" column="13" bodyfile="src/game/trigger.cpp" bodystart="594" bodyend="631" declfile="src/include/trigger.h" declline="102" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1af715619c08d0e6b21a6954284b5c2315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitTriggers</definition>
+        <argsstring>()</argsstring>
+        <name>InitTriggers</name>
+        <briefdescription>
+<para>Save the trigger module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the trigger module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="103" column="13" bodyfile="src/game/trigger.cpp" bodystart="636" bodyend="648" declfile="src/include/trigger.h" declline="103" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger_8h_1ab9c29ed6533b4730de6ab1936e33bedf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanTriggers</definition>
+        <argsstring>()</argsstring>
+        <name>CleanTriggers</name>
+        <briefdescription>
+<para>Setup triggers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up the trigger module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/trigger.h" line="104" column="13" bodyfile="src/game/trigger.cpp" bodystart="653" bodyend="667" declfile="src/include/trigger.h" declline="104" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/trigger.h"/>
+  </compounddef>
+</doxygen>

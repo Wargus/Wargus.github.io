@@ -1,0 +1,1548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="unit__find_8h" kind="file" language="C++">
+    <compoundname>unit_find.h</compoundname>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includedby refid="action__attack_8cpp" local="yes">src/action/action_attack.cpp</includedby>
+    <includedby refid="action__follow_8cpp" local="yes">src/action/action_follow.cpp</includedby>
+    <includedby refid="action__move_8cpp" local="yes">src/action/action_move.cpp</includedby>
+    <includedby refid="action__resource_8cpp" local="yes">src/action/action_resource.cpp</includedby>
+    <includedby refid="action__still_8cpp" local="yes">src/action/action_still.cpp</includedby>
+    <includedby refid="actions_8cpp" local="yes">src/action/actions.cpp</includedby>
+    <includedby refid="ai__building_8cpp" local="yes">src/ai/ai_building.cpp</includedby>
+    <includedby refid="ai__force_8cpp" local="yes">src/ai/ai_force.cpp</includedby>
+    <includedby refid="ai__plan_8cpp" local="yes">src/ai/ai_plan.cpp</includedby>
+    <includedby refid="ai__resource_8cpp" local="yes">src/ai/ai_resource.cpp</includedby>
+    <includedby refid="editloop_8cpp" local="yes">src/editor/editloop.cpp</includedby>
+    <includedby refid="trigger_8cpp" local="yes">src/game/trigger.cpp</includedby>
+    <includedby refid="missile_8cpp" local="yes">src/missile/missile.cpp</includedby>
+    <includedby refid="missile__deathcoil_8cpp" local="yes">src/missile/missile_deathcoil.cpp</includedby>
+    <includedby refid="missile__flameshield_8cpp" local="yes">src/missile/missile_flameshield.cpp</includedby>
+    <includedby refid="missile__parabolic_8cpp" local="yes">src/missile/missile_parabolic.cpp</includedby>
+    <includedby refid="missile__tracer_8cpp" local="yes">src/missile/missile_tracer.cpp</includedby>
+    <includedby refid="astar_8cpp" local="yes">src/pathfinder/astar.cpp</includedby>
+    <includedby refid="spell__areaadjustvital_8cpp" local="yes">src/spell/spell_areaadjustvital.cpp</includedby>
+    <includedby refid="spell__demolish_8cpp" local="yes">src/spell/spell_demolish.cpp</includedby>
+    <includedby refid="spell__spawnmissile_8cpp" local="yes">src/spell/spell_spawnmissile.cpp</includedby>
+    <includedby refid="spell__summon_8cpp" local="yes">src/spell/spell_summon.cpp</includedby>
+    <includedby refid="spells_8cpp" local="yes">src/spell/spells.cpp</includedby>
+    <includedby refid="script__player_8cpp" local="yes">src/stratagus/script_player.cpp</includedby>
+    <includedby refid="selection_8cpp" local="yes">src/stratagus/selection.cpp</includedby>
+    <includedby refid="interface_8cpp" local="yes">src/ui/interface.cpp</includedby>
+    <includedby refid="mouse_8cpp" local="yes">src/ui/mouse.cpp</includedby>
+    <includedby refid="build_8cpp" local="yes">src/unit/build.cpp</includedby>
+    <includedby refid="script__unit_8cpp" local="yes">src/unit/script_unit.cpp</includedby>
+    <includedby refid="unit_8cpp" local="yes">src/unit/unit.cpp</includedby>
+    <includedby refid="unit__draw_8cpp" local="yes">src/unit/unit_draw.cpp</includedby>
+    <includedby refid="unit__find_8cpp" local="yes">src/unit/unit_find.cpp</includedby>
+    <includedby refid="upgrade_8cpp" local="yes">src/unit/upgrade.cpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>queue</label>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+      </node>
+      <node id="11">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>climits</label>
+      </node>
+      <node id="2">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="13">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/include/unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>set</label>
+      </node>
+      <node id="14">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>algorithm</label>
+      </node>
+      <node id="21">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="28">
+        <label>src/ui/mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/missile/missile_parabolic.cpp</label>
+        <link refid="missile__parabolic_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/unit/unit_draw.cpp</label>
+        <link refid="unit__draw_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/spell/spell_summon.cpp</label>
+        <link refid="spell__summon_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/spell/spell_demolish.cpp</label>
+        <link refid="spell__demolish_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/spell/spells.cpp</label>
+        <link refid="spells_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/stratagus/selection.cpp</label>
+        <link refid="selection_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/spell/spell_areaadjustvital.cpp</label>
+        <link refid="spell__areaadjustvital_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/stratagus/script_player.cpp</label>
+        <link refid="script__player_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/action/action_follow.cpp</label>
+        <link refid="action__follow_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/game/trigger.cpp</label>
+        <link refid="trigger_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/unit/build.cpp</label>
+        <link refid="build_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/missile/missile_deathcoil.cpp</label>
+        <link refid="missile__deathcoil_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/missile/missile_flameshield.cpp</label>
+        <link refid="missile__flameshield_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/unit/upgrade.cpp</label>
+        <link refid="upgrade_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/unit/unit_find.cpp</label>
+        <link refid="unit__find_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/missile/missile_tracer.cpp</label>
+        <link refid="missile__tracer_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/spell/spell_spawnmissile.cpp</label>
+        <link refid="spell__spawnmissile_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCUnitFilter" prot="public">CUnitFilter</innerclass>
+    <innerclass refid="classNoFilter" prot="public">NoFilter</innerclass>
+    <innerclass refid="classHasSameTypeAs" prot="public">HasSameTypeAs</innerclass>
+    <innerclass refid="classHasSamePlayerAs" prot="public">HasSamePlayerAs</innerclass>
+    <innerclass refid="classHasNotSamePlayerAs" prot="public">HasNotSamePlayerAs</innerclass>
+    <innerclass refid="classIsAlliedWith" prot="public">IsAlliedWith</innerclass>
+    <innerclass refid="classIsEnemyWith" prot="public">IsEnemyWith</innerclass>
+    <innerclass refid="classHasSamePlayerAndTypeAs" prot="public">HasSamePlayerAndTypeAs</innerclass>
+    <innerclass refid="classIsNotTheSameUnitAs" prot="public">IsNotTheSameUnitAs</innerclass>
+    <innerclass refid="classIsBuildingType" prot="public">IsBuildingType</innerclass>
+    <innerclass refid="classIsAggresiveUnit" prot="public">IsAggresiveUnit</innerclass>
+    <innerclass refid="classOutOfMinRange" prot="public">OutOfMinRange</innerclass>
+    <innerclass refid="classNotPredicate" prot="public">NotPredicate</innerclass>
+    <innerclass refid="classAndPredicate" prot="public">AndPredicate</innerclass>
+    <innerclass refid="classCUnitTypeFinder" prot="public">CUnitTypeFinder</innerclass>
+    <innerclass refid="classUnitFinder" prot="public">UnitFinder</innerclass>
+      <sectiondef kind="user-defined">
+      <header>unit.h - The unit headerfile.</header>
+      <memberdef kind="function" id="unit__find_8h_1aed69c96eb53987007d182b81167256cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classNotPredicate" kindref="compound">NotPredicate</ref>&lt; Pred &gt;</type>
+        <definition>NotPredicate&lt;Pred&gt; MakeNotPredicate</definition>
+        <argsstring>(Pred pred)</argsstring>
+        <name>MakeNotPredicate</name>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="169" column="14" bodyfile="src/include/unit_find.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a3a4efe8644ca9c3cfda5fba14869c0cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred1</type>
+          </param>
+          <param>
+            <type>typename Pred2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classAndPredicate" kindref="compound">AndPredicate</ref>&lt; Pred1, Pred2 &gt;</type>
+        <definition>AndPredicate&lt;Pred1, Pred2&gt; MakeAndPredicate</definition>
+        <argsstring>(Pred1 pred1, Pred2 pred2)</argsstring>
+        <name>MakeAndPredicate</name>
+        <param>
+          <type>Pred1</type>
+          <declname>pred1</declname>
+        </param>
+        <param>
+          <type>Pred2</type>
+          <declname>pred2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="183" column="14" bodyfile="src/include/unit_find.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1ac09184307a92ec8344b889f49a3eec36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Select</definition>
+        <argsstring>(const Vec2i &amp;ltPos, const Vec2i &amp;rbPos, std::vector&lt; CUnit * &gt; &amp;units)</argsstring>
+        <name>Select</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>ltPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>rbPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="220" column="6" bodyfile="src/unit/unit_find.cpp" bodystart="57" bodyend="60" declfile="src/include/unit_find.h" declline="220" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a4b7105e8e40215a2e275a172a07f808c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SelectFixed</definition>
+        <argsstring>(const Vec2i &amp;ltPos, const Vec2i &amp;rbPos, std::vector&lt; CUnit * &gt; &amp;units)</argsstring>
+        <name>SelectFixed</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>ltPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>rbPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="221" column="6" bodyfile="src/unit/unit_find.cpp" bodystart="62" bodyend="65" declfile="src/include/unit_find.h" declline="221" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1aac2994c7ac1406f47eb0e0c8f10d16c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SelectAroundUnit</definition>
+        <argsstring>(const CUnit &amp;unit, int range, std::vector&lt; CUnit * &gt; &amp;around)</argsstring>
+        <name>SelectAroundUnit</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>around</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="222" column="6" bodyfile="src/unit/unit_find.cpp" bodystart="67" bodyend="70" declfile="src/include/unit_find.h" declline="222" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a87304fbb3c721b113f7b173ccbb96376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SelectFixed</definition>
+        <argsstring>(const Vec2i &amp;ltPos, const Vec2i &amp;rbPos, std::vector&lt; CUnit * &gt; &amp;units, Pred pred)</argsstring>
+        <name>SelectFixed</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>ltPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>rbPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="225" column="6" bodyfile="src/include/unit_find.h" bodystart="225" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a29135918ccc4c10191d71eebcfe8751e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SelectAroundUnit</definition>
+        <argsstring>(const CUnit &amp;unit, int range, std::vector&lt; CUnit * &gt; &amp;around, Pred pred)</argsstring>
+        <name>SelectAroundUnit</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>around</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="252" column="6" bodyfile="src/include/unit_find.h" bodystart="252" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a98f0ea10ef7e59c2df61a1cd4413d95b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Select</definition>
+        <argsstring>(const Vec2i &amp;ltPos, const Vec2i &amp;rbPos, std::vector&lt; CUnit * &gt; &amp;units, Pred pred)</argsstring>
+        <name>Select</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>ltPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>rbPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="263" column="6" bodyfile="src/include/unit_find.h" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a1b08b09d2a36355a15f56d6ae33a65ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* FindUnit_IfFixed</definition>
+        <argsstring>(const Vec2i &amp;ltPos, const Vec2i &amp;rbPos, Pred pred)</argsstring>
+        <name>FindUnit_IfFixed</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>ltPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>rbPos</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="273" column="7" bodyfile="src/include/unit_find.h" bodystart="273" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a153fdf6d263c572bc216283db7d918ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* FindUnit_If</definition>
+        <argsstring>(const Vec2i &amp;ltPos, const Vec2i &amp;rbPos, Pred pred)</argsstring>
+        <name>FindUnit_If</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>ltPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>rbPos</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="293" column="7" bodyfile="src/include/unit_find.h" bodystart="293" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a91166a16bdd08d784d147eb452238c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* UnitFindResource</definition>
+        <argsstring>(const CUnit &amp;unit, const CUnit &amp;startUnit, int range, int resource, bool check_usage=false, const CUnit *deposit=NULL)</argsstring>
+        <name>UnitFindResource</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>startUnit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_usage</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>deposit</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Find resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find Resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit that wants to find a resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startUnit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find closest unit from this location </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance to the resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resource id.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This will return an usable resource building that doesn&apos;t belong to the player or one of his allies.</para>
+</simplesect>
+<simplesect kind="return"><para>NULL or resource unit </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="303" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="433" bodyend="453" declfile="src/include/unit_find.h" declline="303" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1ad6163105a6ef50d7a24205bbc8f7d570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* FindDeposit</definition>
+        <argsstring>(const CUnit &amp;unit, int range, int resource)</argsstring>
+        <name>FindDeposit</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+<para>Find nearest deposit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find deposit. This will find a deposit for a resource</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit that wants to find a resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance to the deposit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to find deposit from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This will return a reachable allied depot.</para>
+</simplesect>
+<simplesect kind="return"><para>NULL or deposit unit </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="307" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="466" bodyend="481" declfile="src/include/unit_find.h" declline="307" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a944a4b37c9ae492b868d5532ebbed108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* FindIdleWorker</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnit *last)</argsstring>
+        <name>FindIdleWorker</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Find the next idle worker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the next idle worker</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player&apos;s units to search through </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previous idle worker selected</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL or next idle worker </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="309" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="491" bodyend="517" declfile="src/include/unit_find.h" declline="309" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a14ddfc86e1b522656e5264f9fea90297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTerrainType</definition>
+        <argsstring>(int movemask, int resmask, int range, const CPlayer &amp;player, const Vec2i &amp;startPos, Vec2i *pos)</argsstring>
+        <name>FindTerrainType</name>
+        <param>
+          <type>int</type>
+          <declname>movemask</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resmask</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>pos</declname>
+          <defname>terrainPos</defname>
+        </param>
+        <briefdescription>
+<para>Find the neareast piece of terrain with specific flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the closest piece of terrain with the given flags.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>movemask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The movement mask to reach that location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resmask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result tile mask. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance for the search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only search fields explored by player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map start position for the search.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>terrainPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OUT: Map position of tile.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Movement mask can be 0xFFFFFFFF to have no effect Range is not circular, but square. Player is ignored if nil(search the entire map)</para>
+</simplesect>
+<simplesect kind="return"><para>True if wood was found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="312" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="162" bodyend="175" declfile="src/include/unit_find.h" declline="312" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a966818a702bda008be8aabb8fcb3c716" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FindUnitsByType</definition>
+        <argsstring>(const CUnitType &amp;type, std::vector&lt; CUnit * &gt; &amp;units, bool everybody=false)</argsstring>
+        <name>FindUnitsByType</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>everybody</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find all units of type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of unit requested </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array in which we have to store the units </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>everybody</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, include all units </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="315" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="526" bodyend="535" declfile="src/include/unit_find.h" declline="315" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1abf3447c4df1ee59cc0d260d8bb4b3d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FindPlayerUnitsByType</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnitType &amp;type, std::vector&lt; CUnit * &gt; &amp;units, bool ai_active=false)</argsstring>
+        <name>FindPlayerUnitsByType</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+          <defname>table</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ai_active</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Find all units of this type of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find all units of type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>we&apos;re looking for the units of this player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of unit requested </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table in which we have to store the units </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="318" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="544" bodyend="575" declfile="src/include/unit_find.h" declline="318" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a0a493b555c96481b0d9e913ec6f0aa22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* UnitOnMapTile</definition>
+        <argsstring>(const Vec2i &amp;pos, unsigned int type)</argsstring>
+        <name>UnitOnMapTile</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return any unit on that map tile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unit on map tile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position on map, tile-based. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UnitTypeType, (unsigned)-1 for any type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns first found unit on tile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="320" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="598" bodyend="601" declfile="src/include/unit_find.h" declline="320" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a6b46a2bf77a7de9cd325a587cc824266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* TargetOnMap</definition>
+        <argsstring>(const CUnit &amp;unit, const Vec2i &amp;pos1, const Vec2i &amp;pos2)</argsstring>
+        <name>TargetOnMap</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos2</declname>
+        </param>
+        <briefdescription>
+<para>Return possible attack target on that map area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Choose target on map area.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit which want to attack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position on map, tile-based. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position on map, tile-based.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns ideal target on map tile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="322" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="612" bodyend="634" declfile="src/include/unit_find.h" declline="322" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a909649e31ab327fbf6e6dc49be58d8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* ResourceOnMap</definition>
+        <argsstring>(const Vec2i &amp;pos, int resource, bool mine_on_top=true)</argsstring>
+        <name>ResourceOnMap</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mine_on_top</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return resource, if on map tile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource on map tile</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position on map, tile-based. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mine_on_top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return mine or mining area.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the deposit if found, or NULL. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="325" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="649" bodyend="652" declfile="src/include/unit_find.h" declline="325" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a369ea72753796781cc8be58d907dfcd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* ResourceDepositOnMap</definition>
+        <argsstring>(const Vec2i &amp;pos, int resource)</argsstring>
+        <name>ResourceDepositOnMap</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+<para>Return resource deposit, if on map tile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource deposit on map tile</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position on map, tile-based. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the deposit if found, or NULL. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="327" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="674" bodyend="677" declfile="src/include/unit_find.h" declline="327" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a97755adfde54d5bc34b4668912e0fb1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CheckObstaclesBetweenTiles</definition>
+        <argsstring>(const Vec2i &amp;unitPos, const Vec2i &amp;goalPos, unsigned short flags, int *distance=NULL)</argsstring>
+        <name>CheckObstaclesBetweenTiles</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>unitPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>distance</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Check map for obstacles in a line between 2 tiles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check map for obstacles in a line between 2 tiles</para>
+<para>This function uses Bresenham&apos;s line algorithm</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First tile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second tile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Terrain type to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false, if an obstacle was found, true otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="330" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="1113" bodyend="1143" declfile="src/include/unit_find.h" declline="330" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a1f49d762e9a52371ae82ab2da4724221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AttackUnitsInDistance</definition>
+        <argsstring>(const CUnit &amp;unit, int range, CUnitFilter pred)</argsstring>
+        <name>AttackUnitsInDistance</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitFilter" kindref="compound">CUnitFilter</ref></type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Find best enemy in numeric range to attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack units in distance.</para>
+<para>If the unit can attack must be handled by caller. Choose the best target, that can be attacked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find in distance for this unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance range to look. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onlyBuildings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Search only buildings (useful when attacking with AI force)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Unit to be attacked. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="332" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="1157" bodyend="1195" declfile="src/include/unit_find.h" declline="332" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a924372131a2464c69708d187909ddff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AttackUnitsInDistance</definition>
+        <argsstring>(const CUnit &amp;unit, int range)</argsstring>
+        <name>AttackUnitsInDistance</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="333" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="1197" bodyend="1200" declfile="src/include/unit_find.h" declline="333" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1a22647d9c27320a62c203a91708f17ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AttackUnitsInRange</definition>
+        <argsstring>(const CUnit &amp;unit, CUnitFilter pred)</argsstring>
+        <name>AttackUnitsInRange</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitFilter" kindref="compound">CUnitFilter</ref></type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Find best enemy in attack range to attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack units in attack range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find unit in attack range for this unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to unit which should be attacked. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="335" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="1209" bodyend="1213" declfile="src/include/unit_find.h" declline="335" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1abe2c518f47cf774df939a1134978a6fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AttackUnitsInRange</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>AttackUnitsInRange</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="336" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="1215" bodyend="1218" declfile="src/include/unit_find.h" declline="336" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1af17cbb62c8055fbc5959f98d0a0b0b7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AttackUnitsInReactRange</definition>
+        <argsstring>(const CUnit &amp;unit, CUnitFilter pred)</argsstring>
+        <name>AttackUnitsInReactRange</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitFilter" kindref="compound">CUnitFilter</ref></type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Find best enemy in reaction range to attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack units in reaction range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find unit in reaction range for this unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to unit which should be attacked. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="338" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="1227" bodyend="1232" declfile="src/include/unit_find.h" declline="338" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="unit__find_8h_1ac1101c64ecd28e085d521989e7290a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AttackUnitsInReactRange</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>AttackUnitsInReactRange</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="339" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="1234" bodyend="1237" declfile="src/include/unit_find.h" declline="339" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/unit_find.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCIcon" kind="class" language="C++" prot="public">
+    <compoundname>CIcon</compoundname>
+    <includes refid="icons_8h" local="no">icons.h</includes>
+      <sectiondef kind="user-defined">
+      <header>icons.cpp - The icons.</header>
+      <memberdef kind="function" id="classCIcon_1a7b2e4c4dbd35114927475d1622e96b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CIcon::CIcon</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>CIcon</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Map of ident to icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classCIcon" kindref="compound">CIcon</ref> constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="110" column="1" bodyfile="src/ui/icons.cpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1a246018678fe7745a2639e1eb8edd09f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CIcon::~CIcon</definition>
+        <argsstring>()</argsstring>
+        <name>~CIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classCIcon" kindref="compound">CIcon</ref> destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="111" column="1" bodyfile="src/ui/icons.cpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1a5cbfbb42c6030f3fb1f69c2dcb182aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CIcon::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="116" column="6" bodyfile="src/ui/icons.cpp" bodystart="110" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1a09c64e2b6c21cb98349e6593554f79ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CIcon::DrawIcon</definition>
+        <argsstring>(const PixelPos &amp;pos, const int player=-1) const</argsstring>
+        <name>DrawIcon</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>player</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Draw icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw icon at pos.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player pointer used for icon colors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display pixel position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="119" column="6" bodyfile="src/ui/icons.cpp" bodystart="129" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1ad794d7d54e1fb16429dc593bd5235b20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CIcon::DrawGrayscaleIcon</definition>
+        <argsstring>(const PixelPos &amp;pos, const int player=-1) const</argsstring>
+        <name>DrawGrayscaleIcon</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>player</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Draw grayscale icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw grayscale icon at pos.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display pixel position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="121" column="6" bodyfile="src/ui/icons.cpp" bodystart="143" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1a9421e5e4711239dfceeb80333d8e3722" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CIcon::DrawCooldownSpellIcon</definition>
+        <argsstring>(const PixelPos &amp;pos, const int percent) const</argsstring>
+        <name>DrawCooldownSpellIcon</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+<para>Draw cooldown spell. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw cooldown spell effect on icon at pos.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display pixel position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>percent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cooldown percent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="123" column="6" bodyfile="src/ui/icons.cpp" bodystart="160" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1adc0136d7e5e7044a5119947dbcc6a3cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CIcon::DrawUnitIcon</definition>
+        <argsstring>(const ButtonStyle &amp;style, unsigned flags, const PixelPos &amp;pos, const std::string &amp;text, const int player=-1) const</argsstring>
+        <name>DrawUnitIcon</name>
+        <param>
+          <type>const <ref refid="classButtonStyle" kindref="compound">ButtonStyle</ref> &amp;</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>player</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Draw icon of a unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw unit icon &apos;icon&apos; with border on x,y</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Button style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of icon (clicked, mouse over...) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display pixel position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional text to display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="125" column="6" bodyfile="src/ui/icons.cpp" bodystart="182" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1a01d8800fa6c4bdc5b50d8d017c31aefb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCIcon" kindref="compound">CIcon</ref> *</type>
+        <definition>CIcon * CIcon::New</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>New</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new icon</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon identifier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New icon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="113" column="14" bodyfile="src/ui/icons.cpp" bodystart="84" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classCIcon_1ade5e21f69a7f06820aa255daac1750b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCIcon" kindref="compound">CIcon</ref> *</type>
+        <definition>CIcon * CIcon::Get</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an icon</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon identifier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The icon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="114" column="14" bodyfile="src/ui/icons.cpp" bodystart="101" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCIcon_1a3e4fe50adfa6c682065dbdd415a92431" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayerColorGraphic" kindref="compound">CPlayerColorGraphic</ref> *</type>
+        <definition>CPlayerColorGraphic* CIcon::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="131" column="21" bodyfile="src/include/icons.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCIcon_1a877c1bbc2aaec02c227004b3787ba92c" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayerColorGraphic" kindref="compound">CPlayerColorGraphic</ref> *</type>
+        <definition>CPlayerColorGraphic* CIcon::GScale</definition>
+        <argsstring></argsstring>
+        <name>GScale</name>
+        <briefdescription>
+<para>Graphic data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="132" column="21" bodyfile="src/include/icons.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCIcon_1a9fa8d4827ef9352260de59c3a8c77f64" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CIcon::Frame</definition>
+        <argsstring></argsstring>
+        <name>Frame</name>
+        <briefdescription>
+<para>Icon when drawn grayscaled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="133" column="5" bodyfile="src/include/icons.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCIcon_1a69055e7eebc0bf49d184912031f82cc7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CIcon::Ident</definition>
+        <argsstring></argsstring>
+        <name>Ident</name>
+        <briefdescription>
+<para>Frame number in graphic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="135" column="13" bodyfile="src/include/icons.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCIcon_1ab2160b7267bc74c39122a031e1bc927e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; CIcon::GetIdent</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIdent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/icons.h" line="128" column="19" bodyfile="src/include/icons.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Icon: rectangle image used in menus. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>#include &quot;icons.h&quot;</para>
+<para>This structure contains all information about an icon.</para>
+<para>The icon structure members:</para>
+<para>CIcon::Ident</para>
+<para>Unique identifier of the icon, used to reference it in config files and during startup. Don&apos;t use this in game, use instead the pointer to this structure.</para>
+<para><ref refid="classCIcon_1a3e4fe50adfa6c682065dbdd415a92431" kindref="member">CIcon::G</ref></para>
+<para>Graphic image containing the loaded graphics. Loaded by <ref refid="icons_8h_1a44e30e94c75b7d87c8ecd2f5fb8c9241" kindref="member">LoadIcons()</ref>. All icons belonging to the same icon file shares this structure.</para>
+<para><ref refid="classCIcon_1a9fa8d4827ef9352260de59c3a8c77f64" kindref="member">CIcon::Frame</ref></para>
+<para>Frame number in the graphic to display. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CIcon</label>
+        <link refid="classCIcon"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GScale</edgelabel>
+          <edgelabel>G</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CPlayerColorGraphic</label>
+        <link refid="classCPlayerColorGraphic"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>gcn::ImageLoader</label>
+        <link refid="classgcn_1_1ImageLoader"/>
+      </node>
+      <node id="4">
+        <label>gcn::Image</label>
+        <link refid="classgcn_1_1Image"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mImageLoader</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CGraphic</label>
+        <link refid="classCGraphic"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>frameFlip_map</edgelabel>
+          <edgelabel>frame_map</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>HashFile</edgelabel>
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CGraphic::frame_pos_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/icons.h" line="108" column="1" bodyfile="src/include/icons.h" bodystart="107" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classCIcon_1a7b2e4c4dbd35114927475d1622e96b5d" prot="public" virt="non-virtual"><scope>CIcon</scope><name>CIcon</name></member>
+      <member refid="classCIcon_1a9421e5e4711239dfceeb80333d8e3722" prot="public" virt="non-virtual"><scope>CIcon</scope><name>DrawCooldownSpellIcon</name></member>
+      <member refid="classCIcon_1ad794d7d54e1fb16429dc593bd5235b20" prot="public" virt="non-virtual"><scope>CIcon</scope><name>DrawGrayscaleIcon</name></member>
+      <member refid="classCIcon_1a09c64e2b6c21cb98349e6593554f79ae" prot="public" virt="non-virtual"><scope>CIcon</scope><name>DrawIcon</name></member>
+      <member refid="classCIcon_1adc0136d7e5e7044a5119947dbcc6a3cf" prot="public" virt="non-virtual"><scope>CIcon</scope><name>DrawUnitIcon</name></member>
+      <member refid="classCIcon_1a9fa8d4827ef9352260de59c3a8c77f64" prot="public" virt="non-virtual"><scope>CIcon</scope><name>Frame</name></member>
+      <member refid="classCIcon_1a3e4fe50adfa6c682065dbdd415a92431" prot="public" virt="non-virtual"><scope>CIcon</scope><name>G</name></member>
+      <member refid="classCIcon_1ade5e21f69a7f06820aa255daac1750b2" prot="public" virt="non-virtual"><scope>CIcon</scope><name>Get</name></member>
+      <member refid="classCIcon_1ab2160b7267bc74c39122a031e1bc927e" prot="public" virt="non-virtual"><scope>CIcon</scope><name>GetIdent</name></member>
+      <member refid="classCIcon_1a877c1bbc2aaec02c227004b3787ba92c" prot="public" virt="non-virtual"><scope>CIcon</scope><name>GScale</name></member>
+      <member refid="classCIcon_1a69055e7eebc0bf49d184912031f82cc7" prot="private" virt="non-virtual"><scope>CIcon</scope><name>Ident</name></member>
+      <member refid="classCIcon_1a5cbfbb42c6030f3fb1f69c2dcb182aea" prot="public" virt="non-virtual"><scope>CIcon</scope><name>Load</name></member>
+      <member refid="classCIcon_1a01d8800fa6c4bdc5b50d8d017c31aefb" prot="public" virt="non-virtual"><scope>CIcon</scope><name>New</name></member>
+      <member refid="classCIcon_1a246018678fe7745a2639e1eb8edd09f7" prot="public" virt="non-virtual"><scope>CIcon</scope><name>~CIcon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

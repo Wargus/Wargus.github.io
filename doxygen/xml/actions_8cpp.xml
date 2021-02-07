@@ -1,0 +1,844 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="actions_8cpp" kind="file" language="C++">
+    <compoundname>actions.cpp</compoundname>
+    <includes local="no">time.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="version_8h" local="yes">version.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="action__attack_8h" local="yes">action/action_attack.h</includes>
+    <includes refid="action__board_8h" local="yes">action/action_board.h</includes>
+    <includes refid="action__build_8h" local="yes">action/action_build.h</includes>
+    <includes refid="action__built_8h" local="yes">action/action_built.h</includes>
+    <includes refid="action__defend_8h" local="yes">action/action_defend.h</includes>
+    <includes refid="action__die_8h" local="yes">action/action_die.h</includes>
+    <includes refid="action__explore_8h" local="yes">action/action_explore.h</includes>
+    <includes refid="action__follow_8h" local="yes">action/action_follow.h</includes>
+    <includes refid="action__move_8h" local="yes">action/action_move.h</includes>
+    <includes refid="action__patrol_8h" local="yes">action/action_patrol.h</includes>
+    <includes refid="action__repair_8h" local="yes">action/action_repair.h</includes>
+    <includes refid="action__research_8h" local="yes">action/action_research.h</includes>
+    <includes refid="action__resource_8h" local="yes">action/action_resource.h</includes>
+    <includes refid="action__spellcast_8h" local="yes">action/action_spellcast.h</includes>
+    <includes refid="action__still_8h" local="yes">action/action_still.h</includes>
+    <includes refid="action__train_8h" local="yes">action/action_train.h</includes>
+    <includes refid="action__unload_8h" local="yes">action/action_unload.h</includes>
+    <includes refid="action__upgradeto_8h" local="yes">action/action_upgradeto.h</includes>
+    <includes refid="animation__die_8h" local="yes">animation/animation_die.h</includes>
+    <includes refid="commands_8h" local="yes">commands.h</includes>
+    <includes refid="interface_8h" local="yes">interface.h</includes>
+    <includes refid="luacallback_8h" local="yes">luacallback.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="missile_8h" local="yes">missile.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="script_8h" local="yes">script.h</includes>
+    <includes refid="spells_8h" local="yes">spells.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="unit__manager_8h" local="yes">unit_manager.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <incdepgraph>
+      <node id="67">
+        <label>list</label>
+      </node>
+      <node id="36">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>action/action_still.h</label>
+        <link refid="action__still_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>queue</label>
+      </node>
+      <node id="19">
+        <label>action/action_defend.h</label>
+        <link refid="action__defend_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>action/action_repair.h</label>
+        <link refid="action__repair_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>action/action_train.h</label>
+        <link refid="action__train_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>lua.h</label>
+      </node>
+      <node id="50">
+        <label>stdint.h</label>
+      </node>
+      <node id="44">
+        <label>variant</label>
+      </node>
+      <node id="12">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>action/action_upgradeto.h</label>
+        <link refid="action__upgradeto_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>unit_manager.h</label>
+        <link refid="unit__manager_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>action/action_move.h</label>
+        <link refid="action__move_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>version-generated.h</label>
+        <link refid="version-generated_8h"/>
+      </node>
+      <node id="26">
+        <label>action/action_research.h</label>
+        <link refid="action__research_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="61">
+        <label>spells.h</label>
+        <link refid="spells_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>animation.h</label>
+        <link refid="animation_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>map</label>
+      </node>
+      <node id="27">
+        <label>action/action_resource.h</label>
+        <link refid="action__resource_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>action/action_unload.h</label>
+        <link refid="action__unload_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="39">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>action/action_attack.h</label>
+        <link refid="action__attack_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="18">
+        <label>action/action_built.h</label>
+        <link refid="action__built_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>action/action_explore.h</label>
+        <link refid="action__explore_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>luacallback.h</label>
+        <link refid="luacallback_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>action/action_build.h</label>
+        <link refid="action__build_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vector</label>
+      </node>
+      <node id="43">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>action/action_board.h</label>
+        <link refid="action__board_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>action/action_follow.h</label>
+        <link refid="action__follow_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>missile.h</label>
+        <link refid="missile_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>time.h</label>
+      </node>
+      <node id="40">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="20">
+        <label>action/action_die.h</label>
+        <link refid="action__die_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>action/action_patrol.h</label>
+        <link refid="action__patrol_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>climits</label>
+      </node>
+      <node id="45">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="62">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>action/action_spellcast.h</label>
+        <link refid="action__spellcast_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>animation/animation_die.h</label>
+        <link refid="animation__die_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>set</label>
+      </node>
+      <node id="63">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>algorithm</label>
+      </node>
+      <node id="59">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>lualib.h</label>
+      </node>
+      <node id="38">
+        <label>commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>actions.cpp - The actions.</header>
+      <memberdef kind="variable" id="actions_8cpp_1ab788b1d88f530b93106c440c9d5cba38" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned SyncHash</definition>
+        <argsstring></argsstring>
+        <name>SyncHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="81" column="10" bodyfile="src/action/actions.cpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1a7ba4998c286b1e9f0b40f0dbfdba583d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CclParseOrder</definition>
+        <argsstring>(lua_State *l, CUnit &amp;unit, COrderPtr *orderPtr)</argsstring>
+        <name>CclParseOrder</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="actions_8h_1a8554d8f04b5cd0306a4c85e23f02b4ce" kindref="member">COrderPtr</ref> *</type>
+          <declname>orderPtr</declname>
+        </param>
+        <briefdescription>
+<para>Parse order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse order</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OUT: resulting order. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="185" column="6" bodyfile="src/action/actions.cpp" bodystart="185" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1acdb6218219c40018d6002b1b80dd3460" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void IncreaseVariable</definition>
+        <argsstring>(CUnit &amp;unit, int index)</argsstring>
+        <name>IncreaseVariable</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="257" column="20" bodyfile="src/action/actions.cpp" bodystart="257" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1aac9976637b79eb1d925b0c1070712419" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void HandleBuffsEachCycle</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>HandleBuffsEachCycle</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle things about the unit that decay over time each cycle</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit that the decay is handled for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="273" column="13" bodyfile="src/action/actions.cpp" bodystart="273" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1ad9fd870ae1b40d4ea1205517d80c2e5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleBurnAndPoison</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>HandleBurnAndPoison</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modify unit&apos;s health according to burn and poison</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the unit to operate on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="321" column="13" bodyfile="src/action/actions.cpp" bodystart="321" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1a5d863488e35c3d1a1d6d595b1c753d1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void HandleBuffsEachSecond</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>HandleBuffsEachSecond</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle things about the unit that decay over time each second</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit that the decay is handled for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="346" column="13" bodyfile="src/action/actions.cpp" bodystart="346" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1a20935e2a9af8744ccb889a81ce029504" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void HandleUnitAction</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>HandleUnitAction</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the action of a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to handled unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="368" column="13" bodyfile="src/action/actions.cpp" bodystart="368" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1ac5c02501398d968a873692edbb5c8bfd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UNITP_ITERATOR</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void UnitActionsEachSecond</definition>
+        <argsstring>(UNITP_ITERATOR begin, UNITP_ITERATOR end)</argsstring>
+        <name>UnitActionsEachSecond</name>
+        <param>
+          <type>UNITP_ITERATOR</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>UNITP_ITERATOR</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="419" column="13" bodyfile="src/action/actions.cpp" bodystart="419" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1a48d8486f861954bb13c8f34265516bc3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DumpUnitInfo</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>DumpUnitInfo</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="444" column="13" bodyfile="src/action/actions.cpp" bodystart="444" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1ac8b4479a1985c4451ceb918c71d14eeb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UNITP_ITERATOR</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void UnitActionsEachCycle</definition>
+        <argsstring>(UNITP_ITERATOR begin, UNITP_ITERATOR end)</argsstring>
+        <name>UnitActionsEachCycle</name>
+        <param>
+          <type>UNITP_ITERATOR</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>UNITP_ITERATOR</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="477" column="13" bodyfile="src/action/actions.cpp" bodystart="477" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="actions_8cpp_1a6e83c7bf58165d30393081b1a4e93316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UnitActions</definition>
+        <argsstring>()</argsstring>
+        <name>UnitActions</name>
+        <briefdescription>
+<para>Handle the actions of all units each game cycle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the actions of all units each game cycle/second. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/actions.cpp" line="525" column="6" bodyfile="src/action/actions.cpp" bodystart="525" bodyend="537"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/action/actions.cpp"/>
+  </compounddef>
+</doxygen>

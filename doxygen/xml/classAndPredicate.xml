@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAndPredicate" kind="class" language="C++" prot="public">
+    <compoundname>AndPredicate</compoundname>
+    <basecompoundref refid="classCUnitFilter" prot="public" virt="non-virtual">CUnitFilter</basecompoundref>
+    <includes refid="unit__find_8h" local="no">unit_find.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Pred1</type>
+      </param>
+      <param>
+        <type>typename Pred2</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAndPredicate_1a9232c5d46791256b6b3cb0115b7aa9af" prot="private" static="no" mutable="no">
+        <type>Pred1</type>
+        <definition>Pred1 AndPredicate&lt; Pred1, Pred2 &gt;::pred1</definition>
+        <argsstring></argsstring>
+        <name>pred1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="178" column="7" bodyfile="src/include/unit_find.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAndPredicate_1a16f1d682f1f7965a06fd834f134ac8f7" prot="private" static="no" mutable="no">
+        <type>Pred2</type>
+        <definition>Pred2 AndPredicate&lt; Pred1, Pred2 &gt;::pred2</definition>
+        <argsstring></argsstring>
+        <name>pred2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="179" column="7" bodyfile="src/include/unit_find.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAndPredicate_1a77b50fdb44d04f505f4c1a28a7f985ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AndPredicate&lt; Pred1, Pred2 &gt;::AndPredicate</definition>
+        <argsstring>(Pred1 _pred1, Pred2 _pred2)</argsstring>
+        <name>AndPredicate</name>
+        <param>
+          <type>Pred1</type>
+          <declname>_pred1</declname>
+        </param>
+        <param>
+          <type>Pred2</type>
+          <declname>_pred2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="175" column="1" bodyfile="src/include/unit_find.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classAndPredicate_1a8d24f541d416e27a0c8a92fe79576354" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AndPredicate&lt; Pred1, Pred2 &gt;::operator()</definition>
+        <argsstring>(const CUnit *unit) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_find.h" line="176" column="6" bodyfile="src/include/unit_find.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AndPredicate&lt; Pred1, Pred2 &gt;</label>
+        <link refid="classAndPredicate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CUnitFilter</label>
+        <link refid="classCUnitFilter"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AndPredicate&lt; Pred1, Pred2 &gt;</label>
+        <link refid="classAndPredicate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CUnitFilter</label>
+        <link refid="classCUnitFilter"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/unit_find.h" line="173" column="1" bodyfile="src/include/unit_find.h" bodystart="172" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classAndPredicate_1a77b50fdb44d04f505f4c1a28a7f985ee" prot="public" virt="non-virtual"><scope>AndPredicate</scope><name>AndPredicate</name></member>
+      <member refid="classAndPredicate_1a8d24f541d416e27a0c8a92fe79576354" prot="public" virt="non-virtual"><scope>AndPredicate</scope><name>operator()</name></member>
+      <member refid="classAndPredicate_1a9232c5d46791256b6b3cb0115b7aa9af" prot="private" virt="non-virtual"><scope>AndPredicate</scope><name>pred1</name></member>
+      <member refid="classAndPredicate_1a16f1d682f1f7965a06fd834f134ac8f7" prot="private" virt="non-virtual"><scope>AndPredicate</scope><name>pred2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

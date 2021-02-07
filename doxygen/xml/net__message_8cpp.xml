@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="net__message_8cpp" kind="file" language="C++">
+    <compoundname>net_message.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="net__message_8h" local="yes">net_message.h</includes>
+    <includes refid="net__lowlevel_8h" local="yes">net_lowlevel.h</includes>
+    <includes refid="netconnect_8h" local="yes">netconnect.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includes refid="version_8h" local="yes">version.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+      </node>
+      <node id="15">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>net_message.h</label>
+        <link refid="net__message_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>version-generated.h</label>
+        <link refid="version-generated_8h"/>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/network/net_message.cpp</label>
+        <link refid="net__message_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>winsock2.h</label>
+      </node>
+      <node id="17">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="14">
+        <label>netconnect.h</label>
+        <link refid="netconnect_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="16">
+        <label>network.h</label>
+        <link refid="network_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>net_lowlevel.h</label>
+        <link refid="net__lowlevel_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>net_message.cpp - The network message code.</header>
+      <memberdef kind="function" id="net__message_8cpp_1ab84c80cf4fc8519a0c82f5cf9bd8dec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize32</definition>
+        <argsstring>(unsigned char *buf, uint32_t data)</argsstring>
+        <name>serialize32</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="45" column="8" bodyfile="src/network/net_message.cpp" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a04a11a513044bb3da5d59925dceb752f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize32</definition>
+        <argsstring>(unsigned char *buf, int32_t data)</argsstring>
+        <name>serialize32</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="52" column="8" bodyfile="src/network/net_message.cpp" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a3a636a619cb4f83112752e23ca88ea98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize16</definition>
+        <argsstring>(unsigned char *buf, uint16_t data)</argsstring>
+        <name>serialize16</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="59" column="8" bodyfile="src/network/net_message.cpp" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1aa3c1ad61877b518192e7745a1e62c50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize16</definition>
+        <argsstring>(unsigned char *buf, int16_t data)</argsstring>
+        <name>serialize16</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="66" column="8" bodyfile="src/network/net_message.cpp" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a5d7551655e2bd74a89ca492129947903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize8</definition>
+        <argsstring>(unsigned char *buf, uint8_t data)</argsstring>
+        <name>serialize8</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="73" column="8" bodyfile="src/network/net_message.cpp" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a4bd705af1c122d3e51afcca379aae983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize8</definition>
+        <argsstring>(unsigned char *buf, int8_t data)</argsstring>
+        <name>serialize8</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="80" column="8" bodyfile="src/network/net_message.cpp" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a380199f8dedd809a06388609e8a59982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t serialize</definition>
+        <argsstring>(unsigned char *buf, const char(&amp;data)[N])</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const char(&amp;)</type>
+          <declname>data</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="88" column="8" bodyfile="src/network/net_message.cpp" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a914b68d6dc7d8f38e1f27653bcbdb031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize</definition>
+        <argsstring>(unsigned char *buf, const std::string &amp;s)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="95" column="8" bodyfile="src/network/net_message.cpp" bodystart="95" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a2876f481d3a1127b6bea357f7a18099a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t serialize</definition>
+        <argsstring>(unsigned char *buf, const std::vector&lt; unsigned char &gt; &amp;data)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="115" column="8" bodyfile="src/network/net_message.cpp" bodystart="115" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1aeae0014120c15e4ef3ded1e6c9fa1483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize32</definition>
+        <argsstring>(const unsigned char *buf, uint32_t *data)</argsstring>
+        <name>deserialize32</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="136" column="8" bodyfile="src/network/net_message.cpp" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1ab12ae2636e54d19e5dc9846f315942e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize32</definition>
+        <argsstring>(const unsigned char *buf, int32_t *data)</argsstring>
+        <name>deserialize32</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="141" column="8" bodyfile="src/network/net_message.cpp" bodystart="141" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1ac1777dd4b79c64292f43755c803f1d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize16</definition>
+        <argsstring>(const unsigned char *buf, uint16_t *data)</argsstring>
+        <name>deserialize16</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="146" column="8" bodyfile="src/network/net_message.cpp" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1ae351236c3e8d3d01653725806d393cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize16</definition>
+        <argsstring>(const unsigned char *buf, int16_t *data)</argsstring>
+        <name>deserialize16</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="151" column="8" bodyfile="src/network/net_message.cpp" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a053020ac6a60e729744fd645fea89250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize8</definition>
+        <argsstring>(const unsigned char *buf, uint8_t *data)</argsstring>
+        <name>deserialize8</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="156" column="8" bodyfile="src/network/net_message.cpp" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a457a265d904a595775bed97070608059" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize8</definition>
+        <argsstring>(const unsigned char *buf, int8_t *data)</argsstring>
+        <name>deserialize8</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="161" column="8" bodyfile="src/network/net_message.cpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a29d6f19e30c60bf3250f5741bf74b81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t deserialize</definition>
+        <argsstring>(const unsigned char *buf, char(&amp;data)[N])</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>char(&amp;)</type>
+          <declname>data</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="167" column="8" bodyfile="src/network/net_message.cpp" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1afc9c03ee7a486304d60762865999f300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize</definition>
+        <argsstring>(const unsigned char *buf, std::string &amp;s)</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="172" column="8" bodyfile="src/network/net_message.cpp" bodystart="172" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="net__message_8cpp_1a9ecbaf73b53febab54b61bc406de5afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t deserialize</definition>
+        <argsstring>(const unsigned char *buf, std::vector&lt; unsigned char &gt; &amp;data)</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/net_message.cpp" line="183" column="8" bodyfile="src/network/net_message.cpp" bodystart="183" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/network/net_message.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCCursor" kind="class" language="C++" prot="public">
+    <compoundname>CCursor</compoundname>
+    <includes refid="cursor_8h" local="no">cursor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCCursor_1aa562e4ebc739d90261e24c68acee4b94" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CCursor::Ident</definition>
+        <argsstring></argsstring>
+        <name>Ident</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="130" column="13" bodyfile="src/include/cursor.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCCursor_1ae2be3d18c25975e1db0eb97a2b5f8629" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CCursor::Race</definition>
+        <argsstring></argsstring>
+        <name>Race</name>
+        <briefdescription>
+<para>Identifier to reference it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="131" column="13" bodyfile="src/include/cursor.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCCursor_1a062026dce258df003f2590cc59e84ede" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CCursor::HotPos</definition>
+        <argsstring></argsstring>
+        <name>HotPos</name>
+        <briefdescription>
+<para>Race name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="133" column="10" bodyfile="src/include/cursor.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCCursor_1a7e58214f815e465f32709a078ad663d8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CCursor::SpriteFrame</definition>
+        <argsstring></argsstring>
+        <name>SpriteFrame</name>
+        <briefdescription>
+<para>Hot point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="135" column="5" bodyfile="src/include/cursor.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCCursor_1a6f857f128e196779d77ab290725d0767" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CCursor::FrameRate</definition>
+        <argsstring></argsstring>
+        <name>FrameRate</name>
+        <briefdescription>
+<para>Current displayed cursor frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="136" column="5" bodyfile="src/include/cursor.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCCursor_1af4a1f3baf380bc5e8dd1ba5dae9e2548" prot="public" static="no" mutable="no">
+        <type><ref refid="classCGraphic" kindref="compound">CGraphic</ref> *</type>
+        <definition>CGraphic* CCursor::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <briefdescription>
+<para>Rate of changing the frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="140" column="10" bodyfile="src/include/cursor.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCCursor_1a401e07ca63f8d69701ee65c2df56c8fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CCursor::CCursor</definition>
+        <argsstring>()</argsstring>
+        <name>CCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/cursor.h" line="127" column="1" bodyfile="src/include/cursor.h" bodystart="127" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Private type which specifies the cursor-type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>#include &quot;cursor.h&quot;</para>
+<para>This structure contains all information about a cursor. The cursor changes depending of the current user input state. A cursor can have transparent areas and color cycle animated.</para>
+<para>The cursor-type structure members:</para>
+<para><ref refid="classCCursor_1aa562e4ebc739d90261e24c68acee4b94" kindref="member">CCursor::Ident</ref></para>
+<para>Unique identifier of the cursor, used to reference it in config files and during startup. Don&apos;t use this in game, use instead the pointer to this structure.</para>
+<para><ref refid="classCCursor_1ae2be3d18c25975e1db0eb97a2b5f8629" kindref="member">CCursor::Race</ref></para>
+<para>Owning Race of this cursor (&quot;human&quot;, &quot;orc&quot;, &quot;alliance&quot;, &quot;mythical&quot;, ...). If NULL, this cursor could be used by any race.</para>
+<para><ref refid="classCCursor_1a062026dce258df003f2590cc59e84ede" kindref="member">CCursor::HotPos</ref></para>
+<para>Hot spot of the cursor in pixels. Relative to the sprite origin (0,0). The hot spot of a cursor is the point to which Stratagus refers in tracking the cursor&apos;s position.</para>
+<para><ref refid="classCCursor_1a7e58214f815e465f32709a078ad663d8" kindref="member">CCursor::SpriteFrame</ref></para>
+<para>Current displayed cursor frame. From 0 to CCursor::G::NumFrames.</para>
+<para><ref refid="classCCursor_1a6f857f128e196779d77ab290725d0767" kindref="member">CCursor::FrameRate</ref></para>
+<para>Rate of changing the frames. The &quot;rate&quot; tells the engine how many milliseconds to hold each frame of the animation.</para>
+<para><simplesect kind="note"><para>This is the first time that for timing ms are used! I would change it to display frames.</para>
+</simplesect>
+<ref refid="classCCursor_1af4a1f3baf380bc5e8dd1ba5dae9e2548" kindref="member">CCursor::G</ref></para>
+<para>Contains the sprite of the cursor, loaded from CCursor::File. This can be a multicolor image with alpha or transparency. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>gcn::ImageLoader</label>
+        <link refid="classgcn_1_1ImageLoader"/>
+      </node>
+      <node id="4">
+        <label>gcn::Image</label>
+        <link refid="classgcn_1_1Image"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mImageLoader</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CGraphic</label>
+        <link refid="classCGraphic"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>frameFlip_map</edgelabel>
+          <edgelabel>frame_map</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>HashFile</edgelabel>
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CGraphic::frame_pos_t</label>
+      </node>
+      <node id="1">
+        <label>CCursor</label>
+        <link refid="classCCursor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Race</edgelabel>
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>G</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>HotPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Vec2T&lt; int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/cursor.h" line="125" column="1" bodyfile="src/include/cursor.h" bodystart="124" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classCCursor_1a401e07ca63f8d69701ee65c2df56c8fd" prot="public" virt="non-virtual"><scope>CCursor</scope><name>CCursor</name></member>
+      <member refid="classCCursor_1a6f857f128e196779d77ab290725d0767" prot="public" virt="non-virtual"><scope>CCursor</scope><name>FrameRate</name></member>
+      <member refid="classCCursor_1af4a1f3baf380bc5e8dd1ba5dae9e2548" prot="public" virt="non-virtual"><scope>CCursor</scope><name>G</name></member>
+      <member refid="classCCursor_1a062026dce258df003f2590cc59e84ede" prot="public" virt="non-virtual"><scope>CCursor</scope><name>HotPos</name></member>
+      <member refid="classCCursor_1aa562e4ebc739d90261e24c68acee4b94" prot="public" virt="non-virtual"><scope>CCursor</scope><name>Ident</name></member>
+      <member refid="classCCursor_1ae2be3d18c25975e1db0eb97a2b5f8629" prot="public" virt="non-virtual"><scope>CCursor</scope><name>Race</name></member>
+      <member refid="classCCursor_1a7e58214f815e465f32709a078ad663d8" prot="public" virt="non-virtual"><scope>CCursor</scope><name>SpriteFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,858 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="stratagus-tinyfiledialogs_8h" kind="file" language="C++">
+    <compoundname>stratagus-tinyfiledialogs.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes local="no">limits.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">dirent.h</includes>
+    <includes local="no">termios.h</includes>
+    <includes local="no">sys/utsname.h</includes>
+    <includedby refid="stratagus-gameutils_8h" local="yes">gameheaders/stratagus-gameutils.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>gameheaders/stratagus-tinyfiledialogs.h</label>
+        <link refid="stratagus-tinyfiledialogs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>termios.h</label>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="7">
+        <label>unistd.h</label>
+      </node>
+      <node id="5">
+        <label>ctype.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>sys/utsname.h</label>
+      </node>
+      <node id="8">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>gameheaders/stratagus-tinyfiledialogs.h</label>
+        <link refid="stratagus-tinyfiledialogs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gameheaders/stratagus-gameutils.h</label>
+        <link refid="stratagus-gameutils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gameheaders/stratagus-game-launcher.h</label>
+        <link refid="stratagus-game-launcher_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="stratagus-tinyfiledialogs_8h_1a69eb17477fd6f6af2c9ca2d5f4c7df3c" prot="public" static="no">
+        <name>SLASH</name>
+        <initializer>&quot;/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="392" column="14" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stratagus-tinyfiledialogs_8h_1a03da67b2aa763d88422ba0f6aaa6d29b" prot="public" static="no">
+        <name>MAX_PATH_OR_CMD</name>
+        <initializer>1024 /* _MAX_PATH or MAX_PATH */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="395" column="9" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stratagus-tinyfiledialogs_8h_1aab03206e07f091b649d81cfff24b751b" prot="public" static="no">
+        <name>MAX_MULTIPLE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="396" column="9" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="stratagus-tinyfiledialogs_8h_1a570a95a1dce391ed29f7fc5861ecee69" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tinyfd_forceConsole</definition>
+        <argsstring></argsstring>
+        <name>tinyfd_forceConsole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="141" column="5" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="stratagus-tinyfiledialogs_8h_1a8f689b2493dcd6fcc70ab5f71fedb1b2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gWarningDisplayed</definition>
+        <argsstring></argsstring>
+        <name>gWarningDisplayed</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="401" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="stratagus-tinyfiledialogs_8h_1ad70c29eb98f8f5bc7d84c0e8948b4ce8" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char gTitle[]</definition>
+        <argsstring>[]</argsstring>
+        <name>gTitle</name>
+        <initializer>= &quot;missing software! (so we switch to basic console input)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="402" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="stratagus-tinyfiledialogs_8h_1a453344da48e83454eca03b2cbc82fe5b" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char gMessageWin[]</definition>
+        <argsstring>[]</argsstring>
+        <name>gMessageWin</name>
+        <initializer>= &quot;tiny file dialogs on <ref refid="classWindows" kindref="compound">Windows</ref> needs:\n\t\
+a graphic display\nor\tdialog.exe (enhanced console mode)\
+\nor\ta console for basic input&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="403" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="stratagus-tinyfiledialogs_8h_1ae6f8dca31c53ac752139dd2ef87be39c" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char gMessageUnix[]</definition>
+        <argsstring>[]</argsstring>
+        <name>gMessageUnix</name>
+        <initializer>= &quot;tiny file dialogs on UNIX needs:\n\tapplescript\
+\nor\tzenity (version 3 for the color chooser)\nor\tkdialog\
+\nor\tXdialog\nor\tpython 2 with tkinter\
+\nor\tdialog (opens a console if needed)\
+\nor\twhiptail, gdialog or gxmessage (really?)\
+\nor\tit will open a console (if needed) for basic input (you had it comming!)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="407" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="stratagus-tinyfiledialogs_8h_1ad9185939b446f5dbc3ac54712e34ff6f" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char gPython2Name[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>gPython2Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="1976" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="1976" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1ae02051d7645e0674b53cea5b134e0c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tinyfd_messageBox</definition>
+        <argsstring>(char const *const aTitle, char const *const aMessage, char const *const aDialogType, char const *const aIconType, int const aDefaultButton)</argsstring>
+        <name>tinyfd_messageBox</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aTitle</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aDialogType</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aIconType</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>aDefaultButton</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2459" column="5" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2459" bodyend="2997" declfile="gameheaders/stratagus-tinyfiledialogs.h" declline="93" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1aa62ab6b77b31cf202c0c28301d6cef1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyfd_inputBox</definition>
+        <argsstring>(char const *const aTitle, char const *const aMessage, char const *const aDefaultInput)</argsstring>
+        <name>tinyfd_inputBox</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aTitle</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aDefaultInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="3001" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="3001" bodyend="3391" declfile="gameheaders/stratagus-tinyfiledialogs.h" declline="101" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a3b9387551d93e63cb5edc68bc50032d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyfd_saveFileDialog</definition>
+        <argsstring>(char const *const aTitle, char const *const aDefaultPathAndFile, int const aNumOfFilterPatterns, char const *const *const aFilterPatterns, char const *const aSingleFilterDescription)</argsstring>
+        <name>tinyfd_saveFileDialog</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aTitle</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aDefaultPathAndFile</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>aNumOfFilterPatterns</declname>
+        </param>
+        <param>
+          <type>char const *const *const</type>
+          <declname>aFilterPatterns</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aSingleFilterDescription</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="3394" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="3394" bodyend="3677" declfile="gameheaders/stratagus-tinyfiledialogs.h" declline="107" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1acbcc57955f2b7902dd438fbe6878cf66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyfd_openFileDialog</definition>
+        <argsstring>(char const *const aTitle, char const *const aDefaultPathAndFile, int const aNumOfFilterPatterns, char const *const *const aFilterPatterns, char const *const aSingleFilterDescription, int const aAllowMultipleSelects)</argsstring>
+        <name>tinyfd_openFileDialog</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aTitle</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aDefaultPathAndFile</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>aNumOfFilterPatterns</declname>
+        </param>
+        <param>
+          <type>char const *const *const</type>
+          <declname>aFilterPatterns</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aSingleFilterDescription</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>aAllowMultipleSelects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="3681" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="3681" bodyend="4019" declfile="gameheaders/stratagus-tinyfiledialogs.h" declline="115" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a24392c044f7a21a1adcae7759f8b19f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyfd_selectFolderDialog</definition>
+        <argsstring>(char const *const aTitle, char const *const aDefaultPath)</argsstring>
+        <name>tinyfd_selectFolderDialog</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aTitle</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aDefaultPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="4022" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="4022" bodyend="4209" declfile="gameheaders/stratagus-tinyfiledialogs.h" declline="125" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a07a737a93c27d364599c911dd50a872a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyfd_colorChooser</definition>
+        <argsstring>(char const *const aTitle, char const *const aDefaultHexRGB, unsigned char const aDefaultRGB[3], unsigned char aoResultRGB[3])</argsstring>
+        <name>tinyfd_colorChooser</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aTitle</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aDefaultHexRGB</declname>
+        </param>
+        <param>
+          <type>unsigned char const</type>
+          <declname>aDefaultRGB</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>aoResultRGB</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="4216" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="4216" bodyend="4403" declfile="gameheaders/stratagus-tinyfiledialogs.h" declline="130" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a665105580a5c190f885c91b039b2229c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* getPathWithoutFinalSlash</definition>
+        <argsstring>(char *const aoDestination, char const *const aSource)</argsstring>
+        <name>getPathWithoutFinalSlash</name>
+        <param>
+          <type>char *const</type>
+          <declname>aoDestination</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="414" column="14" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="414" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1af66d838ed078419a713c2b876f967d7e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* getLastName</definition>
+        <argsstring>(char *const aoDestination, char const *const aSource)</argsstring>
+        <name>getLastName</name>
+        <param>
+          <type>char *const</type>
+          <declname>aoDestination</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="444" column="14" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="444" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1afe0bae3c48a66aad831f30834eeccc06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ensureFinalSlash</definition>
+        <argsstring>(char *const aioString)</argsstring>
+        <name>ensureFinalSlash</name>
+        <param>
+          <type>char *const</type>
+          <declname>aioString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="474" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="474" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a5ff0350472478184cf8ade7246701ead" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void Hex2RGB</definition>
+        <argsstring>(char const aHexRGB[8], unsigned char aoResultRGB[3])</argsstring>
+        <name>Hex2RGB</name>
+        <param>
+          <type>char const</type>
+          <declname>aHexRGB</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>aoResultRGB</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="487" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="487" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1aed7f837768a100336551374a1008b978" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void RGB2Hex</definition>
+        <argsstring>(unsigned char const aRGB[3], char aoResultHexRGB[8])</argsstring>
+        <name>RGB2Hex</name>
+        <param>
+          <type>unsigned char const</type>
+          <declname>aRGB</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>aoResultHexRGB</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="512" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="512" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a75636a5024e43832363f670ebf226e3f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void replaceSubStr</definition>
+        <argsstring>(char const *const aSource, char const *const aOldSubStr, char const *const aNewSubStr, char *const aoDestination)</argsstring>
+        <name>replaceSubStr</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aSource</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aOldSubStr</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aNewSubStr</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>aoDestination</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="533" column="13" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="533" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a4dca85a6156606154f63c09f71a5fd4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int replaceChr</definition>
+        <argsstring>(char *const aString, char const aOldChr, char const aNewChr)</argsstring>
+        <name>replaceChr</name>
+        <param>
+          <type>char *const</type>
+          <declname>aString</declname>
+        </param>
+        <param>
+          <type>char const</type>
+          <declname>aOldChr</declname>
+        </param>
+        <param>
+          <type>char const</type>
+          <declname>aNewChr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="569" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="569" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1ae28f503764a748ed1f95f4dff368859a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int filenameValid</definition>
+        <argsstring>(char const *const aFileNameWithoutPath)</argsstring>
+        <name>filenameValid</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aFileNameWithoutPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="597" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="597" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a2402060108b45c5bb1a3214813d57e6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int fileExists</definition>
+        <argsstring>(char const *const aFilePathAndName)</argsstring>
+        <name>fileExists</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aFilePathAndName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="609" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="609" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a4f5415fd52d8566847df8a4a2942ae2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* ensureFilesExist</definition>
+        <argsstring>(char *const aDestination, char const *const aSourcePathsAndNames)</argsstring>
+        <name>ensureFilesExist</name>
+        <param>
+          <type>char *const</type>
+          <declname>aDestination</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>aSourcePathsAndNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="628" column="20" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="628" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a9cf394d7bdd2b7ffcdcea67100579ae0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int isDarwin</definition>
+        <argsstring>()</argsstring>
+        <name>isDarwin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="1978" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="1978" bodyend="1987"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a5b13bedd2f300e88b427f5c48fab0c02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int dirExists</definition>
+        <argsstring>(char const *const aDirPath)</argsstring>
+        <name>dirExists</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aDirPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="1990" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="1990" bodyend="2002"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a6f93bcb5f463e8eee12312f01be4f5b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int detectPresence</definition>
+        <argsstring>(char const *const aExecutable)</argsstring>
+        <name>detectPresence</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aExecutable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2005" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2005" bodyend="2024"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a52162784767214d0f73997add9c4c416" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int tryCommand</definition>
+        <argsstring>(char const *const aCommand)</argsstring>
+        <name>tryCommand</name>
+        <param>
+          <type>char const *const</type>
+          <declname>aCommand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2027" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2027" bodyend="2044"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1ab684f7416f4d82894c087c2a6eb5a2c5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* terminalName</definition>
+        <argsstring>()</argsstring>
+        <name>terminalName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2047" column="20" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2047" bodyend="2248"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a57ecc69d243ddc1d3fe613ffacdb9702" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* dialogName</definition>
+        <argsstring>()</argsstring>
+        <name>dialogName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2251" column="20" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2251" bodyend="2275"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a4088d63ec9a205d49007dfec9352e4b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int whiptailPresent</definition>
+        <argsstring>()</argsstring>
+        <name>whiptailPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2278" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2278" bodyend="2286"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1ac8d2428b6f571efd1d6d14b7067938fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int graphicMode</definition>
+        <argsstring>()</argsstring>
+        <name>graphicMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2289" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2289" bodyend="2293"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a5df0708fd358f224d2c16eeb8e0c44c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int xmessagePresent</definition>
+        <argsstring>()</argsstring>
+        <name>xmessagePresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2296" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2296" bodyend="2304"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a4813e9a9f924bf8fa2fd10d64f2a01f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gxmessagePresent</definition>
+        <argsstring>()</argsstring>
+        <name>gxmessagePresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2307" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2307" bodyend="2315"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1ad5b049a850599475d53f860fc9db26fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int notifysendPresent</definition>
+        <argsstring>()</argsstring>
+        <name>notifysendPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2318" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2318" bodyend="2326"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a7243b7327424978ee23e6e45c4f6a401" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int xdialogPresent</definition>
+        <argsstring>()</argsstring>
+        <name>xdialogPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2329" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2329" bodyend="2337"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a18a581f6eaf875774c93284e5f56dce5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gdialogPresent</definition>
+        <argsstring>()</argsstring>
+        <name>gdialogPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2340" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2340" bodyend="2348"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1ab686858dd13f512c5d94d715e5153f06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int osascriptPresent</definition>
+        <argsstring>()</argsstring>
+        <name>osascriptPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2351" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2351" bodyend="2359"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1af1b7d60b71fef56e437c2f149245887d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int kdialogPresent</definition>
+        <argsstring>()</argsstring>
+        <name>kdialogPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2362" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2362" bodyend="2370"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1aeb1317484f17bff27ccfa9a7a32198a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int zenityPresent</definition>
+        <argsstring>()</argsstring>
+        <name>zenityPresent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2373" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2373" bodyend="2381"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1af677f06c48d79a5976d2d3a70ed747eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int zenity3Present</definition>
+        <argsstring>()</argsstring>
+        <name>zenity3Present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2384" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2384" bodyend="2414"/>
+      </memberdef>
+      <memberdef kind="function" id="stratagus-tinyfiledialogs_8h_1a5d53554f854779b54526ac7a4e81b1a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int tkinter2Present</definition>
+        <argsstring>()</argsstring>
+        <name>tkinter2Present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gameheaders/stratagus-tinyfiledialogs.h" line="2417" column="12" bodyfile="gameheaders/stratagus-tinyfiledialogs.h" bodystart="2417" bodyend="2455"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="gameheaders/stratagus-tinyfiledialogs.h"/>
+  </compounddef>
+</doxygen>

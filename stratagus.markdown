@@ -28,6 +28,13 @@ Stratagus is an open source software. It is developed at
 [![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
 
+We have an [index](/lua_bindings.html) of exported Lua functions and the
+associated documentation, which is of interest if you want to work on the game
+lua scripts.
+
+We have [doxygen code documentation](/doxygen/index.html), which is of interest
+if you want to work on the core engine.
+
 ### Older, detailed documentation
 
 Some slightly outdated information can be found below. While this isn't

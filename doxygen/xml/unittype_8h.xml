@@ -1,0 +1,2632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="unittype_8h" kind="file" language="C++">
+    <compoundname>unittype.h</compoundname>
+    <includes refid="upgrade__structs_8h" local="yes">upgrade_structs.h</includes>
+    <includes refid="unitsound_8h" local="yes">unitsound.h</includes>
+    <includes refid="icons_8h" local="yes">icons.h</includes>
+    <includes refid="include_2color_8h" local="yes">color.h</includes>
+    <includes refid="missileconfig_8h" local="yes">missileconfig.h</includes>
+    <includes refid="vec2i_8h" local="yes">vec2i.h</includes>
+    <includes local="no">climits</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">map</includes>
+    <includedby refid="action__attack_8cpp" local="yes">src/action/action_attack.cpp</includedby>
+    <includedby refid="action__board_8cpp" local="yes">src/action/action_board.cpp</includedby>
+    <includedby refid="action__build_8cpp" local="yes">src/action/action_build.cpp</includedby>
+    <includedby refid="action__built_8cpp" local="yes">src/action/action_built.cpp</includedby>
+    <includedby refid="action__defend_8cpp" local="yes">src/action/action_defend.cpp</includedby>
+    <includedby refid="action__die_8cpp" local="yes">src/action/action_die.cpp</includedby>
+    <includedby refid="action__explore_8cpp" local="yes">src/action/action_explore.cpp</includedby>
+    <includedby refid="action__follow_8cpp" local="yes">src/action/action_follow.cpp</includedby>
+    <includedby refid="action__move_8cpp" local="yes">src/action/action_move.cpp</includedby>
+    <includedby refid="action__patrol_8cpp" local="yes">src/action/action_patrol.cpp</includedby>
+    <includedby refid="action__repair_8cpp" local="yes">src/action/action_repair.cpp</includedby>
+    <includedby refid="action__research_8cpp" local="yes">src/action/action_research.cpp</includedby>
+    <includedby refid="action__resource_8cpp" local="yes">src/action/action_resource.cpp</includedby>
+    <includedby refid="action__spellcast_8cpp" local="yes">src/action/action_spellcast.cpp</includedby>
+    <includedby refid="action__still_8cpp" local="yes">src/action/action_still.cpp</includedby>
+    <includedby refid="action__train_8cpp" local="yes">src/action/action_train.cpp</includedby>
+    <includedby refid="action__unload_8cpp" local="yes">src/action/action_unload.cpp</includedby>
+    <includedby refid="action__upgradeto_8cpp" local="yes">src/action/action_upgradeto.cpp</includedby>
+    <includedby refid="actions_8cpp" local="yes">src/action/actions.cpp</includedby>
+    <includedby refid="command_8cpp" local="yes">src/action/command.cpp</includedby>
+    <includedby refid="ai_8cpp" local="yes">src/ai/ai.cpp</includedby>
+    <includedby refid="ai__building_8cpp" local="yes">src/ai/ai_building.cpp</includedby>
+    <includedby refid="ai__force_8cpp" local="yes">src/ai/ai_force.cpp</includedby>
+    <includedby refid="ai__magic_8cpp" local="yes">src/ai/ai_magic.cpp</includedby>
+    <includedby refid="ai__plan_8cpp" local="yes">src/ai/ai_plan.cpp</includedby>
+    <includedby refid="ai__resource_8cpp" local="yes">src/ai/ai_resource.cpp</includedby>
+    <includedby refid="script__ai_8cpp" local="yes">src/ai/script_ai.cpp</includedby>
+    <includedby refid="animation_8cpp" local="yes">src/animation/animation.cpp</includedby>
+    <includedby refid="editloop_8cpp" local="yes">src/editor/editloop.cpp</includedby>
+    <includedby refid="edmap_8cpp" local="yes">src/editor/edmap.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="loadgame_8cpp" local="yes">src/game/loadgame.cpp</includedby>
+    <includedby refid="replay_8cpp" local="yes">src/game/replay.cpp</includedby>
+    <includedby refid="savegame_8cpp" local="yes">src/game/savegame.cpp</includedby>
+    <includedby refid="trigger_8cpp" local="yes">src/game/trigger.cpp</includedby>
+    <includedby refid="unit_8h" local="yes">src/include/unit.h</includedby>
+    <includedby refid="unit__find_8h" local="yes">src/include/unit_find.h</includedby>
+    <includedby refid="map__draw_8cpp" local="yes">src/map/map_draw.cpp</includedby>
+    <includedby refid="map__radar_8cpp" local="yes">src/map/map_radar.cpp</includedby>
+    <includedby refid="map__wall_8cpp" local="yes">src/map/map_wall.cpp</includedby>
+    <includedby refid="minimap_8cpp" local="yes">src/map/minimap.cpp</includedby>
+    <includedby refid="missile_8cpp" local="yes">src/missile/missile.cpp</includedby>
+    <includedby refid="script__missile_8cpp" local="yes">src/missile/script_missile.cpp</includedby>
+    <includedby refid="commands_8cpp" local="yes">src/network/commands.cpp</includedby>
+    <includedby refid="network_8cpp" local="yes">src/network/network.cpp</includedby>
+    <includedby refid="pathfinder_8cpp" local="yes">src/pathfinder/pathfinder.cpp</includedby>
+    <includedby refid="script__pathfinder_8cpp" local="yes">src/pathfinder/script_pathfinder.cpp</includedby>
+    <includedby refid="unitsound_8cpp" local="yes">src/sound/unitsound.cpp</includedby>
+    <includedby refid="script__spell_8cpp" local="yes">src/spell/script_spell.cpp</includedby>
+    <includedby refid="groups_8cpp" local="yes">src/stratagus/groups.cpp</includedby>
+    <includedby refid="player_8cpp" local="yes">src/stratagus/player.cpp</includedby>
+    <includedby refid="script__player_8cpp" local="yes">src/stratagus/script_player.cpp</includedby>
+    <includedby refid="selection_8cpp" local="yes">src/stratagus/selection.cpp</includedby>
+    <includedby refid="botpanel_8cpp" local="yes">src/ui/botpanel.cpp</includedby>
+    <includedby refid="button__checks_8cpp" local="yes">src/ui/button_checks.cpp</includedby>
+    <includedby refid="interface_8cpp" local="yes">src/ui/interface.cpp</includedby>
+    <includedby refid="mainscr_8cpp" local="yes">src/ui/mainscr.cpp</includedby>
+    <includedby refid="mouse_8cpp" local="yes">src/ui/mouse.cpp</includedby>
+    <includedby refid="popup_8cpp" local="yes">src/ui/popup.cpp</includedby>
+    <includedby refid="script__ui_8cpp" local="yes">src/ui/script_ui.cpp</includedby>
+    <includedby refid="build_8cpp" local="yes">src/unit/build.cpp</includedby>
+    <includedby refid="depend_8cpp" local="yes">src/unit/depend.cpp</includedby>
+    <includedby refid="script__unit_8cpp" local="yes">src/unit/script_unit.cpp</includedby>
+    <includedby refid="script__unittype_8cpp" local="yes">src/unit/script_unittype.cpp</includedby>
+    <includedby refid="unit_8cpp" local="yes">src/unit/unit.cpp</includedby>
+    <includedby refid="unit__cache_8cpp" local="yes">src/unit/unit_cache.cpp</includedby>
+    <includedby refid="unit__draw_8cpp" local="yes">src/unit/unit_draw.cpp</includedby>
+    <includedby refid="unit__find_8cpp" local="yes">src/unit/unit_find.cpp</includedby>
+    <includedby refid="unit__save_8cpp" local="yes">src/unit/unit_save.cpp</includedby>
+    <includedby refid="unittype_8cpp" local="yes">src/unit/unittype.cpp</includedby>
+    <includedby refid="upgrade_8cpp" local="yes">src/unit/upgrade.cpp</includedby>
+    <includedby refid="cursor_8cpp" local="yes">src/video/cursor.cpp</includedby>
+    <includedby refid="tolua_8cpp" local="yes">build/tolua.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>climits</label>
+      </node>
+      <node id="6">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="1">
+        <label>src/include/unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="28">
+        <label>src/ai/script_ai.cpp</label>
+        <link refid="script__ai_8cpp"/>
+      </node>
+      <node id="74">
+        <label>src/ui/mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="44">
+        <label>src/animation/animation_label.cpp</label>
+        <link refid="animation__label_8cpp"/>
+      </node>
+      <node id="105">
+        <label>src/spell/spell_spawnportal.cpp</label>
+        <link refid="spell__spawnportal_8cpp"/>
+      </node>
+      <node id="91">
+        <label>src/missile/script_missile.cpp</label>
+        <link refid="script__missile_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/action/action_upgradeto.cpp</label>
+        <link refid="action__upgradeto_8cpp"/>
+      </node>
+      <node id="63">
+        <label>src/missile/missile_parabolic.cpp</label>
+        <link refid="missile__parabolic_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/action/action_research.cpp</label>
+        <link refid="action__research_8cpp"/>
+      </node>
+      <node id="60">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="111">
+        <label>src/ui/botpanel.cpp</label>
+        <link refid="botpanel_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/action/action_build.cpp</label>
+        <link refid="action__build_8cpp"/>
+      </node>
+      <node id="100">
+        <label>src/spell/spell_adjustvital.cpp</label>
+        <link refid="spell__adjustvital_8cpp"/>
+      </node>
+      <node id="116">
+        <label>src/ui/script_ui.cpp</label>
+        <link refid="script__ui_8cpp"/>
+      </node>
+      <node id="78">
+        <label>src/unit/unit_draw.cpp</label>
+        <link refid="unit__draw_8cpp"/>
+      </node>
+      <node id="69">
+        <label>src/spell/spell_summon.cpp</label>
+        <link refid="spell__summon_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/ai/ai.cpp</label>
+        <link refid="ai_8cpp"/>
+      </node>
+      <node id="89">
+        <label>src/missile/missile_fire.cpp</label>
+        <link refid="missile__fire_8cpp"/>
+      </node>
+      <node id="53">
+        <label>src/animation/animation_setvar.cpp</label>
+        <link refid="animation__setvar_8cpp"/>
+      </node>
+      <node id="65">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+      </node>
+      <node id="86">
+        <label>src/map/minimap.cpp</label>
+        <link refid="minimap_8cpp"/>
+      </node>
+      <node id="84">
+        <label>src/map/map_radar.cpp</label>
+        <link refid="map__radar_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/action/action_spellcast.cpp</label>
+        <link refid="action__spellcast_8cpp"/>
+      </node>
+      <node id="107">
+        <label>src/stratagus/groups.cpp</label>
+        <link refid="groups_8cpp"/>
+      </node>
+      <node id="45">
+        <label>src/animation/animation_luacallback.cpp</label>
+        <link refid="animation__luacallback_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/action/action_explore.cpp</label>
+        <link refid="action__explore_8cpp"/>
+      </node>
+      <node id="112">
+        <label>src/ui/button_checks.cpp</label>
+        <link refid="button__checks_8cpp"/>
+      </node>
+      <node id="57">
+        <label>src/animation/animation_unbreakable.cpp</label>
+        <link refid="animation__unbreakable_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="108">
+        <label>src/stratagus/mainloop.cpp</label>
+        <link refid="mainloop_8cpp"/>
+      </node>
+      <node id="115">
+        <label>src/ui/mainscr.cpp</label>
+        <link refid="mainscr_8cpp"/>
+      </node>
+      <node id="40">
+        <label>src/animation/animation_exactframe.cpp</label>
+        <link refid="animation__exactframe_8cpp"/>
+      </node>
+      <node id="126">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="119">
+        <label>src/unit/script_unittype.cpp</label>
+        <link refid="script__unittype_8cpp"/>
+      </node>
+      <node id="113">
+        <label>src/ui/contenttype.cpp</label>
+        <link refid="contenttype_8cpp"/>
+      </node>
+      <node id="93">
+        <label>src/network/network.cpp</label>
+        <link refid="network_8cpp"/>
+      </node>
+      <node id="38">
+        <label>src/animation/animation_attack.cpp</label>
+        <link refid="animation__attack_8cpp"/>
+      </node>
+      <node id="67">
+        <label>src/spell/spell_demolish.cpp</label>
+        <link refid="spell__demolish_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/ai/ai_magic.cpp</label>
+        <link refid="ai__magic_8cpp"/>
+      </node>
+      <node id="114">
+        <label>src/ui/icons.cpp</label>
+        <link refid="icons_8cpp"/>
+      </node>
+      <node id="50">
+        <label>src/animation/animation_randomwait.cpp</label>
+        <link refid="animation__randomwait_8cpp"/>
+      </node>
+      <node id="97">
+        <label>src/sound/sound_server.cpp</label>
+        <link refid="sound__server_8cpp"/>
+      </node>
+      <node id="106">
+        <label>src/spell/spell_teleport.cpp</label>
+        <link refid="spell__teleport_8cpp"/>
+      </node>
+      <node id="95">
+        <label>src/pathfinder/script_pathfinder.cpp</label>
+        <link refid="script__pathfinder_8cpp"/>
+      </node>
+      <node id="96">
+        <label>src/sound/sound.cpp</label>
+        <link refid="sound_8cpp"/>
+      </node>
+      <node id="70">
+        <label>src/spell/spells.cpp</label>
+        <link refid="spells_8cpp"/>
+      </node>
+      <node id="77">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="94">
+        <label>src/pathfinder/pathfinder.cpp</label>
+        <link refid="pathfinder_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/animation/animation_die.cpp</label>
+        <link refid="animation__die_8cpp"/>
+      </node>
+      <node id="125">
+        <label>src/video/sdl.cpp</label>
+        <link refid="sdl_8cpp"/>
+      </node>
+      <node id="46">
+        <label>src/animation/animation_move.cpp</label>
+        <link refid="animation__move_8cpp"/>
+      </node>
+      <node id="117">
+        <label>src/ui/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/animation/animation_frame.cpp</label>
+        <link refid="animation__frame_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/action/action_train.cpp</label>
+        <link refid="action__train_8cpp"/>
+      </node>
+      <node id="88">
+        <label>src/missile/missile_cliptotarget.cpp</label>
+        <link refid="missile__cliptotarget_8cpp"/>
+      </node>
+      <node id="83">
+        <label>src/map/map_fog.cpp</label>
+        <link refid="map__fog_8cpp"/>
+      </node>
+      <node id="55">
+        <label>src/animation/animation_spawnmissile.cpp</label>
+        <link refid="animation__spawnmissile_8cpp"/>
+      </node>
+      <node id="72">
+        <label>src/stratagus/selection.cpp</label>
+        <link refid="selection_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="76">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="66">
+        <label>src/spell/spell_areaadjustvital.cpp</label>
+        <link refid="spell__areaadjustvital_8cpp"/>
+      </node>
+      <node id="110">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="73">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="90">
+        <label>src/missile/missile_landmine.cpp</label>
+        <link refid="missile__landmine_8cpp"/>
+      </node>
+      <node id="51">
+        <label>src/animation/animation_rotate.cpp</label>
+        <link refid="animation__rotate_8cpp"/>
+      </node>
+      <node id="101">
+        <label>src/spell/spell_areabombardment.cpp</label>
+        <link refid="spell__areabombardment_8cpp"/>
+      </node>
+      <node id="81">
+        <label>src/map/map.cpp</label>
+        <link refid="map_8cpp"/>
+      </node>
+      <node id="87">
+        <label>src/map/script_map.cpp</label>
+        <link refid="script__map_8cpp"/>
+      </node>
+      <node id="54">
+        <label>src/animation/animation_sound.cpp</label>
+        <link refid="animation__sound_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/action/action_patrol.cpp</label>
+        <link refid="action__patrol_8cpp"/>
+      </node>
+      <node id="49">
+        <label>src/animation/animation_randomsound.cpp</label>
+        <link refid="animation__randomsound_8cpp"/>
+      </node>
+      <node id="82">
+        <label>src/map/map_draw.cpp</label>
+        <link refid="map__draw_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="127">
+        <label>src/map/map_wall.cpp</label>
+        <link refid="map__wall_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/action/action_repair.cpp</label>
+        <link refid="action__repair_8cpp"/>
+      </node>
+      <node id="71">
+        <label>src/stratagus/script_player.cpp</label>
+        <link refid="script__player_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="121">
+        <label>src/unit/unit_manager.cpp</label>
+        <link refid="unit__manager_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/action/action_follow.cpp</label>
+        <link refid="action__follow_8cpp"/>
+      </node>
+      <node id="120">
+        <label>src/unit/unit_cache.cpp</label>
+        <link refid="unit__cache_8cpp"/>
+      </node>
+      <node id="122">
+        <label>src/unit/unit_save.cpp</label>
+        <link refid="unit__save_8cpp"/>
+      </node>
+      <node id="103">
+        <label>src/spell/spell_luacallback.cpp</label>
+        <link refid="spell__luacallback_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/game/trigger.cpp</label>
+        <link refid="trigger_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="109">
+        <label>src/stratagus/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="129">
+        <label>src/ui/popup.cpp</label>
+        <link refid="popup_8cpp"/>
+      </node>
+      <node id="85">
+        <label>src/map/mapfield.cpp</label>
+        <link refid="mapfield_8cpp"/>
+      </node>
+      <node id="56">
+        <label>src/animation/animation_spawnunit.cpp</label>
+        <link refid="animation__spawnunit_8cpp"/>
+      </node>
+      <node id="75">
+        <label>src/unit/build.cpp</label>
+        <link refid="build_8cpp"/>
+      </node>
+      <node id="98">
+        <label>src/sound/unitsound.cpp</label>
+        <link refid="unitsound_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/action/action_defend.cpp</label>
+        <link refid="action__defend_8cpp"/>
+      </node>
+      <node id="124">
+        <label>src/video/cursor.cpp</label>
+        <link refid="cursor_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/editor/edmap.cpp</label>
+        <link refid="edmap_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/action/action_unload.cpp</label>
+        <link refid="action__unload_8cpp"/>
+      </node>
+      <node id="58">
+        <label>src/animation/animation_wait.cpp</label>
+        <link refid="animation__wait_8cpp"/>
+      </node>
+      <node id="61">
+        <label>src/missile/missile_deathcoil.cpp</label>
+        <link refid="missile__deathcoil_8cpp"/>
+      </node>
+      <node id="118">
+        <label>src/unit/depend.cpp</label>
+        <link refid="depend_8cpp"/>
+      </node>
+      <node id="62">
+        <label>src/missile/missile_flameshield.cpp</label>
+        <link refid="missile__flameshield_8cpp"/>
+      </node>
+      <node id="47">
+        <label>src/animation/animation_randomgoto.cpp</label>
+        <link refid="animation__randomgoto_8cpp"/>
+      </node>
+      <node id="80">
+        <label>src/unit/upgrade.cpp</label>
+        <link refid="upgrade_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="37">
+        <label>src/include/unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/action/action_board.cpp</label>
+        <link refid="action__board_8cpp"/>
+      </node>
+      <node id="79">
+        <label>src/unit/unit_find.cpp</label>
+        <link refid="unit__find_8cpp"/>
+      </node>
+      <node id="123">
+        <label>src/unit/unitptr.cpp</label>
+        <link refid="unitptr_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/action/action_built.cpp</label>
+        <link refid="action__built_8cpp"/>
+      </node>
+      <node id="59">
+        <label>src/include/unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>src/animation/animation_ifvar.cpp</label>
+        <link refid="animation__ifvar_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="102">
+        <label>src/spell/spell_capture.cpp</label>
+        <link refid="spell__capture_8cpp"/>
+      </node>
+      <node id="48">
+        <label>src/animation/animation_randomrotate.cpp</label>
+        <link refid="animation__randomrotate_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+      <node id="92">
+        <label>src/network/commands.cpp</label>
+        <link refid="commands_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/action/command.cpp</label>
+        <link refid="command_8cpp"/>
+      </node>
+      <node id="130">
+        <label>src/unit/unittype.cpp</label>
+        <link refid="unittype_8cpp"/>
+      </node>
+      <node id="128">
+        <label>src/spell/script_spell.cpp</label>
+        <link refid="script__spell_8cpp"/>
+      </node>
+      <node id="64">
+        <label>src/missile/missile_tracer.cpp</label>
+        <link refid="missile__tracer_8cpp"/>
+      </node>
+      <node id="68">
+        <label>src/spell/spell_spawnmissile.cpp</label>
+        <link refid="spell__spawnmissile_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/action/action_die.cpp</label>
+        <link refid="action__die_8cpp"/>
+      </node>
+      <node id="35">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+      <node id="99">
+        <label>src/spell/spell_adjustvariable.cpp</label>
+        <link refid="spell__adjustvariable_8cpp"/>
+      </node>
+      <node id="104">
+        <label>src/spell/spell_polymorph.cpp</label>
+        <link refid="spell__polymorph_8cpp"/>
+      </node>
+      <node id="52">
+        <label>src/animation/animation_setplayervar.cpp</label>
+        <link refid="animation__setplayervar_8cpp"/>
+      </node>
+      <node id="42">
+        <label>src/animation/animation_goto.cpp</label>
+        <link refid="animation__goto_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classResourceInfo" prot="public">ResourceInfo</innerclass>
+    <innerclass refid="classCVariable" prot="public">CVariable</innerclass>
+    <innerclass refid="classCDecoVar" prot="public">CDecoVar</innerclass>
+    <innerclass refid="classCDecoVarBar" prot="public">CDecoVarBar</innerclass>
+    <innerclass refid="classCDecoVarFrame" prot="public">CDecoVarFrame</innerclass>
+    <innerclass refid="classCDecoVarText" prot="public">CDecoVarText</innerclass>
+    <innerclass refid="classCDecoVarSpriteBar" prot="public">CDecoVarSpriteBar</innerclass>
+    <innerclass refid="classCDecoVarStaticSprite" prot="public">CDecoVarStaticSprite</innerclass>
+    <innerclass refid="classCBuildRestriction" prot="public">CBuildRestriction</innerclass>
+    <innerclass refid="classCBuildRestrictionAnd" prot="public">CBuildRestrictionAnd</innerclass>
+    <innerclass refid="classCBuildRestrictionAddOn" prot="public">CBuildRestrictionAddOn</innerclass>
+    <innerclass refid="classCBuildRestrictionAddOn_1_1functor" prot="private">CBuildRestrictionAddOn::functor</innerclass>
+    <innerclass refid="classCBuildRestrictionOnTop" prot="public">CBuildRestrictionOnTop</innerclass>
+    <innerclass refid="classCBuildRestrictionOnTop_1_1functor" prot="private">CBuildRestrictionOnTop::functor</innerclass>
+    <innerclass refid="classCBuildRestrictionDistance" prot="public">CBuildRestrictionDistance</innerclass>
+    <innerclass refid="classCBuildRestrictionHasUnit" prot="public">CBuildRestrictionHasUnit</innerclass>
+    <innerclass refid="classCBuildRestrictionSurroundedBy" prot="public">CBuildRestrictionSurroundedBy</innerclass>
+    <innerclass refid="classCUnitType" prot="public">CUnitType</innerclass>
+    <innerclass refid="structCUnitType_1_1__portrait__" prot="public">CUnitType::_portrait_</innerclass>
+    <innerclass refid="structCUnitType_1_1BoolFlags" prot="public">CUnitType::BoolFlags</innerclass>
+    <innerclass refid="classCUnitTypeVar" prot="public">CUnitTypeVar</innerclass>
+    <innerclass refid="structCUnitTypeVar_1_1CKeys" prot="public">CUnitTypeVar::CKeys</innerclass>
+    <innerclass refid="structCUnitTypeVar_1_1CKeys_1_1DataKey" prot="public">CUnitTypeVar::CKeys::DataKey</innerclass>
+    <innerclass refid="structCUnitTypeVar_1_1CBoolKeys" prot="public">CUnitTypeVar::CBoolKeys</innerclass>
+    <innerclass refid="structCUnitTypeVar_1_1CVariableKeys" prot="public">CUnitTypeVar::CVariableKeys</innerclass>
+      <sectiondef kind="user-defined">
+      <header>unittype.h - The unit-types headerfile.</header>
+      <memberdef kind="define" id="unittype_8h_1a9b47ae137fc4255a34b1c80c0e40e7fb" prot="public" static="no">
+        <name>UnitSides</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="75" column="9" bodyfile="src/include/unittype.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1ad77ade02a7ee53441e9903971b48b378" prot="public" static="no">
+        <name>MaxAttackPos</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="76" column="9" bodyfile="src/include/unittype.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="unittype_8h_1ab96c61edcddf49116827ef61f0b41ac0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GroupSelectionMode</name>
+        <enumvalue id="unittype_8h_1ab96c61edcddf49116827ef61f0b41ac0adb35f6e83fb0305f872e93b7c0f4a0b1" prot="public">
+          <name>SELECTABLE_BY_RECTANGLE_ONLY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1ab96c61edcddf49116827ef61f0b41ac0a2d39eaf05ba871c9cf9f4689171bc2ed" prot="public">
+          <name>NON_SELECTABLE_BY_RECTANGLE_ONLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1ab96c61edcddf49116827ef61f0b41ac0abed2268a81494490a6ab7030e751876e" prot="public">
+          <name>SELECT_ALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="80" column="24" bodyfile="src/include/unittype.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="enum" id="unittype_8h_1a77867ab4129f63159b37bca3b652a798" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@38</name>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a85d1637518ce766080785fe231bc1409" prot="public">
+          <name>COWARD_INDEX</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a0a60a2520e5adeea3062971e74e1102f" prot="public">
+          <name>BUILDING_INDEX</name>
+          <briefdescription>
+<para>Unit will only attack if instructed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a0c8d7720ecc0ba7ff06ff8d1dce90d87" prot="public">
+          <name>FLIP_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a145dcadb45ffa9d002178dd9e75c3898" prot="public">
+          <name>REVEALER_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a05e1b3a548683676dc57ca5827d5441d" prot="public">
+          <name>LANDUNIT_INDEX</name>
+          <briefdescription>
+<para>reveal the fog of war </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798aef16ff6c7428dd2578de57d93967eec7" prot="public">
+          <name>AIRUNIT_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798aeb8470fa170d08ec6ac5ab092f6ade13" prot="public">
+          <name>SEAUNIT_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a90aa273a8c7ea43dba1e5d701c69238a" prot="public">
+          <name>EXPLODEWHENKILLED_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a2ac6e493ed17bc0039f05ca1bf05f5bb" prot="public">
+          <name>VISIBLEUNDERFOG_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798ac5c69eb8875f5d4afe3b819f212d9959" prot="public">
+          <name>PERMANENTCLOAK_INDEX</name>
+          <briefdescription>
+<para>Unit is visible under fog of war. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798ab131ab8734303ece9864ba70ea499093" prot="public">
+          <name>DETECTCLOAK_INDEX</name>
+          <briefdescription>
+<para>Is only visible by CloakDetectors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798ab8cedd718b5d64072ca80be51dcf096d" prot="public">
+          <name>ATTACKFROMTRANSPORTER_INDEX</name>
+          <briefdescription>
+<para>Can see Cloaked units. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a2308480cfa70e7e42d15ddc778cf4277" prot="public">
+          <name>VANISHES_INDEX</name>
+          <briefdescription>
+<para>Can attack from transporter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a79b0e0da8806248513c6753ca08c7490" prot="public">
+          <name>GROUNDATTACK_INDEX</name>
+          <briefdescription>
+<para>Corpses &amp; destroyed places. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a71404a569712f84ca1a2363312aa54da" prot="public">
+          <name>SHOREBUILDING_INDEX</name>
+          <briefdescription>
+<para>Can do ground attack command. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a9083bbe9d26fe68e1cc6cbf4ee59be3b" prot="public">
+          <name>CANATTACK_INDEX</name>
+          <briefdescription>
+<para>Building must be built on coast. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a1c9595d409a064da9a7f4c1b21d987b4" prot="public">
+          <name>BUILDEROUTSIDE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a080130e5daa2948c912fbc1a3595f43e" prot="public">
+          <name>BUILDERLOST_INDEX</name>
+          <briefdescription>
+<para>The builder stays outside during the construction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a37dfdaf1f4f907a1c2589fa9afdff233" prot="public">
+          <name>CANHARVEST_INDEX</name>
+          <briefdescription>
+<para>The builder is lost after the construction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798aab0b4db654991e1ba7a950a6dbfad107" prot="public">
+          <name>HARVESTER_INDEX</name>
+          <briefdescription>
+<para>Resource can be harvested. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a32d3586706a90b0bbea21d201f8a39bc" prot="public">
+          <name>SELECTABLEBYRECTANGLE_INDEX</name>
+          <briefdescription>
+<para>Unit is a resource harvester. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a65151bddbd5d01fb55368ad97e2cb0d5" prot="public">
+          <name>ISNOTSELECTABLE_INDEX</name>
+          <briefdescription>
+<para>Selectable with mouse rectangle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a5146ccd77d05d808a2b71510dea144d6" prot="public">
+          <name>DECORATION_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a4f8805ae643be8faa730fa5270940b8f" prot="public">
+          <name>INDESTRUCTIBLE_INDEX</name>
+          <briefdescription>
+<para>Unit is a decoration (act as tile). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798ad5b8f14a2ce908608bcae1cd1ab959a3" prot="public">
+          <name>TELEPORTER_INDEX</name>
+          <briefdescription>
+<para>Unit is indestructible (take no damage). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a3373291719be161c20d35cb474079568" prot="public">
+          <name>SHIELDPIERCE_INDEX</name>
+          <briefdescription>
+<para>Can teleport other units. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a1a687d5e81d6b2f808be5d0b509eb824" prot="public">
+          <name>SAVECARGO_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a89f2682bfbc934a0f3f9406a2197614b" prot="public">
+          <name>NONSOLID_INDEX</name>
+          <briefdescription>
+<para>Unit unloads his passengers after death. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798aa6acb453a095128882aacc6d89976513" prot="public">
+          <name>WALL_INDEX</name>
+          <briefdescription>
+<para>Unit can be entered by other units. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a3eb7dff49f7aa76be67af23947872b9e" prot="public">
+          <name>NORANDOMPLACING_INDEX</name>
+          <briefdescription>
+<para>Use special logic for Direction field. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798abef970c8532a2493258900685680c479" prot="public">
+          <name>ORGANIC_INDEX</name>
+          <briefdescription>
+<para>Don&apos;t use random frame rotation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798aa9ebe68ffd295ef9492bad8eb2ef1606" prot="public">
+          <name>SIDEATTACK_INDEX</name>
+          <briefdescription>
+<para>Organic unit (used for death coil spell) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798aaebcfc1ec00ba97f4a15b46efd5b3717" prot="public">
+          <name>SKIRMISHER_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a2580767b6413206a85ed758c5a45c148" prot="public">
+          <name>ALWAYSTHREAT_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a24a65ec115f6d3c82246e1bff606badb" prot="public">
+          <name>NOFRIENDLYFIRE_INDEX</name>
+          <briefdescription>
+<para>Unit always considered as threat for auto targeting algorihm, useful for unit without main attack ability, but which can cast spells (f.e. defiler in SC:BW) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a28db5290f665e964eb635765a6c6a29a" prot="public">
+          <name>MAINFACILITY_INDEX</name>
+          <briefdescription>
+<para>Unit accepts friendly fire for splash attacks. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a77867ab4129f63159b37bca3b652a798a06f9461311635e1aad1c4fe5fcbb2b4c" prot="public">
+          <name>NBARALREADYDEFINED</name>
+          <briefdescription>
+<para>Unit is a main building (Town Hall f. ex.) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="140" column="6" bodyfile="src/include/unittype.h" bodystart="140" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="enum" id="unittype_8h_1a16685eea158879e41b101ca3634de462" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@39</name>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a41716ecbb2daa9462d234c72ba16163b" prot="public">
+          <name>HP_INDEX</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a2675cd324e420007a441e2e6f626c7bd" prot="public">
+          <name>BUILD_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a30768fcac400ce795d4070a3e3af16df" prot="public">
+          <name>MANA_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a24a55a4178bb29a1d162af6baf4d6929" prot="public">
+          <name>TRANSPORT_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462af80d7cb10e082ed735071e4798d8f66f" prot="public">
+          <name>RESEARCH_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462ae45a67e4e84dd800d7932c9fe441f06e" prot="public">
+          <name>TRAINING_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a44e467409005681fdc38f2da5ba5cc24" prot="public">
+          <name>UPGRADINGTO_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a619e9067bb17eabdbd50e7779b7a0beb" prot="public">
+          <name>GIVERESOURCE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a8b000cb6e889790bf80e48b27327e38b" prot="public">
+          <name>CARRYRESOURCE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a1802527f26b8dffc3f40c9f1bdc746dd" prot="public">
+          <name>XP_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a1f8cdba27304a053f50fb8590274e93e" prot="public">
+          <name>KILL_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a54bb00b7e4b2093086a5417036b2c628" prot="public">
+          <name>SUPPLY_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a9e1a18e4e054933dfecbb81a92a4f0dd" prot="public">
+          <name>DEMAND_INDEX</name>
+          <briefdescription>
+<para>Food supply. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462ab7cc33d14967d6a06f9339848e834833" prot="public">
+          <name>ARMOR_INDEX</name>
+          <briefdescription>
+<para>Food demand. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a468db3075be3c284834408669ccf826d" prot="public">
+          <name>SIGHTRANGE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a3f88fd0bbd4c0c749ea15313f9fbd77f" prot="public">
+          <name>ATTACKRANGE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462adf492cea635bf4e16641b0706daf682c" prot="public">
+          <name>PIERCINGDAMAGE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462aaffad201187e00cfe37752d7570f7b8c" prot="public">
+          <name>BASICDAMAGE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a87e42f7de9a428546480d685ee09a692" prot="public">
+          <name>POSX_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a5dddc8e0d76646f1517e4a25255520b6" prot="public">
+          <name>POSY_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a9958b0d8b7c9540538aea83a40ead7f6" prot="public">
+          <name>TARGETPOSX_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a2e8851dcda3863b606783da0603f6b13" prot="public">
+          <name>TARGETPOSY_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a5afcca96046cfe5e2a6b7cf61db06f9c" prot="public">
+          <name>RADAR_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462ac288f36fa45ca0ae0994f8b325a55e88" prot="public">
+          <name>RADARJAMMER_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462aa5eb33489d1481cee969838ebffd5914" prot="public">
+          <name>AUTOREPAIRRANGE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a761f3be9735af1ce23f2e715e8d2f77d" prot="public">
+          <name>BLOODLUST_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a67f4916362f59b7514469ccecfb3e3b2" prot="public">
+          <name>HASTE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a29b11bb897081454ad5a71347766e034" prot="public">
+          <name>SLOW_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a3d507dd0c7a5e81f5958b04afeb3f66e" prot="public">
+          <name>INVISIBLE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a13d831aaced280bcf3dea82090ee0c7b" prot="public">
+          <name>UNHOLYARMOR_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462ace53202a54c248a4eb2db2b3d174839f" prot="public">
+          <name>SLOT_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462aec9d703cb487f0e96b4e1a9119004271" prot="public">
+          <name>SHIELD_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a030862b0714823c8fe04384ceca4cc06" prot="public">
+          <name>POINTS_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462affbcfd93aab8d3453ed5272196b1cab6" prot="public">
+          <name>MAXHARVESTERS_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a7e22de1c948299c1b9637c90bd330041" prot="public">
+          <name>POISON_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a367294d3abe484393fef65f04dea928c" prot="public">
+          <name>SHIELDPERMEABILITY_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462af1c55b9fcd8106e17aa1d8d89361f1be" prot="public">
+          <name>SHIELDPIERCING_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a7855742bd86273a5e96fdddaf03b328a" prot="public">
+          <name>ISALIVE_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a3094a13544860bc7f924823cc19f7aed" prot="public">
+          <name>PLAYER_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a95dec10f4529d12876b745d58427e296" prot="public">
+          <name>PRIORITY_INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a16685eea158879e41b101ca3634de462a433aa824eb068908dd572ed54bb8cfdd" prot="public">
+          <name>NVARALREADYDEFINED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="181" column="6" bodyfile="src/include/unittype.h" bodystart="181" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="enum" id="unittype_8h_1afe35dd4934363bb7626f498bdc947a4a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>UnitTypeType</name>
+        <enumvalue id="unittype_8h_1afe35dd4934363bb7626f498bdc947a4aaa7fe620d2400ac9bd9b66f23f087edb8" prot="public">
+          <name>UnitTypeLand</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1afe35dd4934363bb7626f498bdc947a4aacbd9faef0b39518b393aa25439eafc40" prot="public">
+          <name>UnitTypeFly</name>
+          <briefdescription>
+<para>Unit lives on land. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1afe35dd4934363bb7626f498bdc947a4aa9838fe3fdc5dda1b93e5ba994e31cd1c" prot="public">
+          <name>UnitTypeNaval</name>
+          <briefdescription>
+<para>Unit lives in air. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Unit lives on water </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="334" column="18" bodyfile="src/include/unittype.h" bodystart="334" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="enum" id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DistanceTypeType</name>
+        <enumvalue id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5a4c2ccc0164cc7fc1102a4b69361acd1e" prot="public">
+          <name>Equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5a0260621f7febf4fd12ade588e0d8e4df" prot="public">
+          <name>NotEqual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5a7a86dc85885cff5485ac61a73aac03d5" prot="public">
+          <name>LessThan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5ad9e3239ea8b58b7a711baf574c8a8be9" prot="public">
+          <name>LessThanEqual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5aacbed5acff2459626c383d28b32b401c" prot="public">
+          <name>GreaterThan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="unittype_8h_1a9c0ee5d939baac0c7d3b36ed0823ceb5a823c6a51dcbcc3b8af72222ad969d7af" prot="public">
+          <name>GreaterThanEqual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="340" column="22" bodyfile="src/include/unittype.h" bodystart="340" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="variable" id="unittype_8h_1a30d7b7e5df1e0c542fdb5cfa83da080b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnitType *&gt; UnitTypes</definition>
+        <argsstring></argsstring>
+        <name>UnitTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="646" column="20" bodyfile="src/unit/unittype.cpp" bodystart="455" bodyend="-1" declfile="src/include/unittype.h" declline="646" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="unittype_8h_1aba928b4ccc76fb30c2bfb9e4623a08a8" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* UnitTypeHumanWall</definition>
+        <argsstring></argsstring>
+        <name>UnitTypeHumanWall</name>
+        <briefdescription>
+<para>All unit-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000041"><xreftitle>Todo</xreftitle><xrefdescription><para>this hardcoded unit-types must be removed!! </para>
+</xrefdescription></xrefsect></para>
+<para>Next unit type are used hardcoded in the source.</para>
+<para><xrefsect id="todo_1_todo000120"><xreftitle>Todo</xreftitle><xrefdescription><para>find a way to make it configurable! </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="649" column="18" bodyfile="src/unit/unittype.cpp" bodystart="463" bodyend="-1" declfile="src/include/unittype.h" declline="649" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="unittype_8h_1ac30855b668f7879d23287663bad77b2e" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* UnitTypeOrcWall</definition>
+        <argsstring></argsstring>
+        <name>UnitTypeOrcWall</name>
+        <briefdescription>
+<para>Human wall. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="650" column="18" bodyfile="src/unit/unittype.cpp" bodystart="464" bodyend="-1" declfile="src/include/unittype.h" declline="650" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="unittype_8h_1abe7af13099df1a71b5e6faa4d59a7544" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitTypeVar" kindref="compound">CUnitTypeVar</ref></type>
+        <definition>CUnitTypeVar UnitTypeVar</definition>
+        <argsstring></argsstring>
+        <name>UnitTypeVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="773" column="21" bodyfile="src/unit/script_unittype.cpp" bodystart="61" bodyend="-1" declfile="src/include/unittype.h" declline="773" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1ad1027d1b13b5005ec7ebf95fbf51a29a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType * UnitTypeByIdent</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>UnitTypeByIdent</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Update unit stats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find unit-type by identifier.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit-type identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Unit-type pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="78" column="11" bodyfile="src/unit/unittype.cpp" bodystart="843" bodyend="850" declfile="src/include/unittype.h" declline="78" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a0fba46f1a1e160534d0cf3323212c0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* CclGetUnitType</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclGetUnitType</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access unit-type object</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="778" column="18" bodyfile="src/unit/script_unittype.cpp" bodystart="1257" bodyend="1271" declfile="src/include/unittype.h" declline="778" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a35b282531a0bd796ec63e515d6b6449c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UnitTypeCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>UnitTypeCclRegister</name>
+        <briefdescription>
+<para>Access unit-type object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for unit-type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="779" column="13" bodyfile="src/unit/script_unittype.cpp" bodystart="2080" bodyend="2099" declfile="src/include/unittype.h" declline="779" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a380d6ceb835ed913080f245abfc3a7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UpdateUnitStats</definition>
+        <argsstring>(CUnitType &amp;type, int reset_to_default)</argsstring>
+        <name>UpdateUnitStats</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>reset_to_default</declname>
+        </param>
+        <briefdescription>
+<para>Register ccl features. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="781" column="13" bodyfile="src/unit/unittype.cpp" bodystart="640" bodyend="746" declfile="src/include/unittype.h" declline="781" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a21f7147358d58e9f5f91b3b89e4fe497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UpdateStats</definition>
+        <argsstring>(int reset_to_default)</argsstring>
+        <name>UpdateStats</name>
+        <param>
+          <type>int</type>
+          <declname>reset_to_default</declname>
+          <defname>reset</defname>
+        </param>
+        <briefdescription>
+<para>Update unit stats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the player stats for changed unit types. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates wether default value should be set to each stat (level, upgrades) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="782" column="13" bodyfile="src/unit/unittype.cpp" bodystart="753" bodyend="760" declfile="src/include/unittype.h" declline="782" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1afac972f1a1e6090b7dbb70819000c9dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveUnitTypes</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SaveUnitTypes</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Get unit-type by ident. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save state of the unit-type table to file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="785" column="13" bodyfile="src/unit/unittype.cpp" bodystart="815" bodyend="834" declfile="src/include/unittype.h" declline="785" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1ab90edae888b1339523b5975e38ef1245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* NewUnitTypeSlot</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>NewUnitTypeSlot</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Save the unit-type table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an empty unit-type slot.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier to identify the slot (malloced by caller!).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New allocated (zeroed) unit-type pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="786" column="18" bodyfile="src/unit/unittype.cpp" bodystart="859" bodyend="879" declfile="src/include/unittype.h" declline="786" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1ac7474b6a7c41bcbc2405398302fa70c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawUnitType</definition>
+        <argsstring>(const CUnitType &amp;type, CPlayerColorGraphic *sprite, int player, int frame, const PixelPos &amp;screenPos)</argsstring>
+        <name>DrawUnitType</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classCPlayerColorGraphic" kindref="compound">CPlayerColorGraphic</ref> *</type>
+          <declname>sprite</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+<para>Draw the sprite frame of unit-type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an empty unit-type slot</para>
+<para>Draw unit-type on map.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sprite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sprite to use for drawing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player number for color substitution. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation frame of unit-type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Screen pixel (top left) position to draw unit-type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000121"><xreftitle>Todo</xreftitle><xrefdescription><para>Do screen position caculation in high level. Better way to handle in x mirrored sprites. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="788" column="13" bodyfile="src/unit/unittype.cpp" bodystart="893" bodyend="918" declfile="src/include/unittype.h" declline="788" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a5128d0be6f5fc4073ae9d9f3ac7dbe5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitUnitTypes</definition>
+        <argsstring>(int reset_player_stats)</argsstring>
+        <name>InitUnitTypes</name>
+        <param>
+          <type>int</type>
+          <declname>reset_player_stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init unit types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="791" column="13" bodyfile="src/unit/unittype.cpp" bodystart="945" bodyend="976" declfile="src/include/unittype.h" declline="791" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a544ed30c4c1c9b7c977150a142f6bc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LoadUnitTypeSprite</definition>
+        <argsstring>(CUnitType &amp;unittype)</argsstring>
+        <name>LoadUnitTypeSprite</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>unittype</declname>
+          <defname>type</defname>
+        </param>
+        <briefdescription>
+<para>Init unit-type table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads the Sprite for a unit type</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of unit to load </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="792" column="13" bodyfile="src/unit/unittype.cpp" bodystart="983" bodyend="1043" declfile="src/include/unittype.h" declline="792" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1adc6cbfaa20f9bff9a638d08768c029de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LoadUnitTypes</definition>
+        <argsstring>()</argsstring>
+        <name>LoadUnitTypes</name>
+        <briefdescription>
+<para>Load the sprite for a unittype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the graphics for the unit-types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="793" column="13" bodyfile="src/unit/unittype.cpp" bodystart="1048" bodyend="1076" declfile="src/include/unittype.h" declline="793" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1ac5f4ca684fcf4d237ebbc43acd911e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanUnitTypes</definition>
+        <argsstring>()</argsstring>
+        <name>CleanUnitTypes</name>
+        <briefdescription>
+<para>Load the unit-type data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleanup the unit-type module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="794" column="13" bodyfile="src/unit/unittype.cpp" bodystart="1102" bodyend="1118" declfile="src/include/unittype.h" declline="794" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1afdb7d2d4457daaf513c89a8877123171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DefineVariableField</definition>
+        <argsstring>(lua_State *l, CVariable *var, int lua_index)</argsstring>
+        <name>DefineVariableField</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classCVariable" kindref="compound">CVariable</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lua_index</declname>
+        </param>
+        <briefdescription>
+<para>Cleanup unit-type module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse User Variables field.</para>
+<para>Define the field of the UserDefined variables.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lua_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the table where are the infos </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="799" column="13" bodyfile="src/unit/script_unittype.cpp" bodystart="1597" bodyend="1619" declfile="src/include/unittype.h" declline="799" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a87d7ab03512f434c5c7ad555b78c925e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UpdateUnitVariables</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>UpdateUnitVariables</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Update custom Variables with other variable (like Hp, ...) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Update unit variables which are not user defined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="802" column="13" bodyfile="src/unit/script_unittype.cpp" bodystart="1876" bodyend="1970" declfile="src/include/unittype.h" declline="802" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1a0a57d6a8dc5a64a7b37ce402fb40f7a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetMapStat</definition>
+        <argsstring>(std::string ident, std::string variable_key, int value, std::string variable_type)</argsstring>
+        <name>SetMapStat</name>
+        <param>
+          <type>std::string</type>
+          <declname>ident</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>variable_key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>variable_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the map default stat for a unit type</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit type ident </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variable_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the desired variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variable_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type to be modified (i.e. &quot;Value&quot;, &quot;Max&quot;, etc.); alternatively, resource type if variable_key equals &quot;Costs&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="804" column="13" bodyfile="src/unit/script_unittype.cpp" bodystart="1980" bodyend="2028" declfile="src/include/unittype.h" declline="804" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="unittype_8h_1aa95c253ade5c932d2af5759e50764976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetMapSound</definition>
+        <argsstring>(std::string ident, std::string sound, std::string sound_type, std::string sound_subtype=&quot;&quot;)</argsstring>
+        <name>SetMapSound</name>
+        <param>
+          <type>std::string</type>
+          <declname>ident</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>sound</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>sound_type</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>sound_subtype</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the map sound for a unit type</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit type ident </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sound_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the sound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sound to be set for that type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="805" column="13" bodyfile="src/unit/script_unittype.cpp" bodystart="2037" bodyend="2075" declfile="src/include/unittype.h" declline="805" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="unittype_8h_1a8b87e01ac1eac3390be2e1de4eac10c4" prot="public" static="no">
+        <name>InfiniteRepairRange</name>
+        <initializer>INT_MAX</initializer>
+        <briefdescription>
+<para>Units repair range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="567" column="9" bodyfile="src/include/unittype.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1a4894fb5a374f28371ea0aceb55855bf6" prot="public" static="no">
+        <name>MouseActionNone</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Right click action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="585" column="9" bodyfile="src/include/unittype.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1a671f082ca90330c2718af4ba6e406f92" prot="public" static="no">
+        <name>MouseActionAttack</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="586" column="9" bodyfile="src/include/unittype.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1a7341ffac3152accdfe12b095525ddf80" prot="public" static="no">
+        <name>MouseActionMove</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="587" column="9" bodyfile="src/include/unittype.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1a239d29899a93ee719aff00f8355da630" prot="public" static="no">
+        <name>MouseActionHarvest</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="588" column="9" bodyfile="src/include/unittype.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1a6f0215d7712b138394e7313becf93508" prot="public" static="no">
+        <name>MouseActionSpellCast</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="589" column="9" bodyfile="src/include/unittype.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1adeb62c1040c50d9f90d6cc84e93edff7" prot="public" static="no">
+        <name>MouseActionSail</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="590" column="9" bodyfile="src/include/unittype.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1ac0736186490b94a751f8d59342a11c17" prot="public" static="no">
+        <name>CanTargetLand</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Which units can it attack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="592" column="9" bodyfile="src/include/unittype.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1abc79df6cf6c6fbfd4ea9b95d0e2e0829" prot="public" static="no">
+        <name>CanTargetSea</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="593" column="9" bodyfile="src/include/unittype.h" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="unittype_8h_1a34d2838b2642f69176e24373378264cd" prot="public" static="no">
+        <name>CanTargetAir</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="594" column="9" bodyfile="src/include/unittype.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/unittype.h"/>
+  </compounddef>
+</doxygen>

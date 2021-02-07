@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="AiModule" kind="page">
+    <compoundname>AiModule</compoundname>
+    <title>Module - AI</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="AiModule_1aibasics">
+<title>What is it?</title>
+<para>Stratagus uses a very simple scripted AI. There are no optimizations yet. The complete AI was written on one weekend. Until no AI specialist joins, I keep this AI.</para>
+<sect2 id="AiModule_1aiscripted">
+<title>What is scripted AI?</title>
+<para>The AI script tells the engine build 4 workers, than build 3 footman, than attack the player, than sleep 100 frames.</para>
+</sect2>
+</sect1>
+<sect1 id="AiModule_1API">
+<title>The AI API</title>
+<sect2 id="AiModule_1aimanage">
+<title>Management calls</title>
+<para>Manage the inititialse and cleanup of the AI players.</para>
+<para><ref refid="ai_8cpp_1aa3fd8a732614c1956d2b1961a5ee8d57" kindref="member">InitAiModule()</ref></para>
+<para>Initialise all global varaibles and structures. Called before AiInit, or before game loading.</para>
+<para>::AiInit(::Player)</para>
+<para>Called for each player, to setup the AI structures Player::Aiin the player structure. It can use Player::AiName to select different AI&apos;s.</para>
+<para><ref refid="ai_8cpp_1a8123cbd5d95a217900789de7f05bb21c" kindref="member">CleanAi()</ref></para>
+<para>Called to release all the memory for all AI structures. Must handle self which players contains AI structures.</para>
+<para>::SaveAi(::FILE *)</para>
+<para>Save the AI structures of all players to file. Must handle self which players contains AI structures.</para>
+</sect2>
+<sect2 id="AiModule_1aipcall">
+<title>Periodic calls</title>
+<para>This functions are called regular for all AI players.</para>
+<para>::AiEachCycle(::Player)</para>
+<para>Called each game cycle, to handle quick checks, which needs less CPU.</para>
+<para>::AiEachSecond(::Player)</para>
+<para>Called each second, to handle more CPU intensive things.</para>
+</sect2>
+<sect2 id="AiModule_1aiecall">
+<title>Event call-backs</title>
+<para>This functions are called, when some special events happens.</para>
+<para><ref refid="ai_8cpp_1a87bcafc04e7889aa0322f7c9c3340ff1" kindref="member">AiHelpMe()</ref></para>
+<para>Called if a unit owned by the AI is attacked.</para>
+<para><ref refid="ai_8cpp_1a06b314a1812af6faa95a2691eb73ea1f" kindref="member">AiUnitKilled()</ref></para>
+<para>Called if a unit owned by the AI is killed.</para>
+<para><ref refid="ai_8cpp_1a8bb477337402981b764f8447ff3138c6" kindref="member">AiNeedMoreSupply()</ref></para>
+<para>Called if an trained unit is ready, but not enough food is available for it.</para>
+<para><ref refid="ai_8cpp_1ae45ab9f63e29e49ec2190f3df492c899" kindref="member">AiWorkComplete()</ref></para>
+<para>Called if a unit has completed its work.</para>
+<para><ref refid="ai_8cpp_1a4320bc05a6f9a1049a2d2b3764276b06" kindref="member">AiCanNotBuild()</ref></para>
+<para>Called if the AI unit can&apos;t build the requested unit-type.</para>
+<para><ref refid="ai_8cpp_1a859b26c4eea3360f9c8ac8edc6769050" kindref="member">AiCanNotReach()</ref></para>
+<para>Called if the AI unit can&apos;t reach the building place.</para>
+<para><ref refid="ai_8cpp_1af046955a5aadd4d99a4dfdacc00947ed" kindref="member">AiTrainingComplete()</ref></para>
+<para>Called if AI unit has completed training a new unit.</para>
+<para><ref refid="ai_8cpp_1a922a4b4b97d02779521335976215f05c" kindref="member">AiUpgradeToComplete()</ref></para>
+<para>Called if AI unit has completed upgrade to new unit-type.</para>
+<para><ref refid="ai_8cpp_1a7121ccbb4813a0eb2daa33edd3403c7b" kindref="member">AiResearchComplete()</ref></para>
+<para>Called if AI unit has completed research of an upgrade or spell. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

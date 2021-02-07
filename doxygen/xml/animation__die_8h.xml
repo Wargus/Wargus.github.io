@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="animation__die_8h" kind="file" language="C++">
+    <compoundname>animation_die.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="animation_8h" local="yes">animation.h</includes>
+    <includedby refid="actions_8cpp" local="yes">src/action/actions.cpp</includedby>
+    <includedby refid="animation_8cpp" local="yes">src/animation/animation.cpp</includedby>
+    <includedby refid="animation__die_8cpp" local="yes">src/animation/animation_die.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>animation.h</label>
+        <link refid="animation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>src/include/animation/animation_die.h</label>
+        <link refid="animation__die_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>src/animation/animation_die.cpp</label>
+        <link refid="animation__die_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/animation/animation_die.h</label>
+        <link refid="animation__die_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCAnimation__Die" prot="public">CAnimation_Die</innerclass>
+    <innerclass refid="classAnimationDie__Exception" prot="public">AnimationDie_Exception</innerclass>
+      <sectiondef kind="user-defined">
+      <header>animation_die.h - The animation die headerfile.</header>
+      <memberdef kind="function" id="animation__die_8h_1ad6b15070508087dee7079c9a19c133e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AnimationDie_OnCatch</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AnimationDie_OnCatch</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_die.h" line="55" column="13" bodyfile="src/animation/animation_die.cpp" bodystart="62" bodyend="65" declfile="src/include/animation/animation_die.h" declline="55" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/animation/animation_die.h"/>
+  </compounddef>
+</doxygen>

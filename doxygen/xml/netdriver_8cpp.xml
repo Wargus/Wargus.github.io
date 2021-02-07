@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="netdriver_8cpp" kind="file" language="C++">
+    <compoundname>netdriver.cpp</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="games_8h" local="yes">games.h</includes>
+    <includes refid="netdriver_8h" local="yes">netdriver.h</includes>
+    <includes refid="net__lowlevel_8h" local="yes">net_lowlevel.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="6">
+        <label>errno.h</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>games.h</label>
+        <link refid="games_8h"/>
+      </node>
+      <node id="17">
+        <label>winsock2.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+      <node id="7">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>metaserver/netdriver.cpp</label>
+        <link refid="netdriver_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>time.h</label>
+      </node>
+      <node id="9">
+        <label>cstdlib</label>
+      </node>
+      <node id="15">
+        <label>net_lowlevel.h</label>
+        <link refid="net__lowlevel_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="14">
+        <label>netdriver.h</label>
+        <link refid="netdriver_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>netdriver.cpp - Session mangement (SDL_net Socket Implementation).</header>
+      <memberdef kind="define" id="netdriver_8cpp_1ab7001ad45bb9e74d809e56692c16ebd1" prot="public" static="no">
+        <name>LINK</name>
+        <param><defname>first</defname></param>
+        <param><defname>item</defname></param>
+        <param><defname>last</defname></param>
+        <param><defname>count</defname></param>
+        <initializer>	{ \
+	if (!first)                     \
+		first = item;               \
+	if (!last) {                    \
+		last = item;                \
+	} else {                        \
+		item-&gt;Next = last-&gt;Next;    \
+		last-&gt;Next = item;          \
+		item-&gt;Prev = last;          \
+		last = item;                \
+		if (!item-&gt;Prev-&gt;Next)      \
+			item-&gt;Prev-&gt;Next = item;\
+	}                               \
+	++count;                        \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LINK</para>
+<para>Adds an item to a linked list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="58" column="9" bodyfile="metaserver/netdriver.cpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netdriver_8cpp_1a9172d3693990ae7ac076b0ebb895a1f4" prot="public" static="no">
+        <name>UNLINK</name>
+        <param><defname>first</defname></param>
+        <param><defname>item</defname></param>
+        <param><defname>last</defname></param>
+        <param><defname>count</defname></param>
+        <initializer>	{ \
+	if (item-&gt;Prev)                   \
+		item-&gt;Prev-&gt;Next = item-&gt;Next;\
+	if (item-&gt;Next)                   \
+		item-&gt;Next-&gt;Prev = item-&gt;Prev;\
+	if (item == last)                 \
+		last = item-&gt;Prev;            \
+	if (item == first)                \
+		first = item-&gt;Next;           \
+	--count;                          \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UNLINK</para>
+<para>Removes an item from the linked list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="79" column="9" bodyfile="metaserver/netdriver.cpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1adaad5bc34f5f083680e9457a67a7393c" prot="public" static="yes" mutable="no">
+        <type><ref refid="net__lowlevel_8h_1a6dfce000c099dd3fc424499faeae3900" kindref="member">Socket</ref></type>
+        <definition>Socket MasterSocket</definition>
+        <argsstring></argsstring>
+        <name>MasterSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="95" column="15" bodyfile="metaserver/netdriver.cpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1a5682d56e20087b97c1fba961d5f2998c" prot="public" static="yes" mutable="no">
+        <type><ref refid="net__lowlevel_8h_1a6dfce000c099dd3fc424499faeae3900" kindref="member">Socket</ref></type>
+        <definition>Socket HolePunchSocket</definition>
+        <argsstring></argsstring>
+        <name>HolePunchSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="96" column="15" bodyfile="metaserver/netdriver.cpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1a16740d295ec7a25dbdfaeba99399ac3f" prot="public" static="no" mutable="no">
+        <type><ref refid="classSessionPool" kindref="compound">SessionPool</ref> *</type>
+        <definition>SessionPool* Pool</definition>
+        <argsstring></argsstring>
+        <name>Pool</name>
+        <briefdescription>
+<para>external reference to session tracking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="98" column="13" bodyfile="metaserver/netdriver.cpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1ab06f6eeb98fdc2ca03f0d80eefcbebc0" prot="public" static="no" mutable="no">
+        <type><ref refid="classServerStruct" kindref="compound">ServerStruct</ref></type>
+        <definition>ServerStruct Server</definition>
+        <argsstring></argsstring>
+        <name>Server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="99" column="14" bodyfile="metaserver/netdriver.cpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1ab0423aab33269880337927187db62722" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char UDPBuffer[16+6+1]</definition>
+        <argsstring>[16+6+1]</argsstring>
+        <name>UDPBuffer</name>
+        <initializer>= {&apos;\0&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="100" column="6" bodyfile="metaserver/netdriver.cpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1afb27cd35775fa9416f202ac20a23b09a" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long UDPHost</definition>
+        <argsstring></argsstring>
+        <name>UDPHost</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="101" column="15" bodyfile="metaserver/netdriver.cpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netdriver_8cpp_1a52a65ff7cc10704cb182d2bd468ad2cd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UDPPort</definition>
+        <argsstring></argsstring>
+        <name>UDPPort</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="102" column="5" bodyfile="metaserver/netdriver.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a871ef8738fb9a20ce2833cfe52c1d821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Send</definition>
+        <argsstring>(Session *session, const char *msg)</argsstring>
+        <name>Send</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a message to a session</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classSession" kindref="compound">Session</ref> to send the message to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="114" column="6" bodyfile="metaserver/netdriver.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a267970fd1643f46b2eab72e810ed02bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ServerInit</definition>
+        <argsstring>(int port)</argsstring>
+        <name>ServerInit</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the port to which the server will bind.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, non-zero for failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="126" column="5" bodyfile="metaserver/netdriver.cpp" bodystart="126" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a634fd434a92b48431007c5cd8359c827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ServerQuit</definition>
+        <argsstring>(void)</argsstring>
+        <name>ServerQuit</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ServerQuit: Releases the server socket. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="190" column="6" bodyfile="metaserver/netdriver.cpp" bodystart="190" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a049ab6a14c18295021920330dcbeb8ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IdleSeconds</definition>
+        <argsstring>(Session *session)</argsstring>
+        <name>IdleSeconds</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns time (in seconds) that a session has been idle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the session we are checking. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="216" column="12" bodyfile="metaserver/netdriver.cpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a9affa3f20a2f810f6974633351ef4417" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int KillSession</definition>
+        <argsstring>(Session *session)</argsstring>
+        <name>KillSession</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys and cleans up session data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the session to be killed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="226" column="12" bodyfile="metaserver/netdriver.cpp" bodystart="226" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a72c0a624c7f38e171996bc363894c5b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AcceptConnections</definition>
+        <argsstring>()</argsstring>
+        <name>AcceptConnections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accept new connections </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="240" column="13" bodyfile="metaserver/netdriver.cpp" bodystart="240" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a0d527ff4f3cf527a92b842f9a0c6eaf7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void KickIdlers</definition>
+        <argsstring>(void)</argsstring>
+        <name>KickIdlers</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Kick idlers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="280" column="13" bodyfile="metaserver/netdriver.cpp" bodystart="280" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1ae78ef02a46020a34b625a72a6b0ceef0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ReadData</definition>
+        <argsstring>()</argsstring>
+        <name>ReadData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="298" column="12" bodyfile="metaserver/netdriver.cpp" bodystart="298" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="netdriver_8cpp_1a93b23d74b62ac006cd90289d01e4e0af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UpdateSessions</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateSessions</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accepts new connections, receives data, manages buffers, </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/netdriver.cpp" line="335" column="5" bodyfile="metaserver/netdriver.cpp" bodystart="335" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="metaserver/netdriver.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1Font" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gcn::Font</compoundname>
+    <derivedcompoundref refid="classCFont" prot="public" virt="non-virtual">CFont</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1DefaultFont" prot="public" virt="non-virtual">gcn::DefaultFont</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1ImageFont" prot="public" virt="non-virtual">gcn::ImageFont</derivedcompoundref>
+    <includes refid="guichan_2include_2guichan_2font_8h" local="no">font.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1Font_1ab3bd1c57c092fe0ad1d027c4076e463d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual gcn::Font::~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/font.h" line="76" column="17" bodyfile="src/guichan/include/guichan/font.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Font_1abb88894b1ebeda28edcac75c537f8e0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gcn::Font::getWidth</definition>
+        <argsstring>(const std::string &amp;text) const =0</argsstring>
+        <name>getWidth</name>
+        <reimplementedby refid="classCFont_1af60eb2e89eeaf6b5045511a7d06081e1">getWidth</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DefaultFont_1a8e9f9e2bde2f11186aac6d6c6e9f878e">getWidth</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ImageFont_1a5fe7b1ccce9cad41f05dab418c5d4464">getWidth</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the width of a string. The width of a string is not necesserily the sum of all the widths of it&apos;s glyphs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to return the width of. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the width of a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/font.h" line="85" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Font_1aa270d8934a16d4065143e3617b1fa926" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gcn::Font::getHeight</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getHeight</name>
+        <reimplementedby refid="classCFont_1a02eb32c5dc2e2cd05971fd9139d082bc">getHeight</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DefaultFont_1a857d9f299fe7f8b7b1eb027937fa6622">getHeight</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ImageFont_1a10e2558a87f2520c7dbff9ea3d04169f">getHeight</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the height of the glyphs in the font.</para>
+<para><simplesect kind="return"><para>the height of the glyphs int the font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/font.h" line="92" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Font_1a3210f4c53424ade4b188b8dfb1f686a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::Font::getStringIndexAt</definition>
+        <argsstring>(const std::string &amp;text, int x)</argsstring>
+        <name>getStringIndexAt</name>
+        <reimplementedby refid="classgcn_1_1DefaultFont_1a10b802c51de668171c2255f2e11fc063">getStringIndexAt</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ImageFont_1a5b0e7a7a7acdcb9fadb232f63608b354">getStringIndexAt</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a string index in a string providing an x coordinate. Used to retrive a string index (for a character in a string) at a certain x position. It is especially useful when a mouse clicks in a <ref refid="classgcn_1_1TextField" kindref="compound">TextField</ref> and you want to know which character was clicked.</para>
+<para><simplesect kind="return"><para>a string index in a string providing an x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/font.h" line="103" column="21" bodyfile="src/guichan/gfont.cpp" bodystart="81" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Font_1af26545b835fa5afd4f20d6a6bbab29b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Font::drawString</definition>
+        <argsstring>(Graphics *graphics, const std::string &amp;text, int x, int y, bool is_normal=true)=0</argsstring>
+        <name>drawString</name>
+        <reimplementedby refid="classCFont_1aa17a43babee3a8629a9bb6c525bd0caa">drawString</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DefaultFont_1a6a56662a4326a6a1b5597cca0767d1be">drawString</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ImageFont_1acad2ea859f5efeb41a2bfb79abb13c18">drawString</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_normal</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws a string.</para>
+<para>NOTE: You normally won&apos;t use this function to draw text since <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> contains better functions for drawing text.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to use for drawing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate where to draw the string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate where to draw the string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/font.h" line="116" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holder of a font. Fonts should inherit from this class and implements it&apos;s functions.</para>
+<para><simplesect kind="see"><para><ref refid="classgcn_1_1ImageFont" kindref="compound">ImageFont</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>gcn::ImageFont</label>
+        <link refid="classgcn_1_1ImageFont"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CFont</label>
+        <link refid="classCFont"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+    </inheritancegraph>
+    <location file="src/guichan/include/guichan/font.h" line="70" column="1" bodyfile="src/guichan/include/guichan/font.h" bodystart="69" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1Font_1af26545b835fa5afd4f20d6a6bbab29b5" prot="public" virt="pure-virtual"><scope>gcn::Font</scope><name>drawString</name></member>
+      <member refid="classgcn_1_1Font_1aa270d8934a16d4065143e3617b1fa926" prot="public" virt="pure-virtual"><scope>gcn::Font</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1Font_1a3210f4c53424ade4b188b8dfb1f686a4" prot="public" virt="virtual"><scope>gcn::Font</scope><name>getStringIndexAt</name></member>
+      <member refid="classgcn_1_1Font_1abb88894b1ebeda28edcac75c537f8e0f" prot="public" virt="pure-virtual"><scope>gcn::Font</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Font_1ab3bd1c57c092fe0ad1d027c4076e463d" prot="public" virt="virtual"><scope>gcn::Font</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCPlayer" kind="class" language="C++" prot="public">
+    <compoundname>CPlayer</compoundname>
+    <includes refid="player_8h" local="no">player.h</includes>
+      <sectiondef kind="user-defined">
+      <header>player.cpp - The players.</header>
+      <memberdef kind="function" id="classCPlayer_1aeb54ca6b236a7ec527fb5953a858a802" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetRevelationType</definition>
+        <argsstring>(const RevealTypes type)</argsstring>
+        <name>SetRevelationType</name>
+        <param>
+          <type>const <ref refid="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccf" kindref="member">RevealTypes</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Change revelation type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change revelation type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="101" column="13" bodyfile="src/stratagus/player.cpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ac6c0da8c6bc7e76a9abe326545135e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Timer for the upgrades. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change player name</para>
+<para>Change player name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="177" column="6" bodyfile="src/stratagus/player.cpp" bodystart="762" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a2a919908eb76a2f75789f93119b2c77c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear turn related player data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear all player data excepts members which don&apos;t change.</para>
+<para>The fields that are not cleared are UnitLimit, BuildingLimit, TotalUnitLimit and Allow. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="180" column="6" bodyfile="src/stratagus/player.cpp" bodystart="773" bodyend="823"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a1849978e13194153dc43e60275f3786d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;::const_iterator</type>
+        <definition>std::vector&lt; CUnit * &gt;::iterator CPlayer::UnitBegin</definition>
+        <argsstring>() const</argsstring>
+        <name>UnitBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="182" column="30" bodyfile="src/stratagus/player.cpp" bodystart="879" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a1ddb43f7ab86e95c0c396a437b36b2ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;::const_iterator</type>
+        <definition>std::vector&lt; CUnit * &gt;::iterator CPlayer::UnitEnd</definition>
+        <argsstring>() const</argsstring>
+        <name>UnitEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="184" column="30" bodyfile="src/stratagus/player.cpp" bodystart="889" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ab08c01f7b084c4c6a9f5c1c0f07b01ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+        <definition>CUnit &amp; CPlayer::GetUnit</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>GetUnit</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="187" column="7" bodyfile="src/stratagus/player.cpp" bodystart="899" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1aae9c29bbb60ae5fd6b54382a403163df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::GetUnitCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUnitCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="188" column="5" bodyfile="src/stratagus/player.cpp" bodystart="904" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a976ab2fc2e4862722db5159a24868c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::AddUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AddUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="190" column="6" bodyfile="src/stratagus/player.cpp" bodystart="826" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1aadee7b1ceba6b386036fc97d0c0d46c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::RemoveUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>RemoveUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="191" column="6" bodyfile="src/stratagus/player.cpp" bodystart="842" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1aad6e81a6965787bb28bcd4f5fcb58eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::UpdateFreeWorkers</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateFreeWorkers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="192" column="6" bodyfile="src/stratagus/player.cpp" bodystart="857" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a751dc24195c8f627ff6342404a1d86de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::GetResource</definition>
+        <argsstring>(const int resource, const int type)</argsstring>
+        <name>GetResource</name>
+        <param>
+          <type>const int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get a resource of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the player resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to get. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Storing type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Storing types: 0 - overall store, 1 - store buildings, 2 - both </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="195" column="5" bodyfile="src/stratagus/player.cpp" bodystart="923" bodyend="936"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a90598ae1e7f66ad197a53e1941aea879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::ChangeResource</definition>
+        <argsstring>(const int resource, const int value, const bool store=false)</argsstring>
+        <name>ChangeResource</name>
+        <param>
+          <type>const int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>store</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Adds/subtracts some resources to/from the player store. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds/subtracts some resources to/from the player store</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to add/subtract. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many of this resource (can be negative). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>store</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, sets the building store resources, else the overall resources. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="197" column="6" bodyfile="src/stratagus/player.cpp" bodystart="945" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a2e89440975e5fba14c42cdd95f942092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetResource</definition>
+        <argsstring>(const int resource, const int value, const int type=STORE_OVERALL)</argsstring>
+        <name>SetResource</name>
+        <param>
+          <type>const int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>type</declname>
+          <defval><ref refid="player_8h_1a68dcad10757b2a8e9e419b2e39885357" kindref="member">STORE_OVERALL</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set a resource of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the player resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to change. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many of this resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource types: 0 - overall store, 1 - store buildings, 2 - both </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="199" column="6" bodyfile="src/stratagus/player.cpp" bodystart="968" bodyend="983"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ac62ded65f27343855e034beb4b21a1cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::CheckResource</definition>
+        <argsstring>(const int resource, const int value)</argsstring>
+        <name>CheckResource</name>
+        <param>
+          <type>const int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Check, if there enough resources for action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check, if there enough resources for action.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to change. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many of this resource. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="201" column="6" bodyfile="src/stratagus/player.cpp" bodystart="991" bodyend="998"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a11698444c3a8fa41cb95851f375f5ce4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::GetUnitTotalCount</definition>
+        <argsstring>(const CUnitType &amp;type) const</argsstring>
+        <name>GetUnitTotalCount</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Returns count of specified unittype. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="204" column="5" bodyfile="src/stratagus/player.cpp" bodystart="1001" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ad98478c928a2a89a755db56922ef4aac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::CheckLimits</definition>
+        <argsstring>(const CUnitType &amp;type) const</argsstring>
+        <name>CheckLimits</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Check if the unit-type didn&apos;t break any unit limits and supply/demand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit-type didn&apos;t break any unit limits.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if enough, negative on problem.</para>
+</simplesect>
+<simplesect kind="note"><para>The return values of the PlayerCheck functions are inconsistent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="206" column="5" bodyfile="src/stratagus/player.cpp" bodystart="1026" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a73bb2a58ace0ac08ce12f9c1cec418e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::CheckCosts</definition>
+        <argsstring>(const int *costs, bool notify=true) const</argsstring>
+        <name>CheckCosts</name>
+        <param>
+          <type>const int *</type>
+          <declname>costs</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Check if enough resources are available for costs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if enough resources for are available.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many costs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if all enough, otherwise a bit mask.</para>
+</simplesect>
+<simplesect kind="note"><para>The return values of the PlayerCheck functions are inconsistent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="209" column="5" bodyfile="src/stratagus/player.cpp" bodystart="1061" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a1ea9a09e525289f17240716897289770" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::CheckUnitType</definition>
+        <argsstring>(const CUnitType &amp;type) const</argsstring>
+        <name>CheckUnitType</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Check if enough resources are available for a new unit-type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if enough resources for new unit is available.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if all enough, otherwise a bit mask. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="211" column="5" bodyfile="src/stratagus/player.cpp" bodystart="1090" bodyend="1093"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a35b9ce71ffe4bb9ecc327ef2a7498f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::AddCosts</definition>
+        <argsstring>(const int *costs)</argsstring>
+        <name>AddCosts</name>
+        <param>
+          <type>const int *</type>
+          <declname>costs</declname>
+        </param>
+        <briefdescription>
+<para>Add costs to the resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add costs to the resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many costs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="214" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1100" bodyend="1105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ac01955614645173230abf4a00cbfeca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::AddUnitType</definition>
+        <argsstring>(const CUnitType &amp;type)</argsstring>
+        <name>AddUnitType</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Add costs for an unit-type to the resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the costs of an unit type to resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="216" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1112" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a08154148cac5e4fd900cb68e66e937c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::AddCostsFactor</definition>
+        <argsstring>(const int *costs, int factor)</argsstring>
+        <name>AddCostsFactor</name>
+        <param>
+          <type>const int *</type>
+          <declname>costs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Add a factor of costs to the resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a factor of costs to the resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many costs. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor of the costs to apply. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="218" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1123" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a854428a68aff927c5df7fce93ad64984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SubCosts</definition>
+        <argsstring>(const int *costs)</argsstring>
+        <name>SubCosts</name>
+        <param>
+          <type>const int *</type>
+          <declname>costs</declname>
+        </param>
+        <briefdescription>
+<para>Remove costs from the resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract costs from the resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many costs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="220" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1135" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a6cfae7d2b38edfed62470718ccfae07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SubUnitType</definition>
+        <argsstring>(const CUnitType &amp;type)</argsstring>
+        <name>SubUnitType</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Remove costs for an unit-type from the resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract the costs of new unit from resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="222" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1147" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a8d11e63d00bf77655d3c0d28a0291ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SubCostsFactor</definition>
+        <argsstring>(const int *costs, int factor)</argsstring>
+        <name>SubCostsFactor</name>
+        <param>
+          <type>const int *</type>
+          <declname>costs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Remove a factor of costs from the resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract a factor of costs from the resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many costs. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor of the costs to apply. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="224" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1158" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a1762fe42543aad732ff8e579cdb3a40b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::HaveUnitTypeByType</definition>
+        <argsstring>(const CUnitType &amp;type) const</argsstring>
+        <name>HaveUnitTypeByType</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Does the player have units of that type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Have unit of type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How many exists, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="227" column="5" bodyfile="src/stratagus/player.cpp" bodystart="1172" bodyend="1175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a50239773ea95396bf8a5d411c01a5c19" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPlayer::HaveUnitTypeByIdent</definition>
+        <argsstring>(const std::string &amp;ident) const</argsstring>
+        <name>HaveUnitTypeByIdent</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Does the player have units of that type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Have unit of type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of unit-type that should be lookuped.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How many exists, false otherwise.</para>
+</simplesect>
+<simplesect kind="note"><para>This function should not be used during run time. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="229" column="5" bodyfile="src/stratagus/player.cpp" bodystart="1186" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a26fabac7275ad8637dba876f3a46965e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::Notify</definition>
+        <argsstring>(int type, const Vec2i &amp;pos, const char *fmt,...) const PRINTF_VAARG_ATTRIBUTE(4</argsstring>
+        <name>Notify</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Notify player about a problem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify player about a problem.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Problem type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map tile position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message varargs</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000061"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: We must also notfiy allied players. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="232" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1328" bodyend="1362"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a0b2998d08b92d1eb5c3a36abb448b24d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::Notify</definition>
+        <argsstring>(const char *fmt,...) const PRINTF_VAARG_ATTRIBUTE(2</argsstring>
+        <name>Notify</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Notify player about a problem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify player about a problem.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Problem type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map tile position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message varargs</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000062"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: We must also notfiy allied players. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="234" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1374" bodyend="1392"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a30740d9dfaebae4ff77858cd342f3b2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsEnemy</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player is an enemy </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="245" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1432" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1af43b0ba89dd2b2086bed1aa092659b01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsEnemy</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is an enemy </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="246" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1440" bodyend="1443"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a9887ea735bb36a9edabda422147a243d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsAllied</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsAllied</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player is an ally </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="247" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1448" bodyend="1451"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a01f14dcc0b461ab1d4ab11fcde4059d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsAllied</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsAllied</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is an ally </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="248" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1456" bodyend="1459"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ab257b6eb740d5296dfb36c9cea68e15f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsVisionSharing</definition>
+        <argsstring>() const</argsstring>
+        <name>IsVisionSharing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="249" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1462" bodyend="1465"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1aaa02193b93a5df844725fa11886803fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::HasSharedVisionWith</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>HasSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player shares vision with the player </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="254" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1470" bodyend="1473"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a56163fb95292065c490191ae27f9a95e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::HasSharedVisionWith</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>HasSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player shares vision with the unit </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="255" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1478" bodyend="1481"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a2032bd891530cb4b87e5daa72cefc99d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::HasMutualSharedVisionWith</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>HasMutualSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the both players share vision </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="256" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1486" bodyend="1490"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a4ace213805c9ca0ca6051c45c96ca2be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::HasMutualSharedVisionWith</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>HasMutualSharedVisionWith</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player and the unit share vision </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="257" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1495" bodyend="1498"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1af6a81e215323fd3853c2d8f88a1cf565" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsTeamed</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsTeamed</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player is teamed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="258" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1503" bodyend="1506"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ae42372a0e8bd982b3acbfd2a3420b965" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsTeamed</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsTeamed</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the unit is teamed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="259" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1511" bodyend="1514"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ae271447ed78cd606dcc7e688f4b6925d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetDiplomacyNeutralWith</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>SetDiplomacyNeutralWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="261" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1394" bodyend="1398"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ad1bef28215ef8884ff80fc13290211e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetDiplomacyAlliedWith</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>SetDiplomacyAlliedWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="262" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1400" bodyend="1404"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1ae9948a1671faee1933bcdfce6afc62c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetDiplomacyEnemyWith</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>SetDiplomacyEnemyWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="263" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1406" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a9488560cbe059a6cbe510085df8c72a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetDiplomacyCrazyWith</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>SetDiplomacyCrazyWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="264" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1412" bodyend="1416"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a51872d1787cad76774f9c8b78c9b277f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::ShareVisionWith</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>ShareVisionWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="266" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1418" bodyend="1421"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1af1e4fa3a172d966c09cbcc68d4c75b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::UnshareVisionWith</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>UnshareVisionWith</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="267" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1423" bodyend="1426"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a4ea35f8d92d0298d1cc880f44e36779b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::Init</definition>
+        <argsstring>(int type)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="269" column="6" bodyfile="src/stratagus/player.cpp" bodystart="618" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1aca284fc55ca97f83c45f008004638e43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::Save</definition>
+        <argsstring>(CFile &amp;file) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="270" column="6" bodyfile="src/stratagus/player.cpp" bodystart="447" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a61f240640124f07b15f2668005e4028e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetRevealed</definition>
+        <argsstring>(const bool revealed)</argsstring>
+        <name>SetRevealed</name>
+        <param>
+          <type>const bool</type>
+          <declname>revealed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add/remove players to/from list of revealed players </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Remove element from vector;</para>
+        </inbodydescription>
+        <location file="src/include/player.h" line="277" column="6" bodyfile="src/stratagus/player.cpp" bodystart="430" bodyend="445"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>script_player.cpp - The player ccl functions.</header>
+      <memberdef kind="function" id="classCPlayer_1a5436b1aa2f6f9ab7ebd3ae66b3ae946e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::Load</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="271" column="6" bodyfile="src/stratagus/script_player.cpp" bodystart="93" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCPlayer_1af669ab2a045a8a6ca775f563853878ac" prot="public" static="yes" mutable="no">
+        <type><ref refid="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccf" kindref="member">RevealTypes</ref></type>
+        <definition>RevealTypes CPlayer::RevelationFor</definition>
+        <argsstring></argsstring>
+        <name>RevelationFor</name>
+        <initializer>{ <ref refid="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccfab3697c5b2c28717e7a3d117b13cdee5b" kindref="member">RevealTypes::cNoRevelation</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="91" column="27" bodyfile="src/include/player.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCPlayer_1aebe32b6e9707b5469415614107c41597" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> * &gt;</type>
+        <definition>std::vector&lt;const CPlayer *&gt; CPlayer::RevealedPlayers</definition>
+        <argsstring></argsstring>
+        <name>RevealedPlayers</name>
+        <briefdescription>
+<para>List of players revealed after losing their last Town Hall. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="110" column="27" bodyfile="src/include/player.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCPlayer_1a288bc8151f5a655c810463e04b9a96ee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="113" column="5" bodyfile="src/include/player.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a0dcc21ddef7370379793dc81507499d3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CPlayer::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+<para>player as number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="114" column="13" bodyfile="src/include/player.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a13476c370f0033c8ae0017a6c58c317c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+<para>name of non computer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="116" column="7" bodyfile="src/include/player.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1ab2be7df8ae11da17f481ae68c0459cf3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Race</definition>
+        <argsstring></argsstring>
+        <name>Race</name>
+        <briefdescription>
+<para>type of player (human,computer,...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="117" column="7" bodyfile="src/include/player.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1aca4075d2f22162aa6330457f03afe063" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CPlayer::AiName</definition>
+        <argsstring></argsstring>
+        <name>AiName</name>
+        <briefdescription>
+<para>race of player (orc,human,...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="118" column="13" bodyfile="src/include/player.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a451ab8fd3643e87d8602dbe61b18491e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Team</definition>
+        <argsstring></argsstring>
+        <name>Team</name>
+        <briefdescription>
+<para>AI for computer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="121" column="10" bodyfile="src/include/player.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a4fe0dfe784848fe4bc65f1d6643d0eae" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i CPlayer::StartPos</definition>
+        <argsstring></argsstring>
+        <name>StartPos</name>
+        <briefdescription>
+<para>team of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="123" column="7" bodyfile="src/include/player.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1af5e93c2dfa4f728a33c7b7f878c99015" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Resources[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>Resources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="127" column="5" bodyfile="src/include/player.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1acc2576f6f78149e5fce97d7a17be7634" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::MaxResources[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>MaxResources</name>
+        <briefdescription>
+<para>resources in overall store </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="128" column="5" bodyfile="src/include/player.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a2dc8df293f8f6ec31c6a16edaf2ce446" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::StoredResources[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>StoredResources</name>
+        <briefdescription>
+<para>max resources can be stored </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="129" column="5" bodyfile="src/include/player.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a43b137de0feebfa906c4dd76f16ad495" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::LastResources[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>LastResources</name>
+        <briefdescription>
+<para>resources in store buildings (can&apos;t exceed MaxResources) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="130" column="5" bodyfile="src/include/player.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a1ad361d366ae2ef5c36b6b8b53657cc6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Incomes[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>Incomes</name>
+        <briefdescription>
+<para>last values for revenue </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="131" column="5" bodyfile="src/include/player.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1ad341efd8e2f5ec7d6ca5a6c56eb73ddf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Revenue[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>Revenue</name>
+        <briefdescription>
+<para>income of the resources </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="132" column="5" bodyfile="src/include/player.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1abd673f9c487d2d513265370d1f03de4a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::SpeedResourcesHarvest[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>SpeedResourcesHarvest</name>
+        <briefdescription>
+<para>income rate of the resources </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="134" column="5" bodyfile="src/include/player.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a79416a1669a212bc1872ecfbc225b468" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::SpeedResourcesReturn[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>SpeedResourcesReturn</name>
+        <briefdescription>
+<para>speed factor for harvesting resources </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="135" column="5" bodyfile="src/include/player.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a448ba53e9b7cb40afac4841548fb0efd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::SpeedBuild</definition>
+        <argsstring></argsstring>
+        <name>SpeedBuild</name>
+        <briefdescription>
+<para>speed factor for returning resources </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="136" column="5" bodyfile="src/include/player.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a848790b7a5d721f415e583461aebeb07" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::SpeedTrain</definition>
+        <argsstring></argsstring>
+        <name>SpeedTrain</name>
+        <briefdescription>
+<para>speed factor for building </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="137" column="5" bodyfile="src/include/player.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a34ffaff7d9171c1737d2dd1572c8d1db" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::SpeedUpgrade</definition>
+        <argsstring></argsstring>
+        <name>SpeedUpgrade</name>
+        <briefdescription>
+<para>speed factor for training </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="138" column="5" bodyfile="src/include/player.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1aaa2160190d031ab43fbe7fb2cae0b042" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::SpeedResearch</definition>
+        <argsstring></argsstring>
+        <name>SpeedResearch</name>
+        <briefdescription>
+<para>speed factor for upgrading </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="139" column="5" bodyfile="src/include/player.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a6233e561ca586e167a95a6fab7f18be7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::UnitTypesCount[UnitTypeMax]</definition>
+        <argsstring>[UnitTypeMax]</argsstring>
+        <name>UnitTypesCount</name>
+        <briefdescription>
+<para>speed factor for researching </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="142" column="5" bodyfile="src/include/player.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a3a9b4b10b1dff3913422612752d071b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::UnitTypesAiActiveCount[UnitTypeMax]</definition>
+        <argsstring>[UnitTypeMax]</argsstring>
+        <name>UnitTypesAiActiveCount</name>
+        <briefdescription>
+<para>total units of unit-type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="143" column="5" bodyfile="src/include/player.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a0b986da814c2949d12de50f8792f3334" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPlayer::AiEnabled</definition>
+        <argsstring></argsstring>
+        <name>AiEnabled</name>
+        <briefdescription>
+<para>total units of unit-type that have their AI set to active </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="145" column="6" bodyfile="src/include/player.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a83ca1673576c9a1ef97d605688c2b4e0" prot="public" static="no" mutable="no">
+        <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> *</type>
+        <definition>PlayerAi* CPlayer::Ai</definition>
+        <argsstring></argsstring>
+        <name>Ai</name>
+        <briefdescription>
+<para>handle AI on local computer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="146" column="10" bodyfile="src/include/player.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a7c8167575b18e53963c1ea15c8f8137f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::NumBuildings</definition>
+        <argsstring></argsstring>
+        <name>NumBuildings</name>
+        <briefdescription>
+<para>Ai structure pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="148" column="8" bodyfile="src/include/player.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a8712cbbd3d09b6a0d379482d34dce5e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Supply</definition>
+        <argsstring></argsstring>
+        <name>Supply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classCPlayer_1autotoc_md0">
+<title>buildings</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="149" column="8" bodyfile="src/include/player.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a68aca7e0ebd191804555ed0a128f0588" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Demand</definition>
+        <argsstring></argsstring>
+        <name>Demand</name>
+        <briefdescription>
+<para>supply available/produced </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="150" column="8" bodyfile="src/include/player.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1ab974720aebb66e9baba130ad4478ca07" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::UnitLimit</definition>
+        <argsstring></argsstring>
+        <name>UnitLimit</name>
+        <briefdescription>
+<para>demand of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="152" column="8" bodyfile="src/include/player.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1aa2a7cc03a5ca0a6daab3607d502336f4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::BuildingLimit</definition>
+        <argsstring></argsstring>
+        <name>BuildingLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classCPlayer_1autotoc_md1">
+<title>food units allowed</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="153" column="8" bodyfile="src/include/player.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1ad284fdd28dfafc8aa5beb4eb5333c9b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::TotalUnitLimit</definition>
+        <argsstring></argsstring>
+        <name>TotalUnitLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classCPlayer_1autotoc_md2">
+<title>buildings allowed</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="154" column="8" bodyfile="src/include/player.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a649d7b3061a96889a7229174c12be29c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classCPlayer_1autotoc_md3">
+<title>total unit number allowed</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="156" column="8" bodyfile="src/include/player.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1aa71a58e035f3855f82fe23b9d83d99ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::TotalUnits</definition>
+        <argsstring></argsstring>
+        <name>TotalUnits</name>
+        <briefdescription>
+<para>Points for killing ... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="157" column="8" bodyfile="src/include/player.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a5080fd0eb0aa446b9528cae93b24c6b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::TotalBuildings</definition>
+        <argsstring></argsstring>
+        <name>TotalBuildings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="158" column="8" bodyfile="src/include/player.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1ac7edad961ccfef3baa38a9b8c8c22a79" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::TotalResources[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>TotalResources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="159" column="8" bodyfile="src/include/player.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a73f03d7475a0ac93a2fb0972646fc5c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::TotalRazings</definition>
+        <argsstring></argsstring>
+        <name>TotalRazings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="160" column="8" bodyfile="src/include/player.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a696480e53b41f63b002715a6094072fd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::TotalKills</definition>
+        <argsstring></argsstring>
+        <name>TotalKills</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="161" column="8" bodyfile="src/include/player.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a41106a4334be191877891f1acad540a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPlayer::LostMainFacilityTimer</definition>
+        <argsstring></argsstring>
+        <name>LostMainFacilityTimer</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>How many unit killed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="163" column="5" bodyfile="src/include/player.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1ae04096c8ad92f9f2b27c7f1c52148e8c" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+        <definition>IntColor CPlayer::Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <briefdescription>
+<para>(to make the player&apos;s units be revealed) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The timer for when the player lost the last town hall <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="166" column="10" bodyfile="src/include/player.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a3071e9188c8be3531b2010e0366fac56" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitColors" kindref="compound">CUnitColors</ref></type>
+        <definition>CUnitColors CPlayer::UnitColors</definition>
+        <argsstring></argsstring>
+        <name>UnitColors</name>
+        <briefdescription>
+<para>color of units on minimap </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="168" column="13" bodyfile="src/include/player.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a7f0ea82b884fe669b8ca601b0c0b66a5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; CPlayer::FreeWorkers</definition>
+        <argsstring></argsstring>
+        <name>FreeWorkers</name>
+        <briefdescription>
+<para>Unit colors for new units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="170" column="13" bodyfile="src/include/player.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a0185cc83d1976292e319076f0984b280" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAllow" kindref="compound">CAllow</ref></type>
+        <definition>CAllow CPlayer::Allow</definition>
+        <argsstring></argsstring>
+        <name>Allow</name>
+        <briefdescription>
+<para>Container for free workers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="173" column="8" bodyfile="src/include/player.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1aa02eed54dcef8cf429d4eaeb8514808f" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUpgradeTimers" kindref="compound">CUpgradeTimers</ref></type>
+        <definition>CUpgradeTimers CPlayer::UpgradeTimers</definition>
+        <argsstring></argsstring>
+        <name>UpgradeTimers</name>
+        <briefdescription>
+<para>Allowed for player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="174" column="16" bodyfile="src/include/player.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCPlayer_1a64ee058a9a1bffb5997d9f7e5c253de2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; CPlayer::Units</definition>
+        <argsstring></argsstring>
+        <name>Units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="280" column="13" bodyfile="src/include/player.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a36f53bcfc2c5297c5f83768ba13a86b5" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CPlayer::Enemy</definition>
+        <argsstring></argsstring>
+        <name>Enemy</name>
+        <briefdescription>
+<para>units of this player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="281" column="14" bodyfile="src/include/player.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1aae0283076e667ae34f4f8c024a728eb1" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CPlayer::Allied</definition>
+        <argsstring></argsstring>
+        <name>Allied</name>
+        <briefdescription>
+<para>enemy bit field for this player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="282" column="14" bodyfile="src/include/player.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a766464c2c31a4ff9f56f703d4232895d" prot="private" static="no" mutable="no">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; CPlayer::SharedVision</definition>
+        <argsstring></argsstring>
+        <name>SharedVision</name>
+        <briefdescription>
+<para>allied bit field for this player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="283" column="10" bodyfile="src/include/player.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCPlayer_1a948675c5f307ab19e4e070d27a35419f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPlayer::isRevealed</definition>
+        <argsstring></argsstring>
+        <name>isRevealed</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>set of player indexes that this player has shared vision with </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="284" column="6" bodyfile="src/include/player.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCPlayer_1a8c8d083a8d8de5c7e68795c8ba5d5885" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const bool</type>
+        <definition>static const bool CPlayer::IsRevelationEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsRevelationEnabled</name>
+        <briefdescription>
+<para>type of revelation (when player lost their last main facility) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if relevation enabled </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="95" column="19" bodyfile="src/include/player.h" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a433f0f5f8b81d9c4bb89bc77766b13f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> * &gt; &amp;</type>
+        <definition>static const std::vector&lt;const CPlayer *&gt;&amp; CPlayer::GetRevealedPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>GetRevealedPlayers</name>
+        <briefdescription>
+<para>Get revealed players list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="103" column="26" bodyfile="src/include/player.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPlayer_1a7791ca11f1902d5590394025209ba489" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CPlayer::SetStartView</definition>
+        <argsstring>(const Vec2i &amp;pos)</argsstring>
+        <name>SetStartView</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>map tile start position </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="125" column="13" bodyfile="src/include/player.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a2670f6df48453b48b082b3321d1c91f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;::iterator</type>
+        <definition>std::vector&lt;CUnit *&gt;::iterator CPlayer::UnitBegin</definition>
+        <argsstring>()</argsstring>
+        <name>UnitBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="183" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a3f2de91dbdf37e8a2eda6fb7e78f953a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;::iterator</type>
+        <definition>std::vector&lt;CUnit *&gt;::iterator CPlayer::UnitEnd</definition>
+        <argsstring>()</argsstring>
+        <name>UnitEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="185" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a3240775198ccd5cbe1a58d3fb0e84e0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> bool</type>
+        <definition>void void bool CPlayer::IsEnemy</definition>
+        <argsstring>(const int index) const</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the player index is an enemy </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="240" column="6" bodyfile="src/include/player.h" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a51606daa3146e55d1cfb0c5c29c8712b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::set&lt; int &gt; &amp;</type>
+        <definition>const std::set&lt;int&gt;&amp; CPlayer::GetSharedVision</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSharedVision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="250" column="16" bodyfile="src/include/player.h" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPlayer_1a5cd2731d3b66328616481cbf3df20287" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPlayer::IsRevealed</definition>
+        <argsstring>() const</argsstring>
+        <name>IsRevealed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="273" column="6" bodyfile="src/include/player.h" bodystart="273" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCPlayer_1a7805a65a493bd28abc24374220d84010" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>CleanPlayers</name>
+        <briefdescription>
+<para>whether the player has been revealed (i.e. after losing the last Town Hall) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="286" column="13" bodyfile="src/stratagus/player.cpp" bodystart="387" bodyend="396"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Revelation types. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Player structure</para>
+<para>#include &quot;player.h&quot;</para>
+<para>This structure contains all information about a player in game.</para>
+<para>The player structure members:</para>
+<para>CPlayer::Player</para>
+<para>This is the unique slot number. It is not possible that two players have the same slot number at the same time. The slot numbers are reused in the future. This means if a player is defeated, a new player can join using this slot. Currently <ref refid="stratagus_8h_1aa48d8f52111bc8d9119f59e8aff45a73" kindref="member">PlayerMax</ref> (16) players are supported. This member is used to access bit fields. Slot <ref refid="player_8h_1a4692c7c386fca50d00372e18f9bac5bb" kindref="member">PlayerNumNeutral</ref> (15) is reserved for the neutral units like gold-mines or critters.</para>
+<para><simplesect kind="note"><para>Should call this member Slot?</para>
+</simplesect>
+<ref refid="classCPlayer_1a0dcc21ddef7370379793dc81507499d3" kindref="member">CPlayer::Name</ref></para>
+<para>Name of the player used for displays and network game. It is restricted to 15 characters plus final zero.</para>
+<para><ref refid="classCPlayer_1a13476c370f0033c8ae0017a6c58c317c" kindref="member">CPlayer::Type</ref></para>
+<para>Type of the player. This field is setup from the level (map). We support currently <ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a508cc8633b1199f025a118a3ff580ff5" kindref="member">PlayerNeutral</ref>, <ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a60429f6824d19ecd0692799065f95a06" kindref="member">PlayerNobody</ref>, <ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a5261a842b3d458694d7e7d11c7a4208a" kindref="member">PlayerComputer</ref>, <ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a0eafc5adafaab30fd7b44f0a9fb0f03c" kindref="member">PlayerPerson</ref>, <ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a319774412e485a78df259d144496e022" kindref="member">PlayerRescuePassive</ref> and <ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3acbde4273d35ee07fbb9b295ca0dca23f" kindref="member">PlayerRescueActive</ref>. <simplesect kind="see"><para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3" kindref="member">PlayerTypes</ref>.</para>
+</simplesect>
+CPlayer::RaceName</para>
+<para>Name of the race to which the player belongs, used to select the user interface and the AI. We have &apos;orc&apos;, &apos;human&apos;, &apos;alliance&apos; or &apos;mythical&apos;. Should only be used during configuration and not during runtime.</para>
+<para><ref refid="classCPlayer_1ab2be7df8ae11da17f481ae68c0459cf3" kindref="member">CPlayer::Race</ref></para>
+<para>Race number of the player. This field is setup from the level map. This number is mapped with <ref refid="player_8cpp_1a0af43daf7f30bdafc33c010f367bf642" kindref="member">PlayerRaces</ref> to the symbolic name CPlayer::RaceName.</para>
+<para><ref refid="classCPlayer_1aca4075d2f22162aa6330457f03afe063" kindref="member">CPlayer::AiName</ref></para>
+<para>AI name for computer. This field is setup from the map. Used to select the AI for the computer player.</para>
+<para><ref refid="classCPlayer_1a451ab8fd3643e87d8602dbe61b18491e" kindref="member">CPlayer::Team</ref></para>
+<para>Team of player. Selected during network game setup. All players of the same team are allied and enemy to all other teams. <simplesect kind="note"><para>It is planned to show the team on the map.</para>
+</simplesect>
+CPlayer::Enemy</para>
+<para>A bit field which contains the enemies of this player. If CPlayer::Enemy &amp; (1&lt;&lt;CPlayer::Player) != 0 its an enemy. Setup during startup using the <ref refid="classCPlayer_1a451ab8fd3643e87d8602dbe61b18491e" kindref="member">CPlayer::Team</ref>, can later be changed with diplomacy. CPlayer::Enemy and CPlayer::Allied are combined, if none bit is set, the player is neutral. <simplesect kind="note"><para>You can be allied to a player, which sees you as enemy.</para>
+</simplesect>
+CPlayer::Allied</para>
+<para>A bit field which contains the allies of this player. If CPlayer::Allied &amp; (1&lt;&lt;CPlayer::Player) != 0 its an allied. Setup during startup using the Player:Team, can later be changed with diplomacy. CPlayer::Enemy and CPlayer::Allied are combined, if none bit is set, the player is neutral. <simplesect kind="note"><para>You can be allied to a player, which sees you as enemy.</para>
+</simplesect>
+CPlayer::SharedVision</para>
+<para>Contains shared vision for this player. Shared vision only works when it&apos;s activated both ways. Really.</para>
+<para>CPlayer::StartX CPlayer::StartY</para>
+<para>The tile map coordinates of the player start position. 0,0 is the upper left on the map. This members are setup from the map and only important for the game start. Ignored if game starts with level settings. Used to place the initial workers if you play with 1 or 3 workers.</para>
+<para><ref refid="classCPlayer_1af5e93c2dfa4f728a33c7b7f878c99015" kindref="member">CPlayer::Resources</ref>[<ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>]</para>
+<para>How many resources the player owns. Needed for building units and structures. <simplesect kind="see"><para><emphasis>costs</emphasis>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a86ec1e180e7c20693f13f3d7849acefa" kindref="member">TimeCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a0bfb03304915928f638631a0924424ff" kindref="member">GoldCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72aab9714c6946d156fe2bdc3e46a0d2fcd" kindref="member">WoodCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a457fb80b24604473c7966de06e7d4a44" kindref="member">OilCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>.</para>
+</simplesect>
+<ref refid="classCPlayer_1acc2576f6f78149e5fce97d7a17be7634" kindref="member">CPlayer::MaxResources</ref>[<ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>]</para>
+<para>How many resources the player can store at the moment.</para>
+<para><ref refid="classCPlayer_1a1ad361d366ae2ef5c36b6b8b53657cc6" kindref="member">CPlayer::Incomes</ref>[<ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>]</para>
+<para>Income of the resources, when they are delivered at a store. <simplesect kind="see"><para><emphasis>costs</emphasis>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a86ec1e180e7c20693f13f3d7849acefa" kindref="member">TimeCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a0bfb03304915928f638631a0924424ff" kindref="member">GoldCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72aab9714c6946d156fe2bdc3e46a0d2fcd" kindref="member">WoodCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a457fb80b24604473c7966de06e7d4a44" kindref="member">OilCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>.</para>
+</simplesect>
+<ref refid="classCPlayer_1a43b137de0feebfa906c4dd76f16ad495" kindref="member">CPlayer::LastResources</ref>[<ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>]</para>
+<para>Keeps track of resources in time (used for calculating <ref refid="classCPlayer_1ad341efd8e2f5ec7d6ca5a6c56eb73ddf" kindref="member">CPlayer::Revenue</ref>, see below)</para>
+<para><ref refid="classCPlayer_1ad341efd8e2f5ec7d6ca5a6c56eb73ddf" kindref="member">CPlayer::Revenue</ref>[<ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>]</para>
+<para>Production of resources per minute (or estimates) Used just as information (statistics) for the player...</para>
+<para><ref refid="classCPlayer_1a6233e561ca586e167a95a6fab7f18be7" kindref="member">CPlayer::UnitTypesCount</ref>[<ref refid="stratagus_8h_1a8f4bebf69838b4fc3329656d608d22fe" kindref="member">UnitTypeMax</ref>]</para>
+<para>Total count for each different unit type. Used by the AI and for dependencies checks. The addition of all counts should be CPlayer::TotalNumUnits. <simplesect kind="note"><para>Should not use the maximum number of unit-types here, only the real number of unit-types used.</para>
+</simplesect>
+<ref refid="classCPlayer_1a0b986da814c2949d12de50f8792f3334" kindref="member">CPlayer::AiEnabled</ref></para>
+<para>If the player is controlled by the computer and this flag is true, than the player is handled by the AI on this local computer.</para>
+<para><simplesect kind="note"><para>Currently the AI is calculated parallel on all computers in a network play. It is planned to change this.</para>
+</simplesect>
+<ref refid="classCPlayer_1a83ca1673576c9a1ef97d605688c2b4e0" kindref="member">CPlayer::Ai</ref></para>
+<para>AI structure pointer. Please look at <ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> for more information.</para>
+<para>CPlayer::Units</para>
+<para>A table of all (CPlayer::TotalNumUnits) units of the player.</para>
+<para>CPlayer::TotalNumUnits</para>
+<para>Total number of units (incl. buildings) in the CPlayer::Units table.</para>
+<para><ref refid="classCPlayer_1a68aca7e0ebd191804555ed0a128f0588" kindref="member">CPlayer::Demand</ref></para>
+<para>Total unit demand, used to demand limit. A player can only build up to CPlayer::Food units and not more than CPlayer::FoodUnitLimit units.</para>
+<para><simplesect kind="note"><para>that CPlayer::NumFoodUnits &gt; CPlayer::Food, when enough farms are destroyed.</para>
+</simplesect>
+<ref refid="classCPlayer_1a7c8167575b18e53963c1ea15c8f8137f" kindref="member">CPlayer::NumBuildings</ref></para>
+<para>Total number buildings, units that don&apos;t need food.</para>
+<para>CPlayer::Food</para>
+<para>Number of food available/produced. Player can&apos;t train more CPlayer::NumFoodUnits than this. <simplesect kind="note"><para>that all limits are always checked.</para>
+</simplesect>
+CPlayer::FoodUnitLimit</para>
+<para>Number of food units allowed. Player can&apos;t train more CPlayer::NumFoodUnits than this. <simplesect kind="note"><para>that all limits are always checked.</para>
+</simplesect>
+<ref refid="classCPlayer_1aa2a7cc03a5ca0a6daab3607d502336f4" kindref="member">CPlayer::BuildingLimit</ref></para>
+<para>Number of buildings allowed. Player can&apos;t build more <ref refid="classCPlayer_1a7c8167575b18e53963c1ea15c8f8137f" kindref="member">CPlayer::NumBuildings</ref> than this. <simplesect kind="note"><para>that all limits are always checked.</para>
+</simplesect>
+<ref refid="classCPlayer_1ad284fdd28dfafc8aa5beb4eb5333c9b8" kindref="member">CPlayer::TotalUnitLimit</ref></para>
+<para>Number of total units allowed. Player can&apos;t have more CPlayer::NumFoodUnits+<ref refid="classCPlayer_1a7c8167575b18e53963c1ea15c8f8137f" kindref="member">CPlayer::NumBuildings</ref>=CPlayer::TotalNumUnits this. <simplesect kind="note"><para>that all limits are always checked.</para>
+</simplesect>
+<ref refid="classCPlayer_1a649d7b3061a96889a7229174c12be29c" kindref="member">CPlayer::Score</ref></para>
+<para>Total number of points. You can get points for killing units, destroying buildings ...</para>
+<para><ref refid="classCPlayer_1aa71a58e035f3855f82fe23b9d83d99ba" kindref="member">CPlayer::TotalUnits</ref></para>
+<para>Total number of units made.</para>
+<para><ref refid="classCPlayer_1a5080fd0eb0aa446b9528cae93b24c6b4" kindref="member">CPlayer::TotalBuildings</ref></para>
+<para>Total number of buildings made.</para>
+<para><ref refid="classCPlayer_1ac7edad961ccfef3baa38a9b8c8c22a79" kindref="member">CPlayer::TotalResources</ref>[<ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>]</para>
+<para>Total number of resources collected. <simplesect kind="see"><para><emphasis>costs</emphasis>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a86ec1e180e7c20693f13f3d7849acefa" kindref="member">TimeCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a0bfb03304915928f638631a0924424ff" kindref="member">GoldCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72aab9714c6946d156fe2bdc3e46a0d2fcd" kindref="member">WoodCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72a457fb80b24604473c7966de06e7d4a44" kindref="member">OilCost</ref>, <ref refid="upgrade__structs_8h_1ae4f0e57a58ec795fadb63d34f0d9de72ae431c9c9b0e2ef96e98d3c625052db82" kindref="member">MaxCosts</ref>.</para>
+</simplesect>
+<ref refid="classCPlayer_1a73f03d7475a0ac93a2fb0972646fc5c0" kindref="member">CPlayer::TotalRazings</ref></para>
+<para>Total number of buildings destroyed.</para>
+<para><ref refid="classCPlayer_1a696480e53b41f63b002715a6094072fd" kindref="member">CPlayer::TotalKills</ref></para>
+<para>Total number of kills.</para>
+<para><ref refid="classCPlayer_1ae04096c8ad92f9f2b27c7f1c52148e8c" kindref="member">CPlayer::Color</ref></para>
+<para><ref refid="classColor" kindref="compound">Color</ref> of units of this player on the minimap. Index number into the global palette.</para>
+<para><ref refid="classCPlayer_1a3071e9188c8be3531b2010e0366fac56" kindref="member">CPlayer::UnitColors</ref></para>
+<para>Unit colors of this player. Contains the hardware dependent pixel values for the player colors (palette index #208-#211). Setup from the global palette. <simplesect kind="note"><para>Index #208-#211 are various SHADES of the team color (#208 is brightest shade, #211 is darkest shade) .... these numbers are NOT red=#208, blue=#209, etc</para>
+</simplesect>
+<ref refid="classCPlayer_1a0185cc83d1976292e319076f0984b280" kindref="member">CPlayer::Allow</ref></para>
+<para>Contains which unit-types and upgrades are allowed for the player. Possible values are: <itemizedlist>
+<listitem><para><lsquo/>A<rsquo/> <ndash/> allowed, </para>
+</listitem>
+<listitem><para><lsquo/>F<rsquo/> <ndash/> forbidden, </para>
+</listitem>
+<listitem><para><lsquo/>R<rsquo/> <ndash/> acquired, perhaps other values </para>
+</listitem>
+<listitem><para><lsquo/>Q<rsquo/> <ndash/> acquired but forbidden (does it make sense?:)) </para>
+</listitem>
+<listitem><para><lsquo/>E<rsquo/> <ndash/> enabled, allowed by level but currently forbidden <simplesect kind="see"><para><ref refid="classCAllow" kindref="compound">CAllow</ref></para>
+</simplesect>
+<ref refid="classCPlayer_1aa02eed54dcef8cf429d4eaeb8514808f" kindref="member">CPlayer::UpgradeTimers</ref></para>
+</listitem>
+</itemizedlist>
+Timer for the upgrades. One timer for all possible upgrades. Initial 0 counted up by the upgrade action, until it reaches the upgrade time. <simplesect kind="see"><para><emphasis>upgrade_timers</emphasis> </para>
+</simplesect>
+<simplesect kind="note"><para>it is planned to combine research for faster upgrades. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>AiForceManager</label>
+        <link refid="classAiForceManager"/>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>Vec2T&lt; short int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="1">
+        <label>CPlayer</label>
+        <link refid="classCPlayer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Allow</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>UnitColors</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>UpgradeTimers</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Ai</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>StartPos</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>AiName</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CAllow</label>
+        <link refid="classCAllow"/>
+      </node>
+      <node id="6">
+        <label>CAiType</label>
+        <link refid="classCAiType"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Race</edgelabel>
+          <edgelabel>Class</edgelabel>
+          <edgelabel>Script</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CUpgradeTimers</label>
+        <link refid="classCUpgradeTimers"/>
+      </node>
+      <node id="5">
+        <label>PlayerAi</label>
+        <link refid="classPlayerAi"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>AiType</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Force</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Script</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CUnitColors</label>
+        <link refid="classCUnitColors"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/player.h" line="89" column="1" bodyfile="src/include/player.h" bodystart="88" bodyend="287"/>
+    <listofallmembers>
+      <member refid="classCPlayer_1a35b9ce71ffe4bb9ecc327ef2a7498f3a" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>AddCosts</name></member>
+      <member refid="classCPlayer_1a08154148cac5e4fd900cb68e66e937c3" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>AddCostsFactor</name></member>
+      <member refid="classCPlayer_1a976ab2fc2e4862722db5159a24868c95" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>AddUnit</name></member>
+      <member refid="classCPlayer_1ac01955614645173230abf4a00cbfeca2" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>AddUnitType</name></member>
+      <member refid="classCPlayer_1a83ca1673576c9a1ef97d605688c2b4e0" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Ai</name></member>
+      <member refid="classCPlayer_1a0b986da814c2949d12de50f8792f3334" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>AiEnabled</name></member>
+      <member refid="classCPlayer_1aca4075d2f22162aa6330457f03afe063" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>AiName</name></member>
+      <member refid="classCPlayer_1aae0283076e667ae34f4f8c024a728eb1" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>Allied</name></member>
+      <member refid="classCPlayer_1a0185cc83d1976292e319076f0984b280" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Allow</name></member>
+      <member refid="classCPlayer_1aa2a7cc03a5ca0a6daab3607d502336f4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>BuildingLimit</name></member>
+      <member refid="classCPlayer_1a90598ae1e7f66ad197a53e1941aea879" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>ChangeResource</name></member>
+      <member refid="classCPlayer_1a73bb2a58ace0ac08ce12f9c1cec418e9" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>CheckCosts</name></member>
+      <member refid="classCPlayer_1ad98478c928a2a89a755db56922ef4aac" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>CheckLimits</name></member>
+      <member refid="classCPlayer_1ac62ded65f27343855e034beb4b21a1cf" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>CheckResource</name></member>
+      <member refid="classCPlayer_1a1ea9a09e525289f17240716897289770" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>CheckUnitType</name></member>
+      <member refid="classCPlayer_1a7805a65a493bd28abc24374220d84010" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>CleanPlayers</name></member>
+      <member refid="classCPlayer_1a2a919908eb76a2f75789f93119b2c77c" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Clear</name></member>
+      <member refid="classCPlayer_1ae04096c8ad92f9f2b27c7f1c52148e8c" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Color</name></member>
+      <member refid="classCPlayer_1a68aca7e0ebd191804555ed0a128f0588" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Demand</name></member>
+      <member refid="classCPlayer_1a36f53bcfc2c5297c5f83768ba13a86b5" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>Enemy</name></member>
+      <member refid="classCPlayer_1a7f0ea82b884fe669b8ca601b0c0b66a5" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>FreeWorkers</name></member>
+      <member refid="classCPlayer_1a751dc24195c8f627ff6342404a1d86de" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>GetResource</name></member>
+      <member refid="classCPlayer_1a433f0f5f8b81d9c4bb89bc77766b13f4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>GetRevealedPlayers</name></member>
+      <member refid="classCPlayer_1a51606daa3146e55d1cfb0c5c29c8712b" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>GetSharedVision</name></member>
+      <member refid="classCPlayer_1ab08c01f7b084c4c6a9f5c1c0f07b01ad" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>GetUnit</name></member>
+      <member refid="classCPlayer_1aae9c29bbb60ae5fd6b54382a403163df" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>GetUnitCount</name></member>
+      <member refid="classCPlayer_1a11698444c3a8fa41cb95851f375f5ce4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>GetUnitTotalCount</name></member>
+      <member refid="classCPlayer_1a2032bd891530cb4b87e5daa72cefc99d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>HasMutualSharedVisionWith</name></member>
+      <member refid="classCPlayer_1a4ace213805c9ca0ca6051c45c96ca2be" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>HasMutualSharedVisionWith</name></member>
+      <member refid="classCPlayer_1aaa02193b93a5df844725fa11886803fd" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>HasSharedVisionWith</name></member>
+      <member refid="classCPlayer_1a56163fb95292065c490191ae27f9a95e" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>HasSharedVisionWith</name></member>
+      <member refid="classCPlayer_1a50239773ea95396bf8a5d411c01a5c19" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>HaveUnitTypeByIdent</name></member>
+      <member refid="classCPlayer_1a1762fe42543aad732ff8e579cdb3a40b" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>HaveUnitTypeByType</name></member>
+      <member refid="classCPlayer_1a1ad361d366ae2ef5c36b6b8b53657cc6" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Incomes</name></member>
+      <member refid="classCPlayer_1a288bc8151f5a655c810463e04b9a96ee" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Index</name></member>
+      <member refid="classCPlayer_1a4ea35f8d92d0298d1cc880f44e36779b" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Init</name></member>
+      <member refid="classCPlayer_1a9887ea735bb36a9edabda422147a243d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsAllied</name></member>
+      <member refid="classCPlayer_1a01f14dcc0b461ab1d4ab11fcde4059d4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsAllied</name></member>
+      <member refid="classCPlayer_1a3240775198ccd5cbe1a58d3fb0e84e0d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsEnemy</name></member>
+      <member refid="classCPlayer_1a30740d9dfaebae4ff77858cd342f3b2c" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsEnemy</name></member>
+      <member refid="classCPlayer_1af43b0ba89dd2b2086bed1aa092659b01" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsEnemy</name></member>
+      <member refid="classCPlayer_1a5cd2731d3b66328616481cbf3df20287" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsRevealed</name></member>
+      <member refid="classCPlayer_1a948675c5f307ab19e4e070d27a35419f" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>isRevealed</name></member>
+      <member refid="classCPlayer_1a8c8d083a8d8de5c7e68795c8ba5d5885" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsRevelationEnabled</name></member>
+      <member refid="classCPlayer_1af6a81e215323fd3853c2d8f88a1cf565" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsTeamed</name></member>
+      <member refid="classCPlayer_1ae42372a0e8bd982b3acbfd2a3420b965" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsTeamed</name></member>
+      <member refid="classCPlayer_1ab257b6eb740d5296dfb36c9cea68e15f" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>IsVisionSharing</name></member>
+      <member refid="classCPlayer_1a43b137de0feebfa906c4dd76f16ad495" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>LastResources</name></member>
+      <member refid="classCPlayer_1a5436b1aa2f6f9ab7ebd3ae66b3ae946e" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Load</name></member>
+      <member refid="classCPlayer_1a41106a4334be191877891f1acad540a6" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>LostMainFacilityTimer</name></member>
+      <member refid="classCPlayer_1acc2576f6f78149e5fce97d7a17be7634" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>MaxResources</name></member>
+      <member refid="classCPlayer_1a0dcc21ddef7370379793dc81507499d3" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Name</name></member>
+      <member refid="classCPlayer_1a26fabac7275ad8637dba876f3a46965e" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Notify</name></member>
+      <member refid="classCPlayer_1a0b2998d08b92d1eb5c3a36abb448b24d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Notify</name></member>
+      <member refid="classCPlayer_1a7c8167575b18e53963c1ea15c8f8137f" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>NumBuildings</name></member>
+      <member refid="classCPlayer_1ab2be7df8ae11da17f481ae68c0459cf3" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Race</name></member>
+      <member refid="classCPlayer_1aadee7b1ceba6b386036fc97d0c0d46c0" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>RemoveUnit</name></member>
+      <member refid="classCPlayer_1af5e93c2dfa4f728a33c7b7f878c99015" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Resources</name></member>
+      <member refid="classCPlayer_1aebe32b6e9707b5469415614107c41597" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>RevealedPlayers</name></member>
+      <member refid="classCPlayer_1af669ab2a045a8a6ca775f563853878ac" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>RevelationFor</name></member>
+      <member refid="classCPlayer_1ad341efd8e2f5ec7d6ca5a6c56eb73ddf" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Revenue</name></member>
+      <member refid="classCPlayer_1aca284fc55ca97f83c45f008004638e43" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Save</name></member>
+      <member refid="classCPlayer_1a649d7b3061a96889a7229174c12be29c" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Score</name></member>
+      <member refid="classCPlayer_1ad1bef28215ef8884ff80fc13290211e8" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetDiplomacyAlliedWith</name></member>
+      <member refid="classCPlayer_1a9488560cbe059a6cbe510085df8c72a4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetDiplomacyCrazyWith</name></member>
+      <member refid="classCPlayer_1ae9948a1671faee1933bcdfce6afc62c0" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetDiplomacyEnemyWith</name></member>
+      <member refid="classCPlayer_1ae271447ed78cd606dcc7e688f4b6925d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetDiplomacyNeutralWith</name></member>
+      <member refid="classCPlayer_1ac6c0da8c6bc7e76a9abe326545135e11" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetName</name></member>
+      <member refid="classCPlayer_1a2e89440975e5fba14c42cdd95f942092" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetResource</name></member>
+      <member refid="classCPlayer_1a61f240640124f07b15f2668005e4028e" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetRevealed</name></member>
+      <member refid="classCPlayer_1aeb54ca6b236a7ec527fb5953a858a802" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetRevelationType</name></member>
+      <member refid="classCPlayer_1a7791ca11f1902d5590394025209ba489" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SetStartView</name></member>
+      <member refid="classCPlayer_1a766464c2c31a4ff9f56f703d4232895d" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>SharedVision</name></member>
+      <member refid="classCPlayer_1a51872d1787cad76774f9c8b78c9b277f" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>ShareVisionWith</name></member>
+      <member refid="classCPlayer_1a448ba53e9b7cb40afac4841548fb0efd" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SpeedBuild</name></member>
+      <member refid="classCPlayer_1aaa2160190d031ab43fbe7fb2cae0b042" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SpeedResearch</name></member>
+      <member refid="classCPlayer_1abd673f9c487d2d513265370d1f03de4a" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SpeedResourcesHarvest</name></member>
+      <member refid="classCPlayer_1a79416a1669a212bc1872ecfbc225b468" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SpeedResourcesReturn</name></member>
+      <member refid="classCPlayer_1a848790b7a5d721f415e583461aebeb07" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SpeedTrain</name></member>
+      <member refid="classCPlayer_1a34ffaff7d9171c1737d2dd1572c8d1db" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SpeedUpgrade</name></member>
+      <member refid="classCPlayer_1a4fe0dfe784848fe4bc65f1d6643d0eae" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>StartPos</name></member>
+      <member refid="classCPlayer_1a2dc8df293f8f6ec31c6a16edaf2ce446" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>StoredResources</name></member>
+      <member refid="classCPlayer_1a854428a68aff927c5df7fce93ad64984" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SubCosts</name></member>
+      <member refid="classCPlayer_1a8d11e63d00bf77655d3c0d28a0291ed1" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SubCostsFactor</name></member>
+      <member refid="classCPlayer_1a6cfae7d2b38edfed62470718ccfae07d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>SubUnitType</name></member>
+      <member refid="classCPlayer_1a8712cbbd3d09b6a0d379482d34dce5e3" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Supply</name></member>
+      <member refid="classCPlayer_1a451ab8fd3643e87d8602dbe61b18491e" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Team</name></member>
+      <member refid="classCPlayer_1a5080fd0eb0aa446b9528cae93b24c6b4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>TotalBuildings</name></member>
+      <member refid="classCPlayer_1a696480e53b41f63b002715a6094072fd" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>TotalKills</name></member>
+      <member refid="classCPlayer_1a73f03d7475a0ac93a2fb0972646fc5c0" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>TotalRazings</name></member>
+      <member refid="classCPlayer_1ac7edad961ccfef3baa38a9b8c8c22a79" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>TotalResources</name></member>
+      <member refid="classCPlayer_1ad284fdd28dfafc8aa5beb4eb5333c9b8" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>TotalUnitLimit</name></member>
+      <member refid="classCPlayer_1aa71a58e035f3855f82fe23b9d83d99ba" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>TotalUnits</name></member>
+      <member refid="classCPlayer_1a13476c370f0033c8ae0017a6c58c317c" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>Type</name></member>
+      <member refid="classCPlayer_1a1849978e13194153dc43e60275f3786d" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitBegin</name></member>
+      <member refid="classCPlayer_1a2670f6df48453b48b082b3321d1c91f7" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitBegin</name></member>
+      <member refid="classCPlayer_1a3071e9188c8be3531b2010e0366fac56" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitColors</name></member>
+      <member refid="classCPlayer_1a1ddb43f7ab86e95c0c396a437b36b2ef" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitEnd</name></member>
+      <member refid="classCPlayer_1a3f2de91dbdf37e8a2eda6fb7e78f953a" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitEnd</name></member>
+      <member refid="classCPlayer_1ab974720aebb66e9baba130ad4478ca07" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitLimit</name></member>
+      <member refid="classCPlayer_1a64ee058a9a1bffb5997d9f7e5c253de2" prot="private" virt="non-virtual"><scope>CPlayer</scope><name>Units</name></member>
+      <member refid="classCPlayer_1a3a9b4b10b1dff3913422612752d071b4" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitTypesAiActiveCount</name></member>
+      <member refid="classCPlayer_1a6233e561ca586e167a95a6fab7f18be7" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnitTypesCount</name></member>
+      <member refid="classCPlayer_1af1e4fa3a172d966c09cbcc68d4c75b1a" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UnshareVisionWith</name></member>
+      <member refid="classCPlayer_1aad6e81a6965787bb28bcd4f5fcb58eb6" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UpdateFreeWorkers</name></member>
+      <member refid="classCPlayer_1aa02eed54dcef8cf429d4eaeb8514808f" prot="public" virt="non-virtual"><scope>CPlayer</scope><name>UpgradeTimers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

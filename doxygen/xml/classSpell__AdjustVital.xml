@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpell__AdjustVital" kind="class" language="C++" prot="public">
+    <compoundname>Spell_AdjustVital</compoundname>
+    <basecompoundref refid="classSpellActionType" prot="public" virt="non-virtual">SpellActionType</basecompoundref>
+    <includes refid="spell__adjustvital_8h" local="no">spell_adjustvital.h</includes>
+      <sectiondef kind="user-defined">
+      <header>spell_adjustvital.cpp - The spell AdjustVital.</header>
+      <memberdef kind="function" id="classSpell__AdjustVital_1ab37ac94c89729d8d4dea6cf65c372175" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Spell_AdjustVital::Cast</definition>
+        <argsstring>(CUnit &amp;caster, const SpellType &amp;spell, CUnit *&amp;target, const Vec2i &amp;goalPos)</argsstring>
+        <name>Cast</name>
+        <reimplements refid="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0">Cast</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast healing. (or exorcism)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that casts the spell </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell-type pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> unit that spell is addressed to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goalPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coord of target spot when/if target does not exist</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>=!0 if spell should be repeated, 0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="45" column="13" bodyfile="src/spell/spell_adjustvital.cpp" bodystart="70" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpell__AdjustVital_1ae1ee174ae6a2c7b8813c59b6a0df5a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Spell_AdjustVital::Parse</definition>
+        <argsstring>(lua_State *l, int startIndex, int endIndex)</argsstring>
+        <name>Parse</name>
+        <reimplements refid="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8">Parse</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="47" column="14" bodyfile="src/spell/spell_adjustvital.cpp" bodystart="40" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpell__AdjustVital_1a699f9c8cd984f2d36dcbe3066a25c33d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_AdjustVital::HP</definition>
+        <argsstring></argsstring>
+        <name>HP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="50" column="5" bodyfile="src/include/spell/spell_adjustvital.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__AdjustVital_1ae8865e3ef823556124f5d5aefdb6c649" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_AdjustVital::Mana</definition>
+        <argsstring></argsstring>
+        <name>Mana</name>
+        <briefdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> HP gain.(can be negative) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="51" column="5" bodyfile="src/include/spell/spell_adjustvital.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__AdjustVital_1a82119b252756b1ec5426c5159a9193f0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_AdjustVital::Shield</definition>
+        <argsstring></argsstring>
+        <name>Shield</name>
+        <briefdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> Mana gain.(can be negative) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="52" column="5" bodyfile="src/include/spell/spell_adjustvital.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__AdjustVital_1a61108a7c8724786af4e2b2e5eb95d528" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_AdjustVital::MaxMultiCast</definition>
+        <argsstring></argsstring>
+        <name>MaxMultiCast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> SP gain.(can be negative) This spell is designed to be used wit very small amounts. The spell can scale up to MaxMultiCast times. Use 0 for infinite. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="55" column="5" bodyfile="src/include/spell/spell_adjustvital.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpell__AdjustVital_1abe3e4e36d2ecc14c9eb65c0877ae15c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Spell_AdjustVital::Spell_AdjustVital</definition>
+        <argsstring>()</argsstring>
+        <name>Spell_AdjustVital</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_adjustvital.h" line="44" column="1" bodyfile="src/include/spell/spell_adjustvital.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+      <node id="1">
+        <label>Spell_AdjustVital</label>
+        <link refid="classSpell__AdjustVital"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+      <node id="1">
+        <label>Spell_AdjustVital</label>
+        <link refid="classSpell__AdjustVital"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/spell/spell_adjustvital.h" line="42" column="1" bodyfile="src/include/spell/spell_adjustvital.h" bodystart="41" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classSpell__AdjustVital_1ab37ac94c89729d8d4dea6cf65c372175" prot="public" virt="virtual"><scope>Spell_AdjustVital</scope><name>Cast</name></member>
+      <member refid="classSpell__AdjustVital_1a699f9c8cd984f2d36dcbe3066a25c33d" prot="private" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>HP</name></member>
+      <member refid="classSpell__AdjustVital_1ae8865e3ef823556124f5d5aefdb6c649" prot="private" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>Mana</name></member>
+      <member refid="classSpell__AdjustVital_1a61108a7c8724786af4e2b2e5eb95d528" prot="private" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>MaxMultiCast</name></member>
+      <member refid="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>ModifyManaCaster</name></member>
+      <member refid="classSpell__AdjustVital_1ae1ee174ae6a2c7b8813c59b6a0df5a25" prot="public" virt="virtual"><scope>Spell_AdjustVital</scope><name>Parse</name></member>
+      <member refid="classSpell__AdjustVital_1a82119b252756b1ec5426c5159a9193f0" prot="private" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>Shield</name></member>
+      <member refid="classSpell__AdjustVital_1abe3e4e36d2ecc14c9eb65c0877ae15c2" prot="public" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>Spell_AdjustVital</name></member>
+      <member refid="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" virt="non-virtual"><scope>Spell_AdjustVital</scope><name>SpellActionType</name></member>
+      <member refid="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" virt="virtual"><scope>Spell_AdjustVital</scope><name>~SpellActionType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCSound" kind="class" language="C++" prot="public">
+    <compoundname>CSound</compoundname>
+    <includes refid="sound_8h" local="no">sound.h</includes>
+      <sectiondef kind="user-defined">
+      <header>sound.cpp - The sound.</header>
+      <memberdef kind="function" id="classCSound_1afe00e938f0c637e80ae2e3d30faa5add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CSound::~CSound</definition>
+        <argsstring>()</argsstring>
+        <name>~CSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="106" column="1" bodyfile="src/sound/sound.cpp" bodystart="581" bodyend="597"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCSound_1af4fb0a52ddda5765e94682155c98d95e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CSound::Mapref</definition>
+        <argsstring></argsstring>
+        <name>Mapref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="107" column="14" bodyfile="src/include/sound.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1ae26b187852994998756cfc3769f3a88f" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CSound::Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Range is a multiplier for <ref refid="sound_8cpp_1a45527b2be322d84a3bf9947f522c4e4f" kindref="member">DistanceSilent</ref>. 255 means infinite range of the sound. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="112" column="15" bodyfile="src/include/sound.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a1548da13d0017aee61a942e1a6b2f590" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CSound::Number</definition>
+        <argsstring></argsstring>
+        <name>Number</name>
+        <briefdescription>
+<para>Range is a multiplier for DistanceSilent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="113" column="15" bodyfile="src/include/sound.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a598d907b3a47cf181f8b6aa1c9c09f2e" prot="public" static="no" mutable="no">
+        <type>Mix_Chunk *</type>
+        <definition>Mix_Chunk* CSound::OneSound</definition>
+        <argsstring></argsstring>
+        <name>OneSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="115" column="11" bodyfile="src/include/sound.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a1f87aaef6dbbf850e56be6d14c6e7e8a" prot="public" static="no" mutable="no">
+        <type>Mix_Chunk **</type>
+        <definition>Mix_Chunk** CSound::OneGroup</definition>
+        <argsstring></argsstring>
+        <name>OneGroup</name>
+        <briefdescription>
+<para>if it&apos;s only a simple sound </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="116" column="11" bodyfile="src/include/sound.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a5d68293e2d4fa1055cade0ac76caeab4" prot="public" static="no" mutable="no">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>CSound* CSound::First</definition>
+        <argsstring></argsstring>
+        <name>First</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="118" column="8" bodyfile="src/include/sound.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a47606a705b3961d2a769af2549df53ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>CSound* CSound::Second</definition>
+        <argsstring></argsstring>
+        <name>Second</name>
+        <briefdescription>
+<para>first group: selected sound </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="119" column="8" bodyfile="src/include/sound.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a631fba8a696fdcc64325e258ae3e0711" prot="public" static="no" mutable="no">
+        <type>struct CSound::@34::@35</type>
+        <definition>struct CSound::@34::@35 CSound::TwoGroups</definition>
+        <argsstring></argsstring>
+        <name>TwoGroups</name>
+        <briefdescription>
+<para>when it&apos;s a simple group </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="120" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCSound_1a2b91214b32bbe2ca1d8b8873c3976df3" prot="public" static="no" mutable="no">
+        <type>union CSound::@34</type>
+        <definition>union CSound::@34 CSound::Sound</definition>
+        <argsstring></argsstring>
+        <name>Sound</name>
+        <briefdescription>
+<para>single, group, or table of sounds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="121" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCSound_1a3cf0c12ed29f3c08caf063550686148a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CSound::CSound</definition>
+        <argsstring>()</argsstring>
+        <name>CSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/sound.h" line="102" column="1" bodyfile="src/include/sound.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Sound definition. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CSound</label>
+        <link refid="classCSound"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Second</edgelabel>
+          <edgelabel>First</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/sound.h" line="100" column="1" bodyfile="src/include/sound.h" bodystart="99" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classCSound_1a3cf0c12ed29f3c08caf063550686148a" prot="public" virt="non-virtual"><scope>CSound</scope><name>CSound</name></member>
+      <member refid="classCSound_1a5d68293e2d4fa1055cade0ac76caeab4" prot="public" virt="non-virtual"><scope>CSound</scope><name>First</name></member>
+      <member refid="classCSound_1af4fb0a52ddda5765e94682155c98d95e" prot="public" virt="non-virtual"><scope>CSound</scope><name>Mapref</name></member>
+      <member refid="classCSound_1a1548da13d0017aee61a942e1a6b2f590" prot="public" virt="non-virtual"><scope>CSound</scope><name>Number</name></member>
+      <member refid="classCSound_1a1f87aaef6dbbf850e56be6d14c6e7e8a" prot="public" virt="non-virtual"><scope>CSound</scope><name>OneGroup</name></member>
+      <member refid="classCSound_1a598d907b3a47cf181f8b6aa1c9c09f2e" prot="public" virt="non-virtual"><scope>CSound</scope><name>OneSound</name></member>
+      <member refid="classCSound_1ae26b187852994998756cfc3769f3a88f" prot="public" virt="non-virtual"><scope>CSound</scope><name>Range</name></member>
+      <member refid="classCSound_1a47606a705b3961d2a769af2549df53ee" prot="public" virt="non-virtual"><scope>CSound</scope><name>Second</name></member>
+      <member refid="classCSound_1a2b91214b32bbe2ca1d8b8873c3976df3" prot="public" virt="non-virtual"><scope>CSound</scope><name>Sound</name></member>
+      <member refid="classCSound_1a631fba8a696fdcc64325e258ae3e0711" prot="public" virt="non-virtual"><scope>CSound</scope><name>TwoGroups</name></member>
+      <member refid="classCSound_1afe00e938f0c637e80ae2e3d30faa5add" prot="public" virt="non-virtual"><scope>CSound</scope><name>~CSound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

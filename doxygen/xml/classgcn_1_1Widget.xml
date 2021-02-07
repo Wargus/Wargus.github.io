@@ -1,0 +1,2636 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1Widget" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gcn::Widget</compoundname>
+    <derivedcompoundref refid="classgcn_1_1BasicContainer" prot="public" virt="non-virtual">gcn::BasicContainer</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1Button" prot="public" virt="non-virtual">gcn::Button</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1CheckBox" prot="public" virt="non-virtual">gcn::CheckBox</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1Icon" prot="public" virt="non-virtual">gcn::Icon</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1Label" prot="public" virt="non-virtual">gcn::Label</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1ListBox" prot="public" virt="non-virtual">gcn::ListBox</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1RadioButton" prot="public" virt="non-virtual">gcn::RadioButton</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1Slider" prot="public" virt="non-virtual">gcn::Slider</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1TextBox" prot="public" virt="non-virtual">gcn::TextBox</derivedcompoundref>
+    <derivedcompoundref refid="classgcn_1_1TextField" prot="public" virt="non-virtual">gcn::TextField</derivedcompoundref>
+    <derivedcompoundref refid="classMultiLineLabel" prot="public" virt="non-virtual">MultiLineLabel</derivedcompoundref>
+    <derivedcompoundref refid="classStatBoxWidget" prot="public" virt="non-virtual">StatBoxWidget</derivedcompoundref>
+    <includes refid="widget_8h" local="no">widget.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" static="no">
+        <type>std::list&lt; <ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> * &gt;</type>
+        <definition>typedef std::list&lt;MouseListener*&gt; gcn::Widget::MouseListenerList</definition>
+        <argsstring></argsstring>
+        <name>MouseListenerList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="677" column="27" bodyfile="src/guichan/include/guichan/widget.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" static="no">
+        <type>MouseListenerList::iterator</type>
+        <definition>typedef MouseListenerList::iterator gcn::Widget::MouseListenerIterator</definition>
+        <argsstring></argsstring>
+        <name>MouseListenerIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="679" column="45" bodyfile="src/guichan/include/guichan/widget.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" static="no">
+        <type>std::list&lt; <ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> * &gt;</type>
+        <definition>typedef std::list&lt;KeyListener*&gt; gcn::Widget::KeyListenerList</definition>
+        <argsstring></argsstring>
+        <name>KeyListenerList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="681" column="27" bodyfile="src/guichan/include/guichan/widget.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" static="no">
+        <type>KeyListenerList::iterator</type>
+        <definition>typedef KeyListenerList::iterator gcn::Widget::KeyListenerIterator</definition>
+        <argsstring></argsstring>
+        <name>KeyListenerIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="683" column="43" bodyfile="src/guichan/include/guichan/widget.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" static="no">
+        <type>std::list&lt; <ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> * &gt;</type>
+        <definition>typedef std::list&lt;ActionListener*&gt; gcn::Widget::ActionListenerList</definition>
+        <argsstring></argsstring>
+        <name>ActionListenerList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="685" column="27" bodyfile="src/guichan/include/guichan/widget.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" static="no">
+        <type>ActionListenerList::iterator</type>
+        <definition>typedef ActionListenerList::iterator gcn::Widget::ActionListenerIterator</definition>
+        <argsstring></argsstring>
+        <name>ActionListenerIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="687" column="46" bodyfile="src/guichan/include/guichan/widget.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" kindref="member">MouseListenerList</ref></type>
+        <definition>MouseListenerList gcn::Widget::mMouseListeners</definition>
+        <argsstring></argsstring>
+        <name>mMouseListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="678" column="27" bodyfile="src/guichan/include/guichan/widget.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" kindref="member">KeyListenerList</ref></type>
+        <definition>KeyListenerList gcn::Widget::mKeyListeners</definition>
+        <argsstring></argsstring>
+        <name>mKeyListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="682" column="25" bodyfile="src/guichan/include/guichan/widget.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" kindref="member">ActionListenerList</ref></type>
+        <definition>ActionListenerList gcn::Widget::mActionListeners</definition>
+        <argsstring></argsstring>
+        <name>mActionListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="686" column="28" bodyfile="src/guichan/include/guichan/widget.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color gcn::Widget::mForegroundColor</definition>
+        <argsstring></argsstring>
+        <name>mForegroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="689" column="15" bodyfile="src/guichan/include/guichan/widget.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color gcn::Widget::mBackgroundColor</definition>
+        <argsstring></argsstring>
+        <name>mBackgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="690" column="15" bodyfile="src/guichan/include/guichan/widget.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color gcn::Widget::mBaseColor</definition>
+        <argsstring></argsstring>
+        <name>mBaseColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="691" column="15" bodyfile="src/guichan/include/guichan/widget.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color gcn::Widget::mDisabledColor</definition>
+        <argsstring></argsstring>
+        <name>mDisabledColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="692" column="15" bodyfile="src/guichan/include/guichan/widget.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> *</type>
+        <definition>FocusHandler* gcn::Widget::mFocusHandler</definition>
+        <argsstring></argsstring>
+        <name>mFocusHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="693" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref> *</type>
+        <definition>BasicContainer* gcn::Widget::mParent</definition>
+        <argsstring></argsstring>
+        <name>mParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="694" column="24" bodyfile="src/guichan/include/guichan/widget.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::Widget::mDimension</definition>
+        <argsstring></argsstring>
+        <name>mDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="695" column="19" bodyfile="src/guichan/include/guichan/widget.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gcn::Widget::mBorderSize</definition>
+        <argsstring></argsstring>
+        <name>mBorderSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="696" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gcn::Widget::mEventId</definition>
+        <argsstring></argsstring>
+        <name>mEventId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="697" column="21" bodyfile="src/guichan/include/guichan/widget.h" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Widget::mClickTimeStamp</definition>
+        <argsstring></argsstring>
+        <name>mClickTimeStamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="698" column="13" bodyfile="src/guichan/include/guichan/widget.h" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Widget::mClickCount</definition>
+        <argsstring></argsstring>
+        <name>mClickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="699" column="13" bodyfile="src/guichan/include/guichan/widget.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Widget::mClickButton</definition>
+        <argsstring></argsstring>
+        <name>mClickButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="700" column="13" bodyfile="src/guichan/include/guichan/widget.h" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mHasMouse</definition>
+        <argsstring></argsstring>
+        <name>mHasMouse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="701" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mFocusable</definition>
+        <argsstring></argsstring>
+        <name>mFocusable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="702" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mVisible</definition>
+        <argsstring></argsstring>
+        <name>mVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="703" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mTabIn</definition>
+        <argsstring></argsstring>
+        <name>mTabIn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="704" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mTabOut</definition>
+        <argsstring></argsstring>
+        <name>mTabOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="705" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mEnabled</definition>
+        <argsstring></argsstring>
+        <name>mEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="706" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Font" kindref="compound">Font</ref> *</type>
+        <definition>Font* gcn::Widget::mCurrentFont</definition>
+        <argsstring></argsstring>
+        <name>mCurrentFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="708" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Widget::mHotKey</definition>
+        <argsstring></argsstring>
+        <name>mHotKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="709" column="13" bodyfile="src/guichan/include/guichan/widget.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::Widget::mDirty</definition>
+        <argsstring></argsstring>
+        <name>mDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="713" column="14" bodyfile="src/guichan/include/guichan/widget.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" static="yes" mutable="no">
+        <type><ref refid="classgcn_1_1DefaultFont" kindref="compound">DefaultFont</ref></type>
+        <definition>DefaultFont gcn::Widget::mDefaultFont</definition>
+        <argsstring></argsstring>
+        <name>mDefaultFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="710" column="28" bodyfile="src/guichan/include/guichan/widget.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" static="yes" mutable="no">
+        <type><ref refid="classgcn_1_1Font" kindref="compound">Font</ref> *</type>
+        <definition>Font * gcn::Widget::mGlobalFont</definition>
+        <argsstring></argsstring>
+        <name>mGlobalFont</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="711" column="21" bodyfile="src/guichan/include/guichan/widget.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Widget_1ad350c8bb10bc2603f545039e530dcb83" prot="protected" static="yes" mutable="no">
+        <type>std::list&lt; <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> * &gt;</type>
+        <definition>std::list&lt; Widget * &gt; gcn::Widget::mWidgets</definition>
+        <argsstring></argsstring>
+        <name>mWidgets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="712" column="26" bodyfile="src/guichan/include/guichan/widget.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gcn::Widget::Widget</definition>
+        <argsstring>()</argsstring>
+        <name>Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. Resets member variables. Noteable, a widget is not focusable as default, therefore, Widgets that are supposed to be focusable should overide this default in their own constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="101" column="9" bodyfile="src/guichan/widget.cpp" bodystart="86" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>gcn::Widget::~Widget</definition>
+        <argsstring>()</argsstring>
+        <name>~Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="106" column="17" bodyfile="src/guichan/widget.cpp" bodystart="110" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1acc595221d6a2d1afe1043c16dc37d212" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::draw</definition>
+        <argsstring>(Graphics *graphics)=0</argsstring>
+        <name>draw</name>
+        <reimplementedby refid="classImageButton_1ad576e14c22075376ae0c37cedb54afb3">draw</reimplementedby>
+        <reimplementedby refid="classImageRadioButton_1a3e5e0d68fb2a5b89622ab3d9bd1ed93a">draw</reimplementedby>
+        <reimplementedby refid="classImageCheckBox_1a10a98bfe1701b80dfdb6fb45efc55734">draw</reimplementedby>
+        <reimplementedby refid="classImageSlider_1a40fe58fd617954a6df159bd3da353bb1">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Slider_1a2284be82a3eaceecf2b5bad2837fd44c">draw</reimplementedby>
+        <reimplementedby refid="classMultiLineLabel_1a9b2cd3cc99adc1825a0c9fd685a665eb">draw</reimplementedby>
+        <reimplementedby refid="classImageTextField_1afec722918a6fc5ad6cdbe2c6351f5d4a">draw</reimplementedby>
+        <reimplementedby refid="classImageListBox_1aec5339fe071cb60f47c05de77eab64a5">draw</reimplementedby>
+        <reimplementedby refid="classImageListBoxWidget_1a2bb9afa2320b86eff7bc6509a5c93b8b">draw</reimplementedby>
+        <reimplementedby refid="classImageDropDownWidget_1ae2c55e655fe9f2e4de3106d9ec601e94">draw</reimplementedby>
+        <reimplementedby refid="classStatBoxWidget_1a19752ab5dcfecaf687605d952ff672d6">draw</reimplementedby>
+        <reimplementedby refid="classMenuScreen_1aab8b9c369072c6df677863d0b599fa75">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Icon_1ac490339b9e1824a291a5da93581215d1">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Label_1a46b49030a7c72393c2960c6355574ab0">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ListBox_1a6c12d3659318a214896f56ab704a78b6">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Button_1a741dca35284e5155cd99c1e962e3d1e8">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1CheckBox_1acd76dee289dcd7cc07ade85ce74c7d7c">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1TextField_1aea7d866255c803a0e569fe6237c20660">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Container_1a0bc3386f5564165fcb13e9d389a96432">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1RadioButton_1a19a37cd744564c8aa6799c7402aa696c">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1acf081df400b8dd2affac734122bfdc8c">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1TextBox_1a1954743485dad963ec5f2e12fea3afc3">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1a6d41ec33f8d4389510a9071067c919e5">draw</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ScrollArea_1a2bab40dcb6d851aec51104efb934744c">draw</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is called by the parent widget when it is time for the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to draw itself. The graphics object is set up so that all drawing is relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>, i.e coordinate (0,0) is the top-left corner of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is not possible to draw outside of a Widgets dimension.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="117" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a52430e9c46b6f84565af299bddb5ee80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::drawBorder</definition>
+        <argsstring>(Graphics *)</argsstring>
+        <name>drawBorder</name>
+        <reimplementedby refid="classgcn_1_1Slider_1a5dd11fc4d4253c2c353f319042d3cf23">drawBorder</reimplementedby>
+        <reimplementedby refid="classMultiLineLabel_1a771292ed49244b5efdc1fb15ad7caca1">drawBorder</reimplementedby>
+        <reimplementedby refid="classImageTextField_1a936bfea45c3c674449435132e944e9bd">drawBorder</reimplementedby>
+        <reimplementedby refid="classImageListBox_1aa92d60e6e077c3b761efaf55a56837f8">drawBorder</reimplementedby>
+        <reimplementedby refid="classImageListBoxWidget_1a4eb141834637a43dd384ea0b74a6c53a">drawBorder</reimplementedby>
+        <reimplementedby refid="classImageDropDownWidget_1a4aa1dcb4d2432939e879ddbd035534bc">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Icon_1a1533b6c01b209ff077b9fc37af364db7">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Label_1aa43832b869987ff3e44f3ea8d004ddd3">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ListBox_1ad92a3828f087c6f4bd385c88d654e111">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Button_1a5d7f1dba36aa61524fb4c5b0ad47198b">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1CheckBox_1a385eb0b9601f128646dc28b0e34c0293">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1TextField_1ac094e85ea11edd7706044543f2c36230">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Container_1a0bb6aecc841e06a887f32905b561180b">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1RadioButton_1a885f22ffa519c099f58862bcea78678e">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1a0fd541dd030eab962d27c1488f0d0aac">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1TextBox_1a785f4105370a44ff195a03d246df4667">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1ae5564549656568a7932811e0f4025113">drawBorder</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ScrollArea_1afdad205c6472bb19b6e74dbed2c1d62c">drawBorder</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws a the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> border. A border is drawn around a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. The width and height of the border is therefore the Widgets height+2*bordersize. Think of a painting that has a certain size, the border surrounds the painting.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="127" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1aeb2e4c4751ef8666f48be1638ef8a48c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::logic</definition>
+        <argsstring>()</argsstring>
+        <name>logic</name>
+        <reimplementedby refid="classgcn_1_1ListBox_1af12e558e328108e5a3d10acac88db34b">logic</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Container_1ad356fee45b0cf6a85d82d021b2b0ad42">logic</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1a7a1babc5f903081e8ecbace79d25007b">logic</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1a29d960ea69715c51a8e62b9df70bc998">logic</reimplementedby>
+        <reimplementedby refid="classScrollingWidget_1ab70119e5a3856a22b80527e6026ec1cd">logic</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ScrollArea_1a7e9085abfccf6ebed42484226b4b2aeb">logic</reimplementedby>
+        <reimplementedby refid="classImageListBox_1a2884fb065851bf13e132c24f0cea381e">logic</reimplementedby>
+        <reimplementedby refid="classMenuScreen_1a622f30515f48c580a1a85602fd3fa597">logic</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called for all Widgets in the gui each time <ref refid="classgcn_1_1Gui_1a66744ebd628213d574bb6a7010781b1f" kindref="member">Gui::logic</ref> is called. You can do logic stuff here like playing an animation.</para>
+<para><simplesect kind="see"><para><ref refid="classgcn_1_1Gui" kindref="compound">Gui</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="135" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref> *</type>
+        <definition>BasicContainer * gcn::Widget::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> parent container.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> parent container. Returns NULL if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has no parent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="143" column="32" bodyfile="src/guichan/widget.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setWidth</definition>
+        <argsstring>(int width)</argsstring>
+        <name>setWidth</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> in pixels.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> width in pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="150" column="22" bodyfile="src/guichan/widget.cpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::Widget::getWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the width of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> in pixels.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> with in pixels. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="157" column="21" bodyfile="src/guichan/widget.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setHeight</definition>
+        <argsstring>(int height)</argsstring>
+        <name>setHeight</name>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the height of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> in pixels.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> height in pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="164" column="22" bodyfile="src/guichan/widget.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::Widget::getHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the height of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> in pixels.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> height in pixels. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="171" column="21" bodyfile="src/guichan/widget.cpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setSize</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>setSize</name>
+        <reimplementedby refid="classDropDownWidget_1a46bad096aa1ac80ab75c70752962e697">setSize</reimplementedby>
+        <reimplementedby refid="classImageDropDownWidget_1a0ce2640cb4525cf32e9bfbd979e4b4d9">setSize</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the size of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="179" column="22" bodyfile="src/guichan/widget.cpp" bodystart="698" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setX</definition>
+        <argsstring>(int x)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> x coordinate. It is relateive to it&apos;s parent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="186" column="22" bodyfile="src/guichan/widget.cpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::Widget::getX</definition>
+        <argsstring>() const</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> x coordinate. It is relative to it&apos;s parent.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="193" column="21" bodyfile="src/guichan/widget.cpp" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setY</definition>
+        <argsstring>(int y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> y coordinate. It is relative to it&apos;s parent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="200" column="22" bodyfile="src/guichan/widget.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::Widget::getY</definition>
+        <argsstring>() const</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> y coordinate. It is relative to it&apos;s parent.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="207" column="21" bodyfile="src/guichan/widget.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setPosition</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> position. It is relative to it&apos;s parent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Widgets y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="215" column="22" bodyfile="src/guichan/widget.cpp" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setDimension</definition>
+        <argsstring>(const Rectangle &amp;dimension)</argsstring>
+        <name>setDimension</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the dimension of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is relative to it&apos;s parent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dimension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> dimension. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="222" column="22" bodyfile="src/guichan/widget.cpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setBorderSize</definition>
+        <argsstring>(unsigned int borderSize)</argsstring>
+        <name>setBorderSize</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>borderSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the size of the border, or the width if you so like. The size is the number of pixels that the border extends outside the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. Border size = 0 means no border.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>borderSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the border. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a52430e9c46b6f84565af299bddb5ee80" kindref="member">drawBorder</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="232" column="22" bodyfile="src/guichan/widget.cpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gcn::Widget::getBorderSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getBorderSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the size of the border, or the width if you so like. The size is the number of pixels that the border extends outside the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. Border size = 0 means no border.</para>
+<para><simplesect kind="return"><para>the size of the border. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a52430e9c46b6f84565af299bddb5ee80" kindref="member">drawBorder</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="242" column="30" bodyfile="src/guichan/widget.cpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+        <definition>const Rectangle &amp; gcn::Widget::getDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the dimension of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is relative to it&apos;s parent.</para>
+<para><simplesect kind="return"><para>the widget dimension. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="249" column="33" bodyfile="src/guichan/widget.cpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setFocusable</definition>
+        <argsstring>(bool focusable)</argsstring>
+        <name>setFocusable</name>
+        <param>
+          <type>bool</type>
+          <declname>focusable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a Widgets focusability.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>focusable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> should be focusable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="256" column="22" bodyfile="src/guichan/widget.cpp" bodystart="223" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::isFocusable</definition>
+        <argsstring>() const</argsstring>
+        <name>isFocusable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks whether the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is focusable.</para>
+<para><simplesect kind="return"><para>true if the widget is focusable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="263" column="22" bodyfile="src/guichan/widget.cpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::hasFocus</definition>
+        <argsstring>() const</argsstring>
+        <name>hasFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para><simplesect kind="return"><para>true if the widget currently has focus. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="270" column="22" bodyfile="src/guichan/widget.cpp" bodystart="208" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to be disabled or enabled. A disabled <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> will never recieve mouse or key input.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="278" column="22" bodyfile="src/guichan/widget.cpp" bodystart="704" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::isEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is disabled or not.</para>
+<para><simplesect kind="return"><para>true if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> should be enabled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="285" column="22" bodyfile="src/guichan/widget.cpp" bodystart="709" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::lostFocus</definition>
+        <argsstring>()</argsstring>
+        <name>lostFocus</name>
+        <reimplementedby refid="classgcn_1_1Button_1adfd7199774f66b22c90089d2fd81bb06">lostFocus</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1a917e3ea155fe752ddab4b9f1e07c1fa7">lostFocus</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Slider_1afb899dfb0ed56a51c52cce95ae69d560">lostFocus</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> loses focus. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="290" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="290" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::gotFocus</definition>
+        <argsstring>()</argsstring>
+        <name>gotFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> recieves focus. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="295" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="295" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::hasMouse</definition>
+        <argsstring>() const</argsstring>
+        <name>hasMouse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has the mouse.</para>
+<para><simplesect kind="return"><para>true if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has the mouse. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="302" column="22" bodyfile="src/guichan/widget.cpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setVisible</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>setVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to be visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> should be visiable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="309" column="22" bodyfile="src/guichan/widget.cpp" bodystart="268" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::isVisible</definition>
+        <argsstring>() const</argsstring>
+        <name>isVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is visible.</para>
+<para><simplesect kind="return"><para>true if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is visible. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="316" column="22" bodyfile="src/guichan/widget.cpp" bodystart="277" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setBaseColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>setBaseColor</name>
+        <reimplementedby refid="classgcn_1_1Icon_1a3420b147f83dc97bc3a5cc67691ab10a">setBaseColor</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1a2544d55f5bae9b499b2d29c8d0cf0ca6">setBaseColor</reimplementedby>
+        <reimplementedby refid="classWindows_1ac71426379cfa705e53fc0cf4e16b32ad">setBaseColor</reimplementedby>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the base color. The base color is the background color for many Widgets like the <ref refid="classgcn_1_1Button" kindref="compound">Button</ref> and Contianer Widgets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the baseground <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="324" column="22" bodyfile="src/guichan/widget.cpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; gcn::Widget::getBaseColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the base color.</para>
+<para><simplesect kind="return"><para>the foreground <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="331" column="29" bodyfile="src/guichan/widget.cpp" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setForegroundColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>setForegroundColor</name>
+        <reimplementedby refid="classgcn_1_1DropDown_1ab46dc804aab38d01a88ece5abb595261">setForegroundColor</reimplementedby>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the foreground color.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the foreground <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="338" column="22" bodyfile="src/guichan/widget.cpp" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; gcn::Widget::getForegroundColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getForegroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the foreground color.</para>
+<para><simplesect kind="return"><para>the foreground <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="345" column="29" bodyfile="src/guichan/widget.cpp" bodystart="304" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setBackgroundColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>setBackgroundColor</name>
+        <reimplementedby refid="classgcn_1_1DropDown_1ad6b921be74f7825f5370efe4ab6700ed">setBackgroundColor</reimplementedby>
+        <reimplementedby refid="classWindows_1ae088c47dc0ad6901f42252b2d3fcaf0a">setBackgroundColor</reimplementedby>
+        <reimplementedby refid="classListBoxWidget_1aa3bd0e06bce58347317af62ff7c5afa6">setBackgroundColor</reimplementedby>
+        <reimplementedby refid="classImageListBoxWidget_1a9f0d9e5c33c4da95e8acd082149d7876">setBackgroundColor</reimplementedby>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the background color.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the background <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="352" column="22" bodyfile="src/guichan/widget.cpp" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; gcn::Widget::getBackgroundColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the background color.</para>
+<para><simplesect kind="return"><para>the background <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="359" column="29" bodyfile="src/guichan/widget.cpp" bodystart="314" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setDisabledColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>setDisabledColor</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the disabled color.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the disabled <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="366" column="22" bodyfile="src/guichan/widget.cpp" bodystart="319" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; gcn::Widget::getDisabledColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getDisabledColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the disabled color.</para>
+<para><simplesect kind="return"><para>the disabled <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="373" column="29" bodyfile="src/guichan/widget.cpp" bodystart="324" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a82d4afc357dd464c4c29282e6f61e56e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::_mouseInputMessage</definition>
+        <argsstring>(const MouseInput &amp;mouseInput)</argsstring>
+        <name>_mouseInputMessage</name>
+        <reimplementedby refid="classImageDropDownWidget_1a1be5c0d5a1b3dda11a6bf20e0b380e38">_mouseInputMessage</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Container_1a385f626093c5dac59c931e1e0bd45cec">_mouseInputMessage</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1ade1825184b2cd826d44c8408f0d3c292">_mouseInputMessage</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1aecb7f2381d48ab23e2ed7275ed86e7ab">_mouseInputMessage</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ScrollArea_1aa11847d04ffe1ae475d28542ebb4cc0b">_mouseInputMessage</reimplementedby>
+        <param>
+          <type>const <ref refid="classgcn_1_1MouseInput" kindref="compound">MouseInput</ref> &amp;</type>
+          <declname>mouseInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> recieves a <ref refid="classgcn_1_1MouseInput" kindref="compound">MouseInput</ref>.</para>
+<para>WARNING: This function is used internally to handle all mouse messages. Don&apos;t call or overload it unless you know what you are doing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mouseInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1MouseInput" kindref="compound">MouseInput</ref> message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="384" column="22" bodyfile="src/guichan/widget.cpp" bodystart="380" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::_keyInputMessage</definition>
+        <argsstring>(const KeyInput &amp;keyInput)</argsstring>
+        <name>_keyInputMessage</name>
+        <reimplementedby refid="classgcn_1_1DropDown_1a06e6140699e0f8f468f2569c279e8afe">_keyInputMessage</reimplementedby>
+        <param>
+          <type>const <ref refid="classgcn_1_1KeyInput" kindref="compound">KeyInput</ref> &amp;</type>
+          <declname>keyInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> recieves a <ref refid="classgcn_1_1KeyInput" kindref="compound">KeyInput</ref>.</para>
+<para>WARNING: This function is used internally to handle all key messages. Don&apos;t call or overload it unless you know what you are doing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keyInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1KeyInput" kindref="compound">KeyInput</ref> message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="395" column="22" bodyfile="src/guichan/widget.cpp" bodystart="503" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::hotKeyPress</definition>
+        <argsstring>()</argsstring>
+        <name>hotKeyPress</name>
+        <reimplementedby refid="classgcn_1_1Button_1a1e9264154a35cf283c6a1143bfc0acc0">hotKeyPress</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s hot key is pressed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="400" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="400" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::hotKeyRelease</definition>
+        <argsstring>()</argsstring>
+        <name>hotKeyRelease</name>
+        <reimplementedby refid="classgcn_1_1Button_1a2c6a593072818413ae8ed2165d81f451">hotKeyRelease</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s hot key is released </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="405" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="405" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::_mouseInMessage</definition>
+        <argsstring>()</argsstring>
+        <name>_mouseInMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse enters the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area.</para>
+<para>WARNING: This function is used internally to handle mouse in messages. Don&apos;t call or overload this function unless you know what you are doing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="414" column="22" bodyfile="src/guichan/widget.cpp" bodystart="546" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a8d9d0bf64082553da850f52214f8ae90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::_mouseOutMessage</definition>
+        <argsstring>()</argsstring>
+        <name>_mouseOutMessage</name>
+        <reimplementedby refid="classgcn_1_1Container_1a2abd7f187152c16d9958e167f45dc0ad">_mouseOutMessage</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1a7d31b40ae6e937ab97d0f0c691236b4f">_mouseOutMessage</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ScrollArea_1ad7bc3f704f55f0bcc2a11330e7248737">_mouseOutMessage</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse leaves the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area.</para>
+<para>WARNING: This function is used internally be to handle mouse out messages. Don&apos;t call or overload this function unless you know what you are doing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="423" column="22" bodyfile="src/guichan/widget.cpp" bodystart="563" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::requestFocus</definition>
+        <argsstring>()</argsstring>
+        <name>requestFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Requests focus for the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. A <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> will only recieve focus if it is focusable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="429" column="22" bodyfile="src/guichan/widget.cpp" bodystart="238" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::requestMoveToTop</definition>
+        <argsstring>()</argsstring>
+        <name>requestMoveToTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Requests a move to the top in the parent <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="434" column="22" bodyfile="src/guichan/widget.cpp" bodystart="252" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::requestMoveToBottom</definition>
+        <argsstring>()</argsstring>
+        <name>requestMoveToBottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Requests a move to the bottom in the parent <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="439" column="22" bodyfile="src/guichan/widget.cpp" bodystart="260" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a6c3ec01422e51978a643ddd3ae09c26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::_setFocusHandler</definition>
+        <argsstring>(FocusHandler *focusHandler)</argsstring>
+        <name>_setFocusHandler</name>
+        <reimplementedby refid="classgcn_1_1Container_1aa766b9bc28e073cca8f6a21691b814c5">_setFocusHandler</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1a16ed697f4881cc143b9fb9b41311029c">_setFocusHandler</reimplementedby>
+        <reimplementedby refid="classgcn_1_1ScrollArea_1add7eaa377a5837302bed900c9a9cf5d7">_setFocusHandler</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> *</type>
+          <declname>focusHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> to be used.</para>
+<para>WARNING: This function is used internally and should not be called or overloaded unless you know what you are doing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>focusHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="450" column="22" bodyfile="src/guichan/widget.cpp" bodystart="329" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> *</type>
+        <definition>FocusHandler * gcn::Widget::_getFocusHandler</definition>
+        <argsstring>()</argsstring>
+        <name>_getFocusHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> used.</para>
+<para>WARNING: This function is used internally and should not be called or overloaded unless you know what you are doing.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="461" column="30" bodyfile="src/guichan/widget.cpp" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::addActionListener</definition>
+        <argsstring>(ActionListener *actionListener)</argsstring>
+        <name>addActionListener</name>
+        <reimplementedby refid="classListBoxWidget_1a90be4b15e2a8523f994e14f41d4dc47b">addActionListener</reimplementedby>
+        <reimplementedby refid="classImageListBoxWidget_1a2fd2a9a398d371c71372abf4633117fe">addActionListener</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> *</type>
+          <declname>actionListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds an <ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. When an action is triggered by the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>, the action function in all the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s ActionListeners will be called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="470" column="22" bodyfile="src/guichan/widget.cpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::removeActionListener</definition>
+        <argsstring>(ActionListener *actionListener)</argsstring>
+        <name>removeActionListener</name>
+        <param>
+          <type><ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> *</type>
+          <declname>actionListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes an added <ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> from the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1ActionListener" kindref="compound">ActionListener</ref> to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="477" column="25" bodyfile="src/guichan/widget.cpp" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::addMouseListener</definition>
+        <argsstring>(MouseListener *mouseListener)</argsstring>
+        <name>addMouseListener</name>
+        <param>
+          <type><ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> *</type>
+          <declname>mouseListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a <ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. When a mouse message is recieved, it will be sent to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s MouseListeners.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mouseListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="485" column="25" bodyfile="src/guichan/widget.cpp" bodystart="370" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::removeMouseListener</definition>
+        <argsstring>(MouseListener *mouseListener)</argsstring>
+        <name>removeMouseListener</name>
+        <param>
+          <type><ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> *</type>
+          <declname>mouseListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes an added <ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> from the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mouseListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1MouseListener" kindref="compound">MouseListener</ref> to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="492" column="25" bodyfile="src/guichan/widget.cpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::addKeyListener</definition>
+        <argsstring>(KeyListener *keyListener)</argsstring>
+        <name>addKeyListener</name>
+        <param>
+          <type><ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> *</type>
+          <declname>keyListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a <ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. When a key message is recieved, it will be sent to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s KeyListeners.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keyListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="500" column="25" bodyfile="src/guichan/widget.cpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::removeKeyListener</definition>
+        <argsstring>(KeyListener *keyListener)</argsstring>
+        <name>removeKeyListener</name>
+        <param>
+          <type><ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> *</type>
+          <declname>keyListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes an added <ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> from the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keyListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1KeyListener" kindref="compound">KeyListener</ref> to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="507" column="25" bodyfile="src/guichan/widget.cpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setEventId</definition>
+        <argsstring>(const std::string &amp;eventId)</argsstring>
+        <name>setEventId</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eventId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the event identifier of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. The event identifier is used to be able to identify which <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> generated an action when an action has occured.</para>
+<para>NOTE: An event identifier should not be used to identify a certain <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> but rather a certain event in your application. Several Widgets can have the same event identifer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="520" column="25" bodyfile="src/guichan/widget.cpp" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; gcn::Widget::getEventId</definition>
+        <argsstring>() const</argsstring>
+        <name>getEventId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the event identifier.</para>
+<para><simplesect kind="return"><para>the event identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="527" column="35" bodyfile="src/guichan/widget.cpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::getAbsolutePosition</definition>
+        <argsstring>(int &amp;x, int &amp;y) const</argsstring>
+        <name>getAbsolutePosition</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the absolute position on the screen for the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>absolute x coordinate will be stored in this parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>absolute y coordinate will be stored in this parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="535" column="25" bodyfile="src/guichan/widget.cpp" bodystart="575" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::_setParent</definition>
+        <argsstring>(BasicContainer *parent)</argsstring>
+        <name>_setParent</name>
+        <param>
+          <type><ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the parent of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. A parent must be a <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>.</para>
+<para>WARNING: This function is used internally and should not be called or overloaded unless you know what you are doing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parent <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>.. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="546" column="25" bodyfile="src/guichan/widget.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgcn_1_1Font" kindref="compound">Font</ref> *</type>
+        <definition>Font * gcn::Widget::getFont</definition>
+        <argsstring>() const</argsstring>
+        <name>getFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the font used. If no font has been set, the global font will be returned instead. If no global font has been set, the default font will be returend. ugly default.</para>
+<para><simplesect kind="return"><para>the used <ref refid="classgcn_1_1Font" kindref="compound">Font</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="556" column="14" bodyfile="src/guichan/widget.cpp" bodystart="602" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setFont</definition>
+        <argsstring>(Font *font)</argsstring>
+        <name>setFont</name>
+        <reimplementedby refid="classgcn_1_1DropDown_1accdcc834a12cd77ad74776606bf7dc50">setFont</reimplementedby>
+        <reimplementedby refid="classListBoxWidget_1a9ee426c30111ab89b21fc68e09355c60">setFont</reimplementedby>
+        <reimplementedby refid="classImageListBoxWidget_1aa0b0993c2f73b41280fe2cae138f9c3d">setFont</reimplementedby>
+        <reimplementedby refid="classImageDropDownWidget_1a3e4eb8865c1c10a523debf9b7c305ccc">setFont</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the font. If font is NULL, the global font will be used.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Font" kindref="compound">Font</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="570" column="22" bodyfile="src/guichan/widget.cpp" bodystart="631" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void gcn::Widget::fontChanged</definition>
+        <argsstring>()</argsstring>
+        <name>fontChanged</name>
+        <reimplementedby refid="classgcn_1_1TextField_1a19a47e362b1f5ca5e88e0372b5774fd8">fontChanged</reimplementedby>
+        <reimplementedby refid="classgcn_1_1TextBox_1a29c1ed6c8847641ba097e2eecd957f9c">fontChanged</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the font has changed. If the change is global, this function will only be called if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> don&apos;t have a font already set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="577" column="22" bodyfile="src/guichan/include/guichan/widget.h" bodystart="577" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gcn::Widget::getHotKey</definition>
+        <argsstring>() const</argsstring>
+        <name>getHotKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the hot key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="582" column="21" bodyfile="src/guichan/include/guichan/widget.h" bodystart="582" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setHotKey</definition>
+        <argsstring>(const int key)</argsstring>
+        <name>setHotKey</name>
+        <param>
+          <type>const int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the hot key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="587" column="22" bodyfile="src/guichan/widget.cpp" bodystart="637" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setHotKey</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>setHotKey</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="588" column="22" bodyfile="src/guichan/widget.cpp" bodystart="649" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::isTabInEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isTabInEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if tab in is enabled. Tab in means that you can set focus to this <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> by pressing the tab button. If tab in is disabled then the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> will skip this widget and focus the next in its focus order.</para>
+<para><simplesect kind="return"><para>true if tab in is enabled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="606" column="22" bodyfile="src/guichan/widget.cpp" bodystart="678" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setTabInEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setTabInEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets tab in enabled. Tab in means that you can set focus to this <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> by pressing the tab button. If tab in is disabled then the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> will skip this widget and focus the next in its focus order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if tab in should be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="616" column="22" bodyfile="src/guichan/widget.cpp" bodystart="683" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::isTabOutEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isTabOutEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if tab out is enabled. Tab out means that you can lose focus to this <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> by pressing the tab button. If tab out is disabled then the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> ignores tabbing and focus will stay with this <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><simplesect kind="return"><para>true if tab out is enabled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="626" column="22" bodyfile="src/guichan/widget.cpp" bodystart="688" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setTabOutEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setTabOutEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets tab out enabled. Tab out means that you can lose focus to this <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> by pressing the tab button. If tab out is disabled then the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> ignores tabbing and focus will stay with this <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if tab out should be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="636" column="22" bodyfile="src/guichan/widget.cpp" bodystart="693" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::isDragged</definition>
+        <argsstring>() const</argsstring>
+        <name>isDragged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is dragged. Dragged means that the mouse button has been pressed down over the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> and the mouse has been moved.</para>
+<para><simplesect kind="return"><para>true if the widget is dragged. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="645" column="22" bodyfile="src/guichan/widget.cpp" bodystart="714" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::requestModalFocus</definition>
+        <argsstring>()</argsstring>
+        <name>requestModalFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Requests modal focus. When a widget has modal focus, only that <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> and it&apos;s children may recieve input. If some other <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> already has modal focus, an exception will be thrown.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classgcn_1_1Exception" kindref="compound">Exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if another <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> already has modal focus. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="654" column="22" bodyfile="src/guichan/widget.cpp" bodystart="725" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::releaseModalFocus</definition>
+        <argsstring>()</argsstring>
+        <name>releaseModalFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Releases modal focus. Modal focus will only be released if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has the modal focus. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="660" column="22" bodyfile="src/guichan/widget.cpp" bodystart="736" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::hasModalFocus</definition>
+        <argsstring>() const</argsstring>
+        <name>hasModalFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> or it&apos;s parent has modal focus. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="665" column="22" bodyfile="src/guichan/widget.cpp" bodystart="746" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1a78405792027c3431ad58ccf72845bc23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setDirty</definition>
+        <argsstring>(bool dirty)</argsstring>
+        <name>setDirty</name>
+        <reimplementedby refid="classgcn_1_1Container_1a4cadcc0b536cde72189076a40871f53e">setDirty</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1acdb7825aa181dcd52ddd5c6b3c287e5b">setDirty</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>dirty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="667" column="22" bodyfile="src/guichan/widget.cpp" bodystart="762" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1abfe807a4ba40975723b2e9e29eb9387a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::getDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>getDirty</name>
+        <reimplementedby refid="classgcn_1_1Icon_1a522f8e0cfa4d891ffb59e0fe8dc20c98">getDirty</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Container_1a18f7c64051e8ca87741f0073ed2589a9">getDirty</reimplementedby>
+        <reimplementedby refid="classgcn_1_1DropDown_1a42c1518239f8be656348708f553bdb6f">getDirty</reimplementedby>
+        <reimplementedby refid="classgcn_1_1Window_1af2266747f4a7e494621cace807df43a0">getDirty</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="668" column="22" bodyfile="src/guichan/widget.cpp" bodystart="767" bodyend="770"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::setGlobalFont</definition>
+        <argsstring>(Font *font)</argsstring>
+        <name>setGlobalFont</name>
+        <param>
+          <type><ref refid="classgcn_1_1Font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the global font to be used by default for all Widgets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the global <ref refid="classgcn_1_1Font" kindref="compound">Font</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="563" column="21" bodyfile="src/guichan/widget.cpp" bodystart="617" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gcn::Widget::widgetExists</definition>
+        <argsstring>(const Widget *widget)</argsstring>
+        <name>widgetExists</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks whether a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> exists or not, that is if it still exists an instance of the object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="596" column="21" bodyfile="src/guichan/widget.cpp" bodystart="662" bodyend="676"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Widget::generateAction</definition>
+        <argsstring>()</argsstring>
+        <name>generateAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates an action to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s ActionListeners. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widget.h" line="675" column="14" bodyfile="src/guichan/widget.cpp" bodystart="593" bodyend="600"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> base class. Contains basic widget functions every widget should have. Widgets should inherit from this class and implements it&apos;s functions.</para>
+<para>NOTE: Functions begining with underscore &quot;_&quot; should not be overloaded unless you know what you are doing. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>gcn::TextBox</label>
+        <link refid="classgcn_1_1TextBox"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gcn::ScrollArea</label>
+        <link refid="classgcn_1_1ScrollArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ScrollingWidget</label>
+        <link refid="classScrollingWidget"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>MultiLineLabel</label>
+        <link refid="classMultiLineLabel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Windows</label>
+        <link refid="classWindows"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gcn::RadioButton</label>
+        <link refid="classgcn_1_1RadioButton"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gcn::DropDown</label>
+        <link refid="classgcn_1_1DropDown"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImageButton</label>
+        <link refid="classImageButton"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>gcn::Slider</label>
+        <link refid="classgcn_1_1Slider"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ButtonWidget</label>
+        <link refid="classButtonWidget"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gcn::Button</label>
+        <link refid="classgcn_1_1Button"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ImageRadioButton</label>
+        <link refid="classImageRadioButton"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>ImageSlider</label>
+        <link refid="classImageSlider"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImageListBoxWidget</label>
+        <link refid="classImageListBoxWidget"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>StatBoxWidget</label>
+        <link refid="classStatBoxWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gcn::CheckBox</label>
+        <link refid="classgcn_1_1CheckBox"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MenuScreen</label>
+        <link refid="classMenuScreen"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImageDropDownWidget</label>
+        <link refid="classImageDropDownWidget"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DropDownWidget</label>
+        <link refid="classDropDownWidget"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gcn::Container</label>
+        <link refid="classgcn_1_1Container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ImageListBox</label>
+        <link refid="classImageListBox"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gcn::Label</label>
+        <link refid="classgcn_1_1Label"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ImageWidget</label>
+        <link refid="classImageWidget"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gcn::Icon</label>
+        <link refid="classgcn_1_1Icon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ImageCheckBox</label>
+        <link refid="classImageCheckBox"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>gcn::TextField</label>
+        <link refid="classgcn_1_1TextField"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gcn::Window</label>
+        <link refid="classgcn_1_1Window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ImageTextField</label>
+        <link refid="classImageTextField"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+      </node>
+      <node id="22">
+        <label>gcn::ListBox</label>
+        <link refid="classgcn_1_1ListBox"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ListBoxWidget</label>
+        <link refid="classListBoxWidget"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="6">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="8">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="4">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/guichan/include/guichan/widget.h" line="94" column="1" bodyfile="src/guichan/include/guichan/widget.h" bodystart="93" bodyend="714"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_getFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_keyInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_mouseInMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a82d4afc357dd464c4c29282e6f61e56e" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_mouseInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a8d9d0bf64082553da850f52214f8ae90" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_mouseOutMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a6c3ec01422e51978a643ddd3ae09c26a" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_setFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>_setParent</name></member>
+      <member refid="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>ActionListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>ActionListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>addActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>addKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>addMouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1acc595221d6a2d1afe1043c16dc37d212" prot="public" virt="pure-virtual"><scope>gcn::Widget</scope><name>draw</name></member>
+      <member refid="classgcn_1_1Widget_1a52430e9c46b6f84565af299bddb5ee80" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>drawBorder</name></member>
+      <member refid="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>fontChanged</name></member>
+      <member refid="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>generateAction</name></member>
+      <member refid="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getAbsolutePosition</name></member>
+      <member refid="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getDimension</name></member>
+      <member refid="classgcn_1_1Widget_1abfe807a4ba40975723b2e9e29eb9387a" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" virt="non-virtual"><scope>gcn::Widget</scope><name>getFont</name></member>
+      <member refid="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getParent</name></member>
+      <member refid="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getX</name></member>
+      <member refid="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>getY</name></member>
+      <member refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>gotFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>hasModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>hasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>hotKeyPress</name></member>
+      <member refid="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>isEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>isFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>isTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>isTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>isVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>KeyListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>KeyListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1aeb2e4c4751ef8666f48be1638ef8a48c" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>logic</name></member>
+      <member refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>lostFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mActionListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mClickButton</name></member>
+      <member refid="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mClickCount</name></member>
+      <member refid="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mClickTimeStamp</name></member>
+      <member refid="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mCurrentFont</name></member>
+      <member refid="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mDefaultFont</name></member>
+      <member refid="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mDimension</name></member>
+      <member refid="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mHasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mKeyListeners</name></member>
+      <member refid="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mMouseListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>MouseListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>MouseListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mParent</name></member>
+      <member refid="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mTabIn</name></member>
+      <member refid="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mTabOut</name></member>
+      <member refid="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mVisible</name></member>
+      <member refid="classgcn_1_1Widget_1ad350c8bb10bc2603f545039e530dcb83" prot="protected" virt="non-virtual"><scope>gcn::Widget</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>removeActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>removeKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>removeMouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>requestMoveToBottom</name></member>
+      <member refid="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>requestMoveToTop</name></member>
+      <member refid="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setDimension</name></member>
+      <member refid="classgcn_1_1Widget_1a78405792027c3431ad58ccf72845bc23" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setDirty</name></member>
+      <member refid="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setFont</name></member>
+      <member refid="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" virt="non-virtual"><scope>gcn::Widget</scope><name>setGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setHeight</name></member>
+      <member refid="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setPosition</name></member>
+      <member refid="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setSize</name></member>
+      <member refid="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setX</name></member>
+      <member refid="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>setY</name></member>
+      <member refid="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" virt="non-virtual"><scope>gcn::Widget</scope><name>Widget</name></member>
+      <member refid="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" virt="non-virtual"><scope>gcn::Widget</scope><name>widgetExists</name></member>
+      <member refid="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" virt="virtual"><scope>gcn::Widget</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

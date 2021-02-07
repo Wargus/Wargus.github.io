@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classBuildingPlaceFinder" kind="class" language="C++" prot="public">
+    <compoundname>BuildingPlaceFinder</compoundname>
+      <sectiondef kind="user-defined">
+      <header>ai_building.cpp - AI building functions.</header>
+      <memberdef kind="function" id="classBuildingPlaceFinder_1a27abab1d0bb4210f67442e7edadb5d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pathfinder_8h_1a586f8717564d1a04b2da1a21ad53ed8e" kindref="member">VisitResult</ref></type>
+        <definition>VisitResult BuildingPlaceFinder::Visit</definition>
+        <argsstring>(TerrainTraversal &amp;terrainTraversal, const Vec2i &amp;pos, const Vec2i &amp;from)</argsstring>
+        <name>Visit</name>
+        <param>
+          <type><ref refid="classTerrainTraversal" kindref="compound">TerrainTraversal</ref> &amp;</type>
+          <declname>terrainTraversal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="158" column="13" bodyfile="src/ai/ai_building.cpp" bodystart="167" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBuildingPlaceFinder_1adb4e73690bec564265b1639b302edfe6" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+        <definition>const CUnit&amp; BuildingPlaceFinder::worker</definition>
+        <argsstring></argsstring>
+        <name>worker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="160" column="13" bodyfile="src/ai/ai_building.cpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildingPlaceFinder_1a185bef8715769e88653a0991599d32ef" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+        <definition>const CUnitType&amp; BuildingPlaceFinder::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="161" column="17" bodyfile="src/ai/ai_building.cpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildingPlaceFinder_1ad1c4cb637593f605cd6fb91d03c71539" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int BuildingPlaceFinder::movemask</definition>
+        <argsstring></argsstring>
+        <name>movemask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="162" column="14" bodyfile="src/ai/ai_building.cpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildingPlaceFinder_1a7e763a5b8c77cbe643389a35c6d5b099" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BuildingPlaceFinder::checkSurround</definition>
+        <argsstring></argsstring>
+        <name>checkSurround</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="163" column="6" bodyfile="src/ai/ai_building.cpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBuildingPlaceFinder_1a87f5c48fabf7cfb648c0d0316b841d37" prot="private" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+        <definition>Vec2i* BuildingPlaceFinder::resultPos</definition>
+        <argsstring></argsstring>
+        <name>resultPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="164" column="7" bodyfile="src/ai/ai_building.cpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBuildingPlaceFinder_1a22ece5446d69796c9922f4d30b707d49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BuildingPlaceFinder::BuildingPlaceFinder</definition>
+        <argsstring>(const CUnit &amp;worker, const CUnitType &amp;type, bool checkSurround, Vec2i *resultPos)</argsstring>
+        <name>BuildingPlaceFinder</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkSurround</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>resultPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_building.cpp" line="147" column="1" bodyfile="src/ai/ai_building.cpp" bodystart="147" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai_building.cpp" line="145" column="1" bodyfile="src/ai/ai_building.cpp" bodystart="144" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classBuildingPlaceFinder_1a22ece5446d69796c9922f4d30b707d49" prot="public" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>BuildingPlaceFinder</name></member>
+      <member refid="classBuildingPlaceFinder_1a7e763a5b8c77cbe643389a35c6d5b099" prot="private" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>checkSurround</name></member>
+      <member refid="classBuildingPlaceFinder_1ad1c4cb637593f605cd6fb91d03c71539" prot="private" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>movemask</name></member>
+      <member refid="classBuildingPlaceFinder_1a87f5c48fabf7cfb648c0d0316b841d37" prot="private" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>resultPos</name></member>
+      <member refid="classBuildingPlaceFinder_1a185bef8715769e88653a0991599d32ef" prot="private" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>type</name></member>
+      <member refid="classBuildingPlaceFinder_1a27abab1d0bb4210f67442e7edadb5d64" prot="public" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>Visit</name></member>
+      <member refid="classBuildingPlaceFinder_1adb4e73690bec564265b1639b302edfe6" prot="private" virt="non-virtual"><scope>BuildingPlaceFinder</scope><name>worker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

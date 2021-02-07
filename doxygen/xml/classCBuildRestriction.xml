@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCBuildRestriction" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CBuildRestriction</compoundname>
+    <derivedcompoundref refid="classCBuildRestrictionAddOn" prot="public" virt="non-virtual">CBuildRestrictionAddOn</derivedcompoundref>
+    <derivedcompoundref refid="classCBuildRestrictionAnd" prot="public" virt="non-virtual">CBuildRestrictionAnd</derivedcompoundref>
+    <derivedcompoundref refid="classCBuildRestrictionDistance" prot="public" virt="non-virtual">CBuildRestrictionDistance</derivedcompoundref>
+    <derivedcompoundref refid="classCBuildRestrictionHasUnit" prot="public" virt="non-virtual">CBuildRestrictionHasUnit</derivedcompoundref>
+    <derivedcompoundref refid="classCBuildRestrictionOnTop" prot="public" virt="non-virtual">CBuildRestrictionOnTop</derivedcompoundref>
+    <derivedcompoundref refid="classCBuildRestrictionSurroundedBy" prot="public" virt="non-virtual">CBuildRestrictionSurroundedBy</derivedcompoundref>
+    <includes refid="unittype_8h" local="no">unittype.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCBuildRestriction_1a74dff9cf703cfe69ae0f5f34a2e85e81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CBuildRestriction::~CBuildRestriction</definition>
+        <argsstring>()</argsstring>
+        <name>~CBuildRestriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="352" column="9" bodyfile="src/include/unittype.h" bodystart="352" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCBuildRestriction_1a3850d873eac77dee0a858ad4a3c7c251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CBuildRestriction::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <reimplementedby refid="classCBuildRestrictionAnd_1a401e85b524270f86ef81966f204c7a5d">Init</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionAddOn_1a50a1712b72ef77a685564fbfacae4698">Init</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionOnTop_1a3165176ec3ff2974db3f1b6660db9a3d">Init</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionDistance_1abb2de15c8c783b4e800ffd5d5e4d2d29">Init</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionHasUnit_1af4c10e1b4c8ad532801fa05f4e2aab25">Init</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionSurroundedBy_1af60457a3cd1d0a9af1a4aae05962f2fe">Init</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="353" column="14" bodyfile="src/include/unittype.h" bodystart="353" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCBuildRestriction_1ac16d34e5573c15c844e9ca0b0cf3455d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CBuildRestriction::Check</definition>
+        <argsstring>(const CUnit *builder, const CUnitType &amp;type, const Vec2i &amp;pos, CUnit *&amp;ontoptarget) const =0</argsstring>
+        <name>Check</name>
+        <reimplementedby refid="classCBuildRestrictionAnd_1aac80bbb23fe872806871085174fbd1ef">Check</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionAddOn_1a2f7ce28a9ad51ebc8c1e7a0b82142604">Check</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionOnTop_1a0d3aac6092c816e30dd57be6a2236c08">Check</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionDistance_1a6a4bbaef54d8ceb0c269411332b68497">Check</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionHasUnit_1a2b452e16d6b8edf0a8f865363480fa11">Check</reimplementedby>
+        <reimplementedby refid="classCBuildRestrictionSurroundedBy_1a38bff61347f6008b29de58bc9b9b3ed2">Check</reimplementedby>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>builder</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>ontoptarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unittype.h" line="354" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CBuildRestrictionAnd</label>
+        <link refid="classCBuildRestrictionAnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CBuildRestrictionOnTop</label>
+        <link refid="classCBuildRestrictionOnTop"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CBuildRestrictionAddOn</label>
+        <link refid="classCBuildRestrictionAddOn"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CBuildRestrictionDistance</label>
+        <link refid="classCBuildRestrictionDistance"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CBuildRestriction</label>
+        <link refid="classCBuildRestriction"/>
+      </node>
+      <node id="5">
+        <label>CBuildRestrictionHasUnit</label>
+        <link refid="classCBuildRestrictionHasUnit"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CBuildRestrictionSurroundedBy</label>
+        <link refid="classCBuildRestrictionSurroundedBy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/include/unittype.h" line="350" column="1" bodyfile="src/include/unittype.h" bodystart="349" bodyend="355"/>
+    <listofallmembers>
+      <member refid="classCBuildRestriction_1ac16d34e5573c15c844e9ca0b0cf3455d" prot="public" virt="pure-virtual"><scope>CBuildRestriction</scope><name>Check</name></member>
+      <member refid="classCBuildRestriction_1a3850d873eac77dee0a858ad4a3c7c251" prot="public" virt="virtual"><scope>CBuildRestriction</scope><name>Init</name></member>
+      <member refid="classCBuildRestriction_1a74dff9cf703cfe69ae0f5f34a2e85e81" prot="public" virt="virtual"><scope>CBuildRestriction</scope><name>~CBuildRestriction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

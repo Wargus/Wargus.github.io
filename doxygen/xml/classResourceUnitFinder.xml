@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classResourceUnitFinder" kind="class" language="C++" prot="public">
+    <compoundname>ResourceUnitFinder</compoundname>
+    <innerclass refid="structResourceUnitFinder_1_1ResourceUnitFinder__Cost" prot="private">ResourceUnitFinder::ResourceUnitFinder_Cost</innerclass>
+      <sectiondef kind="user-defined">
+      <header>unit_find.cpp - The find/select for units.</header>
+      <memberdef kind="function" id="classResourceUnitFinder_1a73cbc6e6739ce335037e50cf02722eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pathfinder_8h_1a586f8717564d1a04b2da1a21ad53ed8e" kindref="member">VisitResult</ref></type>
+        <definition>VisitResult ResourceUnitFinder::Visit</definition>
+        <argsstring>(TerrainTraversal &amp;terrainTraversal, const Vec2i &amp;pos, const Vec2i &amp;from)</argsstring>
+        <name>Visit</name>
+        <param>
+          <type><ref refid="classTerrainTraversal" kindref="compound">TerrainTraversal</ref> &amp;</type>
+          <declname>terrainTraversal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="329" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="388" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classResourceUnitFinder_1a81f023a6d4535a8ce4301e2a455f3eb2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ResourceUnitFinder::MineIsUsable</definition>
+        <argsstring>(const CUnit &amp;mine) const</argsstring>
+        <name>MineIsUsable</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>mine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="331" column="6" bodyfile="src/unit/unit_find.cpp" bodystart="367" bodyend="374"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classResourceUnitFinder_1a2835ee03cc72520a4ad4d7d0d1eee205" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+        <definition>const CUnit&amp; ResourceUnitFinder::worker</definition>
+        <argsstring></argsstring>
+        <name>worker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="356" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1a1ab0bd89d74012442bf0e389f5623487" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classResourceInfo" kindref="compound">ResourceInfo</ref> &amp;</type>
+        <definition>const ResourceInfo&amp; ResourceUnitFinder::resinfo</definition>
+        <argsstring></argsstring>
+        <name>resinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="357" column="20" bodyfile="src/unit/unit_find.cpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1ad7b014c1f293b3bb1e5ecf9e515e9cf5" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>const CUnit* ResourceUnitFinder::deposit</definition>
+        <argsstring></argsstring>
+        <name>deposit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="358" column="13" bodyfile="src/unit/unit_find.cpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1ad5f3919bd7f7fb0fb6f8e5f12006f435" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ResourceUnitFinder::movemask</definition>
+        <argsstring></argsstring>
+        <name>movemask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="359" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1a61eaa7abee3f5d935a3a878c469ad954" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResourceUnitFinder::maxRange</definition>
+        <argsstring></argsstring>
+        <name>maxRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="360" column="5" bodyfile="src/unit/unit_find.cpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1a7e68d12e2cb6d8bbb000b9c12d76f014" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ResourceUnitFinder::check_usage</definition>
+        <argsstring></argsstring>
+        <name>check_usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="361" column="6" bodyfile="src/unit/unit_find.cpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1a2735785ae36f4567be16b9b539287dc6" prot="private" static="no" mutable="no">
+        <type><ref refid="classCResourceFinder" kindref="compound">CResourceFinder</ref></type>
+        <definition>CResourceFinder ResourceUnitFinder::res_finder</definition>
+        <argsstring></argsstring>
+        <name>res_finder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="362" column="17" bodyfile="src/unit/unit_find.cpp" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1a34e8ff2c920e39f179970d17af83724a" prot="private" static="no" mutable="no">
+        <type>ResourceUnitFinder_Cost</type>
+        <definition>ResourceUnitFinder_Cost ResourceUnitFinder::bestCost</definition>
+        <argsstring></argsstring>
+        <name>bestCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="363" column="25" bodyfile="src/unit/unit_find.cpp" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResourceUnitFinder_1ae2c99d743c9325926c93803da2d44e6b" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+        <definition>CUnit** ResourceUnitFinder::resultMine</definition>
+        <argsstring></argsstring>
+        <name>resultMine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="364" column="7" bodyfile="src/unit/unit_find.cpp" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classResourceUnitFinder_1a23579988401905bdb01502d58069ea0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResourceUnitFinder::ResourceUnitFinder</definition>
+        <argsstring>(const CUnit &amp;worker, const CUnit *deposit, int resource, int maxRange, bool check_usage, CUnit **resultMine)</argsstring>
+        <name>ResourceUnitFinder</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>deposit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRange</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_usage</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+          <declname>resultMine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unit/unit_find.cpp" line="316" column="1" bodyfile="src/unit/unit_find.cpp" bodystart="316" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/unit/unit_find.cpp" line="314" column="1" bodyfile="src/unit/unit_find.cpp" bodystart="313" bodyend="365"/>
+    <listofallmembers>
+      <member refid="classResourceUnitFinder_1a34e8ff2c920e39f179970d17af83724a" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>bestCost</name></member>
+      <member refid="classResourceUnitFinder_1a7e68d12e2cb6d8bbb000b9c12d76f014" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>check_usage</name></member>
+      <member refid="classResourceUnitFinder_1ad7b014c1f293b3bb1e5ecf9e515e9cf5" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>deposit</name></member>
+      <member refid="classResourceUnitFinder_1a61eaa7abee3f5d935a3a878c469ad954" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>maxRange</name></member>
+      <member refid="classResourceUnitFinder_1a81f023a6d4535a8ce4301e2a455f3eb2" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>MineIsUsable</name></member>
+      <member refid="classResourceUnitFinder_1ad5f3919bd7f7fb0fb6f8e5f12006f435" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>movemask</name></member>
+      <member refid="classResourceUnitFinder_1a2735785ae36f4567be16b9b539287dc6" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>res_finder</name></member>
+      <member refid="classResourceUnitFinder_1a1ab0bd89d74012442bf0e389f5623487" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>resinfo</name></member>
+      <member refid="classResourceUnitFinder_1a23579988401905bdb01502d58069ea0d" prot="public" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>ResourceUnitFinder</name></member>
+      <member refid="classResourceUnitFinder_1ae2c99d743c9325926c93803da2d44e6b" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>resultMine</name></member>
+      <member refid="classResourceUnitFinder_1a73cbc6e6739ce335037e50cf02722eb8" prot="public" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>Visit</name></member>
+      <member refid="classResourceUnitFinder_1a2835ee03cc72520a4ad4d7d0d1eee205" prot="private" virt="non-virtual"><scope>ResourceUnitFinder</scope><name>worker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

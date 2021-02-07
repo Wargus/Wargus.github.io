@@ -1,0 +1,2070 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1ScrollArea" kind="class" language="C++" prot="public">
+    <compoundname>gcn::ScrollArea</compoundname>
+    <basecompoundref refid="classgcn_1_1BasicContainer" prot="public" virt="non-virtual">gcn::BasicContainer</basecompoundref>
+    <basecompoundref refid="classgcn_1_1MouseListener" prot="public" virt="non-virtual">gcn::MouseListener</basecompoundref>
+    <derivedcompoundref refid="classListBoxWidget" prot="public" virt="non-virtual">ListBoxWidget</derivedcompoundref>
+    <derivedcompoundref refid="classScrollingWidget" prot="public" virt="non-virtual">ScrollingWidget</derivedcompoundref>
+    <includes refid="scrollarea_8h" local="no">scrollarea.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@9</name>
+        <enumvalue id="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1a1e3b2d95e13f8f9603336e0e072ca344" prot="public">
+          <name>SHOW_ALWAYS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1aa0ec3861e64c48f3eecf7a98862bb56e" prot="public">
+          <name>SHOW_NEVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1ad1ca167fcb47a0e991dfc87401736248" prot="public">
+          <name>SHOW_AUTO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scrollpolicies for the horizontal and vertical scrollbar. The policies are:</para>
+<para>SHOW_ALWAYS - Always show the scrollbars no matter what. SHOW_NEVER - Never show the scrollbars no matter waht. SHOW_AUTO - Show the scrollbars only when needed. That is if the content grows larger then the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="291" column="9" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="290" bodyend="295"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a019ac3b4fe96b34d3d81302cabc00cf8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* gcn::ScrollArea::mContent</definition>
+        <argsstring></argsstring>
+        <name>mContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="429" column="16" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a17748f9561efbcf981a5d11c58ee3f11" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::mVScroll</definition>
+        <argsstring></argsstring>
+        <name>mVScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="430" column="13" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a7d082bd0c5cba225156db626c91aa748" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::mHScroll</definition>
+        <argsstring></argsstring>
+        <name>mHScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="431" column="13" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a3662b4a35c3c4914ab9a0a4122bbfff5" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::mScrollbarWidth</definition>
+        <argsstring></argsstring>
+        <name>mScrollbarWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="432" column="13" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1abab15f46530dfd2289a86f6f3e5ede92" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gcn::ScrollArea::mHPolicy</definition>
+        <argsstring></argsstring>
+        <name>mHPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="433" column="22" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a7b1dfd9e320b3c81db13e6b3e9adaec1" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gcn::ScrollArea::mVPolicy</definition>
+        <argsstring></argsstring>
+        <name>mVPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="434" column="22" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1aef1ba163e7b097f48a01ab3ad6602cab" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mVBarVisible</definition>
+        <argsstring></argsstring>
+        <name>mVBarVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="435" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1ac852c3068f0dceb009aad99acdab0da8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mHBarVisible</definition>
+        <argsstring></argsstring>
+        <name>mHBarVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="436" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a27a0d91b3b8c02cfdb758d5a82c62033" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mUpButtonPressed</definition>
+        <argsstring></argsstring>
+        <name>mUpButtonPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="437" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a496ba6a507ea167f9e0f6a2cfaafa512" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mDownButtonPressed</definition>
+        <argsstring></argsstring>
+        <name>mDownButtonPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="438" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a3aa01761b00a443c69b7ab5e780a1374" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mLeftButtonPressed</definition>
+        <argsstring></argsstring>
+        <name>mLeftButtonPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="439" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a0fb4730610992cd31fbdbca150630dd0" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mRightButtonPressed</definition>
+        <argsstring></argsstring>
+        <name>mRightButtonPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="440" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a84a0207ea47df1469979fe93fa8d88b6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mVerticalMarkerPressed</definition>
+        <argsstring></argsstring>
+        <name>mVerticalMarkerPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="441" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1a09516b3522e4ef5726129e1c33794e7a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::mVerticalMarkerMousePosition</definition>
+        <argsstring></argsstring>
+        <name>mVerticalMarkerMousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="442" column="13" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1aafdb5874f04ea30f2f4f09fbb1bbc1db" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gcn::ScrollArea::mHorizontalMarkerPressed</definition>
+        <argsstring></argsstring>
+        <name>mHorizontalMarkerPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="443" column="14" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1ScrollArea_1ac8f743b7de654f9516e41f32d48f53ca" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::mHorizontalMarkerMousePosition</definition>
+        <argsstring></argsstring>
+        <name>mHorizontalMarkerMousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="444" column="13" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a938e85d49303617f98f28c7e85c25714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gcn::ScrollArea::ScrollArea</definition>
+        <argsstring>()</argsstring>
+        <name>ScrollArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="84" column="9" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1afc87f60c06e1fd25f59d967680ef0936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gcn::ScrollArea::ScrollArea</definition>
+        <argsstring>(Widget *content)</argsstring>
+        <name>ScrollArea</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the content of the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="91" column="9" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="84" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a0d4b64560415267c0c2cce94c8887c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gcn::ScrollArea::ScrollArea</definition>
+        <argsstring>(Widget *content, unsigned int hPolicy, unsigned int vPolicy)</argsstring>
+        <name>ScrollArea</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>hPolicy</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>vPolicy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the content of the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hPolicy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the policy for the horizontal scrollbar. See enum with policies. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vPolicy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the policy for the vertical scrollbar. See enum with policies. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="102" column="9" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="105" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a5ccf9b8f11f8e38353dde99d5d919acb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>gcn::ScrollArea::~ScrollArea</definition>
+        <argsstring>()</argsstring>
+        <name>~ScrollArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="107" column="17" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a519cff8ea4b8c442d37ad549181bb34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setContent</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>setContent</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the content.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the content of the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="114" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="131" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a03b49754528a1cf4cdbbd5a8dbf0c207" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget * gcn::ScrollArea::getContent</definition>
+        <argsstring>()</argsstring>
+        <name>getContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the content.</para>
+<para><simplesect kind="return"><para>the content of the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="121" column="24" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a602e4aec5b1f73cc3158d415a42fe1f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setHorizontalScrollPolicy</definition>
+        <argsstring>(unsigned int hPolicy)</argsstring>
+        <name>setHorizontalScrollPolicy</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>hPolicy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the horizontal scrollbar policy. See enum with policies.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hPolicy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the policy for the horizontal scrollbar. See enum with policies. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="129" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a3abf75c0dcb81218f621218b4e1ac8d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gcn::ScrollArea::getHorizontalScrollPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>getHorizontalScrollPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the horizontal scrollbar policy. See enum with policies.</para>
+<para><simplesect kind="return"><para>the policy for the horizontal scrollbar policy. See enum with policies. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="137" column="30" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ab14b147358b014032d1a0ef03141df37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setVerticalScrollPolicy</definition>
+        <argsstring>(unsigned int vPolicy)</argsstring>
+        <name>setVerticalScrollPolicy</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>vPolicy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the vertical scrollbar policy. See enum with policies.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vPolicy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the policy for the vertical scrollbar. See enum with policies. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="145" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="166" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a93dbb3428d900e0882b6f5405309aae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gcn::ScrollArea::getVerticalScrollPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>getVerticalScrollPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the vertical scrollbar policy. See enum with policies.</para>
+<para><simplesect kind="return"><para>the policy for the vertical scrollbar. See enum with policies. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="153" column="30" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a608515e41cb04f23059c02e28d43ee94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setScrollPolicy</definition>
+        <argsstring>(unsigned int hPolicy, unsigned int vPolicy)</argsstring>
+        <name>setScrollPolicy</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>hPolicy</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>vPolicy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the horizontal and vertical scrollbar policy. See enum with policies.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hPolicy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the policy for the horizontal scrollbar. See enum with policies. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vPolicy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the policy for the vertical scrollbar. See enum with policies. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="163" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="177" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a044d7c542eea8cd48411c2e7c83720bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::scrollToBottom</definition>
+        <argsstring>()</argsstring>
+        <name>scrollToBottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="165" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a3cd9147e94caf1c96ecb99f2874a314d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::scrollToTop</definition>
+        <argsstring>()</argsstring>
+        <name>scrollToTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="167" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a496ac9dbfef2158c273e061691be4479" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setVerticalScrollAmount</definition>
+        <argsstring>(int vScroll)</argsstring>
+        <name>setVerticalScrollAmount</name>
+        <param>
+          <type>int</type>
+          <declname>vScroll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the amount to scroll verticaly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vScroll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to scroll. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="174" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="194" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a05ee17d216f6b0afcb6d71fe7e307f71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::getVerticalScrollAmount</definition>
+        <argsstring>()</argsstring>
+        <name>getVerticalScrollAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the amount that is scrolled verticaly. <simplesect kind="return"><para>the scroll amount on vertical scroll. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="180" column="21" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a1ed5ae16d3368047106e2fc94cd7f1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setHorizontalScrollAmount</definition>
+        <argsstring>(int hScroll)</argsstring>
+        <name>setHorizontalScrollAmount</name>
+        <param>
+          <type>int</type>
+          <declname>hScroll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the amount to scroll horizontaly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hScroll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to scroll. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="187" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="216" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a0d8a322f656587af4a24c3c5b4658e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::getHorizontalScrollAmount</definition>
+        <argsstring>()</argsstring>
+        <name>getHorizontalScrollAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the amount that is scrolled horizontaly.</para>
+<para><simplesect kind="return"><para>the scroll amount on horizontal scroll. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="194" column="21" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a5d81b945c75ea165faf0052bacf713e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setScrollAmount</definition>
+        <argsstring>(int hScroll, int vScroll)</argsstring>
+        <name>setScrollAmount</name>
+        <param>
+          <type>int</type>
+          <declname>hScroll</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vScroll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the amount to scroll horizontaly and verticaly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hScroll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to scroll on horizontal scroll. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vScroll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to scroll on vertical scroll. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="202" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="237" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a75d37345aa411f61b689c4c6015cfb39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::getHorizontalMaxScroll</definition>
+        <argsstring>()</argsstring>
+        <name>getHorizontalMaxScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the maximum amount of horizontal scroll.</para>
+<para><simplesect kind="return"><para>the horizontal max scroll. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="209" column="21" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="243" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ab0fbcb3b56689715cc02f90e73ecea1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::getVerticalMaxScroll</definition>
+        <argsstring>()</argsstring>
+        <name>getVerticalMaxScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the maximum amount of vertical scroll.</para>
+<para><simplesect kind="return"><para>the vertical max scroll. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="216" column="21" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="262" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ae7685ceba9098d57c87f35a1629c4a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::setScrollbarWidth</definition>
+        <argsstring>(int width)</argsstring>
+        <name>setScrollbarWidth</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the ScrollBar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="223" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="283" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a8a5cf20efb9ba8aabb2a0ac3a6804ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gcn::ScrollArea::getScrollbarWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getScrollbarWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the width.</para>
+<para><simplesect kind="return"><para>the width of the ScrollBar. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="230" column="21" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a4ebc80cbc065072804b6caaa33d98798" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::scrollToRectangle</definition>
+        <argsstring>(const Rectangle &amp;rectangle)</argsstring>
+        <name>scrollToRectangle</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>rectangle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to scroll to a specific rectangle. If the rectangle is to large to be visible as much as possibly, begining in the rectangles upper corner, will be visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rectangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref> to scroll to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="239" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1264" bodyend="1289"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a2bab40dcb6d851aec51104efb934744c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::draw</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgcn_1_1Widget_1acc595221d6a2d1afe1043c16dc37d212">draw</reimplements>
+        <reimplementedby refid="classImageListBoxWidget_1a2bb9afa2320b86eff7bc6509a5c93b8b">draw</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is called by the parent widget when it is time for the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to draw itself. The graphics object is set up so that all drawing is relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>, i.e coordinate (0,0) is the top-left corner of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is not possible to draw outside of a Widgets dimension.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="244" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="432" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1afdad205c6472bb19b6e74dbed2c1d62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawBorder</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawBorder</name>
+        <reimplements refid="classgcn_1_1Widget_1a52430e9c46b6f84565af299bddb5ee80">drawBorder</reimplements>
+        <reimplementedby refid="classImageListBoxWidget_1a4eb141834637a43dd384ea0b74a6c53a">drawBorder</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws a the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> border. A border is drawn around a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. The width and height of the border is therefore the Widgets height+2*bordersize. Think of a painting that has a certain size, the border surrounds the painting.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="246" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="492" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a7e9085abfccf6ebed42484226b4b2aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::logic</definition>
+        <argsstring>()</argsstring>
+        <name>logic</name>
+        <reimplements refid="classgcn_1_1Widget_1aeb2e4c4751ef8666f48be1638ef8a48c">logic</reimplements>
+        <reimplementedby refid="classScrollingWidget_1ab70119e5a3856a22b80527e6026ec1cd">logic</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called for all Widgets in the gui each time <ref refid="classgcn_1_1Gui_1a66744ebd628213d574bb6a7010781b1f" kindref="member">Gui::logic</ref> is called. You can do logic stuff here like playing an animation.</para>
+<para><simplesect kind="see"><para><ref refid="classgcn_1_1Gui" kindref="compound">Gui</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="248" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="856" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aa11847d04ffe1ae475d28542ebb4cc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::_mouseInputMessage</definition>
+        <argsstring>(const MouseInput &amp;mouseInput)</argsstring>
+        <name>_mouseInputMessage</name>
+        <reimplements refid="classgcn_1_1Widget_1a82d4afc357dd464c4c29282e6f61e56e">_mouseInputMessage</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1MouseInput" kindref="compound">MouseInput</ref> &amp;</type>
+          <declname>mouseInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> recieves a <ref refid="classgcn_1_1MouseInput" kindref="compound">MouseInput</ref>.</para>
+<para>WARNING: This function is used internally to handle all mouse messages. Don&apos;t call or overload it unless you know what you are doing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mouseInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1MouseInput" kindref="compound">MouseInput</ref> message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="250" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="311" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ad7bc3f704f55f0bcc2a11330e7248737" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::_mouseOutMessage</definition>
+        <argsstring>()</argsstring>
+        <name>_mouseOutMessage</name>
+        <reimplements refid="classgcn_1_1Widget_1a8d9d0bf64082553da850f52214f8ae90">_mouseOutMessage</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse leaves the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area.</para>
+<para>WARNING: This function is used internally be to handle mouse out messages. Don&apos;t call or overload this function unless you know what you are doing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="252" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="338" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1add7eaa377a5837302bed900c9a9cf5d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::_setFocusHandler</definition>
+        <argsstring>(FocusHandler *focusHandler)</argsstring>
+        <name>_setFocusHandler</name>
+        <reimplements refid="classgcn_1_1Widget_1a6c3ec01422e51978a643ddd3ae09c26a">_setFocusHandler</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> *</type>
+          <declname>focusHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> to be used.</para>
+<para>WARNING: This function is used internally and should not be called or overloaded unless you know what you are doing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>focusHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="254" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="301" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aff451182948bd3fb0d4c940bf2b2213f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::_announceDeath</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>_announceDeath</name>
+        <reimplements refid="classgcn_1_1BasicContainer_1ac7475f2ef7bdddaf6a9db9e5d86fdaf9">_announceDeath</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a child of the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref> gets destroyed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destroyed <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="259" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="904" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a11ea9998c53edcfa9d81c14ae6c3f666" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::getDrawSize</definition>
+        <argsstring>(int &amp;width, int &amp;height, Widget *widget)</argsstring>
+        <name>getDrawSize</name>
+        <reimplements refid="classgcn_1_1BasicContainer_1a423560f8b3e3776babe4b6e11bc30713">getDrawSize</reimplements>
+        <param>
+          <type>int &amp;</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the drawing space size a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has in the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>. It may not be the same size as the Widgets width and height.</para>
+<para>NOTE: Size is not checked recursively all the way back to the top <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. If the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref> itself is clipped, the size may be inaccurate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s draw space has. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>&apos;s draw space has. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> calling the function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="261" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="918" bodyend="930"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1acbff6580c8fd3473ea27c76c187f0a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::moveToBottom</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>moveToBottom</name>
+        <reimplements refid="classgcn_1_1BasicContainer_1a5feb8f12bbe3c4dc068f32129b197b0b">moveToBottom</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Moves a widget to the bottom of the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>. The <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> will be drawn below all other Widgets in the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to move. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="263" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="888" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a645069ff3c31fc63c439d9c9f1972127" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::moveToTop</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>moveToTop</name>
+        <reimplements refid="classgcn_1_1BasicContainer_1a3c185631af6b73245e32b9f6b93fbb31">moveToTop</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Moves a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to the top of the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>. The widget will be drawn above all other Widgets in the <ref refid="classgcn_1_1BasicContainer" kindref="compound">BasicContainer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to move. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="265" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="872" bodyend="886"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aecb04f3eea1cbf5d935cbd2d4958d3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::mousePress</definition>
+        <argsstring>(int x, int y, int button)</argsstring>
+        <name>mousePress</name>
+        <reimplements refid="classgcn_1_1MouseListener_1ab9b2fc230d5890685b58648b6b0a8f5d">mousePress</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a mouse button is pressed when the mouse is in the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area or if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para>NOTE: A mouse press is NOT equal to a mouse click. Use mouseClickMessage to check for mouse clicks.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button pressed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="270" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="348" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ac6b2de4484cd8e9dd5cb5228c191a74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::mouseRelease</definition>
+        <argsstring>(int x, int y, int button)</argsstring>
+        <name>mouseRelease</name>
+        <reimplements refid="classgcn_1_1MouseListener_1a9fe91fd9240c8943c947c145470d43fc">mouseRelease</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a mouse button is released when the mouse is in the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area or if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button released. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="272" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="382" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a6d01262eeb6cbd4d7eef51bb97a98982" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::mouseMotion</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>mouseMotion</name>
+        <reimplements refid="classgcn_1_1MouseListener_1aa326a632b53eb9fe39e9d5f3ab4ec5d5">mouseMotion</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse moves and the mouse is in the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area or if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="274" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="392" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aa1563800b1de6f1f8a79e87416e20e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::mouseWheelUp</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>mouseWheelUp</name>
+        <reimplements refid="classgcn_1_1MouseListener_1aaa5d13676e224f8cb2edbee037ba3d4d">mouseWheelUp</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called on a mouse wheel up when the mouse is in the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area or if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="276" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1291" bodyend="1297"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a4c71825f4dd3502fb809ac75b34cee44" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::mouseWheelDown</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>mouseWheelDown</name>
+        <reimplements refid="classgcn_1_1MouseListener_1ae141d2c2c5d2d84083bab1c9b06e0219">mouseWheelDown</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called on a mouse wheel down when the mouse is in the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> area or if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="278" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1299" bodyend="1305"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aeb5d4e317104042c6fa42fad9f4099e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawUpButton</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawUpButton</name>
+        <reimplementedby refid="classImageListBoxWidget_1af9d399b34ae0f4b5dc17143e3812762f">drawUpButton</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the up button.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="303" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="558" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a891f1e7fad4fff75a560934f1fd2b4c8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawDownButton</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawDownButton</name>
+        <reimplementedby refid="classImageListBoxWidget_1ab12ecf3e2db8479a5e7fb240910aee84">drawDownButton</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the down button.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="310" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="619" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ad164275f835bfd8801e8bb8e2980ff56" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawLeftButton</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawLeftButton</name>
+        <reimplementedby refid="classImageListBoxWidget_1a7a7e681bec0eb8862ae30704ca2f08f9">drawLeftButton</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the left button.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="317" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="680" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ab281bc5acbad8a41310952e63ac8db38" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawRightButton</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawRightButton</name>
+        <reimplementedby refid="classImageListBoxWidget_1ad55eec0a2c2588cedfed893aecbe152e">drawRightButton</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the right button.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="324" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="741" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ad0b8a8f98a0286e6e15a0f6bf23c6f9a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawContent</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawContent</name>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the content in the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="331" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="932" bodyend="938"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a86f51c2c526ddd86c9cfa8eea037ac27" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawVBar</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawVBar</name>
+        <reimplementedby refid="classImageListBoxWidget_1a8146bd7a24a99f99b61bff3a411c421a">drawVBar</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the vertical scrollbar.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="338" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="537" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a46f7c9efdae6649e16995dc8e3f5f996" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawHBar</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawHBar</name>
+        <reimplementedby refid="classImageListBoxWidget_1a05dfe708824ec0b565f459ea686849e4">drawHBar</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the horizontal scrollbar.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="345" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="516" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ad918479bb482a9b7d25748b6eb8cdd86" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawVMarker</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawVMarker</name>
+        <reimplementedby refid="classImageListBoxWidget_1a28e7aa85334ec98a2eeeeb466d782e2d">drawVMarker</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the vertical marker.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="352" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="802" bodyend="827"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a1d5926cbd302d01c495e4bb0c1ed760b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::drawHMarker</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawHMarker</name>
+        <reimplementedby refid="classImageListBoxWidget_1a30485c6ba94d82c89f6d0d37c26e1b93">drawHMarker</reimplementedby>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the horizontal marker.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="359" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="829" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a247838f8490a284cb215d50ab78e573d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::ScrollArea::checkPolicies</definition>
+        <argsstring>()</argsstring>
+        <name>checkPolicies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks the policies for the scrollbars. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="364" column="22" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="940" bodyend="1035"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1afb4d37de0b2b511db0e5ee7e41e601c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getUpButtonDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getUpButtonDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the up button dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the up button. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="371" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1037" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a59b7fda7e81c3290db7de1a4c759ac7d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getDownButtonDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getDownButtonDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the down button dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the down button. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="378" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1050" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aa71bee12598125f874fcf59e2ca337e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getLeftButtonDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getLeftButtonDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the left button dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the left button. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="385" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1071" bodyend="1082"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a9629cc995d6e2dce35aba959125bda9c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getRightButtonDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getRightButtonDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the right button dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the right button. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="392" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1084" bodyend="1103"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a5bff5279525a67fef141e45b7138224b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getContentDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getContentDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the content dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the content. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="399" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1105" bodyend="1124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1aa6434c27c1b2201e493f7092cca93e4a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getVerticalBarDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getVerticalBarDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the vertical scrollbar dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the vertical scrollbar. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="406" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1126" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1a898c2796b20a332a1ae002c899aa4713" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getHorizontalBarDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getHorizontalBarDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the horizontal scrollbar dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the horizontal scrollbar. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="413" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1152" bodyend="1176"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ab3548e5f4ade1f20963e4a9d1dd50798" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getVerticalMarkerDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getVerticalMarkerDimension</name>
+        <reimplementedby refid="classImageListBoxWidget_1a6382d9ce3165ec36284696542b788ca9">getVerticalMarkerDimension</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the vertical marker dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the vertical marker. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="420" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1178" bodyend="1219"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1ScrollArea_1ae40cc4b46a667cc276119051e7c5d089" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle gcn::ScrollArea::getHorizontalMarkerDimension</definition>
+        <argsstring>()</argsstring>
+        <name>getHorizontalMarkerDimension</name>
+        <reimplementedby refid="classImageListBoxWidget_1ada519ad2afba9a5bfa011fce64a3e639">getHorizontalMarkerDimension</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the horizontal marker dimension.</para>
+<para><simplesect kind="return"><para>the dimension of the horizontal marker. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="427" column="27" bodyfile="src/guichan/widgets/scrollarea.cpp" bodystart="1221" bodyend="1262"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref> in which another <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> can be added. It the other <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is bigger then the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>, the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref> will only display the part of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> that fits the <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref> and make it possible to scroll to the other areas of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para>NOTE: A <ref refid="classgcn_1_1TextBox" kindref="compound">TextBox</ref> or a <ref refid="classgcn_1_1ListBox" kindref="compound">ListBox</ref> looks really ugly unless they exist in a <ref refid="classgcn_1_1ScrollArea" kindref="compound">ScrollArea</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gcn::ScrollArea</label>
+        <link refid="classgcn_1_1ScrollArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ScrollingWidget</label>
+        <link refid="classScrollingWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImageListBoxWidget</label>
+        <link refid="classImageListBoxWidget"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="3">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+      </node>
+      <node id="2">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ListBoxWidget</label>
+        <link refid="classListBoxWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gcn::ScrollArea</label>
+        <link refid="classgcn_1_1ScrollArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mContent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="8">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="7">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="9">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="2">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/guichan/include/guichan/widgets/scrollarea.h" line="78" column="1" bodyfile="src/guichan/include/guichan/widgets/scrollarea.h" bodystart="75" bodyend="445"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1ScrollArea_1aff451182948bd3fb0d4c940bf2b2213f" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_announceDeath</name></member>
+      <member refid="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_getFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_keyInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_mouseInMessage</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa11847d04ffe1ae475d28542ebb4cc0b" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_mouseInputMessage</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad7bc3f704f55f0bcc2a11330e7248737" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_mouseOutMessage</name></member>
+      <member refid="classgcn_1_1ScrollArea_1add7eaa377a5837302bed900c9a9cf5d7" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_setFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>_setParent</name></member>
+      <member refid="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>ActionListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>ActionListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>addActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>addKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>addMouseListener</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a247838f8490a284cb215d50ab78e573d" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>checkPolicies</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a2bab40dcb6d851aec51104efb934744c" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>draw</name></member>
+      <member refid="classgcn_1_1ScrollArea_1afdad205c6472bb19b6e74dbed2c1d62c" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawBorder</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad0b8a8f98a0286e6e15a0f6bf23c6f9a" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawContent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a891f1e7fad4fff75a560934f1fd2b4c8" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawDownButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a46f7c9efdae6649e16995dc8e3f5f996" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawHBar</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1d5926cbd302d01c495e4bb0c1ed760b" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawHMarker</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad164275f835bfd8801e8bb8e2980ff56" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawLeftButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab281bc5acbad8a41310952e63ac8db38" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawRightButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aeb5d4e317104042c6fa42fad9f4099e5" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawUpButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a86f51c2c526ddd86c9cfa8eea037ac27" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawVBar</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad918479bb482a9b7d25748b6eb8cdd86" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>drawVMarker</name></member>
+      <member refid="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>fontChanged</name></member>
+      <member refid="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>generateAction</name></member>
+      <member refid="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getAbsolutePosition</name></member>
+      <member refid="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getBorderSize</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a03b49754528a1cf4cdbbd5a8dbf0c207" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getContent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a5bff5279525a67fef141e45b7138224b" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getContentDimension</name></member>
+      <member refid="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getDimension</name></member>
+      <member refid="classgcn_1_1Widget_1abfe807a4ba40975723b2e9e29eb9387a" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getDisabledColor</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a59b7fda7e81c3290db7de1a4c759ac7d" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getDownButtonDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a11ea9998c53edcfa9d81c14ae6c3f666" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getDrawSize</name></member>
+      <member refid="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>getFont</name></member>
+      <member refid="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a898c2796b20a332a1ae002c899aa4713" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHorizontalBarDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ae40cc4b46a667cc276119051e7c5d089" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHorizontalMarkerDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a75d37345aa411f61b689c4c6015cfb39" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHorizontalMaxScroll</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a0d8a322f656587af4a24c3c5b4658e17" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHorizontalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3abf75c0dcb81218f621218b4e1ac8d6" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHorizontalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getHotKey</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa71bee12598125f874fcf59e2ca337e8" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getLeftButtonDimension</name></member>
+      <member refid="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getParent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a9629cc995d6e2dce35aba959125bda9c" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getRightButtonDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a8a5cf20efb9ba8aabb2a0ac3a6804ec2" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getScrollbarWidth</name></member>
+      <member refid="classgcn_1_1ScrollArea_1afb4d37de0b2b511db0e5ee7e41e601c5" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getUpButtonDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa6434c27c1b2201e493f7092cca93e4a" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getVerticalBarDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab3548e5f4ade1f20963e4a9d1dd50798" prot="protected" virt="virtual"><scope>gcn::ScrollArea</scope><name>getVerticalMarkerDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab0fbcb3b56689715cc02f90e73ecea1f" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getVerticalMaxScroll</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a05ee17d216f6b0afcb6d71fe7e307f71" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getVerticalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a93dbb3428d900e0882b6f5405309aae5" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getVerticalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getX</name></member>
+      <member refid="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>getY</name></member>
+      <member refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>gotFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>hasModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>hasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>hotKeyPress</name></member>
+      <member refid="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>isEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>isFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>isTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>isTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>isVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>KeyListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>KeyListenerList</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a7e9085abfccf6ebed42484226b4b2aeb" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>logic</name></member>
+      <member refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>lostFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mActionListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mClickButton</name></member>
+      <member refid="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mClickCount</name></member>
+      <member refid="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mClickTimeStamp</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a019ac3b4fe96b34d3d81302cabc00cf8" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mContent</name></member>
+      <member refid="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mCurrentFont</name></member>
+      <member refid="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mDefaultFont</name></member>
+      <member refid="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mDimension</name></member>
+      <member refid="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mDisabledColor</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a496ba6a507ea167f9e0f6a2cfaafa512" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mDownButtonPressed</name></member>
+      <member refid="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHasMouse</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ac852c3068f0dceb009aad99acdab0da8" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHBarVisible</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ac8f743b7de654f9516e41f32d48f53ca" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHorizontalMarkerMousePosition</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aafdb5874f04ea30f2f4f09fbb1bbc1db" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHorizontalMarkerPressed</name></member>
+      <member refid="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHotKey</name></member>
+      <member refid="classgcn_1_1ScrollArea_1abab15f46530dfd2289a86f6f3e5ede92" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHPolicy</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a7d082bd0c5cba225156db626c91aa748" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mHScroll</name></member>
+      <member refid="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mKeyListeners</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3aa01761b00a443c69b7ab5e780a1374" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mLeftButtonPressed</name></member>
+      <member refid="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mMouseListeners</name></member>
+      <member refid="classgcn_1_1MouseListener_1a9fa65220fca905750f87ffe86017e538" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseClick</name></member>
+      <member refid="classgcn_1_1MouseListener_1a83e5e89f6997020e7b8d0863af9f9da3" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseIn</name></member>
+      <member refid="classgcn_1_1MouseListener_1aa1898f8c7b93fb208b5e9ce86d6a3fb5" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>MouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>MouseListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>MouseListenerList</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a6d01262eeb6cbd4d7eef51bb97a98982" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseMotion</name></member>
+      <member refid="classgcn_1_1MouseListener_1a79241832fa89ba91346d8e784bbbef33" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseOut</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aecb04f3eea1cbf5d935cbd2d4958d3f3" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mousePress</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ac6b2de4484cd8e9dd5cb5228c191a74a" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseRelease</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a4c71825f4dd3502fb809ac75b34cee44" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseWheelDown</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa1563800b1de6f1f8a79e87416e20e94" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>mouseWheelUp</name></member>
+      <member refid="classgcn_1_1ScrollArea_1acbff6580c8fd3473ea27c76c187f0a18" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>moveToBottom</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a645069ff3c31fc63c439d9c9f1972127" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>moveToTop</name></member>
+      <member refid="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mParent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a0fb4730610992cd31fbdbca150630dd0" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mRightButtonPressed</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3662b4a35c3c4914ab9a0a4122bbfff5" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mScrollbarWidth</name></member>
+      <member refid="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mTabIn</name></member>
+      <member refid="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mTabOut</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a27a0d91b3b8c02cfdb758d5a82c62033" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mUpButtonPressed</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aef1ba163e7b097f48a01ab3ad6602cab" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mVBarVisible</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a09516b3522e4ef5726129e1c33794e7a" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mVerticalMarkerMousePosition</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a84a0207ea47df1469979fe93fa8d88b6" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mVerticalMarkerPressed</name></member>
+      <member refid="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mVisible</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a7b1dfd9e320b3c81db13e6b3e9adaec1" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mVPolicy</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a17748f9561efbcf981a5d11c58ee3f11" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mVScroll</name></member>
+      <member refid="classgcn_1_1Widget_1ad350c8bb10bc2603f545039e530dcb83" prot="protected" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>removeActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>removeKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>removeMouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>requestMoveToBottom</name></member>
+      <member refid="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>requestMoveToTop</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a938e85d49303617f98f28c7e85c25714" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>ScrollArea</name></member>
+      <member refid="classgcn_1_1ScrollArea_1afc87f60c06e1fd25f59d967680ef0936" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>ScrollArea</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a0d4b64560415267c0c2cce94c8887c38" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>ScrollArea</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a044d7c542eea8cd48411c2e7c83720bd" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>scrollToBottom</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a4ebc80cbc065072804b6caaa33d98798" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>scrollToRectangle</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3cd9147e94caf1c96ecb99f2874a314d" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>scrollToTop</name></member>
+      <member refid="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setBorderSize</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a519cff8ea4b8c442d37ad549181bb34f" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setContent</name></member>
+      <member refid="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setDimension</name></member>
+      <member refid="classgcn_1_1Widget_1a78405792027c3431ad58ccf72845bc23" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setDirty</name></member>
+      <member refid="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setFont</name></member>
+      <member refid="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>setGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setHeight</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ed5ae16d3368047106e2fc94cd7f1b4" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setHorizontalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a602e4aec5b1f73cc3158d415a42fe1f3" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setHorizontalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setPosition</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a5d81b945c75ea165faf0052bacf713e8" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ae7685ceba9098d57c87f35a1629c4a86" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setScrollbarWidth</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a608515e41cb04f23059c02e28d43ee94" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setSize</name></member>
+      <member refid="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setTabOutEnabled</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a496ac9dbfef2158c273e061691be4479" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setVerticalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab14b147358b014032d1a0ef03141df37" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setVerticalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setX</name></member>
+      <member refid="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>setY</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1a1e3b2d95e13f8f9603336e0e072ca344" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>SHOW_ALWAYS</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1ad1ca167fcb47a0e991dfc87401736248" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>SHOW_AUTO</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1aa0ec3861e64c48f3eecf7a98862bb56e" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>SHOW_NEVER</name></member>
+      <member refid="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>Widget</name></member>
+      <member refid="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" virt="non-virtual"><scope>gcn::ScrollArea</scope><name>widgetExists</name></member>
+      <member refid="classgcn_1_1BasicContainer_1a8b8486a14daf5809da70d19603dbf607" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>~BasicContainer</name></member>
+      <member refid="classgcn_1_1MouseListener_1a418107f31e2ba41bceb6f794ef2ce101" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>~MouseListener</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a5ccf9b8f11f8e38353dde99d5d919acb" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>~ScrollArea</name></member>
+      <member refid="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" virt="virtual"><scope>gcn::ScrollArea</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

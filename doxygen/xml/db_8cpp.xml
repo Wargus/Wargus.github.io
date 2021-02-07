@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="db_8cpp" kind="file" language="C++">
+    <compoundname>db.cpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">time.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes local="yes">sqlite3.h</includes>
+    <includes refid="games_8h" local="yes">games.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>metaserver/db.cpp</label>
+        <link refid="db_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="13">
+        <label>games.h</label>
+        <link refid="games_8h"/>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="6">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>time.h</label>
+      </node>
+      <node id="8">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>db.cpp - Database routines.</header>
+      <memberdef kind="define" id="db_8cpp_1abf3370b3cbcf0e27ad939806981d1b42" prot="public" static="no">
+        <name>SQLCreatePlayersTable</name>
+        <initializer>	&quot;CREATE TABLE players (&quot; \
+	&quot;username TEXT PRIMARY KEY,&quot; \
+	&quot;password TEXT,&quot; \
+	&quot;register_date INTEGER,&quot; \
+	&quot;last_login_date INTEGER&quot; \
+	&quot;);&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="52" column="9" bodyfile="metaserver/db.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db_8cpp_1ad5551c43fd2a8cc17a701bc88ad24243" prot="public" static="no">
+        <name>SQLCreateGamesTable</name>
+        <initializer>	&quot;CREATE TABLE games (&quot; \
+	&quot;id INTEGER PRIMARY KEY,&quot; \
+	&quot;date INTEGER,&quot; \
+	&quot;gamename TEXT,&quot; \
+	&quot;mapname TEXT,&quot;	 \
+	&quot;slots INTEGER&quot; \
+	&quot;);&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="60" column="9" bodyfile="metaserver/db.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db_8cpp_1ab8a8f34a6f404cd91da5436d0b54eba7" prot="public" static="no">
+        <name>SQLCreateGameDataTable</name>
+        <initializer>	&quot;CREATE TABLE game_data (&quot; \
+	&quot;id INTEGER,&quot; \
+	&quot;username TEXT,&quot; \
+	&quot;result INTEGER,&quot; \
+	&quot;score INTEGER,&quot; \
+	&quot;units INTEGER,&quot; \
+	&quot;buildings INTEGER,&quot; \
+	&quot;res1 INTEGER, res2 INTEGER, res3 INTEGER, res4 INTEGER, res5 INTEGER, res6 INTEGER,&quot; \
+	&quot;res1_used INTEGER, res2_used INTEGER, res3_used INTEGER, res4_used INTEGER, res5_used INTEGER, res6_used INTEGER,&quot; \
+	&quot;kills INTEGER,&quot; \
+	&quot;razings INTEGER,&quot; \
+	&quot;gamecycle INTEGER,&quot; \
+	&quot;PRIMARY KEY (id, username));&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="69" column="9" bodyfile="metaserver/db.cpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db_8cpp_1a3fa5a353f6558f7294d0f5229963d472" prot="public" static="no">
+        <name>SQLCreateRankingsTable</name>
+        <initializer>	&quot;CREATE TABLE rankings (&quot; \
+	&quot;username TEXT,&quot; \
+	&quot;gamename TEXT,&quot; \
+	&quot;ranking INTEGER,&quot; \
+	&quot;PRIMARY KEY (username, gamename)&quot; \
+	&quot;);&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="84" column="9" bodyfile="metaserver/db.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db_8cpp_1af215feab01c189cd9df2e9190622e153" prot="public" static="no">
+        <name>SQLCreateMapsTable</name>
+        <initializer>	&quot;CREATE TABLE maps (&quot; \
+	&quot;map_id INTEGER PRIMARY KEY,&quot; \
+	&quot;map_name TEXT,&quot; \
+	&quot;map_filename TEXT,&quot; \
+	&quot;map_uuid TEXT,&quot; \
+	&quot;map_size_x INTEGER,&quot; \
+	&quot;map_size_y INTEGER&quot; \
+	&quot;);&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="92" column="9" bodyfile="metaserver/db.cpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db_8cpp_1a08607b24091449e4107ebd0fa12c9a5b" prot="public" static="no">
+        <name>SQLCreateTables</name>
+        <initializer>	<ref refid="db_8cpp_1abf3370b3cbcf0e27ad939806981d1b42" kindref="member">SQLCreatePlayersTable</ref> <ref refid="db_8cpp_1ad5551c43fd2a8cc17a701bc88ad24243" kindref="member">SQLCreateGamesTable</ref> <ref refid="db_8cpp_1ab8a8f34a6f404cd91da5436d0b54eba7" kindref="member">SQLCreateGameDataTable</ref> \
+	<ref refid="db_8cpp_1a3fa5a353f6558f7294d0f5229963d472" kindref="member">SQLCreateRankingsTable</ref> <ref refid="db_8cpp_1af215feab01c189cd9df2e9190622e153" kindref="member">SQLCreateMapsTable</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="102" column="9" bodyfile="metaserver/db.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_8cpp_1ac7b33820ee58097408cdc51140914b22" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* dbfile</definition>
+        <argsstring></argsstring>
+        <name>dbfile</name>
+        <initializer>= &quot;metaserver.db&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="49" column="19" bodyfile="metaserver/db.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_8cpp_1ab5ce3ca5a820a449208865c0ec6f08cd" prot="public" static="yes" mutable="no">
+        <type>sqlite3 *</type>
+        <definition>sqlite3* DB</definition>
+        <argsstring></argsstring>
+        <name>DB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="50" column="16" bodyfile="metaserver/db.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1a0c965a5bf8d8612fda788d9b2875897b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int DBMaxIDCallback</definition>
+        <argsstring>(void *password, int argc, char **argv, char **colname)</argsstring>
+        <name>DBMaxIDCallback</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>colname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max id callback </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="113" column="12" bodyfile="metaserver/db.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1aadbb24bb9c361706f6b54e2727c84e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DBInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>DBInit</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the database</para>
+<para><simplesect kind="return"><para>0 for success, non-zero for failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="128" column="5" bodyfile="metaserver/db.cpp" bodystart="128" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1a7c5fe6a09fa662a9dec57717d84c3426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DBQuit</definition>
+        <argsstring>(void)</argsstring>
+        <name>DBQuit</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the database </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="169" column="6" bodyfile="metaserver/db.cpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1ab04fcdd8de000b0703578e6da48b6704" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int DBFindUserCallback</definition>
+        <argsstring>(void *password, int argc, char **argv, char **colname)</argsstring>
+        <name>DBFindUserCallback</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>colname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find user callback </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="177" column="12" bodyfile="metaserver/db.cpp" bodystart="177" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1a37971df71f65c9556c08d74a8a8b3d61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DBFindUser</definition>
+        <argsstring>(char *username, char *password)</argsstring>
+        <name>DBFindUser</name>
+        <param>
+          <type>char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a user and return the password</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name to find </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the user is found the password will be returned here</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if user is found, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="192" column="5" bodyfile="metaserver/db.cpp" bodystart="192" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1a82c80fb0d3d77cc0e855b25f6fbac8c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DBAddUser</definition>
+        <argsstring>(char *username, char *password)</argsstring>
+        <name>DBAddUser</name>
+        <param>
+          <type>char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a user</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, non-zero otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="223" column="5" bodyfile="metaserver/db.cpp" bodystart="223" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1ab32e95a4f3d311dbba3492fa6c3bd367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DBUpdateLoginDate</definition>
+        <argsstring>(char *username)</argsstring>
+        <name>DBUpdateLoginDate</name>
+        <param>
+          <type>char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Log in a user</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, non-zero otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="247" column="5" bodyfile="metaserver/db.cpp" bodystart="247" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1ac32c546d39ced757c9d8b68f376e2a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DBAddGame</definition>
+        <argsstring>(int id, char *description, char *mapname, int numplayers)</argsstring>
+        <name>DBAddGame</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mapname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numplayers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="264" column="5" bodyfile="metaserver/db.cpp" bodystart="264" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1a95ccc88066f21b68e2f99b8a582d4a8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int DBStatsCallback</definition>
+        <argsstring>(void *resultbuf, int argc, char **argv, char **colname)</argsstring>
+        <name>DBStatsCallback</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *</type>
+          <declname>resultbuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>colname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="281" column="12" bodyfile="metaserver/db.cpp" bodystart="281" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="db_8cpp_1a2536894582e7cc5ea5a7cf2a3fda453b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DBStats</definition>
+        <argsstring>(char *resultbuf, int start_time)</argsstring>
+        <name>DBStats</name>
+        <param>
+          <type>char *</type>
+          <declname>resultbuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/db.cpp" line="289" column="5" bodyfile="metaserver/db.cpp" bodystart="289" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="metaserver/db.cpp"/>
+  </compounddef>
+</doxygen>

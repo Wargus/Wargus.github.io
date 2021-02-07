@@ -1,0 +1,1408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="selection_8cpp" kind="file" language="C++">
+    <compoundname>selection.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="commands_8h" local="yes">commands.h</includes>
+    <includes refid="interface_8h" local="yes">interface.h</includes>
+    <includes refid="iolib_8h" local="yes">iolib.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="unit__manager_8h" local="yes">unit_manager.h</includes>
+    <incdepgraph>
+      <node id="47">
+        <label>list</label>
+      </node>
+      <node id="14">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>queue</label>
+      </node>
+      <node id="17">
+        <label>SDL.h</label>
+      </node>
+      <node id="37">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>lua.h</label>
+      </node>
+      <node id="23">
+        <label>stdint.h</label>
+      </node>
+      <node id="46">
+        <label>unit_manager.h</label>
+        <link refid="unit__manager_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="34">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="38">
+        <label>map</label>
+      </node>
+      <node id="36">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/stratagus/selection.cpp</label>
+        <link refid="selection_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="40">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="24">
+        <label>network.h</label>
+        <link refid="network_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>climits</label>
+      </node>
+      <node id="18">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="42">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>iolib.h</label>
+        <link refid="iolib_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>set</label>
+      </node>
+      <node id="39">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>algorithm</label>
+      </node>
+      <node id="29">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>lualib.h</label>
+      </node>
+      <node id="9">
+        <label>commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>selection.cpp - The units&apos; selection.</header>
+      <memberdef kind="variable" id="selection_8cpp_1a7b0e271100bc70a95a714f188d1e694d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int MaxSelectable</definition>
+        <argsstring></argsstring>
+        <name>MaxSelectable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="55" column="14" bodyfile="src/stratagus/selection.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="selection_8cpp_1af183e60d51fd8999d612fe9612bf966c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; Selected</definition>
+        <argsstring></argsstring>
+        <name>Selected</name>
+        <briefdescription>
+<para>Maximum number of selected units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>How many units could be selected. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="57" column="13" bodyfile="src/stratagus/selection.cpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="selection_8cpp_1a429e744b1d742e6b45aab1d36069438b" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; TeamSelected[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>TeamSelected</name>
+        <briefdescription>
+<para>All selected units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="58" column="20" bodyfile="src/stratagus/selection.cpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="selection_8cpp_1a5ac2d1e65ab87717439a7d7769c511bb" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; _Selected</definition>
+        <argsstring></argsstring>
+        <name>_Selected</name>
+        <briefdescription>
+<para>teams currently selected units </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="60" column="20" bodyfile="src/stratagus/selection.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="selection_8cpp_1af7b584581ef7586a6d383bbbee78bf6f" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; _TeamSelected[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>_TeamSelected</name>
+        <briefdescription>
+<para>save of Selected </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="61" column="20" bodyfile="src/stratagus/selection.cpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="selection_8cpp_1ab4b3685d98ad1ea038f38a4173db6810" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned GroupId</definition>
+        <argsstring></argsstring>
+        <name>GroupId</name>
+        <briefdescription>
+<para>save of TeamSelected </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="63" column="17" bodyfile="src/stratagus/selection.cpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aa2f61e92fd39068a28c08aafa9b13878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsOnlySelected</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>IsOnlySelected</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Unique group # for automatic groups. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if unit is the currently only selected. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="69" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a21a0550845b987292bbfa5bbc79484e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveSelection</definition>
+        <argsstring>()</argsstring>
+        <name>SaveSelection</name>
+        <briefdescription>
+<para>Save selection to restore after. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save selection to restore after. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="77" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="77" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a3e5ed7be2a2c712c78aeb0f37964e898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void RestoreSelection</definition>
+        <argsstring>()</argsstring>
+        <name>RestoreSelection</name>
+        <briefdescription>
+<para>Restore selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Restore selection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="88" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="88" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a430dcf5677589c3ea8dfba2dd805f7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UnSelectAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnSelectAll</name>
+        <briefdescription>
+<para>Clear current selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unselect all the units in the current selection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="106" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="106" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aca2696bcfcaf1ad9810a527b2ac70c7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void HandleSuicideClick</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>HandleSuicideClick</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle a suicide unit click</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suicide unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000067"><xreftitle>Todo</xreftitle><xrefdescription><para>remove static (bug with save/load...) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="124" column="13" bodyfile="src/stratagus/selection.cpp" bodystart="124" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aba564795bd513a6e8416702796e87f2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ChangeSelectedUnits</definition>
+        <argsstring>(CUnit **units, unsigned int count)</argsstring>
+        <name>ChangeSelectedUnits</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+          <declname>units</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replace a group of selected units by an other group of units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of units to be selected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of units in array to be selected. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="149" column="13" bodyfile="src/stratagus/selection.cpp" bodystart="149" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a18060ec4446a3230eb4339a3080b9bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ChangeTeamSelectedUnits</definition>
+        <argsstring>(CPlayer &amp;player, const std::vector&lt; CUnit * &gt; &amp;units)</argsstring>
+        <name>ChangeTeamSelectedUnits</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>units</declname>
+        </param>
+        <briefdescription>
+<para>Changed TeamUnit Selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change A Unit Selection from my Team</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Player who is selecting the units </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Units to add/remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="181" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="181" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aa09180995e73e6dc307116f7b7c3f6fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>SelectUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Add a unit to selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a unit to the other selected units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if added to selection, false otherwise (if Selected.size() == MaxSelectable or unit is already selected or unselectable) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="210" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="210" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aac59cb47c1e5996de71767194e01e081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SelectSingleUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>SelectSingleUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Select one unit as selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Select a single unit, unselecting the previous ones</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit to be selected. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="247" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="247" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a30d4aab945ad26cce9b4787536e19a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void UnSelectUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>UnSelectUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Remove a unit from selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unselect unit</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit to be unselected. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="259" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="259" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aae14fe35141c0a35a050b82bf6155d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ToggleSelectUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>ToggleSelectUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Add a unit to selected if not already selected, remove it otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Toggle the selection of a unit in a group of selected units</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit to be toggled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if unselected, 1 otherwise Toggle the selection of a unit in a group of selected units</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit to be toggled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if unselected, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="310" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="310" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a9cce88dc5ab28fc873a93e3022ded637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectUnitsByType</definition>
+        <argsstring>(CUnit &amp;base)</argsstring>
+        <name>SelectUnitsByType</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+<para>Select units from the same type (if selectable by rectangle) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Select units from a particular type and belonging to the local player.</para>
+<para>The base is included in the selection and defines the type of the other units to be selected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Select all units of same type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of units found, 0 means selection unchanged</para>
+</simplesect>
+FIXME: 0 can&apos;t happen. Maybe when scripting will use it?</para>
+<para>FIXME: should always select the nearest 9 units to the base! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="339" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="339" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a8cfc7fc792ebf87a03435b7174d887f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ToggleUnitsByType</definition>
+        <argsstring>(CUnit &amp;base)</argsstring>
+        <name>ToggleUnitsByType</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+<para>Toggle units from the same type (if selectable by rectangle) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Toggle units from a particular type and belonging to the local player.</para>
+<para>The base is included in the selection and defines the type of the other units to be selected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Toggle all units of same type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of units found, 0 means selection unchanged</para>
+</simplesect>
+FIXME: toggle not written FIXME: should always select the nearest 9 units to the base! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="431" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="431" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1abbcd9e9eca79dae1cad2ca843b9a19cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectGroup</definition>
+        <argsstring>(int group_number, GroupSelectionMode mode)</argsstring>
+        <name>SelectGroup</name>
+        <param>
+          <type>int</type>
+          <declname>group_number</declname>
+        </param>
+        <param>
+          <type><ref refid="unittype_8h_1ab96c61edcddf49116827ef61f0b41ac0" kindref="member">GroupSelectionMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Select the units belonging to a particular group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change selected units to units from group group_number Doesn&apos;t change the selection if the group has no unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>group_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the group to be selected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of units in the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="515" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="515" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1ac6f4059f63787fef0f2537ff2f3fc3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddGroupFromUnitToSelection</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AddGroupFromUnitToSelection</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Add the units from the same group as the one in parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add units from group of a particular unit to selection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit belonging to the group to be selected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the unit doesn&apos;t belong to a group, or the number of units in the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="549" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="549" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1ae8080dc07e03c5e9c469c82cc6407e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectGroupFromUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>SelectGroupFromUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Select the units from the same group as the one in parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Select units from group of a particular unit. Doesn&apos;t change the selection if the group has no unit, or the unit doesn&apos;t belong to any group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit belonging to the group to be selected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the unit doesn&apos;t belong to a group, or the number of units in the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="585" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="585" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a5b5f40311927cf0e7a1b0c95b8e04f91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SelectOrganicUnitsInTable</definition>
+        <argsstring>(std::vector&lt; CUnit * &gt; &amp;table, bool added_table)</argsstring>
+        <name>SelectOrganicUnitsInTable</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>added_table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select the units selectable by rectangle in a local table. Act like a filter: The source table is modified. Return the original table if no unit is found.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input/Output table of units.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+return true if at least a unit is found; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="606" column="13" bodyfile="src/stratagus/selection.cpp" bodystart="606" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a248570069ccc4367a8b22fcf1df7fdb6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void SelectSpritesInsideRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright, std::vector&lt; CUnit * &gt; &amp;table)</argsstring>
+        <name>SelectSpritesInsideRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt; &amp;</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Selects units from the table whose sprite is at least partially covered by the rectangle. The rectangle is determined by coordinates of its upper left and lower right corner expressed in screen map coordinate system.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coord of upper left corner of the rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coord of lower right corner of the rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of units</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of units found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="668" column="13" bodyfile="src/stratagus/selection.cpp" bodystart="668" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a7dee576284dc7e1ec72ef4e6d1f357f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectUnitsInRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright)</argsstring>
+        <name>SelectUnitsInRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <briefdescription>
+<para>Select the units in the selection rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Select units in a rectangle. Proceed in order in none found: <itemizedlist>
+<listitem><para>select local player mobile units </para>
+</listitem>
+<listitem><para>select one local player static unit (random) </para>
+</listitem>
+<listitem><para>select one neutral unit (critter, mine...) </para>
+</listitem>
+<listitem><para>select one enemy unit (random)</para>
+</listitem>
+</itemizedlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of selection rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of selection rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of units found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="704" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="704" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a6a8534c13a84c32cf0ca09c599510d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddSelectedUnitsInRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright)</argsstring>
+        <name>AddSelectedUnitsInRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <briefdescription>
+<para>Add the units in the selection rectangle to the current selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the units in the rectangle to the current selection</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of selection rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of selection rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the <emphasis>total</emphasis> number of units selected. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="783" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="783" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a9494b16202c191388624752a91caf412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectGroundUnitsInRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright)</argsstring>
+        <name>SelectGroundUnitsInRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <briefdescription>
+<para>Select ground units in the selection rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Select own ground units in a rectangle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of selection rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of selection rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of units found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="841" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="841" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1afbb6ad254261067973217528f5df74a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SelectAirUnitsInRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright)</argsstring>
+        <name>SelectAirUnitsInRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <briefdescription>
+<para>Select flying units in the selection rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Select own air units in a rectangle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of selection rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of selection rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of units found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="891" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="891" bodyend="929"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a45d2d3bae888f1939a0e27d8687712c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddSelectedGroundUnitsInRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright)</argsstring>
+        <name>AddSelectedGroundUnitsInRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <briefdescription>
+<para>Add ground units in the selection rectangle to the current selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the ground units in the rectangle to the current selection</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of selection rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of selection rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of units found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="940" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="940" bodyend="1000"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1acb58411855d49ee01fc233fb1e7c1b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddSelectedAirUnitsInRectangle</definition>
+        <argsstring>(const PixelPos &amp;corner_topleft, const PixelPos &amp;corner_bottomright)</argsstring>
+        <name>AddSelectedAirUnitsInRectangle</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_topleft</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>corner_bottomright</declname>
+        </param>
+        <briefdescription>
+<para>Add flying units in the selection rectangle to the current selection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the air units in the rectangle to the current selection</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner_topleft</parametername>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of selection rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_bottomright</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of selection rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of units found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="1010" column="5" bodyfile="src/stratagus/selection.cpp" bodystart="1010" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1aff4501cc559fb1c0393043e506f630d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveSelections</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SaveSelections</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Save current selection state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save current selection state.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="1076" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="1076" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a732bfbc91cbfa0f207ad3daf0548c909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanSelections</definition>
+        <argsstring>()</argsstring>
+        <name>CleanSelections</name>
+        <briefdescription>
+<para>Clean up selections. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up the selection module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="1092" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="1092" bodyend="1102"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1ac1686050fdc151450b9cfd806d0cdaaf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclSetGroupId</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclSetGroupId</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current group id. (Needed for load/save)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="1111" column="12" bodyfile="src/stratagus/selection.cpp" bodystart="1111" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1ac62c010c66a3917ec4fe39d406c6b3ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclSelection</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclSelection</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the current selection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="1128" column="12" bodyfile="src/stratagus/selection.cpp" bodystart="1128" bodyend="1141"/>
+      </memberdef>
+      <memberdef kind="function" id="selection_8cpp_1a869be31749fbc04b77ddd3fc0c21ca76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SelectionCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>SelectionCclRegister</name>
+        <briefdescription>
+<para>Register CCL selection features. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for selections. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/selection.cpp" line="1146" column="6" bodyfile="src/stratagus/selection.cpp" bodystart="1146" bodyend="1150"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/stratagus/selection.cpp"/>
+  </compounddef>
+</doxygen>

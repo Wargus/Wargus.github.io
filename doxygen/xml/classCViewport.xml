@@ -1,0 +1,1166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCViewport" kind="class" language="C++" prot="public">
+    <compoundname>CViewport</compoundname>
+    <includes refid="viewport_8h" local="no">viewport.h</includes>
+      <sectiondef kind="user-defined">
+      <header>map_draw.cpp - The map drawing.</header>
+      <memberdef kind="function" id="classCViewport_1add0bb026073a4b9aa1ef2b4468ddcff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CViewport::CViewport</definition>
+        <argsstring>()</argsstring>
+        <name>CViewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="66" column="1" bodyfile="src/map/map_draw.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a6308e6995cf8a837146061d3a37bd547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CViewport::~CViewport</definition>
+        <argsstring>()</argsstring>
+        <name>~CViewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="67" column="1" bodyfile="src/map/map_draw.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a484d05b7baab56fab1a6663bcc983c7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CViewport::IsInsideMapArea</definition>
+        <argsstring>(const PixelPos &amp;screenPixelPos) const</argsstring>
+        <name>IsInsideMapArea</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPixelPos</declname>
+        </param>
+        <briefdescription>
+<para>Check if pos pixels are within map area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="70" column="6" bodyfile="src/map/map_draw.cpp" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a0dd470656c0c3aff31801fbc1e69a6af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CViewport::ScreenToMapPixelPos</definition>
+        <argsstring>(const PixelPos &amp;screenPixelPos) const</argsstring>
+        <name>ScreenToMapPixelPos</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPixelPos</declname>
+        </param>
+        <briefdescription>
+<para>Convert screen coordinates into map pixel coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="73" column="10" bodyfile="src/map/map_draw.cpp" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a20cf43d5e9791f387bcf24887960df55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CViewport::MapToScreenPixelPos</definition>
+        <argsstring>(const PixelPos &amp;mapPixelPos) const</argsstring>
+        <name>MapToScreenPixelPos</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>mapPixelPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="75" column="10" bodyfile="src/map/map_draw.cpp" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1aace330d65aea460787f06f347551fe6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i CViewport::ScreenToTilePos</definition>
+        <argsstring>(const PixelPos &amp;screenPixelPos) const</argsstring>
+        <name>ScreenToTilePos</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPixelPos</declname>
+        </param>
+        <briefdescription>
+<para>convert screen coordinate into tilepos </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="78" column="7" bodyfile="src/map/map_draw.cpp" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a75037b16386419340ea9f0599aa88dee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CViewport::TilePosToScreen_TopLeft</definition>
+        <argsstring>(const Vec2i &amp;tilePos) const</argsstring>
+        <name>TilePosToScreen_TopLeft</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>tilePos</declname>
+        </param>
+        <briefdescription>
+<para>convert tilepos coordonates into screen (take the top left of the tile) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="80" column="10" bodyfile="src/map/map_draw.cpp" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a9de98d39e4cd8c38c6368665a662be8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CViewport::TilePosToScreen_Center</definition>
+        <argsstring>(const Vec2i &amp;tilePos) const</argsstring>
+        <name>TilePosToScreen_Center</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>tilePos</declname>
+        </param>
+        <briefdescription>
+<para>convert tilepos coordonates into screen (take the center of the tile) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="82" column="10" bodyfile="src/map/map_draw.cpp" bodystart="146" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1aa6460adacd277eb163a3eb19cfc51bbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::Set</definition>
+        <argsstring>(const Vec2i &amp;tilePos, const PixelDiff &amp;offset)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>tilePos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a368fe415818899499de54bcbc23906c1" kindref="member">PixelDiff</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Set the current map view to x,y(upper,left corner) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change viewpoint of map viewport v to tilePos.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tilePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset in tile. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="85" column="6" bodyfile="src/map/map_draw.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1ac01b3f9344c3a4770d4ab7228da9f396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::Center</definition>
+        <argsstring>(const PixelPos &amp;mapPixelPos)</argsstring>
+        <name>Center</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>mapPixelPos</declname>
+        </param>
+        <briefdescription>
+<para>Center map on point in viewport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Center map viewport v on map tile (pos).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mapPixelPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map pixel position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="87" column="6" bodyfile="src/map/map_draw.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a212f0ffab64a61f1f3dcef80316e2ab1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::SetClipping</definition>
+        <argsstring>() const</argsstring>
+        <name>SetClipping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="89" column="6" bodyfile="src/map/map_draw.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a350ba167a878fe6afd38017b6737def7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::Draw</definition>
+        <argsstring>() const</argsstring>
+        <name>Draw</name>
+        <briefdescription>
+<para>Draw the full Viewport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw a map viewport. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="92" column="6" bodyfile="src/map/map_draw.cpp" bodystart="325" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a524cfa53af0bfbb31e03cc836510652e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::DrawBorder</definition>
+        <argsstring>() const</argsstring>
+        <name>DrawBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw border around the viewport </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="93" column="6" bodyfile="src/map/map_draw.cpp" bodystart="470" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a888efdbd7dd064801cba3c54f9c9e3ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CViewport::AnyMapAreaVisibleInViewport</definition>
+        <argsstring>(const Vec2i &amp;boxmin, const Vec2i &amp;boxmax) const</argsstring>
+        <name>AnyMapAreaVisibleInViewport</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>boxmin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>boxmax</declname>
+        </param>
+        <briefdescription>
+<para>Check if any part of an area is visible in viewport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if any part of an area is visible in a viewport.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boxmin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position of area in map to be checked. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>boxmax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position of area in map to be checked.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if any part of area is visible, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="95" column="6" bodyfile="src/map/map_draw.cpp" bodystart="91" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1aa328480db8902471c61e11fd3781502f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CViewport::Contains</definition>
+        <argsstring>(const PixelPos &amp;screenPos) const</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="97" column="6" bodyfile="src/map/map_draw.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1afb0003a007b86d4c00abcbd8832b9f33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::Restrict</definition>
+        <argsstring>(int &amp;screenPosX, int &amp;screenPosY) const</argsstring>
+        <name>Restrict</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>screenPosX</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>screenPosY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="99" column="6" bodyfile="src/map/map_draw.cpp" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a55337cc5163f5aaae1b217a29c96f176" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1af534067813f6a469efcb9db41e7fe583" kindref="member">PixelSize</ref></type>
+        <definition>PixelSize CViewport::GetPixelSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPixelSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="101" column="11" bodyfile="src/map/map_draw.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1afc3cee87e012e692ee3b10ebd1d1b4cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::Set</definition>
+        <argsstring>(const PixelPos &amp;mapPixelPos)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>mapPixelPos</declname>
+          <defname>mapPos</defname>
+        </param>
+        <briefdescription>
+<para>Set the current map view to x,y(upper,left corner) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change viewpoint of map viewport v to tilePos.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tilePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map tile position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset in tile. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="106" column="6" bodyfile="src/map/map_draw.cpp" bodystart="159" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a53d35f836aef95e12491cb66cbaf4de3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::DrawMapBackgroundInViewport</definition>
+        <argsstring>() const</argsstring>
+        <name>DrawMapBackgroundInViewport</name>
+        <briefdescription>
+<para>Draw the map background. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the map backgrounds.</para>
+<para>StephanR: variables explained below for screen:<preformatted>
+*---------------------------------------*
+|                                       |
+|        *-----------------------*      |&lt;-TheUi.MapY,dy (in pixels)
+|        |   |   |   |   |   |   |      |        |
+|        |   |   |   |   |   |   |      |        |
+|        |---+---+---+---+---+---|      |        |
+|        |   |   |   |   |   |   |      |        |MapHeight (in tiles)
+|        |   |   |   |   |   |   |      |        |
+|        |---+---+---+---+---+---|      |        |
+|        |   |   |   |   |   |   |      |        |
+|        |   |   |   |   |   |   |      |        |
+|        *-----------------------*      |&lt;-ey,UI.MapEndY (in pixels)
+|                                       |
+|                                       |
+*---------------------------------------*
+         ^                       ^
+       dx|-----------------------|ex,UI.MapEndX (in pixels)
+           UI.MapX MapWidth (in tiles)
+(in pixels)
+</preformatted> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="108" column="6" bodyfile="src/map/map_draw.cpp" bodystart="239" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>map_fog.cpp - The map fog of war handling.</header>
+      <memberdef kind="function" id="classCViewport_1adbdeff6434d7acdbfb0ab1d6c6726450" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CViewport::DrawMapFogOfWar</definition>
+        <argsstring>() const</argsstring>
+        <name>DrawMapFogOfWar</name>
+        <briefdescription>
+<para>Draw the map fog of war. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the map fog of war. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="110" column="6" bodyfile="src/map/map_fog.cpp" bodystart="605" bodyend="647"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCViewport_1a1bd44a326ec2debefd1bc5041bbe3f2b" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CViewport::TopLeftPos</definition>
+        <argsstring></argsstring>
+        <name>TopLeftPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="114" column="10" bodyfile="src/include/viewport.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCViewport_1a7617aaa019ac32d6cfd5a1ef8ae3c01e" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CViewport::BottomRightPos</definition>
+        <argsstring></argsstring>
+        <name>BottomRightPos</name>
+        <briefdescription>
+<para>Screen pixel top-left corner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="115" column="10" bodyfile="src/include/viewport.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCViewport_1a528ddd5dc093da447f1b1fb359f78b39" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i CViewport::MapPos</definition>
+        <argsstring></argsstring>
+        <name>MapPos</name>
+        <briefdescription>
+<para>Screen pixel bottom-right corner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="118" column="7" bodyfile="src/include/viewport.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCViewport_1af152fbd268d42a54741bc30e59efba91" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a368fe415818899499de54bcbc23906c1" kindref="member">PixelDiff</ref></type>
+        <definition>PixelDiff CViewport::Offset</definition>
+        <argsstring></argsstring>
+        <name>Offset</name>
+        <briefdescription>
+<para>Map tile left-upper corner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="119" column="11" bodyfile="src/include/viewport.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCViewport_1a8244df2d40a4cb4e54b24b6e55cac080" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CViewport::MapWidth</definition>
+        <argsstring></argsstring>
+        <name>MapWidth</name>
+        <briefdescription>
+<para>Offset within MapX, MapY. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="120" column="5" bodyfile="src/include/viewport.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCViewport_1ab5f6da8faf3134428d76137b54322901" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CViewport::MapHeight</definition>
+        <argsstring></argsstring>
+        <name>MapHeight</name>
+        <briefdescription>
+<para>Width in map tiles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="121" column="5" bodyfile="src/include/viewport.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCViewport_1a5316ce6f4727597736a73a5aff060d26" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CViewport::Unit</definition>
+        <argsstring></argsstring>
+        <name>Unit</name>
+        <briefdescription>
+<para>Height in map tiles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="123" column="7" bodyfile="src/include/viewport.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCViewport_1ab6900f0ce0cd1774c2366e2053592fe8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+        <definition>const PixelPos&amp; CViewport::GetTopLeftPos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTopLeftPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="102" column="16" bodyfile="src/include/viewport.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classCViewport_1a0907c848dd92a248ede682509c4cee91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+        <definition>const PixelPos&amp; CViewport::GetBottomRightPos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBottomRightPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/viewport.h" line="103" column="16" bodyfile="src/include/viewport.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A map viewport.</para>
+<para>A part of the map displayed on screen.</para>
+<para><ref refid="classCViewport_1a1bd44a326ec2debefd1bc5041bbe3f2b" kindref="member">CViewport::TopLeftPos</ref> <ref refid="classCViewport_1a7617aaa019ac32d6cfd5a1ef8ae3c01e" kindref="member">CViewport::BottomRightPos</ref></para>
+<para>upper left corner of this viewport is located at pixel coordinates (TopLeftPosTopLeftPos) with respect to upper left corner of stratagus&apos;s window, similarly lower right corner of this viewport is (BottomRightPos) pixels away from the UL corner of stratagus&apos;s window.</para>
+<para>CViewport::MapX CViewport::MapY <ref refid="classCViewport_1a8244df2d40a4cb4e54b24b6e55cac080" kindref="member">CViewport::MapWidth</ref> <ref refid="classCViewport_1ab5f6da8faf3134428d76137b54322901" kindref="member">CViewport::MapHeight</ref></para>
+<para>Tile coordinates of UL corner of this viewport with respect to UL corner of the whole map.</para>
+<para><ref refid="classCViewport_1a5316ce6f4727597736a73a5aff060d26" kindref="member">CViewport::Unit</ref></para>
+<para>Viewport is bound to a unit. If the unit moves the viewport changes the position together with the unit. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>CSound</label>
+        <link refid="classCSound"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Second</edgelabel>
+          <edgelabel>First</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>CIcon</label>
+        <link refid="classCIcon"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>GScale</edgelabel>
+          <edgelabel>G</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>PathFinderOutput</label>
+        <link refid="classPathFinderOutput"/>
+      </node>
+      <node id="29">
+        <label>NumberDesc</label>
+        <link refid="structNumberDesc"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>binOp</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>String</edgelabel>
+          <edgelabel>DataType</edgelabel>
+          <edgelabel>ResType</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>Cond</edgelabel>
+          <edgelabel>BFalse</edgelabel>
+          <edgelabel>N</edgelabel>
+          <edgelabel>BTrue</edgelabel>
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>CPlayerColorGraphic</label>
+        <link refid="classCPlayerColorGraphic"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>CConstruction</label>
+        <link refid="classCConstruction"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>File</edgelabel>
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>ShadowSprite</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Frames</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CUnitSound</label>
+        <link refid="classCUnitSound"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Dead</edgelabel>
+          <edgelabel>Acknowledgement</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>WorkComplete</edgelabel>
+          <edgelabel>Selected</edgelabel>
+          <edgelabel>Build</edgelabel>
+          <edgelabel>Repair</edgelabel>
+          <edgelabel>Ready</edgelabel>
+          <edgelabel>Help</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>PathFinderData</label>
+        <link refid="classPathFinderData"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ResourceInfo</label>
+        <link refid="classResourceInfo"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>SpriteWhenLoaded</edgelabel>
+          <edgelabel>SpriteWhenEmpty</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>FileWhenEmpty</edgelabel>
+          <edgelabel>FileWhenLoaded</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>AiForceManager</label>
+        <link refid="classAiForceManager"/>
+      </node>
+      <node id="25">
+        <label>CVariable</label>
+        <link refid="classCVariable"/>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="36">
+        <label>Vec2T&lt; short int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="30">
+        <label>BinOp</label>
+        <link refid="structBinOp"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>Left</edgelabel>
+          <edgelabel>Right</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gcn::ImageLoader</label>
+        <link refid="classgcn_1_1ImageLoader"/>
+      </node>
+      <node id="45">
+        <label>CUnit::_unit_anim_</label>
+        <link refid="structCUnit_1_1__unit__anim__"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>CurrAnim</edgelabel>
+          <edgelabel>Anim</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>MissileType</label>
+        <link refid="classMissileType"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ImpactSound</edgelabel>
+          <edgelabel>FiredSound</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>OnImpact</edgelabel>
+          <edgelabel>SmokeParticle</edgelabel>
+          <edgelabel>ImpactParticle</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>Damage</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>G</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Smoke</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CViewport</label>
+        <link refid="classCViewport"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>MapPos</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>Offset</edgelabel>
+          <edgelabel>BottomRightPos</edgelabel>
+          <edgelabel>TopLeftPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gcn::Image</label>
+        <link refid="classgcn_1_1Image"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mImageLoader</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>CGraphic</label>
+        <link refid="classCGraphic"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>frameFlip_map</edgelabel>
+          <edgelabel>frame_map</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>HashFile</edgelabel>
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>CUnit::CUnitManagerData</label>
+        <link refid="classCUnit_1_1CUnitManagerData"/>
+      </node>
+      <node id="6">
+        <label>Mng</label>
+        <link refid="classMng"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>UnitDesc</label>
+        <link refid="structUnitDesc"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>AUnit</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>CPlayer</label>
+        <link refid="classCPlayer"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>Allow</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>UnitColors</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>UpgradeTimers</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>Ai</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>StartPos</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>AiName</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>CAllow</label>
+        <link refid="classCAllow"/>
+      </node>
+      <node id="2">
+        <label>CUnit</label>
+        <link refid="classCUnit"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Goal</edgelabel>
+          <edgelabel>Workers</edgelabel>
+          <edgelabel>NextContained</edgelabel>
+          <edgelabel>UnitInside</edgelabel>
+          <edgelabel>PrevContained</edgelabel>
+          <edgelabel>Container</edgelabel>
+          <edgelabel>NextWorker</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>Seen</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>Variable</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>RescuedFrom</edgelabel>
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Colors</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>tilePos</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>NewOrder</edgelabel>
+          <edgelabel>SavedOrder</edgelabel>
+          <edgelabel>CriticalOrder</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>WaitBackup</edgelabel>
+          <edgelabel>Anim</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>pathFinderData</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>Stats</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>UnitManagerData</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CUnitType</label>
+        <link refid="classCUnitType"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>NeutralMinimapColorRGB</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CorpseType</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Portrait</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>MapSound</edgelabel>
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Construction</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Icon</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>Sprite</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>File</edgelabel>
+          <edgelabel>Name</edgelabel>
+          <edgelabel>CorpseName</edgelabel>
+          <edgelabel>Ident</edgelabel>
+          <edgelabel>DamageType</edgelabel>
+          <edgelabel>ShadowFile</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ResInfo</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>OnHit</edgelabel>
+          <edgelabel>OnReady</edgelabel>
+          <edgelabel>OnEachCycle</edgelabel>
+          <edgelabel>TeleportEffectOut</edgelabel>
+          <edgelabel>TeleportEffectIn</edgelabel>
+          <edgelabel>OnEachSecond</edgelabel>
+          <edgelabel>OnInit</edgelabel>
+          <edgelabel>DeathExplosion</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>Animations</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>ShadowSprite</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>DefaultStat</edgelabel>
+          <edgelabel>MapDefaultStat</edgelabel>
+          <edgelabel>Stats</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>MissileOffsets</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Missile</edgelabel>
+          <edgelabel>Impact</edgelabel>
+          <edgelabel>Explosion</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>CAnimations</label>
+        <link refid="classCAnimations"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Move</edgelabel>
+          <edgelabel>Death</edgelabel>
+          <edgelabel>Train</edgelabel>
+          <edgelabel>Still</edgelabel>
+          <edgelabel>RangedAttack</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>SpellCast</edgelabel>
+          <edgelabel>Upgrade</edgelabel>
+          <edgelabel>Research</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CColor</label>
+        <link refid="classCColor"/>
+      </node>
+      <node id="18">
+        <label>IconConfig</label>
+        <link refid="classIconConfig"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>Icon</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>CAiType</label>
+        <link refid="classCAiType"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Race</edgelabel>
+          <edgelabel>Class</edgelabel>
+          <edgelabel>Script</edgelabel>
+          <edgelabel>Name</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>CGraphic::frame_pos_t</label>
+      </node>
+      <node id="40">
+        <label>CUpgradeTimers</label>
+        <link refid="classCUpgradeTimers"/>
+      </node>
+      <node id="41">
+        <label>PlayerAi</label>
+        <link refid="classPlayerAi"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>AiType</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>Force</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Script</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>CUnitStats</label>
+        <link refid="classCUnitStats"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>Variables</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Vec2T&lt; int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="48">
+        <label>PathFinderInput</label>
+        <link refid="classPathFinderInput"/>
+      </node>
+      <node id="39">
+        <label>CUnitColors</label>
+        <link refid="classCUnitColors"/>
+      </node>
+      <node id="27">
+        <label>MissileConfig</label>
+        <link refid="classMissileConfig"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Missile</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>CUnit::_seen_stuff_</label>
+        <link refid="structCUnit_1_1__seen__stuff__"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Type</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>tilePos</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>CFrame</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>CAnimation</label>
+        <link refid="classCAnimation"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>CFont</label>
+        <link refid="classCFont"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>CConstructionFrame</label>
+        <link refid="classCConstructionFrame"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CUnitType::_portrait_</label>
+        <link refid="structCUnitType_1_1__portrait__"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Mngs</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SoundConfig</label>
+        <link refid="classSoundConfig"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="44">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+      <node id="21">
+        <label>LuaCallback</label>
+        <link refid="classLuaCallback"/>
+      </node>
+      <node id="31">
+        <label>StringDesc</label>
+        <link refid="structStringDesc"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>String</edgelabel>
+          <edgelabel>BFalse</edgelabel>
+          <edgelabel>Strings</edgelabel>
+          <edgelabel>BTrue</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>Unit</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>Cond</edgelabel>
+          <edgelabel>MaxLen</edgelabel>
+          <edgelabel>Line</edgelabel>
+          <edgelabel>PlayerName</edgelabel>
+          <edgelabel>Begin</edgelabel>
+          <edgelabel>Number</edgelabel>
+          <edgelabel>End</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/viewport.h" line="64" column="1" bodyfile="src/include/viewport.h" bodystart="63" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classCViewport_1a888efdbd7dd064801cba3c54f9c9e3ea" prot="public" virt="non-virtual"><scope>CViewport</scope><name>AnyMapAreaVisibleInViewport</name></member>
+      <member refid="classCViewport_1a7617aaa019ac32d6cfd5a1ef8ae3c01e" prot="public" virt="non-virtual"><scope>CViewport</scope><name>BottomRightPos</name></member>
+      <member refid="classCViewport_1ac01b3f9344c3a4770d4ab7228da9f396" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Center</name></member>
+      <member refid="classCViewport_1aa328480db8902471c61e11fd3781502f" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Contains</name></member>
+      <member refid="classCViewport_1add0bb026073a4b9aa1ef2b4468ddcff1" prot="public" virt="non-virtual"><scope>CViewport</scope><name>CViewport</name></member>
+      <member refid="classCViewport_1a350ba167a878fe6afd38017b6737def7" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Draw</name></member>
+      <member refid="classCViewport_1a524cfa53af0bfbb31e03cc836510652e" prot="public" virt="non-virtual"><scope>CViewport</scope><name>DrawBorder</name></member>
+      <member refid="classCViewport_1a53d35f836aef95e12491cb66cbaf4de3" prot="private" virt="non-virtual"><scope>CViewport</scope><name>DrawMapBackgroundInViewport</name></member>
+      <member refid="classCViewport_1adbdeff6434d7acdbfb0ab1d6c6726450" prot="private" virt="non-virtual"><scope>CViewport</scope><name>DrawMapFogOfWar</name></member>
+      <member refid="classCViewport_1a0907c848dd92a248ede682509c4cee91" prot="public" virt="non-virtual"><scope>CViewport</scope><name>GetBottomRightPos</name></member>
+      <member refid="classCViewport_1a55337cc5163f5aaae1b217a29c96f176" prot="public" virt="non-virtual"><scope>CViewport</scope><name>GetPixelSize</name></member>
+      <member refid="classCViewport_1ab6900f0ce0cd1774c2366e2053592fe8" prot="public" virt="non-virtual"><scope>CViewport</scope><name>GetTopLeftPos</name></member>
+      <member refid="classCViewport_1a484d05b7baab56fab1a6663bcc983c7b" prot="public" virt="non-virtual"><scope>CViewport</scope><name>IsInsideMapArea</name></member>
+      <member refid="classCViewport_1ab5f6da8faf3134428d76137b54322901" prot="public" virt="non-virtual"><scope>CViewport</scope><name>MapHeight</name></member>
+      <member refid="classCViewport_1a528ddd5dc093da447f1b1fb359f78b39" prot="public" virt="non-virtual"><scope>CViewport</scope><name>MapPos</name></member>
+      <member refid="classCViewport_1a20cf43d5e9791f387bcf24887960df55" prot="public" virt="non-virtual"><scope>CViewport</scope><name>MapToScreenPixelPos</name></member>
+      <member refid="classCViewport_1a8244df2d40a4cb4e54b24b6e55cac080" prot="public" virt="non-virtual"><scope>CViewport</scope><name>MapWidth</name></member>
+      <member refid="classCViewport_1af152fbd268d42a54741bc30e59efba91" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Offset</name></member>
+      <member refid="classCViewport_1afb0003a007b86d4c00abcbd8832b9f33" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Restrict</name></member>
+      <member refid="classCViewport_1a0dd470656c0c3aff31801fbc1e69a6af" prot="public" virt="non-virtual"><scope>CViewport</scope><name>ScreenToMapPixelPos</name></member>
+      <member refid="classCViewport_1aace330d65aea460787f06f347551fe6c" prot="public" virt="non-virtual"><scope>CViewport</scope><name>ScreenToTilePos</name></member>
+      <member refid="classCViewport_1aa6460adacd277eb163a3eb19cfc51bbb" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Set</name></member>
+      <member refid="classCViewport_1afc3cee87e012e692ee3b10ebd1d1b4cb" prot="private" virt="non-virtual"><scope>CViewport</scope><name>Set</name></member>
+      <member refid="classCViewport_1a212f0ffab64a61f1f3dcef80316e2ab1" prot="public" virt="non-virtual"><scope>CViewport</scope><name>SetClipping</name></member>
+      <member refid="classCViewport_1a9de98d39e4cd8c38c6368665a662be8e" prot="public" virt="non-virtual"><scope>CViewport</scope><name>TilePosToScreen_Center</name></member>
+      <member refid="classCViewport_1a75037b16386419340ea9f0599aa88dee" prot="public" virt="non-virtual"><scope>CViewport</scope><name>TilePosToScreen_TopLeft</name></member>
+      <member refid="classCViewport_1a1bd44a326ec2debefd1bc5041bbe3f2b" prot="public" virt="non-virtual"><scope>CViewport</scope><name>TopLeftPos</name></member>
+      <member refid="classCViewport_1a5316ce6f4727597736a73a5aff060d26" prot="public" virt="non-virtual"><scope>CViewport</scope><name>Unit</name></member>
+      <member refid="classCViewport_1a6308e6995cf8a837146061d3a37bd547" prot="public" virt="non-virtual"><scope>CViewport</scope><name>~CViewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

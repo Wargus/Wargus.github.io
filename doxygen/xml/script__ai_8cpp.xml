@@ -1,0 +1,1537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="script__ai_8cpp" kind="file" language="C++">
+    <compoundname>script_ai.cpp</compoundname>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includes refid="net__lowlevel_8h" local="yes">net_lowlevel.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="ai_8h" local="yes">ai.h</includes>
+    <includes refid="ai__local_8h" local="yes">ai_local.h</includes>
+    <includes refid="interface_8h" local="yes">interface.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="script_8h" local="yes">script.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__manager_8h" local="yes">unit_manager.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="upgrade_8h" local="yes">upgrade.h</includes>
+    <incdepgraph>
+      <node id="39">
+        <label>list</label>
+      </node>
+      <node id="16">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/ai/script_ai.cpp</label>
+        <link refid="script__ai_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>queue</label>
+      </node>
+      <node id="14">
+        <label>ai.h</label>
+        <link refid="ai_8h"/>
+      </node>
+      <node id="12">
+        <label>cstdint</label>
+      </node>
+      <node id="10">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>lua.h</label>
+      </node>
+      <node id="28">
+        <label>stdint.h</label>
+      </node>
+      <node id="38">
+        <label>unit_manager.h</label>
+        <link refid="unit__manager_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="37">
+        <label>map</label>
+      </node>
+      <node id="40">
+        <label>upgrade.h</label>
+        <link refid="upgrade_8h"/>
+      </node>
+      <node id="7">
+        <label>winsock2.h</label>
+      </node>
+      <node id="20">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="35">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>network.h</label>
+        <link refid="network_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>climits</label>
+      </node>
+      <node id="19">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="33">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>net_lowlevel.h</label>
+        <link refid="net__lowlevel_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>set</label>
+      </node>
+      <node id="34">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>algorithm</label>
+      </node>
+      <node id="25">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>script_ai.cpp - The AI ccl functions.</header>
+      <memberdef kind="function" id="script__ai_8cpp_1a09c962581bd6230dfa0ddd77aaf3edb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiHelperInsert</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; CUnitType * &gt; &gt; &amp;table, unsigned int n, CUnitType &amp;base)</argsstring>
+        <name>AiHelperInsert</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt; &gt; &amp;</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert new unit-type element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table with elements. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index to insert new into table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base type to insert into table. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="60" column="13" bodyfile="src/ai/script_ai.cpp" bodystart="60" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ae7e3cb7b86a2a6a23fff770894c3ff3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt;</type>
+        <definition>static std::vector&lt;CUnitType *&gt; getUnitTypeFromString</definition>
+        <argsstring>(const std::string &amp;list)</argsstring>
+        <name>getUnitTypeFromString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform list of unit separed with coma to a true list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="77" column="20" bodyfile="src/ai/script_ai.cpp" bodystart="77" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a00b5faf8e7c48aff1c458f499c90b31a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt;</type>
+        <definition>static std::vector&lt;CUnitType *&gt; getReparableUnits</definition>
+        <argsstring>()</argsstring>
+        <name>getReparableUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get list of unittype which can be repared. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="101" column="20" bodyfile="src/ai/script_ai.cpp" bodystart="101" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1af1ac26ade054309d68f9946503f0213d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt;</type>
+        <definition>static std::vector&lt;CUnitType *&gt; getSupplyUnits</definition>
+        <argsstring>()</argsstring>
+        <name>getSupplyUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get sorted list of unittype with Supply not null.</para>
+<para><simplesect kind="note"><para>Better (supply / cost) first. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="120" column="20" bodyfile="src/ai/script_ai.cpp" bodystart="120" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a5c6919b915fffe0d797b1fc0d07eaa45" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classCUnitType" kindref="compound">CUnitType</ref> * &gt;</type>
+        <definition>static std::vector&lt;CUnitType *&gt; getRefineryUnits</definition>
+        <argsstring>()</argsstring>
+        <name>getRefineryUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get sorted list of unittype with CanHarvest not null.</para>
+<para><simplesect kind="note"><para>Better (MaxOnBoard / cost) first. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="166" column="20" bodyfile="src/ai/script_ai.cpp" bodystart="166" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a60764903815456619be1fb6155c90821" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void InitAiHelper</definition>
+        <argsstring>(AiHelper &amp;aiHelper)</argsstring>
+        <name>InitAiHelper</name>
+        <param>
+          <type><ref refid="classAiHelper" kindref="compound">AiHelper</ref> &amp;</type>
+          <declname>aiHelper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <ref refid="classAiHelper" kindref="compound">AiHelper</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aiHelper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable to initialise.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000013"><xreftitle>Todo</xreftitle><xrefdescription><para>missing Equiv initialisation. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="221" column="13" bodyfile="src/ai/script_ai.cpp" bodystart="221" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a5ec94ecaf351ccc88baa73b4913d8cff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclDefineAiHelper</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclDefineAiHelper</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define helper for AI.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000014"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: the first unit could be a list see ../doc/ccl/ai.html </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="307" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="307" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a609151e6d7d39a15b3ade93d12972b73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCAiType" kindref="compound">CAiType</ref> *</type>
+        <definition>static CAiType* GetAiTypesByName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetAiTypesByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="353" column="16" bodyfile="src/ai/script_ai.cpp" bodystart="353" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1af71463cab1e3097752ad6fea7c094138" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclDefineAi</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclDefineAi</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define an AI engine.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FIXME: docu </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="371" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="371" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a3af1c5e66624c2670c5f187b119f97e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void InsertUnitTypeRequests</definition>
+        <argsstring>(CUnitType *type, int count)</argsstring>
+        <name>InsertUnitTypeRequests</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append unit-type to request table.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type to be appended. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many unit-types to build. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="429" column="13" bodyfile="src/ai/script_ai.cpp" bodystart="429" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a0716879dd284b0c67c21e313529936b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classAiRequestType" kindref="compound">AiRequestType</ref> *</type>
+        <definition>static AiRequestType* FindInUnitTypeRequests</definition>
+        <argsstring>(const CUnitType *type)</argsstring>
+        <name>FindInUnitTypeRequests</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find unit-type in request table.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type to be found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="444" column="22" bodyfile="src/ai/script_ai.cpp" bodystart="444" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a6311ba86fa9c8c264128ee65eea6f283" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int FindInUpgradeToRequests</definition>
+        <argsstring>(const CUnitType *type)</argsstring>
+        <name>FindInUpgradeToRequests</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find unit-type in upgrade-to table.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type to be found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="461" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="461" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ab592bee24deac93ca8f2ac95e4a61582" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void InsertUpgradeToRequests</definition>
+        <argsstring>(CUnitType *type)</argsstring>
+        <name>InsertUpgradeToRequests</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append unit-type to request table.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type to be appended. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="477" column="13" bodyfile="src/ai/script_ai.cpp" bodystart="477" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a0a7c7de8d878c0d7cfdb40a96f653752" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void InsertResearchRequests</definition>
+        <argsstring>(CUpgrade *upgrade)</argsstring>
+        <name>InsertResearchRequests</name>
+        <param>
+          <type><ref refid="classCUpgrade" kindref="compound">CUpgrade</ref> *</type>
+          <declname>upgrade</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append unit-type to request table.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upgrade</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upgrade to be appended. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="487" column="13" bodyfile="src/ai/script_ai.cpp" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a6cbd5044b0374a74c90ca35edd193dda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiGetRace</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiGetRace</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the race of the current AI player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="499" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="499" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a6aa9329fd3a3e25216d7b27d1f7663a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiGetSleepCycles</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiGetSleepCycles</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of cycles to sleep.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="513" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="513" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ac9db41fd0e6cc2efcfaecdc3f1d67b3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiDebug</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiDebug</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set debugging flag of AI script</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="529" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="529" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ac47c03cc318e86d301798767792f8c42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiDebugPlayer</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiDebugPlayer</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Activate AI debugging for the given player(s) Player can be a number for a specific player &quot;self&quot; for current human player (ai me) &quot;none&quot; to disable</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="546" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="546" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1aeb811abe8baaf37bdad63fd1aefed0f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiNeed</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiNeed</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Need a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="591" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="591" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a4118fd333e3688db01726f8bdfcff15c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiSet</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiSet</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="607" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="607" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a1f78fe8fa4e16052763fbd41b8a13361" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiWait</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiWait</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait for a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua State.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="632" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="632" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a28395098a6eeac218ef1edff2798605e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiPendingBuildCount</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiPendingBuildCount</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get number of active build requests for a unit type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua State.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of return values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="688" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="688" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1aff0ab3f0e256dbfeb88c95228335a94c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiForce</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiForce</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define a force, a groups of units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="710" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="710" bodyend="781"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a5daf81dd664bb8cbe8a931cd664dba14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiForceRole</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiForceRole</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the role of a force.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="788" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="788" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a09e83d78184ab7c307e6ee4e581ae912" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiReleaseForce</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiReleaseForce</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release force.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="815" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="815" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a3e8e5a1eec0280d758ca938c6f45c448" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiCheckForce</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiCheckForce</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a force ready.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="842" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="842" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a1c146cafb44266d8733568d183cadfbd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiWaitForce</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiWaitForce</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait for a force ready.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="862" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="862" bodyend="880"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a671a3df6a95a7302abeab62e6cc3cd3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiAttackWithForce</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiAttackWithForce</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack with force.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="887" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="887" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a7972ff904de68e32bb4be690e20604c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiWaitForces</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiWaitForces</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait for a forces ready.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="904" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="904" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a26802dac8813000fcf87fc04ca17746f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiAttackWithForces</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiAttackWithForces</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack with forces.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="931" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="931" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a143e57667115244b7cef833db4200030" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiSleep</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiSleep</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sleep n cycles.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="959" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="959" bodyend="974"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ae27e4fe9948711dcf406aedca4a9bcf6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiResearch</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiResearch</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Research an upgrade.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="981" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="981" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1aa81086ace3004c440c3535821e33a317" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiUpgradeTo</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiUpgradeTo</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upgrade an unit to an new unit-type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1003" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1003" bodyend="1011"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a9ec5eb3542caa5a5a245c81b9a8fc2f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiPlayer</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiPlayer</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the player of the running AI.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Player number of the AI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1020" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1020" bodyend="1025"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a706a776dc45bc961327b443fd7acf335" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiSetReserve</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiSetReserve</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set AI player resource reserve.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Old resource vector </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1034" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1034" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ad233b899068d0834fe89544a396b3912" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiSetCollect</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiSetCollect</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set AI player resource collect percent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1056" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1056" bodyend="1066"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1aeb38ee8109fc4654601a7fc0111cad5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiSetBuildDepots</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiSetBuildDepots</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set AI player build.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1073" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1073" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1af0338ad282a68a929d86e5f7392ca777" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiDump</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiDump</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dump some AI debug information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1088" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1088" bodyend="1154"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a1d584417d54bf0dea393c05a8d19bc99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void CclParseBuildQueue</definition>
+        <argsstring>(lua_State *l, PlayerAi *ai, int offset)</argsstring>
+        <name>CclParseBuildQueue</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> *</type>
+          <declname>ai</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse <ref refid="classAiBuildQueue" kindref="compound">AiBuildQueue</ref> builing list</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> pointer which should be filled with the data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1162" column="13" bodyfile="src/ai/script_ai.cpp" bodystart="1162" bodyend="1197"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a6e6c25c19962c50c809681b7abfde437" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclDefineAiPlayer</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclDefineAiPlayer</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define an AI player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1204" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1204" bodyend="1442"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a27e451d1edbed2e1744a56ceed6b2ad4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiProcessorSetup</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiProcessorSetup</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AiProcessorSetup(host, port, number_of_state_variables, number_of_actions)</para>
+<para>Connect to an AI agent running at host:port, that will consume number_of_state_variables every step and select one of number_of_actions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1450" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1450" bodyend="1475"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ace3ffd7d281d2fe1616cfdac5f607913" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCTCPSocket" kindref="compound">CTCPSocket</ref> *</type>
+        <definition>static CTCPSocket* AiProcessorSendState</definition>
+        <argsstring>(lua_State *l, char prefix)</argsstring>
+        <name>AiProcessorSendState</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1477" column="20" bodyfile="src/ai/script_ai.cpp" bodystart="1477" bodyend="1509"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1a8a8e222a99bf7f286cbdaad6c3029279" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiProcessorStep</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiProcessorStep</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AiProcessorStep(handle, reward_since_last_call, table_of_state_variables) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1514" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1514" bodyend="1530"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ae2693cdaea14f0499d15770e51c9b1fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclAiProcessorEnd</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclAiProcessorEnd</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1532" column="12" bodyfile="src/ai/script_ai.cpp" bodystart="1532" bodyend="1538"/>
+      </memberdef>
+      <memberdef kind="function" id="script__ai_8cpp_1ac5d801d52ede4ec912059bfd52d9f866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>AiCclRegister</name>
+        <briefdescription>
+<para>Save the AI state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for unit-type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/script_ai.cpp" line="1543" column="6" bodyfile="src/ai/script_ai.cpp" bodystart="1543" bodyend="1589"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/script_ai.cpp"/>
+  </compounddef>
+</doxygen>

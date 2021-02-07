@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classFileWriter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>FileWriter</compoundname>
+    <derivedcompoundref refid="classGzFileWriter" prot="public" virt="non-virtual">GzFileWriter</derivedcompoundref>
+    <derivedcompoundref refid="classRawFileWriter" prot="public" virt="non-virtual">RawFileWriter</derivedcompoundref>
+    <includes refid="iolib_8h" local="no">iolib.h</includes>
+      <sectiondef kind="user-defined">
+      <header>iolib.cpp - Compression-IO helper functions.</header>
+      <memberdef kind="function" id="classFileWriter_1a7daffea56e0983cfdcd18f5d9523c8cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FileWriter::printf</definition>
+        <argsstring>(const char *format,...) PRINTF_VAARG_ATTRIBUTE(2</argsstring>
+        <name>printf</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="62" column="6" bodyfile="src/stratagus/iolib.cpp" bodystart="756" bodyend="767"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFileWriter_1ab375b97e68e28a2ea92154e35fc2ccea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FileWriter::~FileWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~FileWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="60" column="9" bodyfile="src/include/iolib.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classFileWriter_1adf0b146c962a9384a6fac07dffbd01c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> virtual int</type>
+        <definition>void virtual int FileWriter::write</definition>
+        <argsstring>(const char *data, unsigned int size)=0</argsstring>
+        <name>write</name>
+        <reimplementedby refid="classRawFileWriter_1ae1c383c5cdc876f10eb710bd1db9be8c">write</reimplementedby>
+        <reimplementedby refid="classGzFileWriter_1a3a09b0d7fee52cb4c8a35ed4013a0ee2">write</reimplementedby>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="64" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract class representing files one can write to. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>GzFileWriter</label>
+        <link refid="classGzFileWriter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FileWriter</label>
+        <link refid="classFileWriter"/>
+      </node>
+      <node id="3">
+        <label>RawFileWriter</label>
+        <link refid="classRawFileWriter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/include/iolib.h" line="58" column="1" bodyfile="src/include/iolib.h" bodystart="57" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classFileWriter_1a7daffea56e0983cfdcd18f5d9523c8cb" prot="public" virt="non-virtual"><scope>FileWriter</scope><name>printf</name></member>
+      <member refid="classFileWriter_1adf0b146c962a9384a6fac07dffbd01c2" prot="public" virt="pure-virtual"><scope>FileWriter</scope><name>write</name></member>
+      <member refid="classFileWriter_1ab375b97e68e28a2ea92154e35fc2ccea" prot="public" virt="virtual"><scope>FileWriter</scope><name>~FileWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

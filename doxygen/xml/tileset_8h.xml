@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tileset_8h" kind="file" language="C++">
+    <compoundname>tileset.h</compoundname>
+    <includes refid="vec2i_8h" local="yes">vec2i.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="action__attack_8cpp" local="yes">src/action/action_attack.cpp</includedby>
+    <includedby refid="action__move_8cpp" local="yes">src/action/action_move.cpp</includedby>
+    <includedby refid="action__resource_8cpp" local="yes">src/action/action_resource.cpp</includedby>
+    <includedby refid="action__still_8cpp" local="yes">src/action/action_still.cpp</includedby>
+    <includedby refid="ai__building_8cpp" local="yes">src/ai/ai_building.cpp</includedby>
+    <includedby refid="ai__force_8cpp" local="yes">src/ai/ai_force.cpp</includedby>
+    <includedby refid="ai__plan_8cpp" local="yes">src/ai/ai_plan.cpp</includedby>
+    <includedby refid="ai__resource_8cpp" local="yes">src/ai/ai_resource.cpp</includedby>
+    <includedby refid="editloop_8cpp" local="yes">src/editor/editloop.cpp</includedby>
+    <includedby refid="edmap_8cpp" local="yes">src/editor/edmap.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="map_8cpp" local="yes">src/map/map.cpp</includedby>
+    <includedby refid="map__wall_8cpp" local="yes">src/map/map_wall.cpp</includedby>
+    <includedby refid="mapfield_8cpp" local="yes">src/map/mapfield.cpp</includedby>
+    <includedby refid="script__map_8cpp" local="yes">src/map/script_map.cpp</includedby>
+    <includedby refid="script__tileset_8cpp" local="yes">src/map/script_tileset.cpp</includedby>
+    <includedby refid="tileset_8cpp" local="yes">src/map/tileset.cpp</includedby>
+    <includedby refid="online__service_8cpp" local="yes">src/network/online_service.cpp</includedby>
+    <includedby refid="astar_8cpp" local="yes">src/pathfinder/astar.cpp</includedby>
+    <includedby refid="unit_8cpp" local="yes">src/unit/unit.cpp</includedby>
+    <includedby refid="unit__find_8cpp" local="yes">src/unit/unit_find.cpp</includedby>
+    <includedby refid="unittype_8cpp" local="yes">src/unit/unittype.cpp</includedby>
+    <includedby refid="cursor_8cpp" local="yes">src/video/cursor.cpp</includedby>
+    <includedby refid="tolua_8cpp" local="yes">build/tolua.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="1">
+        <label>src/include/tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="25">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/network/online_service.cpp</label>
+        <link refid="online__service_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/map/tileset.cpp</label>
+        <link refid="tileset_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/map/map.cpp</label>
+        <link refid="map_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/map/script_map.cpp</label>
+        <link refid="script__map_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/map/map_wall.cpp</label>
+        <link refid="map__wall_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/map/mapfield.cpp</label>
+        <link refid="mapfield_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/video/cursor.cpp</label>
+        <link refid="cursor_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/editor/edmap.cpp</label>
+        <link refid="edmap_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/map/script_tileset.cpp</label>
+        <link refid="script__tileset_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/unit/unit_find.cpp</label>
+        <link refid="unit__find_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/unit/unittype.cpp</label>
+        <link refid="unittype_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCTileInfo" prot="public">CTileInfo</innerclass>
+    <innerclass refid="structSolidTerrainInfo" prot="public">SolidTerrainInfo</innerclass>
+    <innerclass refid="classCTile" prot="public">CTile</innerclass>
+    <innerclass refid="classCTileset" prot="public">CTileset</innerclass>
+      <sectiondef kind="user-defined">
+      <header>tileset.h - The tileset headerfile.</header>
+      <memberdef kind="define" id="tileset_8h_1a85569c1b3498a945c3205ea2e25d8d20" prot="public" static="no">
+        <name>MapFieldSpeedMask</name>
+        <initializer>0x0007</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="46" column="9" bodyfile="src/include/tileset.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a2bfb9ae53b653eaa923c9c3d2b80dad8" prot="public" static="no">
+        <name>MapFieldHuman</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="48" column="9" bodyfile="src/include/tileset.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a262862673c36550e75b9f37e543fe0a7" prot="public" static="no">
+        <name>MapFieldLandAllowed</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="50" column="9" bodyfile="src/include/tileset.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a28fb8660067fc67c39f396f14585e712" prot="public" static="no">
+        <name>MapFieldCoastAllowed</name>
+        <initializer>0x0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="51" column="9" bodyfile="src/include/tileset.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a6d11c81f5104b38c7e7001a012cce618" prot="public" static="no">
+        <name>MapFieldWaterAllowed</name>
+        <initializer>0x0040</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="52" column="9" bodyfile="src/include/tileset.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a0dbc78b77ae88b45715bd2c6a6d88398" prot="public" static="no">
+        <name>MapFieldNoBuilding</name>
+        <initializer>0x0080</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="53" column="9" bodyfile="src/include/tileset.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1acda02bf75f4257c473014b9da411e11e" prot="public" static="no">
+        <name>MapFieldUnpassable</name>
+        <initializer>0x0100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="55" column="9" bodyfile="src/include/tileset.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a1ec91bea7c99f5f1d99e7b8b710e12b9" prot="public" static="no">
+        <name>MapFieldWall</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="56" column="9" bodyfile="src/include/tileset.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a471a2151427916709b22c077cfb1671d" prot="public" static="no">
+        <name>MapFieldRocks</name>
+        <initializer>0x0400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="57" column="9" bodyfile="src/include/tileset.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1ab39987aff03f354bcdf8497a3692afec" prot="public" static="no">
+        <name>MapFieldForest</name>
+        <initializer>0x0800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="58" column="9" bodyfile="src/include/tileset.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1ac43d3b094c139931b4577bd73e36128a" prot="public" static="no">
+        <name>MapFieldLandUnit</name>
+        <initializer>0x1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="60" column="9" bodyfile="src/include/tileset.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a7edd7809775927fc97c5bff3768a1f88" prot="public" static="no">
+        <name>MapFieldAirUnit</name>
+        <initializer>0x2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="61" column="9" bodyfile="src/include/tileset.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a2763ecf13560c6ed27879dbbf89294d3" prot="public" static="no">
+        <name>MapFieldSeaUnit</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="62" column="9" bodyfile="src/include/tileset.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a8bc8cc0fc1798037b2cff947a9481f85" prot="public" static="no">
+        <name>MapFieldBuilding</name>
+        <initializer>0x8000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="63" column="9" bodyfile="src/include/tileset.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tileset_8h_1a575121db3a477e8fb752426f887aaca7" prot="public" static="no">
+        <name>MapFieldDecorative</name>
+        <initializer>0x10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="65" column="9" bodyfile="src/include/tileset.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TileType</name>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1afe8b1d42b877d99a31d1b624aa01f9f9" prot="public">
+          <name>TileTypeUnknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1af0fc9dd2cfc7195260790cb9812df23b" prot="public">
+          <name>TileTypeWood</name>
+          <briefdescription>
+<para>Unknown tile type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1a02f85f1772ee0b1d30e1595cc00d96b9" prot="public">
+          <name>TileTypeRock</name>
+          <briefdescription>
+<para>Any wood tile. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1a528c0aa3fb649616ae64be9bcfd48d69" prot="public">
+          <name>TileTypeCoast</name>
+          <briefdescription>
+<para>Any rock tile. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1a65484904216faba2a6dc927e1aed3601" prot="public">
+          <name>TileTypeHumanWall</name>
+          <briefdescription>
+<para>Any coast tile. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1a132a0f1701ed3dca9da76fba4cdbbb7a" prot="public">
+          <name>TileTypeOrcWall</name>
+          <briefdescription>
+<para>Any human wall tile. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tileset_8h_1ac9e486ec80ccfdb28a4f4837d419c9f1a7d8c55b0f8efd7a2069824262ffe3801" prot="public">
+          <name>TileTypeWater</name>
+          <briefdescription>
+<para>Any orc wall tile. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Any water tile </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>These are used for lookup tiles types mainly used for the FOW implementation of the seen woods/rocks</para>
+<para><xrefsect id="todo_1_todo000028"><xreftitle>Todo</xreftitle><xrefdescription><para>I think this can be removed, we can use the flags? I&apos;m not sure, if we have seen and real time to considere. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="74" column="14" bodyfile="src/include/tileset.h" bodystart="74" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="tileset_8h_1af88590892d56070ce42566981a070691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ParseTilesetTileFlags</definition>
+        <argsstring>(lua_State *l, int *back, int *j)</argsstring>
+        <name>ParseTilesetTileFlags</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>back</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="215" column="13" declfile="src/include/tileset.h" declline="215" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/tileset.h"/>
+  </compounddef>
+</doxygen>

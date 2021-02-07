@@ -1,0 +1,2111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="command_8cpp" kind="file" language="C++">
+    <compoundname>command.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="action__built_8h" local="yes">action/action_built.h</includes>
+    <includes refid="action__research_8h" local="yes">action/action_research.h</includes>
+    <includes refid="action__train_8h" local="yes">action/action_train.h</includes>
+    <includes refid="action__upgradeto_8h" local="yes">action/action_upgradeto.h</includes>
+    <includes refid="commands_8h" local="yes">commands.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="spells_8h" local="yes">spells.h</includes>
+    <includes refid="translate_8h" local="yes">translate.h</includes>
+    <includes refid="upgrade_8h" local="yes">upgrade.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__manager_8h" local="yes">unit_manager.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <incdepgraph>
+      <node id="54">
+        <label>list</label>
+      </node>
+      <node id="28">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>queue</label>
+      </node>
+      <node id="35">
+        <label>translate.h</label>
+        <link refid="translate_8h"/>
+      </node>
+      <node id="48">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>action/action_train.h</label>
+        <link refid="action__train_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>lua.h</label>
+      </node>
+      <node id="23">
+        <label>stdint.h</label>
+      </node>
+      <node id="33">
+        <label>variant</label>
+      </node>
+      <node id="9">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>action/action_upgradeto.h</label>
+        <link refid="action__upgradeto_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>unit_manager.h</label>
+        <link refid="unit__manager_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>action/action_research.h</label>
+        <link refid="action__research_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="29">
+        <label>spells.h</label>
+        <link refid="spells_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>map</label>
+      </node>
+      <node id="36">
+        <label>upgrade.h</label>
+        <link refid="upgrade_8h"/>
+      </node>
+      <node id="47">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="39">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="12">
+        <label>action/action_built.h</label>
+        <link refid="action__built_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>luacallback.h</label>
+        <link refid="luacallback_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vector</label>
+      </node>
+      <node id="32">
+        <label>utility</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="52">
+        <label>climits</label>
+      </node>
+      <node id="17">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="49">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>set</label>
+      </node>
+      <node id="50">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>algorithm</label>
+      </node>
+      <node id="1">
+        <label>src/action/command.cpp</label>
+        <link refid="command_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>lualib.h</label>
+      </node>
+      <node id="16">
+        <label>commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>command.cpp - Give units a command.</header>
+      <memberdef kind="function" id="command_8cpp_1a7176a650c5a464f94433e8c54dcbb292" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ReleaseOrders</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>ReleaseOrders</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release all orders of a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="64" column="13" bodyfile="src/action/command.cpp" bodystart="64" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1ae07eb171f034ad61b640bc554335176c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="actions_8h_1a8554d8f04b5cd0306a4c85e23f02b4ce" kindref="member">COrderPtr</ref> *</type>
+        <definition>static COrderPtr* GetNextOrder</definition>
+        <argsstring>(CUnit &amp;unit, int flush)</argsstring>
+        <name>GetNextOrder</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get next free order slot.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush order queue.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to next free order slot. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="95" column="18" bodyfile="src/action/command.cpp" bodystart="95" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a58518407351b49d02ffd38ac6b0d47ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void RemoveOrder</definition>
+        <argsstring>(CUnit &amp;unit, unsigned int order)</argsstring>
+        <name>RemoveOrder</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove an order from the list of orders pending</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the order to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="117" column="13" bodyfile="src/action/command.cpp" bodystart="117" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1afb5d078fec64836e1b4d7d65ed638eb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ClearNewAction</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>ClearNewAction</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="128" column="13" bodyfile="src/action/command.cpp" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a188622301eeecf6d3ca855ca902de41b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ClearSavedAction</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>ClearSavedAction</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear the saved action.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit pointer, that get the saved action cleared.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If we make a new order, we must clear any saved actions. </para>
+</simplesect>
+<simplesect kind="note"><para>Internal functions, must protect it, if needed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="142" column="13" bodyfile="src/action/command.cpp" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a0f71dc524dde7ab2040b26dc7c41d59c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IsUnitValidForNetwork</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>IsUnitValidForNetwork</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="148" column="13" bodyfile="src/action/command.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a447e331da43b577e4088c42d374b8cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandStopUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>CommandStopUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command stop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="163" column="6" bodyfile="src/action/command.cpp" bodystart="163" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a0c911fb6f537a08150b861a479d6d64c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandStandGround</definition>
+        <argsstring>(CUnit &amp;unit, int flush)</argsstring>
+        <name>CommandStandGround</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command stand ground. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stand ground.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="181" column="6" bodyfile="src/action/command.cpp" bodystart="181" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a01dd82b51e33e5cba757535c97d9b20f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandDefend</definition>
+        <argsstring>(CUnit &amp;unit, CUnit &amp;dest, int flush)</argsstring>
+        <name>CommandDefend</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command defend. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Follow unit and defend it</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit to follow </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="205" column="6" bodyfile="src/action/command.cpp" bodystart="205" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a2f9425cd5c83987d0d677d8bb817f531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandFollow</definition>
+        <argsstring>(CUnit &amp;unit, CUnit &amp;dest, int flush)</argsstring>
+        <name>CommandFollow</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command follow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Follow unit to new position</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit to be followed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="232" column="6" bodyfile="src/action/command.cpp" bodystart="232" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1aa85837bff105908c0c9bc897fa8b980e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandMove</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, int flush)</argsstring>
+        <name>CommandMove</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command move. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Move unit to new position</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to move to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="259" column="6" bodyfile="src/action/command.cpp" bodystart="259" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a12eb3ddde5ad077ce0098c8c1674512d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandRepair</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, CUnit *dest, int flush)</argsstring>
+        <name>CommandRepair</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command repair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Repair unit</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to repair. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or unit to be repaired. FIXME: not supported </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="289" column="6" bodyfile="src/action/command.cpp" bodystart="289" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1acde207f0d6358fbb0c62dcce193be9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandAutoRepair</definition>
+        <argsstring>(CUnit &amp;unit, int on)</argsstring>
+        <name>CommandAutoRepair</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+<para>Send auto repair command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto repair.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>on</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 for auto repair on, 0 for off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="319" column="6" bodyfile="src/action/command.cpp" bodystart="319" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1aef038d73346cf2adbc4be7a5982270b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandAttack</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, CUnit *target, int flush)</argsstring>
+        <name>CommandAttack</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack with unit at new position</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to attack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or unit to be attacked. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="335" column="6" bodyfile="src/action/command.cpp" bodystart="335" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a152b44b9f6e7f9eefa59ee047a977c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandAttackGround</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, int flush)</argsstring>
+        <name>CommandAttackGround</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command attack ground. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack ground with unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to fire on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="368" column="6" bodyfile="src/action/command.cpp" bodystart="368" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1aaf46039b4547e531166e0905782f2a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandPatrolUnit</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, int flush)</argsstring>
+        <name>CommandPatrolUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command patrol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Let a unit patrol from current to new position</para>
+<para>FIXME: want to support patroling between units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to patrol between. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="399" column="6" bodyfile="src/action/command.cpp" bodystart="399" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1ad14b45afc0c356a36f421a0b867bef66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandBoard</definition>
+        <argsstring>(CUnit &amp;unit, CUnit &amp;dest, int flush)</argsstring>
+        <name>CommandBoard</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Board a transporter with unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit to be boarded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="442" column="6" bodyfile="src/action/command.cpp" bodystart="442" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1af9e0b0f874e91291ef54a47f73ed19e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandUnload</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, CUnit *what, int flush)</argsstring>
+        <name>CommandUnload</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>what</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command unload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unload a transporter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to unload. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit to be unloaded, NULL for all. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="473" column="6" bodyfile="src/action/command.cpp" bodystart="473" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a47d606eb2bb7ecd8be1e067eb50b613f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandBuildBuilding</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, CUnitType &amp;what, int flush)</argsstring>
+        <name>CommandBuildBuilding</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command build. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a unit building</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to build. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit type to build. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="495" column="6" bodyfile="src/action/command.cpp" bodystart="495" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1aac16d274a815568b6daa82233e8b70d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandExplore</definition>
+        <argsstring>(CUnit &amp;unit, int flush)</argsstring>
+        <name>CommandExplore</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command explore. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a unit exploring</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="521" column="6" bodyfile="src/action/command.cpp" bodystart="521" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1afcbace3c8c5ccf0de600bfd92b46d2cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandDismiss</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>CommandDismiss</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command dismiss. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel the building construction, or kill a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="547" column="6" bodyfile="src/action/command.cpp" bodystart="547" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a5915704748125d8432735ee4c02fc9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandResourceLoc</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, int flush)</argsstring>
+        <name>CommandResourceLoc</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command resource location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Send unit harvest a location</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position for harvest. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="566" column="6" bodyfile="src/action/command.cpp" bodystart="566" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1ab1db26eb8b4196619eac025ac42ca12c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandResource</definition>
+        <argsstring>(CUnit &amp;unit, CUnit &amp;dest, int flush)</argsstring>
+        <name>CommandResource</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command resource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Send unit to harvest resources</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="597" column="6" bodyfile="src/action/command.cpp" bodystart="597" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1ad56f5074d2d9d8f1a4e67740f8f04113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandReturnGoods</definition>
+        <argsstring>(CUnit &amp;unit, CUnit *depot, int flush)</argsstring>
+        <name>CommandReturnGoods</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>depot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command return. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Let unit returning goods.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bring goods to this depot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="631" column="6" bodyfile="src/action/command.cpp" bodystart="631" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1ab7a3b4550af871cd2334c9e65735b745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandTrainUnit</definition>
+        <argsstring>(CUnit &amp;unit, CUnitType &amp;type, int)</argsstring>
+        <name>CommandTrainUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Prepare command train. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Building starts training an unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit type to train. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="663" column="6" bodyfile="src/action/command.cpp" bodystart="663" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a141d6dd814f21a999af6a0c8987b6d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandCancelTraining</definition>
+        <argsstring>(CUnit &amp;unit, int slot, const CUnitType *type)</argsstring>
+        <name>CommandCancelTraining</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command cancel training. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel the training of an unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number to cancel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type to cancel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="697" column="6" bodyfile="src/action/command.cpp" bodystart="697" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a9cabd4f1cdedeef7b82962226af145a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandUpgradeTo</definition>
+        <argsstring>(CUnit &amp;unit, CUnitType &amp;type, int flush)</argsstring>
+        <name>CommandUpgradeTo</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command upgrade to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Building starts upgrading to.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upgrade to type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="744" column="6" bodyfile="src/action/command.cpp" bodystart="744" bodyend="762"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a51f6a8eb4d941ef70c858ac8f20e7987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandTransformIntoType</definition>
+        <argsstring>(CUnit &amp;unit, CUnitType &amp;type)</argsstring>
+        <name>CommandTransformIntoType</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>immediate transforming into type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Immediate transforming unit into type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upgrade to type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="770" column="6" bodyfile="src/action/command.cpp" bodystart="770" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a65b6798dcd29f298cc25cbe0205ca726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandCancelUpgradeTo</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>CommandCancelUpgradeTo</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command cancel upgrade to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel building upgrading to.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="785" column="6" bodyfile="src/action/command.cpp" bodystart="785" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1abbe0a07fe0a1c42fe1305538c662dafa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandResearch</definition>
+        <argsstring>(CUnit &amp;unit, CUpgrade &amp;what, int flush)</argsstring>
+        <name>CommandResearch</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUpgrade" kindref="compound">CUpgrade</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command research. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Building starts researching.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>what to research. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="805" column="6" bodyfile="src/action/command.cpp" bodystart="805" bodyend="820"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a7353cf3ec35112fe2ccafba2dc7f2321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandCancelResearch</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>CommandCancelResearch</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command cancel research. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel Building researching.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="827" column="6" bodyfile="src/action/command.cpp" bodystart="827" bodyend="838"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1aba3b92d671cd2902ba70caf4184ab2a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandSpellCast</definition>
+        <argsstring>(CUnit &amp;unit, const Vec2i &amp;pos, CUnit *dest, const SpellType &amp;spell, int flush, bool isAutocast)</argsstring>
+        <name>CommandSpellCast</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isAutocast</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command spellcast. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast a spell at position or unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map position to spell cast on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell cast on unit (if exist). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell type pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, flush command queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="849" column="6" bodyfile="src/action/command.cpp" bodystart="849" bodyend="867"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a9fed5c48e9d7ec438a2ea69683690ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandAutoSpellCast</definition>
+        <argsstring>(CUnit &amp;unit, int spellid, int on)</argsstring>
+        <name>CommandAutoSpellCast</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spellid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command auto spellcast. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto spell cast.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>on</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 for auto cast on, 0 for off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="876" column="6" bodyfile="src/action/command.cpp" bodystart="876" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a70e3c5c479ea8cb92ed067199391e4cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandDiplomacy</definition>
+        <argsstring>(int player, int state, int opponent)</argsstring>
+        <name>CommandDiplomacy</name>
+        <param>
+          <type>int</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opponent</declname>
+        </param>
+        <briefdescription>
+<para>Prepare diplomacy command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Diplomacy changed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player which changes his state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New diplomacy state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opponent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="891" column="6" bodyfile="src/action/command.cpp" bodystart="891" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a5aaedf63108fab622b22a88e467c66ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandSharedVision</definition>
+        <argsstring>(int player, bool state, int opponent)</argsstring>
+        <name>CommandSharedVision</name>
+        <param>
+          <type>int</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opponent</declname>
+        </param>
+        <briefdescription>
+<para>Prepare shared vision command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shared vision changed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player which changes his state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New shared vision state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opponent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="916" column="6" bodyfile="src/action/command.cpp" bodystart="916" bodyend="964"/>
+      </memberdef>
+      <memberdef kind="function" id="command_8cpp_1a4b12a07f9e58bdfb64389c3335acb59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandQuit</definition>
+        <argsstring>(int player)</argsstring>
+        <name>CommandQuit</name>
+        <param>
+          <type>int</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Prepare command quit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player quit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player number that quit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/action/command.cpp" line="971" column="6" bodyfile="src/action/command.cpp" bodystart="971" bodyend="995"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/action/command.cpp"/>
+  </compounddef>
+</doxygen>

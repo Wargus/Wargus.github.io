@@ -1,0 +1,1114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ai__local_8h" kind="file" language="C++">
+    <compoundname>ai_local.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="upgrade__structs_8h" local="yes">upgrade_structs.h</includes>
+    <includes refid="unit__cache_8h" local="yes">unit_cache.h</includes>
+    <includes refid="vec2i_8h" local="yes">vec2i.h</includes>
+    <includedby refid="action__resource_8cpp" local="yes">src/action/action_resource.cpp</includedby>
+    <includedby refid="ai_8cpp" local="yes">src/ai/ai.cpp</includedby>
+    <includedby refid="ai__building_8cpp" local="yes">src/ai/ai_building.cpp</includedby>
+    <includedby refid="ai__force_8cpp" local="yes">src/ai/ai_force.cpp</includedby>
+    <includedby refid="ai__magic_8cpp" local="yes">src/ai/ai_magic.cpp</includedby>
+    <includedby refid="ai__plan_8cpp" local="yes">src/ai/ai_plan.cpp</includedby>
+    <includedby refid="ai__resource_8cpp" local="yes">src/ai/ai_resource.cpp</includedby>
+    <includedby refid="script__ai_8cpp" local="yes">src/ai/script_ai.cpp</includedby>
+    <includedby refid="animation__spawnunit_8cpp" local="yes">src/animation/animation_spawnunit.cpp</includedby>
+    <includedby refid="spell__capture_8cpp" local="yes">src/spell/spell_capture.cpp</includedby>
+    <includedby refid="spell__summon_8cpp" local="yes">src/spell/spell_summon.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/ai/ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>src/ai/script_ai.cpp</label>
+        <link refid="script__ai_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/spell/spell_summon.cpp</label>
+        <link refid="spell__summon_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/ai/ai.cpp</label>
+        <link refid="ai_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/ai/ai_magic.cpp</label>
+        <link refid="ai__magic_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/ai/ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/animation/animation_spawnunit.cpp</label>
+        <link refid="animation__spawnunit_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/spell/spell_capture.cpp</label>
+        <link refid="spell__capture_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCAiType" prot="public">CAiType</innerclass>
+    <innerclass refid="classAiRequestType" prot="public">AiRequestType</innerclass>
+    <innerclass refid="classAiUnitType" prot="public">AiUnitType</innerclass>
+    <innerclass refid="classAiForce" prot="public">AiForce</innerclass>
+    <innerclass refid="classAiForceManager" prot="public">AiForceManager</innerclass>
+    <innerclass refid="classAiBuildQueue" prot="public">AiBuildQueue</innerclass>
+    <innerclass refid="classAiExplorationRequest" prot="public">AiExplorationRequest</innerclass>
+    <innerclass refid="classPlayerAi" prot="public">PlayerAi</innerclass>
+    <innerclass refid="classAiHelper" prot="public">AiHelper</innerclass>
+      <sectiondef kind="user-defined">
+      <header>ai_local.h - The local AI header file.</header>
+      <memberdef kind="define" id="ai__local_8h_1a0f74d5fcf39863b63722b70d4fd001e0" prot="public" static="no">
+        <name>AI_WAIT_ON_RALLY_POINT</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="110" column="9" bodyfile="src/ai/ai_local.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ai__local_8h_1a8f30ecb680ef16b1d9aeaf5d0be83bca" prot="public" static="no">
+        <name>AI_MAX_FORCES</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="194" column="9" bodyfile="src/ai/ai_local.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ai__local_8h_1a50c5db6bba6544001e1328199838e545" prot="public" static="no">
+        <name>AI_MAX_FORCE_INTERNAL</name>
+        <initializer>(<ref refid="ai__local_8h_1a8f30ecb680ef16b1d9aeaf5d0be83bca" kindref="member">AI_MAX_FORCES</ref> / 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="195" column="9" bodyfile="src/ai/ai_local.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="ai__local_8h_1a38c9dfc51e6822c366d1bd07588b5612" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AiForceRole</name>
+        <enumvalue id="ai__local_8h_1a38c9dfc51e6822c366d1bd07588b5612a2d3f70766416aaaef07bebb564d846cf" prot="public">
+          <name>AiForceRoleDefault</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1a38c9dfc51e6822c366d1bd07588b5612a549b1ee1497ed849fe4c196d6a355ac5" prot="public">
+          <name>AiForceRoleAttack</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>So default is attacking. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1a38c9dfc51e6822c366d1bd07588b5612a9f7febe26d26ff53445b0c2a21c92986" prot="public">
+          <name>AiForceRoleDefend</name>
+          <briefdescription>
+<para>Force should attack. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Force should defend </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Roles for forces </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="95" column="17" bodyfile="src/ai/ai_local.h" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AiForceAttackingState</name>
+        <enumvalue id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3a85f36651c04871a3b12ddb442e00daa6" prot="public">
+          <name>AiForceAttackingState_Free</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3a1f554595b9ff231a40f7de2ab3839893" prot="public">
+          <name>AiForceAttackingState_Waiting</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3a09939f1ec193f054de0c4720182b1bf5" prot="public">
+          <name>AiForceAttackingState_Boarding</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3ac491100963db5d60293df2f635c1c03e" prot="public">
+          <name>AiForceAttackingState_GoingToRallyPoint</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3a638f0d50f3a8541435bbc39da2f42fe8" prot="public">
+          <name>AiForceAttackingState_AttackingWithTransporter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3ab6d34436f2401c63eaff597649b08a3d" prot="public">
+          <name>AiForceAttackingState_Attacking</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="101" column="27" bodyfile="src/ai/ai_local.h" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai__local_8h_1af89f5d0deae560e905a4de7345d0a720" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCAiType" kindref="compound">CAiType</ref> * &gt;</type>
+        <definition>std::vector&lt;CAiType *&gt; AiTypes</definition>
+        <argsstring></argsstring>
+        <name>AiTypes</name>
+        <briefdescription>
+<para>Ai sleeps # cycles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="384" column="20" bodyfile="src/ai/ai.cpp" bodystart="164" bodyend="-1" declfile="src/ai/ai_local.h" declline="384" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai__local_8h_1a833f0fce678a1b82d6646d55cbf7fd2f" prot="public" static="no" mutable="no">
+        <type><ref refid="classAiHelper" kindref="compound">AiHelper</ref></type>
+        <definition>AiHelper AiHelpers</definition>
+        <argsstring></argsstring>
+        <name>AiHelpers</name>
+        <briefdescription>
+<para>List of all AI types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="385" column="17" bodyfile="src/ai/ai.cpp" bodystart="165" bodyend="-1" declfile="src/ai/ai_local.h" declline="385" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai__local_8h_1af32d1883e031b12f5014e87ba1f296cd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnitTypeEquivs[UnitTypeMax+1]</definition>
+        <argsstring>[UnitTypeMax+1]</argsstring>
+        <name>UnitTypeEquivs</name>
+        <briefdescription>
+<para>AI helper variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="387" column="12" bodyfile="src/ai/ai_force.cpp" bodystart="197" bodyend="-1" declfile="src/ai/ai_local.h" declline="387" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="ai__local_8h_1a3072dd83ffe0038d2f6a8781d5af54b9" prot="public" static="no" mutable="no">
+        <type><ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> *</type>
+        <definition>PlayerAi* AiPlayer</definition>
+        <argsstring></argsstring>
+        <name>AiPlayer</name>
+        <briefdescription>
+<para>equivalence between unittypes </para>
+        </briefdescription>
+        <detaileddescription>
+<para>equivalence between unittypes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="388" column="17" bodyfile="src/ai/ai.cpp" bodystart="167" bodyend="-1" declfile="src/ai/ai_local.h" declline="388" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a04bd2ba722c95986d692fa9abeb7f765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAddUnitTypeRequest</definition>
+        <argsstring>(CUnitType &amp;type, int count)</argsstring>
+        <name>AiAddUnitTypeRequest</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Current AI player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add unit-type request to resource manager</para>
+<para>Add unit-type request to resource manager.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit type requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many units.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000012"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: should store the end of list and not search it. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="398" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1430" bodyend="1438" declfile="src/ai/ai_local.h" declline="398" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1af9a0d86a4b5b88e1421e2684e3719265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAddUpgradeToRequest</definition>
+        <argsstring>(CUnitType &amp;type)</argsstring>
+        <name>AiAddUpgradeToRequest</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Add upgrade-to request to resource manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the upgrade-to can be done.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FIXME: docu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="400" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="811" bodyend="851" declfile="src/ai/ai_local.h" declline="400" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a9960c5ecaaf4f470626fa6567afffd36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAddResearchRequest</definition>
+        <argsstring>(CUpgrade *upgrade)</argsstring>
+        <name>AiAddResearchRequest</name>
+        <param>
+          <type><ref refid="classCUpgrade" kindref="compound">CUpgrade</ref> *</type>
+          <declname>upgrade</declname>
+        </param>
+        <briefdescription>
+<para>Add research request to resource manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the research can be done.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upgrade</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upgrade to research </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="402" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="738" bodyend="773" declfile="src/ai/ai_local.h" declline="402" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a958fffa9626977f32fff1b7e8ba68573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiResourceManager</definition>
+        <argsstring>()</argsstring>
+        <name>AiResourceManager</name>
+        <briefdescription>
+<para>Periodic called resource manager handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point of resource manager, periodically called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="404" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1461" bodyend="1481" declfile="src/ai/ai_local.h" declline="404" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a5386dca2dce271bfd19a0e14ed4e67fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiExplore</definition>
+        <argsstring>(const Vec2i &amp;pos, int exploreMask)</argsstring>
+        <name>AiExplore</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>exploreMask</declname>
+          <defname>mask</defname>
+        </param>
+        <briefdescription>
+<para>Ask the ai to explore around pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark that a zone is requiring exploration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pos of the zone </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask to explore ( land/sea/air ) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="406" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1446" bodyend="1456" declfile="src/ai/ai_local.h" declline="406" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1afcbc7060febf2a41bc9441f7e0d10a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiNewUnitTypeEquiv</definition>
+        <argsstring>(const CUnitType &amp;a, const CUnitType &amp;b)</argsstring>
+        <name>AiNewUnitTypeEquiv</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Make two unittypes be considered equals. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Make two unittypes equivalents from the AI&apos;s point of vue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first unittype </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second unittype </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="408" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="219" bodyend="235" declfile="src/ai/ai_local.h" declline="408" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a6fbcb0a4abb40fc01d080ad82c666c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiResetUnitTypeEquiv</definition>
+        <argsstring>()</argsstring>
+        <name>AiResetUnitTypeEquiv</name>
+        <briefdescription>
+<para>Remove any equivalence between unittypes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove any equivalence between unittypes.</para>
+<para>Remove any equivalence between unittypes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="410" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="206" bodyend="211" declfile="src/ai/ai_local.h" declline="410" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a73fef03eba5f020e63b16855a8e7edf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiFindUnitTypeEquiv</definition>
+        <argsstring>(const CUnitType &amp;type, int *result)</argsstring>
+        <name>AiFindUnitTypeEquiv</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+          <defname>unittype</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Finds all equivalents units to a given one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find All unittypes equivalent to a given one</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unittype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the unittype to find equivalence for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int array which will hold the result. (Size UnitTypeMax+1)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of unittype found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="412" column="12" bodyfile="src/ai/ai_force.cpp" bodystart="246" bodyend="259" declfile="src/ai/ai_local.h" declline="412" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a5fd25d3bbc76bc90f342687280c540b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiFindAvailableUnitTypeEquiv</definition>
+        <argsstring>(const CUnitType &amp;type, int *result)</argsstring>
+        <name>AiFindAvailableUnitTypeEquiv</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+          <defname>unittype</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>result</declname>
+          <defname>usableTypes</defname>
+        </param>
+        <briefdescription>
+<para>Finds all available equivalents units to a given one, in the preferred order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find All unittypes equivalent to a given one, and which are available UnitType are returned in the preferred order (ie palladin &gt;&gt; knight...)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unittype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unittype to find equivalence for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usableTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int array which will hold the result. (Size UnitTypeMax+1)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of unittype found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="414" column="12" bodyfile="src/ai/ai_force.cpp" bodystart="279" bodyend="296" declfile="src/ai/ai_local.h" declline="414" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a87594f2bea5a0b2b21fdfb443087ae0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiGetBuildRequestsCount</definition>
+        <argsstring>(const PlayerAi &amp;pai, int(&amp;counter)[UnitTypeMax])</argsstring>
+        <name>AiGetBuildRequestsCount</name>
+        <param>
+          <type>const <ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> &amp;</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>int(&amp;)</type>
+          <declname>counter</declname>
+          <array>[UnitTypeMax]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="415" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="340" bodyend="350" declfile="src/ai/ai_local.h" declline="415" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a18c887f5c3e56082a6ba7ca4c1591ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiNewDepotRequest</definition>
+        <argsstring>(CUnit &amp;worker)</argsstring>
+        <name>AiNewDepotRequest</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="417" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="355" bodyend="431" declfile="src/ai/ai_local.h" declline="417" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a16da540a647941f46bf426ddc8cf2b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AiGetSuitableDepot</definition>
+        <argsstring>(const CUnit &amp;worker, const CUnit &amp;oldDepot, CUnit **resUnit)</argsstring>
+        <name>AiGetSuitableDepot</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>oldDepot</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+          <declname>resUnit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a suitable depot for better resource harvesting.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Worker itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oldDepot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Old assigned depot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resUnit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to harvest from, if succeed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new depot if found, NULL otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="418" column="14" bodyfile="src/ai/ai_resource.cpp" bodystart="464" bodyend="507" declfile="src/ai/ai_local.h" declline="418" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1ae707944a0a8aa354fda31c55f83d301b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AiFindBuildingPlace</definition>
+        <argsstring>(const CUnit &amp;worker, const CUnitType &amp;type, const Vec2i &amp;nearPos, Vec2i *resultPos)</argsstring>
+        <name>AiFindBuildingPlace</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>nearPos</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>resultPos</declname>
+        </param>
+        <briefdescription>
+<para>Find nice building place. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find free building place.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Worker to build building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nearPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start search near nearPos position (or worker-&gt;X if nearPos is invalid). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resultPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer for position returned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if place found, false if no found.</para>
+</simplesect>
+<xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>Better and faster way to find building place of oil platforms Special routines for special buildings. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="424" column="13" bodyfile="src/ai/ai_building.cpp" bodystart="433" bodyend="465" declfile="src/ai/ai_local.h" declline="424" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a393b4af7cfb86d25b939ececa4119b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiRemoveDeadUnitInForces</definition>
+        <argsstring>()</argsstring>
+        <name>AiRemoveDeadUnitInForces</name>
+        <briefdescription>
+<para>Cleanup units in force. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleanup units in forces. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="430" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="698" bodyend="701" declfile="src/ai/ai_local.h" declline="430" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a7d9353a199b17d26008f694f7f23301e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AiAssignToForce</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AiAssignToForce</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Assign a new unit to a force. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ai assign unit to force.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to assign to force. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="432" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="708" bodyend="711" declfile="src/ai/ai_local.h" declline="432" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1aa64603bec7f357538b2336e236fecd85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAssignFreeUnitsToForce</definition>
+        <argsstring>(int force=-1)</argsstring>
+        <name>AiAssignFreeUnitsToForce</name>
+        <param>
+          <type>int</type>
+          <declname>force</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Assign a free units to a force. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign free units to force. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="434" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="716" bodyend="728" declfile="src/ai/ai_local.h" declline="434" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a87cebc10782b5a340b45ed89840707a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAttackWithForceAt</definition>
+        <argsstring>(unsigned int force, int x, int y)</argsstring>
+        <name>AiAttackWithForceAt</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Attack with force at position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack at position with force.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Force number to attack with. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X tile map position to be attacked. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y tile map position to be attacked. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="436" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="737" bodyend="752" declfile="src/ai/ai_local.h" declline="436" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a46069cc4862a8493d9472abd80df8dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAttackWithForce</definition>
+        <argsstring>(unsigned int force)</argsstring>
+        <name>AiAttackWithForce</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>Attack with force. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack opponent with force.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Force number to attack with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="438" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="759" bodyend="795" declfile="src/ai/ai_local.h" declline="438" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a215443573ee6038816cf7776c3fd6c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAttackWithForces</definition>
+        <argsstring>(int *forces)</argsstring>
+        <name>AiAttackWithForces</name>
+        <param>
+          <type>int *</type>
+          <declname>forces</declname>
+        </param>
+        <briefdescription>
+<para>Attack with forces in array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attack opponent with forces. Merge forces in array into one attack force and attack with it Merge is make because units in one force help each other during attack</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>forces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array with Force numbers to attack with (array should be finished with -1). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="440" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="804" bodyend="843" declfile="src/ai/ai_local.h" declline="440" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a2376f79cff5ef68ccba17e71fd4b575e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForceManager</definition>
+        <argsstring>()</argsstring>
+        <name>AiForceManager</name>
+        <briefdescription>
+<para>Periodic called force manager handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point of force manager, periodic called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="443" column="13" bodyfile="src/ai/ai_local.h" bodystart="119" bodyend="-1" declfile="src/ai/ai_local.h" declline="443" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1ab500cd85f4cce531bbdc7e1bcea11d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiFindWall</definition>
+        <argsstring>(AiForce *force)</argsstring>
+        <name>AiFindWall</name>
+        <param>
+          <type><ref refid="classAiForce" kindref="compound">AiForce</ref> *</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>Find a wall to attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find possible walls to target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attack force.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if wall found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="449" column="12" bodyfile="src/ai/ai_plan.cpp" bodystart="184" bodyend="214" declfile="src/ai/ai_local.h" declline="449" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a4a4dfb92d211b5f78932af2217b83425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiSendExplorers</definition>
+        <argsstring>()</argsstring>
+        <name>AiSendExplorers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plan the an attack Send explorers around the map</para>
+<para>Respond to ExplorationRequests </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="452" column="13" bodyfile="src/ai/ai_plan.cpp" bodystart="503" bodyend="528" declfile="src/ai/ai_local.h" declline="452" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a122dccb44e39f2ac1c36b5bcb25d4b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiEnemyUnitsInDistance</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnitType *type, const Vec2i &amp;pos, unsigned range)</argsstring>
+        <name>AiEnemyUnitsInDistance</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Enemy units in distance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enemy units in distance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find enemies of this player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional unit type to check if enemy can target this </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance range to look.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of enemy units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="454" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="210" bodyend="226" declfile="src/ai/ai_local.h" declline="454" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__local_8h_1a5fc4534c683e58b3146ea62a655b51ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiCheckMagic</definition>
+        <argsstring>()</argsstring>
+        <name>AiCheckMagic</name>
+        <briefdescription>
+<para>Check for magic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check what computer units can do with magic. In fact, turn on autocast for AI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="461" column="13" bodyfile="src/ai/ai_magic.cpp" bodystart="51" bodyend="77" declfile="src/ai/ai_local.h" declline="461" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai_local.h"/>
+  </compounddef>
+</doxygen>

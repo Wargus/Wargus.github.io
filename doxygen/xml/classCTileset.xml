@@ -1,0 +1,1366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCTileset" kind="class" language="C++" prot="public">
+    <compoundname>CTileset</compoundname>
+    <includes refid="tileset_8h" local="no">tileset.h</includes>
+      <sectiondef kind="user-defined">
+      <header>script_tileset.cpp - The tileset ccl functions.</header>
+      <memberdef kind="function" id="classCTileset_1ac0dd994a76c8253da817138e5d598ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::parse</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="168" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="326" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a26c3ab614d66b7099d0c95ed7d08f3b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::buildTable</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>buildTable</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="169" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="355" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a71f7bd910fa59ccccde3b9ce995beffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::parseTilesetTileFlags</definition>
+        <argsstring>(lua_State *l, int *back, int *j)</argsstring>
+        <name>parseTilesetTileFlags</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>back</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the flag section of a tile definition.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>back</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer for the flags (return). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer for the location in the array. in and out</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index for basename, if the name this tile should be available as a different basename, or 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="170" column="5" bodyfile="src/map/script_tileset.cpp" bodystart="106" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a57f82d781380d2236e104a838cff8345" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::buildWallReplacementTable</definition>
+        <argsstring>()</argsstring>
+        <name>buildWallReplacementTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="176" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="566" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1ae346999109eb5fca9026932b3333c7e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::parseSlots</definition>
+        <argsstring>(lua_State *l, int t)</argsstring>
+        <name>parseSlots</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the slot part of a tileset definition</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FIXME: docu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="177" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="298" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1ac7af8e4c140f0484c9fd38f5dd0fd192" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::parseSpecial</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>parseSpecial</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the special slot part of a tileset definition</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="178" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="140" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a85cba54f45920b004e478533e4d16646" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::parseSolid</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>parseSolid</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the solid slot part of a tileset definition</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="179" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="189" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a7a0c8b90f3daabe0d919d9acb467c1ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::parseMixed</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>parseMixed</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the mixed slot part of a tileset definition</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="180" column="6" bodyfile="src/map/script_tileset.cpp" bodystart="251" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>tileset.cpp - The tileset.</header>
+      <memberdef kind="function" id="classCTileset_1a6a5309b46522bb72e9e2abff4b2a9e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="124" column="6" bodyfile="src/map/tileset.cpp" bodystart="205" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a6923f2f8decd0c907dbb885e96f4155d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CTileset::getDefaultTileIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultTileIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="128" column="14" bodyfile="src/map/tileset.cpp" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a21931c56c7786c79882a23db7a77de9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CTileset::getDefaultWoodTileIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultWoodTileIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="129" column="14" bodyfile="src/map/tileset.cpp" bodystart="234" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a217e06a8fcede275661fa37206a4222d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTileset::isAWallTile</definition>
+        <argsstring>(unsigned tile) const</argsstring>
+        <name>isAWallTile</name>
+        <param>
+          <type>unsigned</type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="131" column="6" bodyfile="src/map/tileset.cpp" bodystart="255" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a9959ebad192f2fdb9c0c63a41c860028" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTileset::isARaceWallTile</definition>
+        <argsstring>(unsigned tile, bool human) const</argsstring>
+        <name>isARaceWallTile</name>
+        <param>
+          <type>unsigned</type>
+          <declname>tile</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>human</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="132" column="6" bodyfile="src/map/tileset.cpp" bodystart="264" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a9929acbf494986f70b7f5e6a9fafed59" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTileset::isAWoodTile</definition>
+        <argsstring>(unsigned tile) const</argsstring>
+        <name>isAWoodTile</name>
+        <param>
+          <type>unsigned</type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="133" column="6" bodyfile="src/map/tileset.cpp" bodystart="277" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a8d2ab20e92d59d728a52c27fa1766e52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTileset::isARockTile</definition>
+        <argsstring>(unsigned tile) const</argsstring>
+        <name>isARockTile</name>
+        <param>
+          <type>unsigned</type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="134" column="6" bodyfile="src/map/tileset.cpp" bodystart="284" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a814a571312dd03d1bf026c071ce91b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getWallDirection</definition>
+        <argsstring>(int tileIndex, bool human) const</argsstring>
+        <name>getWallDirection</name>
+        <param>
+          <type>int</type>
+          <declname>tileIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>human</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="144" column="10" bodyfile="src/map/tileset.cpp" bodystart="678" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a456046c919718e087f2a4d956e12121e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getHumanWallTileIndex</definition>
+        <argsstring>(int dirFlag) const</argsstring>
+        <name>getHumanWallTileIndex</name>
+        <param>
+          <type>int</type>
+          <declname>dirFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="146" column="10" bodyfile="src/map/tileset.cpp" bodystart="689" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a95b802f94c33e42c3224851799382cc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getOrcWallTileIndex</definition>
+        <argsstring>(int dirFlag) const</argsstring>
+        <name>getOrcWallTileIndex</name>
+        <param>
+          <type>int</type>
+          <declname>dirFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="147" column="10" bodyfile="src/map/tileset.cpp" bodystart="693" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1abf4d06011715590690c21a7878d0c70b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getHumanWallTileIndex_broken</definition>
+        <argsstring>(int dirFlag) const</argsstring>
+        <name>getHumanWallTileIndex_broken</name>
+        <param>
+          <type>int</type>
+          <declname>dirFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="148" column="10" bodyfile="src/map/tileset.cpp" bodystart="709" bodyend="715"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a06d39af3b9dfc86312f032263b2fd75d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getOrcWallTileIndex_broken</definition>
+        <argsstring>(int dirFlag) const</argsstring>
+        <name>getOrcWallTileIndex_broken</name>
+        <param>
+          <type>int</type>
+          <declname>dirFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="149" column="10" bodyfile="src/map/tileset.cpp" bodystart="716" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a3c9ec3c66c8a4c2b1febc3f4132a7a48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getHumanWallTileIndex_destroyed</definition>
+        <argsstring>(int dirFlag) const</argsstring>
+        <name>getHumanWallTileIndex_destroyed</name>
+        <param>
+          <type>int</type>
+          <declname>dirFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="150" column="10" bodyfile="src/map/tileset.cpp" bodystart="723" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a14657d1d7aaac6c4700560548777a916" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getOrcWallTileIndex_destroyed</definition>
+        <argsstring>(int dirFlag) const</argsstring>
+        <name>getOrcWallTileIndex_destroyed</name>
+        <param>
+          <type>int</type>
+          <declname>dirFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="151" column="10" bodyfile="src/map/tileset.cpp" bodystart="731" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a855d1080dfd210b650d04440b28516d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CTileset::getSolidTerrainCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidTerrainCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="153" column="14" bodyfile="src/map/tileset.cpp" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1af61bb1bf07132e98858510772fd3a379" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; CTileset::getTerrainName</definition>
+        <argsstring>(int solidTerrainIndex) const</argsstring>
+        <name>getTerrainName</name>
+        <param>
+          <type>int</type>
+          <declname>solidTerrainIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="155" column="19" bodyfile="src/map/tileset.cpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a238bc804defb84afc79464a92a49fb48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::findTileIndexByTile</definition>
+        <argsstring>(unsigned int tile) const</argsstring>
+        <name>findTileIndexByTile</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="157" column="5" bodyfile="src/map/tileset.cpp" bodystart="558" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a8927b8595fe4749bca06b50e90bc8a46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CTileset::getTileNumber</definition>
+        <argsstring>(int basic, bool random, bool filler) const</argsstring>
+        <name>getTileNumber</name>
+        <param>
+          <type>int</type>
+          <declname>basic</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>filler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get tile number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>basic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basic tile number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return random tile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Get a decorated tile.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tile index number.</para>
+</simplesect>
+<xrefsect id="todo_1_todo000047"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: Solid tiles are here still hardcoded. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="158" column="14" bodyfile="src/map/tileset.cpp" bodystart="579" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a4e830c3f41248a148c4b43b30a5f130a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CTileset::fillSolidTiles</definition>
+        <argsstring>(std::vector&lt; unsigned int &gt; *solidTiles) const</argsstring>
+        <name>fillSolidTiles</name>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; *</type>
+          <declname>solidTiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="159" column="6" bodyfile="src/map/tileset.cpp" bodystart="662" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a366ad3398fe8e6ef5cad3e818bd9fdd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getQuadFromTile</definition>
+        <argsstring>(unsigned int tile) const</argsstring>
+        <name>getQuadFromTile</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get quad from tile.</para>
+<para>A quad is a 32 bit value defining the content of the tile.</para>
+<para>A tile is split into 4 parts, the basic tile type of this part is stored as 8bit value in the quad.</para>
+<para>ab cd -&gt; abcd</para>
+<para>If the tile is 100% light grass(0x05) the value is 0x05050505. If the tile is 3/4 light grass and dark grass(0x06) in upper left corner the value is 0x06050505. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="161" column="10" bodyfile="src/map/tileset.cpp" bodystart="630" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a701108305afc6f019393bc27d8b5a608" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::getTileBySurrounding</definition>
+        <argsstring>(unsigned short type, int up, int right, int bottom, int left) const</argsstring>
+        <name>getTileBySurrounding</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>up</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>left</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="162" column="5" bodyfile="src/map/tileset.cpp" bodystart="497" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a3f9585bcbd4a2c6be6636783ac3aab07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::tileFromQuad</definition>
+        <argsstring>(unsigned fixed, unsigned quad) const</argsstring>
+        <name>tileFromQuad</name>
+        <param>
+          <type>unsigned</type>
+          <declname>fixed</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get tile from quad.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fixed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Part can&apos;t be changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quad of the tile type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Best matching tile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="165" column="5" bodyfile="src/map/tileset.cpp" bodystart="415" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a180eb970545612d96338ac638c0634e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CTileset::isEquivalentTile</definition>
+        <argsstring>(unsigned int tile1, unsigned int tile2) const</argsstring>
+        <name>isEquivalentTile</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tile1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tile2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="166" column="6" bodyfile="src/map/tileset.cpp" bodystart="551" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1ae382c2bad752861b0db2f873092f67a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CTileset::getOrAddSolidTileIndexByName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>getOrAddSolidTileIndexByName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="173" column="14" bodyfile="src/map/tileset.cpp" bodystart="292" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a588a45b259dd868e93d86a71951db05c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::findTileIndex</definition>
+        <argsstring>(unsigned char baseTerrain, unsigned char mixTerrain=0) const</argsstring>
+        <name>findTileIndex</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>baseTerrain</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>mixTerrain</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="174" column="5" bodyfile="src/map/tileset.cpp" bodystart="316" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1ad41b6ee88690a8451795e37ff3f5bf3b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::getTileIndex</definition>
+        <argsstring>(unsigned char baseTerrain, unsigned char mixTerrain, unsigned int quad) const</argsstring>
+        <name>getTileIndex</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>baseTerrain</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>mixTerrain</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="175" column="5" bodyfile="src/map/tileset.cpp" bodystart="334" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a6ef4f18b373ee084e699afc0fa1f586c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CTileset::findTilePath</definition>
+        <argsstring>(int base, int goal, int length, std::vector&lt; char &gt; &amp;marks, int *tileIndex) const</argsstring>
+        <name>findTilePath</name>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>marks</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>tileIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a tile path.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start tile type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Goal tile type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Best found path length. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Already visited tile types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tileIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tile pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="181" column="5" bodyfile="src/map/tileset.cpp" bodystart="366" bodyend="406"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCTileset_1ad297514cd1e8f40fe7a69697f46b3d36" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CTileset::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="183" column="13" bodyfile="src/include/tileset.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1ac23a45fc756a45da8060c25fdbd6b7a5" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CTileset::ImageFile</definition>
+        <argsstring></argsstring>
+        <name>ImageFile</name>
+        <briefdescription>
+<para>Nice name to display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="184" column="13" bodyfile="src/include/tileset.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1aed7dd2ce837109246d7c3ecea9a15bb3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCTile" kindref="compound">CTile</ref> &gt;</type>
+        <definition>std::vector&lt;CTile&gt; CTileset::tiles</definition>
+        <argsstring></argsstring>
+        <name>tiles</name>
+        <briefdescription>
+<para>File containing image data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="187" column="13" bodyfile="src/include/tileset.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1ad8f660a0428b5303a9f941d4894d08ed" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; CTileset::TileTypeTable</definition>
+        <argsstring></argsstring>
+        <name>TileTypeTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="190" column="13" bodyfile="src/include/tileset.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCTileset_1aa0c16fb1858a0af6bf4a5b8a06a45860" prot="private" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1af534067813f6a469efcb9db41e7fe583" kindref="member">PixelSize</ref></type>
+        <definition>PixelSize CTileset::pixelTileSize</definition>
+        <argsstring></argsstring>
+        <name>pixelTileSize</name>
+        <briefdescription>
+<para>For fast lookup of tile type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="192" column="11" bodyfile="src/include/tileset.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1acd1d57d3e2e4dd0fa943ca8847d013c1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structSolidTerrainInfo" kindref="compound">SolidTerrainInfo</ref> &gt;</type>
+        <definition>std::vector&lt;SolidTerrainInfo&gt; CTileset::solidTerrainTypes</definition>
+        <argsstring></argsstring>
+        <name>solidTerrainTypes</name>
+        <briefdescription>
+<para>Size of a tile in pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="193" column="13" bodyfile="src/include/tileset.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a4d46dd12be01d094f9dc3543852dc98a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; CTileset::mixedLookupTable</definition>
+        <argsstring></argsstring>
+        <name>mixedLookupTable</name>
+        <briefdescription>
+<para>Information about solid terrains. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="195" column="13" bodyfile="src/include/tileset.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a73735fe732cd4a17279c7054817c92a7" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::topOneTreeTile</definition>
+        <argsstring></argsstring>
+        <name>topOneTreeTile</name>
+        <briefdescription>
+<para>Lookup for what part of tile used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="196" column="10" bodyfile="src/include/tileset.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1aa5b4e1127d115d8b6597ae48ce2011ec" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::midOneTreeTile</definition>
+        <argsstring></argsstring>
+        <name>midOneTreeTile</name>
+        <briefdescription>
+<para>Tile for one tree top. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="197" column="10" bodyfile="src/include/tileset.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1af33abd35366090ba78369e446bcd87db" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::botOneTreeTile</definition>
+        <argsstring></argsstring>
+        <name>botOneTreeTile</name>
+        <briefdescription>
+<para>Tile for one tree middle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="198" column="10" bodyfile="src/include/tileset.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a4a4b326249ec237fb2ad9b37e01ff1b2" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::removedTreeTile</definition>
+        <argsstring></argsstring>
+        <name>removedTreeTile</name>
+        <briefdescription>
+<para>Tile for one tree bottom. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="199" column="10" bodyfile="src/include/tileset.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a6be3ea84f7abf7681970509b9654ed58" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CTileset::woodTable[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>woodTable</name>
+        <briefdescription>
+<para>Tile placed where trees are gone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="200" column="5" bodyfile="src/include/tileset.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a216ad28dbd187878f9e93dfb67c1a560" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::topOneRockTile</definition>
+        <argsstring></argsstring>
+        <name>topOneRockTile</name>
+        <briefdescription>
+<para>Table for tree removable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="201" column="10" bodyfile="src/include/tileset.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a770eafe3d44c670deb403a3bb96b7e36" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::midOneRockTile</definition>
+        <argsstring></argsstring>
+        <name>midOneRockTile</name>
+        <briefdescription>
+<para>Tile for one rock top. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="202" column="10" bodyfile="src/include/tileset.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1aad213dd5263ab01f19d3edc77309c5f4" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::botOneRockTile</definition>
+        <argsstring></argsstring>
+        <name>botOneRockTile</name>
+        <briefdescription>
+<para>Tile for one rock middle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="203" column="10" bodyfile="src/include/tileset.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1af04c58b4b4f0f252005d83606c3a552e" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::removedRockTile</definition>
+        <argsstring></argsstring>
+        <name>removedRockTile</name>
+        <briefdescription>
+<para>Tile for one rock bottom. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="204" column="10" bodyfile="src/include/tileset.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1ad34c4c8c7422136b7d9a1db9ef77e669" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CTileset::rockTable[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>rockTable</name>
+        <briefdescription>
+<para>Tile placed where rocks are gone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="205" column="5" bodyfile="src/include/tileset.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a128fe895d7eaea6e83083ff2fc1f331a" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::humanWallTable[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>humanWallTable</name>
+        <briefdescription>
+<para>Removed rock placement table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="206" column="10" bodyfile="src/include/tileset.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCTileset_1a3f63cf81e744715e548208991c801ce4" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::orcWallTable[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>orcWallTable</name>
+        <briefdescription>
+<para>Human wall placement table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="207" column="10" bodyfile="src/include/tileset.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCTileset_1a8ddda5961b7f2aad52029d90a47c2289" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CTileset::getTileCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getTileCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="126" column="14" bodyfile="src/include/tileset.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1ac21109bd989e1a3895b028b8edd06de6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="vec2i_8h_1af534067813f6a469efcb9db41e7fe583" kindref="member">PixelSize</ref> &amp;</type>
+        <definition>const PixelSize&amp; CTileset::getPixelTileSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getPixelTileSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="136" column="17" bodyfile="src/include/tileset.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a9d7cff322980e36e01ebe807bffeede2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getRemovedRockTile</definition>
+        <argsstring>() const</argsstring>
+        <name>getRemovedRockTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="138" column="10" bodyfile="src/include/tileset.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a22af435265c1200c8a67fad38ea1ed18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getRemovedTreeTile</definition>
+        <argsstring>() const</argsstring>
+        <name>getRemovedTreeTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="139" column="10" bodyfile="src/include/tileset.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a7817efee7f2cc973e9fe5fef3173f4a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getBottomOneTreeTile</definition>
+        <argsstring>() const</argsstring>
+        <name>getBottomOneTreeTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="140" column="10" bodyfile="src/include/tileset.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1a6db9752ca87d6f0be4fe4348171f4c09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getTopOneTreeTile</definition>
+        <argsstring>() const</argsstring>
+        <name>getTopOneTreeTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="141" column="10" bodyfile="src/include/tileset.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classCTileset_1af53a9255a26c0e604dd7207bba531db9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned CTileset::getMidOneTreeTile</definition>
+        <argsstring>() const</argsstring>
+        <name>getMidOneTreeTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tileset.h" line="142" column="10" bodyfile="src/include/tileset.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tileset definition. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>#include &quot;tileset.h&quot;</para>
+<para>This structure contains information about the tileset of the map. It defines the look and properties of the tiles. Currently only one tileset per map is supported. In the future it is planned to support multiple tilesets on the same map. Also it is planned to support animated tiles.</para>
+<para>The tileset structure members:</para>
+<para><ref refid="classCTileset_1ad297514cd1e8f40fe7a69697f46b3d36" kindref="member">CTileset::Name</ref> <verbatim>Long name of the tileset. Can be used by the level editor.
+</verbatim></para>
+<para><ref refid="classCTileset_1ac23a45fc756a45da8060c25fdbd6b7a5" kindref="member">CTileset::ImageFile</ref> <verbatim>Name of the graphic file, containing all tiles.
+</verbatim></para>
+<para>CTileset::Table <verbatim>Table to map the abstract level (PUD) tile numbers, to tile
+numbers in the graphic file (CTileset::File).
+FE. 16 (solid light water) in pud to 328 in png.
+</verbatim></para>
+<para>CTileset::Flags <verbatim>Table of the tile flags used by the editor.
+@see CMapField::Flags
+</verbatim></para>
+<para>CTileset::solidTerrainTypes <verbatim>Index to name of the basic tile type. FE. &quot;light-water&quot;.
+If the index is 0, the tile is not used.
+</verbatim></para>
+<para>CTileset::MixedNameTable <verbatim>Index to name of the mixed tile type. FE. &quot;light-water&quot;.
+If this index is 0, the tile is a solid tile.
+@see CTileset::TileNames
+</verbatim></para>
+<para><ref refid="classCTileset_1ad8f660a0428b5303a9f941d4894d08ed" kindref="member">CTileset::TileTypeTable</ref> <verbatim>Lookup table of the tile type. Maps the graphic file tile
+number back to a tile type (::TileTypeWood, ::TileTypeWater,
+...)
+
+@note The creation of this table is currently hardcoded in
+the engine. It should be calculated from the flags in the
+tileset configuration. And it is created for the map
+and not for the tileset.
+
+@note I&apos;m not sure if this table is needed in the future.
+
+@see TileType.
+</verbatim></para>
+<para>CTileset::topOneTreeTile <verbatim>The tile number of tile only containing the top part of a tree.
+Is created on the map by lumber chopping.
+</verbatim></para>
+<para>CTileset::midOneTreeTile <verbatim>The tile number of tile only containing the connection of
+the top part to the bottom part of tree.
+Is created on the map by lumber chopping.
+</verbatim></para>
+<para>CTileset::botOneTreeTile <verbatim>The tile number of tile only containing the bottom part of a
+tree. Is created on the map by lumber chopping.
+</verbatim></para>
+<para>CTileset::removedTreeTile <verbatim>The tile number of the tile placed where trees are removed.
+Is created on the map by lumber chopping.
+</verbatim></para>
+<para>CTilset::woodTable[20] <verbatim>Table for wood removable. This table contains the tile which
+is placed after a tree removement, depending on the surrounding.
+</verbatim></para>
+<para>CTileset::mixedLookupTable[] Table for finding what part of the tile contains wood/rock, and which part is grass or bare ground.</para>
+<para>CTileset::topOneRockTile <verbatim>The tile number of tile only containing the top part of a rock.
+Is created on the map by destroying rocks.
+</verbatim></para>
+<para>CTileset::midOneRockTile <verbatim>The tile number of tile only containing the connection of
+the top part to the bottom part of a rock.
+Is created on the map by destroying rocks.
+</verbatim></para>
+<para>CTileset::botOneRockTile <verbatim>The tile number of tile only containing the bottom part of a
+rock. Is created on the map by destroying rocks.
+</verbatim></para>
+<para>CTileset::removedRockTile <verbatim>The tile number of the tile placed where rocks are removed.
+Is created on the map by destroying rocks.
+</verbatim></para>
+<para>CTileset::rockTable[20] <verbatim>Table for rock removable. Depending on the surrinding this
+table contains the new tile to be placed.
+
+@todo Johns: I don&apos;t think this table or routines look correct.
+But they work correct.
+</verbatim></para>
+<para>CTileset::humanWallTable <verbatim>Table of human wall tiles, index depends on the surroundings.
+</verbatim></para>
+<para>CTileset::orcWallTable <verbatim>Table of orc wall tiles, index depends on the surroundings.
+</verbatim> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CTileset</label>
+        <link refid="classCTileset"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Name</edgelabel>
+          <edgelabel>ImageFile</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/tileset.h" line="122" column="1" bodyfile="src/include/tileset.h" bodystart="121" bodyend="209"/>
+    <listofallmembers>
+      <member refid="classCTileset_1aad213dd5263ab01f19d3edc77309c5f4" prot="private" virt="non-virtual"><scope>CTileset</scope><name>botOneRockTile</name></member>
+      <member refid="classCTileset_1af33abd35366090ba78369e446bcd87db" prot="private" virt="non-virtual"><scope>CTileset</scope><name>botOneTreeTile</name></member>
+      <member refid="classCTileset_1a26c3ab614d66b7099d0c95ed7d08f3b7" prot="public" virt="non-virtual"><scope>CTileset</scope><name>buildTable</name></member>
+      <member refid="classCTileset_1a57f82d781380d2236e104a838cff8345" prot="private" virt="non-virtual"><scope>CTileset</scope><name>buildWallReplacementTable</name></member>
+      <member refid="classCTileset_1a6a5309b46522bb72e9e2abff4b2a9e97" prot="public" virt="non-virtual"><scope>CTileset</scope><name>clear</name></member>
+      <member refid="classCTileset_1a4e830c3f41248a148c4b43b30a5f130a" prot="public" virt="non-virtual"><scope>CTileset</scope><name>fillSolidTiles</name></member>
+      <member refid="classCTileset_1a588a45b259dd868e93d86a71951db05c" prot="private" virt="non-virtual"><scope>CTileset</scope><name>findTileIndex</name></member>
+      <member refid="classCTileset_1a238bc804defb84afc79464a92a49fb48" prot="public" virt="non-virtual"><scope>CTileset</scope><name>findTileIndexByTile</name></member>
+      <member refid="classCTileset_1a6ef4f18b373ee084e699afc0fa1f586c" prot="private" virt="non-virtual"><scope>CTileset</scope><name>findTilePath</name></member>
+      <member refid="classCTileset_1a7817efee7f2cc973e9fe5fef3173f4a4" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getBottomOneTreeTile</name></member>
+      <member refid="classCTileset_1a6923f2f8decd0c907dbb885e96f4155d" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getDefaultTileIndex</name></member>
+      <member refid="classCTileset_1a21931c56c7786c79882a23db7a77de9e" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getDefaultWoodTileIndex</name></member>
+      <member refid="classCTileset_1a456046c919718e087f2a4d956e12121e" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getHumanWallTileIndex</name></member>
+      <member refid="classCTileset_1abf4d06011715590690c21a7878d0c70b" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getHumanWallTileIndex_broken</name></member>
+      <member refid="classCTileset_1a3c9ec3c66c8a4c2b1febc3f4132a7a48" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getHumanWallTileIndex_destroyed</name></member>
+      <member refid="classCTileset_1af53a9255a26c0e604dd7207bba531db9" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getMidOneTreeTile</name></member>
+      <member refid="classCTileset_1ae382c2bad752861b0db2f873092f67a6" prot="private" virt="non-virtual"><scope>CTileset</scope><name>getOrAddSolidTileIndexByName</name></member>
+      <member refid="classCTileset_1a95b802f94c33e42c3224851799382cc7" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getOrcWallTileIndex</name></member>
+      <member refid="classCTileset_1a06d39af3b9dfc86312f032263b2fd75d" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getOrcWallTileIndex_broken</name></member>
+      <member refid="classCTileset_1a14657d1d7aaac6c4700560548777a916" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getOrcWallTileIndex_destroyed</name></member>
+      <member refid="classCTileset_1ac21109bd989e1a3895b028b8edd06de6" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getPixelTileSize</name></member>
+      <member refid="classCTileset_1a366ad3398fe8e6ef5cad3e818bd9fdd0" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getQuadFromTile</name></member>
+      <member refid="classCTileset_1a9d7cff322980e36e01ebe807bffeede2" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getRemovedRockTile</name></member>
+      <member refid="classCTileset_1a22af435265c1200c8a67fad38ea1ed18" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getRemovedTreeTile</name></member>
+      <member refid="classCTileset_1a855d1080dfd210b650d04440b28516d2" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getSolidTerrainCount</name></member>
+      <member refid="classCTileset_1af61bb1bf07132e98858510772fd3a379" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getTerrainName</name></member>
+      <member refid="classCTileset_1a701108305afc6f019393bc27d8b5a608" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getTileBySurrounding</name></member>
+      <member refid="classCTileset_1a8ddda5961b7f2aad52029d90a47c2289" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getTileCount</name></member>
+      <member refid="classCTileset_1ad41b6ee88690a8451795e37ff3f5bf3b" prot="private" virt="non-virtual"><scope>CTileset</scope><name>getTileIndex</name></member>
+      <member refid="classCTileset_1a8927b8595fe4749bca06b50e90bc8a46" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getTileNumber</name></member>
+      <member refid="classCTileset_1a6db9752ca87d6f0be4fe4348171f4c09" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getTopOneTreeTile</name></member>
+      <member refid="classCTileset_1a814a571312dd03d1bf026c071ce91b51" prot="public" virt="non-virtual"><scope>CTileset</scope><name>getWallDirection</name></member>
+      <member refid="classCTileset_1a128fe895d7eaea6e83083ff2fc1f331a" prot="private" virt="non-virtual"><scope>CTileset</scope><name>humanWallTable</name></member>
+      <member refid="classCTileset_1ac23a45fc756a45da8060c25fdbd6b7a5" prot="public" virt="non-virtual"><scope>CTileset</scope><name>ImageFile</name></member>
+      <member refid="classCTileset_1a9959ebad192f2fdb9c0c63a41c860028" prot="public" virt="non-virtual"><scope>CTileset</scope><name>isARaceWallTile</name></member>
+      <member refid="classCTileset_1a8d2ab20e92d59d728a52c27fa1766e52" prot="public" virt="non-virtual"><scope>CTileset</scope><name>isARockTile</name></member>
+      <member refid="classCTileset_1a217e06a8fcede275661fa37206a4222d" prot="public" virt="non-virtual"><scope>CTileset</scope><name>isAWallTile</name></member>
+      <member refid="classCTileset_1a9929acbf494986f70b7f5e6a9fafed59" prot="public" virt="non-virtual"><scope>CTileset</scope><name>isAWoodTile</name></member>
+      <member refid="classCTileset_1a180eb970545612d96338ac638c0634e3" prot="public" virt="non-virtual"><scope>CTileset</scope><name>isEquivalentTile</name></member>
+      <member refid="classCTileset_1a770eafe3d44c670deb403a3bb96b7e36" prot="private" virt="non-virtual"><scope>CTileset</scope><name>midOneRockTile</name></member>
+      <member refid="classCTileset_1aa5b4e1127d115d8b6597ae48ce2011ec" prot="private" virt="non-virtual"><scope>CTileset</scope><name>midOneTreeTile</name></member>
+      <member refid="classCTileset_1a4d46dd12be01d094f9dc3543852dc98a" prot="private" virt="non-virtual"><scope>CTileset</scope><name>mixedLookupTable</name></member>
+      <member refid="classCTileset_1ad297514cd1e8f40fe7a69697f46b3d36" prot="public" virt="non-virtual"><scope>CTileset</scope><name>Name</name></member>
+      <member refid="classCTileset_1a3f63cf81e744715e548208991c801ce4" prot="private" virt="non-virtual"><scope>CTileset</scope><name>orcWallTable</name></member>
+      <member refid="classCTileset_1ac0dd994a76c8253da817138e5d598ca1" prot="public" virt="non-virtual"><scope>CTileset</scope><name>parse</name></member>
+      <member refid="classCTileset_1a7a0c8b90f3daabe0d919d9acb467c1ce" prot="private" virt="non-virtual"><scope>CTileset</scope><name>parseMixed</name></member>
+      <member refid="classCTileset_1ae346999109eb5fca9026932b3333c7e6" prot="private" virt="non-virtual"><scope>CTileset</scope><name>parseSlots</name></member>
+      <member refid="classCTileset_1a85cba54f45920b004e478533e4d16646" prot="private" virt="non-virtual"><scope>CTileset</scope><name>parseSolid</name></member>
+      <member refid="classCTileset_1ac7af8e4c140f0484c9fd38f5dd0fd192" prot="private" virt="non-virtual"><scope>CTileset</scope><name>parseSpecial</name></member>
+      <member refid="classCTileset_1a71f7bd910fa59ccccde3b9ce995beffe" prot="public" virt="non-virtual"><scope>CTileset</scope><name>parseTilesetTileFlags</name></member>
+      <member refid="classCTileset_1aa0c16fb1858a0af6bf4a5b8a06a45860" prot="private" virt="non-virtual"><scope>CTileset</scope><name>pixelTileSize</name></member>
+      <member refid="classCTileset_1af04c58b4b4f0f252005d83606c3a552e" prot="private" virt="non-virtual"><scope>CTileset</scope><name>removedRockTile</name></member>
+      <member refid="classCTileset_1a4a4b326249ec237fb2ad9b37e01ff1b2" prot="private" virt="non-virtual"><scope>CTileset</scope><name>removedTreeTile</name></member>
+      <member refid="classCTileset_1ad34c4c8c7422136b7d9a1db9ef77e669" prot="private" virt="non-virtual"><scope>CTileset</scope><name>rockTable</name></member>
+      <member refid="classCTileset_1acd1d57d3e2e4dd0fa943ca8847d013c1" prot="private" virt="non-virtual"><scope>CTileset</scope><name>solidTerrainTypes</name></member>
+      <member refid="classCTileset_1a3f9585bcbd4a2c6be6636783ac3aab07" prot="public" virt="non-virtual"><scope>CTileset</scope><name>tileFromQuad</name></member>
+      <member refid="classCTileset_1aed7dd2ce837109246d7c3ecea9a15bb3" prot="public" virt="non-virtual"><scope>CTileset</scope><name>tiles</name></member>
+      <member refid="classCTileset_1ad8f660a0428b5303a9f941d4894d08ed" prot="public" virt="non-virtual"><scope>CTileset</scope><name>TileTypeTable</name></member>
+      <member refid="classCTileset_1a216ad28dbd187878f9e93dfb67c1a560" prot="private" virt="non-virtual"><scope>CTileset</scope><name>topOneRockTile</name></member>
+      <member refid="classCTileset_1a73735fe732cd4a17279c7054817c92a7" prot="private" virt="non-virtual"><scope>CTileset</scope><name>topOneTreeTile</name></member>
+      <member refid="classCTileset_1a6be3ea84f7abf7681970509b9654ed58" prot="private" virt="non-virtual"><scope>CTileset</scope><name>woodTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

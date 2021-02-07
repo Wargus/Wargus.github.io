@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAiForceRallyPointFinder" kind="class" language="C++" prot="public">
+    <compoundname>AiForceRallyPointFinder</compoundname>
+      <sectiondef kind="user-defined">
+      <header>ai_force.cpp - AI force functions.</header>
+      <memberdef kind="function" id="classAiForceRallyPointFinder_1a462ce37c5a34bf8e3cee0e9c5683cade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pathfinder_8h_1a586f8717564d1a04b2da1a21ad53ed8e" kindref="member">VisitResult</ref></type>
+        <definition>VisitResult AiForceRallyPointFinder::Visit</definition>
+        <argsstring>(TerrainTraversal &amp;terrainTraversal, const Vec2i &amp;pos, const Vec2i &amp;from)</argsstring>
+        <name>Visit</name>
+        <param>
+          <type><ref refid="classTerrainTraversal" kindref="compound">TerrainTraversal</ref> &amp;</type>
+          <declname>terrainTraversal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="395" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="404" bodyend="417"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAiForceRallyPointFinder_1a50263b38b73b0ff304abfc6906240ea9" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+        <definition>const CUnit&amp; AiForceRallyPointFinder::startUnit</definition>
+        <argsstring></argsstring>
+        <name>startUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="397" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForceRallyPointFinder_1a3737d7f9386acd6744da1ef5c6031a51" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int AiForceRallyPointFinder::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="398" column="11" bodyfile="src/ai/ai_force.cpp" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForceRallyPointFinder_1a60d34476488a09da25e2bcd92629b2b2" prot="private" static="no" mutable="no">
+        <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>const Vec2i AiForceRallyPointFinder::startPos</definition>
+        <argsstring></argsstring>
+        <name>startPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="399" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForceRallyPointFinder_1af5bb0acf0545624761b58877f6ccf74e" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int AiForceRallyPointFinder::movemask</definition>
+        <argsstring></argsstring>
+        <name>movemask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="400" column="11" bodyfile="src/ai/ai_force.cpp" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForceRallyPointFinder_1acd4878147ad98fdd221c38dc36781e6d" prot="private" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+        <definition>Vec2i* AiForceRallyPointFinder::resultPos</definition>
+        <argsstring></argsstring>
+        <name>resultPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="401" column="7" bodyfile="src/ai/ai_force.cpp" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAiForceRallyPointFinder_1abd42b99cd0ef69c4d6d98dd669fcf4ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AiForceRallyPointFinder::AiForceRallyPointFinder</definition>
+        <argsstring>(const CUnit &amp;startUnit, int distance, const Vec2i &amp;startPos, Vec2i *resultPos)</argsstring>
+        <name>AiForceRallyPointFinder</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>startUnit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>resultPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_force.cpp" line="390" column="1" bodyfile="src/ai/ai_force.cpp" bodystart="390" bodyend="394"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai_force.cpp" line="388" column="1" bodyfile="src/ai/ai_force.cpp" bodystart="387" bodyend="402"/>
+    <listofallmembers>
+      <member refid="classAiForceRallyPointFinder_1abd42b99cd0ef69c4d6d98dd669fcf4ac" prot="public" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>AiForceRallyPointFinder</name></member>
+      <member refid="classAiForceRallyPointFinder_1a3737d7f9386acd6744da1ef5c6031a51" prot="private" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>distance</name></member>
+      <member refid="classAiForceRallyPointFinder_1af5bb0acf0545624761b58877f6ccf74e" prot="private" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>movemask</name></member>
+      <member refid="classAiForceRallyPointFinder_1acd4878147ad98fdd221c38dc36781e6d" prot="private" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>resultPos</name></member>
+      <member refid="classAiForceRallyPointFinder_1a60d34476488a09da25e2bcd92629b2b2" prot="private" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>startPos</name></member>
+      <member refid="classAiForceRallyPointFinder_1a50263b38b73b0ff304abfc6906240ea9" prot="private" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>startUnit</name></member>
+      <member refid="classAiForceRallyPointFinder_1a462ce37c5a34bf8e3cee0e9c5683cade" prot="public" virt="non-virtual"><scope>AiForceRallyPointFinder</scope><name>Visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

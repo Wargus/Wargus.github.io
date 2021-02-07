@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classLuaActionListener" kind="class" language="C++" prot="public">
+    <compoundname>LuaActionListener</compoundname>
+    <basecompoundref refid="classgcn_1_1ActionListener" prot="public" virt="non-virtual">gcn::ActionListener</basecompoundref>
+    <basecompoundref refid="classgcn_1_1KeyListener" prot="public" virt="non-virtual">gcn::KeyListener</basecompoundref>
+    <basecompoundref refid="classgcn_1_1MouseListener" prot="public" virt="non-virtual">gcn::MouseListener</basecompoundref>
+    <includes refid="widgets_8h" local="no">widgets.h</includes>
+      <sectiondef kind="user-defined">
+      <header>widgets.cpp - The stratagus ui widgets.</header>
+      <memberdef kind="function" id="classLuaActionListener_1a9d5e4e4a7f8865b04efdf8eb490ca05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LuaActionListener::LuaActionListener</definition>
+        <argsstring>(lua_State *lua, lua_Object function)</argsstring>
+        <name>LuaActionListener</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>lua</declname>
+          <defname>l</defname>
+        </param>
+        <param>
+          <type><ref refid="luacallback_8h_1ae7be32b73848041a60f2412f72bbb221" kindref="member">lua_Object</ref></type>
+          <declname>function</declname>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classLuaActionListener" kindref="compound">LuaActionListener</ref> constructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Listener function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="54" column="1" bodyfile="src/ui/widgets.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a5e737974ab656c65ba7df6b4af746554" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::action</definition>
+        <argsstring>(const std::string &amp;eventId)</argsstring>
+        <name>action</name>
+        <reimplements refid="classgcn_1_1ActionListener_1a89247fdafe95afa92a4b94f74cedbdf2">action</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eventId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when an action is received from a Widget. It is used to be able to receive a notification that an action has occurred.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the identifier of the Widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="55" column="14" bodyfile="src/ui/widgets.cpp" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1acde9a8ff8c34b8a620f03198931c357a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool LuaActionListener::keyPress</definition>
+        <argsstring>(const gcn::Key &amp;)</argsstring>
+        <name>keyPress</name>
+        <reimplements refid="classgcn_1_1KeyListener_1a1782fd9834a50423756f2b5dc888a38b">keyPress</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Key" kindref="compound">gcn::Key</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if a key is pressed when the widget has keyboard focus. If a key is held down the widget will generate multiple key presses.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key pressed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="56" column="14" bodyfile="src/ui/widgets.cpp" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1ae118ce141aa4d3a13df55da1e39b4559" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool LuaActionListener::keyRelease</definition>
+        <argsstring>(const gcn::Key &amp;)</argsstring>
+        <name>keyRelease</name>
+        <reimplements refid="classgcn_1_1KeyListener_1a4463ce8443a77c86fe1fe9b45f757f35">keyRelease</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Key" kindref="compound">gcn::Key</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called if a key is released when the widget has keyboard focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key released. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="57" column="14" bodyfile="src/ui/widgets.cpp" bodystart="207" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a56b07355994c825c61b1a62e3a4373f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::hotKeyPress</definition>
+        <argsstring>(const gcn::Key &amp;)</argsstring>
+        <name>hotKeyPress</name>
+        <reimplements refid="classgcn_1_1KeyListener_1a2b1c730f089cb3379822ed45743a628e">hotKeyPress</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Key" kindref="compound">gcn::Key</ref> &amp;</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="58" column="14" bodyfile="src/ui/widgets.cpp" bodystart="215" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a0d411ea1b21e2352fcc0530f58559cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::hotKeyRelease</definition>
+        <argsstring>(const gcn::Key &amp;)</argsstring>
+        <name>hotKeyRelease</name>
+        <reimplements refid="classgcn_1_1KeyListener_1ae326dd01d711f4441d170cbc2674d04c">hotKeyRelease</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Key" kindref="compound">gcn::Key</ref> &amp;</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="59" column="14" bodyfile="src/ui/widgets.cpp" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1aadd9b5456ef21536909e8e0dea775ebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseIn</definition>
+        <argsstring>()</argsstring>
+        <name>mouseIn</name>
+        <reimplements refid="classgcn_1_1MouseListener_1a83e5e89f6997020e7b8d0863af9f9da3">mouseIn</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse enters into the widget area. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="60" column="14" bodyfile="src/ui/widgets.cpp" bodystart="229" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a1b60adaac35361ac8b8292fe7a226ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseOut</definition>
+        <argsstring>()</argsstring>
+        <name>mouseOut</name>
+        <reimplements refid="classgcn_1_1MouseListener_1a79241832fa89ba91346d8e784bbbef33">mouseOut</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse leaves the Widget area. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="61" column="14" bodyfile="src/ui/widgets.cpp" bodystart="235" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a8dae276586933f24cc881bf14f2126b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mousePress</definition>
+        <argsstring>(int, int, int)</argsstring>
+        <name>mousePress</name>
+        <reimplements refid="classgcn_1_1MouseListener_1ab9b2fc230d5890685b58648b6b0a8f5d">mousePress</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a mouse button is pressed when the mouse is in the Widget area or if the Widget has focus.</para>
+<para>NOTE: A mouse press is NOT equal to a mouse click. Use mouseClickMessage to check for mouse clicks.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button pressed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="62" column="14" bodyfile="src/ui/widgets.cpp" bodystart="241" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a751eefcbf8499c87db096e583f29001e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseRelease</definition>
+        <argsstring>(int, int, int)</argsstring>
+        <name>mouseRelease</name>
+        <reimplements refid="classgcn_1_1MouseListener_1a9fe91fd9240c8943c947c145470d43fc">mouseRelease</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a mouse button is released when the mouse is in the Widget area or if the Widget has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the Widget itself.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button released. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="63" column="14" bodyfile="src/ui/widgets.cpp" bodystart="248" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a5aa7c5dd60a1e6acc9a089895a315ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseClick</definition>
+        <argsstring>(int, int, int, int)</argsstring>
+        <name>mouseClick</name>
+        <reimplements refid="classgcn_1_1MouseListener_1a9fa65220fca905750f87ffe86017e538">mouseClick</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when a mouse button is pressed and released (clicked) when the mouse is in the Widget area or if the Widget has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button clicked. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of clicks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="64" column="14" bodyfile="src/ui/widgets.cpp" bodystart="255" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1aaf21c1ed4bd7ca9fd8770b960f6e24c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseWheelUp</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>mouseWheelUp</name>
+        <reimplements refid="classgcn_1_1MouseListener_1aaa5d13676e224f8cb2edbee037ba3d4d">mouseWheelUp</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called on a mouse wheel up when the mouse is in the Widget area or if the Widget has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="65" column="14" bodyfile="src/ui/widgets.cpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a8cfd98219f51fbfc490adedb2d6b20e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseWheelDown</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>mouseWheelDown</name>
+        <reimplements refid="classgcn_1_1MouseListener_1ae141d2c2c5d2d84083bab1c9b06e0219">mouseWheelDown</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called on a mouse wheel down when the mouse is in the Widget area or if the Widget has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="66" column="14" bodyfile="src/ui/widgets.cpp" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1a1baac98856ad85667f9d33e985896677" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaActionListener::mouseMotion</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>mouseMotion</name>
+        <reimplements refid="classgcn_1_1MouseListener_1aa326a632b53eb9fe39e9d5f3ab4ec5d5">mouseMotion</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the mouse moves and the mouse is in the Widget area or if the Widget has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y coordinate of the mouse relative to the Widget itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="67" column="14" bodyfile="src/ui/widgets.cpp" bodystart="275" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaActionListener_1ac668341f68ff0aa0f41d95477ac4cf87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>LuaActionListener::~LuaActionListener</definition>
+        <argsstring>()</argsstring>
+        <name>~LuaActionListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classLuaActionListener" kindref="compound">LuaActionListener</ref> destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="68" column="9" bodyfile="src/ui/widgets.cpp" bodystart="281" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLuaActionListener_1aed0f0c8cdc3b913d7d2f8c07dc89083e" prot="private" static="no" mutable="no">
+        <type><ref refid="classLuaCallback" kindref="compound">LuaCallback</ref></type>
+        <definition>LuaCallback LuaActionListener::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="52" column="13" bodyfile="src/include/widgets.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gcn::ActionListener</label>
+        <link refid="classgcn_1_1ActionListener"/>
+      </node>
+      <node id="4">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="3">
+        <label>gcn::KeyListener</label>
+        <link refid="classgcn_1_1KeyListener"/>
+      </node>
+      <node id="1">
+        <label>LuaActionListener</label>
+        <link refid="classLuaActionListener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gcn::ActionListener</label>
+        <link refid="classgcn_1_1ActionListener"/>
+      </node>
+      <node id="4">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="3">
+        <label>gcn::KeyListener</label>
+        <link refid="classgcn_1_1KeyListener"/>
+      </node>
+      <node id="1">
+        <label>LuaActionListener</label>
+        <link refid="classLuaActionListener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/widgets.h" line="51" column="1" bodyfile="src/include/widgets.h" bodystart="50" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classLuaActionListener_1a5e737974ab656c65ba7df6b4af746554" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>action</name></member>
+      <member refid="classLuaActionListener_1aed0f0c8cdc3b913d7d2f8c07dc89083e" prot="private" virt="non-virtual"><scope>LuaActionListener</scope><name>callback</name></member>
+      <member refid="classLuaActionListener_1a56b07355994c825c61b1a62e3a4373f2" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>hotKeyPress</name></member>
+      <member refid="classLuaActionListener_1a0d411ea1b21e2352fcc0530f58559cb6" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1KeyListener_1a58148db837cc6b6356c1fd5ded2de062" prot="protected" virt="non-virtual"><scope>LuaActionListener</scope><name>KeyListener</name></member>
+      <member refid="classLuaActionListener_1acde9a8ff8c34b8a620f03198931c357a" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>keyPress</name></member>
+      <member refid="classLuaActionListener_1ae118ce141aa4d3a13df55da1e39b4559" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>keyRelease</name></member>
+      <member refid="classLuaActionListener_1a9d5e4e4a7f8865b04efdf8eb490ca05a" prot="public" virt="non-virtual"><scope>LuaActionListener</scope><name>LuaActionListener</name></member>
+      <member refid="classLuaActionListener_1a5aa7c5dd60a1e6acc9a089895a315ffc" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseClick</name></member>
+      <member refid="classLuaActionListener_1aadd9b5456ef21536909e8e0dea775ebe" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseIn</name></member>
+      <member refid="classgcn_1_1MouseListener_1aa1898f8c7b93fb208b5e9ce86d6a3fb5" prot="protected" virt="non-virtual"><scope>LuaActionListener</scope><name>MouseListener</name></member>
+      <member refid="classLuaActionListener_1a1baac98856ad85667f9d33e985896677" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseMotion</name></member>
+      <member refid="classLuaActionListener_1a1b60adaac35361ac8b8292fe7a226ec8" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseOut</name></member>
+      <member refid="classLuaActionListener_1a8dae276586933f24cc881bf14f2126b9" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mousePress</name></member>
+      <member refid="classLuaActionListener_1a751eefcbf8499c87db096e583f29001e" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseRelease</name></member>
+      <member refid="classLuaActionListener_1a8cfd98219f51fbfc490adedb2d6b20e1" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseWheelDown</name></member>
+      <member refid="classLuaActionListener_1aaf21c1ed4bd7ca9fd8770b960f6e24c5" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>mouseWheelUp</name></member>
+      <member refid="classgcn_1_1ActionListener_1a15539005829890078792ce695260114b" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>~ActionListener</name></member>
+      <member refid="classgcn_1_1KeyListener_1a2799d25e1ce77a7cb4220ab101247f1d" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>~KeyListener</name></member>
+      <member refid="classLuaActionListener_1ac668341f68ff0aa0f41d95477ac4cf87" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>~LuaActionListener</name></member>
+      <member refid="classgcn_1_1MouseListener_1a418107f31e2ba41bceb6f794ef2ce101" prot="public" virt="virtual"><scope>LuaActionListener</scope><name>~MouseListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

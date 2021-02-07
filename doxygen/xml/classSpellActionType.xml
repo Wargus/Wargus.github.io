@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpellActionType" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SpellActionType</compoundname>
+    <derivedcompoundref refid="classSpell__AdjustVariable" prot="public" virt="non-virtual">Spell_AdjustVariable</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__AdjustVital" prot="public" virt="non-virtual">Spell_AdjustVital</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__AreaAdjustVital" prot="public" virt="non-virtual">Spell_AreaAdjustVital</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__AreaBombardment" prot="public" virt="non-virtual">Spell_AreaBombardment</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__Capture" prot="public" virt="non-virtual">Spell_Capture</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__Demolish" prot="public" virt="non-virtual">Spell_Demolish</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__LuaCallback" prot="public" virt="non-virtual">Spell_LuaCallback</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__Polymorph" prot="public" virt="non-virtual">Spell_Polymorph</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__SpawnMissile" prot="public" virt="non-virtual">Spell_SpawnMissile</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__SpawnPortal" prot="public" virt="non-virtual">Spell_SpawnPortal</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__Summon" prot="public" virt="non-virtual">Spell_Summon</derivedcompoundref>
+    <derivedcompoundref refid="classSpell__Teleport" prot="public" virt="non-virtual">Spell_Teleport</derivedcompoundref>
+    <includes refid="spells_8h" local="no">spells.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int SpellActionType::ModifyManaCaster</definition>
+        <argsstring></argsstring>
+        <name>ModifyManaCaster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="73" column="11" bodyfile="src/include/spells.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SpellActionType::SpellActionType</definition>
+        <argsstring>(int mod=0)</argsstring>
+        <name>SpellActionType</name>
+        <param>
+          <type>int</type>
+          <declname>mod</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="66" column="1" bodyfile="src/include/spells.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SpellActionType::~SpellActionType</definition>
+        <argsstring>()</argsstring>
+        <name>~SpellActionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="67" column="9" bodyfile="src/include/spells.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SpellActionType::Cast</definition>
+        <argsstring>(CUnit &amp;caster, const SpellType &amp;spell, CUnit *&amp;target, const Vec2i &amp;goalPos)=0</argsstring>
+        <name>Cast</name>
+        <reimplementedby refid="classSpell__Teleport_1aa6eec9f6d63bec1f301642fb7140e8c5">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__SpawnPortal_1a1edd7661239ba8b14b0b39113142591e">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__Polymorph_1a80863529c84fe3f7e1e3eceb7cec42c7">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__Demolish_1ac820137af6dd5205f25402b3941efdfe">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__Capture_1a0e569b0edc741f6d74d5e3a025fd59f3">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__AreaAdjustVital_1ae3f6bbb3561822e9b1081df62f159eb6">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__AdjustVital_1ab37ac94c89729d8d4dea6cf65c372175">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__Summon_1a080d09deb60de9b39637531d614670bb">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__AreaBombardment_1a8a6299be324dbe1248358ca407ffa432">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__LuaCallback_1a13b2423f0d27f4a7b146d1b696e57146">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__SpawnMissile_1ad7f5464a1858b3eb081fe4d8316244a3">Cast</reimplementedby>
+        <reimplementedby refid="classSpell__AdjustVariable_1abc5812a085c07ccd73c079871cbdb6b8">Cast</reimplementedby>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="69" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void SpellActionType::Parse</definition>
+        <argsstring>(lua_State *l, int startIndex, int endIndex)=0</argsstring>
+        <name>Parse</name>
+        <reimplementedby refid="classSpell__Teleport_1aec95bfd7707a7800b9adebb8386aa9cb">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__SpawnPortal_1a7bd41cd6a359ab5d24cdc2cf9cce9316">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__Polymorph_1a45c0e3e063547914a86d31c20df3542b">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__Demolish_1abe2e6f56f39717c9aab709688f3b5189">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__Capture_1aec143c1c2d61883bc20ed98dedec481a">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__AreaAdjustVital_1ae745e6e5e4654294910c6dec4f49e897">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__AdjustVital_1ae1ee174ae6a2c7b8813c59b6a0df5a25">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__Summon_1aa89c0ef7784652985fc952684ea986d0">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__AreaBombardment_1ac69f3135b0900f7ad149c68524b566b3">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__LuaCallback_1a71b8377e67c16a40439359567d2187b3">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__AdjustVariable_1ad207ccf2a7841efc6a8f2aca7f43168c">Parse</reimplementedby>
+        <reimplementedby refid="classSpell__SpawnMissile_1a5cf612142a190b3d8f4b91cd2e145787">Parse</reimplementedby>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="71" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic spell action virtual class. Spells are sub class of this one </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>Spell_LuaCallback</label>
+        <link refid="classSpell__LuaCallback"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Spell_Summon</label>
+        <link refid="classSpell__Summon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Spell_SpawnPortal</label>
+        <link refid="classSpell__SpawnPortal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Spell_SpawnMissile</label>
+        <link refid="classSpell__SpawnMissile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Spell_AreaAdjustVital</label>
+        <link refid="classSpell__AreaAdjustVital"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+      <node id="3">
+        <label>Spell_AdjustVital</label>
+        <link refid="classSpell__AdjustVital"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Spell_Capture</label>
+        <link refid="classSpell__Capture"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Spell_Teleport</label>
+        <link refid="classSpell__Teleport"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Spell_Polymorph</label>
+        <link refid="classSpell__Polymorph"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Spell_AreaBombardment</label>
+        <link refid="classSpell__AreaBombardment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Spell_Demolish</label>
+        <link refid="classSpell__Demolish"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Spell_AdjustVariable</label>
+        <link refid="classSpell__AdjustVariable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/include/spells.h" line="64" column="1" bodyfile="src/include/spells.h" bodystart="63" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0" prot="public" virt="pure-virtual"><scope>SpellActionType</scope><name>Cast</name></member>
+      <member refid="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" virt="non-virtual"><scope>SpellActionType</scope><name>ModifyManaCaster</name></member>
+      <member refid="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8" prot="public" virt="pure-virtual"><scope>SpellActionType</scope><name>Parse</name></member>
+      <member refid="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" virt="non-virtual"><scope>SpellActionType</scope><name>SpellActionType</name></member>
+      <member refid="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" virt="virtual"><scope>SpellActionType</scope><name>~SpellActionType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCUnitManager" kind="class" language="C++" prot="public">
+    <compoundname>CUnitManager</compoundname>
+    <includes refid="unit__manager_8h" local="no">unit_manager.h</includes>
+      <sectiondef kind="user-defined">
+      <header>unit_manager.cpp - Unit manager.</header>
+      <memberdef kind="function" id="classCUnitManager_1a0655f7cdc2ac7def0b0039150e0d9f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CUnitManager::CUnitManager</definition>
+        <argsstring>()</argsstring>
+        <name>CUnitManager</name>
+        <briefdescription>
+<para>Unit manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="55" column="1" bodyfile="src/unit/unit_manager.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1aa092ad47e012a190575745336e61aad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitManager::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial memory allocation for units. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="56" column="6" bodyfile="src/unit/unit_manager.cpp" bodystart="61" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1aac39af6f20643aea5020220fb3afc9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit * CUnitManager::AllocUnit</definition>
+        <argsstring>()</argsstring>
+        <name>AllocUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a new unit</para>
+<para><simplesect kind="return"><para>New unit </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="58" column="7" bodyfile="src/unit/unit_manager.cpp" bodystart="82" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1a223e80b5dbfd6e0541fa94a506dc924e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitManager::ReleaseUnit</definition>
+        <argsstring>(CUnit *unit)</argsstring>
+        <name>ReleaseUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a unit</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to release </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="59" column="6" bodyfile="src/unit/unit_manager.cpp" bodystart="107" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1a948fe73bdbb9fd697954ca8ddbf481d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitManager::Save</definition>
+        <argsstring>(CFile &amp;file) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save state of unit manager to file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="60" column="6" bodyfile="src/unit/unit_manager.cpp" bodystart="170" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1a7fd7149c10e295d8a25d44909a627204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitManager::Load</definition>
+        <argsstring>(lua_State *Lua)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>Lua</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="61" column="6" bodyfile="src/unit/unit_manager.cpp" bodystart="186" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1af5b6285e4e9ff08f37eb41ccca06f356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CUnitManager::Add</definition>
+        <argsstring>(CUnit *unit)</argsstring>
+        <name>Add</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="64" column="6" bodyfile="src/unit/unit_manager.cpp" bodystart="158" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1ac9bece58f7f9e75f7241d53c5d437db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnitManager_1a9a9ba9f80ac8fabe0f68f4dceb6ea460" kindref="member">Iterator</ref></type>
+        <definition>CUnitManager::Iterator CUnitManager::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="65" column="10" bodyfile="src/unit/unit_manager.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1aa04eaf024dd0415c6f82ba85188b0d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnitManager_1a9a9ba9f80ac8fabe0f68f4dceb6ea460" kindref="member">Iterator</ref></type>
+        <definition>CUnitManager::Iterator CUnitManager::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="66" column="10" bodyfile="src/unit/unit_manager.cpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1ab170294a178ded6796ad9605640068fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CUnitManager::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="67" column="6" bodyfile="src/unit/unit_manager.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1a9360b502d51c77f71959dd13a8171027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit * CUnitManager::lastCreatedUnit</definition>
+        <argsstring>()</argsstring>
+        <name>lastCreatedUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="69" column="7" bodyfile="src/unit/unit_manager.cpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1a5d866a1a3abbfd4004588833ed0b2d52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+        <definition>CUnit &amp; CUnitManager::GetSlotUnit</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>GetSlotUnit</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="72" column="7" bodyfile="src/unit/unit_manager.cpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classCUnitManager_1a93cd9ca6bee6fac8ccd5207b6c26dbcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CUnitManager::GetUsedSlotCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUsedSlotCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="73" column="14" bodyfile="src/unit/unit_manager.cpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classCUnitManager_1a9a9ba9f80ac8fabe0f68f4dceb6ea460" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;::iterator</type>
+        <definition>typedef std::vector&lt;CUnit *&gt;::iterator CUnitManager::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="53" column="32" bodyfile="src/include/unit_manager.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCUnitManager_1a6a6333613658f9a76f24efaf10259b50" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; CUnitManager::units</definition>
+        <argsstring></argsstring>
+        <name>units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="76" column="13" bodyfile="src/include/unit_manager.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnitManager_1a21f9883d8d61d3e9e70e76666cba5eeb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::vector&lt;CUnit *&gt; CUnitManager::unitSlots</definition>
+        <argsstring></argsstring>
+        <name>unitSlots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="77" column="13" bodyfile="src/include/unit_manager.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnitManager_1acf4959c074cd65cf1af39916a1c30f5c" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classCUnit" kindref="compound">CUnit</ref> * &gt;</type>
+        <definition>std::list&lt;CUnit *&gt; CUnitManager::releasedUnits</definition>
+        <argsstring></argsstring>
+        <name>releasedUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="78" column="11" bodyfile="src/include/unit_manager.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCUnitManager_1a6c58058652819ccc645226e17d68db02" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* CUnitManager::lastCreated</definition>
+        <argsstring></argsstring>
+        <name>lastCreated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unit_manager.h" line="79" column="7" bodyfile="src/include/unit_manager.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/unit_manager.h" line="51" column="1" bodyfile="src/include/unit_manager.h" bodystart="50" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classCUnitManager_1af5b6285e4e9ff08f37eb41ccca06f356" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>Add</name></member>
+      <member refid="classCUnitManager_1aac39af6f20643aea5020220fb3afc9ae" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>AllocUnit</name></member>
+      <member refid="classCUnitManager_1ac9bece58f7f9e75f7241d53c5d437db7" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>begin</name></member>
+      <member refid="classCUnitManager_1a0655f7cdc2ac7def0b0039150e0d9f01" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>CUnitManager</name></member>
+      <member refid="classCUnitManager_1ab170294a178ded6796ad9605640068fb" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>empty</name></member>
+      <member refid="classCUnitManager_1aa04eaf024dd0415c6f82ba85188b0d48" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>end</name></member>
+      <member refid="classCUnitManager_1a5d866a1a3abbfd4004588833ed0b2d52" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>GetSlotUnit</name></member>
+      <member refid="classCUnitManager_1a93cd9ca6bee6fac8ccd5207b6c26dbcc" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>GetUsedSlotCount</name></member>
+      <member refid="classCUnitManager_1aa092ad47e012a190575745336e61aad4" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>Init</name></member>
+      <member refid="classCUnitManager_1a9a9ba9f80ac8fabe0f68f4dceb6ea460" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>Iterator</name></member>
+      <member refid="classCUnitManager_1a6c58058652819ccc645226e17d68db02" prot="private" virt="non-virtual"><scope>CUnitManager</scope><name>lastCreated</name></member>
+      <member refid="classCUnitManager_1a9360b502d51c77f71959dd13a8171027" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>lastCreatedUnit</name></member>
+      <member refid="classCUnitManager_1a7fd7149c10e295d8a25d44909a627204" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>Load</name></member>
+      <member refid="classCUnitManager_1acf4959c074cd65cf1af39916a1c30f5c" prot="private" virt="non-virtual"><scope>CUnitManager</scope><name>releasedUnits</name></member>
+      <member refid="classCUnitManager_1a223e80b5dbfd6e0541fa94a506dc924e" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>ReleaseUnit</name></member>
+      <member refid="classCUnitManager_1a948fe73bdbb9fd697954ca8ddbf481d4" prot="public" virt="non-virtual"><scope>CUnitManager</scope><name>Save</name></member>
+      <member refid="classCUnitManager_1a6a6333613658f9a76f24efaf10259b50" prot="private" virt="non-virtual"><scope>CUnitManager</scope><name>units</name></member>
+      <member refid="classCUnitManager_1a21f9883d8d61d3e9e70e76666cba5eeb" prot="private" virt="non-virtual"><scope>CUnitManager</scope><name>unitSlots</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

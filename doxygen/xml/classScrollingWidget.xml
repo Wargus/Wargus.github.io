@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classScrollingWidget" kind="class" language="C++" prot="public">
+    <compoundname>ScrollingWidget</compoundname>
+    <basecompoundref refid="classgcn_1_1ScrollArea" prot="public" virt="non-virtual">gcn::ScrollArea</basecompoundref>
+    <includes refid="widgets_8h" local="no">widgets.h</includes>
+      <sectiondef kind="user-defined">
+      <header>widgets.cpp - The stratagus ui widgets.</header>
+      <memberdef kind="function" id="classScrollingWidget_1a71c4273eda5bdafd22d8c332a515a660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScrollingWidget::ScrollingWidget</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>ScrollingWidget</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classScrollingWidget" kindref="compound">ScrollingWidget</ref> constructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the widget. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the widget. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="237" column="1" bodyfile="src/ui/widgets.cpp" bodystart="1041" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classScrollingWidget_1a26c49d35a7ed5f4216250ae49678f343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ScrollingWidget::add</definition>
+        <argsstring>(gcn::Widget *widget, int x, int y)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">gcn::Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a widget in the window.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the widget in the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the widget in the window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="238" column="6" bodyfile="src/ui/widgets.cpp" bodystart="1058" bodyend="1067"/>
+      </memberdef>
+      <memberdef kind="function" id="classScrollingWidget_1adaed13e7278b8827f18544226f8fd23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ScrollingWidget::restart</definition>
+        <argsstring>()</argsstring>
+        <name>restart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restart animation to the beginning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="239" column="6" bodyfile="src/ui/widgets.cpp" bodystart="1089" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="classScrollingWidget_1ab70119e5a3856a22b80527e6026ec1cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ScrollingWidget::logic</definition>
+        <argsstring>()</argsstring>
+        <name>logic</name>
+        <reimplements refid="classgcn_1_1ScrollArea_1a7e9085abfccf6ebed42484226b4b2aeb">logic</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scrolling the content when possible. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="243" column="14" bodyfile="src/ui/widgets.cpp" bodystart="1072" bodyend="1084"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classScrollingWidget_1af2012d05dbb7878759c1892624bcec89" prot="private" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Container" kindref="compound">gcn::Container</ref></type>
+        <definition>gcn::Container ScrollingWidget::container</definition>
+        <argsstring></argsstring>
+        <name>container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="245" column="16" bodyfile="src/include/widgets.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classScrollingWidget_1a6afd222e2ff113eebf43d7b307e96608" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollingWidget::speedY</definition>
+        <argsstring></argsstring>
+        <name>speedY</name>
+        <briefdescription>
+<para>Data container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="246" column="7" bodyfile="src/include/widgets.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classScrollingWidget_1aad9c04de1391b448543e9a292f8a0cf8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollingWidget::containerY</definition>
+        <argsstring></argsstring>
+        <name>containerY</name>
+        <briefdescription>
+<para>vertical speed of the container (positive number: go up). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="247" column="7" bodyfile="src/include/widgets.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classScrollingWidget_1a0cedd0a5532d84a92b5be88132c5a854" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ScrollingWidget::finished</definition>
+        <argsstring></argsstring>
+        <name>finished</name>
+        <briefdescription>
+<para>Y position of the container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="248" column="6" bodyfile="src/include/widgets.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classScrollingWidget_1a7515845f325b947732fff4deae044f47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ScrollingWidget::setSpeed</definition>
+        <argsstring>(float speed)</argsstring>
+        <name>setSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="240" column="6" bodyfile="src/include/widgets.h" bodystart="240" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classScrollingWidget_1a2f6b38238786b9e81db593a22c593083" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ScrollingWidget::getSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="241" column="7" bodyfile="src/include/widgets.h" bodystart="241" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gcn::ScrollArea</label>
+        <link refid="classgcn_1_1ScrollArea"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ScrollingWidget</label>
+        <link refid="classScrollingWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="4">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+      </node>
+      <node id="3">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gcn::ScrollArea</label>
+        <link refid="classgcn_1_1ScrollArea"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mContent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ScrollingWidget</label>
+        <link refid="classScrollingWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gcn::MouseListener</label>
+        <link refid="classgcn_1_1MouseListener"/>
+      </node>
+      <node id="9">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="8">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="10">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="3">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/widgets.h" line="235" column="1" bodyfile="src/include/widgets.h" bodystart="234" bodyend="249"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1ScrollArea_1aff451182948bd3fb0d4c940bf2b2213f" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_announceDeath</name></member>
+      <member refid="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_getFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_keyInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_mouseInMessage</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa11847d04ffe1ae475d28542ebb4cc0b" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_mouseInputMessage</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad7bc3f704f55f0bcc2a11330e7248737" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_mouseOutMessage</name></member>
+      <member refid="classgcn_1_1ScrollArea_1add7eaa377a5837302bed900c9a9cf5d7" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_setFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>_setParent</name></member>
+      <member refid="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>ActionListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>ActionListenerList</name></member>
+      <member refid="classScrollingWidget_1a26c49d35a7ed5f4216250ae49678f343" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>add</name></member>
+      <member refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>addActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>addKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>addMouseListener</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a247838f8490a284cb215d50ab78e573d" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>checkPolicies</name></member>
+      <member refid="classScrollingWidget_1af2012d05dbb7878759c1892624bcec89" prot="private" virt="non-virtual"><scope>ScrollingWidget</scope><name>container</name></member>
+      <member refid="classScrollingWidget_1aad9c04de1391b448543e9a292f8a0cf8" prot="private" virt="non-virtual"><scope>ScrollingWidget</scope><name>containerY</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a2bab40dcb6d851aec51104efb934744c" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>draw</name></member>
+      <member refid="classgcn_1_1ScrollArea_1afdad205c6472bb19b6e74dbed2c1d62c" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>drawBorder</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad0b8a8f98a0286e6e15a0f6bf23c6f9a" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawContent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a891f1e7fad4fff75a560934f1fd2b4c8" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawDownButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a46f7c9efdae6649e16995dc8e3f5f996" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawHBar</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1d5926cbd302d01c495e4bb0c1ed760b" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawHMarker</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad164275f835bfd8801e8bb8e2980ff56" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawLeftButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab281bc5acbad8a41310952e63ac8db38" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawRightButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aeb5d4e317104042c6fa42fad9f4099e5" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawUpButton</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a86f51c2c526ddd86c9cfa8eea037ac27" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawVBar</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ad918479bb482a9b7d25748b6eb8cdd86" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>drawVMarker</name></member>
+      <member refid="classScrollingWidget_1a0cedd0a5532d84a92b5be88132c5a854" prot="private" virt="non-virtual"><scope>ScrollingWidget</scope><name>finished</name></member>
+      <member refid="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>fontChanged</name></member>
+      <member refid="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>generateAction</name></member>
+      <member refid="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getAbsolutePosition</name></member>
+      <member refid="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getBorderSize</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a03b49754528a1cf4cdbbd5a8dbf0c207" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getContent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a5bff5279525a67fef141e45b7138224b" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getContentDimension</name></member>
+      <member refid="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getDimension</name></member>
+      <member refid="classgcn_1_1Widget_1abfe807a4ba40975723b2e9e29eb9387a" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getDisabledColor</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a59b7fda7e81c3290db7de1a4c759ac7d" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getDownButtonDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a11ea9998c53edcfa9d81c14ae6c3f666" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getDrawSize</name></member>
+      <member refid="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>getFont</name></member>
+      <member refid="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a898c2796b20a332a1ae002c899aa4713" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getHorizontalBarDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ae40cc4b46a667cc276119051e7c5d089" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getHorizontalMarkerDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a75d37345aa411f61b689c4c6015cfb39" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getHorizontalMaxScroll</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a0d8a322f656587af4a24c3c5b4658e17" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getHorizontalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3abf75c0dcb81218f621218b4e1ac8d6" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getHorizontalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getHotKey</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa71bee12598125f874fcf59e2ca337e8" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getLeftButtonDimension</name></member>
+      <member refid="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getParent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a9629cc995d6e2dce35aba959125bda9c" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getRightButtonDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a8a5cf20efb9ba8aabb2a0ac3a6804ec2" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getScrollbarWidth</name></member>
+      <member refid="classScrollingWidget_1a2f6b38238786b9e81db593a22c593083" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>getSpeed</name></member>
+      <member refid="classgcn_1_1ScrollArea_1afb4d37de0b2b511db0e5ee7e41e601c5" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getUpButtonDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa6434c27c1b2201e493f7092cca93e4a" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getVerticalBarDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab3548e5f4ade1f20963e4a9d1dd50798" prot="protected" virt="virtual"><scope>ScrollingWidget</scope><name>getVerticalMarkerDimension</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab0fbcb3b56689715cc02f90e73ecea1f" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getVerticalMaxScroll</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a05ee17d216f6b0afcb6d71fe7e307f71" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getVerticalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a93dbb3428d900e0882b6f5405309aae5" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getVerticalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getX</name></member>
+      <member refid="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>getY</name></member>
+      <member refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>gotFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>hasModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>hasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>hotKeyPress</name></member>
+      <member refid="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>isEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>isFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>isTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>isTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>isVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>KeyListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>KeyListenerList</name></member>
+      <member refid="classScrollingWidget_1ab70119e5a3856a22b80527e6026ec1cd" prot="private" virt="virtual"><scope>ScrollingWidget</scope><name>logic</name></member>
+      <member refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>lostFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mActionListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mClickButton</name></member>
+      <member refid="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mClickCount</name></member>
+      <member refid="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mClickTimeStamp</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a019ac3b4fe96b34d3d81302cabc00cf8" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mContent</name></member>
+      <member refid="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mCurrentFont</name></member>
+      <member refid="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mDefaultFont</name></member>
+      <member refid="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mDimension</name></member>
+      <member refid="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mDisabledColor</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a496ba6a507ea167f9e0f6a2cfaafa512" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mDownButtonPressed</name></member>
+      <member refid="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHasMouse</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ac852c3068f0dceb009aad99acdab0da8" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHBarVisible</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ac8f743b7de654f9516e41f32d48f53ca" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHorizontalMarkerMousePosition</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aafdb5874f04ea30f2f4f09fbb1bbc1db" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHorizontalMarkerPressed</name></member>
+      <member refid="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHotKey</name></member>
+      <member refid="classgcn_1_1ScrollArea_1abab15f46530dfd2289a86f6f3e5ede92" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHPolicy</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a7d082bd0c5cba225156db626c91aa748" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mHScroll</name></member>
+      <member refid="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mKeyListeners</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3aa01761b00a443c69b7ab5e780a1374" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mLeftButtonPressed</name></member>
+      <member refid="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mMouseListeners</name></member>
+      <member refid="classgcn_1_1MouseListener_1a9fa65220fca905750f87ffe86017e538" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseClick</name></member>
+      <member refid="classgcn_1_1MouseListener_1a83e5e89f6997020e7b8d0863af9f9da3" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseIn</name></member>
+      <member refid="classgcn_1_1MouseListener_1aa1898f8c7b93fb208b5e9ce86d6a3fb5" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>MouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>MouseListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>MouseListenerList</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a6d01262eeb6cbd4d7eef51bb97a98982" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseMotion</name></member>
+      <member refid="classgcn_1_1MouseListener_1a79241832fa89ba91346d8e784bbbef33" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseOut</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aecb04f3eea1cbf5d935cbd2d4958d3f3" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mousePress</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ac6b2de4484cd8e9dd5cb5228c191a74a" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseRelease</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a4c71825f4dd3502fb809ac75b34cee44" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseWheelDown</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aa1563800b1de6f1f8a79e87416e20e94" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>mouseWheelUp</name></member>
+      <member refid="classgcn_1_1ScrollArea_1acbff6580c8fd3473ea27c76c187f0a18" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>moveToBottom</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a645069ff3c31fc63c439d9c9f1972127" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>moveToTop</name></member>
+      <member refid="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mParent</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a0fb4730610992cd31fbdbca150630dd0" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mRightButtonPressed</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3662b4a35c3c4914ab9a0a4122bbfff5" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mScrollbarWidth</name></member>
+      <member refid="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mTabIn</name></member>
+      <member refid="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mTabOut</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a27a0d91b3b8c02cfdb758d5a82c62033" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mUpButtonPressed</name></member>
+      <member refid="classgcn_1_1ScrollArea_1aef1ba163e7b097f48a01ab3ad6602cab" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mVBarVisible</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a09516b3522e4ef5726129e1c33794e7a" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mVerticalMarkerMousePosition</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a84a0207ea47df1469979fe93fa8d88b6" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mVerticalMarkerPressed</name></member>
+      <member refid="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mVisible</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a7b1dfd9e320b3c81db13e6b3e9adaec1" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mVPolicy</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a17748f9561efbcf981a5d11c58ee3f11" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mVScroll</name></member>
+      <member refid="classgcn_1_1Widget_1ad350c8bb10bc2603f545039e530dcb83" prot="protected" virt="non-virtual"><scope>ScrollingWidget</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>removeActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>removeKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>removeMouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>requestMoveToBottom</name></member>
+      <member refid="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>requestMoveToTop</name></member>
+      <member refid="classScrollingWidget_1adaed13e7278b8827f18544226f8fd23f" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>restart</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a938e85d49303617f98f28c7e85c25714" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>ScrollArea</name></member>
+      <member refid="classgcn_1_1ScrollArea_1afc87f60c06e1fd25f59d967680ef0936" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>ScrollArea</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a0d4b64560415267c0c2cce94c8887c38" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>ScrollArea</name></member>
+      <member refid="classScrollingWidget_1a71c4273eda5bdafd22d8c332a515a660" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>ScrollingWidget</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a044d7c542eea8cd48411c2e7c83720bd" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>scrollToBottom</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a4ebc80cbc065072804b6caaa33d98798" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>scrollToRectangle</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a3cd9147e94caf1c96ecb99f2874a314d" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>scrollToTop</name></member>
+      <member refid="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setBorderSize</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a519cff8ea4b8c442d37ad549181bb34f" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setContent</name></member>
+      <member refid="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setDimension</name></member>
+      <member refid="classgcn_1_1Widget_1a78405792027c3431ad58ccf72845bc23" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setDirty</name></member>
+      <member refid="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setFont</name></member>
+      <member refid="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>setGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setHeight</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ed5ae16d3368047106e2fc94cd7f1b4" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setHorizontalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a602e4aec5b1f73cc3158d415a42fe1f3" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setHorizontalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setPosition</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a5d81b945c75ea165faf0052bacf713e8" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ae7685ceba9098d57c87f35a1629c4a86" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setScrollbarWidth</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a608515e41cb04f23059c02e28d43ee94" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setSize</name></member>
+      <member refid="classScrollingWidget_1a7515845f325b947732fff4deae044f47" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>setSpeed</name></member>
+      <member refid="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setTabOutEnabled</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a496ac9dbfef2158c273e061691be4479" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setVerticalScrollAmount</name></member>
+      <member refid="classgcn_1_1ScrollArea_1ab14b147358b014032d1a0ef03141df37" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setVerticalScrollPolicy</name></member>
+      <member refid="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setX</name></member>
+      <member refid="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>setY</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1a1e3b2d95e13f8f9603336e0e072ca344" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>SHOW_ALWAYS</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1ad1ca167fcb47a0e991dfc87401736248" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>SHOW_AUTO</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a1ca5f5f3ac28f455587704d71b793ff1aa0ec3861e64c48f3eecf7a98862bb56e" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>SHOW_NEVER</name></member>
+      <member refid="classScrollingWidget_1a6afd222e2ff113eebf43d7b307e96608" prot="private" virt="non-virtual"><scope>ScrollingWidget</scope><name>speedY</name></member>
+      <member refid="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>Widget</name></member>
+      <member refid="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" virt="non-virtual"><scope>ScrollingWidget</scope><name>widgetExists</name></member>
+      <member refid="classgcn_1_1BasicContainer_1a8b8486a14daf5809da70d19603dbf607" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>~BasicContainer</name></member>
+      <member refid="classgcn_1_1MouseListener_1a418107f31e2ba41bceb6f794ef2ce101" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>~MouseListener</name></member>
+      <member refid="classgcn_1_1ScrollArea_1a5ccf9b8f11f8e38353dde99d5d919acb" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>~ScrollArea</name></member>
+      <member refid="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" virt="virtual"><scope>ScrollingWidget</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

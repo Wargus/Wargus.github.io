@@ -1,0 +1,3185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vec2i_8h" kind="file" language="C++">
+    <compoundname>vec2i.h</compoundname>
+    <includedby refid="ai__local_8h" local="yes">src/ai/ai_local.h</includedby>
+    <includedby refid="actions_8h" local="yes">src/include/actions.h</includedby>
+    <includedby refid="commands_8h" local="yes">src/include/commands.h</includedby>
+    <includedby refid="cursor_8h" local="no">src/include/cursor.h</includedby>
+    <includedby refid="icons_8h" local="yes">src/include/icons.h</includedby>
+    <includedby refid="editor_8h" local="yes">src/include/editor.h</includedby>
+    <includedby refid="interface_8h" local="yes">src/include/interface.h</includedby>
+    <includedby refid="tile_8h" local="no">src/include/tile.h</includedby>
+    <includedby refid="map_8h" local="yes">src/include/map.h</includedby>
+    <includedby refid="minimap_8h" local="yes">src/include/minimap.h</includedby>
+    <includedby refid="missile_8h" local="yes">src/include/missile.h</includedby>
+    <includedby refid="pathfinder_8h" local="yes">src/include/pathfinder.h</includedby>
+    <includedby refid="player_8h" local="yes">src/include/player.h</includedby>
+    <includedby refid="spells_8h" local="yes">src/include/spells.h</includedby>
+    <includedby refid="tileset_8h" local="yes">src/include/tileset.h</includedby>
+    <includedby refid="contenttype_8h" local="yes">src/include/ui/contenttype.h</includedby>
+    <includedby refid="popup_8h" local="yes">src/include/ui/popup.h</includedby>
+    <includedby refid="viewport_8h" local="yes">src/include/viewport.h</includedby>
+    <includedby refid="unittype_8h" local="yes">src/include/unittype.h</includedby>
+    <includedby refid="unit_8h" local="yes">src/include/unit.h</includedby>
+    <includedby refid="video_8h" local="yes">src/include/video.h</includedby>
+    <invincdepgraph>
+      <node id="10">
+        <label>src/ai/script_ai.cpp</label>
+        <link refid="script__ai_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/ui/mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="136">
+        <label>src/animation/animation_label.cpp</label>
+        <link refid="animation__label_8cpp"/>
+      </node>
+      <node id="166">
+        <label>src/spell/spell_spawnportal.cpp</label>
+        <link refid="spell__spawnportal_8cpp"/>
+      </node>
+      <node id="60">
+        <label>src/include/action/action_still.h</label>
+        <link refid="action__still_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>src/missile/script_missile.cpp</label>
+        <link refid="script__missile_8cpp"/>
+      </node>
+      <node id="122">
+        <label>src/include/editor.h</label>
+        <link refid="editor_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="128">
+        <label>src/network/netconnect.cpp</label>
+        <link refid="netconnect_8cpp"/>
+      </node>
+      <node id="68">
+        <label>src/action/action_upgradeto.cpp</label>
+        <link refid="action__upgradeto_8cpp"/>
+      </node>
+      <node id="148">
+        <label>src/missile/missile_parabolic.cpp</label>
+        <link refid="missile__parabolic_8cpp"/>
+      </node>
+      <node id="54">
+        <label>src/action/action_research.cpp</label>
+        <link refid="action__research_8cpp"/>
+      </node>
+      <node id="197">
+        <label>src/include/spell/spell_areabombardment.h</label>
+        <link refid="spell__areabombardment_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/include/action/action_defend.h</label>
+        <link refid="action__defend_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>src/include/action/action_repair.h</label>
+        <link refid="action__repair_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="81">
+        <label>src/ui/botpanel.cpp</label>
+        <link refid="botpanel_8cpp"/>
+      </node>
+      <node id="212">
+        <label>src/include/video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/action/action_build.cpp</label>
+        <link refid="action__build_8cpp"/>
+      </node>
+      <node id="162">
+        <label>src/spell/spell_adjustvital.cpp</label>
+        <link refid="spell__adjustvital_8cpp"/>
+      </node>
+      <node id="110">
+        <label>src/ui/script_ui.cpp</label>
+        <link refid="script__ui_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/unit/unit_draw.cpp</label>
+        <link refid="unit__draw_8cpp"/>
+      </node>
+      <node id="199">
+        <label>src/include/spell/spell_demolish.h</label>
+        <link refid="spell__demolish_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/spell/spell_summon.cpp</label>
+        <link refid="spell__summon_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/ai/ai.cpp</label>
+        <link refid="ai_8cpp"/>
+      </node>
+      <node id="72">
+        <label>src/missile/missile_fire.cpp</label>
+        <link refid="missile__fire_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/animation/animation_setvar.cpp</label>
+        <link refid="animation__setvar_8cpp"/>
+      </node>
+      <node id="213">
+        <label>src/guichan/sdl/sdlgraphics.cpp</label>
+        <link refid="sdlgraphics_8cpp"/>
+      </node>
+      <node id="150">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+      </node>
+      <node id="62">
+        <label>src/include/action/action_train.h</label>
+        <link refid="action__train_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>src/map/minimap.cpp</label>
+        <link refid="minimap_8cpp"/>
+      </node>
+      <node id="154">
+        <label>src/map/map_radar.cpp</label>
+        <link refid="map__radar_8cpp"/>
+      </node>
+      <node id="58">
+        <label>src/action/action_spellcast.cpp</label>
+        <link refid="action__spellcast_8cpp"/>
+      </node>
+      <node id="168">
+        <label>src/stratagus/groups.cpp</label>
+        <link refid="groups_8cpp"/>
+      </node>
+      <node id="137">
+        <label>src/animation/animation_luacallback.cpp</label>
+        <link refid="animation__luacallback_8cpp"/>
+      </node>
+      <node id="45">
+        <label>src/action/action_explore.cpp</label>
+        <link refid="action__explore_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/include/actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>src/include/action/action_upgradeto.h</label>
+        <link refid="action__upgradeto_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>src/ui/button_checks.cpp</label>
+        <link refid="button__checks_8cpp"/>
+      </node>
+      <node id="209">
+        <label>src/include/ui/contenttype.h</label>
+        <link refid="contenttype_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>src/include/pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>src/animation/animation_unbreakable.cpp</label>
+        <link refid="animation__unbreakable_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="182">
+        <label>src/missile/missile_continuous.cpp</label>
+        <link refid="missile__continuous_8cpp"/>
+      </node>
+      <node id="79">
+        <label>src/stratagus/mainloop.cpp</label>
+        <link refid="mainloop_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/ui/mainscr.cpp</label>
+        <link refid="mainscr_8cpp"/>
+      </node>
+      <node id="133">
+        <label>src/animation/animation_exactframe.cpp</label>
+        <link refid="animation__exactframe_8cpp"/>
+      </node>
+      <node id="48">
+        <label>src/include/action/action_move.h</label>
+        <link refid="action__move_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="204">
+        <label>src/include/spell/spell_summon.h</label>
+        <link refid="spell__summon_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>src/ui/uibuttons_proc.cpp</label>
+        <link refid="uibuttons__proc_8cpp"/>
+      </node>
+      <node id="85">
+        <label>src/unit/script_unittype.cpp</label>
+        <link refid="script__unittype_8cpp"/>
+      </node>
+      <node id="38">
+        <label>src/ui/contenttype.cpp</label>
+        <link refid="contenttype_8cpp"/>
+      </node>
+      <node id="53">
+        <label>src/include/action/action_research.h</label>
+        <link refid="action__research_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>src/network/network.cpp</label>
+        <link refid="network_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/animation/animation_attack.cpp</label>
+        <link refid="animation__attack_8cpp"/>
+      </node>
+      <node id="124">
+        <label>src/editor/script_editor.cpp</label>
+        <link refid="script__editor_8cpp"/>
+      </node>
+      <node id="102">
+        <label>src/network/online_service.cpp</label>
+        <link refid="online__service_8cpp"/>
+      </node>
+      <node id="152">
+        <label>src/spell/spell_demolish.cpp</label>
+        <link refid="spell__demolish_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/ai/ai_magic.cpp</label>
+        <link refid="ai__magic_8cpp"/>
+      </node>
+      <node id="108">
+        <label>src/ui/icons.cpp</label>
+        <link refid="icons_8cpp"/>
+      </node>
+      <node id="205">
+        <label>src/include/spell/spell_teleport.h</label>
+        <link refid="spell__teleport_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>src/include/minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>src/animation/animation_randomwait.cpp</label>
+        <link refid="animation__randomwait_8cpp"/>
+      </node>
+      <node id="193">
+        <label>src/include/spells.h</label>
+        <link refid="spells_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>src/sound/sound_server.cpp</label>
+        <link refid="sound__server_8cpp"/>
+      </node>
+      <node id="192">
+        <label>src/sound/script_sound.cpp</label>
+        <link refid="script__sound_8cpp"/>
+      </node>
+      <node id="167">
+        <label>src/spell/spell_teleport.cpp</label>
+        <link refid="spell__teleport_8cpp"/>
+      </node>
+      <node id="189">
+        <label>src/missile/missile_stay.cpp</label>
+        <link refid="missile__stay_8cpp"/>
+      </node>
+      <node id="158">
+        <label>src/pathfinder/script_pathfinder.cpp</label>
+        <link refid="script__pathfinder_8cpp"/>
+      </node>
+      <node id="56">
+        <label>src/sound/sound.cpp</label>
+        <link refid="sound_8cpp"/>
+      </node>
+      <node id="101">
+        <label>src/missile/missileconfig.cpp</label>
+        <link refid="missileconfig_8cpp"/>
+      </node>
+      <node id="208">
+        <label>src/map/tileset.cpp</label>
+        <link refid="tileset_8cpp"/>
+      </node>
+      <node id="216">
+        <label>src/video/font.cpp</label>
+        <link refid="font_8cpp"/>
+      </node>
+      <node id="78">
+        <label>src/spell/spells.cpp</label>
+        <link refid="spells_8cpp"/>
+      </node>
+      <node id="201">
+        <label>src/include/spell/spell_polymorph.h</label>
+        <link refid="spell__polymorph_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="77">
+        <label>src/pathfinder/pathfinder.cpp</label>
+        <link refid="pathfinder_8cpp"/>
+      </node>
+      <node id="55">
+        <label>src/include/action/action_resource.h</label>
+        <link refid="action__resource_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>src/animation/animation_die.cpp</label>
+        <link refid="animation__die_8cpp"/>
+      </node>
+      <node id="118">
+        <label>src/video/sdl.cpp</label>
+        <link refid="sdl_8cpp"/>
+      </node>
+      <node id="138">
+        <label>src/animation/animation_move.cpp</label>
+        <link refid="animation__move_8cpp"/>
+      </node>
+      <node id="65">
+        <label>src/include/action/action_unload.h</label>
+        <link refid="action__unload_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>src/ui/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="94">
+        <label>src/animation/animation_frame.cpp</label>
+        <link refid="animation__frame_8cpp"/>
+      </node>
+      <node id="63">
+        <label>src/action/action_train.cpp</label>
+        <link refid="action__train_8cpp"/>
+      </node>
+      <node id="156">
+        <label>src/missile/missile_cliptotarget.cpp</label>
+        <link refid="missile__cliptotarget_8cpp"/>
+      </node>
+      <node id="70">
+        <label>src/map/map_fog.cpp</label>
+        <link refid="map__fog_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/animation/animation_spawnmissile.cpp</label>
+        <link refid="animation__spawnmissile_8cpp"/>
+      </node>
+      <node id="200">
+        <label>src/include/spell/spell_luacallback.h</label>
+        <link refid="spell__luacallback_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>src/include/interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>src/stratagus/selection.cpp</label>
+        <link refid="selection_8cpp"/>
+      </node>
+      <node id="203">
+        <label>src/include/spell/spell_spawnportal.h</label>
+        <link refid="spell__spawnportal_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="179">
+        <label>src/video/png.cpp</label>
+        <link refid="png_8cpp"/>
+      </node>
+      <node id="119">
+        <label>src/video/video.cpp</label>
+        <link refid="video_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/include/action/action_attack.h</label>
+        <link refid="action__attack_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="151">
+        <label>src/spell/spell_areaadjustvital.cpp</label>
+        <link refid="spell__areaadjustvital_8cpp"/>
+      </node>
+      <node id="106">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="91">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="74">
+        <label>src/missile/missile_landmine.cpp</label>
+        <link refid="missile__landmine_8cpp"/>
+      </node>
+      <node id="211">
+        <label>src/include/viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/animation/animation_rotate.cpp</label>
+        <link refid="animation__rotate_8cpp"/>
+      </node>
+      <node id="163">
+        <label>src/spell/spell_areabombardment.cpp</label>
+        <link refid="spell__areabombardment_8cpp"/>
+      </node>
+      <node id="187">
+        <label>src/missile/missile_pointtopoint.cpp</label>
+        <link refid="missile__pointtopoint_8cpp"/>
+      </node>
+      <node id="104">
+        <label>src/particle/particlemanager.cpp</label>
+        <link refid="particlemanager_8cpp"/>
+      </node>
+      <node id="123">
+        <label>src/editor/editor.cpp</label>
+        <link refid="editor_8cpp"/>
+      </node>
+      <node id="96">
+        <label>src/map/map.cpp</label>
+        <link refid="map_8cpp"/>
+      </node>
+      <node id="111">
+        <label>src/ui/statusline.cpp</label>
+        <link refid="statusline_8cpp"/>
+      </node>
+      <node id="100">
+        <label>src/map/script_map.cpp</label>
+        <link refid="script__map_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/ai/ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>src/animation/animation_sound.cpp</label>
+        <link refid="animation__sound_8cpp"/>
+      </node>
+      <node id="114">
+        <label>src/ui/widgets.cpp</label>
+        <link refid="widgets_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="51">
+        <label>src/action/action_patrol.cpp</label>
+        <link refid="action__patrol_8cpp"/>
+      </node>
+      <node id="141">
+        <label>src/animation/animation_randomsound.cpp</label>
+        <link refid="animation__randomsound_8cpp"/>
+      </node>
+      <node id="97">
+        <label>src/map/map_draw.cpp</label>
+        <link refid="map__draw_8cpp"/>
+      </node>
+      <node id="202">
+        <label>src/include/spell/spell_spawnmissile.h</label>
+        <link refid="spell__spawnmissile_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/include/action/action_built.h</label>
+        <link refid="action__built_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="98">
+        <label>src/map/map_wall.cpp</label>
+        <link refid="map__wall_8cpp"/>
+      </node>
+      <node id="214">
+        <label>src/particle/chunkparticle.cpp</label>
+        <link refid="chunkparticle_8cpp"/>
+      </node>
+      <node id="183">
+        <label>src/missile/missile_cycleonce.cpp</label>
+        <link refid="missile__cycleonce_8cpp"/>
+      </node>
+      <node id="37">
+        <label>src/action/action_repair.cpp</label>
+        <link refid="action__repair_8cpp"/>
+      </node>
+      <node id="80">
+        <label>src/stratagus/script_player.cpp</label>
+        <link refid="script__player_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="170">
+        <label>src/unit/unit_manager.cpp</label>
+        <link refid="unit__manager_8cpp"/>
+      </node>
+      <node id="177">
+        <label>src/missile/missile_whirlwind.cpp</label>
+        <link refid="missile__whirlwind_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="47">
+        <label>src/action/action_follow.cpp</label>
+        <link refid="action__follow_8cpp"/>
+      </node>
+      <node id="44">
+        <label>src/include/action/action_explore.h</label>
+        <link refid="action__explore_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>src/unit/unit_cache.cpp</label>
+        <link refid="unit__cache_8cpp"/>
+      </node>
+      <node id="87">
+        <label>src/unit/unit_save.cpp</label>
+        <link refid="unit__save_8cpp"/>
+      </node>
+      <node id="196">
+        <label>src/include/spell/spell_areaadjustvital.h</label>
+        <link refid="spell__areaadjustvital_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>src/include/action/action_build.h</label>
+        <link refid="action__build_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>src/spell/spell_luacallback.cpp</label>
+        <link refid="spell__luacallback_8cpp"/>
+      </node>
+      <node id="127">
+        <label>src/game/trigger.cpp</label>
+        <link refid="trigger_8cpp"/>
+      </node>
+      <node id="49">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="69">
+        <label>src/stratagus/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="105">
+        <label>src/stratagus/construct.cpp</label>
+        <link refid="construct_8cpp"/>
+      </node>
+      <node id="109">
+        <label>src/ui/popup.cpp</label>
+        <link refid="popup_8cpp"/>
+      </node>
+      <node id="155">
+        <label>src/map/mapfield.cpp</label>
+        <link refid="mapfield_8cpp"/>
+      </node>
+      <node id="103">
+        <label>src/particle/graphicanimation.cpp</label>
+        <link refid="graphicanimation_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/animation/animation_spawnunit.cpp</label>
+        <link refid="animation__spawnunit_8cpp"/>
+      </node>
+      <node id="107">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="83">
+        <label>src/unit/build.cpp</label>
+        <link refid="build_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/include/action/action_board.h</label>
+        <link refid="action__board_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>src/include/action/action_follow.h</label>
+        <link refid="action__follow_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>src/include/missile.h</label>
+        <link refid="missile_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>src/include/ui/popup.h</label>
+        <link refid="popup_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>src/sound/unitsound.cpp</label>
+        <link refid="unitsound_8cpp"/>
+      </node>
+      <node id="188">
+        <label>src/missile/missile_pointtopointcycleonce.cpp</label>
+        <link refid="missile__pointtopointcycleonce_8cpp"/>
+      </node>
+      <node id="176">
+        <label>src/missile/missile_straightfly.cpp</label>
+        <link refid="missile__straightfly_8cpp"/>
+      </node>
+      <node id="89">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/action/action_defend.cpp</label>
+        <link refid="action__defend_8cpp"/>
+      </node>
+      <node id="121">
+        <label>src/include/icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>src/video/cursor.cpp</label>
+        <link refid="cursor_8cpp"/>
+      </node>
+      <node id="215">
+        <label>src/particle/smokeparticle.cpp</label>
+        <link refid="smokeparticle_8cpp"/>
+      </node>
+      <node id="42">
+        <label>src/include/action/action_die.h</label>
+        <link refid="action__die_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>src/include/spell/spell_adjustvariable.h</label>
+        <link refid="spell__adjustvariable_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>src/editor/edmap.cpp</label>
+        <link refid="edmap_8cpp"/>
+      </node>
+      <node id="184">
+        <label>src/missile/missile_hit.cpp</label>
+        <link refid="missile__hit_8cpp"/>
+      </node>
+      <node id="218">
+        <label>src/video/mng.cpp</label>
+        <link refid="mng_8cpp"/>
+      </node>
+      <node id="219">
+        <label>src/video/movie.cpp</label>
+        <link refid="movie_8cpp"/>
+      </node>
+      <node id="66">
+        <label>src/action/action_unload.cpp</label>
+        <link refid="action__unload_8cpp"/>
+      </node>
+      <node id="50">
+        <label>src/include/action/action_patrol.h</label>
+        <link refid="action__patrol_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>src/animation/animation_wait.cpp</label>
+        <link refid="animation__wait_8cpp"/>
+      </node>
+      <node id="71">
+        <label>src/missile/missile_deathcoil.cpp</label>
+        <link refid="missile__deathcoil_8cpp"/>
+      </node>
+      <node id="129">
+        <label>src/unit/depend.cpp</label>
+        <link refid="depend_8cpp"/>
+      </node>
+      <node id="73">
+        <label>src/missile/missile_flameshield.cpp</label>
+        <link refid="missile__flameshield_8cpp"/>
+      </node>
+      <node id="139">
+        <label>src/animation/animation_randomgoto.cpp</label>
+        <link refid="animation__randomgoto_8cpp"/>
+      </node>
+      <node id="64">
+        <label>src/unit/upgrade.cpp</label>
+        <link refid="upgrade_8cpp"/>
+      </node>
+      <node id="175">
+        <label>src/missile/missile_pointtopointbounce.cpp</label>
+        <link refid="missile__pointtopointbounce_8cpp"/>
+      </node>
+      <node id="207">
+        <label>src/map/script_tileset.cpp</label>
+        <link refid="script__tileset_8cpp"/>
+      </node>
+      <node id="174">
+        <label>src/include/map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/vec2i.h</label>
+        <link refid="vec2i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>src/stratagus/title.cpp</label>
+        <link refid="title_8cpp"/>
+      </node>
+      <node id="131">
+        <label>src/include/unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>src/include/spell/spell_adjustvital.h</label>
+        <link refid="spell__adjustvital_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>src/include/action/action_spellcast.h</label>
+        <link refid="action__spellcast_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/action/action_board.cpp</label>
+        <link refid="action__board_8cpp"/>
+      </node>
+      <node id="86">
+        <label>src/unit/unit_find.cpp</label>
+        <link refid="unit__find_8cpp"/>
+      </node>
+      <node id="171">
+        <label>src/unit/unitptr.cpp</label>
+        <link refid="unitptr_8cpp"/>
+      </node>
+      <node id="186">
+        <label>src/missile/missile_pointotpointwithhit.cpp</label>
+        <link refid="missile__pointotpointwithhit_8cpp"/>
+      </node>
+      <node id="206">
+        <label>src/include/tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/action/action_built.cpp</label>
+        <link refid="action__built_8cpp"/>
+      </node>
+      <node id="217">
+        <label>src/video/linedraw.cpp</label>
+        <link refid="linedraw_8cpp"/>
+      </node>
+      <node id="173">
+        <label>src/include/tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>src/include/ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>src/video/shaders.cpp</label>
+        <link refid="shaders_8cpp"/>
+      </node>
+      <node id="147">
+        <label>src/include/unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>src/video/graphic.cpp</label>
+        <link refid="graphic_8cpp"/>
+      </node>
+      <node id="135">
+        <label>src/animation/animation_ifvar.cpp</label>
+        <link refid="animation__ifvar_8cpp"/>
+      </node>
+      <node id="178">
+        <label>src/stratagus/iolib.cpp</label>
+        <link refid="iolib_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="140">
+        <label>src/animation/animation_randomrotate.cpp</label>
+        <link refid="animation__randomrotate_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/spell/spell_capture.cpp</label>
+        <link refid="spell__capture_8cpp"/>
+      </node>
+      <node id="130">
+        <label>src/include/unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+      <node id="75">
+        <label>src/network/commands.cpp</label>
+        <link refid="commands_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/action/command.cpp</label>
+        <link refid="command_8cpp"/>
+      </node>
+      <node id="115">
+        <label>src/unit/unittype.cpp</label>
+        <link refid="unittype_8cpp"/>
+      </node>
+      <node id="92">
+        <label>src/include/cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>src/spell/script_spell.cpp</label>
+        <link refid="script__spell_8cpp"/>
+      </node>
+      <node id="149">
+        <label>src/missile/missile_tracer.cpp</label>
+        <link refid="missile__tracer_8cpp"/>
+      </node>
+      <node id="153">
+        <label>src/spell/spell_spawnmissile.cpp</label>
+        <link refid="spell__spawnmissile_8cpp"/>
+      </node>
+      <node id="191">
+        <label>src/include/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>src/action/action_die.cpp</label>
+        <link refid="action__die_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+      <node id="161">
+        <label>src/spell/spell_adjustvariable.cpp</label>
+        <link refid="spell__adjustvariable_8cpp"/>
+      </node>
+      <node id="165">
+        <label>src/spell/spell_polymorph.cpp</label>
+        <link refid="spell__polymorph_8cpp"/>
+      </node>
+      <node id="88">
+        <label>src/include/commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>src/animation/animation_setplayervar.cpp</label>
+        <link refid="animation__setplayervar_8cpp"/>
+      </node>
+      <node id="198">
+        <label>src/include/spell/spell_capture.h</label>
+        <link refid="spell__capture_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>src/animation/animation_goto.cpp</label>
+        <link refid="animation__goto_8cpp"/>
+      </node>
+      <node id="185">
+        <label>src/missile/missile_none.cpp</label>
+        <link refid="missile__none_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classVec2T" prot="public">Vec2T</innerclass>
+      <sectiondef kind="user-defined">
+      <header>vec2i.h - Vec2i headerfile.</header>
+      <memberdef kind="typedef" id="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" prot="public" static="no">
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; short int &gt;</type>
+        <definition>typedef Vec2T&lt;short int&gt; Vec2i</definition>
+        <argsstring></argsstring>
+        <name>Vec2i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="150" column="15" bodyfile="src/include/vec2i.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" prot="public" static="no">
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; int &gt;</type>
+        <definition>typedef Vec2T&lt;int&gt; PixelPos</definition>
+        <argsstring></argsstring>
+        <name>PixelPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="151" column="15" bodyfile="src/include/vec2i.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vec2i_8h_1a368fe415818899499de54bcbc23906c1" prot="public" static="no">
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; int &gt;</type>
+        <definition>typedef Vec2T&lt;int&gt; PixelDiff</definition>
+        <argsstring></argsstring>
+        <name>PixelDiff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="152" column="15" bodyfile="src/include/vec2i.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vec2i_8h_1af534067813f6a469efcb9db41e7fe583" prot="public" static="no">
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; int &gt;</type>
+        <definition>typedef Vec2T&lt;int&gt; PixelSize</definition>
+        <argsstring></argsstring>
+        <name>PixelSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="153" column="15" bodyfile="src/include/vec2i.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vec2i_8h_1a794d0cfbe2311bdf835283a9af782aaa" prot="public" static="no">
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; double &gt;</type>
+        <definition>typedef Vec2T&lt;double&gt; PixelPrecise</definition>
+        <argsstring></argsstring>
+        <name>PixelPrecise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="154" column="15" bodyfile="src/include/vec2i.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1a6e755dfa80635b60ae5a63707730e0ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="48" column="13" bodyfile="src/include/vec2i.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1aa85c1e8c29b903b0dd326db5165bfaee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="54" column="13" bodyfile="src/include/vec2i.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1ac9f51f170000dde1a26d447f6dacd01c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+        <definition>const Vec2T&lt;T&gt;&amp; operator+=</definition>
+        <argsstring>(Vec2T&lt; T &gt; &amp;lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="60" column="20" bodyfile="src/include/vec2i.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1a80774325c80a1b54ac919e161ce80a23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+        <definition>const Vec2T&lt;T&gt;&amp; operator-=</definition>
+        <argsstring>(Vec2T&lt; T &gt; &amp;lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="68" column="20" bodyfile="src/include/vec2i.h" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1ad201526145c94c18ae9d186fb0ac92a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+        <definition>const Vec2T&lt;T&gt;&amp; operator*=</definition>
+        <argsstring>(Vec2T&lt; T &gt; &amp;lhs, int rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="76" column="20" bodyfile="src/include/vec2i.h" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1ab530157c58e19794c87b8d0480712a18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+        <definition>const Vec2T&lt;T&gt;&amp; operator/=</definition>
+        <argsstring>(Vec2T&lt; T &gt; &amp;lhs, int rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="84" column="20" bodyfile="src/include/vec2i.h" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1aa80e4f9a216509df9f8224e4f7a4e716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt;</type>
+        <definition>Vec2T&lt;T&gt; operator+</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="92" column="14" bodyfile="src/include/vec2i.h" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1ad5571416a04f0fe49d1d0e06cf57967c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt;</type>
+        <definition>Vec2T&lt;T&gt; operator-</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="101" column="14" bodyfile="src/include/vec2i.h" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1ae8b820dbe7d8faa8707e1f8181af8fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt;</type>
+        <definition>Vec2T&lt;T&gt; operator*</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;lhs, int rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="110" column="14" bodyfile="src/include/vec2i.h" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1a8866ab1eddd99a202298a0e4a6bb9e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt;</type>
+        <definition>Vec2T&lt;T&gt; operator*</definition>
+        <argsstring>(int lhs, const Vec2T&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>int</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="119" column="14" bodyfile="src/include/vec2i.h" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1a081e8bafbbd6869a53d4d0caad17f337" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt;</type>
+        <definition>Vec2T&lt;T&gt; operator/</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;lhs, int rhs)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="128" column="14" bodyfile="src/include/vec2i.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1a6ca0ca072a6e03224ca62cc7d7c06f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int SquareDistance</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;pos1, const Vec2T&lt; T &gt; &amp;pos2)</argsstring>
+        <name>SquareDistance</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>pos1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>pos2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="137" column="12" bodyfile="src/include/vec2i.h" bodystart="137" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="vec2i_8h_1a839901a600310dc7eb1311be2f05fcd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int Distance</definition>
+        <argsstring>(const Vec2T&lt; T &gt; &amp;pos1, const Vec2T&lt; T &gt; &amp;pos2)</argsstring>
+        <name>Distance</name>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>pos1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec2T" kindref="compound">Vec2T</ref>&lt; T &gt; &amp;</type>
+          <declname>pos2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec2i.h" line="145" column="12" bodyfile="src/include/vec2i.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/vec2i.h"/>
+  </compounddef>
+</doxygen>

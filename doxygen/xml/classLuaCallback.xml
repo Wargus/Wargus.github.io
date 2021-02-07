@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classLuaCallback" kind="class" language="C++" prot="public">
+    <compoundname>LuaCallback</compoundname>
+    <includes refid="luacallback_8h" local="no">luacallback.h</includes>
+      <sectiondef kind="user-defined">
+      <header>luacallback.cpp -  Lua callback.</header>
+      <memberdef kind="function" id="classLuaCallback_1a2370a447d06504b4f85ede3fdfb3ac04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LuaCallback::LuaCallback</definition>
+        <argsstring>(lua_State *lua, lua_Object luaref)</argsstring>
+        <name>LuaCallback</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>lua</declname>
+          <defname>l</defname>
+        </param>
+        <param>
+          <type><ref refid="luacallback_8h_1ae7be32b73848041a60f2412f72bbb221" kindref="member">lua_Object</ref></type>
+          <declname>luaref</declname>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classLuaCallback" kindref="compound">LuaCallback</ref> constructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Listener function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="44" column="1" bodyfile="src/stratagus/luacallback.cpp" bodystart="44" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a9c0c5449318822988dcab99c7040572b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LuaCallback::~LuaCallback</definition>
+        <argsstring>()</argsstring>
+        <name>~LuaCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classLuaActionListener" kindref="compound">LuaActionListener</ref> destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="45" column="1" bodyfile="src/stratagus/luacallback.cpp" bodystart="187" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a4396ce50e96c0945f912a1aaf70d8aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::pushPreamble</definition>
+        <argsstring>()</argsstring>
+        <name>pushPreamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push the preamble on the stack to call the callback. Call this function before pushing the arguments on the lua stack. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="46" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a644887e8201d322e8b736d5ab9c3016b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::pushInteger</definition>
+        <argsstring>(int value)</argsstring>
+        <name>pushInteger</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a string argument for the callback on the stack.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the integer to push on the stack </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="47" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a215bb787be91d28514fad9413453c81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::pushIntegers</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;values)</argsstring>
+        <name>pushIntegers</name>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a array of integers from callback to stack</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the integer to push on the stack </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="48" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="83" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a63b10abf5c9b00251b8db9ec1d3e0728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::pushString</definition>
+        <argsstring>(const std::string &amp;eventId)</argsstring>
+        <name>pushString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eventId</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a string argument for the callback on the stack.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to push on the stack </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="49" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a4556aab005713bf4668b384ec62d9f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::pushTable</definition>
+        <argsstring>(std::initializer_list&lt; std::pair&lt; std::string, std::variant&lt; std::string, int &gt;&gt;&gt; list)</argsstring>
+        <name>pushTable</name>
+        <param>
+          <type>std::initializer_list&lt; std::pair&lt; std::string, std::variant&lt; std::string, int &gt;&gt;&gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a table with string keys and string or integer values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="50" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="108" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a634acb3ad065353ddcf9cd2dc69d165d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::pushTable</definition>
+        <argsstring>(std::map&lt; std::string, std::variant&lt; std::string, int &gt;&gt; map)</argsstring>
+        <name>pushTable</name>
+        <param>
+          <type>std::map&lt; std::string, std::variant&lt; std::string, int &gt;&gt;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a table with string keys and string or integer values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="51" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="124" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a125f51239742ac50106cdf88b16f8500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LuaCallback::run</definition>
+        <argsstring>(int results=0)</argsstring>
+        <name>run</name>
+        <param>
+          <type>int</type>
+          <declname>results</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when an action is received from a Widget. It is used to be able to receive a notification that an action has occurred.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of results to be expected in call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="52" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1a02cd46bfd0b6e937fd889b13f46e48d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LuaCallback::popBoolean</definition>
+        <argsstring>()</argsstring>
+        <name>popBoolean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pops a boolean value for the callback on the stack. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="53" column="6" bodyfile="src/stratagus/luacallback.cpp" bodystart="141" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classLuaCallback_1aec4bb2ea678fbe0cd1b1464ad260ed84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LuaCallback::popInteger</definition>
+        <argsstring>()</argsstring>
+        <name>popInteger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pops an integer value for the callback on the stack. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="54" column="5" bodyfile="src/stratagus/luacallback.cpp" bodystart="158" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLuaCallback_1aeaa6ba9c6e212fdc7fd344847b6e281f" prot="private" static="no" mutable="no">
+        <type>lua_State *</type>
+        <definition>lua_State* LuaCallback::luastate</definition>
+        <argsstring></argsstring>
+        <name>luastate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="56" column="11" bodyfile="src/include/luacallback.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLuaCallback_1a30bf807cccfca6089a4be0320fa186d7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LuaCallback::luaref</definition>
+        <argsstring></argsstring>
+        <name>luaref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="57" column="5" bodyfile="src/include/luacallback.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLuaCallback_1a09916ab9c0572a029abe258cbf13bee8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LuaCallback::arguments</definition>
+        <argsstring></argsstring>
+        <name>arguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="58" column="5" bodyfile="src/include/luacallback.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLuaCallback_1a893c3103aafdbe94292629ef56e16a02" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LuaCallback::rescount</definition>
+        <argsstring></argsstring>
+        <name>rescount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="59" column="5" bodyfile="src/include/luacallback.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLuaCallback_1a2d823afc26be45edd123720859040f7b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LuaCallback::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/luacallback.h" line="60" column="5" bodyfile="src/include/luacallback.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/luacallback.h" line="42" column="1" bodyfile="src/include/luacallback.h" bodystart="41" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classLuaCallback_1a09916ab9c0572a029abe258cbf13bee8" prot="private" virt="non-virtual"><scope>LuaCallback</scope><name>arguments</name></member>
+      <member refid="classLuaCallback_1a2d823afc26be45edd123720859040f7b" prot="private" virt="non-virtual"><scope>LuaCallback</scope><name>base</name></member>
+      <member refid="classLuaCallback_1a2370a447d06504b4f85ede3fdfb3ac04" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>LuaCallback</name></member>
+      <member refid="classLuaCallback_1a30bf807cccfca6089a4be0320fa186d7" prot="private" virt="non-virtual"><scope>LuaCallback</scope><name>luaref</name></member>
+      <member refid="classLuaCallback_1aeaa6ba9c6e212fdc7fd344847b6e281f" prot="private" virt="non-virtual"><scope>LuaCallback</scope><name>luastate</name></member>
+      <member refid="classLuaCallback_1a02cd46bfd0b6e937fd889b13f46e48d8" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>popBoolean</name></member>
+      <member refid="classLuaCallback_1aec4bb2ea678fbe0cd1b1464ad260ed84" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>popInteger</name></member>
+      <member refid="classLuaCallback_1a644887e8201d322e8b736d5ab9c3016b" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>pushInteger</name></member>
+      <member refid="classLuaCallback_1a215bb787be91d28514fad9413453c81c" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>pushIntegers</name></member>
+      <member refid="classLuaCallback_1a4396ce50e96c0945f912a1aaf70d8aa5" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>pushPreamble</name></member>
+      <member refid="classLuaCallback_1a63b10abf5c9b00251b8db9ec1d3e0728" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>pushString</name></member>
+      <member refid="classLuaCallback_1a4556aab005713bf4668b384ec62d9f64" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>pushTable</name></member>
+      <member refid="classLuaCallback_1a634acb3ad065353ddcf9cd2dc69d165d" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>pushTable</name></member>
+      <member refid="classLuaCallback_1a893c3103aafdbe94292629ef56e16a02" prot="private" virt="non-virtual"><scope>LuaCallback</scope><name>rescount</name></member>
+      <member refid="classLuaCallback_1a125f51239742ac50106cdf88b16f8500" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>run</name></member>
+      <member refid="classLuaCallback_1a9c0c5449318822988dcab99c7040572b" prot="public" virt="non-virtual"><scope>LuaCallback</scope><name>~LuaCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

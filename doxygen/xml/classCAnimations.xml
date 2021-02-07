@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCAnimations" kind="class" language="C++" prot="public">
+    <compoundname>CAnimations</compoundname>
+    <includes refid="animation_8h" local="no">animation.h</includes>
+      <sectiondef kind="user-defined">
+      <header>actions.cpp - The actions.</header>
+      <memberdef kind="function" id="classCAnimations_1aae1052edb672c4ff128938a60cbce0d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CAnimations::SaveUnitAnim</definition>
+        <argsstring>(CFile &amp;file, const CUnit &amp;unit)</argsstring>
+        <name>SaveUnitAnim</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="139" column="13" bodyfile="src/animation/animation.cpp" bodystart="413" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classCAnimations_1a81d174d69f1813c7db8f89954c12a117" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CAnimations::LoadUnitAnim</definition>
+        <argsstring>(lua_State *l, CUnit &amp;unit, int luaIndex)</argsstring>
+        <name>LoadUnitAnim</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>luaIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="140" column="13" bodyfile="src/animation/animation.cpp" bodystart="454" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classCAnimations_1abaa958541dbedfdf68ba8f5452ea1c19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CAnimations::LoadWaitUnitAnim</definition>
+        <argsstring>(lua_State *l, CUnit &amp;unit, int luaIndex)</argsstring>
+        <name>LoadWaitUnitAnim</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>luaIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="141" column="13" bodyfile="src/animation/animation.cpp" bodystart="482" bodyend="508"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCAnimations_1a661b019427d73a6c94fe3660e7128b2b" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Attack</definition>
+        <argsstring></argsstring>
+        <name>Attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="144" column="12" bodyfile="src/include/animation.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1ae7a61081be1b8621f49f81cc18acc181" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::RangedAttack</definition>
+        <argsstring></argsstring>
+        <name>RangedAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="145" column="12" bodyfile="src/include/animation.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a01d01bf243bc54991ed82309558b171c" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Build</definition>
+        <argsstring></argsstring>
+        <name>Build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="146" column="12" bodyfile="src/include/animation.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1af18d2ea3353831ff1b03f45e874effd8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CAnimations::hasDeathAnimation</definition>
+        <argsstring></argsstring>
+        <name>hasDeathAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="147" column="6" bodyfile="src/include/animation.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1ab454bf082d36a5cf944b9e0842442e1e" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Death[ANIMATIONS_DEATHTYPES+1]</definition>
+        <argsstring>[ANIMATIONS_DEATHTYPES+1]</argsstring>
+        <name>Death</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="148" column="12" bodyfile="src/include/animation.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a67ee495c9f02cb6163b503193b64d7c9" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Harvest[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>Harvest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="149" column="12" bodyfile="src/include/animation.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a1f58bef3f6f60d4846e61513a868e973" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Move</definition>
+        <argsstring></argsstring>
+        <name>Move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="150" column="12" bodyfile="src/include/animation.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a3bb63cd94f674091c30a2e6b3aa5869a" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Repair</definition>
+        <argsstring></argsstring>
+        <name>Repair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="151" column="12" bodyfile="src/include/animation.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a6000f4cecd36b56939a600485484a186" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Research</definition>
+        <argsstring></argsstring>
+        <name>Research</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="152" column="12" bodyfile="src/include/animation.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a93aadb387d62814ddb39beb6d03fe66c" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::SpellCast</definition>
+        <argsstring></argsstring>
+        <name>SpellCast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="153" column="12" bodyfile="src/include/animation.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a1b9bf2d76a9751f0706fc7f13b098c54" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Start</definition>
+        <argsstring></argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="154" column="12" bodyfile="src/include/animation.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a3312e26d4d7ef5e4c74b0bde942662b4" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Still</definition>
+        <argsstring></argsstring>
+        <name>Still</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="155" column="12" bodyfile="src/include/animation.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a7c617c6acb000f55ed30dbb46758e222" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Train</definition>
+        <argsstring></argsstring>
+        <name>Train</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="156" column="12" bodyfile="src/include/animation.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimations_1a2cb314744a699ea013ea3f142a7b90ff" prot="public" static="no" mutable="no">
+        <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+        <definition>CAnimation* CAnimations::Upgrade</definition>
+        <argsstring></argsstring>
+        <name>Upgrade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="157" column="12" bodyfile="src/include/animation.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCAnimations_1a32cfb3fd9e228ac68c10e6798c29ebcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CAnimations::CAnimations</definition>
+        <argsstring>()</argsstring>
+        <name>CAnimations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="110" column="1" bodyfile="src/include/animation.h" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classCAnimations_1a6731487191e51cc02b27265285add70d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CAnimations::~CAnimations</definition>
+        <argsstring>()</argsstring>
+        <name>~CAnimations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="118" column="1" bodyfile="src/include/animation.h" bodystart="118" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CAnimations</label>
+        <link refid="classCAnimations"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Move</edgelabel>
+          <edgelabel>Death</edgelabel>
+          <edgelabel>Train</edgelabel>
+          <edgelabel>Still</edgelabel>
+          <edgelabel>RangedAttack</edgelabel>
+          <edgelabel>Harvest</edgelabel>
+          <edgelabel>Attack</edgelabel>
+          <edgelabel>SpellCast</edgelabel>
+          <edgelabel>Upgrade</edgelabel>
+          <edgelabel>Research</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CAnimation</label>
+        <link refid="classCAnimation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/animation.h" line="108" column="1" bodyfile="src/include/animation.h" bodystart="107" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classCAnimations_1a661b019427d73a6c94fe3660e7128b2b" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Attack</name></member>
+      <member refid="classCAnimations_1a01d01bf243bc54991ed82309558b171c" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Build</name></member>
+      <member refid="classCAnimations_1a32cfb3fd9e228ac68c10e6798c29ebcf" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>CAnimations</name></member>
+      <member refid="classCAnimations_1ab454bf082d36a5cf944b9e0842442e1e" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Death</name></member>
+      <member refid="classCAnimations_1a67ee495c9f02cb6163b503193b64d7c9" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Harvest</name></member>
+      <member refid="classCAnimations_1af18d2ea3353831ff1b03f45e874effd8" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>hasDeathAnimation</name></member>
+      <member refid="classCAnimations_1a81d174d69f1813c7db8f89954c12a117" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>LoadUnitAnim</name></member>
+      <member refid="classCAnimations_1abaa958541dbedfdf68ba8f5452ea1c19" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>LoadWaitUnitAnim</name></member>
+      <member refid="classCAnimations_1a1f58bef3f6f60d4846e61513a868e973" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Move</name></member>
+      <member refid="classCAnimations_1ae7a61081be1b8621f49f81cc18acc181" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>RangedAttack</name></member>
+      <member refid="classCAnimations_1a3bb63cd94f674091c30a2e6b3aa5869a" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Repair</name></member>
+      <member refid="classCAnimations_1a6000f4cecd36b56939a600485484a186" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Research</name></member>
+      <member refid="classCAnimations_1aae1052edb672c4ff128938a60cbce0d1" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>SaveUnitAnim</name></member>
+      <member refid="classCAnimations_1a93aadb387d62814ddb39beb6d03fe66c" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>SpellCast</name></member>
+      <member refid="classCAnimations_1a1b9bf2d76a9751f0706fc7f13b098c54" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Start</name></member>
+      <member refid="classCAnimations_1a3312e26d4d7ef5e4c74b0bde942662b4" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Still</name></member>
+      <member refid="classCAnimations_1a7c617c6acb000f55ed30dbb46758e222" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Train</name></member>
+      <member refid="classCAnimations_1a2cb314744a699ea013ea3f142a7b90ff" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>Upgrade</name></member>
+      <member refid="classCAnimations_1a6731487191e51cc02b27265285add70d" prot="public" virt="non-virtual"><scope>CAnimations</scope><name>~CAnimations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

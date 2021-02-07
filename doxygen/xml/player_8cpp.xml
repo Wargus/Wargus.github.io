@@ -1,0 +1,1290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="player_8cpp" kind="file" language="C++">
+    <compoundname>player.cpp</compoundname>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="action__upgradeto_8h" local="yes">action/action_upgradeto.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="ai_8h" local="yes">ai.h</includes>
+    <includes refid="iolib_8h" local="yes">iolib.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includes refid="netconnect_8h" local="yes">netconnect.h</includes>
+    <includes refid="sound_8h" local="yes">sound.h</includes>
+    <includes refid="translate_8h" local="yes">translate.h</includes>
+    <includes refid="unitsound_8h" local="yes">unitsound.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="video_8h" local="yes">video.h</includes>
+    <incdepgraph>
+      <node id="67">
+        <label>list</label>
+      </node>
+      <node id="15">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>guichan/widgets/label.h</label>
+        <link refid="label_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdarg.h</label>
+      </node>
+      <node id="33">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="20">
+        <label>ai.h</label>
+        <link refid="ai_8h"/>
+      </node>
+      <node id="52">
+        <label>video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>guichan/widgets/textfield.h</label>
+        <link refid="textfield_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>guichan/widgets/textbox.h</label>
+        <link refid="textbox_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>guichan/font.h</label>
+        <link refid="guichan_2include_2guichan_2font_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>translate.h</label>
+        <link refid="translate_8h"/>
+      </node>
+      <node id="22">
+        <label>SDL.h</label>
+      </node>
+      <node id="51">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>guichan/exception.h</label>
+        <link refid="exception_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>lua.h</label>
+      </node>
+      <node id="14">
+        <label>stdint.h</label>
+      </node>
+      <node id="83">
+        <label>guichan/widgets/dropdown.h</label>
+        <link refid="dropdown_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>action/action_upgradeto.h</label>
+        <link refid="action__upgradeto_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>guichan/widgets/window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>net_message.h</label>
+        <link refid="net__message_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="86">
+        <label>guichan/widgets/icon.h</label>
+        <link refid="icon_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>guichan/imagefont.h</label>
+        <link refid="imagefont_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>guichan/platform.h</label>
+        <link refid="platform_8h"/>
+      </node>
+      <node id="48">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="39">
+        <label>map</label>
+      </node>
+      <node id="68">
+        <label>guichan/defaultfont.h</label>
+        <link refid="defaultfont_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>guichan.h</label>
+        <link refid="guichan_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>guichan/widgets/scrollarea.h</label>
+        <link refid="scrollarea_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>guichan/rectangle.h</label>
+        <link refid="rectangle_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="63">
+        <label>guichan/imageloader.h</label>
+        <link refid="imageloader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>guichan/mouseinput.h</label>
+        <link refid="mouseinput_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>guichan/mouselistener.h</label>
+        <link refid="mouselistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>libmng.h</label>
+      </node>
+      <node id="25">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>guichan/widgets/checkbox.h</label>
+        <link refid="checkbox_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>guichan/listmodel.h</label>
+        <link refid="listmodel_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="59">
+        <label>guichan/cliprectangle.h</label>
+        <link refid="cliprectangle_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>guichan/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>ctime</label>
+      </node>
+      <node id="31">
+        <label>sound.h</label>
+        <link refid="sound_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>netconnect.h</label>
+        <link refid="netconnect_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>guichan/focushandler.h</label>
+        <link refid="focushandler_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>guichan/key.h</label>
+        <link refid="key_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>guichan/input.h</label>
+        <link refid="input_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>guichan/color.h</label>
+        <link refid="guichan_2include_2guichan_2color_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="82">
+        <label>guichan/basiccontainer.h</label>
+        <link refid="basiccontainer_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>guichan/gui.h</label>
+        <link refid="gui_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/stratagus/player.cpp</label>
+        <link refid="player_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>guichan/widgets/slider.h</label>
+        <link refid="slider_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>guichan/keyinput.h</label>
+        <link refid="keyinput_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>guichan/widgets/radiobutton.h</label>
+        <link refid="radiobutton_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="27">
+        <label>network.h</label>
+        <link refid="network_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>climits</label>
+      </node>
+      <node id="23">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>shaders.h</label>
+        <link refid="shaders_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>guichan/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>guichan/widgets/button.h</label>
+        <link refid="button_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="72">
+        <label>guichan/keylistener.h</label>
+        <link refid="keylistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>guichan/widgets/container.h</label>
+        <link refid="container_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>iolib.h</label>
+        <link refid="iolib_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="66">
+        <label>guichan/widget.h</label>
+        <link refid="widget_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>algorithm</label>
+      </node>
+      <node id="42">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>guichan/widgets/listbox.h</label>
+        <link refid="listbox_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>guichan/actionlistener.h</label>
+        <link refid="actionlistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>player.cpp - The players.</header>
+      <memberdef kind="variable" id="player_8cpp_1a1d99eda37d9d9511c05a105682500846" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NumPlayers</definition>
+        <argsstring></argsstring>
+        <name>NumPlayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="311" column="5" bodyfile="src/stratagus/player.cpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a1be6b306b4034980b7022a27ed66a048" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref></type>
+        <definition>CPlayer Players[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>Players</name>
+        <briefdescription>
+<para>How many player slots used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="312" column="9" bodyfile="src/stratagus/player.cpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a539a5aa222220aa978fe7710f9739d7a" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> *</type>
+        <definition>CPlayer* ThisPlayer</definition>
+        <argsstring></argsstring>
+        <name>ThisPlayer</name>
+        <briefdescription>
+<para>All players in play. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="313" column="9" bodyfile="src/stratagus/player.cpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a0af43daf7f30bdafc33c010f367bf642" prot="public" static="no" mutable="no">
+        <type><ref refid="classPlayerRace" kindref="compound">PlayerRace</ref></type>
+        <definition>PlayerRace PlayerRaces</definition>
+        <argsstring></argsstring>
+        <name>PlayerRaces</name>
+        <briefdescription>
+<para>Player on this computer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player color names. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="314" column="12" bodyfile="src/stratagus/player.cpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a3967abef04bbe141cbcbc41bb5b42ac9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NoRescueCheck</definition>
+        <argsstring></argsstring>
+        <name>NoRescueCheck</name>
+        <briefdescription>
+<para>Player races. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player on local computer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="316" column="6" bodyfile="src/stratagus/player.cpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1aac36a7955bc12bf4801b558a03306717" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCColor" kindref="compound">CColor</ref> &gt;</type>
+        <definition>std::vector&lt;CColor&gt; PlayerColorsRGB[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>PlayerColorsRGB</name>
+        <briefdescription>
+<para>Disable rescue check. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Colors used for minimap. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="321" column="13" bodyfile="src/stratagus/player.cpp" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a1f35af0f7f67364e9018a551a142401f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref> &gt;</type>
+        <definition>std::vector&lt;IntColor&gt; PlayerColors[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>PlayerColors</name>
+        <briefdescription>
+<para>Player colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="322" column="13" bodyfile="src/stratagus/player.cpp" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a3dba8d61b066740a2b6e3ed3313b0933" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PlayerColorNames[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>PlayerColorNames</name>
+        <briefdescription>
+<para>Player colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="324" column="13" bodyfile="src/stratagus/player.cpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a9eb28aaaeb52f02b7005de336f0b0fce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerColorIndexStart</definition>
+        <argsstring></argsstring>
+        <name>PlayerColorIndexStart</name>
+        <briefdescription>
+<para>Player races. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Which indexes to replace with player color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="329" column="5" bodyfile="src/stratagus/player.cpp" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8cpp_1a31c1d91113cb8d154d39825b31036a6e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerColorIndexCount</definition>
+        <argsstring></argsstring>
+        <name>PlayerColorIndexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="330" column="5" bodyfile="src/stratagus/player.cpp" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a6a14db78040814a10735ed7b0a31d9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>InitPlayers</name>
+        <briefdescription>
+<para>Init players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="371" column="6" bodyfile="src/stratagus/player.cpp" bodystart="371" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a7805a65a493bd28abc24374220d84010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>CleanPlayers</name>
+        <briefdescription>
+<para>Clean up players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="387" column="6" bodyfile="src/stratagus/player.cpp" bodystart="387" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a9e593ca911794934cbeb018ea56c0087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreePlayerColors</definition>
+        <argsstring>()</argsstring>
+        <name>FreePlayerColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="398" column="6" bodyfile="src/stratagus/player.cpp" bodystart="398" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a507ac319e633d13b529024ef14dc659e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SavePlayers</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SavePlayers</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Save players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save state of players to file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>FIXME: Not completely saved. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="414" column="6" bodyfile="src/stratagus/player.cpp" bodystart="414" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a84fc1a469107082db541eeb2f051c893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CreatePlayer</definition>
+        <argsstring>(int type)</argsstring>
+        <name>CreatePlayer</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Create a new player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player type (Computer,Human,...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="607" column="6" bodyfile="src/stratagus/player.cpp" bodystart="607" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a8981e425bd510278e2092a2d17d86075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayersInitAi</definition>
+        <argsstring>()</argsstring>
+        <name>PlayersInitAi</name>
+        <briefdescription>
+<para>Initialize the computer opponent AI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Ai for all players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="1194" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1194" bodyend="1201"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a6baf6bd5a1b084fea6746ca529709390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayersEachCycle</definition>
+        <argsstring>()</argsstring>
+        <name>PlayersEachCycle</name>
+        <briefdescription>
+<para>Called each game cycle for player handlers (AI) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle AI of all players each game cycle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="1206" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1206" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1add66241d521e6b7d5bbacf658fae83f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayersEachSecond</definition>
+        <argsstring>(int playerIdx)</argsstring>
+        <name>PlayersEachSecond</name>
+        <param>
+          <type>int</type>
+          <declname>playerIdx</declname>
+        </param>
+        <briefdescription>
+<para>Called each second for a given player handler (AI) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle AI of a player each second.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playerIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the player to update AI </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="1233" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1233" bodyend="1249"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a9dea1fac6d2e74553b3e685d674b415e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void GraphicPlayerPixels</definition>
+        <argsstring>(CPlayer &amp;player, const CGraphic &amp;sprite)</argsstring>
+        <name>GraphicPlayerPixels</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCGraphic" kindref="compound">CGraphic</ref> &amp;</type>
+          <declname>sprite</declname>
+        </param>
+        <briefdescription>
+<para>Change current color set to new player of the sprite. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change current color set to new player.</para>
+<para>FIXME: use function pointer here.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sprite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sprite in which the colors should be changed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="1259" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1259" bodyend="1269"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a7bedf168928de2c29c4c256e2478f5c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetPlayersPalette</definition>
+        <argsstring>()</argsstring>
+        <name>SetPlayersPalette</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the player colors for the current palette.</para>
+<para><xrefsect id="todo_1_todo000060"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: could be called before PixelsXX is setup. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="1276" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1276" bodyend="1281"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8cpp_1a0797f0174df7169c59377a9ae4d2c972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DebugPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>DebugPlayers</name>
+        <briefdescription>
+<para>Output debug information for players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output debug information for players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/player.cpp" line="1286" column="6" bodyfile="src/stratagus/player.cpp" bodystart="1286" bodyend="1316"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/stratagus/player.cpp"/>
+  </compounddef>
+</doxygen>

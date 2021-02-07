@@ -1,0 +1,986 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCOrder__Attack" kind="class" language="C++" prot="public">
+    <compoundname>COrder_Attack</compoundname>
+    <basecompoundref refid="classCOrder" prot="public" virt="non-virtual">COrder</basecompoundref>
+    <includes refid="action__attack_8h" local="no">action_attack.h</includes>
+      <sectiondef kind="user-defined">
+      <header>action_attack.cpp - The attack action.</header>
+      <memberdef kind="function" id="classCOrder__Attack_1a373bb4c2ff63438067152ca820874e10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::IsValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsValid</name>
+        <reimplements refid="classCOrder_1ab6924e22bfe7bf2f2cefab357ad1edbf">IsValid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="48" column="14" bodyfile="src/action/action_attack.cpp" bodystart="212" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1aae9c9bc470acd49137a077a225973082" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::Save</definition>
+        <argsstring>(CFile &amp;file, const CUnit &amp;unit) const</argsstring>
+        <name>Save</name>
+        <reimplements refid="classCOrder_1a58c15c09929a6d1347cec039f8cfffd3">Save</reimplements>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="49" column="14" bodyfile="src/action/action_attack.cpp" bodystart="155" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1aa49665821995ecce7ae481a073feb58b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::ParseSpecificData</definition>
+        <argsstring>(lua_State *l, int &amp;j, const char *value, const CUnit &amp;unit)</argsstring>
+        <name>ParseSpecificData</name>
+        <reimplements refid="classCOrder_1a0b7f9738ae78f449aba5f7c3c8ef1640">ParseSpecificData</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="50" column="14" bodyfile="src/action/action_attack.cpp" bodystart="180" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1acf794a34fd14ea8485a04f9ded962a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::Execute</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>Execute</name>
+        <reimplements refid="classCOrder_1a1c777511ad924a106af290da2c2d3e91">Execute</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unit attacks!</para>
+<para>if (SubAction &amp; AUTO_TARGETING) is true the goal is a weak goal. This means the unit AI (little AI) could choose a new better goal.</para>
+<para><xrefsect id="todo_1_todo000004"><xreftitle>Todo</xreftitle><xrefdescription><para>Lets do some tries to reach the target. If target place is not reachable, choose better goal to reduce the pathfinder load.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit, for that the attack is handled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="52" column="14" bodyfile="src/action/action_attack.cpp" bodystart="823" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a713313ca6e856458ec53f0fa1025c90f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::OnAnimationAttack</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>OnAnimationAttack</name>
+        <reimplements refid="classCOrder_1a3e3dde115ea9ea57fa29d0dcfe8f983b">OnAnimationAttack</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call when animation step is &quot;attack&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="53" column="14" bodyfile="src/action/action_attack.cpp" bodystart="284" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a89ae5c0215c3e39f7d080075346e6f83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos COrder_Attack::Show</definition>
+        <argsstring>(const CViewport &amp;vp, const PixelPos &amp;lastScreenPos) const</argsstring>
+        <name>Show</name>
+        <reimplements refid="classCOrder_1af9c3ee0b4e23d338aa6f44d73682654d">Show</reimplements>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>lastScreenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="54" column="18" bodyfile="src/action/action_attack.cpp" bodystart="226" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1adfd3e7f9958544f8864cc85f17858556" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::UpdatePathFinderData</definition>
+        <argsstring>(PathFinderInput &amp;input)</argsstring>
+        <name>UpdatePathFinderData</name>
+        <reimplements refid="classCOrder_1a9cb844e0bec22d40396b187c2f4f7f53">UpdatePathFinderData</reimplements>
+        <param>
+          <type><ref refid="classPathFinderInput" kindref="compound">PathFinderInput</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="55" column="14" bodyfile="src/action/action_attack.cpp" bodystart="258" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1ae039dca6aecfd4293493ed21095091c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::OnAiHitUnit</definition>
+        <argsstring>(CUnit &amp;unit, CUnit *attacker, int)</argsstring>
+        <name>OnAiHitUnit</name>
+        <reimplements refid="classCOrder_1abea314b99c9832b4d0920ae9262fcdae">OnAiHitUnit</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="56" column="14" bodyfile="src/action/action_attack.cpp" bodystart="292" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a9fc7e1a1dae7dfd374eed0b38bc1a75d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::IsWeakTargetSelected</definition>
+        <argsstring>() const</argsstring>
+        <name>IsWeakTargetSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="59" column="6" bodyfile="src/action/action_attack.cpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a4cb6d3ab9392c5a383a24b596ce95758" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::IsAutoTargeting</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAutoTargeting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="60" column="6" bodyfile="src/action/action_attack.cpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1aa9a4372b55317804005a2aee5edb0776" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::IsMovingToAttackPos</definition>
+        <argsstring>() const</argsstring>
+        <name>IsMovingToAttackPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="61" column="6" bodyfile="src/action/action_attack.cpp" bodystart="324" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1aa2a9c4f839def378a8d52cb10b96c043" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::IsAttackGroundOrWall</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAttackGroundOrWall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>FIXME: Check if need to add this: (goal &amp;&amp; goal-&gt;Type &amp;&amp; goal-&gt;Type-&gt;BoolFlag[WALL_INDEX].value) <linebreak/>
+</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="62" column="6" bodyfile="src/action/action_attack.cpp" bodystart="328" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a9ce598802edfcc20a61dc545a518d5fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::IsTargetTooClose</definition>
+        <argsstring>(const CUnit &amp;unit) const</argsstring>
+        <name>IsTargetTooClose</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if current target is closer to unit more than MinAttackRange</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that is attacking and moving </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calculate distance to goal or map tile if attack ground/wall</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="63" column="6" bodyfile="src/action/action_attack.cpp" bodystart="627" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a00191ae4386c3bb6d3392bad660a224b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *const</type>
+        <definition>CUnit *const COrder_Attack::BestTarget</definition>
+        <argsstring>(const CUnit &amp;unit, CUnit *const target1, CUnit *const target2) const</argsstring>
+        <name>BestTarget</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *const</type>
+          <declname>target1</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *const</type>
+          <declname>target2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="64" column="13" bodyfile="src/action/action_attack.cpp" bodystart="334" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a7a7f5f2bf6991807a32bbd31cf8acf1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::OfferNewTarget</definition>
+        <argsstring>(const CUnit &amp;unit, CUnit *const target)</argsstring>
+        <name>OfferNewTarget</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *const</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Try to change goal from outside, when in the auto attack mode <verbatim>@param unit
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> that offered as the new current goal </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>if attacker cant&apos;t move (stand_ground, building, in a bunker or transport)</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="65" column="6" bodyfile="src/action/action_attack.cpp" bodystart="351" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a3e453cb2176d1ded0d8f02011067eb0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::CheckIfGoalValid</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>CheckIfGoalValid</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check for dead/valid goal.</para>
+<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>If a unit enters an building, than the attack choose an other goal, perhaps it is better to wait for the goal?</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit using the goal.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if target is valid, false else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="68" column="6" bodyfile="src/action/action_attack.cpp" bodystart="381" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1ab44a79607d0d02030dcf3fbe83a468ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::TurnToTarget</definition>
+        <argsstring>(CUnit &amp;unit, const CUnit *target)</argsstring>
+        <name>TurnToTarget</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turn unit to <ref refid="classTarget" kindref="compound">Target</ref> or position on map for attack.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to turn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Turn to this <ref refid="classTarget" kindref="compound">Target</ref>. If NULL then turn to goalPos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="69" column="6" bodyfile="src/action/action_attack.cpp" bodystart="410" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1aa8c1b0af7674e7b8a9952d3e02154699" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::SetAutoTarget</definition>
+        <argsstring>(CUnit &amp;unit, CUnit *target)</argsstring>
+        <name>SetAutoTarget</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set target for attack in auto-attack mode. Also if there is no active target Attack-Move action will be saved.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attacker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Turn to this <ref refid="classTarget" kindref="compound">Target</ref>. If NULL then turn to goalPos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="70" column="6" bodyfile="src/action/action_attack.cpp" bodystart="437" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1adb2c9a998b41e0cfd69cf78716efe288" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::EndActionAttack</definition>
+        <argsstring>(CUnit &amp;unit, const bool canBeFinished)</argsstring>
+        <name>EndActionAttack</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>canBeFinished</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restore action/order when current action is finished</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>canBeFinished</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>False if ony restore order/action needed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false if order/action restored, true else (if order finished). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Restore saved order only when UnderAttack counter is expired</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="71" column="6" bodyfile="src/action/action_attack.cpp" bodystart="548" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a0afff7818bf1e43532739877c5818144" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::MoveToBetterPos</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>MoveToBetterPos</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move unit to randomly selected position in MinAttackRange away from current goal.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit ot move </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Save current goalPos if target is ground or wall</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="72" column="6" bodyfile="src/action/action_attack.cpp" bodystart="570" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1aef527dfe1e63534fe697b60bc03f9391" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::AutoSelectTarget</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AutoSelectTarget</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select target in auto attack mode</para>
+<para>return true if we have a target, false if can&apos;t find any </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>if attacker cant&apos;t move (stand_ground, building, in a bunker or transport)</para>
+<para>If we have target offered from outside - try it</para>
+<para>if goal is Valid</para>
+<para>Do not switch to non aggresive targets while UnderAttack counter is active</para>
+<para>if unit under attack by current goal</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="73" column="6" bodyfile="src/action/action_attack.cpp" bodystart="461" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a3d81b0819f7810085e206de42cbee003" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Attack::CheckForTargetInRange</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>CheckForTargetInRange</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change invalid target for new target in range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit to check if goal is in range</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if order(action) have changed, false else (if goal change return false). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="74" column="6" bodyfile="src/action/action_attack.cpp" bodystart="598" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1acec3d71006e2673965b48701524ca7f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::MoveToAttackPos</definition>
+        <argsstring>(CUnit &amp;unit, const int pfReturn)</argsstring>
+        <name>MoveToAttackPos</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pfReturn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls moving a unit to position if its target is closer than MinAttackRange when attacking</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that is attacking and moving </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pfReturn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current path finder status. Using to find new attack pos if current is unreachable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>When attack ground and moving to attack position, the target tile pos is stored in attackMovePos</para>
+<para>We have to restore original goalPos value</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="75" column="6" bodyfile="src/action/action_attack.cpp" bodystart="646" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a22cc8d58b20a5749e602e412d2d81a40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::MoveToTarget</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>MoveToTarget</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls moving a unit to its target when attacking</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that is attacking and moving </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Order may be set as finished by outside code while playing animation. In this case we must not execute code of MoveToTarget</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="76" column="6" bodyfile="src/action/action_attack.cpp" bodystart="681" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a0b974d6326426fb9b3c8ad62260b122e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Attack::AttackTarget</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AttackTarget</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle attacking the target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit, for that the attack is handled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Order may be set as finished by outside code while playing attack animation. In this case we must not execute code of AttackTarget</para>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="77" column="6" bodyfile="src/action/action_attack.cpp" bodystart="777" bodyend="809"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCOrder__Attack_1a9f5b6e738ab93edb525fa1deaf316a17" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int COrder_Attack::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="80" column="5" bodyfile="src/include/action/action_attack.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Attack_1a1a4215c188b07d1c91736305e26fc293" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int COrder_Attack::MinRange</definition>
+        <argsstring></argsstring>
+        <name>MinRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="81" column="5" bodyfile="src/include/action/action_attack.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Attack_1a984265333dee0d0feeee794e024804d4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int COrder_Attack::Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="82" column="5" bodyfile="src/include/action/action_attack.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Attack_1a6660fb2298feb980943801ff1ddd4793" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int COrder_Attack::SkirmishRange</definition>
+        <argsstring></argsstring>
+        <name>SkirmishRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="83" column="5" bodyfile="src/include/action/action_attack.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Attack_1a03152926c68707ec65acd5d335a82b19" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnitPtr" kindref="compound">CUnitPtr</ref></type>
+        <definition>CUnitPtr COrder_Attack::offeredTarget</definition>
+        <argsstring></argsstring>
+        <name>offeredTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="84" column="10" bodyfile="src/include/action/action_attack.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Attack_1a49817de9f4c7ddb9693f52192e7f6c59" prot="private" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i COrder_Attack::goalPos</definition>
+        <argsstring></argsstring>
+        <name>goalPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="85" column="7" bodyfile="src/include/action/action_attack.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Attack_1a2b6d631b67ec2ba7d23ae6751ca23efb" prot="private" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i COrder_Attack::attackMovePos</definition>
+        <argsstring></argsstring>
+        <name>attackMovePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="86" column="7" bodyfile="src/include/action/action_attack.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCOrder__Attack_1a458cb4cb91f0b8b38a3ddf969383bb95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* COrder::NewActionAttack</definition>
+        <argsstring>(const CUnit &amp;attacker, CUnit &amp;target)</argsstring>
+        <name>COrder::NewActionAttack</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="39" column="15"/>
+      </memberdef>
+      <memberdef kind="friend" id="classCOrder__Attack_1a8ee3a82b92e5009e8842e3154657228c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* COrder::NewActionAttack</definition>
+        <argsstring>(const CUnit &amp;attacker, const Vec2i &amp;dest)</argsstring>
+        <name>COrder::NewActionAttack</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="40" column="15"/>
+      </memberdef>
+      <memberdef kind="friend" id="classCOrder__Attack_1ae775ac7006d038dee7f2108ee2529738" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* COrder::NewActionAttackGround</definition>
+        <argsstring>(const CUnit &amp;attacker, const Vec2i &amp;dest)</argsstring>
+        <name>COrder::NewActionAttackGround</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="41" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCOrder__Attack_1a741d97cc3243053851538f4ab7bd5e01" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>COrder_Attack::COrder_Attack</definition>
+        <argsstring>(bool ground)</argsstring>
+        <name>COrder_Attack</name>
+        <param>
+          <type>bool</type>
+          <declname>ground</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="43" column="10" bodyfile="src/include/action/action_attack.h" bodystart="43" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1a9034a62f42d243d0946fd9989952bd2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classCOrder__Attack" kindref="compound">COrder_Attack</ref> *</type>
+        <definition>virtual COrder_Attack* COrder_Attack::Clone</definition>
+        <argsstring>() const</argsstring>
+        <name>Clone</name>
+        <reimplements refid="classCOrder_1a3c4692a77027267df06eb6c2df03fcfa">Clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="46" column="23" bodyfile="src/include/action/action_attack.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Attack_1adfc1c6e74a3cce40291bdff23e100058" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>virtual const Vec2i COrder_Attack::GetGoalPos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGoalPos</name>
+        <reimplements refid="classCOrder_1a4e9ea1cb79d8ab5628b1565ccef58702">GetGoalPos</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get goal position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_attack.h" line="58" column="21" bodyfile="src/include/action/action_attack.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>COrder_Attack</label>
+        <link refid="classCOrder__Attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>COrder_Attack</label>
+        <link refid="classCOrder__Attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/action/action_attack.h" line="38" column="1" bodyfile="src/include/action/action_attack.h" bodystart="37" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classCOrder_1ae392a909b6205e42570d4d42466f9752" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>Action</name></member>
+      <member refid="classCOrder_1a992121bb6de5d10d97c8087f6e1ce663" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>AiUnitKilled</name></member>
+      <member refid="classCOrder__Attack_1a2b6d631b67ec2ba7d23ae6751ca23efb" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>attackMovePos</name></member>
+      <member refid="classCOrder__Attack_1a0b974d6326426fb9b3c8ad62260b122e" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>AttackTarget</name></member>
+      <member refid="classCOrder__Attack_1aef527dfe1e63534fe697b60bc03f9391" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>AutoSelectTarget</name></member>
+      <member refid="classCOrder__Attack_1a00191ae4386c3bb6d3392bad660a224b" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>BestTarget</name></member>
+      <member refid="classCOrder_1acec86b1c1bbf9b18b355223795c67825" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>Cancel</name></member>
+      <member refid="classCOrder__Attack_1a3d81b0819f7810085e206de42cbee003" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>CheckForTargetInRange</name></member>
+      <member refid="classCOrder__Attack_1a3e453cb2176d1ded0d8f02011067eb0d" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>CheckIfGoalValid</name></member>
+      <member refid="classCOrder_1af0e646d2ab79d564c24f828f0fa7a26d" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>ClearGoal</name></member>
+      <member refid="classCOrder__Attack_1a9034a62f42d243d0946fd9989952bd2d" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>Clone</name></member>
+      <member refid="classCOrder_1a63e19ab48735815135c57cd9da1ce514" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>COrder</name></member>
+      <member refid="classCOrder__Attack_1a458cb4cb91f0b8b38a3ddf969383bb95" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>COrder::NewActionAttack</name></member>
+      <member refid="classCOrder__Attack_1a8ee3a82b92e5009e8842e3154657228c" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>COrder::NewActionAttack</name></member>
+      <member refid="classCOrder__Attack_1ae775ac7006d038dee7f2108ee2529738" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>COrder::NewActionAttackGround</name></member>
+      <member refid="classCOrder__Attack_1a741d97cc3243053851538f4ab7bd5e01" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>COrder_Attack</name></member>
+      <member refid="classCOrder__Attack_1adb2c9a998b41e0cfd69cf78716efe288" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>EndActionAttack</name></member>
+      <member refid="classCOrder__Attack_1acf794a34fd14ea8485a04f9ded962a76" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>Execute</name></member>
+      <member refid="classCOrder_1a70f1e687933a004e6c1dd366a446f962" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>FillSeenValues</name></member>
+      <member refid="classCOrder_1af1140a35f3ba61ca1f8a00bdbf10eb9a" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>Finished</name></member>
+      <member refid="classCOrder_1a46b331cafbc13d9da4d2f3349cbb5f31" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>GetGoal</name></member>
+      <member refid="classCOrder__Attack_1adfc1c6e74a3cce40291bdff23e100058" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>GetGoalPos</name></member>
+      <member refid="classCOrder__Attack_1a49817de9f4c7ddb9693f52192e7f6c59" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>goalPos</name></member>
+      <member refid="classCOrder_1a1120819b82b933e7e020f69610c2159a" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>HasGoal</name></member>
+      <member refid="classCOrder__Attack_1aa2a9c4f839def378a8d52cb10b96c043" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>IsAttackGroundOrWall</name></member>
+      <member refid="classCOrder__Attack_1a4cb6d3ab9392c5a383a24b596ce95758" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>IsAutoTargeting</name></member>
+      <member refid="classCOrder__Attack_1aa9a4372b55317804005a2aee5edb0776" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>IsMovingToAttackPos</name></member>
+      <member refid="classCOrder__Attack_1a9ce598802edfcc20a61dc545a518d5fb" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>IsTargetTooClose</name></member>
+      <member refid="classCOrder__Attack_1a373bb4c2ff63438067152ca820874e10" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>IsValid</name></member>
+      <member refid="classCOrder__Attack_1a9fc7e1a1dae7dfd374eed0b38bc1a75d" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>IsWeakTargetSelected</name></member>
+      <member refid="classCOrder__Attack_1a1a4215c188b07d1c91736305e26fc293" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>MinRange</name></member>
+      <member refid="classCOrder__Attack_1acec3d71006e2673965b48701524ca7f6" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>MoveToAttackPos</name></member>
+      <member refid="classCOrder__Attack_1a0afff7818bf1e43532739877c5818144" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>MoveToBetterPos</name></member>
+      <member refid="classCOrder__Attack_1a22cc8d58b20a5749e602e412d2d81a40" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>MoveToTarget</name></member>
+      <member refid="classCOrder_1a66f2cca62f01220c9b15a05ebdccbdf9" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionAttack</name></member>
+      <member refid="classCOrder_1a7b95385f85b298f324dd55b87075594f" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionAttack</name></member>
+      <member refid="classCOrder_1a12a9b8dd296f8859300791319744cda4" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionAttackGround</name></member>
+      <member refid="classCOrder_1a821e810aa0d4d35d96a67099024f0d31" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionBoard</name></member>
+      <member refid="classCOrder_1a40c190ff9e647bd3977103966925fe99" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionBuild</name></member>
+      <member refid="classCOrder_1af1d67cf830eec93f747dbc931d9d3ce5" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionBuilt</name></member>
+      <member refid="classCOrder_1a026a2104c1497d30810ac5e72533e3d1" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionDefend</name></member>
+      <member refid="classCOrder_1a31463731a44de229474c202090621847" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionDie</name></member>
+      <member refid="classCOrder_1af776706076b12175f266ed812765ceb2" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionExplore</name></member>
+      <member refid="classCOrder_1a234160729c0432becb743c94a699fa1f" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionFollow</name></member>
+      <member refid="classCOrder_1a5583b5534550bd31b72047fdf9ca284e" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionMove</name></member>
+      <member refid="classCOrder_1a7d5dbfd4745d2ba08fd9b654216f674d" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionPatrol</name></member>
+      <member refid="classCOrder_1a7efc9673c9c3d38bf50fd43b8afee5b3" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionRepair</name></member>
+      <member refid="classCOrder_1a2964869fd79a60eb0132f8f7c25d30f0" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionRepair</name></member>
+      <member refid="classCOrder_1aabf3430899ab91803e3195e75cf96fb3" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionResearch</name></member>
+      <member refid="classCOrder_1a3f2e49826eb2eceb7e0626b74a990bfe" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionResource</name></member>
+      <member refid="classCOrder_1ac8b093656bfce523a4b26c05e66a9938" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionResource</name></member>
+      <member refid="classCOrder_1a16c416d4dcf29f7cbeb142d2ae52f92e" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionReturnGoods</name></member>
+      <member refid="classCOrder_1a9361650a1dccde1b2fd6915fd333740b" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionSpellCast</name></member>
+      <member refid="classCOrder_1a67bb017bb8e2811dc75da6771fc41685" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionStandGround</name></member>
+      <member refid="classCOrder_1a4ed37af7841d69e04ba31f213f9e999a" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionStill</name></member>
+      <member refid="classCOrder_1a7737871d94580eb620c639829ddf030c" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionTrain</name></member>
+      <member refid="classCOrder_1aa56c12efaa85de23a36d91f6375c7bec" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionTransformInto</name></member>
+      <member refid="classCOrder_1a1a5bbc8793b7f459c8919f5ca21098c3" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionUnload</name></member>
+      <member refid="classCOrder_1a17e5e25e418c7149471efcdab0fe47bd" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>NewActionUpgradeTo</name></member>
+      <member refid="classCOrder__Attack_1a03152926c68707ec65acd5d335a82b19" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>offeredTarget</name></member>
+      <member refid="classCOrder__Attack_1a7a7f5f2bf6991807a32bbd31cf8acf1a" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>OfferNewTarget</name></member>
+      <member refid="classCOrder__Attack_1ae039dca6aecfd4293493ed21095091c2" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>OnAiHitUnit</name></member>
+      <member refid="classCOrder__Attack_1a713313ca6e856458ec53f0fa1025c90f" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>OnAnimationAttack</name></member>
+      <member refid="classCOrder_1a5c8ec68b8426ce5d5b2bbb93ed3041b9" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>ParseGenericData</name></member>
+      <member refid="classCOrder__Attack_1aa49665821995ecce7ae481a073feb58b" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>ParseSpecificData</name></member>
+      <member refid="classCOrder__Attack_1a984265333dee0d0feeee794e024804d4" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>Range</name></member>
+      <member refid="classCOrder__Attack_1aae9c9bc470acd49137a077a225973082" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>Save</name></member>
+      <member refid="classCOrder__Attack_1aa8c1b0af7674e7b8a9952d3e02154699" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>SetAutoTarget</name></member>
+      <member refid="classCOrder_1a4b29fd5d2266dcb3f6b565a931a25a78" prot="public" virt="non-virtual"><scope>COrder_Attack</scope><name>SetGoal</name></member>
+      <member refid="classCOrder__Attack_1a89ae5c0215c3e39f7d080075346e6f83" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>Show</name></member>
+      <member refid="classCOrder__Attack_1a6660fb2298feb980943801ff1ddd4793" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>SkirmishRange</name></member>
+      <member refid="classCOrder__Attack_1a9f5b6e738ab93edb525fa1deaf316a17" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>State</name></member>
+      <member refid="classCOrder__Attack_1ab44a79607d0d02030dcf3fbe83a468ec" prot="private" virt="non-virtual"><scope>COrder_Attack</scope><name>TurnToTarget</name></member>
+      <member refid="classCOrder__Attack_1adfd3e7f9958544f8864cc85f17858556" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>UpdatePathFinderData</name></member>
+      <member refid="classCOrder_1a347f8abee4516aa09c289da220966de5" prot="protected" virt="non-virtual"><scope>COrder_Attack</scope><name>UpdatePathFinderData_NotCalled</name></member>
+      <member refid="classCOrder_1a81c8648cfb27f2e54800358e935f5458" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>UpdateUnitVariables</name></member>
+      <member refid="classCOrder_1a116ed5442f01b5c24ca7d0df1f81e9b5" prot="public" virt="virtual"><scope>COrder_Attack</scope><name>~COrder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="astar_8cpp" kind="file" language="C++">
+    <compoundname>astar.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="settings_8h" local="yes">settings.h</includes>
+    <includes refid="tileset_8h" local="yes">tileset.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>queue</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stdint.h</label>
+      </node>
+      <node id="30">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="17">
+        <label>settings.h</label>
+        <link refid="settings_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="24">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="25">
+        <label>climits</label>
+      </node>
+      <node id="9">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="19">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>set</label>
+      </node>
+      <node id="20">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="32">
+        <label>stdio.h</label>
+      </node>
+      <node id="27">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structNode" prot="public">Node</innerclass>
+    <innerclass refid="structOpen" prot="public">Open</innerclass>
+    <innerclass refid="classAStarGoalMarker" prot="public">AStarGoalMarker</innerclass>
+    <innerclass refid="classMinMaxRangeVisitor" prot="public">MinMaxRangeVisitor</innerclass>
+    <innerclass refid="structStatsNode" prot="public">StatsNode</innerclass>
+      <sectiondef kind="user-defined">
+      <header>astar.cpp - The a* path finder routines.</header>
+      <memberdef kind="define" id="astar_8cpp_1aaaf0156b79995c73168f05187b55900a" prot="public" static="no">
+        <name>MAX_CLOSE_SET_RATIO</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="96" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1ad0b2c45dbeab42cc01c7c574bb1902d5" prot="public" static="no">
+        <name>MAX_OPEN_SET_RATIO</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="97" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1a40cf2a0494e10b3dbba02f5409bc9b64" prot="public" static="no">
+        <name>ProfileInit</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="240" column="10" bodyfile="src/pathfinder/astar.cpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1a40cab84c464256127d354b453f9d0ed6" prot="public" static="no">
+        <name>ProfileBegin</name>
+        <param><defname>f</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="241" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1a1667dbc2769a6dcc6952ba196e944f91" prot="public" static="no">
+        <name>ProfileEnd</name>
+        <param><defname>f</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="242" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1af0f541c6f8389637203dfb6edc3500ba" prot="public" static="no">
+        <name>ProfilePrint</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="243" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1a2dc91c51c04f9fbd6255ac7b01759fba" prot="public" static="no">
+        <name>AStarFindMinimum</name>
+        <param></param>
+        <initializer>(<ref refid="astar_8cpp_1acac96e600945011059302d48c3ba1a24" kindref="member">OpenSetSize</ref> - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the best node in the current open node set Returns the position of this node in the open node set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="373" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="astar_8cpp_1a36e8ad9eed64cff230b6dcc4cc2ad382" prot="public" static="no">
+        <name>GetIndex</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x) + (y) * <ref refid="astar_8cpp_1a165e7a9e7fb03d54169c052a2b8cc1da" kindref="member">AStarMapWidth</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="505" column="9" bodyfile="src/pathfinder/astar.cpp" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a466bb80ff01775e98efaa1fc886156b4" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Heading2X[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>Heading2X</name>
+        <initializer>= {  0, +1, +1, +1, 0, -1, -1, -1, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="82" column="11" bodyfile="src/pathfinder/astar.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a48699dd113800ebf2e4b246aab3e7436" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Heading2Y[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>Heading2Y</name>
+        <initializer>= { -1, -1, 0, +1, +1, +1, 0, -1, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="83" column="11" bodyfile="src/pathfinder/astar.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1ade87a3d68ab52d1539cf66c30e6d30d1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Heading2O[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>Heading2O</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="84" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a7aa14ee0b549260c097fbe24a88d382c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int XY2Heading[3][3]</definition>
+        <argsstring>[3][3]</argsstring>
+        <name>XY2Heading</name>
+        <initializer>= { {7, 6, 5}, {0, 0, 4}, {1, 2, 3}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="85" column="11" bodyfile="src/pathfinder/astar.cpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a7e5e553cdd4fcbbf096cc39923324e4f" prot="public" static="yes" mutable="no">
+        <type><ref refid="structNode" kindref="compound">Node</ref> *</type>
+        <definition>Node* AStarMatrix</definition>
+        <argsstring></argsstring>
+        <name>AStarMatrix</name>
+        <briefdescription>
+<para>cost matrix </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="88" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1ad3ad62558747d17097a268d1cfb3adb1" prot="public" static="yes" mutable="no">
+        <type>int *</type>
+        <definition>int* CloseSet</definition>
+        <argsstring></argsstring>
+        <name>CloseSet</name>
+        <briefdescription>
+<para>a list of close nodes, helps to speed up the matrix cleaning </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="91" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a44f108e2dec6917bee2cb0ade6062cf2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int CloseSetSize</definition>
+        <argsstring></argsstring>
+        <name>CloseSetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="92" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a68d2c1ffc25f691bfab9895cb7e64d0c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Threshold</definition>
+        <argsstring></argsstring>
+        <name>Threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="93" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1aa65b3b0eaa7efdd28d9e8dc800791c16" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int OpenSetMaxSize</definition>
+        <argsstring></argsstring>
+        <name>OpenSetMaxSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="94" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a607141b3ddd26c498f5f6aa49b5090ff" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AStarMatrixSize</definition>
+        <argsstring></argsstring>
+        <name>AStarMatrixSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="95" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a9a00ec2500f1fc8cb1b723f066072e4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AStarFixedUnitCrossingCost</definition>
+        <argsstring></argsstring>
+        <name>AStarFixedUnitCrossingCost</name>
+        <briefdescription>
+<para>see <ref refid="pathfinder_8h" kindref="compound">pathfinder.h</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>cost associated to move on a tile occupied by a fixed unit </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="100" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a8842f6545b974c48eb70b53c734255ae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AStarMovingUnitCrossingCost</definition>
+        <argsstring></argsstring>
+        <name>AStarMovingUnitCrossingCost</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>cost associated to move on a tile occupied by a moving unit </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="101" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a7166e3cb26d9be8db6a5b1a20108d512" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AStarKnowUnseenTerrain</definition>
+        <argsstring></argsstring>
+        <name>AStarKnowUnseenTerrain</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to have knowledge of terrain that we haven&apos;t visited yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="102" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a64e4666fc38d8a31e33511959e464870" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AStarUnknownTerrainCost</definition>
+        <argsstring></argsstring>
+        <name>AStarUnknownTerrainCost</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Cost of using a square we haven&apos;t seen before. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="103" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a8a78c8ba03afa4d1f2b4fc35e114fe06" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool AStarFixedEnemyUnitsUnpassable</definition>
+        <argsstring></argsstring>
+        <name>AStarFixedEnemyUnitsUnpassable</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Used to temporary make enemy units unpassable (needs for correct path lenght calculating for automatic targeting alorithm) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="105" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a165e7a9e7fb03d54169c052a2b8cc1da" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AStarMapWidth</definition>
+        <argsstring></argsstring>
+        <name>AStarMapWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="107" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1ab1d6ac9066c34141be676e6f7b81e0eb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AStarMapHeight</definition>
+        <argsstring></argsstring>
+        <name>AStarMapHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="108" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a868fd1c60c315c81c6dec7dd87471f69" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AStarGoalX</definition>
+        <argsstring></argsstring>
+        <name>AStarGoalX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="110" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1aa12e446ec18593465a7ebe353fef5976" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AStarGoalY</definition>
+        <argsstring></argsstring>
+        <name>AStarGoalY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="111" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a31ac0e0f61dcddedf9e30ee20f5b6674" prot="public" static="yes" mutable="no">
+        <type><ref refid="structOpen" kindref="compound">Open</ref> *</type>
+        <definition>Open* OpenSet</definition>
+        <argsstring></argsstring>
+        <name>OpenSet</name>
+        <briefdescription>
+<para>The set of <ref refid="structOpen" kindref="compound">Open</ref> nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="structOpen" kindref="compound">Open</ref> set is handled by a stored array the end of the array holds the item with the smallest cost. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="119" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1acac96e600945011059302d48c3ba1a24" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int OpenSetSize</definition>
+        <argsstring></argsstring>
+        <name>OpenSetSize</name>
+        <briefdescription>
+<para>The size of the open node set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="121" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a822ea63059c59a6028ac5545241d8756" prot="public" static="yes" mutable="no">
+        <type>int *</type>
+        <definition>int* CostMoveToCache</definition>
+        <argsstring></argsstring>
+        <name>CostMoveToCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="123" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="astar_8cpp_1a2b228a9f75d64e5c3fdd2899e6bf1e7e" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CacheNotSet</definition>
+        <argsstring></argsstring>
+        <name>CacheNotSet</name>
+        <initializer>= -5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="124" column="18" bodyfile="src/pathfinder/astar.cpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a3b6bf027b5cd685e685529254ae85225" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MyAbs</definition>
+        <argsstring>(int32_t x)</argsstring>
+        <name>MyAbs</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="67" column="16" bodyfile="src/pathfinder/astar.cpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a947f3509b3a5bd19383c2353b7b379ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AStarCosts</definition>
+        <argsstring>(const Vec2i &amp;pos, const Vec2i &amp;goalPos)</argsstring>
+        <name>AStarCosts</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+<para>heuristic cost function for a* </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="70" column="19" bodyfile="src/pathfinder/astar.cpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a29f5535de74a0286aaeaf78d1b4a490f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitAStar</definition>
+        <argsstring>(int mapWidth, int mapHeight)</argsstring>
+        <name>InitAStar</name>
+        <param>
+          <type>int</type>
+          <declname>mapWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mapHeight</declname>
+        </param>
+        <briefdescription>
+<para>Init the a* data structures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init A* data structures </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="253" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="253" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a2e27e081bfb5e1135b5c55d49bc86b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreeAStar</definition>
+        <argsstring>()</argsstring>
+        <name>FreeAStar</name>
+        <briefdescription>
+<para>free the a* data structures </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Free A* data structure </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="283" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="283" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1aa74a361288e891388098dd3645be05e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AStarPrepare</definition>
+        <argsstring>()</argsstring>
+        <name>AStarPrepare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepare pathfinder. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="302" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a08d72b35b438ab133f47e2cb4aed58fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AStarCleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>AStarCleanUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up A* </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="310" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="310" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1ac9cdee5bbc785ef9960c7a65f9395df6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void CostMoveToCacheCleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>CostMoveToCacheCleanUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="325" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="325" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a335a08a40635927f2acc33e0124fe5a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AStarRemoveMinimum</definition>
+        <argsstring>(int pos)</argsstring>
+        <name>AStarRemoveMinimum</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the minimum from the open node set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="379" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="379" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a42e5e23bdc5aac682515283812ecf02c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AStarAddNode</definition>
+        <argsstring>(const Vec2i &amp;pos, int o, int costs)</argsstring>
+        <name>AStarAddNode</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>costs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node to the open set (and update the heap structure)</para>
+<para><simplesect kind="return"><para>0 or PF_FAILED </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="391" column="19" bodyfile="src/pathfinder/astar.cpp" bodystart="391" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1afe2ffa8dfe2e04b52e8407efa7d86ac5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AStarReplaceNode</definition>
+        <argsstring>(int pos)</argsstring>
+        <name>AStarReplaceNode</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the cost associated to an open node. Can be further optimised knowing that the new cost MUST BE LOWER than the old one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="459" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="459" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a00bf19903eae8ce954fcf282c8b173d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AStarFindNode</definition>
+        <argsstring>(int eo)</argsstring>
+        <name>AStarFindNode</name>
+        <param>
+          <type>int</type>
+          <declname>eo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a node is already in the open set.</para>
+<para><simplesect kind="return"><para>-1 if not found and the position of the node in the table if found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="481" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="481" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a892ab31fac588cac037ea7776b049be7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AStarAddToClose</definition>
+        <argsstring>(int node)</argsstring>
+        <name>AStarAddToClose</name>
+        <param>
+          <type>int</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a node to the closed set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="498" column="13" bodyfile="src/pathfinder/astar.cpp" bodystart="498" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a6071d9fee20d1af3d2319f09ec47a091" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CostMoveToCallBack_Default</definition>
+        <argsstring>(unsigned int index, const CUnit &amp;unit)</argsstring>
+        <name>CostMoveToCallBack_Default</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="508" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="508" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a7436139999f82f2df160270681cf31c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CostMoveTo</definition>
+        <argsstring>(unsigned int index, const CUnit &amp;unit)</argsstring>
+        <name>CostMoveTo</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the cost of crossing tile (x,y)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X tile where to move. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y tile where to move. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 -&gt; impossible to cross. 0 -&gt; no induced cost, except move &gt;0 -&gt; costly tile </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="587" column="19" bodyfile="src/pathfinder/astar.cpp" bodystart="587" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1aa1e45b5614f6d9bd09bb384e7e7a3b2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AStarMarkGoal</definition>
+        <argsstring>(const Vec2i &amp;goal, int gw, int gh, int tilesizex, int tilesizey, int minrange, int maxrange, const CUnit &amp;unit)</argsstring>
+        <name>AStarMarkGoal</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gh</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tilesizex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tilesizey</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minrange</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxrange</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MarkAStarGoal </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="777" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="777" bodyend="818"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1ad51161a2721b151100209285899a9f0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AStarSavePath</definition>
+        <argsstring>(const Vec2i &amp;startPos, const Vec2i &amp;endPos, char *path, int pathLen)</argsstring>
+        <name>AStarSavePath</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>endPos</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pathLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save the path</para>
+<para><simplesect kind="return"><para>The length of the path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="825" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="825" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a84fd9324616df878794bbb7b3f1362cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AStarFindSimplePath</definition>
+        <argsstring>(const Vec2i &amp;startPos, const Vec2i &amp;goal, int gw, int gh, int, int, int minrange, int maxrange, char *path, const CUnit &amp;unit)</argsstring>
+        <name>AStarFindSimplePath</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gh</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minrange</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxrange</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optimization to find a simple path Check if we&apos;re at the goal or if it&apos;s 1 tile away </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="871" column="12" bodyfile="src/pathfinder/astar.cpp" bodystart="871" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a0808f0f3beb4b6536cf8d719ee11aaab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AStarFindPath</definition>
+        <argsstring>(const Vec2i &amp;startPos, const Vec2i &amp;goalPos, int gw, int gh, int tilesizex, int tilesizey, int minrange, int maxrange, char *path, int pathlen, const CUnit &amp;unit)</argsstring>
+        <name>AStarFindPath</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gh</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tilesizex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tilesizey</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minrange</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxrange</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pathlen</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Find and a* path for a unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find path. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="918" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="918" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1afee7227d081d8e3034bc9c7dfb2e249e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structStatsNode" kindref="compound">StatsNode</ref> *</type>
+        <definition>StatsNode* AStarGetStats</definition>
+        <argsstring>()</argsstring>
+        <name>AStarGetStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1102" column="11" bodyfile="src/pathfinder/astar.cpp" bodystart="1102" bodyend="1123"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a8e7d874057e6644a17e2ef7c12d08e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AStarFreeStats</definition>
+        <argsstring>(StatsNode *stats)</argsstring>
+        <name>AStarFreeStats</name>
+        <param>
+          <type><ref refid="structStatsNode" kindref="compound">StatsNode</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1125" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="1125" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a99385d16d8f0b1079169760da310e819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetAStarFixedUnitCrossingCost</definition>
+        <argsstring>(int cost)</argsstring>
+        <name>SetAStarFixedUnitCrossingCost</name>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1135" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="1135" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1ae6bf6f9d99c30020fe0db4724382ba4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetAStarFixedUnitCrossingCost</definition>
+        <argsstring>()</argsstring>
+        <name>GetAStarFixedUnitCrossingCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1141" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="1141" bodyend="1144"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1ab6e867e22335da56269a1014c436670e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetAStarMovingUnitCrossingCost</definition>
+        <argsstring>(int cost)</argsstring>
+        <name>SetAStarMovingUnitCrossingCost</name>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1147" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="1147" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a3b84ef97eb71cd3f33d91e4fe95446c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetAStarMovingUnitCrossingCost</definition>
+        <argsstring>()</argsstring>
+        <name>GetAStarMovingUnitCrossingCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1153" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="1153" bodyend="1156"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a629083ad75dce1364ea17b1930209372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetAStarUnknownTerrainCost</definition>
+        <argsstring>(int cost)</argsstring>
+        <name>SetAStarUnknownTerrainCost</name>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1159" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="1159" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a5871e49142a5068f63fcdb74b90d1ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetAStarUnknownTerrainCost</definition>
+        <argsstring>()</argsstring>
+        <name>GetAStarUnknownTerrainCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1167" column="5" bodyfile="src/pathfinder/astar.cpp" bodystart="1167" bodyend="1170"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a823a2a77206a73e087f492b5c0559567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetAStarFixedEnemyUnitsUnpassable</definition>
+        <argsstring>(const bool value)</argsstring>
+        <name>SetAStarFixedEnemyUnitsUnpassable</name>
+        <param>
+          <type>const bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1172" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="1172" bodyend="1175"/>
+      </memberdef>
+      <memberdef kind="function" id="astar_8cpp_1a17dad11e8406f047856f02b14df9cbc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GetAStarFixedEnemyUnitsUnpassable</definition>
+        <argsstring>()</argsstring>
+        <name>GetAStarFixedEnemyUnitsUnpassable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pathfinder/astar.cpp" line="1177" column="6" bodyfile="src/pathfinder/astar.cpp" bodystart="1177" bodyend="1180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/pathfinder/astar.cpp"/>
+  </compounddef>
+</doxygen>

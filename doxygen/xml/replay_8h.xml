@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="replay_8h" kind="file" language="C++">
+    <compoundname>replay.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="editloop_8cpp" local="yes">src/editor/editloop.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="loadgame_8cpp" local="yes">src/game/loadgame.cpp</includedby>
+    <includedby refid="replay_8cpp" local="yes">src/game/replay.cpp</includedby>
+    <includedby refid="savegame_8cpp" local="yes">src/game/savegame.cpp</includedby>
+    <includedby refid="commands_8cpp" local="yes">src/network/commands.cpp</includedby>
+    <includedby refid="network_8cpp" local="yes">src/network/network.cpp</includedby>
+    <includedby refid="mainloop_8cpp" local="yes">src/stratagus/mainloop.cpp</includedby>
+    <includedby refid="stratagus_8cpp" local="yes">src/stratagus/stratagus.cpp</includedby>
+    <includedby refid="interface_8cpp" local="yes">src/ui/interface.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/include/replay.h</label>
+        <link refid="replay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/include/replay.h</label>
+        <link refid="replay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/stratagus/mainloop.cpp</label>
+        <link refid="mainloop_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/network/network.cpp</label>
+        <link refid="network_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/network/commands.cpp</label>
+        <link refid="commands_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>replay.h - The replay header file.</header>
+      <memberdef kind="enum" id="replay_8h_1a256288a5ba9b2772ba5ed0757f7af72d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ReplayType</name>
+        <enumvalue id="replay_8h_1a256288a5ba9b2772ba5ed0757f7af72dacdfeb6597e90dfaa0c2ebee1fdd6c4a6" prot="public">
+          <name>ReplayNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="replay_8h_1a256288a5ba9b2772ba5ed0757f7af72da80a73163b4ee930778205ce77ff73c77" prot="public">
+          <name>ReplaySinglePlayer</name>
+          <briefdescription>
+<para>No replay. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="replay_8h_1a256288a5ba9b2772ba5ed0757f7af72dae54659b8085f9bbb6591e2bf99986752" prot="public">
+          <name>ReplayMultiPlayer</name>
+          <briefdescription>
+<para>Single player replay. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Multi player replay </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="44" column="16" bodyfile="src/include/replay.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="replay_8h_1a324c5051498650d0bb36aa285f306339" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CommandLogDisabled</definition>
+        <argsstring></argsstring>
+        <name>CommandLogDisabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="57" column="13" bodyfile="src/game/replay.cpp" bodystart="161" bodyend="-1" declfile="src/include/replay.h" declline="57" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="replay_8h_1ab9300a0f38d01a023a8d2b05295d8e40" prot="public" static="no" mutable="no">
+        <type><ref refid="replay_8h_1a256288a5ba9b2772ba5ed0757f7af72d" kindref="member">ReplayType</ref></type>
+        <definition>ReplayType ReplayGameType</definition>
+        <argsstring></argsstring>
+        <name>ReplayGameType</name>
+        <briefdescription>
+<para>True, if command log is off. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>True, if command log is off. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="58" column="19" bodyfile="src/game/replay.cpp" bodystart="162" bodyend="-1" declfile="src/include/replay.h" declline="58" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1a06ade5dbf0244828d1e9b59fc252605b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CommandLog</definition>
+        <argsstring>(const char *action, const CUnit *unit, int flush, int x, int y, const CUnit *dest, const char *value, int num)</argsstring>
+        <name>CommandLog</name>
+        <param>
+          <type>const char *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Replay game type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Log commands into file</para>
+<para>Log commands into file.</para>
+<para>This could later be used to recover, crashed games.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command name (move,attack,...). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that receive the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Append command or flush old commands. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional X map position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional y map position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional destination unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional command argument (unit-type,...). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional number argument </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="65" column="13" bodyfile="src/game/replay.cpp" bodystart="417" bodyend="509" declfile="src/include/replay.h" declline="65" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1a4b358fcfe55c719aee774fd16900aaf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SinglePlayerReplayEachCycle</definition>
+        <argsstring>()</argsstring>
+        <name>SinglePlayerReplayEachCycle</name>
+        <briefdescription>
+<para>Replay user commands from log each cycle, single player games. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Replay user commands from log each cycle, single player games </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="68" column="13" bodyfile="src/game/replay.cpp" bodystart="959" bodyend="964" declfile="src/include/replay.h" declline="68" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1a2ee9d3d7600820c26cd954349258d720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MultiPlayerReplayEachCycle</definition>
+        <argsstring>()</argsstring>
+        <name>MultiPlayerReplayEachCycle</name>
+        <briefdescription>
+<para>Replay user commands from log each cycle, multiplayer games. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Replay user commands from log each cycle, multiplayer games </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="70" column="13" bodyfile="src/game/replay.cpp" bodystart="969" bodyend="974" declfile="src/include/replay.h" declline="70" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1a5b7be6cdf0c02f7687bdb2e910bb9130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LoadReplay</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>LoadReplay</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Load replay. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a log file to replay a game</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of file to load. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="72" column="12" bodyfile="src/game/replay.cpp" bodystart="724" bodyend="740" declfile="src/include/replay.h" declline="72" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1a0d0c8da6173df4609e54ed46f0b73927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void EndReplayLog</definition>
+        <argsstring>()</argsstring>
+        <name>EndReplayLog</name>
+        <briefdescription>
+<para>End logging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>End logging </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="74" column="13" bodyfile="src/game/replay.cpp" bodystart="745" bodyend="757" declfile="src/include/replay.h" declline="74" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1abbc93bb6a6d23da26bf888674d2c4ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanReplayLog</definition>
+        <argsstring>()</argsstring>
+        <name>CleanReplayLog</name>
+        <briefdescription>
+<para>Clean replay. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean replay log </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="76" column="13" bodyfile="src/game/replay.cpp" bodystart="762" bodyend="777" declfile="src/include/replay.h" declline="76" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1af829dcac3d4eca9a384a48784764f554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveReplayList</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SaveReplayList</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Save the replay list to file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save generated replay</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to save to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="78" column="13" bodyfile="src/game/replay.cpp" bodystart="714" bodyend="717" declfile="src/include/replay.h" declline="78" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="replay_8h_1a407c15a0e3812ff82761ca9e6aadd518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void ReplayCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>ReplayCclRegister</name>
+        <briefdescription>
+<para>Register ccl functions related to network. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register Ccl functions with lua </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/replay.h" line="80" column="13" bodyfile="src/game/replay.cpp" bodystart="1049" bodyend="1053" declfile="src/include/replay.h" declline="80" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/replay.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="netconnect_8cpp" kind="file" language="C++">
+    <compoundname>netconnect.cpp</compoundname>
+    <includes refid="game_8h" local="yes">game.h</includes>
+    <includes refid="online__service_8h" local="yes">online_service.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="netconnect_8h" local="yes">netconnect.h</includes>
+    <includes refid="interface_8h" local="yes">interface.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includes refid="parameters_8h" local="yes">parameters.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="script_8h" local="yes">script.h</includes>
+    <includes refid="settings_8h" local="yes">settings.h</includes>
+    <includes refid="version_8h" local="yes">version.h</includes>
+    <includes refid="video_8h" local="yes">video.h</includes>
+    <includes local="yes">mdns.h</includes>
+    <incdepgraph>
+      <node id="82">
+        <label>mdns.h</label>
+      </node>
+      <node id="53">
+        <label>list</label>
+      </node>
+      <node id="20">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>guichan/widgets/label.h</label>
+        <link refid="label_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/network/netconnect.cpp</label>
+        <link refid="netconnect_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.h</label>
+        <link refid="game_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>guichan/widgets/textfield.h</label>
+        <link refid="textfield_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>guichan/widgets/textbox.h</label>
+        <link refid="textbox_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>guichan/font.h</label>
+        <link refid="guichan_2include_2guichan_2font_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>SDL.h</label>
+      </node>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>guichan/exception.h</label>
+        <link refid="exception_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>lua.h</label>
+      </node>
+      <node id="14">
+        <label>stdint.h</label>
+      </node>
+      <node id="70">
+        <label>guichan/widgets/dropdown.h</label>
+        <link refid="dropdown_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>guichan/widgets/window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>net_message.h</label>
+        <link refid="net__message_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="36">
+        <label>version-generated.h</label>
+        <link refid="version-generated_8h"/>
+      </node>
+      <node id="34">
+        <label>settings.h</label>
+        <link refid="settings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>guichan/widgets/icon.h</label>
+        <link refid="icon_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>guichan/imagefont.h</label>
+        <link refid="imagefont_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>guichan/platform.h</label>
+        <link refid="platform_8h"/>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="64">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>online_service.h</label>
+        <link refid="online__service_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>guichan/defaultfont.h</label>
+        <link refid="defaultfont_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>guichan.h</label>
+        <link refid="guichan_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>guichan/widgets/scrollarea.h</label>
+        <link refid="scrollarea_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>guichan/rectangle.h</label>
+        <link refid="rectangle_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>guichan/imageloader.h</label>
+        <link refid="imageloader_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>guichan/mouseinput.h</label>
+        <link refid="mouseinput_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>guichan/mouselistener.h</label>
+        <link refid="mouselistener_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>libmng.h</label>
+      </node>
+      <node id="23">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>guichan/widgets/checkbox.h</label>
+        <link refid="checkbox_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>guichan/listmodel.h</label>
+        <link refid="listmodel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+      <node id="45">
+        <label>guichan/cliprectangle.h</label>
+        <link refid="cliprectangle_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>guichan/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>ctime</label>
+      </node>
+      <node id="12">
+        <label>netconnect.h</label>
+        <link refid="netconnect_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>guichan/focushandler.h</label>
+        <link refid="focushandler_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>guichan/key.h</label>
+        <link refid="key_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>guichan/input.h</label>
+        <link refid="input_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>guichan/color.h</label>
+        <link refid="guichan_2include_2guichan_2color_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>stack</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="69">
+        <label>guichan/basiccontainer.h</label>
+        <link refid="basiccontainer_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>guichan/gui.h</label>
+        <link refid="gui_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>guichan/widgets/slider.h</label>
+        <link refid="slider_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>guichan/keyinput.h</label>
+        <link refid="keyinput_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>guichan/widgets/radiobutton.h</label>
+        <link refid="radiobutton_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cstdlib</label>
+      </node>
+      <node id="26">
+        <label>network.h</label>
+        <link refid="network_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>shaders.h</label>
+        <link refid="shaders_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>guichan/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>guichan/widgets/button.h</label>
+        <link refid="button_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="58">
+        <label>guichan/keylistener.h</label>
+        <link refid="keylistener_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>guichan/widgets/container.h</label>
+        <link refid="container_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>set</label>
+      </node>
+      <node id="52">
+        <label>guichan/widget.h</label>
+        <link refid="widget_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>parameters.h</label>
+        <link refid="parameters_8h"/>
+      </node>
+      <node id="71">
+        <label>guichan/widgets/listbox.h</label>
+        <link refid="listbox_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>guichan/actionlistener.h</label>
+        <link refid="actionlistener_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structNetworkState" prot="public">NetworkState</innerclass>
+    <innerclass refid="classCServer" prot="public">CServer</innerclass>
+    <innerclass refid="classCClient" prot="public">CClient</innerclass>
+      <sectiondef kind="user-defined">
+      <header>netconnect.cpp - The network high level connection code.</header>
+      <memberdef kind="define" id="netconnect_8cpp_1a1a05d6693178363f6756c2aa067d6a43" prot="public" static="no">
+        <name>CLIENT_LIVE_BEAT</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="58" column="9" bodyfile="src/network/netconnect.cpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="netconnect_8cpp_1a4d60beeaef695d9ec5d9ca6119d6f7f6" prot="public" static="no">
+        <name>CLIENT_IS_DEAD</name>
+        <initializer>300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="59" column="9" bodyfile="src/network/netconnect.cpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a7b945f5aedea5d50e830677599c550cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HostsCount</definition>
+        <argsstring></argsstring>
+        <name>HostsCount</name>
+        <briefdescription>
+<para>Network players. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="82" column="5" bodyfile="src/network/netconnect.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1aae5fffa932443f11ea4dcb4fe496bc03" prot="public" static="no" mutable="no">
+        <type><ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref></type>
+        <definition>CNetworkHost Hosts[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>Hosts</name>
+        <briefdescription>
+<para>Number of hosts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="83" column="14" bodyfile="src/network/netconnect.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1ab28cba8e30a37d320b492fcd113815a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetConnectRunning</definition>
+        <argsstring></argsstring>
+        <name>NetConnectRunning</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Host and ports of all players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Host, port, and number of all players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="85" column="5" bodyfile="src/network/netconnect.cpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1ae900b94cad9f50fa7e20ceb038aad6ad" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetConnectType</definition>
+        <argsstring></argsstring>
+        <name>NetConnectType</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Network menu: Setup mode active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="86" column="5" bodyfile="src/network/netconnect.cpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1ad06cc883ff29dba57349dec71e7ca46f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetLocalHostsSlot</definition>
+        <argsstring></argsstring>
+        <name>NetLocalHostsSlot</name>
+        <briefdescription>
+<para>Network menu: Setup mode active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="87" column="5" bodyfile="src/network/netconnect.cpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1ac5f5a5985001739c8f02039885745e63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetLocalPlayerNumber</definition>
+        <argsstring></argsstring>
+        <name>NetLocalPlayerNumber</name>
+        <briefdescription>
+<para>Network menu: Slot # in Hosts array of local client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="88" column="5" bodyfile="src/network/netconnect.cpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a7a36f73a42f4c0aea76bcd67d42992e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetPlayers</definition>
+        <argsstring></argsstring>
+        <name>NetPlayers</name>
+        <briefdescription>
+<para>Player number of local client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="90" column="5" bodyfile="src/network/netconnect.cpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a4bb55efed1eb903f40e3ff7e3b08e40e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string NetworkMapName</definition>
+        <argsstring></argsstring>
+        <name>NetworkMapName</name>
+        <briefdescription>
+<para>How many network players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player number of local client. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="91" column="13" bodyfile="src/network/netconnect.cpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a0ae7f8d8b60b59046e13ba0051bb5bdd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NoRandomPlacementMultiplayer</definition>
+        <argsstring></argsstring>
+        <name>NoRandomPlacementMultiplayer</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Name of the map received with ICMMap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Network menu: Multiplayer Client Menu selections local state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="92" column="5" bodyfile="src/network/netconnect.cpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a63264fb5e6786f3e88ba09a167ac8f95" prot="public" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref></type>
+        <definition>CServerSetup ServerSetupState</definition>
+        <argsstring></argsstring>
+        <name>ServerSetupState</name>
+        <briefdescription>
+<para>Disable the random placement of players in muliplayer mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the map received with ICMMap. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="94" column="14" bodyfile="src/network/netconnect.cpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a46e88369fae125f8188bb966e02d3f2a" prot="public" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref></type>
+        <definition>CServerSetup LocalSetupState</definition>
+        <argsstring></argsstring>
+        <name>LocalSetupState</name>
+        <briefdescription>
+<para>Network menu: Multiplayer Server Menu selections state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="95" column="14" bodyfile="src/network/netconnect.cpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a54671bd22e247fb2c54ebd8e1da9dd2b" prot="public" static="no" mutable="no">
+        <type><ref refid="classMDNS" kindref="compound">MDNS</ref></type>
+        <definition>MDNS MdnsService</definition>
+        <argsstring></argsstring>
+        <name>MdnsService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="97" column="6" bodyfile="src/network/netconnect.cpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a449feae2c4c2025bf1c796120b28d625" prot="public" static="yes" mutable="no">
+        <type><ref refid="classCServer" kindref="compound">CServer</ref></type>
+        <definition>CServer Server</definition>
+        <argsstring></argsstring>
+        <name>Server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="193" column="16" bodyfile="src/network/netconnect.cpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a9d21217dde879e20df3eb2e98f8aa238" prot="public" static="yes" mutable="no">
+        <type><ref refid="classCClient" kindref="compound">CClient</ref></type>
+        <definition>CClient Client</definition>
+        <argsstring></argsstring>
+        <name>Client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="194" column="16" bodyfile="src/network/netconnect.cpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a662b92cdae05fd67106e6f87f0cbb4a5" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ncconstatenames[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ncconstatenames</name>
+        <initializer>= {
+	&quot;ccs_unused&quot;,
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a08f28882a2f8076e04bd7f1993a8a4f2" kindref="member">ccs_connecting</ref>&quot;,          
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a452ff5114833e379ccc5f503502c6747" kindref="member">ccs_connected</ref>&quot;,           
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a0fc4421c411a0718fcfba6fc1f1af932" kindref="member">ccs_mapinfo</ref>&quot;,             
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686ae102a275b221fd8abec4754c10fa1f50" kindref="member">ccs_badmap</ref>&quot;,              
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a5e6f96f3da4d78343099f50baf32a893" kindref="member">ccs_synced</ref>&quot;,              
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686aacee0fd1000dc39af01f517ffc829b39" kindref="member">ccs_async</ref>&quot;,               
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a788a0453094f3e819e167cc1c13e5676" kindref="member">ccs_changed</ref>&quot;,             
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a709438e011728ea212b23326be13af7b" kindref="member">ccs_detaching</ref>&quot;,           
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686aeb8d8a95d7acfb22a72a4d5a06592ae4" kindref="member">ccs_disconnected</ref>&quot;,        
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a628024e4d8decce564ca025aa11bb18f" kindref="member">ccs_unreachable</ref>&quot;,         
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686aed9e7e1cefd169fad1a24c4c4d7c8896" kindref="member">ccs_usercanceled</ref>&quot;,        
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686ab8cad02ed84d5a10d6204638f8ad1831" kindref="member">ccs_nofreeslots</ref>&quot;,         
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a13c6f6abee5f1e2a82780edf1a927220" kindref="member">ccs_serverquits</ref>&quot;,         
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a2a93a462c4ea3468d9028c5b2b67c6b1" kindref="member">ccs_goahead</ref>&quot;,             
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a13d508c4906a076a781f739560d0e6ec" kindref="member">ccs_started</ref>&quot;,             
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a2e6ebdee171706a22ff5811e6071a635" kindref="member">ccs_incompatibleengine</ref>&quot;,  
+	&quot;<ref refid="netconnect_8h_1a87fd1f4f98eeb88b413d617ae57a3686a6e9c762303de19c9c98c023cf7d8ea19" kindref="member">ccs_incompatibleluafiles</ref>&quot;, 
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="223" column="19" bodyfile="src/network/netconnect.cpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="netconnect_8cpp_1a95c4db3d0a3fdb674cd2bc2159ff0191" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* icmsgsubtypenames[]</definition>
+        <argsstring>[]</argsstring>
+        <name>icmsgsubtypenames</name>
+        <initializer>= {
+	&quot;Hello&quot;,                   
+	&quot;Config&quot;,                  
+
+	&quot;EngineMismatch&quot;,          
+	&quot;ProtocolMismatch&quot;,        
+	&quot;EngineConfMismatch&quot;,      
+	&quot;MapUidMismatch&quot;,          
+
+	&quot;GameFull&quot;,                
+	&quot;Welcome&quot;,                 
+
+	&quot;Waiting&quot;,                 
+	&quot;<ref refid="map_8cpp_1aad3c14af0df19938145b4ddb38427d65" kindref="member">Map</ref>&quot;,                     
+	&quot;State&quot;,                   
+	&quot;Resync&quot;,                  
+
+	&quot;<ref refid="netdriver_8h_1a634fd434a92b48431007c5cd8359c827" kindref="member">ServerQuit</ref>&quot;,              
+	&quot;GoodBye&quot;,                 
+	&quot;SeeYou&quot;,                  
+
+	&quot;Go&quot;,                      
+	&quot;AreYouThere&quot;,             
+	&quot;IAmHere&quot;,                 
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="244" column="19" bodyfile="src/network/netconnect.cpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1af338aaf6ccb2ecc12e39c3c6a235d4da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void NetworkSendICMessage</definition>
+        <argsstring>(CUDPSocket &amp;socket, const CHost &amp;host, const T &amp;msg)</argsstring>
+        <name>NetworkSendICMessage</name>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an InitConfig message across the Network</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host to send to (network byte order). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port of host to send to (network byte order). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="208" column="13" bodyfile="src/network/netconnect.cpp" bodystart="208" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a3ee2ec8a0fe004fb0cc12f4c34068ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkSendICMessage</definition>
+        <argsstring>(CUDPSocket &amp;socket, const CHost &amp;host, const CInitMessage_Header &amp;msg)</argsstring>
+        <name>NetworkSendICMessage</name>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCInitMessage__Header" kindref="compound">CInitMessage_Header</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Menu Loop: Client: Send GoodBye to the server and detach. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="215" column="6" bodyfile="src/network/netconnect.cpp" bodystart="215" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a9acd7f066093da7c176b993c5f225f63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void NetworkSendICMessage_Log</definition>
+        <argsstring>(CUDPSocket &amp;socket, const CHost &amp;host, const T &amp;msg)</argsstring>
+        <name>NetworkSendICMessage_Log</name>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="271" column="13" bodyfile="src/network/netconnect.cpp" bodystart="271" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a69bd254b9fb103a13a9978d3caec5c54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void NetworkSendICMessage_Log</definition>
+        <argsstring>(CUDPSocket &amp;socket, const CHost &amp;host, const CInitMessage_Header &amp;msg)</argsstring>
+        <name>NetworkSendICMessage_Log</name>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCInitMessage__Header" kindref="compound">CInitMessage_Header</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="282" column="13" bodyfile="src/network/netconnect.cpp" bodystart="282" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1aa8f1a665729fc1847afb9d72b3f1b7d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IsLocalSetupInSync</definition>
+        <argsstring>(const CServerSetup &amp;state1, const CServerSetup &amp;state2, int index)</argsstring>
+        <name>IsLocalSetupInSync</name>
+        <param>
+          <type>const <ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> &amp;</type>
+          <declname>state1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> &amp;</type>
+          <declname>state2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="415" column="13" bodyfile="src/network/netconnect.cpp" bodystart="415" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1acad42db4fc885871f380ce15ecdc5cc0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IsSafeMapName</definition>
+        <argsstring>(const char *mapname)</argsstring>
+        <name>IsSafeMapName</name>
+        <param>
+          <type>const char *</type>
+          <declname>mapname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the map name looks safe.</para>
+<para>A map name looks safe when there are no special characters and no .. or // sequences. This way only real valid maps from the map directory will be loaded.</para>
+<para><simplesect kind="return"><para>true if the map name looks safe. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="722" column="13" bodyfile="src/network/netconnect.cpp" bodystart="722" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a4bd4c90b7cd5cc432457d8d1f0405e47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CheckVersions</definition>
+        <argsstring>(const CInitMessage_Hello &amp;msg, CUDPSocket &amp;socket, const CHost &amp;host)</argsstring>
+        <name>CheckVersions</name>
+        <param>
+          <type>const <ref refid="classCInitMessage__Hello" kindref="compound">CInitMessage_Hello</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the Stratagus version and Network Protocol match</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>host which send the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the versions match, -1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1297" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1297" bodyend="1321"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a706b461a799ca3057e51320c1c3e70c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NetworkParseSetupEvent</definition>
+        <argsstring>(const unsigned char *buf, int size, const CHost &amp;host)</argsstring>
+        <name>NetworkParseSetupEvent</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Setup network connect state machine for the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a setup event. (Command type &lt;= MessageInitEvent)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the received packet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>host which send the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if packet is an InitConfig message, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1386" column="5" bodyfile="src/network/netconnect.cpp" bodystart="1386" bodyend="1418"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a4c5b2783ffd215492fb31b9e56efb9c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkProcessClientRequest</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkProcessClientRequest</name>
+        <briefdescription>
+<para>Menu: Setup the server IP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Client Menu Loop: Send out client request messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1423" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1423" bodyend="1428"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a650ec4f8057fa10ceb1b43e34b67374c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetNetworkState</definition>
+        <argsstring>()</argsstring>
+        <name>GetNetworkState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1430" column="5" bodyfile="src/network/netconnect.cpp" bodystart="1430" bodyend="1433"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a07027a04458d4178de7d49276788d595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FindHostIndexBy</definition>
+        <argsstring>(const CHost &amp;host)</argsstring>
+        <name>FindHostIndexBy</name>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Disable the random placement of players in muliplayer mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1435" column="5" bodyfile="src/network/netconnect.cpp" bodystart="1435" bodyend="1443"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a403a86faaeb1747e07c22c77e0cb7fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkProcessServerRequest</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkProcessServerRequest</name>
+        <briefdescription>
+<para>Menu Loop: Send out client request messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Server Menu Loop: Send out server request messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1448" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1448" bodyend="1457"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a589d25c0579b491f64a4b9364cac801e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkInitClientConnect</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkInitClientConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup Network connect state machine for clients </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1462" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1462" bodyend="1473"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a0a1814975026c5aee5bcaa9e2b724f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkServerStartGame</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkServerStartGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server user has finally hit the start game button </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1478" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1478" bodyend="1727"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a52c838d4eca4854945b1ad597663d2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NetworkSetupServerAddress</definition>
+        <argsstring>(const std::string &amp;serveraddr, int port)</argsstring>
+        <name>NetworkSetupServerAddress</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>serveraddr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Parse a network connect event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the IP-Address of the network server to connect to</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serveraddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the serveraddress the user has entered</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, if error; otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1736" column="5" bodyfile="src/network/netconnect.cpp" bodystart="1736" bodyend="1751"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a395a4273a4efd5da69031c8e8253734c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkDetachFromServer</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkDetachFromServer</name>
+        <briefdescription>
+<para>Menu Loop: Server: Mark clients state to send stateinfo message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate and detach Network connect state machine for the client </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1756" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1756" bodyend="1759"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1ac09f3756c514be1c70cbfdd151d8a894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkInitServerConnect</definition>
+        <argsstring>(int openslots)</argsstring>
+        <name>NetworkInitServerConnect</name>
+        <param>
+          <type>int</type>
+          <declname>openslots</declname>
+        </param>
+        <briefdescription>
+<para>Setup network connect state machine for clients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup Network connect state machine for the server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1764" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1764" bodyend="1782"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1aea846f2378c085d94a9a06c0bfc35f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkServerResyncClients</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkServerResyncClients</name>
+        <briefdescription>
+<para>Menu Loop: Send out server request messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify state change by menu user to connected clients </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1787" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1787" bodyend="1792"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1af13dd0c075c4495bf759425418a820f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkGamePrepareGameSettings</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkGamePrepareGameSettings</name>
+        <briefdescription>
+<para>Server user has finally hit the start game button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplayer network game final race and player type setup. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1797" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1797" bodyend="1862"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a1d1f2217ac2c8c7f99b3f00d74105b01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclNoRandomPlacementMultiplayer</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclNoRandomPlacementMultiplayer</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes Randomization of Player position in Multiplayer mode</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1869" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1869" bodyend="1874"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1a6e8c45fd0e0adab0dddd6ce6c46f6536" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclNetworkDiscoverServers</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclNetworkDiscoverServers</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1876" column="12" bodyfile="src/network/netconnect.cpp" bodystart="1876" bodyend="1894"/>
+      </memberdef>
+      <memberdef kind="function" id="netconnect_8cpp_1aeff0dae072f5a24a10bea21dcb2b3a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void NetworkCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkCclRegister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="1897" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1897" bodyend="1901"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/network/netconnect.cpp"/>
+  </compounddef>
+</doxygen>

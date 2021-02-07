@@ -1,0 +1,1787 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="player_8h" kind="file" language="C++">
+    <compoundname>player.h</compoundname>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="include_2color_8h" local="yes">color.h</includes>
+    <includes refid="upgrade__structs_8h" local="yes">upgrade_structs.h</includes>
+    <includes refid="vec2i_8h" local="yes">vec2i.h</includes>
+    <includedby refid="action__attack_8cpp" local="yes">src/action/action_attack.cpp</includedby>
+    <includedby refid="action__board_8cpp" local="yes">src/action/action_board.cpp</includedby>
+    <includedby refid="action__build_8cpp" local="yes">src/action/action_build.cpp</includedby>
+    <includedby refid="action__built_8cpp" local="yes">src/action/action_built.cpp</includedby>
+    <includedby refid="action__repair_8cpp" local="yes">src/action/action_repair.cpp</includedby>
+    <includedby refid="action__research_8cpp" local="yes">src/action/action_research.cpp</includedby>
+    <includedby refid="action__resource_8cpp" local="yes">src/action/action_resource.cpp</includedby>
+    <includedby refid="action__spellcast_8cpp" local="yes">src/action/action_spellcast.cpp</includedby>
+    <includedby refid="action__still_8cpp" local="yes">src/action/action_still.cpp</includedby>
+    <includedby refid="action__train_8cpp" local="yes">src/action/action_train.cpp</includedby>
+    <includedby refid="action__unload_8cpp" local="yes">src/action/action_unload.cpp</includedby>
+    <includedby refid="action__upgradeto_8cpp" local="yes">src/action/action_upgradeto.cpp</includedby>
+    <includedby refid="actions_8cpp" local="yes">src/action/actions.cpp</includedby>
+    <includedby refid="command_8cpp" local="yes">src/action/command.cpp</includedby>
+    <includedby refid="ai_8cpp" local="yes">src/ai/ai.cpp</includedby>
+    <includedby refid="ai__building_8cpp" local="yes">src/ai/ai_building.cpp</includedby>
+    <includedby refid="ai__resource_8cpp" local="yes">src/ai/ai_resource.cpp</includedby>
+    <includedby refid="script__ai_8cpp" local="yes">src/ai/script_ai.cpp</includedby>
+    <includedby refid="animation_8cpp" local="yes">src/animation/animation.cpp</includedby>
+    <includedby refid="editor_8cpp" local="yes">src/editor/editor.cpp</includedby>
+    <includedby refid="edmap_8cpp" local="yes">src/editor/edmap.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="replay_8cpp" local="yes">src/game/replay.cpp</includedby>
+    <includedby refid="savegame_8cpp" local="yes">src/game/savegame.cpp</includedby>
+    <includedby refid="trigger_8cpp" local="yes">src/game/trigger.cpp</includedby>
+    <includedby refid="unit_8h" local="yes">src/include/unit.h</includedby>
+    <includedby refid="map_8cpp" local="yes">src/map/map.cpp</includedby>
+    <includedby refid="map__draw_8cpp" local="yes">src/map/map_draw.cpp</includedby>
+    <includedby refid="map__fog_8cpp" local="yes">src/map/map_fog.cpp</includedby>
+    <includedby refid="map__radar_8cpp" local="yes">src/map/map_radar.cpp</includedby>
+    <includedby refid="map__wall_8cpp" local="yes">src/map/map_wall.cpp</includedby>
+    <includedby refid="mapfield_8cpp" local="yes">src/map/mapfield.cpp</includedby>
+    <includedby refid="minimap_8cpp" local="yes">src/map/minimap.cpp</includedby>
+    <includedby refid="missile_8cpp" local="yes">src/missile/missile.cpp</includedby>
+    <includedby refid="netconnect_8cpp" local="yes">src/network/netconnect.cpp</includedby>
+    <includedby refid="network_8cpp" local="yes">src/network/network.cpp</includedby>
+    <includedby refid="graphicanimation_8cpp" local="yes">src/particle/graphicanimation.cpp</includedby>
+    <includedby refid="script__pathfinder_8cpp" local="yes">src/pathfinder/script_pathfinder.cpp</includedby>
+    <includedby refid="script__sound_8cpp" local="yes">src/sound/script_sound.cpp</includedby>
+    <includedby refid="unitsound_8cpp" local="yes">src/sound/unitsound.cpp</includedby>
+    <includedby refid="player_8cpp" local="yes">src/stratagus/player.cpp</includedby>
+    <includedby refid="script__player_8cpp" local="yes">src/stratagus/script_player.cpp</includedby>
+    <includedby refid="selection_8cpp" local="yes">src/stratagus/selection.cpp</includedby>
+    <includedby refid="stratagus_8cpp" local="yes">src/stratagus/stratagus.cpp</includedby>
+    <includedby refid="botpanel_8cpp" local="yes">src/ui/botpanel.cpp</includedby>
+    <includedby refid="button__checks_8cpp" local="yes">src/ui/button_checks.cpp</includedby>
+    <includedby refid="icons_8cpp" local="yes">src/ui/icons.cpp</includedby>
+    <includedby refid="interface_8cpp" local="yes">src/ui/interface.cpp</includedby>
+    <includedby refid="mainscr_8cpp" local="yes">src/ui/mainscr.cpp</includedby>
+    <includedby refid="mouse_8cpp" local="yes">src/ui/mouse.cpp</includedby>
+    <includedby refid="popup_8cpp" local="yes">src/ui/popup.cpp</includedby>
+    <includedby refid="uibuttons__proc_8cpp" local="yes">src/ui/uibuttons_proc.cpp</includedby>
+    <includedby refid="build_8cpp" local="yes">src/unit/build.cpp</includedby>
+    <includedby refid="depend_8cpp" local="yes">src/unit/depend.cpp</includedby>
+    <includedby refid="script__unit_8cpp" local="yes">src/unit/script_unit.cpp</includedby>
+    <includedby refid="script__unittype_8cpp" local="yes">src/unit/script_unittype.cpp</includedby>
+    <includedby refid="unit_8cpp" local="yes">src/unit/unit.cpp</includedby>
+    <includedby refid="unit__draw_8cpp" local="yes">src/unit/unit_draw.cpp</includedby>
+    <includedby refid="unit__find_8cpp" local="yes">src/unit/unit_find.cpp</includedby>
+    <includedby refid="unit__save_8cpp" local="yes">src/unit/unit_save.cpp</includedby>
+    <includedby refid="unittype_8cpp" local="yes">src/unit/unittype.cpp</includedby>
+    <includedby refid="upgrade_8cpp" local="yes">src/unit/upgrade.cpp</includedby>
+    <includedby refid="graphic_8cpp" local="yes">src/video/graphic.cpp</includedby>
+    <includedby refid="tolua_8cpp" local="yes">build/tolua.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="2">
+        <label>set</label>
+      </node>
+      <node id="1">
+        <label>src/include/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>src/ai/script_ai.cpp</label>
+        <link refid="script__ai_8cpp"/>
+      </node>
+      <node id="75">
+        <label>src/ui/mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="43">
+        <label>src/animation/animation_label.cpp</label>
+        <link refid="animation__label_8cpp"/>
+      </node>
+      <node id="106">
+        <label>src/spell/spell_spawnportal.cpp</label>
+        <link refid="spell__spawnportal_8cpp"/>
+      </node>
+      <node id="92">
+        <label>src/missile/script_missile.cpp</label>
+        <link refid="script__missile_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/ai/ai_force.cpp</label>
+        <link refid="ai__force_8cpp"/>
+      </node>
+      <node id="129">
+        <label>src/network/netconnect.cpp</label>
+        <link refid="netconnect_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/action/action_upgradeto.cpp</label>
+        <link refid="action__upgradeto_8cpp"/>
+      </node>
+      <node id="64">
+        <label>src/missile/missile_parabolic.cpp</label>
+        <link refid="missile__parabolic_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/action/action_research.cpp</label>
+        <link refid="action__research_8cpp"/>
+      </node>
+      <node id="61">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="112">
+        <label>src/ui/botpanel.cpp</label>
+        <link refid="botpanel_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/action/action_build.cpp</label>
+        <link refid="action__build_8cpp"/>
+      </node>
+      <node id="101">
+        <label>src/spell/spell_adjustvital.cpp</label>
+        <link refid="spell__adjustvital_8cpp"/>
+      </node>
+      <node id="117">
+        <label>src/ui/script_ui.cpp</label>
+        <link refid="script__ui_8cpp"/>
+      </node>
+      <node id="79">
+        <label>src/unit/unit_draw.cpp</label>
+        <link refid="unit__draw_8cpp"/>
+      </node>
+      <node id="70">
+        <label>src/spell/spell_summon.cpp</label>
+        <link refid="spell__summon_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/ai/ai.cpp</label>
+        <link refid="ai_8cpp"/>
+      </node>
+      <node id="90">
+        <label>src/missile/missile_fire.cpp</label>
+        <link refid="missile__fire_8cpp"/>
+      </node>
+      <node id="52">
+        <label>src/animation/animation_setvar.cpp</label>
+        <link refid="animation__setvar_8cpp"/>
+      </node>
+      <node id="66">
+        <label>src/pathfinder/astar.cpp</label>
+        <link refid="astar_8cpp"/>
+      </node>
+      <node id="87">
+        <label>src/map/minimap.cpp</label>
+        <link refid="minimap_8cpp"/>
+      </node>
+      <node id="85">
+        <label>src/map/map_radar.cpp</label>
+        <link refid="map__radar_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/action/action_spellcast.cpp</label>
+        <link refid="action__spellcast_8cpp"/>
+      </node>
+      <node id="108">
+        <label>src/stratagus/groups.cpp</label>
+        <link refid="groups_8cpp"/>
+      </node>
+      <node id="44">
+        <label>src/animation/animation_luacallback.cpp</label>
+        <link refid="animation__luacallback_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/action/action_explore.cpp</label>
+        <link refid="action__explore_8cpp"/>
+      </node>
+      <node id="113">
+        <label>src/ui/button_checks.cpp</label>
+        <link refid="button__checks_8cpp"/>
+      </node>
+      <node id="56">
+        <label>src/animation/animation_unbreakable.cpp</label>
+        <link refid="animation__unbreakable_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="109">
+        <label>src/stratagus/mainloop.cpp</label>
+        <link refid="mainloop_8cpp"/>
+      </node>
+      <node id="116">
+        <label>src/ui/mainscr.cpp</label>
+        <link refid="mainscr_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/animation/animation_exactframe.cpp</label>
+        <link refid="animation__exactframe_8cpp"/>
+      </node>
+      <node id="127">
+        <label>build/tolua.cpp</label>
+        <link refid="tolua_8cpp"/>
+      </node>
+      <node id="134">
+        <label>src/ui/uibuttons_proc.cpp</label>
+        <link refid="uibuttons__proc_8cpp"/>
+      </node>
+      <node id="120">
+        <label>src/unit/script_unittype.cpp</label>
+        <link refid="script__unittype_8cpp"/>
+      </node>
+      <node id="114">
+        <label>src/ui/contenttype.cpp</label>
+        <link refid="contenttype_8cpp"/>
+      </node>
+      <node id="94">
+        <label>src/network/network.cpp</label>
+        <link refid="network_8cpp"/>
+      </node>
+      <node id="37">
+        <label>src/animation/animation_attack.cpp</label>
+        <link refid="animation__attack_8cpp"/>
+      </node>
+      <node id="68">
+        <label>src/spell/spell_demolish.cpp</label>
+        <link refid="spell__demolish_8cpp"/>
+      </node>
+      <node id="35">
+        <label>src/ai/ai_magic.cpp</label>
+        <link refid="ai__magic_8cpp"/>
+      </node>
+      <node id="115">
+        <label>src/ui/icons.cpp</label>
+        <link refid="icons_8cpp"/>
+      </node>
+      <node id="49">
+        <label>src/animation/animation_randomwait.cpp</label>
+        <link refid="animation__randomwait_8cpp"/>
+      </node>
+      <node id="98">
+        <label>src/sound/sound_server.cpp</label>
+        <link refid="sound__server_8cpp"/>
+      </node>
+      <node id="131">
+        <label>src/sound/script_sound.cpp</label>
+        <link refid="script__sound_8cpp"/>
+      </node>
+      <node id="107">
+        <label>src/spell/spell_teleport.cpp</label>
+        <link refid="spell__teleport_8cpp"/>
+      </node>
+      <node id="96">
+        <label>src/pathfinder/script_pathfinder.cpp</label>
+        <link refid="script__pathfinder_8cpp"/>
+      </node>
+      <node id="97">
+        <label>src/sound/sound.cpp</label>
+        <link refid="sound_8cpp"/>
+      </node>
+      <node id="71">
+        <label>src/spell/spells.cpp</label>
+        <link refid="spells_8cpp"/>
+      </node>
+      <node id="78">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="95">
+        <label>src/pathfinder/pathfinder.cpp</label>
+        <link refid="pathfinder_8cpp"/>
+      </node>
+      <node id="38">
+        <label>src/animation/animation_die.cpp</label>
+        <link refid="animation__die_8cpp"/>
+      </node>
+      <node id="126">
+        <label>src/video/sdl.cpp</label>
+        <link refid="sdl_8cpp"/>
+      </node>
+      <node id="45">
+        <label>src/animation/animation_move.cpp</label>
+        <link refid="animation__move_8cpp"/>
+      </node>
+      <node id="118">
+        <label>src/ui/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="40">
+        <label>src/animation/animation_frame.cpp</label>
+        <link refid="animation__frame_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/action/action_train.cpp</label>
+        <link refid="action__train_8cpp"/>
+      </node>
+      <node id="89">
+        <label>src/missile/missile_cliptotarget.cpp</label>
+        <link refid="missile__cliptotarget_8cpp"/>
+      </node>
+      <node id="84">
+        <label>src/map/map_fog.cpp</label>
+        <link refid="map__fog_8cpp"/>
+      </node>
+      <node id="54">
+        <label>src/animation/animation_spawnmissile.cpp</label>
+        <link refid="animation__spawnmissile_8cpp"/>
+      </node>
+      <node id="73">
+        <label>src/stratagus/selection.cpp</label>
+        <link refid="selection_8cpp"/>
+      </node>
+      <node id="58">
+        <label>src/game/loadgame.cpp</label>
+        <link refid="loadgame_8cpp"/>
+      </node>
+      <node id="77">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="67">
+        <label>src/spell/spell_areaadjustvital.cpp</label>
+        <link refid="spell__areaadjustvital_8cpp"/>
+      </node>
+      <node id="111">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="74">
+        <label>src/ui/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="91">
+        <label>src/missile/missile_landmine.cpp</label>
+        <link refid="missile__landmine_8cpp"/>
+      </node>
+      <node id="50">
+        <label>src/animation/animation_rotate.cpp</label>
+        <link refid="animation__rotate_8cpp"/>
+      </node>
+      <node id="102">
+        <label>src/spell/spell_areabombardment.cpp</label>
+        <link refid="spell__areabombardment_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/editor/editor.cpp</label>
+        <link refid="editor_8cpp"/>
+      </node>
+      <node id="82">
+        <label>src/map/map.cpp</label>
+        <link refid="map_8cpp"/>
+      </node>
+      <node id="88">
+        <label>src/map/script_map.cpp</label>
+        <link refid="script__map_8cpp"/>
+      </node>
+      <node id="53">
+        <label>src/animation/animation_sound.cpp</label>
+        <link refid="animation__sound_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/action/action_patrol.cpp</label>
+        <link refid="action__patrol_8cpp"/>
+      </node>
+      <node id="48">
+        <label>src/animation/animation_randomsound.cpp</label>
+        <link refid="animation__randomsound_8cpp"/>
+      </node>
+      <node id="83">
+        <label>src/map/map_draw.cpp</label>
+        <link refid="map__draw_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="128">
+        <label>src/map/map_wall.cpp</label>
+        <link refid="map__wall_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/action/action_repair.cpp</label>
+        <link refid="action__repair_8cpp"/>
+      </node>
+      <node id="72">
+        <label>src/stratagus/script_player.cpp</label>
+        <link refid="script__player_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/ai/ai_plan.cpp</label>
+        <link refid="ai__plan_8cpp"/>
+      </node>
+      <node id="122">
+        <label>src/unit/unit_manager.cpp</label>
+        <link refid="unit__manager_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/action/action_follow.cpp</label>
+        <link refid="action__follow_8cpp"/>
+      </node>
+      <node id="121">
+        <label>src/unit/unit_cache.cpp</label>
+        <link refid="unit__cache_8cpp"/>
+      </node>
+      <node id="123">
+        <label>src/unit/unit_save.cpp</label>
+        <link refid="unit__save_8cpp"/>
+      </node>
+      <node id="104">
+        <label>src/spell/spell_luacallback.cpp</label>
+        <link refid="spell__luacallback_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/game/trigger.cpp</label>
+        <link refid="trigger_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="110">
+        <label>src/stratagus/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/ai/ai_building.cpp</label>
+        <link refid="ai__building_8cpp"/>
+      </node>
+      <node id="133">
+        <label>src/ui/popup.cpp</label>
+        <link refid="popup_8cpp"/>
+      </node>
+      <node id="86">
+        <label>src/map/mapfield.cpp</label>
+        <link refid="mapfield_8cpp"/>
+      </node>
+      <node id="130">
+        <label>src/particle/graphicanimation.cpp</label>
+        <link refid="graphicanimation_8cpp"/>
+      </node>
+      <node id="55">
+        <label>src/animation/animation_spawnunit.cpp</label>
+        <link refid="animation__spawnunit_8cpp"/>
+      </node>
+      <node id="132">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="76">
+        <label>src/unit/build.cpp</label>
+        <link refid="build_8cpp"/>
+      </node>
+      <node id="99">
+        <label>src/sound/unitsound.cpp</label>
+        <link refid="unitsound_8cpp"/>
+      </node>
+      <node id="60">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="28">
+        <label>src/action/action_defend.cpp</label>
+        <link refid="action__defend_8cpp"/>
+      </node>
+      <node id="125">
+        <label>src/video/cursor.cpp</label>
+        <link refid="cursor_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/editor/edmap.cpp</label>
+        <link refid="edmap_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/action/action_unload.cpp</label>
+        <link refid="action__unload_8cpp"/>
+      </node>
+      <node id="57">
+        <label>src/animation/animation_wait.cpp</label>
+        <link refid="animation__wait_8cpp"/>
+      </node>
+      <node id="62">
+        <label>src/missile/missile_deathcoil.cpp</label>
+        <link refid="missile__deathcoil_8cpp"/>
+      </node>
+      <node id="119">
+        <label>src/unit/depend.cpp</label>
+        <link refid="depend_8cpp"/>
+      </node>
+      <node id="63">
+        <label>src/missile/missile_flameshield.cpp</label>
+        <link refid="missile__flameshield_8cpp"/>
+      </node>
+      <node id="46">
+        <label>src/animation/animation_randomgoto.cpp</label>
+        <link refid="animation__randomgoto_8cpp"/>
+      </node>
+      <node id="81">
+        <label>src/unit/upgrade.cpp</label>
+        <link refid="upgrade_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/include/unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/action/action_board.cpp</label>
+        <link refid="action__board_8cpp"/>
+      </node>
+      <node id="80">
+        <label>src/unit/unit_find.cpp</label>
+        <link refid="unit__find_8cpp"/>
+      </node>
+      <node id="124">
+        <label>src/unit/unitptr.cpp</label>
+        <link refid="unitptr_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/action/action_built.cpp</label>
+        <link refid="action__built_8cpp"/>
+      </node>
+      <node id="59">
+        <label>src/include/unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>src/video/graphic.cpp</label>
+        <link refid="graphic_8cpp"/>
+      </node>
+      <node id="42">
+        <label>src/animation/animation_ifvar.cpp</label>
+        <link refid="animation__ifvar_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="103">
+        <label>src/spell/spell_capture.cpp</label>
+        <link refid="spell__capture_8cpp"/>
+      </node>
+      <node id="47">
+        <label>src/animation/animation_randomrotate.cpp</label>
+        <link refid="animation__randomrotate_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+      <node id="93">
+        <label>src/network/commands.cpp</label>
+        <link refid="commands_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/action/command.cpp</label>
+        <link refid="command_8cpp"/>
+      </node>
+      <node id="135">
+        <label>src/unit/unittype.cpp</label>
+        <link refid="unittype_8cpp"/>
+      </node>
+      <node id="65">
+        <label>src/missile/missile_tracer.cpp</label>
+        <link refid="missile__tracer_8cpp"/>
+      </node>
+      <node id="69">
+        <label>src/spell/spell_spawnmissile.cpp</label>
+        <link refid="spell__spawnmissile_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/action/action_die.cpp</label>
+        <link refid="action__die_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+      <node id="100">
+        <label>src/spell/spell_adjustvariable.cpp</label>
+        <link refid="spell__adjustvariable_8cpp"/>
+      </node>
+      <node id="105">
+        <label>src/spell/spell_polymorph.cpp</label>
+        <link refid="spell__polymorph_8cpp"/>
+      </node>
+      <node id="51">
+        <label>src/animation/animation_setplayervar.cpp</label>
+        <link refid="animation__setplayervar_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/animation/animation_goto.cpp</label>
+        <link refid="animation__goto_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCPlayer" prot="public">CPlayer</innerclass>
+    <innerclass refid="classPlayerRace" prot="public">PlayerRace</innerclass>
+      <sectiondef kind="user-defined">
+      <header>player.h - The player headerfile.</header>
+      <memberdef kind="define" id="player_8h_1a68dcad10757b2a8e9e419b2e39885357" prot="public" static="no">
+        <name>STORE_OVERALL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="54" column="9" bodyfile="src/include/player.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="player_8h_1acbf47c88eac5ae7fa798b4d4d860f8c7" prot="public" static="no">
+        <name>STORE_BUILDING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="55" column="9" bodyfile="src/include/player.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="player_8h_1ac4740046083af08f8642237d361ea9ef" prot="public" static="no">
+        <name>STORE_BOTH</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="56" column="9" bodyfile="src/include/player.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="player_8h_1a4c7ca32a5d3cb08b4cc311155353c3ac" prot="public" static="no">
+        <name>SPEEDUP_FACTOR</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="58" column="9" bodyfile="src/include/player.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="player_8h_1a4692c7c386fca50d00372e18f9bac5bb" prot="public" static="no">
+        <name>PlayerNumNeutral</name>
+        <initializer>(<ref refid="stratagus_8h_1aa48d8f52111bc8d9119f59e8aff45a73" kindref="member">PlayerMax</ref> - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="364" column="9" bodyfile="src/include/player.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="player_8h_1a2ed47140a7d2804c3a3b7891b6f84b8e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_diplomacy_</name>
+        <enumvalue id="player_8h_1a2ed47140a7d2804c3a3b7891b6f84b8ea21ff418a5d38f1dd3690bc339b727a05" prot="public">
+          <name>DiplomacyAllied</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a2ed47140a7d2804c3a3b7891b6f84b8eaf9ac7e8691289012215cb640fe256f90" prot="public">
+          <name>DiplomacyNeutral</name>
+          <briefdescription>
+<para>Ally with opponent. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a2ed47140a7d2804c3a3b7891b6f84b8ea92b9526d75d6eacad5cb8d1871dc3342" prot="public">
+          <name>DiplomacyEnemy</name>
+          <briefdescription>
+<para>Don&apos;t attack be neutral. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a2ed47140a7d2804c3a3b7891b6f84b8ea5a42cbbea3beb8c42830037662c469ee" prot="public">
+          <name>DiplomacyCrazy</name>
+          <briefdescription>
+<para>Attack opponent. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Ally and attack opponent </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="73" column="17" bodyfile="src/include/player.h" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccf" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RevealTypes</name>
+        <enumvalue id="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccfab3697c5b2c28717e7a3d117b13cdee5b" prot="public">
+          <name>cNoRevelation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccfa641a8a56c16d58d141005a9d1db9f304" prot="public">
+          <name>cAllUnits</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a99cdf9d41920e8d673d7bb9168d3eccfa0be8a99cfd29edac064d47047a71cb09" prot="public">
+          <name>cBuildingsOnly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Diplomacy states for CommandDiplomacy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="81" column="1" bodyfile="src/include/player.h" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="player_8h_1ab3cae3f48dd322d7e0d01358e4940681" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PlayerRacesOld</name>
+        <enumvalue id="player_8h_1ab3cae3f48dd322d7e0d01358e4940681a47b933b84867d864dc735569d5121dff" prot="public">
+          <name>PlayerRaceHuman</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1ab3cae3f48dd322d7e0d01358e4940681ab2f874861d96eda48726adf35a56a1dd" prot="public">
+          <name>PlayerRaceOrc</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>belongs to human </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="312" column="20" bodyfile="src/include/player.h" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="enum" id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PlayerTypes</name>
+        <enumvalue id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a508cc8633b1199f025a118a3ff580ff5" prot="public">
+          <name>PlayerNeutral</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a60429f6824d19ecd0692799065f95a06" prot="public">
+          <name>PlayerNobody</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>neutral </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a5261a842b3d458694d7e7d11c7a4208a" prot="public">
+          <name>PlayerComputer</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>unused slot </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a0eafc5adafaab30fd7b44f0a9fb0f03c" prot="public">
+          <name>PlayerPerson</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>computer player </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a319774412e485a78df259d144496e022" prot="public">
+          <name>PlayerRescuePassive</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>human player </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3acbde4273d35ee07fbb9b295ca0dca23f" prot="public">
+          <name>PlayerRescueActive</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>rescued passive </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Types for the player</para>
+<para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a508cc8633b1199f025a118a3ff580ff5" kindref="member">PlayerNeutral</ref></para>
+<para>This player is controlled by the computer doing nothing.</para>
+<para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a60429f6824d19ecd0692799065f95a06" kindref="member">PlayerNobody</ref></para>
+<para>This player is unused. Nobody controls this player.</para>
+<para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a5261a842b3d458694d7e7d11c7a4208a" kindref="member">PlayerComputer</ref></para>
+<para>This player is controlled by the computer. CPlayer::AiNum selects the AI strategy.</para>
+<para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a0eafc5adafaab30fd7b44f0a9fb0f03c" kindref="member">PlayerPerson</ref></para>
+<para>This player is contolled by a person. This can be the player sitting on the local computer or player playing over the network.</para>
+<para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3a319774412e485a78df259d144496e022" kindref="member">PlayerRescuePassive</ref></para>
+<para>This player does nothing, the game pieces just sit in the game (being passive)... when a person player moves next to a PassiveRescue unit/building, then it is &quot;rescued&quot; and becomes part of that persons team. If the city center is rescued, than all units of this player are rescued.</para>
+<para><ref refid="player_8h_1a0e639c45a5bf85cf86fe81234f59c2b3acbde4273d35ee07fbb9b295ca0dca23f" kindref="member">PlayerRescueActive</ref></para>
+<para>This player is controlled by the computer. CPlayer::AiNum selects the AI strategy. Until it is rescued it plays like an ally. The first person which reaches units of this player, can rescue them. If the city center is rescued, than all units of this player are rescued. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="355" column="17" bodyfile="src/include/player.h" bodystart="355" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="enum" id="player_8h_1addc4b6302e217e9dffab38d9dd5c02f8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>NotifyType</name>
+        <enumvalue id="player_8h_1addc4b6302e217e9dffab38d9dd5c02f8aeb7e8b55b56e9c1adeffe0e0076c0c05" prot="public">
+          <name>NotifyRed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1addc4b6302e217e9dffab38d9dd5c02f8ae3bdba60c8da8f10a2cc4a5eecd770c1" prot="public">
+          <name>NotifyYellow</name>
+          <briefdescription>
+<para>Red alram. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="player_8h_1addc4b6302e217e9dffab38d9dd5c02f8a3bcec76ea12f0ce6e552645a1c96ec48" prot="public">
+          <name>NotifyGreen</name>
+          <briefdescription>
+<para>Yellow alarm. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Green alarm </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify types. Noties are send to the player. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="369" column="16" bodyfile="src/include/player.h" bodystart="369" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a1d99eda37d9d9511c05a105682500846" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NumPlayers</definition>
+        <argsstring></argsstring>
+        <name>NumPlayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="379" column="12" bodyfile="src/stratagus/player.cpp" bodystart="311" bodyend="-1" declfile="src/include/player.h" declline="379" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a1be6b306b4034980b7022a27ed66a048" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref></type>
+        <definition>CPlayer Players[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>Players</name>
+        <briefdescription>
+<para>How many player slots used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="380" column="16" bodyfile="src/stratagus/player.cpp" bodystart="312" bodyend="-1" declfile="src/include/player.h" declline="380" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a539a5aa222220aa978fe7710f9739d7a" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> *</type>
+        <definition>CPlayer* ThisPlayer</definition>
+        <argsstring></argsstring>
+        <name>ThisPlayer</name>
+        <briefdescription>
+<para>All players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="381" column="16" bodyfile="src/stratagus/player.cpp" bodystart="313" bodyend="-1" declfile="src/include/player.h" declline="381" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a3967abef04bbe141cbcbc41bb5b42ac9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NoRescueCheck</definition>
+        <argsstring></argsstring>
+        <name>NoRescueCheck</name>
+        <briefdescription>
+<para>Player on local computer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player on local computer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="382" column="13" bodyfile="src/stratagus/player.cpp" bodystart="316" bodyend="-1" declfile="src/include/player.h" declline="382" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1aac36a7955bc12bf4801b558a03306717" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classCColor" kindref="compound">CColor</ref> &gt;</type>
+        <definition>std::vector&lt;CColor&gt; PlayerColorsRGB[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>PlayerColorsRGB</name>
+        <briefdescription>
+<para>Disable rescue check. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Colors used for minimap. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="383" column="20" bodyfile="src/stratagus/player.cpp" bodystart="321" bodyend="-1" declfile="src/include/player.h" declline="383" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a1f35af0f7f67364e9018a551a142401f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref> &gt;</type>
+        <definition>std::vector&lt;IntColor&gt; PlayerColors[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>PlayerColors</name>
+        <briefdescription>
+<para>Player colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="384" column="20" bodyfile="src/stratagus/player.cpp" bodystart="322" bodyend="-1" declfile="src/include/player.h" declline="384" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a3dba8d61b066740a2b6e3ed3313b0933" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PlayerColorNames[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>PlayerColorNames</name>
+        <briefdescription>
+<para>Player colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="385" column="20" bodyfile="src/stratagus/player.cpp" bodystart="324" bodyend="-1" declfile="src/include/player.h" declline="385" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a0af43daf7f30bdafc33c010f367bf642" prot="public" static="no" mutable="no">
+        <type><ref refid="classPlayerRace" kindref="compound">PlayerRace</ref></type>
+        <definition>PlayerRace PlayerRaces</definition>
+        <argsstring></argsstring>
+        <name>PlayerRaces</name>
+        <briefdescription>
+<para>Player color names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Player color names. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="387" column="19" bodyfile="src/stratagus/player.cpp" bodystart="314" bodyend="-1" declfile="src/include/player.h" declline="387" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a9eb28aaaeb52f02b7005de336f0b0fce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerColorIndexStart</definition>
+        <argsstring></argsstring>
+        <name>PlayerColorIndexStart</name>
+        <briefdescription>
+<para>Player races. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Which indexes to replace with player color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="392" column="12" bodyfile="src/stratagus/player.cpp" bodystart="329" bodyend="-1" declfile="src/include/player.h" declline="392" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="player_8h_1a31c1d91113cb8d154d39825b31036a6e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerColorIndexCount</definition>
+        <argsstring></argsstring>
+        <name>PlayerColorIndexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="393" column="12" bodyfile="src/stratagus/player.cpp" bodystart="330" bodyend="-1" declfile="src/include/player.h" declline="393" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a6a14db78040814a10735ed7b0a31d9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>InitPlayers</name>
+        <briefdescription>
+<para>Init players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="400" column="13" bodyfile="src/stratagus/player.cpp" bodystart="371" bodyend="382" declfile="src/include/player.h" declline="400" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a7805a65a493bd28abc24374220d84010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>CleanPlayers</name>
+        <briefdescription>
+<para>Clean up players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>whether the player has been revealed (i.e. after losing the last Town Hall)</para>
+<para>Clean up players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="402" column="13" bodyfile="src/stratagus/player.cpp" bodystart="387" bodyend="396" declfile="src/include/player.h" declline="402" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a507ac319e633d13b529024ef14dc659e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SavePlayers</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SavePlayers</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Save players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save state of players to file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>FIXME: Not completely saved. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="404" column="13" bodyfile="src/stratagus/player.cpp" bodystart="414" bodyend="425" declfile="src/include/player.h" declline="404" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a84fc1a469107082db541eeb2f051c893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CreatePlayer</definition>
+        <argsstring>(int type)</argsstring>
+        <name>CreatePlayer</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Create a new player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player type (Computer,Human,...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="407" column="13" bodyfile="src/stratagus/player.cpp" bodystart="607" bodyend="616" declfile="src/include/player.h" declline="407" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a8981e425bd510278e2092a2d17d86075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayersInitAi</definition>
+        <argsstring>()</argsstring>
+        <name>PlayersInitAi</name>
+        <briefdescription>
+<para>Initialize the computer opponent AI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Ai for all players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="411" column="13" bodyfile="src/stratagus/player.cpp" bodystart="1194" bodyend="1201" declfile="src/include/player.h" declline="411" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a6baf6bd5a1b084fea6746ca529709390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayersEachCycle</definition>
+        <argsstring>()</argsstring>
+        <name>PlayersEachCycle</name>
+        <briefdescription>
+<para>Called each game cycle for player handlers (AI) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle AI of all players each game cycle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="413" column="13" bodyfile="src/stratagus/player.cpp" bodystart="1206" bodyend="1226" declfile="src/include/player.h" declline="413" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1aed41c2545fbd756565ae0d064715395a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayersEachSecond</definition>
+        <argsstring>(int player)</argsstring>
+        <name>PlayersEachSecond</name>
+        <param>
+          <type>int</type>
+          <declname>player</declname>
+          <defname>playerIdx</defname>
+        </param>
+        <briefdescription>
+<para>Called each second for a given player handler (AI) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle AI of a player each second.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playerIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the player to update AI </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="415" column="13" bodyfile="src/stratagus/player.cpp" bodystart="1233" bodyend="1249" declfile="src/include/player.h" declline="415" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a9dea1fac6d2e74553b3e685d674b415e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void GraphicPlayerPixels</definition>
+        <argsstring>(CPlayer &amp;player, const CGraphic &amp;sprite)</argsstring>
+        <name>GraphicPlayerPixels</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCGraphic" kindref="compound">CGraphic</ref> &amp;</type>
+          <declname>sprite</declname>
+        </param>
+        <briefdescription>
+<para>Change current color set to new player of the sprite. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Change current color set to new player.</para>
+<para>FIXME: use function pointer here.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sprite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sprite in which the colors should be changed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="418" column="13" bodyfile="src/stratagus/player.cpp" bodystart="1259" bodyend="1269" declfile="src/include/player.h" declline="418" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a0797f0174df7169c59377a9ae4d2c972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DebugPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>DebugPlayers</name>
+        <briefdescription>
+<para>Output debug information for players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output debug information for players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="421" column="13" bodyfile="src/stratagus/player.cpp" bodystart="1286" bodyend="1316" declfile="src/include/player.h" declline="421" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a9e593ca911794934cbeb018ea56c0087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreePlayerColors</definition>
+        <argsstring>()</argsstring>
+        <name>FreePlayerColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="423" column="6" bodyfile="src/stratagus/player.cpp" bodystart="398" bodyend="405" declfile="src/include/player.h" declline="423" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a5ae0c938a07cc4ec1a91a83876da6527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PlayerCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>PlayerCclRegister</name>
+        <briefdescription>
+<para>register ccl features </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Register CCL features for players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="426" column="13" bodyfile="src/stratagus/script_player.cpp" bodystart="953" bodyend="984" declfile="src/include/player.h" declline="426" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="player_8h_1a278344202b289a9a224b7541b7a519d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CanSelectMultipleUnits</definition>
+        <argsstring>(const CPlayer &amp;player)</argsstring>
+        <name>CanSelectMultipleUnits</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Allowed to select multiple units, maybe not mine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/player.h" line="429" column="13" bodyfile="src/include/player.h" bodystart="429" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/player.h"/>
+  </compounddef>
+</doxygen>

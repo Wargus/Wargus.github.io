@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpellType" kind="class" language="C++" prot="public">
+    <compoundname>SpellType</compoundname>
+    <includes refid="spells_8h" local="no">spells.h</includes>
+      <sectiondef kind="user-defined">
+      <header>spells.cpp - The spell cast action.</header>
+      <memberdef kind="function" id="classSpellType_1a8750e725c0d6f6c8e7891c8671f02c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpellType::SpellType</definition>
+        <argsstring>(int slot, const std::string &amp;ident)</argsstring>
+        <name>SpellType</name>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classSpellType" kindref="compound">SpellType</ref> constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="208" column="1" bodyfile="src/spell/spells.cpp" bodystart="574" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpellType_1a8df062a0c51c6d97ddda99251a0db3ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpellType::~SpellType</definition>
+        <argsstring>()</argsstring>
+        <name>~SpellType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classSpellType" kindref="compound">SpellType</ref> destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="209" column="1" bodyfile="src/spell/spells.cpp" bodystart="586" bodyend="599"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSpellType_1aa997556d19da89149cbab7b6946662ea" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SpellType::Ident</definition>
+        <argsstring></argsstring>
+        <name>Ident</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="212" column="13" bodyfile="src/include/spells.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1abdf024290c8de633194625bd2362b1b3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SpellType::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+<para>Spell unique identifier (spell-holy-vision) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="213" column="13" bodyfile="src/include/spells.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1ac43f7ca0080a8e0176c6df865d18c821" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::Slot</definition>
+        <argsstring></argsstring>
+        <name>Slot</name>
+        <briefdescription>
+<para>Spell name shown by the engine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="214" column="5" bodyfile="src/include/spells.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a7726853836defb1b696205b4b2f9598b" prot="public" static="no" mutable="no">
+        <type><ref refid="spells_8h_1a0d59972970c855496cb4c877501e668f" kindref="member">TargetType</ref></type>
+        <definition>TargetType SpellType::Target</definition>
+        <argsstring></argsstring>
+        <name>Target</name>
+        <briefdescription>
+<para>Spell numeric identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="217" column="12" bodyfile="src/include/spells.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a000e30530f35d92218e938fd6e56e660" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classSpellActionType" kindref="compound">SpellActionType</ref> * &gt;</type>
+        <definition>std::vector&lt;SpellActionType *&gt; SpellType::Action</definition>
+        <argsstring></argsstring>
+        <name>Action</name>
+        <briefdescription>
+<para>Targeting information. See TargetType. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="218" column="13" bodyfile="src/include/spells.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a9b0c70483a51b9e05913bc394eba1a2e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <briefdescription>
+<para>More arguments for spell (damage, delay, additional sounds...). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="220" column="5" bodyfile="src/include/spells.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a18ee3985fffbbdd176a084544e801818" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::ManaCost</definition>
+        <argsstring></argsstring>
+        <name>ManaCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="222" column="5" bodyfile="src/include/spells.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a1dcae18d7fbcea74e8813884daf0b1e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::RepeatCast</definition>
+        <argsstring></argsstring>
+        <name>RepeatCast</name>
+        <briefdescription>
+<para>Required mana for each cast. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="223" column="5" bodyfile="src/include/spells.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a0070d52d2da0991ed595edadf282da21" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::Costs[MaxCosts]</definition>
+        <argsstring>[MaxCosts]</argsstring>
+        <name>Costs</name>
+        <briefdescription>
+<para>If the spell will be cast again until out of targets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="224" column="5" bodyfile="src/include/spells.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a00182e24489d0d4b7759b8fcd41b1615" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::CoolDown</definition>
+        <argsstring></argsstring>
+        <name>CoolDown</name>
+        <briefdescription>
+<para>Resource costs of spell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="225" column="5" bodyfile="src/include/spells.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a668fda7d60070dc412f6b53651136683" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellType::DependencyId</definition>
+        <argsstring></argsstring>
+        <name>DependencyId</name>
+        <briefdescription>
+<para>How much time spell needs to be cast again. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="227" column="5" bodyfile="src/include/spells.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1ac64fed15495bbf27e1c04fb08b7f91b6" prot="public" static="no" mutable="no">
+        <type><ref refid="classConditionInfo" kindref="compound">ConditionInfo</ref> *</type>
+        <definition>ConditionInfo* SpellType::Condition</definition>
+        <argsstring></argsstring>
+        <name>Condition</name>
+        <briefdescription>
+<para>Id of upgrade, -1 if no upgrade needed for cast the spell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="228" column="15" bodyfile="src/include/spells.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a4da6eb7f57eb9d8c94bea6c42acff526" prot="public" static="no" mutable="no">
+        <type><ref refid="classAutoCastInfo" kindref="compound">AutoCastInfo</ref> *</type>
+        <definition>AutoCastInfo* SpellType::AutoCast</definition>
+        <argsstring></argsstring>
+        <name>AutoCast</name>
+        <briefdescription>
+<para>Conditions to cast the spell. (generic (no test for each target)) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="231" column="14" bodyfile="src/include/spells.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a2acf358ad415ee20f3fcb4853fd1c5ba" prot="public" static="no" mutable="no">
+        <type><ref refid="classAutoCastInfo" kindref="compound">AutoCastInfo</ref> *</type>
+        <definition>AutoCastInfo* SpellType::AICast</definition>
+        <argsstring></argsstring>
+        <name>AICast</name>
+        <briefdescription>
+<para>AutoCast information for your own units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="232" column="14" bodyfile="src/include/spells.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1ad6a446bbf6f708e2640c8431545c1c37" prot="public" static="no" mutable="no">
+        <type><ref refid="classSoundConfig" kindref="compound">SoundConfig</ref></type>
+        <definition>SoundConfig SpellType::SoundWhenCast</definition>
+        <argsstring></argsstring>
+        <name>SoundWhenCast</name>
+        <briefdescription>
+<para>AutoCast information for ai. More detalied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="235" column="13" bodyfile="src/include/spells.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellType_1a84dcf68e9c67d12da37019eb3f877226" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpellType::ForceUseAnimation</definition>
+        <argsstring></argsstring>
+        <name>ForceUseAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="241" column="6" bodyfile="src/include/spells.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpellType_1a95aa7edd95a1a44af1b38007c19200ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpellType::IsCasterOnly</definition>
+        <argsstring>() const</argsstring>
+        <name>IsCasterOnly</name>
+        <briefdescription>
+<para>Sound played if cast. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spells.h" line="237" column="6" bodyfile="src/include/spells.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base structure of a spell type. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>CSound</label>
+        <link refid="classCSound"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Second</edgelabel>
+          <edgelabel>First</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AutoCastInfo</label>
+        <link refid="classAutoCastInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Condition</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PositionAutoCast</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>ConditionInfo</label>
+        <link refid="classConditionInfo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CheckFunc</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Variable</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ConditionInfoVariable</label>
+        <link refid="classConditionInfoVariable"/>
+      </node>
+      <node id="1">
+        <label>SpellType</label>
+        <link refid="classSpellType"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Condition</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>SoundWhenCast</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>AICast</edgelabel>
+          <edgelabel>AutoCast</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Name</edgelabel>
+          <edgelabel>Ident</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SoundConfig</label>
+        <link refid="classSoundConfig"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LuaCallback</label>
+        <link refid="classLuaCallback"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/spells.h" line="206" column="1" bodyfile="src/include/spells.h" bodystart="205" bodyend="243"/>
+    <listofallmembers>
+      <member refid="classSpellType_1a000e30530f35d92218e938fd6e56e660" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Action</name></member>
+      <member refid="classSpellType_1a2acf358ad415ee20f3fcb4853fd1c5ba" prot="public" virt="non-virtual"><scope>SpellType</scope><name>AICast</name></member>
+      <member refid="classSpellType_1a4da6eb7f57eb9d8c94bea6c42acff526" prot="public" virt="non-virtual"><scope>SpellType</scope><name>AutoCast</name></member>
+      <member refid="classSpellType_1ac64fed15495bbf27e1c04fb08b7f91b6" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Condition</name></member>
+      <member refid="classSpellType_1a00182e24489d0d4b7759b8fcd41b1615" prot="public" virt="non-virtual"><scope>SpellType</scope><name>CoolDown</name></member>
+      <member refid="classSpellType_1a0070d52d2da0991ed595edadf282da21" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Costs</name></member>
+      <member refid="classSpellType_1a668fda7d60070dc412f6b53651136683" prot="public" virt="non-virtual"><scope>SpellType</scope><name>DependencyId</name></member>
+      <member refid="classSpellType_1a84dcf68e9c67d12da37019eb3f877226" prot="public" virt="non-virtual"><scope>SpellType</scope><name>ForceUseAnimation</name></member>
+      <member refid="classSpellType_1aa997556d19da89149cbab7b6946662ea" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Ident</name></member>
+      <member refid="classSpellType_1a95aa7edd95a1a44af1b38007c19200ec" prot="public" virt="non-virtual"><scope>SpellType</scope><name>IsCasterOnly</name></member>
+      <member refid="classSpellType_1a18ee3985fffbbdd176a084544e801818" prot="public" virt="non-virtual"><scope>SpellType</scope><name>ManaCost</name></member>
+      <member refid="classSpellType_1abdf024290c8de633194625bd2362b1b3" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Name</name></member>
+      <member refid="classSpellType_1a9b0c70483a51b9e05913bc394eba1a2e" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Range</name></member>
+      <member refid="classSpellType_1a1dcae18d7fbcea74e8813884daf0b1e6" prot="public" virt="non-virtual"><scope>SpellType</scope><name>RepeatCast</name></member>
+      <member refid="classSpellType_1ac43f7ca0080a8e0176c6df865d18c821" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Slot</name></member>
+      <member refid="classSpellType_1ad6a446bbf6f708e2640c8431545c1c37" prot="public" virt="non-virtual"><scope>SpellType</scope><name>SoundWhenCast</name></member>
+      <member refid="classSpellType_1a8750e725c0d6f6c8e7891c8671f02c14" prot="public" virt="non-virtual"><scope>SpellType</scope><name>SpellType</name></member>
+      <member refid="classSpellType_1a7726853836defb1b696205b4b2f9598b" prot="public" virt="non-virtual"><scope>SpellType</scope><name>Target</name></member>
+      <member refid="classSpellType_1a8df062a0c51c6d97ddda99251a0db3ae" prot="public" virt="non-virtual"><scope>SpellType</scope><name>~SpellType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

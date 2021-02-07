@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMapFieldPlayerInfo" kind="class" language="C++" prot="public">
+    <compoundname>CMapFieldPlayerInfo</compoundname>
+    <includes refid="tile_8h" local="no">tile.h</includes>
+      <sectiondef kind="user-defined">
+      <header>mapfield.cpp - The map field.</header>
+      <memberdef kind="function" id="classCMapFieldPlayerInfo_1af09ff8c7e176d52b0324622a41d2bd40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapFieldPlayerInfo::IsExplored</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsExplored</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Check if a field for the user is explored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="162" column="6" bodyfile="src/map/mapfield.cpp" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapFieldPlayerInfo_1af220f32c868eaab46dd8f002fccf10a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapFieldPlayerInfo::IsVisible</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsVisible</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Manage Map.NoFogOfWar </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="165" column="6" bodyfile="src/map/mapfield.cpp" bodystart="296" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapFieldPlayerInfo_1a0234f782e693a32d01a59e7cef55e0fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapFieldPlayerInfo::IsTeamVisible</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>IsTeamVisible</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="166" column="6" bodyfile="src/map/mapfield.cpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapFieldPlayerInfo_1af13467c98df7131cf3323d1ad66f9c6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapFieldPlayerInfo::TeamVisibilityState</definition>
+        <argsstring>(const CPlayer &amp;player) const</argsstring>
+        <name>TeamVisibilityState</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find out how a field is seen (By player, or by shared vision)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player to check for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>manage fogOfWar (using Map.NoFogOfWar)</para>
+</simplesect>
+<simplesect kind="return"><para>0 unexplored, 1 explored, 2 visible. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="175" column="15" bodyfile="src/map/mapfield.cpp" bodystart="266" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCMapFieldPlayerInfo_1a65bccde476ad6e3429ea64aa558993f6" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short CMapFieldPlayerInfo::SeenTile</definition>
+        <argsstring></argsstring>
+        <name>SeenTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="178" column="16" bodyfile="src/include/tile.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapFieldPlayerInfo_1a7689375d6e3a8f5e2557ebad5264676d" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short CMapFieldPlayerInfo::Visible[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>Visible</name>
+        <briefdescription>
+<para>last seen tile (FOW) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="179" column="16" bodyfile="src/include/tile.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapFieldPlayerInfo_1ae24da4af5fd99dd20193f67c2fd1ad6a" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapFieldPlayerInfo::VisCloak[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>VisCloak</name>
+        <briefdescription>
+<para>Seen counter 0 unexplored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="180" column="15" bodyfile="src/include/tile.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapFieldPlayerInfo_1a8399f3ba594c3f1ec4dbdb35c27d195f" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapFieldPlayerInfo::Radar[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>Radar</name>
+        <briefdescription>
+<para>Visiblity for cloaking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="181" column="15" bodyfile="src/include/tile.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapFieldPlayerInfo_1ab99c7c5d1c7d4933a14de767e14d57bb" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapFieldPlayerInfo::RadarJammer[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>RadarJammer</name>
+        <briefdescription>
+<para>Visiblity for radar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="182" column="15" bodyfile="src/include/tile.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMapFieldPlayerInfo_1a6369db1fcf1fa723fd1337b1fb44834c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMapFieldPlayerInfo::CMapFieldPlayerInfo</definition>
+        <argsstring>()</argsstring>
+        <name>CMapFieldPlayerInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="153" column="1" bodyfile="src/include/tile.h" bodystart="153" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/tile.h" line="151" column="1" bodyfile="src/include/tile.h" bodystart="150" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classCMapFieldPlayerInfo_1a6369db1fcf1fa723fd1337b1fb44834c" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>CMapFieldPlayerInfo</name></member>
+      <member refid="classCMapFieldPlayerInfo_1af09ff8c7e176d52b0324622a41d2bd40" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>IsExplored</name></member>
+      <member refid="classCMapFieldPlayerInfo_1a0234f782e693a32d01a59e7cef55e0fe" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>IsTeamVisible</name></member>
+      <member refid="classCMapFieldPlayerInfo_1af220f32c868eaab46dd8f002fccf10a2" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>IsVisible</name></member>
+      <member refid="classCMapFieldPlayerInfo_1a8399f3ba594c3f1ec4dbdb35c27d195f" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>Radar</name></member>
+      <member refid="classCMapFieldPlayerInfo_1ab99c7c5d1c7d4933a14de767e14d57bb" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>RadarJammer</name></member>
+      <member refid="classCMapFieldPlayerInfo_1a65bccde476ad6e3429ea64aa558993f6" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>SeenTile</name></member>
+      <member refid="classCMapFieldPlayerInfo_1af13467c98df7131cf3323d1ad66f9c6c" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>TeamVisibilityState</name></member>
+      <member refid="classCMapFieldPlayerInfo_1ae24da4af5fd99dd20193f67c2fd1ad6a" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>VisCloak</name></member>
+      <member refid="classCMapFieldPlayerInfo_1a7689375d6e3a8f5e2557ebad5264676d" prot="public" virt="non-virtual"><scope>CMapFieldPlayerInfo</scope><name>Visible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpell__SpawnMissile" kind="class" language="C++" prot="public">
+    <compoundname>Spell_SpawnMissile</compoundname>
+    <basecompoundref refid="classSpellActionType" prot="public" virt="non-virtual">SpellActionType</basecompoundref>
+    <includes refid="spell__spawnmissile_8h" local="no">spell_spawnmissile.h</includes>
+      <sectiondef kind="user-defined">
+      <header>spell_spawnmissile.cpp - The spell SpawnMissile.</header>
+      <memberdef kind="function" id="classSpell__SpawnMissile_1ad7f5464a1858b3eb081fe4d8316244a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Spell_SpawnMissile::Cast</definition>
+        <argsstring>(CUnit &amp;caster, const SpellType &amp;spell, CUnit *&amp;target, const Vec2i &amp;goalPos)</argsstring>
+        <name>Cast</name>
+        <reimplements refid="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0">Cast</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast spawn missile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that casts the spell </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell-type pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> unit that spell is addressed to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goalPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TilePos of target spot when/if target does not exist</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>=!0 if spell should be repeated, 0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="73" column="13" bodyfile="src/spell/spell_spawnmissile.cpp" bodystart="182" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpell__SpawnMissile_1a5cf612142a190b3d8f4b91cd2e145787" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Spell_SpawnMissile::Parse</definition>
+        <argsstring>(lua_State *lua, int startIndex, int endIndex)</argsstring>
+        <name>Parse</name>
+        <reimplements refid="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8">Parse</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>lua</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="75" column="14" bodyfile="src/spell/spell_spawnmissile.cpp" bodystart="103" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1a2d6ba3a20df2b23961f07b6c6b10604b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_SpawnMissile::Damage</definition>
+        <argsstring></argsstring>
+        <name>Damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="78" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1ac3f76e1e567a15b34d5aceb997760d8c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_SpawnMissile::TTL</definition>
+        <argsstring></argsstring>
+        <name>TTL</name>
+        <briefdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> damage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="79" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1ae5efc7c3c0fe50a884798de928e0581d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_SpawnMissile::Delay</definition>
+        <argsstring></argsstring>
+        <name>Delay</name>
+        <briefdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> TTL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="80" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1aa5cfc62534ffafdd78875313ef17cff8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Spell_SpawnMissile::UseUnitVar</definition>
+        <argsstring></argsstring>
+        <name>UseUnitVar</name>
+        <briefdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> original delay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="81" column="6" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1a5424e729f793d952c4bdc721391eb3b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classSpellActionMissileLocation" kindref="compound">SpellActionMissileLocation</ref></type>
+        <definition>SpellActionMissileLocation Spell_SpawnMissile::StartPoint</definition>
+        <argsstring></argsstring>
+        <name>StartPoint</name>
+        <briefdescription>
+<para>Use the caster&apos;s damage parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="82" column="28" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1a4ae890dc77ffadeda9ceb3e63c8f74da" prot="private" static="no" mutable="no">
+        <type><ref refid="classSpellActionMissileLocation" kindref="compound">SpellActionMissileLocation</ref></type>
+        <definition>SpellActionMissileLocation Spell_SpawnMissile::EndPoint</definition>
+        <argsstring></argsstring>
+        <name>EndPoint</name>
+        <briefdescription>
+<para>Start point description. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="83" column="28" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnMissile_1a00f1238ec4630df98edaff7dd91c767a" prot="private" static="no" mutable="no">
+        <type><ref refid="classMissileType" kindref="compound">MissileType</ref> *</type>
+        <definition>MissileType* Spell_SpawnMissile::Missile</definition>
+        <argsstring></argsstring>
+        <name>Missile</name>
+        <briefdescription>
+<para>Start point description. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="84" column="13" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpell__SpawnMissile_1a12b1a6bb0cfb0af52c6840143daa3deb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Spell_SpawnMissile::Spell_SpawnMissile</definition>
+        <argsstring>()</argsstring>
+        <name>Spell_SpawnMissile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="71" column="1" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="71" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Spell_SpawnMissile</label>
+        <link refid="classSpell__SpawnMissile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Spell_SpawnMissile</label>
+        <link refid="classSpell__SpawnMissile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/spell/spell_spawnmissile.h" line="69" column="1" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="68" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classSpell__SpawnMissile_1ad7f5464a1858b3eb081fe4d8316244a3" prot="public" virt="virtual"><scope>Spell_SpawnMissile</scope><name>Cast</name></member>
+      <member refid="classSpell__SpawnMissile_1a2d6ba3a20df2b23961f07b6c6b10604b" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>Damage</name></member>
+      <member refid="classSpell__SpawnMissile_1ae5efc7c3c0fe50a884798de928e0581d" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>Delay</name></member>
+      <member refid="classSpell__SpawnMissile_1a4ae890dc77ffadeda9ceb3e63c8f74da" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>EndPoint</name></member>
+      <member refid="classSpell__SpawnMissile_1a00f1238ec4630df98edaff7dd91c767a" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>Missile</name></member>
+      <member refid="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>ModifyManaCaster</name></member>
+      <member refid="classSpell__SpawnMissile_1a5cf612142a190b3d8f4b91cd2e145787" prot="public" virt="virtual"><scope>Spell_SpawnMissile</scope><name>Parse</name></member>
+      <member refid="classSpell__SpawnMissile_1a12b1a6bb0cfb0af52c6840143daa3deb" prot="public" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>Spell_SpawnMissile</name></member>
+      <member refid="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>SpellActionType</name></member>
+      <member refid="classSpell__SpawnMissile_1a5424e729f793d952c4bdc721391eb3b8" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>StartPoint</name></member>
+      <member refid="classSpell__SpawnMissile_1ac3f76e1e567a15b34d5aceb997760d8c" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>TTL</name></member>
+      <member refid="classSpell__SpawnMissile_1aa5cfc62534ffafdd78875313ef17cff8" prot="private" virt="non-virtual"><scope>Spell_SpawnMissile</scope><name>UseUnitVar</name></member>
+      <member refid="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" virt="virtual"><scope>Spell_SpawnMissile</scope><name>~SpellActionType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

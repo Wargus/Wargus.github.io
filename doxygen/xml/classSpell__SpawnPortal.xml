@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpell__SpawnPortal" kind="class" language="C++" prot="public">
+    <compoundname>Spell_SpawnPortal</compoundname>
+    <basecompoundref refid="classSpellActionType" prot="public" virt="non-virtual">SpellActionType</basecompoundref>
+    <includes refid="spell__spawnportal_8h" local="no">spell_spawnportal.h</includes>
+      <sectiondef kind="user-defined">
+      <header>spell_spawnportal.cpp - The spell SpawnPortal.</header>
+      <memberdef kind="function" id="classSpell__SpawnPortal_1a1edd7661239ba8b14b0b39113142591e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Spell_SpawnPortal::Cast</definition>
+        <argsstring>(CUnit &amp;caster, const SpellType &amp;spell, CUnit *&amp;target, const Vec2i &amp;goalPos)</argsstring>
+        <name>Cast</name>
+        <reimplements refid="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0">Cast</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast circle of power.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that casts the spell </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell-type pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> unit that spell is addressed to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goalPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tilePos of target spot when/if target does not exist</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>=!0 if spell should be repeated, 0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnportal.h" line="45" column="13" bodyfile="src/spell/spell_spawnportal.cpp" bodystart="77" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpell__SpawnPortal_1a7bd41cd6a359ab5d24cdc2cf9cce9316" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Spell_SpawnPortal::Parse</definition>
+        <argsstring>(lua_State *l, int startIndex, int endIndex)</argsstring>
+        <name>Parse</name>
+        <reimplements refid="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8">Parse</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnportal.h" line="47" column="14" bodyfile="src/spell/spell_spawnportal.cpp" bodystart="40" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpell__SpawnPortal_1a405d2f8d4656d13f574a16c25ac6cff5" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* Spell_SpawnPortal::PortalType</definition>
+        <argsstring></argsstring>
+        <name>PortalType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnportal.h" line="50" column="11" bodyfile="src/include/spell/spell_spawnportal.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnPortal_1a0b3e229581a5a5b5a6de976d81187f06" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_SpawnPortal::TTL</definition>
+        <argsstring></argsstring>
+        <name>TTL</name>
+        <briefdescription>
+<para>The unit type spawned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnportal.h" line="51" column="5" bodyfile="src/include/spell/spell_spawnportal.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__SpawnPortal_1aae0eb96de5e14cb65816612541929795" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Spell_SpawnPortal::CurrentPlayer</definition>
+        <argsstring></argsstring>
+        <name>CurrentPlayer</name>
+        <briefdescription>
+<para>Time to live for summoned portal. 0 means infinite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnportal.h" line="52" column="6" bodyfile="src/include/spell/spell_spawnportal.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpell__SpawnPortal_1acb5479422b2ccb7d8bcd3fbabaaac66f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Spell_SpawnPortal::Spell_SpawnPortal</definition>
+        <argsstring>()</argsstring>
+        <name>Spell_SpawnPortal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnportal.h" line="44" column="1" bodyfile="src/include/spell/spell_spawnportal.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Spell_SpawnPortal</label>
+        <link refid="classSpell__SpawnPortal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Spell_SpawnPortal</label>
+        <link refid="classSpell__SpawnPortal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/spell/spell_spawnportal.h" line="42" column="1" bodyfile="src/include/spell/spell_spawnportal.h" bodystart="41" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classSpell__SpawnPortal_1a1edd7661239ba8b14b0b39113142591e" prot="public" virt="virtual"><scope>Spell_SpawnPortal</scope><name>Cast</name></member>
+      <member refid="classSpell__SpawnPortal_1aae0eb96de5e14cb65816612541929795" prot="private" virt="non-virtual"><scope>Spell_SpawnPortal</scope><name>CurrentPlayer</name></member>
+      <member refid="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" virt="non-virtual"><scope>Spell_SpawnPortal</scope><name>ModifyManaCaster</name></member>
+      <member refid="classSpell__SpawnPortal_1a7bd41cd6a359ab5d24cdc2cf9cce9316" prot="public" virt="virtual"><scope>Spell_SpawnPortal</scope><name>Parse</name></member>
+      <member refid="classSpell__SpawnPortal_1a405d2f8d4656d13f574a16c25ac6cff5" prot="private" virt="non-virtual"><scope>Spell_SpawnPortal</scope><name>PortalType</name></member>
+      <member refid="classSpell__SpawnPortal_1acb5479422b2ccb7d8bcd3fbabaaac66f" prot="public" virt="non-virtual"><scope>Spell_SpawnPortal</scope><name>Spell_SpawnPortal</name></member>
+      <member refid="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" virt="non-virtual"><scope>Spell_SpawnPortal</scope><name>SpellActionType</name></member>
+      <member refid="classSpell__SpawnPortal_1a0b3e229581a5a5b5a6de976d81187f06" prot="private" virt="non-virtual"><scope>Spell_SpawnPortal</scope><name>TTL</name></member>
+      <member refid="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" virt="virtual"><scope>Spell_SpawnPortal</scope><name>~SpellActionType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

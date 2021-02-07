@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="sound__id_8cpp" kind="file" language="C++">
+    <compoundname>sound_id.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includes refid="sound_8h" local="yes">sound.h</includes>
+    <includes refid="sound__server_8h" local="yes">sound_server.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="14">
+        <label>SDL.h</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="10">
+        <label>sound.h</label>
+        <link refid="sound_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="1">
+        <label>src/sound/sound_id.cpp</label>
+        <link refid="sound__id_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sound_server.h</label>
+        <link refid="sound__server_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>sound_id.cpp - The sound id.</header>
+      <memberdef kind="variable" id="sound__id_8cpp_1ae42d744db100fe348bdb72a03aff5e7c" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classCSound" kindref="compound">CSound</ref> * &gt;</type>
+        <definition>std::map&lt;std::string, CSound *&gt; SoundMap</definition>
+        <argsstring></argsstring>
+        <name>SoundMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="49" column="17" bodyfile="src/sound/sound_id.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__id_8cpp_1aa800a21f2906ea97e71d67d450f16c99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>static CSound* FindSound</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>FindSound</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="55" column="15" bodyfile="src/sound/sound_id.cpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__id_8cpp_1abb4921b761e37dd6d21406093cb36878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MapSound</definition>
+        <argsstring>(const std::string &amp;name, CSound *id)</argsstring>
+        <name>MapSound</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Map sound to identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new mapping (sound name to sound id) in the hash table Create a new mapping between a name and an already valid sound id.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the sound (now freed by caller!). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sound identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="71" column="6" bodyfile="src/sound/sound_id.cpp" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__id_8cpp_1a1bc4207a8a0b4b60ad02225c63fb5922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>CSound* SoundForName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>SoundForName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get the sound id bound to an identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Maps a sound name to its id</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sound name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Sound identifier for this name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="88" column="8" bodyfile="src/sound/sound_id.cpp" bodystart="88" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__id_8cpp_1a39d0f5643f713c43ffebe9eca2d8b701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>CSound* MakeSound</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; std::string &gt; &amp;files)</argsstring>
+        <name>MakeSound</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>files</declname>
+        </param>
+        <briefdescription>
+<para>Make a sound bound to identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ask the sound server to register a sound and store the mapping between its name and its id. Register a sound group (or an unique sound if nb==1) and get the corresponding sound id.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of this sound group (Freed by caller). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of sound file names </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of sounds</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the sound id of the created group </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="111" column="8" bodyfile="src/sound/sound_id.cpp" bodystart="111" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__id_8cpp_1ade1a74010ca6f26157a6efdfd89c19cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>CSound* MakeSoundGroup</definition>
+        <argsstring>(const std::string &amp;name, CSound *first, CSound *second)</argsstring>
+        <name>MakeSoundGroup</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+<para>Make a sound group bound to identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ask the sound server to build a special sound group.</para>
+<para>Register two sound groups together to make a special sound (for selection). Return the corresponding id after registering it under a given name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the group (handled by caller). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the first group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the second group</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Registered sound identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="140" column="8" bodyfile="src/sound/sound_id.cpp" bodystart="140" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="sound__id_8cpp_1a5df40f0735f23d5fec526d300c9bff0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreeSounds</definition>
+        <argsstring>()</argsstring>
+        <name>FreeSounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sound/sound_id.cpp" line="156" column="6" bodyfile="src/sound/sound_id.cpp" bodystart="156" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sound/sound_id.cpp"/>
+  </compounddef>
+</doxygen>

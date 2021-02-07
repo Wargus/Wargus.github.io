@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCOrder__Repair" kind="class" language="C++" prot="public">
+    <compoundname>COrder_Repair</compoundname>
+    <basecompoundref refid="classCOrder" prot="public" virt="non-virtual">COrder</basecompoundref>
+    <includes refid="action__repair_8h" local="no">action_repair.h</includes>
+      <sectiondef kind="user-defined">
+      <header>action_repair.cpp - The repair action.</header>
+      <memberdef kind="function" id="classCOrder__Repair_1a9925202c87f7d5c8f5b564d227f54c90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool COrder_Repair::IsValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsValid</name>
+        <reimplements refid="classCOrder_1ab6924e22bfe7bf2f2cefab357ad1edbf">IsValid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="50" column="14" bodyfile="src/action/action_repair.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1ac63fcf5604abe0afa40c39e6f6499600" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Repair::Save</definition>
+        <argsstring>(CFile &amp;file, const CUnit &amp;unit) const</argsstring>
+        <name>Save</name>
+        <reimplements refid="classCOrder_1a58c15c09929a6d1347cec039f8cfffd3">Save</reimplements>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="52" column="14" bodyfile="src/action/action_repair.cpp" bodystart="81" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1a33a0aeee79f42aacd99e8e5c9eb1673b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool COrder_Repair::ParseSpecificData</definition>
+        <argsstring>(lua_State *l, int &amp;j, const char *value, const CUnit &amp;unit)</argsstring>
+        <name>ParseSpecificData</name>
+        <reimplements refid="classCOrder_1a0b7f9738ae78f449aba5f7c3c8ef1640">ParseSpecificData</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="53" column="14" bodyfile="src/action/action_repair.cpp" bodystart="103" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1a88e9fb6abef8edb309fecc932b7d1293" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Repair::Execute</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>Execute</name>
+        <reimplements refid="classCOrder_1a1c777511ad924a106af290da2c2d3e91">Execute</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="55" column="14" bodyfile="src/action/action_repair.cpp" bodystart="238" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1a9c78c74f23a15b2a34728a6b177868eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos COrder_Repair::Show</definition>
+        <argsstring>(const CViewport &amp;vp, const PixelPos &amp;lastScreenPos) const</argsstring>
+        <name>Show</name>
+        <reimplements refid="classCOrder_1af9c3ee0b4e23d338aa6f44d73682654d">Show</reimplements>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>lastScreenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="56" column="18" bodyfile="src/action/action_repair.cpp" bodystart="132" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1a2d83961c5509412f0a44d292ae345ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void COrder_Repair::UpdatePathFinderData</definition>
+        <argsstring>(PathFinderInput &amp;input)</argsstring>
+        <name>UpdatePathFinderData</name>
+        <reimplements refid="classCOrder_1a9cb844e0bec22d40396b187c2f4f7f53">UpdatePathFinderData</reimplements>
+        <param>
+          <type><ref refid="classPathFinderInput" kindref="compound">PathFinderInput</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="57" column="14" bodyfile="src/action/action_repair.cpp" bodystart="147" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1a0d04a469af8a6b1f9e45c676bf95dcf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>const Vec2i COrder_Repair::GetGoalPos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGoalPos</name>
+        <reimplements refid="classCOrder_1a4e9ea1cb79d8ab5628b1565ccef58702">GetGoalPos</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get goal position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="60" column="21" bodyfile="src/action/action_repair.cpp" bodystart="325" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1af3c4ab48c2d927ac10a446c2124d4fb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool COrder_Repair::RepairUnit</definition>
+        <argsstring>(const CUnit &amp;unit, CUnit &amp;goal)</argsstring>
+        <name>RepairUnit</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>goal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repair a unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit repairing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit being repaired</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true when action is finished/canceled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="62" column="6" bodyfile="src/action/action_repair.cpp" bodystart="196" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCOrder__Repair_1a83b86bdd215249efd840c1f4939e4aee" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnitPtr" kindref="compound">CUnitPtr</ref></type>
+        <definition>CUnitPtr COrder_Repair::ReparableTarget</definition>
+        <argsstring></argsstring>
+        <name>ReparableTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="64" column="10" bodyfile="src/include/action/action_repair.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Repair_1a35bddadbc0ff785db8abcaed0a897f6c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int COrder_Repair::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="65" column="14" bodyfile="src/include/action/action_repair.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Repair_1ac7a7aec1c09c867aaaa05e4225acaa40" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int COrder_Repair::RepairCycle</definition>
+        <argsstring></argsstring>
+        <name>RepairCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="66" column="14" bodyfile="src/include/action/action_repair.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCOrder__Repair_1a08adfc2ecfc59848f53951ff0eaa7262" prot="private" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i COrder_Repair::goalPos</definition>
+        <argsstring></argsstring>
+        <name>goalPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="67" column="7" bodyfile="src/include/action/action_repair.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCOrder__Repair_1a1677307390d251b156b02341e4b8cca9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* COrder::NewActionRepair</definition>
+        <argsstring>(CUnit &amp;unit, CUnit &amp;target)</argsstring>
+        <name>COrder::NewActionRepair</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="39" column="15"/>
+      </memberdef>
+      <memberdef kind="friend" id="classCOrder__Repair_1ad570edd4bef8944113d92a7df6155f64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classCOrder" kindref="compound">COrder</ref> *</type>
+        <definition>COrder* COrder::NewActionRepair</definition>
+        <argsstring>(const Vec2i &amp;pos)</argsstring>
+        <name>COrder::NewActionRepair</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="40" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCOrder__Repair_1a89c8740f01c4bf26118ac0eff938137c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>COrder_Repair::COrder_Repair</definition>
+        <argsstring>()</argsstring>
+        <name>COrder_Repair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="42" column="1" bodyfile="src/include/action/action_repair.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1a720343fb53a8ebcebbcd752e418a8be1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classCOrder__Repair" kindref="compound">COrder_Repair</ref> *</type>
+        <definition>virtual COrder_Repair* COrder_Repair::Clone</definition>
+        <argsstring>() const</argsstring>
+        <name>Clone</name>
+        <reimplements refid="classCOrder_1a3c4692a77027267df06eb6c2df03fcfa">Clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="48" column="23" bodyfile="src/include/action/action_repair.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCOrder__Repair_1ac8e01ddfc5d0a1a03c5a75cd1ca2accb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classCUnitPtr" kindref="compound">CUnitPtr</ref> &amp;</type>
+        <definition>const CUnitPtr&amp; COrder_Repair::GetReparableTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReparableTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/action/action_repair.h" line="59" column="16" bodyfile="src/include/action/action_repair.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>COrder_Repair</label>
+        <link refid="classCOrder__Repair"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>COrder_Repair</label>
+        <link refid="classCOrder__Repair"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>COrder</label>
+        <link refid="classCOrder"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/action/action_repair.h" line="38" column="1" bodyfile="src/include/action/action_repair.h" bodystart="37" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classCOrder_1ae392a909b6205e42570d4d42466f9752" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>Action</name></member>
+      <member refid="classCOrder_1a992121bb6de5d10d97c8087f6e1ce663" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>AiUnitKilled</name></member>
+      <member refid="classCOrder_1acec86b1c1bbf9b18b355223795c67825" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>Cancel</name></member>
+      <member refid="classCOrder_1af0e646d2ab79d564c24f828f0fa7a26d" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>ClearGoal</name></member>
+      <member refid="classCOrder__Repair_1a720343fb53a8ebcebbcd752e418a8be1" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>Clone</name></member>
+      <member refid="classCOrder_1a63e19ab48735815135c57cd9da1ce514" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>COrder</name></member>
+      <member refid="classCOrder__Repair_1a1677307390d251b156b02341e4b8cca9" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>COrder::NewActionRepair</name></member>
+      <member refid="classCOrder__Repair_1ad570edd4bef8944113d92a7df6155f64" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>COrder::NewActionRepair</name></member>
+      <member refid="classCOrder__Repair_1a89c8740f01c4bf26118ac0eff938137c" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>COrder_Repair</name></member>
+      <member refid="classCOrder__Repair_1a88e9fb6abef8edb309fecc932b7d1293" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>Execute</name></member>
+      <member refid="classCOrder_1a70f1e687933a004e6c1dd366a446f962" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>FillSeenValues</name></member>
+      <member refid="classCOrder_1af1140a35f3ba61ca1f8a00bdbf10eb9a" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>Finished</name></member>
+      <member refid="classCOrder_1a46b331cafbc13d9da4d2f3349cbb5f31" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>GetGoal</name></member>
+      <member refid="classCOrder__Repair_1a0d04a469af8a6b1f9e45c676bf95dcf4" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>GetGoalPos</name></member>
+      <member refid="classCOrder__Repair_1ac8e01ddfc5d0a1a03c5a75cd1ca2accb" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>GetReparableTarget</name></member>
+      <member refid="classCOrder__Repair_1a08adfc2ecfc59848f53951ff0eaa7262" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>goalPos</name></member>
+      <member refid="classCOrder_1a1120819b82b933e7e020f69610c2159a" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>HasGoal</name></member>
+      <member refid="classCOrder__Repair_1a9925202c87f7d5c8f5b564d227f54c90" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>IsValid</name></member>
+      <member refid="classCOrder_1a66f2cca62f01220c9b15a05ebdccbdf9" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionAttack</name></member>
+      <member refid="classCOrder_1a7b95385f85b298f324dd55b87075594f" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionAttack</name></member>
+      <member refid="classCOrder_1a12a9b8dd296f8859300791319744cda4" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionAttackGround</name></member>
+      <member refid="classCOrder_1a821e810aa0d4d35d96a67099024f0d31" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionBoard</name></member>
+      <member refid="classCOrder_1a40c190ff9e647bd3977103966925fe99" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionBuild</name></member>
+      <member refid="classCOrder_1af1d67cf830eec93f747dbc931d9d3ce5" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionBuilt</name></member>
+      <member refid="classCOrder_1a026a2104c1497d30810ac5e72533e3d1" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionDefend</name></member>
+      <member refid="classCOrder_1a31463731a44de229474c202090621847" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionDie</name></member>
+      <member refid="classCOrder_1af776706076b12175f266ed812765ceb2" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionExplore</name></member>
+      <member refid="classCOrder_1a234160729c0432becb743c94a699fa1f" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionFollow</name></member>
+      <member refid="classCOrder_1a5583b5534550bd31b72047fdf9ca284e" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionMove</name></member>
+      <member refid="classCOrder_1a7d5dbfd4745d2ba08fd9b654216f674d" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionPatrol</name></member>
+      <member refid="classCOrder_1a7efc9673c9c3d38bf50fd43b8afee5b3" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionRepair</name></member>
+      <member refid="classCOrder_1a2964869fd79a60eb0132f8f7c25d30f0" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionRepair</name></member>
+      <member refid="classCOrder_1aabf3430899ab91803e3195e75cf96fb3" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionResearch</name></member>
+      <member refid="classCOrder_1a3f2e49826eb2eceb7e0626b74a990bfe" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionResource</name></member>
+      <member refid="classCOrder_1ac8b093656bfce523a4b26c05e66a9938" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionResource</name></member>
+      <member refid="classCOrder_1a16c416d4dcf29f7cbeb142d2ae52f92e" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionReturnGoods</name></member>
+      <member refid="classCOrder_1a9361650a1dccde1b2fd6915fd333740b" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionSpellCast</name></member>
+      <member refid="classCOrder_1a67bb017bb8e2811dc75da6771fc41685" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionStandGround</name></member>
+      <member refid="classCOrder_1a4ed37af7841d69e04ba31f213f9e999a" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionStill</name></member>
+      <member refid="classCOrder_1a7737871d94580eb620c639829ddf030c" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionTrain</name></member>
+      <member refid="classCOrder_1aa56c12efaa85de23a36d91f6375c7bec" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionTransformInto</name></member>
+      <member refid="classCOrder_1a1a5bbc8793b7f459c8919f5ca21098c3" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionUnload</name></member>
+      <member refid="classCOrder_1a17e5e25e418c7149471efcdab0fe47bd" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>NewActionUpgradeTo</name></member>
+      <member refid="classCOrder_1abea314b99c9832b4d0920ae9262fcdae" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>OnAiHitUnit</name></member>
+      <member refid="classCOrder_1a3e3dde115ea9ea57fa29d0dcfe8f983b" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>OnAnimationAttack</name></member>
+      <member refid="classCOrder_1a5c8ec68b8426ce5d5b2bbb93ed3041b9" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>ParseGenericData</name></member>
+      <member refid="classCOrder__Repair_1a33a0aeee79f42aacd99e8e5c9eb1673b" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>ParseSpecificData</name></member>
+      <member refid="classCOrder__Repair_1ac7a7aec1c09c867aaaa05e4225acaa40" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>RepairCycle</name></member>
+      <member refid="classCOrder__Repair_1af3c4ab48c2d927ac10a446c2124d4fb4" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>RepairUnit</name></member>
+      <member refid="classCOrder__Repair_1a83b86bdd215249efd840c1f4939e4aee" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>ReparableTarget</name></member>
+      <member refid="classCOrder__Repair_1ac63fcf5604abe0afa40c39e6f6499600" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>Save</name></member>
+      <member refid="classCOrder_1a4b29fd5d2266dcb3f6b565a931a25a78" prot="public" virt="non-virtual"><scope>COrder_Repair</scope><name>SetGoal</name></member>
+      <member refid="classCOrder__Repair_1a9c78c74f23a15b2a34728a6b177868eb" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>Show</name></member>
+      <member refid="classCOrder__Repair_1a35bddadbc0ff785db8abcaed0a897f6c" prot="private" virt="non-virtual"><scope>COrder_Repair</scope><name>State</name></member>
+      <member refid="classCOrder__Repair_1a2d83961c5509412f0a44d292ae345ffb" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>UpdatePathFinderData</name></member>
+      <member refid="classCOrder_1a347f8abee4516aa09c289da220966de5" prot="protected" virt="non-virtual"><scope>COrder_Repair</scope><name>UpdatePathFinderData_NotCalled</name></member>
+      <member refid="classCOrder_1a81c8648cfb27f2e54800358e935f5458" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>UpdateUnitVariables</name></member>
+      <member refid="classCOrder_1a116ed5442f01b5c24ca7d0df1f81e9b5" prot="public" virt="virtual"><scope>COrder_Repair</scope><name>~COrder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

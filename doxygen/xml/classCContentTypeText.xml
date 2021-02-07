@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCContentTypeText" kind="class" language="C++" prot="public">
+    <compoundname>CContentTypeText</compoundname>
+    <basecompoundref refid="classCContentType" prot="public" virt="non-virtual">CContentType</basecompoundref>
+    <includes refid="contenttype_8h" local="no">contenttype.h</includes>
+      <sectiondef kind="user-defined">
+      <header>contenttype.cpp - .</header>
+      <memberdef kind="function" id="classCContentTypeText_1ab90c506f28a715205d7454832ee2db27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CContentTypeText::Draw</definition>
+        <argsstring>(const CUnit &amp;unit, CFont *defaultfont) const</argsstring>
+        <name>Draw</name>
+        <reimplements refid="classCContentType_1a8b931718b47ddacee719a91a386cb844">Draw</reimplements>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCFont" kindref="compound">CFont</ref> *</type>
+          <declname>defaultfont</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw text with variable.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit with variable to show. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultfont</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default font if no specific font in extra data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="76" column="14" bodyfile="src/ui/contenttype.cpp" bodystart="70" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classCContentTypeText_1a25172e8f570d69559d16efd0c2295b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CContentTypeText::Parse</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>Parse</name>
+        <reimplements refid="classCContentType_1a444eb61f4f4506d3f5ee480bda2d4b79">Parse</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="77" column="14" bodyfile="src/ui/contenttype.cpp" bodystart="351" bodyend="385"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCContentTypeText_1a552c553791517054009afd6dc053c5f0" prot="private" static="no" mutable="no">
+        <type><ref refid="structStringDesc" kindref="compound">StringDesc</ref> *</type>
+        <definition>StringDesc* CContentTypeText::Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="80" column="12" bodyfile="src/include/ui/contenttype.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCContentTypeText_1a227babe40075436ad46702bce829d0a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classCFont" kindref="compound">CFont</ref> *</type>
+        <definition>CFont* CContentTypeText::Font</definition>
+        <argsstring></argsstring>
+        <name>Font</name>
+        <briefdescription>
+<para>Text to display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="81" column="7" bodyfile="src/include/ui/contenttype.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCContentTypeText_1ae5ddab9607556d3fff74334418bbf8e1" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CContentTypeText::Centered</definition>
+        <argsstring></argsstring>
+        <name>Centered</name>
+        <briefdescription>
+<para>Font to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="82" column="6" bodyfile="src/include/ui/contenttype.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCContentTypeText_1a022240abad04c982018c6b08fb1a891a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CContentTypeText::Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <briefdescription>
+<para>if true, center the display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="83" column="5" bodyfile="src/include/ui/contenttype.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCContentTypeText_1ae7426d7be5b4b862a32f1b7be73ac828" prot="private" static="no" mutable="no">
+        <type><ref refid="script_8h_1a135f0624977e3a2639ed4d6aba3a8573" kindref="member">EnumVariable</ref></type>
+        <definition>EnumVariable CContentTypeText::Component</definition>
+        <argsstring></argsstring>
+        <name>Component</name>
+        <briefdescription>
+<para>Index of the variable to show, -1 if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="84" column="14" bodyfile="src/include/ui/contenttype.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCContentTypeText_1a3e74edc6601cc993197d78a8829792ce" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CContentTypeText::ShowName</definition>
+        <argsstring></argsstring>
+        <name>ShowName</name>
+        <briefdescription>
+<para>Component of the variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="85" column="6" bodyfile="src/include/ui/contenttype.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCContentTypeText_1a14fa1c64746ee76a7c5b5714eaca57d1" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CContentTypeText::Stat</definition>
+        <argsstring></argsstring>
+        <name>Stat</name>
+        <briefdescription>
+<para>If true, Show name&apos;s unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="86" column="6" bodyfile="src/include/ui/contenttype.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCContentTypeText_1a0166f08fd76c73daf28631f92a70daeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CContentTypeText::CContentTypeText</definition>
+        <argsstring>()</argsstring>
+        <name>CContentTypeText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="68" column="1" bodyfile="src/include/ui/contenttype.h" bodystart="68" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classCContentTypeText_1ac190b73d032b09ddff00a8f3b3f239ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CContentTypeText::~CContentTypeText</definition>
+        <argsstring>()</argsstring>
+        <name>~CContentTypeText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/ui/contenttype.h" line="70" column="9" bodyfile="src/include/ui/contenttype.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Show simple text followed by variable value. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CContentTypeText</label>
+        <link refid="classCContentTypeText"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CContentType</label>
+        <link refid="classCContentType"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ConditionPanel</label>
+        <link refid="classConditionPanel"/>
+      </node>
+      <node id="1">
+        <label>CContentTypeText</label>
+        <link refid="classCContentTypeText"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CContentType</label>
+        <link refid="classCContentType"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Condition</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Vec2T&lt; int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/ui/contenttype.h" line="66" column="1" bodyfile="src/include/ui/contenttype.h" bodystart="65" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classCContentType_1a5775f933928915167411c1be9467b245" prot="public" virt="non-virtual"><scope>CContentTypeText</scope><name>CContentType</name></member>
+      <member refid="classCContentTypeText_1a0166f08fd76c73daf28631f92a70daeb" prot="public" virt="non-virtual"><scope>CContentTypeText</scope><name>CContentTypeText</name></member>
+      <member refid="classCContentTypeText_1ae5ddab9607556d3fff74334418bbf8e1" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>Centered</name></member>
+      <member refid="classCContentTypeText_1ae7426d7be5b4b862a32f1b7be73ac828" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>Component</name></member>
+      <member refid="classCContentType_1a5fc9768a026ef38c7797abd23308bff2" prot="public" virt="non-virtual"><scope>CContentTypeText</scope><name>Condition</name></member>
+      <member refid="classCContentTypeText_1ab90c506f28a715205d7454832ee2db27" prot="public" virt="virtual"><scope>CContentTypeText</scope><name>Draw</name></member>
+      <member refid="classCContentTypeText_1a227babe40075436ad46702bce829d0a8" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>Font</name></member>
+      <member refid="classCContentTypeText_1a022240abad04c982018c6b08fb1a891a" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>Index</name></member>
+      <member refid="classCContentTypeText_1a25172e8f570d69559d16efd0c2295b1b" prot="public" virt="virtual"><scope>CContentTypeText</scope><name>Parse</name></member>
+      <member refid="classCContentType_1a27f1f1f93d19b087321682741771e52b" prot="public" virt="non-virtual"><scope>CContentTypeText</scope><name>Pos</name></member>
+      <member refid="classCContentTypeText_1a3e74edc6601cc993197d78a8829792ce" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>ShowName</name></member>
+      <member refid="classCContentTypeText_1a14fa1c64746ee76a7c5b5714eaca57d1" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>Stat</name></member>
+      <member refid="classCContentTypeText_1a552c553791517054009afd6dc053c5f0" prot="private" virt="non-virtual"><scope>CContentTypeText</scope><name>Text</name></member>
+      <member refid="classCContentType_1abd98317b61e66f5c0afd1a65479e38a5" prot="public" virt="virtual"><scope>CContentTypeText</scope><name>~CContentType</name></member>
+      <member refid="classCContentTypeText_1ac190b73d032b09ddff00a8f3b3f239ba" prot="public" virt="virtual"><scope>CContentTypeText</scope><name>~CContentTypeText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

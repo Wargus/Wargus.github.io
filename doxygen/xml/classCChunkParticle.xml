@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCChunkParticle" kind="class" language="C++" prot="public">
+    <compoundname>CChunkParticle</compoundname>
+    <basecompoundref refid="classCParticle" prot="public" virt="non-virtual">CParticle</basecompoundref>
+    <includes refid="particle_8h" local="no">particle.h</includes>
+      <sectiondef kind="user-defined">
+      <header>chunkparticle.cpp - The chunk particle.</header>
+      <memberdef kind="function" id="classCChunkParticle_1a576aa4a6783915356523c8774bae8150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CChunkParticle::CChunkParticle</definition>
+        <argsstring>(CPosition position, GraphicAnimation *smokeAnimation, GraphicAnimation *debrisAnimation, GraphicAnimation *destroyAnimation, int minVelocity=0, int maxVelocity=400, int minTrajectoryAngle=77, int maxTTL=0, int drawlevel=0)</argsstring>
+        <name>CChunkParticle</name>
+        <param>
+          <type><ref refid="structCPosition" kindref="compound">CPosition</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="classGraphicAnimation" kindref="compound">GraphicAnimation</ref> *</type>
+          <declname>smokeAnimation</declname>
+        </param>
+        <param>
+          <type><ref refid="classGraphicAnimation" kindref="compound">GraphicAnimation</ref> *</type>
+          <declname>debrisAnimation</declname>
+        </param>
+        <param>
+          <type><ref refid="classGraphicAnimation" kindref="compound">GraphicAnimation</ref> *</type>
+          <declname>destroyAnimation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minVelocity</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxVelocity</declname>
+          <defval>400</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minTrajectoryAngle</declname>
+          <defval>77</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxTTL</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>drawlevel</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="124" column="1" bodyfile="src/particle/chunkparticle.cpp" bodystart="47" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1afb214cdbbee7c77e812fe6fb9a6365fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>CChunkParticle::~CChunkParticle</definition>
+        <argsstring>()</argsstring>
+        <name>~CChunkParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="128" column="9" bodyfile="src/particle/chunkparticle.cpp" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1ab36d8a423180117f6d1ecf5397cb3136" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool CChunkParticle::isVisible</definition>
+        <argsstring>(const CViewport &amp;vp) const</argsstring>
+        <name>isVisible</name>
+        <reimplements refid="classCParticle_1a3d7167a98ca2cd59bf99407f7f5f7dd4">isVisible</reimplements>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="130" column="14" bodyfile="src/particle/chunkparticle.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1acd3f3606c52e33b0fcdd59bf3695afed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CChunkParticle::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <reimplements refid="classCParticle_1a1b44f2dac692fe2f23c57cee4fb236d6">draw</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="131" column="14" bodyfile="src/particle/chunkparticle.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1a57948de8d6857d62d9f8f5303010c962" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CChunkParticle::update</definition>
+        <argsstring>(int ticks)</argsstring>
+        <name>update</name>
+        <reimplements refid="classCParticle_1a37f3e90dd9d45a55a161f74278f61c14">update</reimplements>
+        <param>
+          <type>int</type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="132" column="14" bodyfile="src/particle/chunkparticle.cpp" bodystart="108" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1a0de28d2c29a5bca4e0b27ed7018a6e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classCParticle" kindref="compound">CParticle</ref> *</type>
+        <definition>CParticle * CChunkParticle::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classCParticle_1ae39160b311a90520472dcd80dfadc491">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="133" column="19" bodyfile="src/particle/chunkparticle.cpp" bodystart="152" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCChunkParticle_1ae40953794486d0c12dd35eb74f635e9c" prot="protected" static="no" mutable="no">
+        <type><ref refid="structCPosition" kindref="compound">CPosition</ref></type>
+        <definition>CPosition CChunkParticle::initialPos</definition>
+        <argsstring></argsstring>
+        <name>initialPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="140" column="11" bodyfile="src/include/particle.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1ac242ae781cafa25c9388a53c281b2d2c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::initialVelocity</definition>
+        <argsstring></argsstring>
+        <name>initialVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="141" column="5" bodyfile="src/include/particle.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a2e967d550729dfc26110f3d4ddd1738c" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CChunkParticle::trajectoryAngle</definition>
+        <argsstring></argsstring>
+        <name>trajectoryAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="142" column="7" bodyfile="src/include/particle.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1aed3a220b6c1bb8c2056d9464036427ae" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::maxTTL</definition>
+        <argsstring></argsstring>
+        <name>maxTTL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="143" column="5" bodyfile="src/include/particle.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a5f62abca1b59383c196b7029aadb0794" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::nextSmokeTicks</definition>
+        <argsstring></argsstring>
+        <name>nextSmokeTicks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="144" column="5" bodyfile="src/include/particle.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a9f37d6c284c9714693de8a32e01a7d7d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::lifetime</definition>
+        <argsstring></argsstring>
+        <name>lifetime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="145" column="5" bodyfile="src/include/particle.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1af7ddace9600a3ab9a78cafbcf02bc0c8" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="146" column="5" bodyfile="src/include/particle.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1aeab5dae3488e87152f171d1ea82066bb" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::minVelocity</definition>
+        <argsstring></argsstring>
+        <name>minVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="147" column="5" bodyfile="src/include/particle.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a875dd20c982047046b85c4591eaf1792" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::maxVelocity</definition>
+        <argsstring></argsstring>
+        <name>maxVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="148" column="5" bodyfile="src/include/particle.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1affd5577317115f2399148d08f9244aea" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::minTrajectoryAngle</definition>
+        <argsstring></argsstring>
+        <name>minTrajectoryAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="149" column="5" bodyfile="src/include/particle.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a3b8b7014e16eb3713934a4157fcbd93e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CChunkParticle::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="150" column="7" bodyfile="src/include/particle.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1ada69a7bb8d772cb9c213921a90d02e53" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::smokeDrawLevel</definition>
+        <argsstring></argsstring>
+        <name>smokeDrawLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="151" column="5" bodyfile="src/include/particle.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a346e46f8a0c9b72414c8cb854a8f8a61" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CChunkParticle::destroyDrawLevel</definition>
+        <argsstring></argsstring>
+        <name>destroyDrawLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="152" column="5" bodyfile="src/include/particle.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a4be0e1027f54200528d799087f07f005" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGraphicAnimation" kindref="compound">GraphicAnimation</ref> *</type>
+        <definition>GraphicAnimation* CChunkParticle::debrisAnimation</definition>
+        <argsstring></argsstring>
+        <name>debrisAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="153" column="18" bodyfile="src/include/particle.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a28536c4503592fe694a159db6afcb8a9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGraphicAnimation" kindref="compound">GraphicAnimation</ref> *</type>
+        <definition>GraphicAnimation* CChunkParticle::smokeAnimation</definition>
+        <argsstring></argsstring>
+        <name>smokeAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="154" column="18" bodyfile="src/include/particle.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1ab516d91d8d7b99c04d6c674dd94ce4e2" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGraphicAnimation" kindref="compound">GraphicAnimation</ref> *</type>
+        <definition>GraphicAnimation* CChunkParticle::destroyAnimation</definition>
+        <argsstring></argsstring>
+        <name>destroyAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="155" column="18" bodyfile="src/include/particle.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a13a8eb6cd3509183f58ad6d6acb6a179" prot="protected" static="no" mutable="no">
+        <type>struct CChunkParticle::@17</type>
+        <definition>struct CChunkParticle::@17 CChunkParticle::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="160" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCChunkParticle_1a8eca1db4860d01b00df3752c4121502e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CChunkParticle::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="158" column="7" bodyfile="src/include/particle.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCChunkParticle_1a8daf7994f4599815cb89973a6b8d53e3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CChunkParticle::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="159" column="7" bodyfile="src/include/particle.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCChunkParticle_1a5a4f1decc7b92a27520d9a3ec4e42f5f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CChunkParticle::getSmokeDrawLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>getSmokeDrawLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="134" column="5" bodyfile="src/include/particle.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1abaf88eac81e3c52b898dd519ef69462b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CChunkParticle::getDestroyDrawLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>getDestroyDrawLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="135" column="5" bodyfile="src/include/particle.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1a436e28b4c3d4efc9320ee85156d5d169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CChunkParticle::setSmokeDrawLevel</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setSmokeDrawLevel</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="136" column="6" bodyfile="src/include/particle.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCChunkParticle_1a5b451992415f35ec4244d17ae5a1d2ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CChunkParticle::setDestroyDrawLevel</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setDestroyDrawLevel</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/particle.h" line="137" column="6" bodyfile="src/include/particle.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CParticle</label>
+        <link refid="classCParticle"/>
+      </node>
+      <node id="1">
+        <label>CChunkParticle</label>
+        <link refid="classCChunkParticle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CParticle</label>
+        <link refid="classCParticle"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CPosition</label>
+        <link refid="structCPosition"/>
+      </node>
+      <node id="4">
+        <label>GraphicAnimation</label>
+        <link refid="classGraphicAnimation"/>
+      </node>
+      <node id="1">
+        <label>CChunkParticle</label>
+        <link refid="classCChunkParticle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>initialPos</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>debrisAnimation</edgelabel>
+          <edgelabel>destroyAnimation</edgelabel>
+          <edgelabel>smokeAnimation</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/particle.h" line="122" column="1" bodyfile="src/include/particle.h" bodystart="121" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classCChunkParticle_1af7ddace9600a3ab9a78cafbcf02bc0c8" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>age</name></member>
+      <member refid="classCChunkParticle_1a576aa4a6783915356523c8774bae8150" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>CChunkParticle</name></member>
+      <member refid="classCChunkParticle_1a0de28d2c29a5bca4e0b27ed7018a6e4d" prot="public" virt="virtual"><scope>CChunkParticle</scope><name>clone</name></member>
+      <member refid="classCParticle_1af64287fac9f56ab66b3c9302a1339804" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>CParticle</name></member>
+      <member refid="classCChunkParticle_1a4be0e1027f54200528d799087f07f005" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>debrisAnimation</name></member>
+      <member refid="classCParticle_1a43576eca6e3b208899653385f51907bb" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>destroy</name></member>
+      <member refid="classCChunkParticle_1ab516d91d8d7b99c04d6c674dd94ce4e2" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>destroyAnimation</name></member>
+      <member refid="classCChunkParticle_1a346e46f8a0c9b72414c8cb854a8f8a61" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>destroyDrawLevel</name></member>
+      <member refid="classCParticle_1af43311cb53b6c0c07e564d5a636a4eef" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>destroyed</name></member>
+      <member refid="classCChunkParticle_1a13a8eb6cd3509183f58ad6d6acb6a179" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>direction</name></member>
+      <member refid="classCChunkParticle_1acd3f3606c52e33b0fcdd59bf3695afed" prot="public" virt="virtual"><scope>CChunkParticle</scope><name>draw</name></member>
+      <member refid="classCParticle_1a395f49d419fc7cbdf95e42c3fe42fb57" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>drawLevel</name></member>
+      <member refid="classCChunkParticle_1abaf88eac81e3c52b898dd519ef69462b" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>getDestroyDrawLevel</name></member>
+      <member refid="classCParticle_1afa01fa63e5c63186f01b48b9a5490abc" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>getDrawLevel</name></member>
+      <member refid="classCChunkParticle_1a5a4f1decc7b92a27520d9a3ec4e42f5f" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>getSmokeDrawLevel</name></member>
+      <member refid="classCChunkParticle_1a3b8b7014e16eb3713934a4157fcbd93e" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>height</name></member>
+      <member refid="classCChunkParticle_1ae40953794486d0c12dd35eb74f635e9c" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>initialPos</name></member>
+      <member refid="classCChunkParticle_1ac242ae781cafa25c9388a53c281b2d2c" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>initialVelocity</name></member>
+      <member refid="classCParticle_1aa0ac0edb35b8ccf6ba98dd0224acb98c" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>isDestroyed</name></member>
+      <member refid="classCChunkParticle_1ab36d8a423180117f6d1ecf5397cb3136" prot="public" virt="virtual"><scope>CChunkParticle</scope><name>isVisible</name></member>
+      <member refid="classCChunkParticle_1a9f37d6c284c9714693de8a32e01a7d7d" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>lifetime</name></member>
+      <member refid="classCChunkParticle_1aed3a220b6c1bb8c2056d9464036427ae" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>maxTTL</name></member>
+      <member refid="classCChunkParticle_1a875dd20c982047046b85c4591eaf1792" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>maxVelocity</name></member>
+      <member refid="classCChunkParticle_1affd5577317115f2399148d08f9244aea" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>minTrajectoryAngle</name></member>
+      <member refid="classCChunkParticle_1aeab5dae3488e87152f171d1ea82066bb" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>minVelocity</name></member>
+      <member refid="classCChunkParticle_1a5f62abca1b59383c196b7029aadb0794" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>nextSmokeTicks</name></member>
+      <member refid="classCParticle_1a8c99cb91f0207d93df4680cc421f1ed2" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>pos</name></member>
+      <member refid="classCChunkParticle_1a5b451992415f35ec4244d17ae5a1d2ec" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>setDestroyDrawLevel</name></member>
+      <member refid="classCParticle_1a17273c794adfdb07428b196cb405c1d1" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>setDrawLevel</name></member>
+      <member refid="classCChunkParticle_1a436e28b4c3d4efc9320ee85156d5d169" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>setSmokeDrawLevel</name></member>
+      <member refid="classCChunkParticle_1a28536c4503592fe694a159db6afcb8a9" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>smokeAnimation</name></member>
+      <member refid="classCChunkParticle_1ada69a7bb8d772cb9c213921a90d02e53" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>smokeDrawLevel</name></member>
+      <member refid="classCChunkParticle_1a2e967d550729dfc26110f3d4ddd1738c" prot="protected" virt="non-virtual"><scope>CChunkParticle</scope><name>trajectoryAngle</name></member>
+      <member refid="classCChunkParticle_1a57948de8d6857d62d9f8f5303010c962" prot="public" virt="virtual"><scope>CChunkParticle</scope><name>update</name></member>
+      <member refid="classCChunkParticle_1a8eca1db4860d01b00df3752c4121502e" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>x</name></member>
+      <member refid="classCChunkParticle_1a8daf7994f4599815cb89973a6b8d53e3" prot="public" virt="non-virtual"><scope>CChunkParticle</scope><name>y</name></member>
+      <member refid="classCChunkParticle_1afb214cdbbee7c77e812fe6fb9a6365fc" prot="public" virt="virtual"><scope>CChunkParticle</scope><name>~CChunkParticle</name></member>
+      <member refid="classCParticle_1ac495f30053a28b4916d9de409d8b5bb0" prot="public" virt="virtual"><scope>CChunkParticle</scope><name>~CParticle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

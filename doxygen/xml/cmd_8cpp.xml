@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="cmd_8cpp" kind="file" language="C++">
+    <compoundname>cmd.cpp</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="cmd_8h" local="yes">cmd.h</includes>
+    <includes refid="netdriver_8h" local="yes">netdriver.h</includes>
+    <includes refid="db_8h" local="yes">db.h</includes>
+    <includes refid="games_8h" local="yes">games.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>metaserver/cmd.cpp</label>
+        <link refid="cmd_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>games.h</label>
+        <link refid="games_8h"/>
+      </node>
+      <node id="11">
+        <label>cmd.h</label>
+        <link refid="cmd_8h"/>
+      </node>
+      <node id="16">
+        <label>winsock2.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>time.h</label>
+      </node>
+      <node id="7">
+        <label>cstdlib</label>
+      </node>
+      <node id="17">
+        <label>db.h</label>
+        <link refid="db_8h"/>
+      </node>
+      <node id="14">
+        <label>net_lowlevel.h</label>
+        <link refid="net__lowlevel_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>netdriver.h</label>
+        <link refid="netdriver_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>cmd.cpp - Client/Server Command Interpreter.</header>
+      <memberdef kind="define" id="cmd_8cpp_1a0ef64cfe36c61fd85b3f0e05c947ad81" prot="public" static="no">
+        <name>GetNextArg</name>
+        <param><defname>buf</defname></param>
+        <param><defname>arg</defname></param>
+        <initializer>	do { \
+		if (*buf == &apos;\&quot;&apos;) { \
+			*arg = ++buf; \
+			while (*buf != &apos;\&quot;&apos; &amp;&amp; *buf) ++buf; \
+			if (*buf != &apos;\&quot;&apos;) return 1; \
+			*buf++ = &apos;\0&apos;; \
+			if (**arg == &apos;\0&apos;) return 1; \
+			if (*buf != &apos; &apos;) return 1; \
+		} else { \
+			*arg = buf; \
+			while (*buf != &apos; &apos; &amp;&amp; *buf) ++buf; \
+			if (!*buf) return 1; \
+		} \
+		*buf++ = &apos;\0&apos;; \
+	} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="50" column="9" bodyfile="metaserver/cmd.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cmd_8cpp_1af41e3696477becab8d537ec03286939a" prot="public" static="no">
+        <name>GetLastArg</name>
+        <param><defname>buf</defname></param>
+        <param><defname>arg</defname></param>
+        <initializer>	do { \
+		if (*buf == &apos;\&quot;&apos;) { \
+			*arg = ++buf; \
+			while (*buf != &apos;\&quot;&apos; &amp;&amp; *buf) ++buf; \
+			if (*buf != &apos;\&quot;&apos;) return 1; \
+			*buf++ = &apos;\0&apos;; \
+			if (**arg == &apos;\0&apos;) return 1; \
+			if (*buf != &apos; &apos; &amp;&amp; *buf) return 1; \
+		} else { \
+			*arg = buf; \
+			while (*buf != &apos; &apos; &amp;&amp; *buf) ++buf; \
+		} \
+	} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="67" column="9" bodyfile="metaserver/cmd.cpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cmd_8cpp_1a66c9b8c29e8fa60db27e7f0f55dacab6" prot="public" static="no">
+        <name>GetNextAndOptionalArg</name>
+        <param><defname>buf</defname></param>
+        <param><defname>arg1</defname></param>
+        <param><defname>arg2</defname></param>
+        <initializer>	do { \
+		if (*buf == &apos;\&quot;&apos;) { \
+			*arg1 = ++buf; \
+			while (*buf != &apos;\&quot;&apos; &amp;&amp; *buf) ++buf; \
+			if (*buf != &apos;\&quot;&apos;) return 1; \
+			*buf++ = &apos;\0&apos;; \
+			if (**arg1 == &apos;\0&apos;) return 1; \
+			if (*buf != &apos; &apos; &amp;&amp; *buf) return 1; \
+		} else { \
+			*arg1 = buf; \
+			while (*buf != &apos; &apos; &amp;&amp; *buf) ++buf; \
+		} \
+		if (*buf == &apos; &apos;) *buf++ = &apos;\0&apos;; \
+ \
+		*arg2 = NULL; \
+		while (*buf == &apos; &apos;) ++buf; \
+		if (!*buf) return 0; \
+ \
+		<ref refid="cmd_8cpp_1af41e3696477becab8d537ec03286939a" kindref="member">GetLastArg</ref>(buf, arg2); \
+	} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="82" column="9" bodyfile="metaserver/cmd.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cmd_8cpp_1a6497b85b0bcbc9f6bc3841bdf4c6f071" prot="public" static="no">
+        <name>SkipSpaces</name>
+        <param><defname>buf</defname></param>
+        <initializer>	do { \
+		while (*buf == &apos; &apos;) ++buf; \
+		if (!*buf) return 1; \
+	} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="104" column="9" bodyfile="metaserver/cmd.cpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cmd_8cpp_1a9ad587c11893ae301b412cd61748eefb" prot="public" static="no">
+        <name>CheckExtraParameter</name>
+        <param><defname>buf</defname></param>
+        <initializer>	do { \
+		if (*buf) { \
+			while (*buf == &apos; &apos;) ++buf; \
+			if (*buf) return 1; \
+		} \
+	} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="110" column="9" bodyfile="metaserver/cmd.cpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a3497934bc1fd5b93367246e474d9107e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Parse1Arg</definition>
+        <argsstring>(char *buf, char **arg1)</argsstring>
+        <name>Parse1Arg</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="118" column="12" bodyfile="metaserver/cmd.cpp" bodystart="118" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a4662604ab4faae162d72b1867585ed3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Parse1or2Args</definition>
+        <argsstring>(char *buf, char **arg1, char **arg2)</argsstring>
+        <name>Parse1or2Args</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="128" column="12" bodyfile="metaserver/cmd.cpp" bodystart="128" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1aa983660f378840a7c791782fbc56ece3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Parse4Args</definition>
+        <argsstring>(char *buf, char **arg1, char **arg2, char **arg3, char **arg4)</argsstring>
+        <name>Parse4Args</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg2</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg3</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="138" column="12" bodyfile="metaserver/cmd.cpp" bodystart="138" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a32a6994c62fedbe2129e2688c6c8969c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Parse5or6Args</definition>
+        <argsstring>(char *buf, char **arg1, char **arg2, char **arg3, char **arg4, char **arg5, char **arg6)</argsstring>
+        <name>Parse5or6Args</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg2</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg3</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg4</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg5</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>arg6</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="183" column="12" bodyfile="metaserver/cmd.cpp" bodystart="183" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a8b66586b5a40392bd56819e1ecbaaf68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParsePing</definition>
+        <argsstring>(Session *session)</argsstring>
+        <name>ParsePing</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse PING </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="209" column="13" bodyfile="metaserver/cmd.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a77334aa5f0b213bb999c5e541e9c8629" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseUser</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseUser</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse USER </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="217" column="13" bodyfile="metaserver/cmd.cpp" bodystart="217" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a33498a7c809e875f058eafca8d4a2305" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseRegister</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseRegister</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse REGISTER </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="261" column="13" bodyfile="metaserver/cmd.cpp" bodystart="261" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1afa3907e567aaf855f6e635c2440ae199" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseCreateGame</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseCreateGame</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse CREATEGAME </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="300" column="13" bodyfile="metaserver/cmd.cpp" bodystart="300" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a0ae54d04b7e6f7fa360018e8cd7e87f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseCancelGame</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseCancelGame</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse CANCELGAME </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="339" column="13" bodyfile="metaserver/cmd.cpp" bodystart="339" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a1997b858d747b621573f10febb323f09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseStartGame</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseStartGame</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse STARTGAME </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="360" column="13" bodyfile="metaserver/cmd.cpp" bodystart="360" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a3813081c48b2e7358f2a6e4ccbe9a6a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseListGames</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseListGames</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse LISTGAMES </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="381" column="13" bodyfile="metaserver/cmd.cpp" bodystart="381" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1ab6411e78c16ad40d85eca2228635876b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseJoinGame</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseJoinGame</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse JOINGAME </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="398" column="13" bodyfile="metaserver/cmd.cpp" bodystart="398" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a2ae0f9b88663a99c4acd368d93b76758" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParsePartGame</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParsePartGame</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse PARTGAME </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="443" column="13" bodyfile="metaserver/cmd.cpp" bodystart="443" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a1063145823fafe416d6bf29b4096bacb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseEndGame</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseEndGame</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse ENDGAME </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="470" column="13" bodyfile="metaserver/cmd.cpp" bodystart="470" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a711de04d3935156e46efd5041382b5cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseStats</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseStats</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse STATS </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="483" column="13" bodyfile="metaserver/cmd.cpp" bodystart="483" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1ae6481e6aa1dff4512110cbe5cc030b55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseMsg</definition>
+        <argsstring>(Session *session, char *buf)</argsstring>
+        <name>ParseMsg</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse MSG </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="506" column="13" bodyfile="metaserver/cmd.cpp" bodystart="506" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1a42c0c3aaa929f50a8ee33b819cec6220" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void ParseBuffer</definition>
+        <argsstring>(Session *session)</argsstring>
+        <name>ParseBuffer</name>
+        <param>
+          <type><ref refid="classSession" kindref="compound">Session</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ParseBuffer: Handler client/server interaction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current session. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="515" column="13" bodyfile="metaserver/cmd.cpp" bodystart="515" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="cmd_8cpp_1afc6308e585bc55e6f6a1a863db03e9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UpdateParser</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateParser</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse all session buffers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="metaserver/cmd.cpp" line="566" column="5" bodyfile="metaserver/cmd.cpp" bodystart="566" bodyend="615"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="metaserver/cmd.cpp"/>
+  </compounddef>
+</doxygen>

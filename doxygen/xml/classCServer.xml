@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCServer" kind="class" language="C++" prot="public">
+    <compoundname>CServer</compoundname>
+      <sectiondef kind="user-defined">
+      <header>netconnect.cpp - The network high level connection code.</header>
+      <memberdef kind="function" id="classCServer_1af56bab2eb123aee0de2c79cf4ed5f860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Init</definition>
+        <argsstring>(const std::string &amp;name, CUDPSocket *socket, CServerSetup *serverSetup)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> *</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> *</type>
+          <declname>serverSetup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="102" column="6" bodyfile="src/network/netconnect.cpp" bodystart="929" bodyend="938"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a6506c18cbe9340c6646812083facd715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Update</definition>
+        <argsstring>(unsigned long frameCounter)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>frameCounter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="104" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1001" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a96570490fe195853eaf0fb44245447e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse</definition>
+        <argsstring>(unsigned long frameCounter, const unsigned char *buf, const CHost &amp;host)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>frameCounter</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="105" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1323" bodyend="1371"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a78df4cf776cad31c97bfe020ba8d1f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::MarkClientsAsResync</definition>
+        <argsstring>()</argsstring>
+        <name>MarkClientsAsResync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="107" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1018" bodyend="1025"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a44a3dfe3d5a88ba3032f026c30b24d50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::KickClient</definition>
+        <argsstring>(int c)</argsstring>
+        <name>KickClient</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="108" column="6" bodyfile="src/network/netconnect.cpp" bodystart="914" bodyend="927"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a27444577d522dad3f4c5eb7f033683c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CServer::Parse_Hello</definition>
+        <argsstring>(int h, const CInitMessage_Hello &amp;msg, const CHost &amp;host)</argsstring>
+        <name>Parse_Hello</name>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCInitMessage__Hello" kindref="compound">CInitMessage_Hello</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the initial &apos;Hello&apos; message of new client that wants to join the game</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>host which send the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>host index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="110" column="5" bodyfile="src/network/netconnect.cpp" bodystart="1036" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a3d8bb70b4645bcefef6ac395e29e67ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse_Resync</definition>
+        <argsstring>(const int h)</argsstring>
+        <name>Parse_Resync</name>
+        <param>
+          <type>const int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse client resync request after client user has changed menu selection</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="111" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1083" bodyend="1108"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1ac5254bc446a5acfd4d8a38e07db6b5d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse_Waiting</definition>
+        <argsstring>(const int h)</argsstring>
+        <name>Parse_Waiting</name>
+        <param>
+          <type>const int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse client heart beat waiting message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="112" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1115" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a914b7e963f24e141086234e28fd78f2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse_Map</definition>
+        <argsstring>(const int h)</argsstring>
+        <name>Parse_Map</name>
+        <param>
+          <type>const int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse client map info acknoledge message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="113" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1173" bodyend="1196"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1aeaac1e826e68a3df693abf79951de8b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse_State</definition>
+        <argsstring>(const int h, const CInitMessage_State &amp;msg)</argsstring>
+        <name>Parse_State</name>
+        <param>
+          <type>const int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCInitMessage__State" kindref="compound">CInitMessage_State</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse locate state change notifiction or initial state info request of client</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message received </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="114" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1204" bodyend="1241"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1af4f9b3ef18c289092790150b03718fe6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse_GoodBye</definition>
+        <argsstring>(const int h)</argsstring>
+        <name>Parse_GoodBye</name>
+        <param>
+          <type>const int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the disconnect request of a client by sending out good bye</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="115" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1248" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a858cd95eb3c770bf56b6dc406beb307c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Parse_SeeYou</definition>
+        <argsstring>(const int h)</argsstring>
+        <name>Parse_SeeYou</name>
+        <param>
+          <type>const int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the final see you msg of a disconnecting client</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot number of host msg originates from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="116" column="6" bodyfile="src/network/netconnect.cpp" bodystart="1275" bodyend="1287"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1ad039b1d89ee4e4837cd76933b422178e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_AreYouThere</definition>
+        <argsstring>(const CNetworkHost &amp;host)</argsstring>
+        <name>Send_AreYouThere</name>
+        <param>
+          <type>const <ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="118" column="6" bodyfile="src/network/netconnect.cpp" bodystart="940" bodyend="945"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a96fe98cac3fdb3cf262ab8a615eeeffb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_GameFull</definition>
+        <argsstring>(const CHost &amp;host)</argsstring>
+        <name>Send_GameFull</name>
+        <param>
+          <type>const <ref refid="classCHost" kindref="compound">CHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="119" column="6" bodyfile="src/network/netconnect.cpp" bodystart="947" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1acac2fa940555b379180b5addf41e2dd9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_Welcome</definition>
+        <argsstring>(const CNetworkHost &amp;host, int hostIndex)</argsstring>
+        <name>Send_Welcome</name>
+        <param>
+          <type>const <ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hostIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="120" column="6" bodyfile="src/network/netconnect.cpp" bodystart="954" bodyend="966"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a073d7d3c8586681b8880febf2f6b94a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_Resync</definition>
+        <argsstring>(const CNetworkHost &amp;host, int hostIndex)</argsstring>
+        <name>Send_Resync</name>
+        <param>
+          <type>const <ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hostIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="121" column="6" bodyfile="src/network/netconnect.cpp" bodystart="968" bodyend="978"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a06ec1478cd37bb596ea33445eded0022" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_Map</definition>
+        <argsstring>(const CNetworkHost &amp;host)</argsstring>
+        <name>Send_Map</name>
+        <param>
+          <type>const <ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="122" column="6" bodyfile="src/network/netconnect.cpp" bodystart="980" bodyend="985"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1a7a505689edd07883b98558cea90d34d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_State</definition>
+        <argsstring>(const CNetworkHost &amp;host)</argsstring>
+        <name>Send_State</name>
+        <param>
+          <type>const <ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="123" column="6" bodyfile="src/network/netconnect.cpp" bodystart="987" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classCServer_1adb2213f307a319cd7c888d98be61d4cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CServer::Send_GoodBye</definition>
+        <argsstring>(const CNetworkHost &amp;host)</argsstring>
+        <name>Send_GoodBye</name>
+        <param>
+          <type>const <ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="124" column="6" bodyfile="src/network/netconnect.cpp" bodystart="994" bodyend="999"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCServer_1aea98d95d608e9fa7650785e6d128aa09" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CServer::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="126" column="13" bodyfile="src/network/netconnect.cpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCServer_1a0303ceac89a93e7bbdd0990b7b84f6c8" prot="private" static="no" mutable="no">
+        <type><ref refid="structNetworkState" kindref="compound">NetworkState</ref></type>
+        <definition>NetworkState CServer::networkStates[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>networkStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="127" column="14" bodyfile="src/network/netconnect.cpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCServer_1aa450f020916408c69911a0fdb4292aec" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUDPSocket" kindref="compound">CUDPSocket</ref> *</type>
+        <definition>CUDPSocket* CServer::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+<para>Client Host states. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="128" column="12" bodyfile="src/network/netconnect.cpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCServer_1a4a3b998deb1ddfac9f24efa3ce0dc75f" prot="private" static="no" mutable="no">
+        <type><ref refid="classCServerSetup" kindref="compound">CServerSetup</ref> *</type>
+        <definition>CServerSetup* CServer::serverSetup</definition>
+        <argsstring></argsstring>
+        <name>serverSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/netconnect.cpp" line="129" column="14" bodyfile="src/network/netconnect.cpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/network/netconnect.cpp" line="100" column="1" bodyfile="src/network/netconnect.cpp" bodystart="99" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classCServer_1af56bab2eb123aee0de2c79cf4ed5f860" prot="public" virt="non-virtual"><scope>CServer</scope><name>Init</name></member>
+      <member refid="classCServer_1a44a3dfe3d5a88ba3032f026c30b24d50" prot="public" virt="non-virtual"><scope>CServer</scope><name>KickClient</name></member>
+      <member refid="classCServer_1a78df4cf776cad31c97bfe020ba8d1f30" prot="public" virt="non-virtual"><scope>CServer</scope><name>MarkClientsAsResync</name></member>
+      <member refid="classCServer_1aea98d95d608e9fa7650785e6d128aa09" prot="private" virt="non-virtual"><scope>CServer</scope><name>name</name></member>
+      <member refid="classCServer_1a0303ceac89a93e7bbdd0990b7b84f6c8" prot="private" virt="non-virtual"><scope>CServer</scope><name>networkStates</name></member>
+      <member refid="classCServer_1a96570490fe195853eaf0fb44245447e9" prot="public" virt="non-virtual"><scope>CServer</scope><name>Parse</name></member>
+      <member refid="classCServer_1af4f9b3ef18c289092790150b03718fe6" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_GoodBye</name></member>
+      <member refid="classCServer_1a27444577d522dad3f4c5eb7f033683c7" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_Hello</name></member>
+      <member refid="classCServer_1a914b7e963f24e141086234e28fd78f2d" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_Map</name></member>
+      <member refid="classCServer_1a3d8bb70b4645bcefef6ac395e29e67ba" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_Resync</name></member>
+      <member refid="classCServer_1a858cd95eb3c770bf56b6dc406beb307c" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_SeeYou</name></member>
+      <member refid="classCServer_1aeaac1e826e68a3df693abf79951de8b7" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_State</name></member>
+      <member refid="classCServer_1ac5254bc446a5acfd4d8a38e07db6b5d8" prot="private" virt="non-virtual"><scope>CServer</scope><name>Parse_Waiting</name></member>
+      <member refid="classCServer_1ad039b1d89ee4e4837cd76933b422178e" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_AreYouThere</name></member>
+      <member refid="classCServer_1a96fe98cac3fdb3cf262ab8a615eeeffb" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_GameFull</name></member>
+      <member refid="classCServer_1adb2213f307a319cd7c888d98be61d4cd" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_GoodBye</name></member>
+      <member refid="classCServer_1a06ec1478cd37bb596ea33445eded0022" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_Map</name></member>
+      <member refid="classCServer_1a073d7d3c8586681b8880febf2f6b94a2" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_Resync</name></member>
+      <member refid="classCServer_1a7a505689edd07883b98558cea90d34d1" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_State</name></member>
+      <member refid="classCServer_1acac2fa940555b379180b5addf41e2dd9" prot="private" virt="non-virtual"><scope>CServer</scope><name>Send_Welcome</name></member>
+      <member refid="classCServer_1a4a3b998deb1ddfac9f24efa3ce0dc75f" prot="private" virt="non-virtual"><scope>CServer</scope><name>serverSetup</name></member>
+      <member refid="classCServer_1aa450f020916408c69911a0fdb4292aec" prot="private" virt="non-virtual"><scope>CServer</scope><name>socket</name></member>
+      <member refid="classCServer_1a6506c18cbe9340c6646812083facd715" prot="public" virt="non-virtual"><scope>CServer</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpell__Polymorph" kind="class" language="C++" prot="public">
+    <compoundname>Spell_Polymorph</compoundname>
+    <basecompoundref refid="classSpellActionType" prot="public" virt="non-virtual">SpellActionType</basecompoundref>
+    <includes refid="spell__polymorph_8h" local="no">spell_polymorph.h</includes>
+      <sectiondef kind="user-defined">
+      <header>spell_polymorph.cpp - The spell Polymorph.</header>
+      <memberdef kind="function" id="classSpell__Polymorph_1a80863529c84fe3f7e1e3eceb7cec42c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Spell_Polymorph::Cast</definition>
+        <argsstring>(CUnit &amp;caster, const SpellType &amp;spell, CUnit *&amp;target, const Vec2i &amp;goalPos)</argsstring>
+        <name>Cast</name>
+        <reimplements refid="classSpellActionType_1add3230bba4c3cde2ba993ec8a7f0edd0">Cast</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classSpellType" kindref="compound">SpellType</ref> &amp;</type>
+          <declname>spell</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast polymorph.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that casts the spell </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spell-type pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> unit that spell is addressed to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goalPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coord of target spot when/if target does not exist</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>=!0 if spell should be repeated, 0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_polymorph.h" line="45" column="13" bodyfile="src/spell/spell_polymorph.cpp" bodystart="81" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpell__Polymorph_1a45c0e3e063547914a86d31c20df3542b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void Spell_Polymorph::Parse</definition>
+        <argsstring>(lua_State *l, int startIndex, int endIndex)</argsstring>
+        <name>Parse</name>
+        <reimplements refid="classSpellActionType_1aab2b0e8ce3ea565f9729e1d8fdfafcb8">Parse</reimplements>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_polymorph.h" line="47" column="14" bodyfile="src/spell/spell_polymorph.cpp" bodystart="42" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpell__Polymorph_1ad48765a24095eeb015ff8f6e72a95743" prot="private" static="no" mutable="no">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* Spell_Polymorph::NewForm</definition>
+        <argsstring></argsstring>
+        <name>NewForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_polymorph.h" line="50" column="11" bodyfile="src/include/spell/spell_polymorph.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpell__Polymorph_1a8aaa23576f54da0b239b24d4ecb6ef99" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Spell_Polymorph::PlayerNeutral</definition>
+        <argsstring></argsstring>
+        <name>PlayerNeutral</name>
+        <briefdescription>
+<para>The new form. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_polymorph.h" line="51" column="5" bodyfile="src/include/spell/spell_polymorph.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpell__Polymorph_1a3c5b22cef49612c36040b3d1838e773f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Spell_Polymorph::Spell_Polymorph</definition>
+        <argsstring>()</argsstring>
+        <name>Spell_Polymorph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_polymorph.h" line="44" column="1" bodyfile="src/include/spell/spell_polymorph.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+      <node id="1">
+        <label>Spell_Polymorph</label>
+        <link refid="classSpell__Polymorph"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SpellActionType</label>
+        <link refid="classSpellActionType"/>
+      </node>
+      <node id="1">
+        <label>Spell_Polymorph</label>
+        <link refid="classSpell__Polymorph"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/spell/spell_polymorph.h" line="42" column="1" bodyfile="src/include/spell/spell_polymorph.h" bodystart="41" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classSpell__Polymorph_1a80863529c84fe3f7e1e3eceb7cec42c7" prot="public" virt="virtual"><scope>Spell_Polymorph</scope><name>Cast</name></member>
+      <member refid="classSpellActionType_1ae95be059035e06fe085b4f0cec747244" prot="public" virt="non-virtual"><scope>Spell_Polymorph</scope><name>ModifyManaCaster</name></member>
+      <member refid="classSpell__Polymorph_1ad48765a24095eeb015ff8f6e72a95743" prot="private" virt="non-virtual"><scope>Spell_Polymorph</scope><name>NewForm</name></member>
+      <member refid="classSpell__Polymorph_1a45c0e3e063547914a86d31c20df3542b" prot="public" virt="virtual"><scope>Spell_Polymorph</scope><name>Parse</name></member>
+      <member refid="classSpell__Polymorph_1a8aaa23576f54da0b239b24d4ecb6ef99" prot="private" virt="non-virtual"><scope>Spell_Polymorph</scope><name>PlayerNeutral</name></member>
+      <member refid="classSpell__Polymorph_1a3c5b22cef49612c36040b3d1838e773f" prot="public" virt="non-virtual"><scope>Spell_Polymorph</scope><name>Spell_Polymorph</name></member>
+      <member refid="classSpellActionType_1a2a923f5ac78a86850aaf2a2a2a5ffb32" prot="public" virt="non-virtual"><scope>Spell_Polymorph</scope><name>SpellActionType</name></member>
+      <member refid="classSpellActionType_1ac294064d51b73c8d1d746a8b8c730fca" prot="public" virt="virtual"><scope>Spell_Polymorph</scope><name>~SpellActionType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

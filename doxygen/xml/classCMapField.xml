@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMapField" kind="class" language="C++" prot="public">
+    <compoundname>CMapField</compoundname>
+    <includes refid="tile_8h" local="no">tile.h</includes>
+      <sectiondef kind="user-defined">
+      <header>mapfield.cpp - The map field.</header>
+      <memberdef kind="function" id="classCMapField_1a8a11ced351bba6024ff5b5ab51d5276b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMapField::CMapField</definition>
+        <argsstring>()</argsstring>
+        <name>CMapField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="189" column="1" bodyfile="src/map/mapfield.cpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a14e7754fe04c5232c65545cc88c85e20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMapField::Save</definition>
+        <argsstring>(CFile &amp;file) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="191" column="6" bodyfile="src/map/mapfield.cpp" bodystart="97" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a0dbaf63e38872e975ab9d1ac0a4cc74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMapField::parse</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="192" column="6" bodyfile="src/map/mapfield.cpp" bodystart="153" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a1076f78734df83e04986c384b47b1758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMapField::setTileIndex</definition>
+        <argsstring>(const CTileset &amp;tileset, unsigned int tileIndex, int value)</argsstring>
+        <name>setTileIndex</name>
+        <param>
+          <type>const <ref refid="classCTileset" kindref="compound">CTileset</ref> &amp;</type>
+          <declname>tileset</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tileIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="194" column="6" bodyfile="src/map/mapfield.cpp" bodystart="78" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1ab514388e292747e5bda28e793a9e42a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::CheckMask</definition>
+        <argsstring>(int mask) const</argsstring>
+        <name>CheckMask</name>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Check if a field flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="199" column="6" bodyfile="src/map/mapfield.cpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a9ab4dd34df38758fd40d08a5c605ba15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::WaterOnMap</definition>
+        <argsstring>() const</argsstring>
+        <name>WaterOnMap</name>
+        <briefdescription>
+<para>Returns true, if water on the map tile field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="202" column="6" bodyfile="src/map/mapfield.cpp" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a817e3631f3091408b0a93f660a9c61d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::CoastOnMap</definition>
+        <argsstring>() const</argsstring>
+        <name>CoastOnMap</name>
+        <briefdescription>
+<para>Returns true, if coast on the map tile field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="205" column="6" bodyfile="src/map/mapfield.cpp" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1ae4b832db49751a397c914d80b4b764e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::ForestOnMap</definition>
+        <argsstring>() const</argsstring>
+        <name>ForestOnMap</name>
+        <briefdescription>
+<para>Returns true, if water on the map tile field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="208" column="6" bodyfile="src/map/mapfield.cpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1aacbb12196a07f23756c77d6b77c9f00b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::RockOnMap</definition>
+        <argsstring>() const</argsstring>
+        <name>RockOnMap</name>
+        <briefdescription>
+<para>Returns true, if coast on the map tile field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="211" column="6" bodyfile="src/map/mapfield.cpp" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a2872380f93406c84893a8669c416a035" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::isDecorative</definition>
+        <argsstring>() const</argsstring>
+        <name>isDecorative</name>
+        <briefdescription>
+<para>Returns true if the field should not need mixing with the surroundings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="214" column="6" bodyfile="src/map/mapfield.cpp" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a6356ad24dfa0d626e221eb4aac4a03a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::isAWall</definition>
+        <argsstring>() const</argsstring>
+        <name>isAWall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="216" column="6" bodyfile="src/map/mapfield.cpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1ae75da927fa4a8d01cf79d094942c248b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::isHuman</definition>
+        <argsstring>() const</argsstring>
+        <name>isHuman</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="217" column="6" bodyfile="src/map/mapfield.cpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a6aa44c05a15805770049a5444d4fd595" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::isAHumanWall</definition>
+        <argsstring>() const</argsstring>
+        <name>isAHumanWall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="218" column="6" bodyfile="src/map/mapfield.cpp" bodystart="251" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a8c9d24bc8ac1a900365ae3a83b7a0d4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::isAOrcWall</definition>
+        <argsstring>() const</argsstring>
+        <name>isAOrcWall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="219" column="6" bodyfile="src/map/mapfield.cpp" bodystart="256" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a7c8f67adf78aeacdf56a3056dc2bb36e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::IsTerrainResourceOnMap</definition>
+        <argsstring>(int resource) const</argsstring>
+        <name>IsTerrainResourceOnMap</name>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="221" column="6" bodyfile="src/map/mapfield.cpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a641925d9be3f4f1377d2857037d659c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMapField::IsTerrainResourceOnMap</definition>
+        <argsstring>() const</argsstring>
+        <name>IsTerrainResourceOnMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="222" column="6" bodyfile="src/map/mapfield.cpp" bodystart="68" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMapField_1a9ac4c62e35fa7e05166136df6a17a75c" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short CMapField::tile</definition>
+        <argsstring></argsstring>
+        <name>tile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="231" column="16" bodyfile="src/include/tile.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapField_1af9d8eaea7c08645cca0333b60c49fc2f" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapField::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+<para>field flags </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="235" column="15" bodyfile="src/include/tile.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCMapField_1a44d0249881a48ef80e6e223bafa14b12" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CMapField::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <briefdescription>
+<para>graphic tile number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="233" column="14" bodyfile="src/include/tile.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapField_1a1254bff762d6f0dde3310450cf747311" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapField::Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+<para>unit cost to move in this tile </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="238" column="15" bodyfile="src/include/tile.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapField_1a9f01f9ed1297b3f635b2a7fd08fb838c" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitCache" kindref="compound">CUnitCache</ref></type>
+        <definition>CUnitCache CMapField::UnitCache</definition>
+        <argsstring></argsstring>
+        <name>UnitCache</name>
+        <briefdescription>
+<para>HP for walls/ Wood Regeneration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="239" column="12" bodyfile="src/include/tile.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMapField_1a8fb42b4f8c4bf4cfcff8b046bb6c33d5" prot="public" static="no" mutable="no">
+        <type><ref refid="classCMapFieldPlayerInfo" kindref="compound">CMapFieldPlayerInfo</ref></type>
+        <definition>CMapFieldPlayerInfo CMapField::playerInfo</definition>
+        <argsstring></argsstring>
+        <name>playerInfo</name>
+        <briefdescription>
+<para>A unit on the map field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="241" column="21" bodyfile="src/include/tile.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMapField_1aaa0cd2458bcefc20868d69fb00d23956" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CMapField::getGraphicTile</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraphicTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="196" column="14" bodyfile="src/include/tile.h" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a64028171de4144532416ae3c2ec1a941" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char CMapField::getCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="224" column="15" bodyfile="src/include/tile.h" bodystart="224" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a17bbbbd5d7ab2d25de9c4c45743fa085" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CMapField::getFlag</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="225" column="14" bodyfile="src/include/tile.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMapField_1a9359a85a769c5e7f616bc81081a96fae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMapField::setGraphicTile</definition>
+        <argsstring>(unsigned int tile)</argsstring>
+        <name>setGraphicTile</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/tile.h" line="226" column="6" bodyfile="src/include/tile.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a field of the map. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>#include &quot;tile.h&quot;</para>
+<para><ref refid="classCMapFieldPlayerInfo_1a65bccde476ad6e3429ea64aa558993f6" kindref="member">CMapFieldPlayerInfo::SeenTile</ref></para>
+<para>This is the tile number, that the player sitting on the computer currently knows. Idea: Can be uses for illusions.</para>
+<para><ref refid="classCMapFieldPlayerInfo_1a7689375d6e3a8f5e2557ebad5264676d" kindref="member">CMapFieldPlayerInfo::Visible</ref>[]</para>
+<para>Counter how many units of the player can see this field. 0 the field is not explored, 1 explored, n-1 unit see it. Currently no more than 253 units can see a field.</para>
+<para><ref refid="classCMapFieldPlayerInfo_1ae24da4af5fd99dd20193f67c2fd1ad6a" kindref="member">CMapFieldPlayerInfo::VisCloak</ref>[]</para>
+<para>Visiblity for cloaking.</para>
+<para><ref refid="classCMapFieldPlayerInfo_1a8399f3ba594c3f1ec4dbdb35c27d195f" kindref="member">CMapFieldPlayerInfo::Radar</ref>[]</para>
+<para>Visiblity for radar.</para>
+<para><ref refid="classCMapFieldPlayerInfo_1ab99c7c5d1c7d4933a14de767e14d57bb" kindref="member">CMapFieldPlayerInfo::RadarJammer</ref>[]</para>
+<para>Jamming capabilities.</para>
+<para>#include &quot;tile.h&quot;</para>
+<para>This class contains all information about a field on map. It contains its look, properties and content.</para>
+<para>The map-field class members:</para>
+<para>CMapField::Tile</para>
+<para>Tile is number defining the graphic image display for the map-field. 65535 different tiles are supported. A tile is currently 32x32 pixels. In the future is planned to support animated tiles.</para>
+<para><ref refid="classCMapField_1a44d0249881a48ef80e6e223bafa14b12" kindref="member">CMapField::Flags</ref></para>
+<para>Contains special information of that tile. What units are on this field, what units could be placed on this field.</para>
+<para>This is the list of all flags currently used:</para>
+<para>::MapFieldVisible field is visible. ::MapFieldExplored field is explored. <ref refid="tileset_8h_1a2bfb9ae53b653eaa923c9c3d2b80dad8" kindref="member">MapFieldHuman</ref> human player is the owner of the field used for walls. <ref refid="tileset_8h_1a262862673c36550e75b9f37e543fe0a7" kindref="member">MapFieldLandAllowed</ref> land units are allowed. <ref refid="tileset_8h_1a28fb8660067fc67c39f396f14585e712" kindref="member">MapFieldCoastAllowed</ref> coast units (transporter) and coast buildings (shipyard) are allowed. <ref refid="tileset_8h_1a6d11c81f5104b38c7e7001a012cce618" kindref="member">MapFieldWaterAllowed</ref> water units allowed. <ref refid="tileset_8h_1a0dbc78b77ae88b45715bd2c6a6d88398" kindref="member">MapFieldNoBuilding</ref> no buildings allowed. <ref refid="tileset_8h_1acda02bf75f4257c473014b9da411e11e" kindref="member">MapFieldUnpassable</ref> field is movement blocked. <ref refid="tileset_8h_1a1ec91bea7c99f5f1d99e7b8b710e12b9" kindref="member">MapFieldWall</ref> field contains wall. <ref refid="tileset_8h_1a471a2151427916709b22c077cfb1671d" kindref="member">MapFieldRocks</ref> field contains rocks. <ref refid="tileset_8h_1ab39987aff03f354bcdf8497a3692afec" kindref="member">MapFieldForest</ref> field contains forest. <ref refid="tileset_8h_1ac43d3b094c139931b4577bd73e36128a" kindref="member">MapFieldLandUnit</ref> land unit on field. <ref refid="tileset_8h_1a7edd7809775927fc97c5bff3768a1f88" kindref="member">MapFieldAirUnit</ref> air unit on field. <ref refid="tileset_8h_1a2763ecf13560c6ed27879dbbf89294d3" kindref="member">MapFieldSeaUnit</ref> water unit on field. <ref refid="tileset_8h_1a8bc8cc0fc1798037b2cff947a9481f85" kindref="member">MapFieldBuilding</ref> building on field.</para>
+<para>Note: We want to add support for more unit-types like under ground units.</para>
+<para>CMapField::Cost</para>
+<para>Unit cost to move in this tile.</para>
+<para><ref refid="classCMapField_1a1254bff762d6f0dde3310450cf747311" kindref="member">CMapField::Value</ref></para>
+<para>Extra value for each tile. This currently only used for walls, contains the remaining hit points of the wall and for forest, contains the frames until they grow.</para>
+<para><ref refid="classCMapField_1a9f01f9ed1297b3f635b2a7fd08fb838c" kindref="member">CMapField::UnitCache</ref></para>
+<para>Contains a vector of all units currently on this field. Note: currently units are only inserted at the insert point. This means units of the size of 2x2 fields are inserted at the top and right most map coordinate. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMapFieldPlayerInfo</label>
+        <link refid="classCMapFieldPlayerInfo"/>
+      </node>
+      <node id="3">
+        <label>CUnitCache</label>
+        <link refid="classCUnitCache"/>
+      </node>
+      <node id="1">
+        <label>CMapField</label>
+        <link refid="classCMapField"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>playerInfo</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>UnitCache</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/tile.h" line="187" column="1" bodyfile="src/include/tile.h" bodystart="186" bodyend="242"/>
+    <listofallmembers>
+      <member refid="classCMapField_1ab514388e292747e5bda28e793a9e42a8" prot="public" virt="non-virtual"><scope>CMapField</scope><name>CheckMask</name></member>
+      <member refid="classCMapField_1a8a11ced351bba6024ff5b5ab51d5276b" prot="public" virt="non-virtual"><scope>CMapField</scope><name>CMapField</name></member>
+      <member refid="classCMapField_1a817e3631f3091408b0a93f660a9c61d0" prot="public" virt="non-virtual"><scope>CMapField</scope><name>CoastOnMap</name></member>
+      <member refid="classCMapField_1af9d8eaea7c08645cca0333b60c49fc2f" prot="private" virt="non-virtual"><scope>CMapField</scope><name>cost</name></member>
+      <member refid="classCMapField_1a44d0249881a48ef80e6e223bafa14b12" prot="public" virt="non-virtual"><scope>CMapField</scope><name>Flags</name></member>
+      <member refid="classCMapField_1ae4b832db49751a397c914d80b4b764e7" prot="public" virt="non-virtual"><scope>CMapField</scope><name>ForestOnMap</name></member>
+      <member refid="classCMapField_1a64028171de4144532416ae3c2ec1a941" prot="public" virt="non-virtual"><scope>CMapField</scope><name>getCost</name></member>
+      <member refid="classCMapField_1a17bbbbd5d7ab2d25de9c4c45743fa085" prot="public" virt="non-virtual"><scope>CMapField</scope><name>getFlag</name></member>
+      <member refid="classCMapField_1aaa0cd2458bcefc20868d69fb00d23956" prot="public" virt="non-virtual"><scope>CMapField</scope><name>getGraphicTile</name></member>
+      <member refid="classCMapField_1a6aa44c05a15805770049a5444d4fd595" prot="public" virt="non-virtual"><scope>CMapField</scope><name>isAHumanWall</name></member>
+      <member refid="classCMapField_1a8c9d24bc8ac1a900365ae3a83b7a0d4d" prot="public" virt="non-virtual"><scope>CMapField</scope><name>isAOrcWall</name></member>
+      <member refid="classCMapField_1a6356ad24dfa0d626e221eb4aac4a03a0" prot="public" virt="non-virtual"><scope>CMapField</scope><name>isAWall</name></member>
+      <member refid="classCMapField_1a2872380f93406c84893a8669c416a035" prot="public" virt="non-virtual"><scope>CMapField</scope><name>isDecorative</name></member>
+      <member refid="classCMapField_1ae75da927fa4a8d01cf79d094942c248b" prot="public" virt="non-virtual"><scope>CMapField</scope><name>isHuman</name></member>
+      <member refid="classCMapField_1a7c8f67adf78aeacdf56a3056dc2bb36e" prot="public" virt="non-virtual"><scope>CMapField</scope><name>IsTerrainResourceOnMap</name></member>
+      <member refid="classCMapField_1a641925d9be3f4f1377d2857037d659c9" prot="public" virt="non-virtual"><scope>CMapField</scope><name>IsTerrainResourceOnMap</name></member>
+      <member refid="classCMapField_1a0dbaf63e38872e975ab9d1ac0a4cc74a" prot="public" virt="non-virtual"><scope>CMapField</scope><name>parse</name></member>
+      <member refid="classCMapField_1a8fb42b4f8c4bf4cfcff8b046bb6c33d5" prot="public" virt="non-virtual"><scope>CMapField</scope><name>playerInfo</name></member>
+      <member refid="classCMapField_1aacbb12196a07f23756c77d6b77c9f00b" prot="public" virt="non-virtual"><scope>CMapField</scope><name>RockOnMap</name></member>
+      <member refid="classCMapField_1a14e7754fe04c5232c65545cc88c85e20" prot="public" virt="non-virtual"><scope>CMapField</scope><name>Save</name></member>
+      <member refid="classCMapField_1a9359a85a769c5e7f616bc81081a96fae" prot="public" virt="non-virtual"><scope>CMapField</scope><name>setGraphicTile</name></member>
+      <member refid="classCMapField_1a1076f78734df83e04986c384b47b1758" prot="public" virt="non-virtual"><scope>CMapField</scope><name>setTileIndex</name></member>
+      <member refid="classCMapField_1a9ac4c62e35fa7e05166136df6a17a75c" prot="private" virt="non-virtual"><scope>CMapField</scope><name>tile</name></member>
+      <member refid="classCMapField_1a9f01f9ed1297b3f635b2a7fd08fb838c" prot="public" virt="non-virtual"><scope>CMapField</scope><name>UnitCache</name></member>
+      <member refid="classCMapField_1a1254bff762d6f0dde3310450cf747311" prot="public" virt="non-virtual"><scope>CMapField</scope><name>Value</name></member>
+      <member refid="classCMapField_1a9ab4dd34df38758fd40d08a5c605ba15" prot="public" virt="non-virtual"><scope>CMapField</scope><name>WaterOnMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

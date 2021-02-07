@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="translate_8cpp" kind="file" language="C++">
+    <compoundname>translate.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="translate_8h" local="yes">translate.h</includes>
+    <includes refid="iolib_8h" local="yes">iolib.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>translate.h</label>
+        <link refid="translate_8h"/>
+      </node>
+      <node id="12">
+        <label>SDL.h</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="13">
+        <label>cstdio</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="1">
+        <label>src/stratagus/translate.cpp</label>
+        <link refid="translate_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>iolib.h</label>
+        <link refid="iolib_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>translate.cpp - Translate languages.</header>
+      <memberdef kind="typedef" id="translate_8cpp_1add991c321f0b44fd546e48bb8497033b" prot="public" static="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::string&gt; EntriesType</definition>
+        <argsstring></argsstring>
+        <name>EntriesType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/translate.cpp" line="49" column="18" bodyfile="src/stratagus/translate.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="translate_8cpp_1a0ddb66e7703a35d671b5d0075576e23e" prot="public" static="yes" mutable="no">
+        <type><ref refid="translate_8cpp_1add991c321f0b44fd546e48bb8497033b" kindref="member">EntriesType</ref></type>
+        <definition>EntriesType Entries</definition>
+        <argsstring></argsstring>
+        <name>Entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/translate.cpp" line="50" column="20" bodyfile="src/stratagus/translate.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="translate_8cpp_1a42e5a2baa4f45d7cdae51f0bfeba2020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Translate</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>Translate</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Translate a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Translate a string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/translate.cpp" line="59" column="12" bodyfile="src/stratagus/translate.cpp" bodystart="59" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="translate_8cpp_1aac4c15369432abdbfb04d8169d9a5e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AddTranslation</definition>
+        <argsstring>(const char *str1, const char *str2)</argsstring>
+        <name>AddTranslation</name>
+        <param>
+          <type>const char *</type>
+          <declname>str1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str2</declname>
+        </param>
+        <briefdescription>
+<para>Add a translation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a translation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/translate.cpp" line="72" column="6" bodyfile="src/stratagus/translate.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="translate_8cpp_1ae11185322fb361d1557839dc8d6d0d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LoadPO</definition>
+        <argsstring>(const char *file)</argsstring>
+        <name>LoadPO</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Load a .po file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a .po file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/translate.cpp" line="80" column="6" bodyfile="src/stratagus/translate.cpp" bodystart="80" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="translate_8cpp_1a36e8a8a828706b1527d87243524413a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SetTranslationsFiles</definition>
+        <argsstring>(const char *stratagusfile, const char *gamefile)</argsstring>
+        <name>SetTranslationsFiles</name>
+        <param>
+          <type>const char *</type>
+          <declname>stratagusfile</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>gamefile</declname>
+        </param>
+        <briefdescription>
+<para>Set the stratagus and game translations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the stratagus and game translations</para>
+<para>Those filenames will be saved in the preferences when SavePreferences will be called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/translate.cpp" line="183" column="6" bodyfile="src/stratagus/translate.cpp" bodystart="183" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/stratagus/translate.cpp"/>
+  </compounddef>
+</doxygen>

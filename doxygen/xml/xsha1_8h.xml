@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="xsha1_8h" kind="file" language="C++">
+    <compoundname>xsha1.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstring</includes>
+    <includedby refid="online__service_8cpp" local="yes">src/network/online_service.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>src/network/xsha1.h</label>
+        <link refid="xsha1_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdio</label>
+      </node>
+      <node id="4">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/network/online_service.cpp</label>
+        <link refid="online__service_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/network/xsha1.h</label>
+        <link refid="xsha1_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacepvpgn">pvpgn</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="xsha1_8h_1a57203343b8ee1d7c3dc97223c95eead0" prot="public" static="no">
+        <name>ROTL</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <param><defname>w</defname></param>
+        <initializer>(((x)&lt;&lt;((n)&amp;(w-1))) | ((x)&gt;&gt;(((-(n))&amp;(w-1)))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/xsha1.h" line="25" column="9" bodyfile="src/network/xsha1.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xsha1_8h_1af931bf11c41af34dde1b90f1b26488f6" prot="public" static="no">
+        <name>ROTL32</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="xsha1_8h_1a57203343b8ee1d7c3dc97223c95eead0" kindref="member">ROTL</ref>(x,n,32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/xsha1.h" line="31" column="9" bodyfile="src/network/xsha1.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xsha1_8h_1a28795d5cd24d79be1acb8a0f13a7d2c1" prot="public" static="no">
+        <name>ROTL16</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="xsha1_8h_1a57203343b8ee1d7c3dc97223c95eead0" kindref="member">ROTL</ref>(x,n,16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/xsha1.h" line="32" column="9" bodyfile="src/network/xsha1.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/network/xsha1.h"/>
+  </compounddef>
+</doxygen>

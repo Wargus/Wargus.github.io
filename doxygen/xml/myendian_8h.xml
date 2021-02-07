@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="myendian_8h" kind="file" language="C++">
+    <compoundname>myendian.h</compoundname>
+    <includes local="yes">SDL_byteorder.h</includes>
+    <includes local="yes">SDL_endian.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>SDL_endian.h</label>
+      </node>
+      <node id="1">
+        <label>src/include/myendian.h</label>
+        <link refid="myendian_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SDL_byteorder.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>myendian.h - The endian-specific headerfile.</header>
+      <memberdef kind="define" id="myendian_8h_1a2bc3d6161853c97e59b62f7ea3fc5bfa" prot="public" static="no">
+        <name>ConvertLE16</name>
+        <param><defname>v</defname></param>
+        <initializer>SDL_SwapLE16((v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a 16 bit value in little endian and return it in native format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="49" column="9" bodyfile="src/include/myendian.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="myendian_8h_1a03d081f87ce1d8ce33e2b61b5488a277" prot="public" static="no">
+        <name>ConvertLE32</name>
+        <param><defname>v</defname></param>
+        <initializer>SDL_SwapLE32((v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a 32 bit value in little endian and return it in native format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="54" column="9" bodyfile="src/include/myendian.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="myendian_8h_1afa6c5fe99d6829380424f0e648bc9e31" prot="public" static="no">
+        <name>AccessLE16</name>
+        <param><defname>p</defname></param>
+        <initializer>SDL_SwapLE16(*((unsigned short *)(p)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access a 16 bit value in little endian and return it in native format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="68" column="9" bodyfile="src/include/myendian.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="myendian_8h_1a1e01064e159264983c67bbb2ec5a6e84" prot="public" static="no">
+        <name>AccessLE32</name>
+        <param><defname>p</defname></param>
+        <initializer>SDL_SwapLE32(*((unsigned int *)(p)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access a 32 bit value in little endian and return it in native format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="84" column="9" bodyfile="src/include/myendian.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="myendian_8h_1a56ddf99a979ec196cc699ceecca94a5d" prot="public" static="no">
+        <name>FetchLE16</name>
+        <param><defname>p</defname></param>
+        <initializer>SDL_SwapLE16(*((unsigned short *)(p))); p += 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fetch a 16 bit value in little endian with incrementing pointer and return it in native format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="105" column="9" bodyfile="src/include/myendian.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="myendian_8h_1a8d94b379a6d987fd2d89e526ab7cb5eb" prot="public" static="no">
+        <name>FetchLE32</name>
+        <param><defname>p</defname></param>
+        <initializer>SDL_SwapLE32(*((unsigned int *)(p))); p += 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fetch a 32 bit value in little endian with incrementing pointer and return it in native format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="126" column="9" bodyfile="src/include/myendian.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="myendian_8h_1a4bfa0225b056a72f400bd8a00ba73918" prot="public" static="no">
+        <name>STRATAGUS_LITTLE_ENDIAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/myendian.h" line="132" column="9" bodyfile="src/include/myendian.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/myendian.h"/>
+  </compounddef>
+</doxygen>

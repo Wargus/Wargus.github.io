@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="iocompat_8h" kind="file" language="C++">
+    <compoundname>iocompat.h</compoundname>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">limits.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">dirent.h</includes>
+    <includedby refid="editloop_8cpp" local="yes">src/editor/editloop.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="replay_8cpp" local="yes">src/game/replay.cpp</includedby>
+    <includedby refid="savegame_8cpp" local="yes">src/game/savegame.cpp</includedby>
+    <includedby refid="sound__server_8cpp" local="yes">src/sound/sound_server.cpp</includedby>
+    <includedby refid="iolib_8cpp" local="yes">src/stratagus/iolib.cpp</includedby>
+    <includedby refid="script_8cpp" local="yes">src/stratagus/script.cpp</includedby>
+    <includedby refid="stratagus_8cpp" local="yes">src/stratagus/stratagus.cpp</includedby>
+    <includedby refid="graphic_8cpp" local="yes">src/video/graphic.cpp</includedby>
+    <includedby refid="mng_8cpp" local="yes">src/video/mng.cpp</includedby>
+    <includedby refid="movie_8cpp" local="yes">src/video/movie.cpp</includedby>
+    <includedby refid="png_8cpp" local="yes">src/video/png.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="7">
+        <label>errno.h</label>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>sys/types.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>unistd.h</label>
+      </node>
+      <node id="1">
+        <label>src/include/iocompat.h</label>
+        <link refid="iocompat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/sound/sound_server.cpp</label>
+        <link refid="sound__server_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/video/png.cpp</label>
+        <link refid="png_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/stratagus/stratagus.cpp</label>
+        <link refid="stratagus_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/editor/editloop.cpp</label>
+        <link refid="editloop_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/video/mng.cpp</label>
+        <link refid="mng_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/video/movie.cpp</label>
+        <link refid="movie_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/iocompat.h</label>
+        <link refid="iocompat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/video/graphic.cpp</label>
+        <link refid="graphic_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/stratagus/iolib.cpp</label>
+        <link refid="iolib_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/game/replay.cpp</label>
+        <link refid="replay_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/game/savegame.cpp</label>
+        <link refid="savegame_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>iocompat.h - IO platform compatibility header file.</header>
+      <memberdef kind="define" id="iocompat_8h_1a36fa9b2e726512bc17a7a6d3e39002be" prot="public" static="no">
+        <name>O_BINARY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iocompat.h" line="69" column="9" bodyfile="src/include/iocompat.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iocompat_8h_1aa7acdf52a23b86126df1f7fca002bc36" prot="public" static="no">
+        <name>makedir</name>
+        <param><defname>dir</defname></param>
+        <param><defname>permissions</defname></param>
+        <initializer><ref refid="stratagus-gameutils_8h_1a71a251491ad670454bb51723b707bdb6" kindref="member">mkdir</ref>(dir)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iocompat.h" line="73" column="9" bodyfile="src/include/iocompat.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/iocompat.h"/>
+  </compounddef>
+</doxygen>

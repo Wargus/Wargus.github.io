@@ -1,0 +1,1115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="animation_8h" kind="file" language="C++">
+    <compoundname>animation.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includes refid="upgrade__structs_8h" local="yes">upgrade_structs.h</includes>
+    <includedby refid="action__attack_8cpp" local="yes">src/action/action_attack.cpp</includedby>
+    <includedby refid="action__board_8cpp" local="yes">src/action/action_board.cpp</includedby>
+    <includedby refid="action__build_8cpp" local="yes">src/action/action_build.cpp</includedby>
+    <includedby refid="action__defend_8cpp" local="yes">src/action/action_defend.cpp</includedby>
+    <includedby refid="action__die_8cpp" local="yes">src/action/action_die.cpp</includedby>
+    <includedby refid="action__explore_8cpp" local="yes">src/action/action_explore.cpp</includedby>
+    <includedby refid="action__follow_8cpp" local="yes">src/action/action_follow.cpp</includedby>
+    <includedby refid="action__move_8cpp" local="yes">src/action/action_move.cpp</includedby>
+    <includedby refid="action__patrol_8cpp" local="yes">src/action/action_patrol.cpp</includedby>
+    <includedby refid="action__repair_8cpp" local="yes">src/action/action_repair.cpp</includedby>
+    <includedby refid="action__research_8cpp" local="yes">src/action/action_research.cpp</includedby>
+    <includedby refid="action__resource_8cpp" local="yes">src/action/action_resource.cpp</includedby>
+    <includedby refid="action__spellcast_8cpp" local="yes">src/action/action_spellcast.cpp</includedby>
+    <includedby refid="action__still_8cpp" local="yes">src/action/action_still.cpp</includedby>
+    <includedby refid="action__train_8cpp" local="yes">src/action/action_train.cpp</includedby>
+    <includedby refid="action__unload_8cpp" local="yes">src/action/action_unload.cpp</includedby>
+    <includedby refid="action__upgradeto_8cpp" local="yes">src/action/action_upgradeto.cpp</includedby>
+    <includedby refid="animation_8cpp" local="yes">src/animation/animation.cpp</includedby>
+    <includedby refid="animation__setplayervar_8cpp" local="yes">src/animation/animation_setplayervar.cpp</includedby>
+    <includedby refid="game_8cpp" local="yes">src/game/game.cpp</includedby>
+    <includedby refid="animation__attack_8h" local="yes">src/include/animation/animation_attack.h</includedby>
+    <includedby refid="animation__die_8h" local="yes">src/include/animation/animation_die.h</includedby>
+    <includedby refid="animation__exactframe_8h" local="yes">src/include/animation/animation_exactframe.h</includedby>
+    <includedby refid="animation__frame_8h" local="yes">src/include/animation/animation_frame.h</includedby>
+    <includedby refid="animation__goto_8h" local="yes">src/include/animation/animation_goto.h</includedby>
+    <includedby refid="animation__ifvar_8h" local="yes">src/include/animation/animation_ifvar.h</includedby>
+    <includedby refid="animation__label_8h" local="yes">src/include/animation/animation_label.h</includedby>
+    <includedby refid="animation__luacallback_8h" local="yes">src/include/animation/animation_luacallback.h</includedby>
+    <includedby refid="animation__move_8h" local="yes">src/include/animation/animation_move.h</includedby>
+    <includedby refid="animation__randomgoto_8h" local="yes">src/include/animation/animation_randomgoto.h</includedby>
+    <includedby refid="animation__randomrotate_8h" local="yes">src/include/animation/animation_randomrotate.h</includedby>
+    <includedby refid="animation__randomsound_8h" local="yes">src/include/animation/animation_randomsound.h</includedby>
+    <includedby refid="animation__randomwait_8h" local="yes">src/include/animation/animation_randomwait.h</includedby>
+    <includedby refid="animation__rotate_8h" local="yes">src/include/animation/animation_rotate.h</includedby>
+    <includedby refid="animation__setplayervar_8h" local="yes">src/include/animation/animation_setplayervar.h</includedby>
+    <includedby refid="animation__setvar_8h" local="yes">src/include/animation/animation_setvar.h</includedby>
+    <includedby refid="animation__sound_8h" local="yes">src/include/animation/animation_sound.h</includedby>
+    <includedby refid="animation__spawnmissile_8h" local="yes">src/include/animation/animation_spawnmissile.h</includedby>
+    <includedby refid="animation__spawnunit_8h" local="yes">src/include/animation/animation_spawnunit.h</includedby>
+    <includedby refid="animation__unbreakable_8h" local="yes">src/include/animation/animation_unbreakable.h</includedby>
+    <includedby refid="animation__wait_8h" local="yes">src/include/animation/animation_wait.h</includedby>
+    <includedby refid="missile_8cpp" local="yes">src/missile/missile.cpp</includedby>
+    <includedby refid="script__unit_8cpp" local="yes">src/unit/script_unit.cpp</includedby>
+    <includedby refid="script__unittype_8cpp" local="yes">src/unit/script_unittype.cpp</includedby>
+    <includedby refid="unit_8cpp" local="yes">src/unit/unit.cpp</includedby>
+    <includedby refid="unit__save_8cpp" local="yes">src/unit/unit_save.cpp</includedby>
+    <includedby refid="unittype_8cpp" local="yes">src/unit/unittype.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/include/animation.h</label>
+        <link refid="animation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="46">
+        <label>src/include/animation/animation_randomsound.h</label>
+        <link refid="animation__randomsound_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/animation/animation_label.cpp</label>
+        <link refid="animation__label_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/action/action_still.cpp</label>
+        <link refid="action__still_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/action/action_upgradeto.cpp</label>
+        <link refid="action__upgradeto_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/action/action_research.cpp</label>
+        <link refid="action__research_8cpp"/>
+      </node>
+      <node id="67">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/action/action_build.cpp</label>
+        <link refid="action__build_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/include/animation/animation_label.h</label>
+        <link refid="animation__label_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>src/animation/animation_setvar.cpp</label>
+        <link refid="animation__setvar_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/action/action_spellcast.cpp</label>
+        <link refid="action__spellcast_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/animation/animation_luacallback.cpp</label>
+        <link refid="animation__luacallback_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/action/action_explore.cpp</label>
+        <link refid="action__explore_8cpp"/>
+      </node>
+      <node id="64">
+        <label>src/animation/animation_unbreakable.cpp</label>
+        <link refid="animation__unbreakable_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/game/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="57">
+        <label>src/include/animation/animation_sound.h</label>
+        <link refid="animation__sound_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/animation/animation_exactframe.cpp</label>
+        <link refid="animation__exactframe_8cpp"/>
+      </node>
+      <node id="40">
+        <label>src/include/animation/animation_move.h</label>
+        <link refid="animation__move_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>src/unit/script_unittype.cpp</label>
+        <link refid="script__unittype_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/animation/animation_attack.cpp</label>
+        <link refid="animation__attack_8cpp"/>
+      </node>
+      <node id="51">
+        <label>src/include/animation/animation_rotate.h</label>
+        <link refid="animation__rotate_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>src/animation/animation_randomwait.cpp</label>
+        <link refid="animation__randomwait_8cpp"/>
+      </node>
+      <node id="53">
+        <label>src/include/animation/animation_setplayervar.h</label>
+        <link refid="animation__setplayervar_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>src/include/animation/animation_randomgoto.h</label>
+        <link refid="animation__randomgoto_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/include/animation.h</label>
+        <link refid="animation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>src/unit/unit.cpp</label>
+        <link refid="unit_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/animation/animation_die.cpp</label>
+        <link refid="animation__die_8cpp"/>
+      </node>
+      <node id="63">
+        <label>src/include/animation/animation_unbreakable.h</label>
+        <link refid="animation__unbreakable_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>src/animation/animation_move.cpp</label>
+        <link refid="animation__move_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/animation/animation_frame.cpp</label>
+        <link refid="animation__frame_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/action/action_train.cpp</label>
+        <link refid="action__train_8cpp"/>
+      </node>
+      <node id="60">
+        <label>src/animation/animation_spawnmissile.cpp</label>
+        <link refid="animation__spawnmissile_8cpp"/>
+      </node>
+      <node id="59">
+        <label>src/include/animation/animation_spawnmissile.h</label>
+        <link refid="animation__spawnmissile_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>src/unit/script_unit.cpp</label>
+        <link refid="script__unit_8cpp"/>
+      </node>
+      <node id="65">
+        <label>src/include/animation/animation_wait.h</label>
+        <link refid="animation__wait_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>src/stratagus/script.cpp</label>
+        <link refid="script_8cpp"/>
+      </node>
+      <node id="52">
+        <label>src/animation/animation_rotate.cpp</label>
+        <link refid="animation__rotate_8cpp"/>
+      </node>
+      <node id="61">
+        <label>src/include/animation/animation_spawnunit.h</label>
+        <link refid="animation__spawnunit_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>src/animation/animation_sound.cpp</label>
+        <link refid="animation__sound_8cpp"/>
+      </node>
+      <node id="38">
+        <label>src/include/animation/animation_luacallback.h</label>
+        <link refid="animation__luacallback_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/action/action_patrol.cpp</label>
+        <link refid="action__patrol_8cpp"/>
+      </node>
+      <node id="47">
+        <label>src/animation/animation_randomsound.cpp</label>
+        <link refid="animation__randomsound_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/animation/animation.cpp</label>
+        <link refid="animation_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/action/action_repair.cpp</label>
+        <link refid="action__repair_8cpp"/>
+      </node>
+      <node id="55">
+        <label>src/include/animation/animation_setvar.h</label>
+        <link refid="animation__setvar_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/include/animation/animation_goto.h</label>
+        <link refid="animation__goto_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/action/actions.cpp</label>
+        <link refid="actions_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/action/action_follow.cpp</label>
+        <link refid="action__follow_8cpp"/>
+      </node>
+      <node id="71">
+        <label>src/unit/unit_save.cpp</label>
+        <link refid="unit__save_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/include/animation/animation_ifvar.h</label>
+        <link refid="animation__ifvar_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/include/animation/animation_frame.h</label>
+        <link refid="animation__frame_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/action/action_move.cpp</label>
+        <link refid="action__move_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/include/animation/animation_exactframe.h</label>
+        <link refid="animation__exactframe_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>src/animation/animation_spawnunit.cpp</label>
+        <link refid="animation__spawnunit_8cpp"/>
+      </node>
+      <node id="44">
+        <label>src/include/animation/animation_randomrotate.h</label>
+        <link refid="animation__randomrotate_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>src/sound/unitsound.cpp</label>
+        <link refid="unitsound_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/action/action_defend.cpp</label>
+        <link refid="action__defend_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/action/action_unload.cpp</label>
+        <link refid="action__unload_8cpp"/>
+      </node>
+      <node id="66">
+        <label>src/animation/animation_wait.cpp</label>
+        <link refid="animation__wait_8cpp"/>
+      </node>
+      <node id="43">
+        <label>src/animation/animation_randomgoto.cpp</label>
+        <link refid="animation__randomgoto_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/action/action_resource.cpp</label>
+        <link refid="action__resource_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/action/action_board.cpp</label>
+        <link refid="action__board_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/include/animation/animation_die.h</label>
+        <link refid="animation__die_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/include/animation/animation_attack.h</label>
+        <link refid="animation__attack_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/animation/animation_ifvar.cpp</label>
+        <link refid="animation__ifvar_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/action/action_attack.cpp</label>
+        <link refid="action__attack_8cpp"/>
+      </node>
+      <node id="45">
+        <label>src/animation/animation_randomrotate.cpp</label>
+        <link refid="animation__randomrotate_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/unit/unittype.cpp</label>
+        <link refid="unittype_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/action/action_die.cpp</label>
+        <link refid="action__die_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/animation/animation_setplayervar.cpp</label>
+        <link refid="animation__setplayervar_8cpp"/>
+      </node>
+      <node id="49">
+        <label>src/include/animation/animation_randomwait.h</label>
+        <link refid="animation__randomwait_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/animation/animation_goto.cpp</label>
+        <link refid="animation__goto_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCAnimation" prot="public">CAnimation</innerclass>
+    <innerclass refid="classCAnimations" prot="public">CAnimations</innerclass>
+      <sectiondef kind="user-defined">
+      <header>animation.h - The animations headerfile.</header>
+      <memberdef kind="define" id="animation_8h_1ae81ef090059991bcd9ddbd8e09286ca0" prot="public" static="no">
+        <name>ANIMATIONS_DEATHTYPES</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="39" column="9" bodyfile="src/include/animation.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="animation_8h_1affb455e5ea72d01e065758c70f810a95" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AnimationType</name>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a67efd1920cce57b1d39c82e3d3078c9b" prot="public">
+          <name>AnimationNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95ac9fad938ef86bea5a45a83bcda57f6c1" prot="public">
+          <name>AnimationFrame</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a645bd33bc5ba8b117020d0f4a2efdf18" prot="public">
+          <name>AnimationExactFrame</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95ac9967dee1aa6da34410f9d48f515c8a8" prot="public">
+          <name>AnimationWait</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95ac9c2f4fb3aab058a9a2fccc313e2e2f5" prot="public">
+          <name>AnimationRandomWait</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a9e8832d702b6ddd837bbd253d7631f4a" prot="public">
+          <name>AnimationSound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95aa3eee65edde3b103576a73977abd583b" prot="public">
+          <name>AnimationRandomSound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a7d38294311e3390b77a9d3eda59a6d50" prot="public">
+          <name>AnimationAttack</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95aec7c84e0cd64b358f72448e59d4d2919" prot="public">
+          <name>AnimationRotate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95ac7a829e03c6f25a686dd3723913f79a3" prot="public">
+          <name>AnimationRandomRotate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a4bf34dae2585524ed3deae951e339d4a" prot="public">
+          <name>AnimationMove</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95ad1d535dd8c051f7a87c0f55e63bd2e33" prot="public">
+          <name>AnimationUnbreakable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a8e6e30e70564f2029fa9ea3e74dd9d51" prot="public">
+          <name>AnimationLabel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a49dd6d31b2860aa68e2d498bf3e9f14c" prot="public">
+          <name>AnimationGoto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a599126ef4b129039377a6ef053e5cdf2" prot="public">
+          <name>AnimationRandomGoto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a64788084fead0b8d4d154af76e3674f5" prot="public">
+          <name>AnimationSpawnMissile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a4794bb435ab467688c3592c15ec52218" prot="public">
+          <name>AnimationSpawnUnit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a4591fa0f4258028e8ef91331801a6682" prot="public">
+          <name>AnimationIfVar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a670138dbc50f45208ed462ea4bae8525" prot="public">
+          <name>AnimationSetVar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a0cfcc2da9bddff48b0b83d1712cb5576" prot="public">
+          <name>AnimationSetPlayerVar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95a5456db17e6db567cce594c17951d1faa" prot="public">
+          <name>AnimationDie</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1affb455e5ea72d01e065758c70f810a95aeb86b06fe6a9f4999bb1e1ea2b473f9e" prot="public">
+          <name>AnimationLuaCallback</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="54" column="19" bodyfile="src/include/animation.h" bodystart="54" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="enum" id="animation_8h_1a36102828642401da552d31e4d1d8e2bd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SetVar_ModifyTypes</name>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bdaec1ec69f07b391f17a09515c972f7f78" prot="public">
+          <name>modSet</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda846ea47dfb4da13a4da53faf8069b6b3" prot="public">
+          <name>modAdd</name>
+          <briefdescription>
+<para>Set value to this. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bdae15f3130d9c3485b60132566a41d22d0" prot="public">
+          <name>modSub</name>
+          <briefdescription>
+<para>Addition. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda787f5a47b5077933d6fcdd899ca5c00e" prot="public">
+          <name>modMul</name>
+          <briefdescription>
+<para>Subtraction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda202d5fb9c5eaeab447b64097857a8211" prot="public">
+          <name>modDiv</name>
+          <briefdescription>
+<para>Multiplication. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda8ce0ad97509dfd3cdd505bdcf1d15b27" prot="public">
+          <name>modMod</name>
+          <briefdescription>
+<para>Division. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda64fd0ce0838b92e407088fb44d4ecccb" prot="public">
+          <name>modAnd</name>
+          <briefdescription>
+<para>Modulo. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda638c04d67fa05d044581b6abfbe6acfa" prot="public">
+          <name>modOr</name>
+          <briefdescription>
+<para>Bitwise AND. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda920fdc7deb3128f79746924a0e142f27" prot="public">
+          <name>modXor</name>
+          <briefdescription>
+<para>Bitwise OR. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="animation_8h_1a36102828642401da552d31e4d1d8e2bda27dcc3d3a46c83cca505bba3dc85e870" prot="public">
+          <name>modNot</name>
+          <briefdescription>
+<para>Bitwise XOR. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="80" column="24" bodyfile="src/include/animation.h" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="variable" id="animation_8h_1a1d38c430c932d410e563219c3a3b50ee" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ExtraDeathTypes[ANIMATIONS_DEATHTYPES]</definition>
+        <argsstring>[ANIMATIONS_DEATHTYPES]</argsstring>
+        <name>ExtraDeathTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default names for the extra death types.</para>
+<para>Default names for the resources. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="52" column="20" bodyfile="src/unit/unittype.cpp" bodystart="494" bodyend="-1" declfile="src/include/animation.h" declline="52" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1a3c70d3a9a8aa0b3ac060740f62c722c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCAnimations" kindref="compound">CAnimations</ref> *</type>
+        <definition>CAnimations* AnimationsByIdent</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>AnimationsByIdent</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Get the animations structure by ident. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the animations structure by ident.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the animation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the animation structure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="166" column="20" bodyfile="src/animation/animation.cpp" bodystart="377" bodyend="384" declfile="src/include/animation.h" declline="166" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1aed235a53aed1f9c0bdd3b3d2583ff7d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AnimationCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationCclRegister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="168" column="13" bodyfile="src/animation/animation.cpp" bodystart="750" bodyend="753" declfile="src/include/animation.h" declline="168" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1a4940616509a4cc534090a4f3fea58669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnitShowAnimationScaled</definition>
+        <argsstring>(CUnit &amp;unit, const CAnimation *anim, int scale)</argsstring>
+        <name>UnitShowAnimationScaled</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+          <declname>anim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Handle the animation of a unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Show unit animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit of the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation script to handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scaling factor of the wait times in animation (8 means no scaling).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The flags of the current script step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="171" column="12" bodyfile="src/animation/animation.cpp" bodystart="333" bodyend="367" declfile="src/include/animation.h" declline="171" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1a6c8b65805b6d29d89c8c5dec49c12936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnitShowAnimation</definition>
+        <argsstring>(CUnit &amp;unit, const CAnimation *anim)</argsstring>
+        <name>UnitShowAnimation</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCAnimation" kindref="compound">CAnimation</ref> *</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+<para>Handle the animation of a unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the animation of a unit.</para>
+<para>Show unit animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit of the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation script to handle.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The flags of the current script step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="173" column="12" bodyfile="src/animation/animation.cpp" bodystart="106" bodyend="109" declfile="src/include/animation.h" declline="173" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1a139659d5d063a4e466b6707479e2e45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ParseAnimInt</definition>
+        <argsstring>(const CUnit &amp;unit, const char *parseint)</argsstring>
+        <name>ParseAnimInt</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>parseint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse integer in animation frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit of the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parseint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to parse.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The parsed value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="176" column="12" bodyfile="src/animation/animation.cpp" bodystart="138" bodyend="261" declfile="src/include/animation.h" declline="176" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1a791a0138ae3ee7f74bfaa4f7a99a6ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ParseAnimFlags</definition>
+        <argsstring>(const CUnit &amp;unit, const char *parseflag)</argsstring>
+        <name>ParseAnimFlags</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>parseflag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flags list in animation frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit of the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parseflag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag list to parse.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The parsed value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="177" column="12" bodyfile="src/animation/animation.cpp" bodystart="271" bodyend="321" declfile="src/include/animation.h" declline="177" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1a55f3f4d825281bfb8d196a9503e83c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FindLabelLater</definition>
+        <argsstring>(CAnimation **anim, const std::string &amp;name)</argsstring>
+        <name>FindLabelLater</name>
+        <param>
+          <type><ref refid="classCAnimation" kindref="compound">CAnimation</ref> **</type>
+          <declname>anim</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a label later </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="179" column="13" bodyfile="src/animation/animation.cpp" bodystart="539" bodyend="546" declfile="src/include/animation.h" declline="179" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="animation_8h_1ab8afa6fd9c3521ed3239dcb712cbe3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreeAnimations</definition>
+        <argsstring>()</argsstring>
+        <name>FreeAnimations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation.h" line="181" column="13" bodyfile="src/animation/animation.cpp" bodystart="386" bodyend="395" declfile="src/include/animation.h" declline="181" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/animation.h"/>
+  </compounddef>
+</doxygen>

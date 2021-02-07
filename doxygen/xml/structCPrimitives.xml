@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCPrimitives" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CPrimitives</compoundname>
+    <derivedcompoundref refid="classCRenderer" prot="public" virt="non-virtual">CRenderer&lt; BPP, MASK &gt;</derivedcompoundref>
+    <includes refid="renderer_8h" local="no">renderer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCPrimitives_1a83ab2994b09926ecdb28dfed897e452c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawPixel</definition>
+        <argsstring>(Uint32 color, int x, int y)=0</argsstring>
+        <name>DrawPixel</name>
+        <reimplementedby refid="classCRenderer_1acc07e5b87cabfe04eaf0b7a5bf49dcfe">DrawPixel</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="7" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1aa7c28b3eef5801f87b7f4955e6035a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawTransPixel</definition>
+        <argsstring>(Uint32 color, int x, int y, unsigned char alpha)=0</argsstring>
+        <name>DrawTransPixel</name>
+        <reimplementedby refid="classCRenderer_1a5b3e94a7bdce2bfaa8c476b35fe85cf0">DrawTransPixel</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="8" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1aa64f0ba711bed0f329f3cd01537e24d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawLine</definition>
+        <argsstring>(Uint32 color, int sx, int sy, int dx, int dy)=0</argsstring>
+        <name>DrawLine</name>
+        <reimplementedby refid="classCRenderer_1a3fe39882bd10a0261347b3e043583baf">DrawLine</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="11" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1aa30571f7c4238f44ec0a97e9cb014602" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawTransLine</definition>
+        <argsstring>(Uint32 color, int sx, int sy, int dx, int dy, unsigned char alpha)=0</argsstring>
+        <name>DrawTransLine</name>
+        <reimplementedby refid="classCRenderer_1a1f9b7eb2a51da47d1b64b3d21453a32a">DrawTransLine</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1a284714023bc5e91a639290b0301e165c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawRectangle</definition>
+        <argsstring>(Uint32 color, int x, int y, int w, int h)=0</argsstring>
+        <name>DrawRectangle</name>
+        <reimplementedby refid="classCRenderer_1a12326f7977af51ae458b7dddf40b1e90">DrawRectangle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1aafbe6670eeaac1b1b328a86b37ddc77b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawTransRectangle</definition>
+        <argsstring>(Uint32 color, int x, int y, int w, int h, unsigned char alpha)=0</argsstring>
+        <name>DrawTransRectangle</name>
+        <reimplementedby refid="classCRenderer_1ae91cdf5f1de53ce7b40d7a566fede198">DrawTransRectangle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1a101c78ec5f1c41d296f5f91ece877a4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::FillTransRectangle</definition>
+        <argsstring>(Uint32 color, int x, int y, int w, int h, unsigned char alpha)=0</argsstring>
+        <name>FillTransRectangle</name>
+        <reimplementedby refid="classCRenderer_1a654e3ae6aaf14944fb7e482c2dc39821">FillTransRectangle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1a3ba942c315f533079dfd510fc89526e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawCircle</definition>
+        <argsstring>(Uint32 color, int x, int y, int r)=0</argsstring>
+        <name>DrawCircle</name>
+        <reimplementedby refid="classCRenderer_1a517932439e11cd2b888b1dce6f96cc1b">DrawCircle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1acad6552b2fbd931e03318a6fd97e1019" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::DrawTransCircle</definition>
+        <argsstring>(Uint32 color, int x, int y, int r, unsigned char alpha)=0</argsstring>
+        <name>DrawTransCircle</name>
+        <reimplementedby refid="classCRenderer_1abdbab5c4d32669107f49011d8100e519">DrawTransCircle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1a6e2e4e0726e4c13a5fdd3c1fbf524d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::FillCircle</definition>
+        <argsstring>(Uint32 color, int x, int y, int r)=0</argsstring>
+        <name>FillCircle</name>
+        <reimplementedby refid="classCRenderer_1aaa39d5de995a33fc44403d936093f89d">FillCircle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPrimitives_1ae024fbd3a077bd281cd60b5dbf76f7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void CPrimitives::FillTransCircle</definition>
+        <argsstring>(Uint32 color, int x, int y, int r, unsigned char alpha)=0</argsstring>
+        <name>FillTransCircle</name>
+        <reimplementedby refid="classCRenderer_1a120df2e8d7aa4c7665db5ed388484816">FillTransCircle</reimplementedby>
+        <param>
+          <type>Uint32</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/renderer.h" line="27" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CRenderer&lt; BPP, MASK &gt;</label>
+        <link refid="classCRenderer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPrimitives</label>
+        <link refid="structCPrimitives"/>
+      </node>
+    </inheritancegraph>
+    <location file="src/video/renderer.h" line="6" column="18" bodyfile="src/video/renderer.h" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structCPrimitives_1a3ba942c315f533079dfd510fc89526e6" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawCircle</name></member>
+      <member refid="structCPrimitives_1aa64f0ba711bed0f329f3cd01537e24d5" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawLine</name></member>
+      <member refid="structCPrimitives_1a83ab2994b09926ecdb28dfed897e452c" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawPixel</name></member>
+      <member refid="structCPrimitives_1a284714023bc5e91a639290b0301e165c" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawRectangle</name></member>
+      <member refid="structCPrimitives_1acad6552b2fbd931e03318a6fd97e1019" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawTransCircle</name></member>
+      <member refid="structCPrimitives_1aa30571f7c4238f44ec0a97e9cb014602" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawTransLine</name></member>
+      <member refid="structCPrimitives_1aa7c28b3eef5801f87b7f4955e6035a9c" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawTransPixel</name></member>
+      <member refid="structCPrimitives_1aafbe6670eeaac1b1b328a86b37ddc77b" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>DrawTransRectangle</name></member>
+      <member refid="structCPrimitives_1a6e2e4e0726e4c13a5fdd3c1fbf524d74" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>FillCircle</name></member>
+      <member refid="structCPrimitives_1ae024fbd3a077bd281cd60b5dbf76f7a2" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>FillTransCircle</name></member>
+      <member refid="structCPrimitives_1a101c78ec5f1c41d296f5f91ece877a4a" prot="public" virt="pure-virtual"><scope>CPrimitives</scope><name>FillTransRectangle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

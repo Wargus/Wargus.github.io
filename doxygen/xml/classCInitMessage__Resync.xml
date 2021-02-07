@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCInitMessage__Resync" kind="class" language="C++" prot="public">
+    <compoundname>CInitMessage_Resync</compoundname>
+    <includes refid="net__message_8h" local="no">net_message.h</includes>
+      <sectiondef kind="user-defined">
+      <header>net_message.cpp - The network message code.</header>
+      <memberdef kind="function" id="classCInitMessage__Resync_1a03b47955b9faa71185215e39e3fd2f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CInitMessage_Resync::CInitMessage_Resync</definition>
+        <argsstring>()</argsstring>
+        <name>CInitMessage_Resync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="261" column="1" bodyfile="src/network/net_message.cpp" bodystart="555" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="classCInitMessage__Resync_1a61b9fc8d40e32c9a7a1d3f3af9d0faa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char * CInitMessage_Resync::Serialize</definition>
+        <argsstring>() const</argsstring>
+        <name>Serialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="263" column="21" bodyfile="src/network/net_message.cpp" bodystart="560" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="classCInitMessage__Resync_1a8f16d6a20da0229e080451215a08e7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CInitMessage_Resync::Deserialize</definition>
+        <argsstring>(const unsigned char *p)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="264" column="6" bodyfile="src/network/net_message.cpp" bodystart="572" bodyend="578"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCInitMessage__Resync_1a0fa735a311eb79d655ea56845d03a842" prot="private" static="no" mutable="no">
+        <type><ref refid="classCInitMessage__Header" kindref="compound">CInitMessage_Header</ref></type>
+        <definition>CInitMessage_Header CInitMessage_Resync::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="267" column="21" bodyfile="src/include/net_message.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCInitMessage__Resync_1a79dfc068124c58b45f0324a8bf5628ea" prot="public" static="no" mutable="no">
+        <type><ref refid="classCNetworkHost" kindref="compound">CNetworkHost</ref></type>
+        <definition>CNetworkHost CInitMessage_Resync::hosts[PlayerMax]</definition>
+        <argsstring>[PlayerMax]</argsstring>
+        <name>hosts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="269" column="14" bodyfile="src/include/net_message.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCInitMessage__Resync_1a97eb1ea8e4ca4ec28047e45d4f5d467f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classCInitMessage__Header" kindref="compound">CInitMessage_Header</ref> &amp;</type>
+        <definition>const CInitMessage_Header&amp; CInitMessage_Resync::GetHeader</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="262" column="27" bodyfile="src/include/net_message.h" bodystart="262" bodyend="262"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCInitMessage__Resync_1ac4a786c54882b35b09ad0a56c1785c8a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CInitMessage_Resync::Size</definition>
+        <argsstring>()</argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/net_message.h" line="265" column="15" bodyfile="src/include/net_message.h" bodystart="265" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>CNetworkHost</label>
+        <link refid="classCNetworkHost"/>
+      </node>
+      <node id="1">
+        <label>CInitMessage_Resync</label>
+        <link refid="classCInitMessage__Resync"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hosts</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/net_message.h" line="259" column="1" bodyfile="src/include/net_message.h" bodystart="258" bodyend="270"/>
+    <listofallmembers>
+      <member refid="classCInitMessage__Resync_1a03b47955b9faa71185215e39e3fd2f6e" prot="public" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>CInitMessage_Resync</name></member>
+      <member refid="classCInitMessage__Resync_1a8f16d6a20da0229e080451215a08e7a6" prot="public" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>Deserialize</name></member>
+      <member refid="classCInitMessage__Resync_1a97eb1ea8e4ca4ec28047e45d4f5d467f" prot="public" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>GetHeader</name></member>
+      <member refid="classCInitMessage__Resync_1a0fa735a311eb79d655ea56845d03a842" prot="private" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>header</name></member>
+      <member refid="classCInitMessage__Resync_1a79dfc068124c58b45f0324a8bf5628ea" prot="public" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>hosts</name></member>
+      <member refid="classCInitMessage__Resync_1a61b9fc8d40e32c9a7a1d3f3af9d0faa0" prot="public" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>Serialize</name></member>
+      <member refid="classCInitMessage__Resync_1ac4a786c54882b35b09ad0a56c1785c8a" prot="public" virt="non-virtual"><scope>CInitMessage_Resync</scope><name>Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

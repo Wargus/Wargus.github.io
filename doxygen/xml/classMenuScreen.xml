@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classMenuScreen" kind="class" language="C++" prot="public">
+    <compoundname>MenuScreen</compoundname>
+    <basecompoundref refid="classgcn_1_1Container" prot="public" virt="non-virtual">gcn::Container</basecompoundref>
+    <includes refid="widgets_8h" local="no">widgets.h</includes>
+      <sectiondef kind="user-defined">
+      <header>widgets.cpp - The stratagus ui widgets.</header>
+      <memberdef kind="function" id="classMenuScreen_1a682d70c15714206041c985386e479607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuScreen::MenuScreen</definition>
+        <argsstring>()</argsstring>
+        <name>MenuScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classMenuScreen" kindref="compound">MenuScreen</ref> constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="474" column="1" bodyfile="src/ui/widgets.cpp" bodystart="2383" bodyend="2393"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1a936642989b96aee8871e4b14ce96a488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MenuScreen::run</definition>
+        <argsstring>(bool loop=true)</argsstring>
+        <name>run</name>
+        <param>
+          <type>bool</type>
+          <declname>loop</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run the menu. Loops until stop is called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="476" column="5" bodyfile="src/ui/widgets.cpp" bodystart="2398" bodyend="2426"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1a719927579b7e77d622f800aa8b87f6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MenuScreen::stop</definition>
+        <argsstring>(int result=0, bool stopAll=false)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>int</type>
+          <declname>result</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>stopAll</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the menu from running </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="477" column="6" bodyfile="src/ui/widgets.cpp" bodystart="2431" bodyend="2462"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1a5139e23e28b1328e1001f02e0dd93e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MenuScreen::addLogicCallback</definition>
+        <argsstring>(LuaActionListener *listener)</argsstring>
+        <name>addLogicCallback</name>
+        <param>
+          <type><ref refid="classLuaActionListener" kindref="compound">LuaActionListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="479" column="6" bodyfile="src/ui/widgets.cpp" bodystart="2464" bodyend="2467"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1aab8b9c369072c6df677863d0b599fa75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MenuScreen::draw</definition>
+        <argsstring>(gcn::Graphics *graphics)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgcn_1_1Container_1a0bc3386f5564165fcb13e9d389a96432">draw</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">gcn::Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the Widget. It is called by the parent widget when it is time for the Widget to draw itself. The graphics object is set up so that all drawing is relative to the Widget, i.e coordinate (0,0) is the top-left corner of the Widget. It is not possible to draw outside of a Widgets dimension.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a Graphics object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="480" column="14" bodyfile="src/ui/widgets.cpp" bodystart="2469" bodyend="2478"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1a622f30515f48c580a1a85602fd3fa597" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MenuScreen::logic</definition>
+        <argsstring>()</argsstring>
+        <name>logic</name>
+        <reimplements refid="classgcn_1_1Container_1ad356fee45b0cf6a85d82d021b2b0ad42">logic</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called for all Widgets in the gui each time Gui::logic is called. You can do logic stuff here like playing an animation.</para>
+<para><simplesect kind="see"><para><ref refid="widgets_8cpp_1ac2bcb85ffe66e4052a4f8ca1d0bd90c3" kindref="member">Gui</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="481" column="14" bodyfile="src/ui/widgets.cpp" bodystart="2480" bodyend="2492"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMenuScreen_1abda498917996a170c5116b5402d7a05f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuScreen::runLoop</definition>
+        <argsstring></argsstring>
+        <name>runLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="486" column="6" bodyfile="src/include/widgets.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenuScreen_1a4db46c07d024ba30d0d0b6960b4297e8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MenuScreen::loopResult</definition>
+        <argsstring></argsstring>
+        <name>loopResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="487" column="5" bodyfile="src/include/widgets.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenuScreen_1a51f7ecb06335d98ae339063e56ec9d7a" prot="private" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">gcn::Widget</ref> *</type>
+        <definition>gcn::Widget* MenuScreen::oldtop</definition>
+        <argsstring></argsstring>
+        <name>oldtop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="488" column="13" bodyfile="src/include/widgets.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenuScreen_1a20e9e74fc4225eaab029d5db060b9f1f" prot="private" static="no" mutable="no">
+        <type><ref refid="classLuaActionListener" kindref="compound">LuaActionListener</ref> *</type>
+        <definition>LuaActionListener* MenuScreen::logiclistener</definition>
+        <argsstring></argsstring>
+        <name>logiclistener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="489" column="19" bodyfile="src/include/widgets.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenuScreen_1a70a0327189693e81e599af67603c9599" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuScreen::drawUnder</definition>
+        <argsstring></argsstring>
+        <name>drawUnder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="490" column="6" bodyfile="src/include/widgets.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMenuScreen_1ab8872a3eb28dfd106291a7819c8269a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MenuScreen::stopAll</definition>
+        <argsstring>(int result=0)</argsstring>
+        <name>stopAll</name>
+        <param>
+          <type>int</type>
+          <declname>result</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="478" column="6" bodyfile="src/include/widgets.h" bodystart="478" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1a594234fd29d2ddc6d4678b569ddecaa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MenuScreen::setDrawMenusUnder</definition>
+        <argsstring>(bool drawUnder)</argsstring>
+        <name>setDrawMenusUnder</name>
+        <param>
+          <type>bool</type>
+          <declname>drawUnder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="482" column="6" bodyfile="src/include/widgets.h" bodystart="482" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuScreen_1abae165a7d791dde2b85b4283b181323b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MenuScreen::getDrawMenusUnder</definition>
+        <argsstring>() const</argsstring>
+        <name>getDrawMenusUnder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/widgets.h" line="483" column="6" bodyfile="src/include/widgets.h" bodystart="483" bodyend="483"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MenuScreen</label>
+        <link refid="classMenuScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::Container</label>
+        <link refid="classgcn_1_1Container"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+      </node>
+      <node id="3">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MenuScreen</label>
+        <link refid="classMenuScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::Container</label>
+        <link refid="classgcn_1_1Container"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mWidgetWithMouse</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="8">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="10">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="3">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/widgets.h" line="472" column="1" bodyfile="src/include/widgets.h" bodystart="471" bodyend="491"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1Container_1af9e05104741839e36bf9ed4e4ca25d1c" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_announceDeath</name></member>
+      <member refid="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_getFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_keyInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_mouseInMessage</name></member>
+      <member refid="classgcn_1_1Container_1a385f626093c5dac59c931e1e0bd45cec" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_mouseInputMessage</name></member>
+      <member refid="classgcn_1_1Container_1a2abd7f187152c16d9958e167f45dc0ad" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_mouseOutMessage</name></member>
+      <member refid="classgcn_1_1Container_1aa766b9bc28e073cca8f6a21691b814c5" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_setFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" virt="virtual"><scope>MenuScreen</scope><name>_setParent</name></member>
+      <member refid="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>ActionListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>ActionListenerList</name></member>
+      <member refid="classgcn_1_1Container_1a183a60d39fc503b7e37c71491105f766" prot="public" virt="virtual"><scope>MenuScreen</scope><name>add</name></member>
+      <member refid="classgcn_1_1Container_1aa78a475e596e8261d4187ef58338e5ab" prot="public" virt="virtual"><scope>MenuScreen</scope><name>add</name></member>
+      <member refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" virt="virtual"><scope>MenuScreen</scope><name>addActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" virt="virtual"><scope>MenuScreen</scope><name>addKeyListener</name></member>
+      <member refid="classMenuScreen_1a5139e23e28b1328e1001f02e0dd93e02" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>addLogicCallback</name></member>
+      <member refid="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" virt="virtual"><scope>MenuScreen</scope><name>addMouseListener</name></member>
+      <member refid="classgcn_1_1Container_1a561436ebcebc3419545a4db3397c6686" prot="public" virt="virtual"><scope>MenuScreen</scope><name>clear</name></member>
+      <member refid="classgcn_1_1Container_1a9b7bc2cf017eb3ed6a855688cf57322a" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>Container</name></member>
+      <member refid="classMenuScreen_1aab8b9c369072c6df677863d0b599fa75" prot="public" virt="virtual"><scope>MenuScreen</scope><name>draw</name></member>
+      <member refid="classgcn_1_1Container_1a0bb6aecc841e06a887f32905b561180b" prot="public" virt="virtual"><scope>MenuScreen</scope><name>drawBorder</name></member>
+      <member refid="classgcn_1_1Container_1a92ad366721df725feae94bd2ea96f0db" prot="protected" virt="virtual"><scope>MenuScreen</scope><name>drawChildren</name></member>
+      <member refid="classMenuScreen_1a70a0327189693e81e599af67603c9599" prot="private" virt="non-virtual"><scope>MenuScreen</scope><name>drawUnder</name></member>
+      <member refid="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" virt="virtual"><scope>MenuScreen</scope><name>fontChanged</name></member>
+      <member refid="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>generateAction</name></member>
+      <member refid="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getAbsolutePosition</name></member>
+      <member refid="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getDimension</name></member>
+      <member refid="classgcn_1_1Container_1a18f7c64051e8ca87741f0073ed2589a9" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getDisabledColor</name></member>
+      <member refid="classMenuScreen_1abae165a7d791dde2b85b4283b181323b" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>getDrawMenusUnder</name></member>
+      <member refid="classgcn_1_1Container_1a8bae868a1a22772aafbfe11fa3cb4ceb" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getDrawSize</name></member>
+      <member refid="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>getFont</name></member>
+      <member refid="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getParent</name></member>
+      <member refid="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getX</name></member>
+      <member refid="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" virt="virtual"><scope>MenuScreen</scope><name>getY</name></member>
+      <member refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" virt="virtual"><scope>MenuScreen</scope><name>gotFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" virt="virtual"><scope>MenuScreen</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" virt="virtual"><scope>MenuScreen</scope><name>hasModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" virt="virtual"><scope>MenuScreen</scope><name>hasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" virt="virtual"><scope>MenuScreen</scope><name>hotKeyPress</name></member>
+      <member refid="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" virt="virtual"><scope>MenuScreen</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isFocusable</name></member>
+      <member refid="classgcn_1_1Container_1a50af7a68b184bb85ab8cc19d0e7e7d1a" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isOpaque</name></member>
+      <member refid="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" virt="virtual"><scope>MenuScreen</scope><name>isVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>KeyListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>KeyListenerList</name></member>
+      <member refid="classMenuScreen_1a622f30515f48c580a1a85602fd3fa597" prot="public" virt="virtual"><scope>MenuScreen</scope><name>logic</name></member>
+      <member refid="classgcn_1_1Container_1aa7ee95d59804a8cd1061fc9a02881cd6" prot="protected" virt="virtual"><scope>MenuScreen</scope><name>logicChildren</name></member>
+      <member refid="classMenuScreen_1a20e9e74fc4225eaab029d5db060b9f1f" prot="private" virt="non-virtual"><scope>MenuScreen</scope><name>logiclistener</name></member>
+      <member refid="classMenuScreen_1a4db46c07d024ba30d0d0b6960b4297e8" prot="private" virt="non-virtual"><scope>MenuScreen</scope><name>loopResult</name></member>
+      <member refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" virt="virtual"><scope>MenuScreen</scope><name>lostFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mActionListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mClickButton</name></member>
+      <member refid="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mClickCount</name></member>
+      <member refid="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mClickTimeStamp</name></member>
+      <member refid="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mCurrentFont</name></member>
+      <member refid="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mDefaultFont</name></member>
+      <member refid="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mDimension</name></member>
+      <member refid="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mEnabled</name></member>
+      <member refid="classMenuScreen_1a682d70c15714206041c985386e479607" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>MenuScreen</name></member>
+      <member refid="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mHasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mKeyListeners</name></member>
+      <member refid="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mMouseListeners</name></member>
+      <member refid="classgcn_1_1Container_1a4fd62e01a8196c69c83e751af45a5ade" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mOpaque</name></member>
+      <member refid="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>MouseListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>MouseListenerList</name></member>
+      <member refid="classgcn_1_1Container_1a683b712183b2d03fd8e71f6dc6024dd4" prot="public" virt="virtual"><scope>MenuScreen</scope><name>moveToBottom</name></member>
+      <member refid="classgcn_1_1Container_1ad33497add7cfea2d28b5094a1f0644b3" prot="public" virt="virtual"><scope>MenuScreen</scope><name>moveToTop</name></member>
+      <member refid="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mParent</name></member>
+      <member refid="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mTabIn</name></member>
+      <member refid="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mTabOut</name></member>
+      <member refid="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mVisible</name></member>
+      <member refid="classgcn_1_1Container_1a326cf0209b0aa2ca5972cb616cbb9e3f" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1Container_1a2dbec2b2a55e3bc91c434eee3a2cc33c" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>mWidgetWithMouse</name></member>
+      <member refid="classMenuScreen_1a51f7ecb06335d98ae339063e56ec9d7a" prot="private" virt="non-virtual"><scope>MenuScreen</scope><name>oldtop</name></member>
+      <member refid="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" virt="virtual"><scope>MenuScreen</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1Container_1a6ed5e946da5112c8b86d708c9000274e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>remove</name></member>
+      <member refid="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" virt="virtual"><scope>MenuScreen</scope><name>removeActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" virt="virtual"><scope>MenuScreen</scope><name>removeKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" virt="virtual"><scope>MenuScreen</scope><name>removeMouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" virt="virtual"><scope>MenuScreen</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" virt="virtual"><scope>MenuScreen</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" virt="virtual"><scope>MenuScreen</scope><name>requestMoveToBottom</name></member>
+      <member refid="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" virt="virtual"><scope>MenuScreen</scope><name>requestMoveToTop</name></member>
+      <member refid="classMenuScreen_1a936642989b96aee8871e4b14ce96a488" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>run</name></member>
+      <member refid="classMenuScreen_1abda498917996a170c5116b5402d7a05f" prot="private" virt="non-virtual"><scope>MenuScreen</scope><name>runLoop</name></member>
+      <member refid="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setDimension</name></member>
+      <member refid="classgcn_1_1Container_1a4cadcc0b536cde72189076a40871f53e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setDirty</name></member>
+      <member refid="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setDisabledColor</name></member>
+      <member refid="classMenuScreen_1a594234fd29d2ddc6d4678b569ddecaa7" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>setDrawMenusUnder</name></member>
+      <member refid="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setFont</name></member>
+      <member refid="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>setGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setHeight</name></member>
+      <member refid="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Container_1ae98ebff48adcfc7f95ac44b28864f36a" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setOpaque</name></member>
+      <member refid="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setPosition</name></member>
+      <member refid="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setSize</name></member>
+      <member refid="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setX</name></member>
+      <member refid="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" virt="virtual"><scope>MenuScreen</scope><name>setY</name></member>
+      <member refid="classMenuScreen_1a719927579b7e77d622f800aa8b87f6e0" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>stop</name></member>
+      <member refid="classMenuScreen_1ab8872a3eb28dfd106291a7819c8269a8" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>stopAll</name></member>
+      <member refid="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>Widget</name></member>
+      <member refid="classgcn_1_1Container_1a4392deeaab0c62f8fb9b9df8713f86e9" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>WidgetConstIterator</name></member>
+      <member refid="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" virt="non-virtual"><scope>MenuScreen</scope><name>widgetExists</name></member>
+      <member refid="classgcn_1_1Container_1a9a9399b78adf0b44bc14cc4cb310eb70" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>WidgetIterator</name></member>
+      <member refid="classgcn_1_1Container_1a75ee53d3fedce305ac38ad1bc27dcb4b" prot="protected" virt="non-virtual"><scope>MenuScreen</scope><name>WidgetList</name></member>
+      <member refid="classgcn_1_1BasicContainer_1a8b8486a14daf5809da70d19603dbf607" prot="public" virt="virtual"><scope>MenuScreen</scope><name>~BasicContainer</name></member>
+      <member refid="classgcn_1_1Container_1a3384a372ea00af8cce5b88dd614a9b30" prot="public" virt="virtual"><scope>MenuScreen</scope><name>~Container</name></member>
+      <member refid="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" virt="virtual"><scope>MenuScreen</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

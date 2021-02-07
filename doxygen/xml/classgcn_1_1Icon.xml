@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1Icon" kind="class" language="C++" prot="public">
+    <compoundname>gcn::Icon</compoundname>
+    <basecompoundref refid="classgcn_1_1Widget" prot="public" virt="non-virtual">gcn::Widget</basecompoundref>
+    <derivedcompoundref refid="classImageWidget" prot="public" virt="non-virtual">ImageWidget</derivedcompoundref>
+    <includes refid="icon_8h" local="no">icon.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgcn_1_1Icon_1afeed96d96fc1f8cbe51fff7a1933dcc7" prot="private" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Image" kindref="compound">Image</ref> *</type>
+        <definition>Image* gcn::Icon::mImage</definition>
+        <argsstring></argsstring>
+        <name>mImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="90" column="15" bodyfile="src/guichan/include/guichan/widgets/icon.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Icon_1ac3b929daa2cb73c7561d5f38aace74a5" prot="private" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color gcn::Icon::mColor</definition>
+        <argsstring></argsstring>
+        <name>mColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="91" column="15" bodyfile="src/guichan/include/guichan/widgets/icon.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1Icon_1a4dcc025bfd07f33f829f020dcc3298f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gcn::Icon::Icon</definition>
+        <argsstring>(Image *image)</argsstring>
+        <name>Icon</name>
+        <param>
+          <type><ref refid="classgcn_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="classgcn_1_1Image" kindref="compound">Image</ref> to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="75" column="9" bodyfile="src/guichan/widgets/icon.cpp" bodystart="65" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Icon_1ac490339b9e1824a291a5da93581215d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Icon::draw</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgcn_1_1Widget_1acc595221d6a2d1afe1043c16dc37d212">draw</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is called by the parent widget when it is time for the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to draw itself. The graphics object is set up so that all drawing is relative to the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>, i.e coordinate (0,0) is the top-left corner of the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. It is not possible to draw outside of a Widgets dimension.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="80" column="22" bodyfile="src/guichan/widgets/icon.cpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Icon_1a1533b6c01b209ff077b9fc37af364db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Icon::drawBorder</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>drawBorder</name>
+        <reimplements refid="classgcn_1_1Widget_1a52430e9c46b6f84565af299bddb5ee80">drawBorder</reimplements>
+        <param>
+          <type><ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws a the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> border. A border is drawn around a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. The width and height of the border is therefore the Widgets height+2*bordersize. Think of a painting that has a certain size, the border surrounds the painting.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classgcn_1_1Graphics" kindref="compound">Graphics</ref> object to draw with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="82" column="22" bodyfile="src/guichan/widgets/icon.cpp" bodystart="85" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Icon_1a522f8e0cfa4d891ffb59e0fe8dc20c98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::Icon::getDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>getDirty</name>
+        <reimplements refid="classgcn_1_1Widget_1abfe807a4ba40975723b2e9e29eb9387a">getDirty</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="84" column="22" bodyfile="src/guichan/widgets/icon.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Icon_1a3420b147f83dc97bc3a5cc67691ab10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::Icon::setBaseColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>setBaseColor</name>
+        <reimplements refid="classgcn_1_1Widget_1ab6de83c5836ed0f9f33c876ba7b03941">setBaseColor</reimplements>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the base color. The base color is the background color for many Widgets like the <ref refid="classgcn_1_1Button" kindref="compound">Button</ref> and Contianer Widgets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the baseground <ref refid="classgcn_1_1Color" kindref="compound">Color</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/widgets/icon.h" line="87" column="22" bodyfile="src/guichan/widgets/icon.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An <ref refid="classgcn_1_1Icon" kindref="compound">Icon</ref> for displaying images. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ImageWidget</label>
+        <link refid="classImageWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gcn::Icon</label>
+        <link refid="classgcn_1_1Icon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="7">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="1">
+        <label>gcn::Icon</label>
+        <link refid="classgcn_1_1Icon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="5">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/guichan/include/guichan/widgets/icon.h" line="68" column="1" bodyfile="src/guichan/include/guichan/widgets/icon.h" bodystart="67" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1Widget_1a2a6ee4ee4d826fca7a437bfa105edb17" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_getFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1ad970933b9c456bb23cc598c323033fa8" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_keyInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a07df51f61e08d785c51953bdc9bc37fe" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_mouseInMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a82d4afc357dd464c4c29282e6f61e56e" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_mouseInputMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a8d9d0bf64082553da850f52214f8ae90" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_mouseOutMessage</name></member>
+      <member refid="classgcn_1_1Widget_1a6c3ec01422e51978a643ddd3ae09c26a" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_setFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1acc6f3352c0b31576d2f71f77ba9bf4e3" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>_setParent</name></member>
+      <member refid="classgcn_1_1Widget_1ac6db4657e99a2fea417f4b9f3264f270" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>ActionListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a3bee7a8c390c5b63c2122a4d0a39b02f" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>ActionListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1a2782a478efbb087830884d9f2dc8b487" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>addActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a7a7767d1da53e4d38f763bfb8b83a277" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>addKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1ad230cfe9537e09debbc34a0f2b369f02" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>addMouseListener</name></member>
+      <member refid="classgcn_1_1Icon_1ac490339b9e1824a291a5da93581215d1" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>draw</name></member>
+      <member refid="classgcn_1_1Icon_1a1533b6c01b209ff077b9fc37af364db7" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>drawBorder</name></member>
+      <member refid="classgcn_1_1Widget_1aa0456eba65ee0c565e572f626780aa9d" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>fontChanged</name></member>
+      <member refid="classgcn_1_1Widget_1a239e73f6db59e63177a3d626990aeef8" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>generateAction</name></member>
+      <member refid="classgcn_1_1Widget_1ab5c1d7a25c68bf6811f6daeeaa9d2879" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getAbsolutePosition</name></member>
+      <member refid="classgcn_1_1Widget_1a87283abe42d69421c72b12a599492b2b" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac75fb038e60c662841e4c9b32e64a72e" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a0aa78528a84a96e7adcadb16931f310e" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1aaeb58eb7f55c41824177864696a1fa4e" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getDimension</name></member>
+      <member refid="classgcn_1_1Icon_1a522f8e0cfa4d891ffb59e0fe8dc20c98" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a01c62536e9a68e67bc252e0b346e56b5" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1ac40d029c72f818743ce4b38fba9e054b" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a2f2ba6507f77f6a4cf12ebbb6f0c1b1a" prot="public" virt="non-virtual"><scope>gcn::Icon</scope><name>getFont</name></member>
+      <member refid="classgcn_1_1Widget_1affdf29f57c5da86f152fa15efa41f32e" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a54a307bb12dce1e18852370139472fbc" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getHeight</name></member>
+      <member refid="classgcn_1_1Widget_1afec217c9dd19e4571050d7d6398dc1ff" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1af123bb02ec2f6f9b4d24fcac169cc177" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getParent</name></member>
+      <member refid="classgcn_1_1Widget_1ad47153879ef75a2c1c195df21ecf1c6c" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a9202f85a411012e384bad4f84db80fed" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getX</name></member>
+      <member refid="classgcn_1_1Widget_1a44086f3c2dfd2b2b51c5590644aeef34" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>getY</name></member>
+      <member refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>gotFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a9293bb0e756b1e6dcfb365fb462f096c" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>hasModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a56b42f64d10b0f0967a0bd4aad003131" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>hasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1a51bcb585ec0951973d3681784d63eafb" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>hotKeyPress</name></member>
+      <member refid="classgcn_1_1Widget_1a894fe9d72b7f2ad14ea4f7c5ef3b6b6b" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>hotKeyRelease</name></member>
+      <member refid="classgcn_1_1Icon_1a4dcc025bfd07f33f829f020dcc3298f0" prot="public" virt="non-virtual"><scope>gcn::Icon</scope><name>Icon</name></member>
+      <member refid="classgcn_1_1Widget_1a8618a8cd96b033cb9d98ecfabb2210d5" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1Widget_1a2463d74d1f73052b2b89d291dbeab4c0" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>isEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>isFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1a4360e05e4bbac929b5faa98cbc21c4c5" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>isTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a24349bca818ee2b4cb2b6fc764728f5f" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>isTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a79ed9e1435f82e7616e575498c2aac32" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>isVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a59c5bffc39f53faf6b6a12ccb2cf648d" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>KeyListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1a377c49f1fa502e6679e8ce9fd60815d2" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>KeyListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1aeb2e4c4751ef8666f48be1638ef8a48c" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>logic</name></member>
+      <member refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>lostFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a46070594006b9af499fdab5435847c7e" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mActionListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5d9b038652feb0d0faab3f1c145f4415" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mBackgroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a6b87ca3876fc2d0afb12f30c97882abe" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1a666bc4006fcfbc1e799856d5d0437973" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1a579dacf12425c94ad8ac2d5a1775f2dd" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mClickButton</name></member>
+      <member refid="classgcn_1_1Widget_1aa969ad4999686dc590740d9f6934a7e9" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mClickCount</name></member>
+      <member refid="classgcn_1_1Widget_1a54e624cb9fa61cdc2e4a914a5d075c1f" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mClickTimeStamp</name></member>
+      <member refid="classgcn_1_1Icon_1ac3b929daa2cb73c7561d5f38aace74a5" prot="private" virt="non-virtual"><scope>gcn::Icon</scope><name>mColor</name></member>
+      <member refid="classgcn_1_1Widget_1a1f002a86256cd66540b7acc4136300c9" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mCurrentFont</name></member>
+      <member refid="classgcn_1_1Widget_1a2b372bd05738fd6f50dad64f3df5e01c" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mDefaultFont</name></member>
+      <member refid="classgcn_1_1Widget_1a3016ad26407c72fb38bbb5f91e20e28f" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mDimension</name></member>
+      <member refid="classgcn_1_1Widget_1ace0f5c77a0c82e2d19f6622608a01edf" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mDirty</name></member>
+      <member refid="classgcn_1_1Widget_1a093a7eb7ada1da818bf06d045a8f0c51" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a29fff0a9a91368abf39a359328170db4" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ac01ae6e7305d6eaeb481d834452a2d3b" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a625b8944ef6ef0961ef601332693ed56" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1aefeabbfedf983d4b698cb0cd44c10150" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mFocusHandler</name></member>
+      <member refid="classgcn_1_1Widget_1afb6394587ebeccd7e434a00ab9bc6dca" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1a83d5c34f69ffc5a63c6dd4195c0b608b" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a517170dd25eec048b5b1e959f7cd3692" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mHasMouse</name></member>
+      <member refid="classgcn_1_1Widget_1acfdd5281bb4120337ce67ff975d4a79d" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mHotKey</name></member>
+      <member refid="classgcn_1_1Icon_1afeed96d96fc1f8cbe51fff7a1933dcc7" prot="private" virt="non-virtual"><scope>gcn::Icon</scope><name>mImage</name></member>
+      <member refid="classgcn_1_1Widget_1accd6cbe913760915dd0cbdcaf7cdd6d1" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mKeyListeners</name></member>
+      <member refid="classgcn_1_1Widget_1ae0385a14ee5253e07746c7616d3f16f4" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mMouseListeners</name></member>
+      <member refid="classgcn_1_1Widget_1a5f2068555f23f6bb8b9cf9dd1ce798d2" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>MouseListenerIterator</name></member>
+      <member refid="classgcn_1_1Widget_1accc32cb3dbe120cbde27a96405cf8edf" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>MouseListenerList</name></member>
+      <member refid="classgcn_1_1Widget_1aa45201a4f20d91ebb6371bb5c5726b8b" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mParent</name></member>
+      <member refid="classgcn_1_1Widget_1af58e951b2a8c611382a3933bca0d963d" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mTabIn</name></member>
+      <member refid="classgcn_1_1Widget_1a04fd429868ebe16d7d43c569ca30eaf8" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mTabOut</name></member>
+      <member refid="classgcn_1_1Widget_1a6c337c558c1fa8cf8e5d5e2eac8d2840" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mVisible</name></member>
+      <member refid="classgcn_1_1Widget_1ad350c8bb10bc2603f545039e530dcb83" prot="protected" virt="non-virtual"><scope>gcn::Icon</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1Widget_1aeb41e73d733c308552fb1b2e9385ef4a" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a45e8f4714fdae38115f21e94ae1a7f0f" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>removeActionListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0556f95c92e7950c47b2f36f7ea729cd" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>removeKeyListener</name></member>
+      <member refid="classgcn_1_1Widget_1a4d5c2c1578da34b0e2756b08feeb239a" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>removeMouseListener</name></member>
+      <member refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a52431b05e8669a88ba86d6fd6f84e751" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1Widget_1a792e16f5f7c0b2d29517f6b863c225ac" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>requestMoveToBottom</name></member>
+      <member refid="classgcn_1_1Widget_1a35463259c6fbd12fb2cdfee0015f543c" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>requestMoveToTop</name></member>
+      <member refid="classgcn_1_1Widget_1ac5db8a5211d98851f7355057c7c084d1" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setBackgroundColor</name></member>
+      <member refid="classgcn_1_1Icon_1a3420b147f83dc97bc3a5cc67691ab10a" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setBaseColor</name></member>
+      <member refid="classgcn_1_1Widget_1af45b34bd86b86577848b496855509102" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setBorderSize</name></member>
+      <member refid="classgcn_1_1Widget_1aeb44a16f108441b1c1ddaaf238f74867" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setDimension</name></member>
+      <member refid="classgcn_1_1Widget_1a78405792027c3431ad58ccf72845bc23" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setDirty</name></member>
+      <member refid="classgcn_1_1Widget_1af74a196fef692f481fd94cd4ff7b6da1" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setDisabledColor</name></member>
+      <member refid="classgcn_1_1Widget_1a535af13ea1468a96639959a0745b2de9" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1acf20bb9f520db112aa06010cf19eaa1a" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setEventId</name></member>
+      <member refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setFocusable</name></member>
+      <member refid="classgcn_1_1Widget_1ad9bdb43fe3ae6f36d1e6bf44f5c4c107" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setFont</name></member>
+      <member refid="classgcn_1_1Widget_1a24b7b1e327848f0b61713ffca80c4539" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setForegroundColor</name></member>
+      <member refid="classgcn_1_1Widget_1aaff06ed0237955eb4f1728114ec67dd8" prot="public" virt="non-virtual"><scope>gcn::Icon</scope><name>setGlobalFont</name></member>
+      <member refid="classgcn_1_1Widget_1a4b9f7a625e9761982898c407772bf10b" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setHeight</name></member>
+      <member refid="classgcn_1_1Widget_1a6441cac867642bca7054c259bdaea8a8" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a3454a6dfc8ea658f54614a930dec7a69" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setHotKey</name></member>
+      <member refid="classgcn_1_1Widget_1a88218252e36b9275a36d9f0782333549" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setPosition</name></member>
+      <member refid="classgcn_1_1Widget_1afd331b363b4e9da4b28a3032f1ded1a6" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setSize</name></member>
+      <member refid="classgcn_1_1Widget_1a5f20c75619157b6d5397802e6c9e8fed" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setTabInEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1a6e86977ba1b7aa095db85735fd373b26" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setTabOutEnabled</name></member>
+      <member refid="classgcn_1_1Widget_1ad2c98a426131f20ab6cf3303ec34f77e" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setVisible</name></member>
+      <member refid="classgcn_1_1Widget_1a02d38ab0aa03b4feb47be6ab458108dc" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setWidth</name></member>
+      <member refid="classgcn_1_1Widget_1a1b1fd7383af9c23d51d795f3a1fc0797" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setX</name></member>
+      <member refid="classgcn_1_1Widget_1a9f767637f580d5251f34cdcd4a4f64b8" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>setY</name></member>
+      <member refid="classgcn_1_1Widget_1aa0bca79afea27b0d8785b3546608a064" prot="public" virt="non-virtual"><scope>gcn::Icon</scope><name>Widget</name></member>
+      <member refid="classgcn_1_1Widget_1ab87752241d6625718630af560b0fa7a6" prot="public" virt="non-virtual"><scope>gcn::Icon</scope><name>widgetExists</name></member>
+      <member refid="classgcn_1_1Widget_1adab4c5e2acbc513d87c15cd2a0d821c6" prot="public" virt="virtual"><scope>gcn::Icon</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

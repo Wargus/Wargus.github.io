@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSpellActionMissileLocation" kind="class" language="C++" prot="public">
+    <compoundname>SpellActionMissileLocation</compoundname>
+    <includes refid="spell__spawnmissile_8h" local="no">spell_spawnmissile.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSpellActionMissileLocation_1a8de4bb86767b352c7ea5c27745e967e9" prot="public" static="no" mutable="no">
+        <type><ref refid="spell__spawnmissile_8h_1a7c7e25af7893c5502f6e8b3452730713" kindref="member">LocBaseType</ref></type>
+        <definition>LocBaseType SpellActionMissileLocation::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="61" column="13" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellActionMissileLocation_1a04131d777f4d497d62055fbcaae8cd91" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellActionMissileLocation::AddX</definition>
+        <argsstring></argsstring>
+        <name>AddX</name>
+        <briefdescription>
+<para>The base for the location (caster/target) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="62" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellActionMissileLocation_1adbc04abe693f9681538e93caf55ba124" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellActionMissileLocation::AddY</definition>
+        <argsstring></argsstring>
+        <name>AddY</name>
+        <briefdescription>
+<para>Add to the X coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="63" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellActionMissileLocation_1aa8b18a202926afd26af133db5e96da78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellActionMissileLocation::AddRandX</definition>
+        <argsstring></argsstring>
+        <name>AddRandX</name>
+        <briefdescription>
+<para>Add to the X coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="64" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpellActionMissileLocation_1af437b00a33b5e6e6cb6fa6814114e529" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpellActionMissileLocation::AddRandY</definition>
+        <argsstring></argsstring>
+        <name>AddRandY</name>
+        <briefdescription>
+<para>Random add to the X coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="65" column="5" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpellActionMissileLocation_1ada94d85dfef77b50151e1647e2f3a517" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SpellActionMissileLocation::SpellActionMissileLocation</definition>
+        <argsstring>(LocBaseType base)</argsstring>
+        <name>SpellActionMissileLocation</name>
+        <param>
+          <type><ref refid="spell__spawnmissile_8h_1a7c7e25af7893c5502f6e8b3452730713" kindref="member">LocBaseType</ref></type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/spell/spell_spawnmissile.h" line="58" column="1" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="58" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is used for defining a missile start/stop location.</para>
+<para>It&apos;s evaluated like this, and should be more or less flexible.: base coordinates(caster or target) + (AddX,AddY) + (rand()AddRandX,rand()AddRandY) </para>
+    </detaileddescription>
+    <location file="src/include/spell/spell_spawnmissile.h" line="56" column="1" bodyfile="src/include/spell/spell_spawnmissile.h" bodystart="55" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classSpellActionMissileLocation_1aa8b18a202926afd26af133db5e96da78" prot="public" virt="non-virtual"><scope>SpellActionMissileLocation</scope><name>AddRandX</name></member>
+      <member refid="classSpellActionMissileLocation_1af437b00a33b5e6e6cb6fa6814114e529" prot="public" virt="non-virtual"><scope>SpellActionMissileLocation</scope><name>AddRandY</name></member>
+      <member refid="classSpellActionMissileLocation_1a04131d777f4d497d62055fbcaae8cd91" prot="public" virt="non-virtual"><scope>SpellActionMissileLocation</scope><name>AddX</name></member>
+      <member refid="classSpellActionMissileLocation_1adbc04abe693f9681538e93caf55ba124" prot="public" virt="non-virtual"><scope>SpellActionMissileLocation</scope><name>AddY</name></member>
+      <member refid="classSpellActionMissileLocation_1a8de4bb86767b352c7ea5c27745e967e9" prot="public" virt="non-virtual"><scope>SpellActionMissileLocation</scope><name>Base</name></member>
+      <member refid="classSpellActionMissileLocation_1ada94d85dfef77b50151e1647e2f3a517" prot="public" virt="non-virtual"><scope>SpellActionMissileLocation</scope><name>SpellActionMissileLocation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

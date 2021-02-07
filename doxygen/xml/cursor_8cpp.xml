@@ -1,0 +1,1300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="cursor_8cpp" kind="file" language="C++">
+    <compoundname>cursor.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="cursor_8h" local="yes">cursor.h</includes>
+    <includes refid="intern__video_8h" local="yes">intern_video.h</includes>
+    <includes refid="editor_8h" local="yes">editor.h</includes>
+    <includes refid="interface_8h" local="yes">interface.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="settings_8h" local="yes">settings.h</includes>
+    <includes refid="tileset_8h" local="yes">tileset.h</includes>
+    <includes refid="translate_8h" local="yes">translate.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="video_8h" local="yes">video.h</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="59">
+        <label>list</label>
+      </node>
+      <node id="18">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>intern_video.h</label>
+        <link refid="intern__video_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>guichan/widgets/label.h</label>
+        <link refid="label_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>editor.h</label>
+        <link refid="editor_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>guichan/widgets/textfield.h</label>
+        <link refid="textfield_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>guichan/widgets/textbox.h</label>
+        <link refid="textbox_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>guichan/font.h</label>
+        <link refid="guichan_2include_2guichan_2font_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>translate.h</label>
+        <link refid="translate_8h"/>
+      </node>
+      <node id="12">
+        <label>SDL.h</label>
+      </node>
+      <node id="36">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>guichan/exception.h</label>
+        <link refid="exception_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>lua.h</label>
+      </node>
+      <node id="24">
+        <label>stdint.h</label>
+      </node>
+      <node id="75">
+        <label>guichan/widgets/dropdown.h</label>
+        <link refid="dropdown_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>guichan/widgets/window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="25">
+        <label>settings.h</label>
+        <link refid="settings_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>guichan/widgets/icon.h</label>
+        <link refid="icon_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>guichan/imagefont.h</label>
+        <link refid="imagefont_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>guichan/platform.h</label>
+        <link refid="platform_8h"/>
+      </node>
+      <node id="33">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="37">
+        <label>map</label>
+      </node>
+      <node id="60">
+        <label>guichan/defaultfont.h</label>
+        <link refid="defaultfont_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>guichan.h</label>
+        <link refid="guichan_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>guichan/widgets/scrollarea.h</label>
+        <link refid="scrollarea_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>guichan/rectangle.h</label>
+        <link refid="rectangle_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>guichan/imageloader.h</label>
+        <link refid="imageloader_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>guichan/mouseinput.h</label>
+        <link refid="mouseinput_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>guichan/mouselistener.h</label>
+        <link refid="mouselistener_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>libmng.h</label>
+      </node>
+      <node id="21">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>guichan/widgets/checkbox.h</label>
+        <link refid="checkbox_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>guichan/listmodel.h</label>
+        <link refid="listmodel_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="51">
+        <label>guichan/cliprectangle.h</label>
+        <link refid="cliprectangle_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>guichan/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>ctime</label>
+      </node>
+      <node id="57">
+        <label>guichan/focushandler.h</label>
+        <link refid="focushandler_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>guichan/key.h</label>
+        <link refid="key_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>guichan/input.h</label>
+        <link refid="input_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>guichan/color.h</label>
+        <link refid="guichan_2include_2guichan_2color_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>stack</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+      <node id="74">
+        <label>guichan/basiccontainer.h</label>
+        <link refid="basiccontainer_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>guichan/gui.h</label>
+        <link refid="gui_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>guichan/widgets/slider.h</label>
+        <link refid="slider_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>guichan/keyinput.h</label>
+        <link refid="keyinput_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>guichan/widgets/radiobutton.h</label>
+        <link refid="radiobutton_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="1">
+        <label>src/video/cursor.cpp</label>
+        <link refid="cursor_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>climits</label>
+      </node>
+      <node id="19">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>shaders.h</label>
+        <link refid="shaders_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>guichan/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>guichan/widgets/button.h</label>
+        <link refid="button_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="64">
+        <label>guichan/keylistener.h</label>
+        <link refid="keylistener_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>guichan/widgets/container.h</label>
+        <link refid="container_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>set</label>
+      </node>
+      <node id="58">
+        <label>guichan/widget.h</label>
+        <link refid="widget_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="9">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>guichan/widgets/listbox.h</label>
+        <link refid="listbox_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>guichan/actionlistener.h</label>
+        <link refid="actionlistener_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>cursor.cpp - The cursors.</header>
+      <memberdef kind="variable" id="cursor_8cpp_1aa33468d8021725c8907b637601cca63f" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="classCCursor" kindref="compound">CCursor</ref> * &gt;</type>
+        <definition>std::vector&lt;CCursor *&gt; AllCursors</definition>
+        <argsstring></argsstring>
+        <name>AllCursors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define cursor-types.</para>
+<para><xrefsect id="todo_1_todo000122"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: Should this be move to ui part? </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="64" column="20" bodyfile="src/video/cursor.cpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1aac3882941e0d183e0e0364a469f2075b" prot="public" static="no" mutable="no">
+        <type><ref refid="cursor_8h_1aa3991d494b318a914ac40dcaa18a49d4" kindref="member">CursorStates</ref></type>
+        <definition>CursorStates CursorState</definition>
+        <argsstring></argsstring>
+        <name>CursorState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="66" column="14" bodyfile="src/video/cursor.cpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1a5f183bc2349f051161eb557c91567d04" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CursorAction</definition>
+        <argsstring></argsstring>
+        <name>CursorAction</name>
+        <briefdescription>
+<para>current cursor state (point,...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="67" column="5" bodyfile="src/video/cursor.cpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1a401968b3b88f8deed4035b59aa47123c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CursorValue</definition>
+        <argsstring></argsstring>
+        <name>CursorValue</name>
+        <briefdescription>
+<para>action for selection </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="68" column="5" bodyfile="src/video/cursor.cpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1ad688298e2576089389412ef14247f66b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CustomCursor</definition>
+        <argsstring></argsstring>
+        <name>CustomCursor</name>
+        <briefdescription>
+<para>value for CursorAction (spell type f.e.) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>building cursor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="69" column="13" bodyfile="src/video/cursor.cpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1a5f19f5babf5f5dff6d8caea990a8d003" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CursorScreenPos</definition>
+        <argsstring></argsstring>
+        <name>CursorScreenPos</name>
+        <briefdescription>
+<para>custom cursor for button </para>
+        </briefdescription>
+        <detaileddescription>
+<para>cursor-type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="72" column="10" bodyfile="src/video/cursor.cpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1ad14298f58aab223244cf519b5ef55700" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CursorStartScreenPos</definition>
+        <argsstring></argsstring>
+        <name>CursorStartScreenPos</name>
+        <briefdescription>
+<para>cursor position on screen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="73" column="10" bodyfile="src/video/cursor.cpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1aacf144fc0a5f1b0275838470077c6ee1" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CursorStartMapPos</definition>
+        <argsstring></argsstring>
+        <name>CursorStartMapPos</name>
+        <briefdescription>
+<para>rectangle started on screen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="74" column="10" bodyfile="src/video/cursor.cpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1ae12f5fe600719b858493c8fd3da3c5b1" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+        <definition>CUnitType* CursorBuilding</definition>
+        <argsstring></argsstring>
+        <name>CursorBuilding</name>
+        <briefdescription>
+<para>position of starting point of selection rectangle, in Map pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>value for action (spell type f.e.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="78" column="11" bodyfile="src/video/cursor.cpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1aec600e7dcc4d1832736511522cdf1463" prot="public" static="no" mutable="no">
+        <type><ref refid="classCCursor" kindref="compound">CCursor</ref> *</type>
+        <definition>CCursor* GameCursor</definition>
+        <argsstring></argsstring>
+        <name>GameCursor</name>
+        <briefdescription>
+<para>building cursor </para>
+        </briefdescription>
+        <detaileddescription>
+<para>custom cursor for button </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="82" column="9" bodyfile="src/video/cursor.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cursor_8cpp_1ad561a275c337836c2c64abe00052fefa" prot="public" static="yes" mutable="no">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface* HiddenSurface</definition>
+        <argsstring></argsstring>
+        <name>HiddenSurface</name>
+        <briefdescription>
+<para>current shown cursor-type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="84" column="20" bodyfile="src/video/cursor.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a0a8506ce306841ba1dd023cf428a2ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LoadCursors</definition>
+        <argsstring>(const std::string &amp;race)</argsstring>
+        <name>LoadCursors</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>race</declname>
+        </param>
+        <briefdescription>
+<para>the same in screen map coordinate system </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load all cursor sprites.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>race</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cursor graphics of this race to load. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="94" column="6" bodyfile="src/video/cursor.cpp" bodystart="94" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a83a9fa479655735823b9666d68844b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCCursor" kindref="compound">CCursor</ref> *</type>
+        <definition>CCursor* CursorByIdent</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>CursorByIdent</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Cursor by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the cursor of this identifier.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the cursor (from config files).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the matching cursor.</para>
+</simplesect>
+<simplesect kind="note"><para>If we have more cursors, we should add hash to find them faster. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="120" column="9" bodyfile="src/video/cursor.cpp" bodystart="120" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a49cd8886ac02117a88ff40fe184e8e35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawVisibleRectangleCursor</definition>
+        <argsstring>(PixelPos corner1, PixelPos corner2)</argsstring>
+        <name>DrawVisibleRectangleCursor</name>
+        <param>
+          <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+          <declname>corner1</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+          <declname>corner2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw rectangle cursor when visible</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Screen start position of rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Screen end position of rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="142" column="13" bodyfile="src/video/cursor.cpp" bodystart="142" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a1fae951879b4ac151c3e56313779e2ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void DrawBuildingCursor</definition>
+        <argsstring>()</argsstring>
+        <name>DrawBuildingCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw cursor for selecting building position. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="165" column="13" bodyfile="src/video/cursor.cpp" bodystart="165" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1aefaa224eec6da2518fee018ac1436798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void DrawCursor</definition>
+        <argsstring>()</argsstring>
+        <name>DrawCursor</name>
+        <briefdescription>
+<para>Draw any cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the cursor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="244" column="6" bodyfile="src/video/cursor.cpp" bodystart="244" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a1172240abf663fb03e487e7760df719e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void HideCursor</definition>
+        <argsstring>()</argsstring>
+        <name>HideCursor</name>
+        <briefdescription>
+<para>Hide the cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Hide the cursor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="296" column="6" bodyfile="src/video/cursor.cpp" bodystart="296" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1ac2d19d0ca6e21b9a11c833de6148ffd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CursorAnimate</definition>
+        <argsstring>(unsigned ticks)</argsstring>
+        <name>CursorAnimate</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+<para>Animate the cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Animate the cursor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ticks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current tick </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="310" column="6" bodyfile="src/video/cursor.cpp" bodystart="310" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1aed9a8e6cd75eaf9e1794c6b766603d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitVideoCursors</definition>
+        <argsstring>()</argsstring>
+        <name>InitVideoCursors</name>
+        <briefdescription>
+<para>Initialize the cursor module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the cursor part. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="329" column="6" bodyfile="src/video/cursor.cpp" bodystart="329" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a3f356d11cbb23f36aac904ac8b74b0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanCursors</definition>
+        <argsstring>()</argsstring>
+        <name>CleanCursors</name>
+        <briefdescription>
+<para>Cleanup the cursor module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleanup cursor module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="336" column="6" bodyfile="src/video/cursor.cpp" bodystart="336" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1ab8ed3bc534618b4bbf456594db8e117b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclDefineCursor</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclDefineCursor</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define a cursor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="354" column="12" bodyfile="src/video/cursor.cpp" bodystart="354" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a7ced366a27ae2efd2251d0daa77ad8b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CclSetGameCursor</definition>
+        <argsstring>(lua_State *l)</argsstring>
+        <name>CclSetGameCursor</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current game cursor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lua state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="431" column="12" bodyfile="src/video/cursor.cpp" bodystart="431" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="cursor_8cpp_1a9eaa7d2a56109774e57eec63b3c8dc40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CursorCclRegister</definition>
+        <argsstring>()</argsstring>
+        <name>CursorCclRegister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/video/cursor.cpp" line="438" column="6" bodyfile="src/video/cursor.cpp" bodystart="438" bodyend="442"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/video/cursor.cpp"/>
+  </compounddef>
+</doxygen>

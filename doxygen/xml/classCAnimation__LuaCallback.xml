@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCAnimation__LuaCallback" kind="class" language="C++" prot="public">
+    <compoundname>CAnimation_LuaCallback</compoundname>
+    <basecompoundref refid="classCAnimation" prot="public" virt="non-virtual">CAnimation</basecompoundref>
+    <includes refid="animation__luacallback_8h" local="no">animation_luacallback.h</includes>
+      <sectiondef kind="user-defined">
+      <header>animation_luacallback.cpp - The animation LuaCallback.</header>
+      <memberdef kind="function" id="classCAnimation__LuaCallback_1ab76284cf44e9295b8def2c79f6a232a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CAnimation_LuaCallback::Action</definition>
+        <argsstring>(CUnit &amp;unit, int &amp;move, int scale) const</argsstring>
+        <name>Action</name>
+        <reimplements refid="classCAnimation_1a1a7d1a4551b63a7af3661d8e4f8b19d6">Action</reimplements>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>move</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="46" column="14" bodyfile="src/animation/animation_luacallback.cpp" bodystart="44" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCAnimation__LuaCallback_1ac29abfd78e55916ebc454f08b857a9a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CAnimation_LuaCallback::Init</definition>
+        <argsstring>(const char *s, lua_State *l)</argsstring>
+        <name>Init</name>
+        <reimplements refid="classCAnimation_1a6800d6c9131a5f174ee8b4b67d329e0a">Init</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="47" column="14" bodyfile="src/animation/animation_luacallback.cpp" bodystart="62" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCAnimation__LuaCallback_1ac0eeb44a498855b938ae6836a0036270" prot="private" static="no" mutable="no">
+        <type><ref refid="classLuaCallback" kindref="compound">LuaCallback</ref> *</type>
+        <definition>LuaCallback* CAnimation_LuaCallback::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="50" column="13" bodyfile="src/include/animation/animation_luacallback.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimation__LuaCallback_1a38066ace5718bac549fde4f9ffba9c51" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CAnimation_LuaCallback::cbName</definition>
+        <argsstring></argsstring>
+        <name>cbName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="51" column="13" bodyfile="src/include/animation/animation_luacallback.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCAnimation__LuaCallback_1a8c93d2faeb8a00d9b32f0d5ee6008737" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; CAnimation_LuaCallback::cbArgs</definition>
+        <argsstring></argsstring>
+        <name>cbArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="52" column="13" bodyfile="src/include/animation/animation_luacallback.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCAnimation__LuaCallback_1a0311f6a241939925da06ea302caa69d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CAnimation_LuaCallback::CAnimation_LuaCallback</definition>
+        <argsstring>()</argsstring>
+        <name>CAnimation_LuaCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="43" column="1" bodyfile="src/include/animation/animation_luacallback.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCAnimation__LuaCallback_1a4d86ec53643589f0379cee94fcc969ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CAnimation_LuaCallback::~CAnimation_LuaCallback</definition>
+        <argsstring>()</argsstring>
+        <name>~CAnimation_LuaCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/animation/animation_luacallback.h" line="44" column="1" bodyfile="src/include/animation/animation_luacallback.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CAnimation</label>
+        <link refid="classCAnimation"/>
+      </node>
+      <node id="1">
+        <label>CAnimation_LuaCallback</label>
+        <link refid="classCAnimation__LuaCallback"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CAnimation</label>
+        <link refid="classCAnimation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CAnimation_LuaCallback</label>
+        <link refid="classCAnimation__LuaCallback"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/animation/animation_luacallback.h" line="41" column="1" bodyfile="src/include/animation/animation_luacallback.h" bodystart="40" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classCAnimation__LuaCallback_1ab76284cf44e9295b8def2c79f6a232a7" prot="public" virt="virtual"><scope>CAnimation_LuaCallback</scope><name>Action</name></member>
+      <member refid="classCAnimation_1a9fe363316c9d412c23c08d19c310acb0" prot="public" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>CAnimation</name></member>
+      <member refid="classCAnimation__LuaCallback_1a0311f6a241939925da06ea302caa69d3" prot="public" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>CAnimation_LuaCallback</name></member>
+      <member refid="classCAnimation__LuaCallback_1ac0eeb44a498855b938ae6836a0036270" prot="private" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>cb</name></member>
+      <member refid="classCAnimation__LuaCallback_1a8c93d2faeb8a00d9b32f0d5ee6008737" prot="private" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>cbArgs</name></member>
+      <member refid="classCAnimation__LuaCallback_1a38066ace5718bac549fde4f9ffba9c51" prot="private" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>cbName</name></member>
+      <member refid="classCAnimation__LuaCallback_1ac29abfd78e55916ebc454f08b857a9a8" prot="public" virt="virtual"><scope>CAnimation_LuaCallback</scope><name>Init</name></member>
+      <member refid="classCAnimation_1a89a983299033c2f4e4db56a0f69fd792" prot="public" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>Next</name></member>
+      <member refid="classCAnimation_1ad0c834c31f2dbc37bd2a246fcac9468a" prot="public" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>Type</name></member>
+      <member refid="classCAnimation_1a79701e2167f48546e43c861c5f657157" prot="public" virt="virtual"><scope>CAnimation_LuaCallback</scope><name>~CAnimation</name></member>
+      <member refid="classCAnimation__LuaCallback_1a4d86ec53643589f0379cee94fcc969ad" prot="public" virt="non-virtual"><scope>CAnimation_LuaCallback</scope><name>~CAnimation_LuaCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

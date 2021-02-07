@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1FocusHandler" kind="class" language="C++" prot="public">
+    <compoundname>gcn::FocusHandler</compoundname>
+    <includes refid="focushandler_8h" local="no">focushandler.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classgcn_1_1FocusHandler_1a20ff6c5e72975b6b252cb737b6d99588" prot="protected" static="no">
+        <type>std::vector&lt; <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> * &gt;</type>
+        <definition>typedef std::vector&lt;Widget*&gt; gcn::FocusHandler::WidgetVector</definition>
+        <argsstring></argsstring>
+        <name>WidgetVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="232" column="29" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgcn_1_1FocusHandler_1a61660bed6c7be129920c3446d3e82eed" prot="protected" static="no">
+        <type>WidgetVector::iterator</type>
+        <definition>typedef WidgetVector::iterator gcn::FocusHandler::WidgetIterator</definition>
+        <argsstring></argsstring>
+        <name>WidgetIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="233" column="40" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgcn_1_1FocusHandler_1ab34311db8ffe87cf9ae10e94d84ccb03" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1FocusHandler_1a20ff6c5e72975b6b252cb737b6d99588" kindref="member">WidgetVector</ref></type>
+        <definition>WidgetVector gcn::FocusHandler::mWidgets</definition>
+        <argsstring></argsstring>
+        <name>mWidgets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="234" column="22" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1FocusHandler_1ae5a9d82ff3e401ee77a06e2f5b980931" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* gcn::FocusHandler::mFocusedWidget</definition>
+        <argsstring></argsstring>
+        <name>mFocusedWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="236" column="16" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1FocusHandler_1a2ba902b2089e045d673e92d58feacaea" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* gcn::FocusHandler::mDraggedWidget</definition>
+        <argsstring></argsstring>
+        <name>mDraggedWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="237" column="16" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1FocusHandler_1a98bb8427d5a7c93ba3a0f28a7fdc1c7b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* gcn::FocusHandler::mToBeFocused</definition>
+        <argsstring></argsstring>
+        <name>mToBeFocused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="238" column="16" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1FocusHandler_1a56ad83a3cacf4889280c662a080adbb5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* gcn::FocusHandler::mToBeDragged</definition>
+        <argsstring></argsstring>
+        <name>mToBeDragged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="239" column="16" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1FocusHandler_1a1c77d27feb506c048e0732fa29375599" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* gcn::FocusHandler::mModalFocusedWidget</definition>
+        <argsstring></argsstring>
+        <name>mModalFocusedWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="240" column="16" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a41eeb97436bdf9931d4d3207f451f749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gcn::FocusHandler::FocusHandler</definition>
+        <argsstring>()</argsstring>
+        <name>FocusHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="87" column="9" bodyfile="src/guichan/focushandler.cpp" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a968758e15ea32627a5d464b749772e3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual gcn::FocusHandler::~FocusHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~FocusHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="92" column="17" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a34338442a14a395d15b43aabcc6f8139" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::requestFocus</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>requestFocus</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets focus to a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. <ref refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" kindref="member">Widget::lostFocus</ref> and <ref refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" kindref="member">Widget::gotFocus</ref> will be called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to focus. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="100" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a809937074c18fab98ff25b13b5c5393e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::setFocus</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>setFocus</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets focus immediately. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="105" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1adf5cd01c0c30a8b489e8722d2e944dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::requestDrag</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>requestDrag</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets drag to a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to drag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="112" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a2ae2d6b3d2cf09f2ebec9300349832e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::requestModalFocus</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>requestModalFocus</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets modal focus to a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. If another <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> already has modal focus will an exception be thrown.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to focus modal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classgcn_1_1Exception" kindref="compound">Exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when another widget already has modal focus. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="121" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="90" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a3836b151410948ab12cdf83fd106cd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::releaseModalFocus</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>releaseModalFocus</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Releases modal focus if the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has modal focus. Otherwise nothing will be done.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to release modal focus for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="129" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="111" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a9a27b9fd7d4da8de2dd2882bbb3c398e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget * gcn::FocusHandler::getFocused</definition>
+        <argsstring>() const</argsstring>
+        <name>getFocused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> with focus.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> with focus. NULL will be returned if no <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="137" column="24" bodyfile="src/guichan/focushandler.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1aaecfded1d9621d44f13d304677d34add" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget * gcn::FocusHandler::getDragged</definition>
+        <argsstring>() const</argsstring>
+        <name>getDragged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the widget that is dragged.</para>
+<para><simplesect kind="return"><para>the widget that is dragged. NULL will be returned if no <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> is dragged. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="145" column="24" bodyfile="src/guichan/focushandler.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a6417d026db7347bbe9e9dfccd0308d4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget * gcn::FocusHandler::getModalFocused</definition>
+        <argsstring>() const</argsstring>
+        <name>getModalFocused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> with modal focus.</para>
+<para><simplesect kind="return"><para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> with modal focus. NULL will be returned if no <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has modal focus. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="153" column="24" bodyfile="src/guichan/focushandler.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a4d6014146d5066a00ea1e7cdeebf63ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::focusNext</definition>
+        <argsstring>()</argsstring>
+        <name>focusNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focuses the next <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. If no <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus the first <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> gets focus. The order in which the Widgets are focused depends on the order you add them to the GUI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="160" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="134" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1aa4551f5bfaa832c7d25d91cc94ba95fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::focusPrevious</definition>
+        <argsstring>()</argsstring>
+        <name>focusPrevious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focuses the previous <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref>. If no <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus the first <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> gets focus. The order in which the widgets are focused depends on the order you add them to the GUI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="167" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="186" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1aa45863442ee44628e1dbcd378ec03d3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::FocusHandler::hasFocus</definition>
+        <argsstring>(const Widget *widget) const</argsstring>
+        <name>hasFocus</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has focus.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget to check if it has focus.. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the widget has focus. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="175" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a51fb97dc832c5f3b2740dc1f06cab531" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gcn::FocusHandler::isDragged</definition>
+        <argsstring>(const Widget *widget) const</argsstring>
+        <name>isDragged</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a widget is being dragged</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> to check if it is being dragged. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the widget is being dragged. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="183" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a8ae5c1b60bf81d2903a34b5dc207e5ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::add</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a widget to the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the widget to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="190" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1afa5123828555a1a98fe85e4afb1ae816" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::remove</definition>
+        <argsstring>(Widget *widget)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a widget from the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the widget to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="197" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="259" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a35de8a2fb79bc79cfd232a70755ee936" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::focusNone</definition>
+        <argsstring>()</argsstring>
+        <name>focusNone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focuses nothing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="202" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="299" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a4a7ccd8c411cb8a36f6e8d0f27e2cdf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::tabNext</definition>
+        <argsstring>()</argsstring>
+        <name>tabNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focuses the next <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> which allows tab in unless current focused <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> disallows tab out. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="208" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="349" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1aa1e04e171d46af448f18c0217075b1cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::tabPrevious</definition>
+        <argsstring>()</argsstring>
+        <name>tabPrevious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focuses the previous <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> which allows tab in unless current focused <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> disallows tab out. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="214" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="424" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a0a6831e1ee7c4a37663963f1692f2c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::applyChanges</definition>
+        <argsstring>()</argsstring>
+        <name>applyChanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies the changes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="219" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="499" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a562455f23441b3cf061050649893d6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::dragNone</definition>
+        <argsstring>()</argsstring>
+        <name>dragNone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Drag nothing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="224" column="22" bodyfile="src/guichan/focushandler.cpp" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1FocusHandler_1a5fe1163ff380c46af930a629b910bd30" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void gcn::FocusHandler::checkHotKey</definition>
+        <argsstring>(const KeyInput &amp;keyInput)</argsstring>
+        <name>checkHotKey</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1KeyInput" kindref="compound">KeyInput</ref> &amp;</type>
+          <declname>keyInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a hot key was pressed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/focushandler.h" line="229" column="14" bodyfile="src/guichan/focushandler.cpp" bodystart="317" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Used to keep track of widget focus. You will probably not have to use the <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref> directly to handle focus. <ref refid="classgcn_1_1Widget" kindref="compound">Widget</ref> has functions for handling focus which uses a <ref refid="classgcn_1_1FocusHandler" kindref="compound">FocusHandler</ref>. Use them instead.</para>
+<para><simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a9bb35708268ebb0af093e93f052287df" kindref="member">Widget::hasFocus</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a0fe9dc6e11395c5d6711c7f1fdb55fc5" kindref="member">Widget::requestFocus</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a91b80646ba89565f18de7dfc044bab59" kindref="member">Widget::setFocusable</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1af6152a74291b86780de2860b2beecd58" kindref="member">Widget::isFocusable</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a5406a651bde21a53dd4d923f4e447fbc" kindref="member">Widget::gotFocus</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classgcn_1_1Widget_1a0f361d0133986452587f25aa4f7f77fa" kindref="member">Widget::lostFocus</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>gcn::DefaultFont</label>
+        <link refid="classgcn_1_1DefaultFont"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gcn::Rectangle</label>
+        <link refid="classgcn_1_1Rectangle"/>
+      </node>
+      <node id="7">
+        <label>gcn::Color</label>
+        <link refid="classgcn_1_1Color"/>
+      </node>
+      <node id="1">
+        <label>gcn::FocusHandler</label>
+        <link refid="classgcn_1_1FocusHandler"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mDraggedWidget</edgelabel>
+          <edgelabel>mToBeDragged</edgelabel>
+          <edgelabel>mToBeFocused</edgelabel>
+          <edgelabel>mFocusedWidget</edgelabel>
+          <edgelabel>mModalFocusedWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gcn::Widget</label>
+        <link refid="classgcn_1_1Widget"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDefaultFont</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mCurrentFont</edgelabel>
+          <edgelabel>mGlobalFont</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mEventId</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mBaseColor</edgelabel>
+          <edgelabel>mBackgroundColor</edgelabel>
+          <edgelabel>mDisabledColor</edgelabel>
+          <edgelabel>mForegroundColor</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mDimension</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mFocusHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gcn::Font</label>
+        <link refid="classgcn_1_1Font"/>
+      </node>
+      <node id="5">
+        <label>gcn::BasicContainer</label>
+        <link refid="classgcn_1_1BasicContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/guichan/include/guichan/focushandler.h" line="81" column="1" bodyfile="src/guichan/include/guichan/focushandler.h" bodystart="80" bodyend="241"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1FocusHandler_1a8ae5c1b60bf81d2903a34b5dc207e5ee" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>add</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a0a6831e1ee7c4a37663963f1692f2c83" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>applyChanges</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a5fe1163ff380c46af930a629b910bd30" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>checkHotKey</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a562455f23441b3cf061050649893d6ab" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>dragNone</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a41eeb97436bdf9931d4d3207f451f749" prot="public" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>FocusHandler</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a4d6014146d5066a00ea1e7cdeebf63ec" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>focusNext</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a35de8a2fb79bc79cfd232a70755ee936" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>focusNone</name></member>
+      <member refid="classgcn_1_1FocusHandler_1aa4551f5bfaa832c7d25d91cc94ba95fc" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>focusPrevious</name></member>
+      <member refid="classgcn_1_1FocusHandler_1aaecfded1d9621d44f13d304677d34add" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>getDragged</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a9a27b9fd7d4da8de2dd2882bbb3c398e" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>getFocused</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a6417d026db7347bbe9e9dfccd0308d4f" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>getModalFocused</name></member>
+      <member refid="classgcn_1_1FocusHandler_1aa45863442ee44628e1dbcd378ec03d3f" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>hasFocus</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a51fb97dc832c5f3b2740dc1f06cab531" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>isDragged</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a2ba902b2089e045d673e92d58feacaea" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>mDraggedWidget</name></member>
+      <member refid="classgcn_1_1FocusHandler_1ae5a9d82ff3e401ee77a06e2f5b980931" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>mFocusedWidget</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a1c77d27feb506c048e0732fa29375599" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>mModalFocusedWidget</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a56ad83a3cacf4889280c662a080adbb5" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>mToBeDragged</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a98bb8427d5a7c93ba3a0f28a7fdc1c7b" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>mToBeFocused</name></member>
+      <member refid="classgcn_1_1FocusHandler_1ab34311db8ffe87cf9ae10e94d84ccb03" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>mWidgets</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a3836b151410948ab12cdf83fd106cd66" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>releaseModalFocus</name></member>
+      <member refid="classgcn_1_1FocusHandler_1afa5123828555a1a98fe85e4afb1ae816" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>remove</name></member>
+      <member refid="classgcn_1_1FocusHandler_1adf5cd01c0c30a8b489e8722d2e944dde" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>requestDrag</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a34338442a14a395d15b43aabcc6f8139" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>requestFocus</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a2ae2d6b3d2cf09f2ebec9300349832e2" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>requestModalFocus</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a809937074c18fab98ff25b13b5c5393e" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>setFocus</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a4a7ccd8c411cb8a36f6e8d0f27e2cdf7" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>tabNext</name></member>
+      <member refid="classgcn_1_1FocusHandler_1aa1e04e171d46af448f18c0217075b1cc" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>tabPrevious</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a61660bed6c7be129920c3446d3e82eed" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>WidgetIterator</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a20ff6c5e72975b6b252cb737b6d99588" prot="protected" virt="non-virtual"><scope>gcn::FocusHandler</scope><name>WidgetVector</name></member>
+      <member refid="classgcn_1_1FocusHandler_1a968758e15ea32627a5d464b749772e3c" prot="public" virt="virtual"><scope>gcn::FocusHandler</scope><name>~FocusHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

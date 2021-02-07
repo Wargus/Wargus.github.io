@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAiForce" kind="class" language="C++" prot="public">
+    <compoundname>AiForce</compoundname>
+    <includes refid="ai__local_8h" local="no">ai_local.h</includes>
+      <sectiondef kind="user-defined">
+      <header>ai_force.cpp - AI force functions.</header>
+      <memberdef kind="function" id="classAiForce_1a3583a10ee112e4abde949f4858c97514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::Attack</definition>
+        <argsstring>(const Vec2i &amp;pos)</argsstring>
+        <name>Attack</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="160" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="440" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1af231f7fc63040db3e5092868195b9453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::RemoveDeadUnit</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveDeadUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ai clean units in a force. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="161" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="372" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1ac2b072ae8472bce107b81b739712deef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::ReturnToHome</definition>
+        <argsstring>()</argsstring>
+        <name>ReturnToHome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="164" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="540" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1a77d934018e31a7d6426cb6c053d16ccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AiForce::NewRallyPoint</definition>
+        <argsstring>(const Vec2i &amp;startPos, Vec2i *resultPos)</argsstring>
+        <name>NewRallyPoint</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> *</type>
+          <declname>resultPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="165" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="419" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1acd0b06861eb452162fe7b77e79723b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::Insert</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="166" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="356" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1a6981a48fda413958d276948e76e33d4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::CountTypes</definition>
+        <argsstring>(unsigned int *counter, const size_t len)</argsstring>
+        <name>CountTypes</name>
+        <param>
+          <type>unsigned int *</type>
+          <declname>counter</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="169" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1a2b564bbf71982283cdc47ecb7900ec63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AiForce::IsBelongsTo</definition>
+        <argsstring>(const CUnitType &amp;type)</argsstring>
+        <name>IsBelongsTo</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the units belongs to the force/base.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it fits, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="170" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="328" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1ae9a67de2fa2a109d99b474dfdd5b8ed3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force on attack ride. We attack until there is no unit or enemy left.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Force pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="172" column="6" bodyfile="src/ai/ai_force.cpp" bodystart="919" bodyend="1126"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1af4389f64c8b80b9cdf9a08d22af4296b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::InternalRemoveUnit</definition>
+        <argsstring>(CUnit *unit)</argsstring>
+        <name>InternalRemoveUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="174" column="13" bodyfile="src/ai/ai_force.cpp" bodystart="362" bodyend="366"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ai_plan.cpp - AI planning functions.</header>
+      <memberdef kind="function" id="classAiForce_1a0f0c8891fae652a15876415b8ea8c539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiForce::PlanAttack</definition>
+        <argsstring>()</argsstring>
+        <name>PlanAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plan an attack with a force. We know, that we must use a transporter.</para>
+<para><simplesect kind="return"><para>True if target found, false otherwise.</para>
+</simplesect>
+<xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>Perfect planning. Only works for water transporter! </para>
+<para>transporter are more selective now (flag with unittypeland). We must manage it. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="162" column="5" bodyfile="src/ai/ai_plan.cpp" bodystart="343" bodyend="427"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classAiForce_1aa6abb0b3115d03ec9a0b7cf7e8799bd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class AiForceManager</definition>
+        <argsstring></argsstring>
+        <name>AiForceManager</name>
+        <briefdescription>
+<para>Periodic called force manager handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point of force manager, periodic called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="119" column="1" bodyfile="src/ai/ai_local.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAiForce_1aa43213f3809261a41971bd01d22f2ea7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AiForce::Completed</definition>
+        <argsstring></argsstring>
+        <name>Completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="177" column="6" bodyfile="src/ai/ai_local.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1a4ce2aeb0bf57b36efe74952af8e5ed00" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AiForce::Defending</definition>
+        <argsstring></argsstring>
+        <name>Defending</name>
+        <briefdescription>
+<para>Flag saying force is complete build. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="178" column="6" bodyfile="src/ai/ai_local.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1af79f91a09da58c08a15007783aaf3c31" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AiForce::Attacking</definition>
+        <argsstring></argsstring>
+        <name>Attacking</name>
+        <briefdescription>
+<para>Flag saying force is defending. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="179" column="6" bodyfile="src/ai/ai_local.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1a0296afa143a9b8dd186d195a1639700f" prot="public" static="no" mutable="no">
+        <type><ref refid="ai__local_8h_1a38c9dfc51e6822c366d1bd07588b5612" kindref="member">AiForceRole</ref></type>
+        <definition>AiForceRole AiForce::Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <briefdescription>
+<para>Flag saying force is attacking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="180" column="13" bodyfile="src/ai/ai_local.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1ac8af1dc52dffb44f5829374c34771eba" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classAiUnitType" kindref="compound">AiUnitType</ref> &gt;</type>
+        <definition>std::vector&lt;AiUnitType&gt; AiForce::UnitTypes</definition>
+        <argsstring></argsstring>
+        <name>UnitTypes</name>
+        <briefdescription>
+<para>Role of the force. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="182" column="13" bodyfile="src/ai/ai_local.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1ac79f42110944cfa13101f55f62b8ce1a" prot="public" static="no" mutable="no">
+        <type><ref refid="classCUnitCache" kindref="compound">CUnitCache</ref></type>
+        <definition>CUnitCache AiForce::Units</definition>
+        <argsstring></argsstring>
+        <name>Units</name>
+        <briefdescription>
+<para>Count and types of unit-type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="183" column="12" bodyfile="src/ai/ai_local.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1add4bcad9c2dfd7196e0dbf65dd411c35" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiForce::FormerForce</definition>
+        <argsstring></argsstring>
+        <name>FormerForce</name>
+        <briefdescription>
+<para>Units in the force. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="186" column="5" bodyfile="src/ai/ai_local.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1a30a18ae92a01185f94a9f300d83edac9" prot="public" static="no" mutable="no">
+        <type><ref refid="ai__local_8h_1aa0d3995e05a470d2b3cd106066d4bec3" kindref="member">AiForceAttackingState</ref></type>
+        <definition>AiForceAttackingState AiForce::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+<para>Original force number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="187" column="23" bodyfile="src/ai/ai_local.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1afc2d2f333bd2d9d45d60e94d035617e2" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i AiForce::GoalPos</definition>
+        <argsstring></argsstring>
+        <name>GoalPos</name>
+        <briefdescription>
+<para>Attack state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="188" column="7" bodyfile="src/ai/ai_local.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1a3503e2be918461dc7895679cf59dbc01" prot="public" static="no" mutable="no">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i AiForce::HomePos</definition>
+        <argsstring></argsstring>
+        <name>HomePos</name>
+        <briefdescription>
+<para>Attack point tile map position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="189" column="7" bodyfile="src/ai/ai_local.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAiForce_1acb70884ad03a787b3d0f4ce177a376a8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiForce::WaitOnRallyPoint</definition>
+        <argsstring></argsstring>
+        <name>WaitOnRallyPoint</name>
+        <briefdescription>
+<para>Return after attack tile map position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="190" column="5" bodyfile="src/ai/ai_local.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAiForce_1adba32dc2cf87627a16ff0fea929faa12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AiForce::AiForce</definition>
+        <argsstring>()</argsstring>
+        <name>AiForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="121" column="1" bodyfile="src/ai/ai_local.h" bodystart="121" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1ad7a03428c5cfc1b1b1eef742bcc8bb4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::Remove</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="129" column="6" bodyfile="src/ai/ai_local.h" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1a5eec779da819461e485ef8a6ae8634f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiForce::Reset</definition>
+        <argsstring>(bool types=false)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>bool</type>
+          <declname>types</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the force. But don&apos;t change its role and its demand. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="139" column="6" bodyfile="src/ai/ai_local.h" bodystart="139" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1abe73974bf8a5c626a1f35d7272c7f94f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t AiForce::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="156" column="15" bodyfile="src/ai/ai_local.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classAiForce_1a37c3da025050f9bbfa19ad0c0b5e8a61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AiForce::IsAttacking</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAttacking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_local.h" line="158" column="13" bodyfile="src/ai/ai_local.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Define an AI force.</para>
+<para>A force is a group of units belonging together. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Vec2T&lt; short int &gt;</label>
+        <link refid="classVec2T"/>
+      </node>
+      <node id="2">
+        <label>CUnitCache</label>
+        <link refid="classCUnitCache"/>
+      </node>
+      <node id="1">
+        <label>AiForce</label>
+        <link refid="classAiForce"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Units</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GoalPos</edgelabel>
+          <edgelabel>HomePos</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ai/ai_local.h" line="118" column="1" bodyfile="src/ai/ai_local.h" bodystart="117" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classAiForce_1adba32dc2cf87627a16ff0fea929faa12" prot="public" virt="non-virtual"><scope>AiForce</scope><name>AiForce</name></member>
+      <member refid="classAiForce_1aa6abb0b3115d03ec9a0b7cf7e8799bd5" prot="private" virt="non-virtual"><scope>AiForce</scope><name>AiForceManager</name></member>
+      <member refid="classAiForce_1a3583a10ee112e4abde949f4858c97514" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Attack</name></member>
+      <member refid="classAiForce_1af79f91a09da58c08a15007783aaf3c31" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Attacking</name></member>
+      <member refid="classAiForce_1aa43213f3809261a41971bd01d22f2ea7" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Completed</name></member>
+      <member refid="classAiForce_1a6981a48fda413958d276948e76e33d4a" prot="private" virt="non-virtual"><scope>AiForce</scope><name>CountTypes</name></member>
+      <member refid="classAiForce_1a4ce2aeb0bf57b36efe74952af8e5ed00" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Defending</name></member>
+      <member refid="classAiForce_1add4bcad9c2dfd7196e0dbf65dd411c35" prot="public" virt="non-virtual"><scope>AiForce</scope><name>FormerForce</name></member>
+      <member refid="classAiForce_1afc2d2f333bd2d9d45d60e94d035617e2" prot="public" virt="non-virtual"><scope>AiForce</scope><name>GoalPos</name></member>
+      <member refid="classAiForce_1a3503e2be918461dc7895679cf59dbc01" prot="public" virt="non-virtual"><scope>AiForce</scope><name>HomePos</name></member>
+      <member refid="classAiForce_1acd0b06861eb452162fe7b77e79723b5f" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Insert</name></member>
+      <member refid="classAiForce_1af4389f64c8b80b9cdf9a08d22af4296b" prot="private" virt="non-virtual"><scope>AiForce</scope><name>InternalRemoveUnit</name></member>
+      <member refid="classAiForce_1a37c3da025050f9bbfa19ad0c0b5e8a61" prot="public" virt="non-virtual"><scope>AiForce</scope><name>IsAttacking</name></member>
+      <member refid="classAiForce_1a2b564bbf71982283cdc47ecb7900ec63" prot="private" virt="non-virtual"><scope>AiForce</scope><name>IsBelongsTo</name></member>
+      <member refid="classAiForce_1a77d934018e31a7d6426cb6c053d16ccf" prot="public" virt="non-virtual"><scope>AiForce</scope><name>NewRallyPoint</name></member>
+      <member refid="classAiForce_1a0f0c8891fae652a15876415b8ea8c539" prot="public" virt="non-virtual"><scope>AiForce</scope><name>PlanAttack</name></member>
+      <member refid="classAiForce_1ad7a03428c5cfc1b1b1eef742bcc8bb4b" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Remove</name></member>
+      <member refid="classAiForce_1af231f7fc63040db3e5092868195b9453" prot="public" virt="non-virtual"><scope>AiForce</scope><name>RemoveDeadUnit</name></member>
+      <member refid="classAiForce_1a5eec779da819461e485ef8a6ae8634f5" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Reset</name></member>
+      <member refid="classAiForce_1ac2b072ae8472bce107b81b739712deef" prot="public" virt="non-virtual"><scope>AiForce</scope><name>ReturnToHome</name></member>
+      <member refid="classAiForce_1a0296afa143a9b8dd186d195a1639700f" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Role</name></member>
+      <member refid="classAiForce_1abe73974bf8a5c626a1f35d7272c7f94f" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Size</name></member>
+      <member refid="classAiForce_1a30a18ae92a01185f94a9f300d83edac9" prot="public" virt="non-virtual"><scope>AiForce</scope><name>State</name></member>
+      <member refid="classAiForce_1ac79f42110944cfa13101f55f62b8ce1a" prot="public" virt="non-virtual"><scope>AiForce</scope><name>Units</name></member>
+      <member refid="classAiForce_1ac8af1dc52dffb44f5829374c34771eba" prot="public" virt="non-virtual"><scope>AiForce</scope><name>UnitTypes</name></member>
+      <member refid="classAiForce_1ae9a67de2fa2a109d99b474dfdd5b8ed3" prot="private" virt="non-virtual"><scope>AiForce</scope><name>Update</name></member>
+      <member refid="classAiForce_1acb70884ad03a787b3d0f4ce177a376a8" prot="public" virt="non-virtual"><scope>AiForce</scope><name>WaitOnRallyPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

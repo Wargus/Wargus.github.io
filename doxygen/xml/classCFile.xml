@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCFile" kind="class" language="C++" prot="public">
+    <compoundname>CFile</compoundname>
+    <includes refid="iolib_8h" local="no">iolib.h</includes>
+    <innerclass refid="classCFile_1_1PImpl" prot="public">CFile::PImpl</innerclass>
+      <sectiondef kind="user-defined">
+      <header>iolib.cpp - Compression-IO helper functions.</header>
+      <memberdef kind="function" id="classCFile_1a82635098055a4778bdc7ec056066c19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CFile::CFile</definition>
+        <argsstring>()</argsstring>
+        <name>CFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="105" column="1" bodyfile="src/stratagus/iolib.cpp" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a146d61b38c752741357820a5f7e3f3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CFile::~CFile</definition>
+        <argsstring>()</argsstring>
+        <name>~CFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="106" column="1" bodyfile="src/stratagus/iolib.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a722503e6127e733c14c09687ce348b02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CFile::open</definition>
+        <argsstring>(const char *name, long flags)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CLopen Library file open</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>openflags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structOpen" kindref="compound">Open</ref> read, or write and compression options</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>File Pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="108" column="5" bodyfile="src/stratagus/iolib.cpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1afcd692300f182e7f46da0f7204e50df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CFile::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CLclose Library file close </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="109" column="5" bodyfile="src/stratagus/iolib.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a4c68a3238897302f66cf8e04c4e6de2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CFile::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="110" column="6" bodyfile="src/stratagus/iolib.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a3e262747e8c757a9bd4cd87cbbbac281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CFile::read</definition>
+        <argsstring>(void *buf, size_t len)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CLread Library file read</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to read the data to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="111" column="5" bodyfile="src/stratagus/iolib.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1aef3b75733d0abd9a1a6be4ee9a5047ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CFile::seek</definition>
+        <argsstring>(long offset, int whence)</argsstring>
+        <name>seek</name>
+        <param>
+          <type>long</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CLseek Library file seek</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seek position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>whence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How to seek </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="112" column="5" bodyfile="src/stratagus/iolib.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a773cc40b3a6c88e4a4ec2e135938997c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long CFile::tell</definition>
+        <argsstring>()</argsstring>
+        <name>tell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CLtell Library file tell </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="113" column="6" bodyfile="src/stratagus/iolib.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a58a418db90cdd1cf7f15d35660b21ec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_RWops *</type>
+        <definition>SDL_RWops * CFile::as_SDL_RWops</definition>
+        <argsstring>()</argsstring>
+        <name>as_SDL_RWops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="114" column="12" bodyfile="src/stratagus/iolib.cpp" bodystart="218" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1a6ac6aec0f599dd7a6d9f5a9645bbfa03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CFile::printf</definition>
+        <argsstring>(const char *format,...) PRINTF_VAARG_ATTRIBUTE(2</argsstring>
+        <name>printf</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CLprintf Library file write</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String Format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter List. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="116" column="5" bodyfile="src/stratagus/iolib.cpp" bodystart="161" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCFile_1a884da8f2e2f2a318343cbd876584bf1e" prot="private" static="no" mutable="no">
+        <type><ref refid="classCFile_1_1PImpl" kindref="compound">PImpl</ref> *</type>
+        <definition>PImpl* CFile::pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="122" column="7" bodyfile="src/include/iolib.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCFile_1a64aef0f0b8de05b9ab47596e6aada976" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CFile::CFile</definition>
+        <argsstring>(const CFile &amp;rhs)</argsstring>
+        <name>CFile</name>
+        <param>
+          <type>const <ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCFile_1afcba245374abf6fc5171ace30f0fae48" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+        <definition>const CFile&amp; CFile::operator=</definition>
+        <argsstring>(const CFile &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/iolib.h" line="119" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines a library file</para>
+<para><xrefsect id="todo_1_todo000022"><xreftitle>Todo</xreftitle><xrefdescription><para>zip archive support </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="src/include/iolib.h" line="103" column="1" bodyfile="src/include/iolib.h" bodystart="102" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classCFile_1a58a418db90cdd1cf7f15d35660b21ec1" prot="public" virt="non-virtual"><scope>CFile</scope><name>as_SDL_RWops</name></member>
+      <member refid="classCFile_1a82635098055a4778bdc7ec056066c19f" prot="public" virt="non-virtual"><scope>CFile</scope><name>CFile</name></member>
+      <member refid="classCFile_1a64aef0f0b8de05b9ab47596e6aada976" prot="private" virt="non-virtual"><scope>CFile</scope><name>CFile</name></member>
+      <member refid="classCFile_1afcd692300f182e7f46da0f7204e50df1" prot="public" virt="non-virtual"><scope>CFile</scope><name>close</name></member>
+      <member refid="classCFile_1a4c68a3238897302f66cf8e04c4e6de2a" prot="public" virt="non-virtual"><scope>CFile</scope><name>flush</name></member>
+      <member refid="classCFile_1a722503e6127e733c14c09687ce348b02" prot="public" virt="non-virtual"><scope>CFile</scope><name>open</name></member>
+      <member refid="classCFile_1afcba245374abf6fc5171ace30f0fae48" prot="private" virt="non-virtual"><scope>CFile</scope><name>operator=</name></member>
+      <member refid="classCFile_1a884da8f2e2f2a318343cbd876584bf1e" prot="private" virt="non-virtual"><scope>CFile</scope><name>pimpl</name></member>
+      <member refid="classCFile_1a6ac6aec0f599dd7a6d9f5a9645bbfa03" prot="public" virt="non-virtual"><scope>CFile</scope><name>printf</name></member>
+      <member refid="classCFile_1a3e262747e8c757a9bd4cd87cbbbac281" prot="public" virt="non-virtual"><scope>CFile</scope><name>read</name></member>
+      <member refid="classCFile_1aef3b75733d0abd9a1a6be4ee9a5047ec" prot="public" virt="non-virtual"><scope>CFile</scope><name>seek</name></member>
+      <member refid="classCFile_1a773cc40b3a6c88e4a4ec2e135938997c" prot="public" virt="non-virtual"><scope>CFile</scope><name>tell</name></member>
+      <member refid="classCFile_1a146d61b38c752741357820a5f7e3f3b5" prot="public" virt="non-virtual"><scope>CFile</scope><name>~CFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

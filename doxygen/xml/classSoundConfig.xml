@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSoundConfig" kind="class" language="C++" prot="public">
+    <compoundname>SoundConfig</compoundname>
+    <includes refid="unitsound_8h" local="no">unitsound.h</includes>
+      <sectiondef kind="user-defined">
+      <header>unitsound.cpp - The unit sounds.</header>
+      <memberdef kind="function" id="classSoundConfig_1a28b37bbfc57e409258cfa925829dc605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoundConfig::MapSound</definition>
+        <argsstring>()</argsstring>
+        <name>MapSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unitsound.h" line="60" column="6" bodyfile="src/sound/unitsound.cpp" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classSoundConfig_1ac39bb60bae1a35138d525b86154d4115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SoundConfig::SetSoundRange</definition>
+        <argsstring>(unsigned char range)</argsstring>
+        <name>SetSoundRange</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unitsound.h" line="61" column="6" bodyfile="src/sound/unitsound.cpp" bodystart="70" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSoundConfig_1ae86b856586d55d85772f165b8b6de387" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SoundConfig::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unitsound.h" line="64" column="13" bodyfile="src/include/unitsound.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSoundConfig_1ad2155b37370ed54582fcbd45d0d72d96" prot="public" static="no" mutable="no">
+        <type><ref refid="classCSound" kindref="compound">CSound</ref> *</type>
+        <definition>CSound* SoundConfig::Sound</definition>
+        <argsstring></argsstring>
+        <name>Sound</name>
+        <briefdescription>
+<para>config sound name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unitsound.h" line="65" column="8" bodyfile="src/include/unitsound.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSoundConfig_1a1be6e053a824f3eb20621504cd4633d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoundConfig::SoundConfig</definition>
+        <argsstring>()</argsstring>
+        <name>SoundConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unitsound.h" line="57" column="1" bodyfile="src/include/unitsound.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classSoundConfig_1a0838d77105449f679dd6f1fc0abecfbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoundConfig::SoundConfig</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>SoundConfig</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/unitsound.h" line="58" column="1" bodyfile="src/include/unitsound.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Sound definition </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>CSound</label>
+        <link refid="classCSound"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Second</edgelabel>
+          <edgelabel>First</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>SoundConfig</label>
+        <link refid="classSoundConfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Name</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Sound</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/include/unitsound.h" line="55" column="1" bodyfile="src/include/unitsound.h" bodystart="54" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classSoundConfig_1a28b37bbfc57e409258cfa925829dc605" prot="public" virt="non-virtual"><scope>SoundConfig</scope><name>MapSound</name></member>
+      <member refid="classSoundConfig_1ae86b856586d55d85772f165b8b6de387" prot="public" virt="non-virtual"><scope>SoundConfig</scope><name>Name</name></member>
+      <member refid="classSoundConfig_1ac39bb60bae1a35138d525b86154d4115" prot="public" virt="non-virtual"><scope>SoundConfig</scope><name>SetSoundRange</name></member>
+      <member refid="classSoundConfig_1ad2155b37370ed54582fcbd45d0d72d96" prot="public" virt="non-virtual"><scope>SoundConfig</scope><name>Sound</name></member>
+      <member refid="classSoundConfig_1a1be6e053a824f3eb20621504cd4633d9" prot="public" virt="non-virtual"><scope>SoundConfig</scope><name>SoundConfig</name></member>
+      <member refid="classSoundConfig_1a0838d77105449f679dd6f1fc0abecfbf" prot="public" virt="non-virtual"><scope>SoundConfig</scope><name>SoundConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

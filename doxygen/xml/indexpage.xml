@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Stratagus</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1Introduction">
+<title>Introduction</title>
+<para>Welcome to the source code documentation of the Stratagus engine. Extract the source documentation with doxygen (<ulink url="http://www.doxygen.org">http://www.doxygen.org</ulink>) tool.</para>
+<para>Any help to improve this documention is welcome. If you didn&apos;t understand something or you found an error or a wrong spelling or wrong grammar please write an email (including a patch :).</para>
+</sect1>
+<sect1 id="index_1Information">
+<title>Information</title>
+<para>Visit the <ulink url="https://github.com/Wargus/stratagus">https://github.com/Wargus/stratagus</ulink> web page for the latest news and <ulink url="../index.html">Stratagus Info</ulink> for other documentation.</para>
+</sect1>
+<sect1 id="index_1Modules">
+<title>Modules</title>
+<para>This are the main modules of the Stratagus engine.</para>
+<sect2 id="index_1Map">
+<title>Map</title>
+<para>Handles the map. A map is made from tiles.</para>
+<para><simplesect kind="see"><para><ref refid="map_8h" kindref="compound">map.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="map_8cpp" kindref="compound">map.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tileset_8h" kindref="compound">tileset.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tileset_8cpp" kindref="compound">tileset.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Unit">
+<title>Unit</title>
+<para>Handles units. Units are ships, flyers, buildings, creatures, machines.</para>
+<para><simplesect kind="see"><para><ref refid="unit_8h" kindref="compound">unit.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="unit_8cpp" kindref="compound">unit.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="unittype_8h" kindref="compound">unittype.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="unittype_8cpp" kindref="compound">unittype.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Missile">
+<title>Missile</title>
+<para>Handles missiles. Missiles are all other sprites on map which are no unit.</para>
+<para><simplesect kind="see"><para><ref refid="missile_8h" kindref="compound">missile.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="missile_8cpp" kindref="compound">missile.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Player">
+<title>Player</title>
+<para>Handles players, all units are owned by a player. A player could be controlled by a human or a computer.</para>
+<para><simplesect kind="see"><para><ref refid="player_8h" kindref="compound">player.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="player_8cpp" kindref="compound">player.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCPlayer" kindref="compound">CPlayer</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Sound">
+<title>Sound</title>
+<para>Handles the high and low level of the sound. There are the background music support, voices and sound effects. Following low level backends are supported: OSS and SDL.</para>
+<para><xrefsect id="todo_1_todo000068"><xreftitle>Todo</xreftitle><xrefdescription><para>adpcm file format support for sound effects </para>
+<para>better separation of low and high level, assembler mixing support. </para>
+<para>Streaming support of ogg/mp3 files.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="see"><para><ref refid="sound_8h" kindref="compound">sound.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="sound_8cpp" kindref="compound">sound.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="script__sound_8cpp" kindref="compound">script_sound.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="sound__id_8cpp" kindref="compound">sound_id.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="sound__server_8cpp" kindref="compound">sound_server.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="unitsound_8cpp" kindref="compound">unitsound.cpp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>sdl_audio.cpp </para>
+</simplesect>
+<simplesect kind="see"><para>ogg.cpp </para>
+</simplesect>
+<simplesect kind="see"><para>wav.cpp</para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Video">
+<title>Video</title>
+<para>Handles the high and low level of the graphics. This also contains the sprite and linedrawing routines.</para>
+<para>See page <ref refid="VideoModule" kindref="compound">Module - Video</ref> for more information upon supported features and video platforms.</para>
+<para><simplesect kind="see"><para><ref refid="video_8h" kindref="compound">video.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="video_8cpp" kindref="compound">video.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Network">
+<title>Network</title>
+<para>Handles the high and low level of the network protocol. The network protocol is needed for multiplayer games.</para>
+<para>See page <ref refid="NetworkModule" kindref="compound">Module - Network</ref> for more information upon supported features and API.</para>
+<para><simplesect kind="see"><para><ref refid="network_8h" kindref="compound">network.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="network_8cpp" kindref="compound">network.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Pathfinder">
+<title>Pathfinder</title>
+<para><simplesect kind="see"><para><ref refid="pathfinder_8h" kindref="compound">pathfinder.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="pathfinder_8cpp" kindref="compound">pathfinder.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1AI">
+<title>AI</title>
+<para>There are currently two AI&apos;s. The old one is very hardcoded, but does things like placing buildings better than the new. The old AI shouldn&apos;t be used. The new is very flexible, but very basic. It includes none optimations.</para>
+<para>See page <ref refid="AiModule" kindref="compound">Module - AI</ref> for more information upon supported features and API.</para>
+<para><simplesect kind="see"><para><ref refid="ai__local_8h" kindref="compound">ai_local.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="ai_8h" kindref="compound">ai.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="ai_8cpp" kindref="compound">ai.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1CCL">
+<title>CCL</title>
+<para>CCL is Craft Configuration Language, which is used to configure and customize Stratagus.</para>
+<para><simplesect kind="see"><para><ref refid="script_8h" kindref="compound">script.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="script_8cpp" kindref="compound">script.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Icon">
+<title>Icon</title>
+<para><simplesect kind="see"><para><ref refid="icons_8h" kindref="compound">icons.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="icons_8cpp" kindref="compound">icons.cpp</ref></para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="index_1Editor">
+<title>Editor</title>
+<para>This is the integrated editor, it shouldn&apos;t be a perfect editor. It is used to test new features of the engine.</para>
+<para>See page <ref refid="EditorModule" kindref="compound">Module - Editor</ref> for more information upon supported features and API.</para>
+<para><simplesect kind="see"><para><ref refid="editor_8h" kindref="compound">editor.h</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="editor_8cpp" kindref="compound">editor.cpp</ref> </para>
+</simplesect>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classConnectState" kind="class" language="C++" prot="public">
+    <compoundname>ConnectState</compoundname>
+    <basecompoundref refid="structNetworkState" prot="public" virt="non-virtual">NetworkState</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classConnectState_1afeb8dadc3fcef1863477a7912a207065" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>virtual void ConnectState::doOneStep</definition>
+        <argsstring>(Context *ctx)</argsstring>
+        <name>doOneStep</name>
+        <reimplements refid="structNetworkState_1a9645a0bb7a73dc100570a03b82582999">doOneStep</reimplements>
+        <param>
+          <type><ref refid="classContext" kindref="compound">Context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/network/online_service.cpp" line="2007" column="18" bodyfile="src/network/online_service.cpp" bodystart="2007" bodyend="2103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkState</label>
+        <link refid="structNetworkState"/>
+      </node>
+      <node id="1">
+        <label>ConnectState</label>
+        <link refid="classConnectState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkState</label>
+        <link refid="structNetworkState"/>
+      </node>
+      <node id="1">
+        <label>ConnectState</label>
+        <link refid="classConnectState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/network/online_service.cpp" line="2006" column="39" bodyfile="src/network/online_service.cpp" bodystart="2006" bodyend="2104"/>
+    <listofallmembers>
+      <member refid="structNetworkState_1ac4a59c05ce07a0a17f4b7495ed789d08" prot="public" virt="non-virtual"><scope>ConnectState</scope><name>Clear</name></member>
+      <member refid="classConnectState_1afeb8dadc3fcef1863477a7912a207065" prot="private" virt="virtual"><scope>ConnectState</scope><name>doOneStep</name></member>
+      <member refid="structNetworkState_1a960923776849fb3659bf21b6f6fe1b61" prot="public" virt="non-virtual"><scope>ConnectState</scope><name>LastFrame</name></member>
+      <member refid="structNetworkState_1a57f3f75068c98f1c1f30ee5df1724ed6" prot="public" virt="non-virtual"><scope>ConnectState</scope><name>MsgCnt</name></member>
+      <member refid="structNetworkState_1ab5750797e63c4bc214b130526843cafc" prot="protected" virt="non-virtual"><scope>ConnectState</scope><name>send</name></member>
+      <member refid="structNetworkState_1a1ad20b80e7eb670ea2a83a22dc4fa404" prot="public" virt="non-virtual"><scope>ConnectState</scope><name>State</name></member>
+      <member refid="structNetworkState_1a21023583159672b9b12aaa6caf8e0730" prot="public" virt="virtual"><scope>ConnectState</scope><name>~NetworkState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

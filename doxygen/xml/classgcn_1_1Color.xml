@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgcn_1_1Color" kind="class" language="C++" prot="public">
+    <compoundname>gcn::Color</compoundname>
+    <includes refid="guichan_2include_2guichan_2color_8h" local="no">color.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgcn_1_1Color_1a03c8b8fd862f837b5295b3ce28c94a33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Color::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Red color component (range 0-255). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="143" column="13" bodyfile="src/guichan/include/guichan/color.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Color_1a13947bb1b79574cfb71580896a311a33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Color::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Green color component (range 0-255). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="148" column="13" bodyfile="src/guichan/include/guichan/color.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Color_1a92f745d8f763ef16dcda11a03c44437f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Color::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blue color component (range 0-255). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="153" column="13" bodyfile="src/guichan/include/guichan/color.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgcn_1_1Color_1a46e7ab30d365efc4314368e01ffd6dbf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gcn::Color::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgcn_1_1Color" kindref="compound">Color</ref> alpha, used for transparency. A value of 0 means totaly transparent, 255 is totaly opaque (the default) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="159" column="13" bodyfile="src/guichan/include/guichan/color.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgcn_1_1Color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>()</argsstring>
+        <name>Color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. Initializes the color to black. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="72" column="9" bodyfile="src/guichan/color.cpp" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1a1c8597db7afdc17cf83ebf4257cad360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>(int color)</argsstring>
+        <name>Color</name>
+        <param>
+          <type>int</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a color from the bytes in an integer. Call it with a hexadecimal constant for HTML-style color representation. The alpha component will be set to 255.</para>
+<para>EXAMPLE: <ref refid="classColor" kindref="compound">Color(0xff50a0)</ref> constructs Gui-chan&apos;s favourite color.</para>
+<para>NOTE: Because of this constructor, integers will be automatically casted to a color by your compiler.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="86" column="9" bodyfile="src/guichan/color.cpp" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1aa803bcae4fa0ce72755607b25e5bb015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>(int r, int g, int b, int a=255)</argsstring>
+        <name>Color</name>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Red color component (range 0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Green color component (range 0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Blue color component (range 0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classgcn_1_1Color" kindref="compound">Color</ref> alpha, used for transparency. A value of 0 means totaly transparent, 255 is totaly opaque (the default). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="97" column="9" bodyfile="src/guichan/color.cpp" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1acd40b26ca2f9217b5cde1e5c1251ef04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Color::operator+</definition>
+        <argsstring>(const Color &amp;color) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds the RGB values of two colors together. The values will be clamped if they go out of range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color to add to this color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the resulting color with alpha set to 255. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="106" column="15" bodyfile="src/guichan/color.cpp" bodystart="87" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1accc207f8ad1b21c617d3cf012bdbcaf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Color::operator-</definition>
+        <argsstring>(const Color &amp;color) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtracts the RGB values of one color from another. The values will be clamped if they go out of range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color to subtract from this color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the resulting color with alpha set to 255. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="115" column="15" bodyfile="src/guichan/color.cpp" bodystart="102" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1a6bfc0196d566941042fbd6e8f647ea5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgcn_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Color::operator*</definition>
+        <argsstring>(float value) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplies the RGB values of a color with a float value. The values will be clamped if they go out of range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to multiply the color with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the resulting color with alpha untouched. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="124" column="15" bodyfile="src/guichan/color.cpp" bodystart="117" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1a47af6b06ce3543bb3dfba77711c969e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Color::operator==</definition>
+        <argsstring>(const Color &amp;color) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares two colors.</para>
+<para><simplesect kind="return"><para>true if the two colors have the same RGBA components. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="131" column="14" bodyfile="src/guichan/color.cpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgcn_1_1Color_1abacbb672199d48f8e61002f843dd3492" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Color::operator!=</definition>
+        <argsstring>(const Color &amp;color) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classgcn_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares two colors.</para>
+<para><simplesect kind="return"><para>true if the two colors have different RGBA components. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/guichan/include/guichan/color.h" line="138" column="14" bodyfile="src/guichan/color.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a color with red, green, blue and alpha components. </para>
+    </detaileddescription>
+    <location file="src/guichan/include/guichan/color.h" line="66" column="1" bodyfile="src/guichan/include/guichan/color.h" bodystart="65" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classgcn_1_1Color_1a46e7ab30d365efc4314368e01ffd6dbf" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>a</name></member>
+      <member refid="classgcn_1_1Color_1a92f745d8f763ef16dcda11a03c44437f" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>b</name></member>
+      <member refid="classgcn_1_1Color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>Color</name></member>
+      <member refid="classgcn_1_1Color_1a1c8597db7afdc17cf83ebf4257cad360" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>Color</name></member>
+      <member refid="classgcn_1_1Color_1aa803bcae4fa0ce72755607b25e5bb015" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>Color</name></member>
+      <member refid="classgcn_1_1Color_1a13947bb1b79574cfb71580896a311a33" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>g</name></member>
+      <member refid="classgcn_1_1Color_1abacbb672199d48f8e61002f843dd3492" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>operator!=</name></member>
+      <member refid="classgcn_1_1Color_1a6bfc0196d566941042fbd6e8f647ea5f" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>operator*</name></member>
+      <member refid="classgcn_1_1Color_1acd40b26ca2f9217b5cde1e5c1251ef04" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>operator+</name></member>
+      <member refid="classgcn_1_1Color_1accc207f8ad1b21c617d3cf012bdbcaf0" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>operator-</name></member>
+      <member refid="classgcn_1_1Color_1a47af6b06ce3543bb3dfba77711c969e1" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>operator==</name></member>
+      <member refid="classgcn_1_1Color_1a03c8b8fd862f837b5295b3ce28c94a33" prot="public" virt="non-virtual"><scope>gcn::Color</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

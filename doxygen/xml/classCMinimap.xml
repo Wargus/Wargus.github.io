@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMinimap" kind="class" language="C++" prot="public">
+    <compoundname>CMinimap</compoundname>
+    <includes refid="minimap_8h" local="no">minimap.h</includes>
+      <sectiondef kind="user-defined">
+      <header>minimap.cpp - The minimap.</header>
+      <memberdef kind="function" id="classCMinimap_1ac9ac3a6cbe77942ceadeb863dc4e7216" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::UpdateTerrain</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateTerrain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a mini-map from the tiles of the map. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="52" column="6" bodyfile="src/map/minimap.cpp" bodystart="164" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a067dd5cc268fe1aed1432b2e9d416bb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::UpdateXY</definition>
+        <argsstring>(const Vec2i &amp;pos)</argsstring>
+        <name>UpdateXY</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a single minimap tile after a change</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The map position to update in the minimap </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="62" column="6" bodyfile="src/map/minimap.cpp" bodystart="218" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a2415edf03728e7d3e6c5f9817ed5928d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the minimap with the current game information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="64" column="6" bodyfile="src/map/minimap.cpp" bodystart="350" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1ac3576d98d582abc054b75f16ed194bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a mini-map from the tiles of the map.</para>
+<para><xrefsect id="todo_1_todo000045"><xreftitle>Todo</xreftitle><xrefdescription><para>Scaling and scrolling the minmap is currently not supported. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="65" column="6" bodyfile="src/map/minimap.cpp" bodystart="104" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a53886797db425171665a801e14a25d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy mini-map. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="66" column="6" bodyfile="src/map/minimap.cpp" bodystart="473" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1ac98bdbd50d36c606b288f4d13ce17e0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::Draw</definition>
+        <argsstring>() const</argsstring>
+        <name>Draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the minimap on the screen </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="67" column="6" bodyfile="src/map/minimap.cpp" bodystart="432" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a9aed361e1631d15f1738ea03bc268d43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::DrawViewportArea</definition>
+        <argsstring>(const CViewport &amp;viewport) const</argsstring>
+        <name>DrawViewportArea</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw viewport area contour. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="68" column="6" bodyfile="src/map/minimap.cpp" bodystart="492" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a4d2039cd7914b7107859aef207352821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::AddEvent</definition>
+        <argsstring>(const Vec2i &amp;pos, IntColor color)</argsstring>
+        <name>AddEvent</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2color_8h_1a97f8557abb81c4aae916b9f2b6a45eb6" kindref="member">IntColor</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a minimap event</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map tile position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="69" column="6" bodyfile="src/map/minimap.cpp" bodystart="508" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a9de0e8bae4eab7e1e7fe1c419c73d3fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i CMinimap::ScreenToTilePos</definition>
+        <argsstring>(const PixelPos &amp;screenPos) const</argsstring>
+        <name>ScreenToTilePos</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert screen position to tile map coordinate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screenPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Screen pixel coordinate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tile coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="71" column="7" bodyfile="src/map/minimap.cpp" bodystart="447" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a190bc53f8b3b719fb5aec8f58d8000cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref></type>
+        <definition>PixelPos CMinimap::TilePosToScreenPos</definition>
+        <argsstring>(const Vec2i &amp;tilePos) const</argsstring>
+        <name>TilePosToScreenPos</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>tilePos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert tile map coordinate to screen position.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tilePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tile coordinate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Screen pixel coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="72" column="10" bodyfile="src/map/minimap.cpp" bodystart="463" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a2953265227c397ddbbf0036dd64d7dbe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMinimap::Contains</definition>
+        <argsstring>(const PixelPos &amp;screenPos) const</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="74" column="6" bodyfile="src/map/minimap.cpp" bodystart="519" bodyend="523"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCMinimap_1a8a529af79528b44977e1f9eac8510076" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CMinimap::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="76" column="5" bodyfile="src/include/minimap.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1a118a389639c4bddaa031c34bcc9e93d4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CMinimap::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="77" column="5" bodyfile="src/include/minimap.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1aea0532bb5d1f9b5fd6a48e26a1c1b0b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CMinimap::W</definition>
+        <argsstring></argsstring>
+        <name>W</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="78" column="5" bodyfile="src/include/minimap.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1ab5bce77c020d8029dbba3880558d63a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CMinimap::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="79" column="5" bodyfile="src/include/minimap.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1a0c0d2d9ea44c9b2ca3910ceceacfaed9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CMinimap::XOffset</definition>
+        <argsstring></argsstring>
+        <name>XOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="80" column="5" bodyfile="src/include/minimap.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1a8338e5fc7755bebd2944dafb943060c5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CMinimap::YOffset</definition>
+        <argsstring></argsstring>
+        <name>YOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="81" column="5" bodyfile="src/include/minimap.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1a3aef168efa2273b0a61cf21c61e8a9f0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CMinimap::WithTerrain</definition>
+        <argsstring></argsstring>
+        <name>WithTerrain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="82" column="6" bodyfile="src/include/minimap.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1ad206e179461d082072d0e113ebc80757" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CMinimap::ShowSelected</definition>
+        <argsstring></argsstring>
+        <name>ShowSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="83" column="6" bodyfile="src/include/minimap.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1a185e95af78158615f3731fafc9d65d55" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CMinimap::Transparent</definition>
+        <argsstring></argsstring>
+        <name>Transparent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="84" column="6" bodyfile="src/include/minimap.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCMinimap_1a6057cbb9ef6d31e7fd5576894ffcbc73" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CMinimap::UpdateCache</definition>
+        <argsstring></argsstring>
+        <name>UpdateCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="85" column="6" bodyfile="src/include/minimap.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMinimap_1a4d7f196c62fa57b2098cf544eb9f806e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>const int</type>
+            <declname>BPP</declname>
+            <defname>BPP</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::UpdateMapTerrain</definition>
+        <argsstring>(void *const mpixels, const int mpitch, const void *const tpixels, const int tpitch)</argsstring>
+        <name>UpdateMapTerrain</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *const</type>
+          <declname>mpixels</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>mpitch</declname>
+        </param>
+        <param>
+          <type>const <ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *const</type>
+          <declname>tpixels</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>tpitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="49" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1a399e25366e193ada60b3f65b1db6b8a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>const int</type>
+            <declname>BPP</declname>
+            <defname>BPP</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::UpdateSeen</definition>
+        <argsstring>(void *const pixels, const int pitch)</argsstring>
+        <name>UpdateSeen</name>
+        <param>
+          <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref> *const</type>
+          <declname>pixels</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="55" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMinimap_1ac683ca6e6d5d543e5d5315d5592e0e88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMinimap::CMinimap</definition>
+        <argsstring>()</argsstring>
+        <name>CMinimap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="58" column="1" bodyfile="src/include/minimap.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMinimap_1ac73f941ccf7306b9659fd2f264f009ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CMinimap::UpdateSeenXY</definition>
+        <argsstring>(const Vec2i &amp;)</argsstring>
+        <name>UpdateSeenXY</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/minimap.h" line="63" column="6" bodyfile="src/include/minimap.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/minimap.h" line="47" column="1" bodyfile="src/include/minimap.h" bodystart="46" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classCMinimap_1a4d2039cd7914b7107859aef207352821" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>AddEvent</name></member>
+      <member refid="classCMinimap_1ac683ca6e6d5d543e5d5315d5592e0e88" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>CMinimap</name></member>
+      <member refid="classCMinimap_1a2953265227c397ddbbf0036dd64d7dbe" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Contains</name></member>
+      <member refid="classCMinimap_1ac3576d98d582abc054b75f16ed194bfa" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Create</name></member>
+      <member refid="classCMinimap_1a53886797db425171665a801e14a25d9f" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Destroy</name></member>
+      <member refid="classCMinimap_1ac98bdbd50d36c606b288f4d13ce17e0a" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Draw</name></member>
+      <member refid="classCMinimap_1a9aed361e1631d15f1738ea03bc268d43" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>DrawViewportArea</name></member>
+      <member refid="classCMinimap_1ab5bce77c020d8029dbba3880558d63a6" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>H</name></member>
+      <member refid="classCMinimap_1a9de0e8bae4eab7e1e7fe1c419c73d3fe" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>ScreenToTilePos</name></member>
+      <member refid="classCMinimap_1ad206e179461d082072d0e113ebc80757" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>ShowSelected</name></member>
+      <member refid="classCMinimap_1a190bc53f8b3b719fb5aec8f58d8000cc" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>TilePosToScreenPos</name></member>
+      <member refid="classCMinimap_1a185e95af78158615f3731fafc9d65d55" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Transparent</name></member>
+      <member refid="classCMinimap_1a2415edf03728e7d3e6c5f9817ed5928d" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Update</name></member>
+      <member refid="classCMinimap_1a6057cbb9ef6d31e7fd5576894ffcbc73" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>UpdateCache</name></member>
+      <member refid="classCMinimap_1a4d7f196c62fa57b2098cf544eb9f806e" prot="private" virt="non-virtual"><scope>CMinimap</scope><name>UpdateMapTerrain</name></member>
+      <member refid="classCMinimap_1a399e25366e193ada60b3f65b1db6b8a6" prot="private" virt="non-virtual"><scope>CMinimap</scope><name>UpdateSeen</name></member>
+      <member refid="classCMinimap_1ac73f941ccf7306b9659fd2f264f009ce" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>UpdateSeenXY</name></member>
+      <member refid="classCMinimap_1ac9ac3a6cbe77942ceadeb863dc4e7216" prot="private" virt="non-virtual"><scope>CMinimap</scope><name>UpdateTerrain</name></member>
+      <member refid="classCMinimap_1a067dd5cc268fe1aed1432b2e9d416bb9" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>UpdateXY</name></member>
+      <member refid="classCMinimap_1aea0532bb5d1f9b5fd6a48e26a1c1b0b4" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>W</name></member>
+      <member refid="classCMinimap_1a3aef168efa2273b0a61cf21c61e8a9f0" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>WithTerrain</name></member>
+      <member refid="classCMinimap_1a8a529af79528b44977e1f9eac8510076" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>X</name></member>
+      <member refid="classCMinimap_1a0c0d2d9ea44c9b2ca3910ceceacfaed9" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>XOffset</name></member>
+      <member refid="classCMinimap_1a118a389639c4bddaa031c34bcc9e93d4" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>Y</name></member>
+      <member refid="classCMinimap_1a8338e5fc7755bebd2944dafb943060c5" prot="public" virt="non-virtual"><scope>CMinimap</scope><name>YOffset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

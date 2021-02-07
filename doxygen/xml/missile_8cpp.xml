@@ -1,0 +1,2036 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="missile_8cpp" kind="file" language="C++">
+    <compoundname>missile.cpp</compoundname>
+    <includes local="no">math.h</includes>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="missile_8h" local="yes">missile.h</includes>
+    <includes refid="action__spellcast_8h" local="yes">action/action_spellcast.h</includes>
+    <includes refid="actions_8h" local="yes">actions.h</includes>
+    <includes refid="animation_8h" local="yes">animation.h</includes>
+    <includes local="yes">font.h</includes>
+    <includes refid="iolib_8h" local="yes">iolib.h</includes>
+    <includes refid="luacallback_8h" local="yes">luacallback.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="sound_8h" local="yes">sound.h</includes>
+    <includes refid="spells_8h" local="yes">spells.h</includes>
+    <includes refid="trigger_8h" local="yes">trigger.h</includes>
+    <includes refid="ui_8h" local="yes">ui.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="unitsound_8h" local="yes">unitsound.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="video_8h" local="yes">video.h</includes>
+    <incdepgraph>
+      <node id="72">
+        <label>list</label>
+      </node>
+      <node id="18">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>script.h</label>
+        <link refid="script_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>guichan/widgets/label.h</label>
+        <link refid="label_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>queue</label>
+      </node>
+      <node id="40">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="1">
+        <label>src/missile/missile.cpp</label>
+        <link refid="missile_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>video.h</label>
+        <link refid="video_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>guichan/widgets/textfield.h</label>
+        <link refid="textfield_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>guichan/widgets/textbox.h</label>
+        <link refid="textbox_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>guichan/font.h</label>
+        <link refid="guichan_2include_2guichan_2font_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>SDL.h</label>
+      </node>
+      <node id="50">
+        <label>ui/uitimer.h</label>
+        <link refid="uitimer_8h"/>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>guichan/exception.h</label>
+        <link refid="exception_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lua.h</label>
+      </node>
+      <node id="25">
+        <label>font.h</label>
+      </node>
+      <node id="36">
+        <label>stdint.h</label>
+      </node>
+      <node id="30">
+        <label>variant</label>
+      </node>
+      <node id="88">
+        <label>guichan/widgets/dropdown.h</label>
+        <link refid="dropdown_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>guichan/widgets/window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="91">
+        <label>guichan/widgets/icon.h</label>
+        <link refid="icon_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>guichan/imagefont.h</label>
+        <link refid="imagefont_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>guichan/platform.h</label>
+        <link refid="platform_8h"/>
+      </node>
+      <node id="47">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="41">
+        <label>spells.h</label>
+        <link refid="spells_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>animation.h</label>
+        <link refid="animation_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="73">
+        <label>guichan/defaultfont.h</label>
+        <link refid="defaultfont_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>guichan.h</label>
+        <link refid="guichan_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>guichan/widgets/scrollarea.h</label>
+        <link refid="scrollarea_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>guichan/rectangle.h</label>
+        <link refid="rectangle_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>ui/statusline.h</label>
+        <link refid="statusline_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="68">
+        <label>guichan/imageloader.h</label>
+        <link refid="imageloader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>guichan/mouseinput.h</label>
+        <link refid="mouseinput_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>guichan/mouselistener.h</label>
+        <link refid="mouselistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>libmng.h</label>
+      </node>
+      <node id="33">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>guichan/widgets/checkbox.h</label>
+        <link refid="checkbox_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>guichan/listmodel.h</label>
+        <link refid="listmodel_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lauxlib.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="64">
+        <label>guichan/cliprectangle.h</label>
+        <link refid="cliprectangle_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>guichan/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>ctime</label>
+      </node>
+      <node id="39">
+        <label>sound.h</label>
+        <link refid="sound_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>guichan/focushandler.h</label>
+        <link refid="focushandler_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>guichan/key.h</label>
+        <link refid="key_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>guichan/input.h</label>
+        <link refid="input_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>luacallback.h</label>
+        <link refid="luacallback_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>guichan/color.h</label>
+        <link refid="guichan_2include_2guichan_2color_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>stack</label>
+      </node>
+      <node id="19">
+        <label>vector</label>
+      </node>
+      <node id="87">
+        <label>guichan/basiccontainer.h</label>
+        <link refid="basiccontainer_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>guichan/gui.h</label>
+        <link refid="gui_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>guichan/widgets/slider.h</label>
+        <link refid="slider_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>missile.h</label>
+        <link refid="missile_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>guichan/keyinput.h</label>
+        <link refid="keyinput_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>guichan/widgets/radiobutton.h</label>
+        <link refid="radiobutton_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="46">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="42">
+        <label>trigger.h</label>
+        <link refid="trigger_8h"/>
+      </node>
+      <node id="53">
+        <label>climits</label>
+      </node>
+      <node id="31">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>shaders.h</label>
+        <link refid="shaders_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>guichan/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>guichan/widgets/button.h</label>
+        <link refid="button_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="77">
+        <label>guichan/keylistener.h</label>
+        <link refid="keylistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>action/action_spellcast.h</label>
+        <link refid="action__spellcast_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>guichan/widgets/container.h</label>
+        <link refid="container_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>iolib.h</label>
+        <link refid="iolib_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>set</label>
+      </node>
+      <node id="71">
+        <label>guichan/widget.h</label>
+        <link refid="widget_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>algorithm</label>
+      </node>
+      <node id="44">
+        <label>cursor.h</label>
+        <link refid="cursor_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>guichan/widgets/listbox.h</label>
+        <link refid="listbox_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>guichan/actionlistener.h</label>
+        <link refid="actionlistener_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lualib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>missile.cpp - The missiles.</header>
+      <memberdef kind="typedef" id="missile_8cpp_1a00b17a829a162a663a4cd327cf57d23a" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="classMissileType" kindref="compound">MissileType</ref> * &gt;</type>
+        <definition>typedef std::map&lt;std::string, MissileType *&gt; MissileTypeMap</definition>
+        <argsstring></argsstring>
+        <name>MissileTypeMap</name>
+        <briefdescription>
+<para>all local missiles on map </para>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup table for missile names </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="70" column="18" bodyfile="src/missile/missile.cpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="missile_8cpp_1a08a03dc51de61fb7ad51870acd44184e" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="classMissile" kindref="compound">Missile</ref> * &gt;</type>
+        <definition>std::vector&lt;Missile *&gt; GlobalMissiles</definition>
+        <argsstring></argsstring>
+        <name>GlobalMissiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="66" column="20" bodyfile="src/missile/missile.cpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="missile_8cpp_1a1cab55b3ff964ed650a763794dc9cc64" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="classMissile" kindref="compound">Missile</ref> * &gt;</type>
+        <definition>std::vector&lt;Missile *&gt; LocalMissiles</definition>
+        <argsstring></argsstring>
+        <name>LocalMissiles</name>
+        <briefdescription>
+<para>all global missiles on map </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="67" column="20" bodyfile="src/missile/missile.cpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="missile_8cpp_1ad345478dc12b497792b1bce33157ef74" prot="public" static="yes" mutable="no">
+        <type><ref refid="missile_8cpp_1a00b17a829a162a663a4cd327cf57d23a" kindref="member">MissileTypeMap</ref></type>
+        <definition>MissileTypeMap MissileTypes</definition>
+        <argsstring></argsstring>
+        <name>MissileTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="71" column="23" bodyfile="src/missile/missile.cpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="missile_8cpp_1a49a0241ff6b003a0d3b73b426498676d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classBurningBuildingFrame" kindref="compound">BurningBuildingFrame</ref> * &gt;</type>
+        <definition>std::vector&lt;BurningBuildingFrame *&gt; BurningBuildingFrames</definition>
+        <argsstring></argsstring>
+        <name>BurningBuildingFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="73" column="13" bodyfile="src/missile/missile.cpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="missile_8cpp_1a2fae53a4a0fb0f9b36ebaa1a57db5a75" prot="public" static="no" mutable="no">
+        <type><ref refid="structNumberDesc" kindref="compound">NumberDesc</ref> *</type>
+        <definition>NumberDesc* Damage</definition>
+        <argsstring></argsstring>
+        <name>Damage</name>
+        <briefdescription>
+<para>Burning building frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Burning building frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="75" column="19" bodyfile="src/stratagus/script.cpp" bodystart="62" bodyend="-1" declfile="src/missile/missile.cpp" declline="75" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a71219392e4b2a9b16eabc1c049fa64e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void LoadMissileSprites</definition>
+        <argsstring>()</argsstring>
+        <name>LoadMissileSprites</name>
+        <briefdescription>
+<para>load all missile sprites </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the graphics for all missiles types </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="103" column="6" bodyfile="src/missile/missile.cpp" bodystart="103" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a8cacc0d3a5718b588f0b238674acc2b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMissileType" kindref="compound">MissileType</ref> *</type>
+        <definition>MissileType* MissileTypeByIdent</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>MissileTypeByIdent</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Get missile-type by ident. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get <ref refid="classMissile" kindref="compound">Missile</ref> type by identifier.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classMissile" kindref="compound">Missile</ref> type pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="118" column="13" bodyfile="src/missile/missile.cpp" bodystart="118" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1af52a4aa3e35c9f13d2dcc34c8cc36401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMissileType" kindref="compound">MissileType</ref> *</type>
+        <definition>MissileType* NewMissileTypeSlot</definition>
+        <argsstring>(const std::string &amp;ident)</argsstring>
+        <name>NewMissileTypeSlot</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>allocate an empty missile-type slot </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an empty missile-type slot.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier to identify the slot.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New allocated (zeroed) missile-type pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="137" column="13" bodyfile="src/missile/missile.cpp" bodystart="137" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1aef87c8f5233760b863dba69d859f725b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMissile" kindref="compound">Missile</ref> *</type>
+        <definition>Missile* MakeMissile</definition>
+        <argsstring>(const MissileType &amp;mtype, const PixelPos &amp;startPos, const PixelPos &amp;destPos)</argsstring>
+        <name>MakeMissile</name>
+        <param>
+          <type>const <ref refid="classMissileType" kindref="compound">MissileType</ref> &amp;</type>
+          <declname>mtype</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>destPos</declname>
+        </param>
+        <briefdescription>
+<para>create a missile </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new global missile at (x,y).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type pointer of missile. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> start point in pixel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> destination point in pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>created missile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="257" column="9" bodyfile="src/missile/missile.cpp" bodystart="257" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a77e92e1f203dcb78c7dd60f3b6bd826e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMissile" kindref="compound">Missile</ref> *</type>
+        <definition>Missile* MakeLocalMissile</definition>
+        <argsstring>(const MissileType &amp;mtype, const PixelPos &amp;startPos, const PixelPos &amp;destPos)</argsstring>
+        <name>MakeLocalMissile</name>
+        <param>
+          <type>const <ref refid="classMissileType" kindref="compound">MissileType</ref> &amp;</type>
+          <declname>mtype</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>destPos</declname>
+        </param>
+        <briefdescription>
+<para>create a local missile </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new local missile at (x,y).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type pointer of missile. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> start point in pixel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> destination point in pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>created missile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="274" column="9" bodyfile="src/missile/missile.cpp" bodystart="274" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a863bdea9d9b818e08192b4511b4991cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CalculateDamageStats</definition>
+        <argsstring>(const CUnitStats &amp;attacker_stats, const CUnitStats &amp;goal_stats, int bloodlust)</argsstring>
+        <name>CalculateDamageStats</name>
+        <param>
+          <type>const <ref refid="classCUnitStats" kindref="compound">CUnitStats</ref> &amp;</type>
+          <declname>attacker_stats</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitStats" kindref="compound">CUnitStats</ref> &amp;</type>
+          <declname>goal_stats</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bloodlust</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate damage.</para>
+<para><xrefsect id="todo_1_todo000048"><xreftitle>Todo</xreftitle><xrefdescription><para>NOTE: different targets (big are hit by some missiles better) </para>
+<para>NOTE: lower damage for hidden targets. </para>
+<para>NOTE: lower damage for targets on higher ground.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attacker_stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attacker attributes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goal_stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Goal attributes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bloodlust</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If attacker has bloodlust </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Experience of attacker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>damage inflicted to goal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="297" column="12" bodyfile="src/missile/missile.cpp" bodystart="297" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a6ccd0309de113328c4793e5740464e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalculateDamage</definition>
+        <argsstring>(const CUnit &amp;attacker, const CUnit &amp;goal, const NumberDesc *formula)</argsstring>
+        <name>CalculateDamage</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structNumberDesc" kindref="compound">NumberDesc</ref> *</type>
+          <declname>formula</declname>
+        </param>
+        <briefdescription>
+<para>Calculates damage done to goal by attacker using formula. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate damage.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attacker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attacker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Goal unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>formula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Formula used to calculate damage.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>damage produces on goal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="325" column="5" bodyfile="src/missile/missile.cpp" bodystart="325" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a5c6d1961c7b8d169c293c7d4fa75a46e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FireMissile</definition>
+        <argsstring>(CUnit &amp;unit, CUnit *goal, const Vec2i &amp;goalPos)</argsstring>
+        <name>FireMissile</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>goalPos</declname>
+        </param>
+        <briefdescription>
+<para>fire a missile </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Fire missile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that fires the missile. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="348" column="6" bodyfile="src/missile/missile.cpp" bodystart="348" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a4d42c71fab4e5a2fbb09fae3c45023b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void GetMissileMapArea</definition>
+        <argsstring>(const Missile &amp;missile, Vec2i &amp;boxMin, Vec2i &amp;boxMax)</argsstring>
+        <name>GetMissileMapArea</name>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>boxMin</declname>
+        </param>
+        <param>
+          <type><ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>boxMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get area of tiles covered by missile</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> to be checked and set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>boxMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OUT: Pointer to top left corner in map tiles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>boxMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OUT: Pointer to bottom right corner in map tiles.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sx,sy,ex,ey defining area in Map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="451" column="13" bodyfile="src/missile/missile.cpp" bodystart="451" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1ac41c76983167d938b82229fb075fc07d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int MissileVisibleInViewport</definition>
+        <argsstring>(const CViewport &amp;vp, const Missile &amp;missile)</argsstring>
+        <name>MissileVisibleInViewport</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check missile visibility in a given viewport.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport to be checked. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> pointer to check if visible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if visible, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="469" column="12" bodyfile="src/missile/missile.cpp" bodystart="469" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a745367c8c9f73747cfd1bc6d1344eeb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MissileDrawLevelCompare</definition>
+        <argsstring>(const Missile *const l, const Missile *const r)</argsstring>
+        <name>MissileDrawLevelCompare</name>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> *const</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> *const</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="562" column="13" bodyfile="src/missile/missile.cpp" bodystart="562" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a3628143647814f805150d65858f9dec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FindAndSortMissiles</definition>
+        <argsstring>(const CViewport &amp;vp, std::vector&lt; Missile * &gt; &amp;table)</argsstring>
+        <name>FindAndSortMissiles</name>
+        <param>
+          <type>const <ref refid="classCViewport" kindref="compound">CViewport</ref> &amp;</type>
+          <declname>vp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classMissile" kindref="compound">Missile</ref> * &gt; &amp;</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sort visible missiles on map for display.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OUT : array of missile to display sorted by DrawLevel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="577" column="6" bodyfile="src/missile/missile.cpp" bodystart="577" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a6fc48c7bc8541c1cfc8c93c772fce74c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MissileInitMove</definition>
+        <argsstring>(Missile &amp;missile, bool pointToPoint)</argsstring>
+        <name>MissileInitMove</name>
+        <param>
+          <type><ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pointToPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init the move.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>missile to initialise for movement.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if goal is reached, false else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="641" column="6" bodyfile="src/missile/missile.cpp" bodystart="641" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1acc5cd915c99dbdf66d2dfce228f17f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MissileHandlePierce</definition>
+        <argsstring>(Missile &amp;missile, const Vec2i &amp;pos)</argsstring>
+        <name>MissileHandlePierce</name>
+        <param>
+          <type><ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="667" column="6" bodyfile="src/missile/missile.cpp" bodystart="667" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a5d6b40174691b62c01ad25148fa9523f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MissileHandleBlocking</definition>
+        <argsstring>(Missile &amp;missile, const PixelPos &amp;position)</argsstring>
+        <name>MissileHandleBlocking</name>
+        <param>
+          <type><ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="684" column="6" bodyfile="src/missile/missile.cpp" bodystart="684" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1ad8fb45382ab718d325c6643895f5df0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PointToPointMissile</definition>
+        <argsstring>(Missile &amp;missile)</argsstring>
+        <name>PointToPointMissile</name>
+        <param>
+          <type><ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle point to point missile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> pointer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if goal is reached, false else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="748" column="6" bodyfile="src/missile/missile.cpp" bodystart="748" bodyend="822"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a52b91c184b3827a78e8f5debc8b02684" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void MissileHitsGoal</definition>
+        <argsstring>(const Missile &amp;missile, CUnit &amp;goal, int splash)</argsstring>
+        <name>MissileHitsGoal</name>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>splash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> hits the goal.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> hitting the goal. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Goal of the missile. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>splash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Splash damage divisor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="831" column="13" bodyfile="src/missile/missile.cpp" bodystart="831" bodyend="857"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1afdd816fad50613b199a3f309b1d203a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void MissileHitsWall</definition>
+        <argsstring>(const Missile &amp;missile, const Vec2i &amp;tilePos, int splash)</argsstring>
+        <name>MissileHitsWall</name>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>tilePos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>splash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> hits wall.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> hitting the goal. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tilePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wall map tile position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>splash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Splash damage divisor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000049"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: Support for more races. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="868" column="13" bodyfile="src/missile/missile.cpp" bodystart="868" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a97cb43bc0ae52daad7f5266cf653da22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IsPiercedUnit</definition>
+        <argsstring>(const Missile &amp;missile, const CUnit &amp;unit)</argsstring>
+        <name>IsPiercedUnit</name>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if missile has already pierced that unit</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current missile. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classTarget" kindref="compound">Target</ref> unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if goal is pierced, false else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="899" column="13" bodyfile="src/missile/missile.cpp" bodystart="899" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a17fa6addacb4e7e9719a39eaa0b72481" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void MissilesActionLoop</definition>
+        <argsstring>(std::vector&lt; Missile * &gt; &amp;missiles)</argsstring>
+        <name>MissilesActionLoop</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classMissile" kindref="compound">Missile</ref> * &gt; &amp;</type>
+          <declname>missiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle all missile actions of global/local missiles.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table of missiles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1166" column="13" bodyfile="src/missile/missile.cpp" bodystart="1166" bodyend="1197"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a1791fab3e543e0c47b2f1985c24fedc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void MissileActions</definition>
+        <argsstring>()</argsstring>
+        <name>MissileActions</name>
+        <briefdescription>
+<para>handle all missiles </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle all missile actions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1202" column="6" bodyfile="src/missile/missile.cpp" bodystart="1202" bodyend="1206"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a3aa1b33917594a43b13dd6b8953b41cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ViewPointDistanceToMissile</definition>
+        <argsstring>(const Missile &amp;missile)</argsstring>
+        <name>ViewPointDistanceToMissile</name>
+        <param>
+          <type>const <ref refid="classMissile" kindref="compound">Missile</ref> &amp;</type>
+          <declname>missile</declname>
+        </param>
+        <briefdescription>
+<para>distance from view point to missile </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate distance from view-point to missile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>missile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMissile" kindref="compound">Missile</ref> pointer for distance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the computed value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1215" column="5" bodyfile="src/missile/missile.cpp" bodystart="1215" bodyend="1221"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1aaf46e35f3e279ecce3b7b171f7b6159c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMissileType" kindref="compound">MissileType</ref> *</type>
+        <definition>MissileType* MissileBurningBuilding</definition>
+        <argsstring>(int percent)</argsstring>
+        <name>MissileBurningBuilding</name>
+        <param>
+          <type>int</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+<para>Get the burning building missile based on hp percent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the burning building missile based on hp percent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HP percent</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the missile used for burning. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1230" column="13" bodyfile="src/missile/missile.cpp" bodystart="1230" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a81514ebcbfe4963aac2563bb6feec825" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void SavePixelPos</definition>
+        <argsstring>(CFile &amp;file, const PixelPos &amp;pos)</argsstring>
+        <name>SavePixelPos</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a20cc8627b3e52515a26778e489bda2ae" kindref="member">PixelPos</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save a specific pos. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1244" column="13" bodyfile="src/missile/missile.cpp" bodystart="1244" bodyend="1247"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1ac2e59a201adb76fced78383cd2d6c87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void SaveMissiles</definition>
+        <argsstring>(CFile &amp;file)</argsstring>
+        <name>SaveMissiles</name>
+        <param>
+          <type><ref refid="classCFile" kindref="compound">CFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Save missiles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Save the state missiles to file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1289" column="6" bodyfile="src/missile/missile.cpp" bodystart="1289" bodyend="1302"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a8c5a9c873aae5337f76e343d02829bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitMissileTypes</definition>
+        <argsstring>()</argsstring>
+        <name>InitMissileTypes</name>
+        <briefdescription>
+<para>Initialize missile-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize missile-types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1323" column="6" bodyfile="src/missile/missile.cpp" bodystart="1323" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1abae33f614d10f2c87f2385122a7e5d6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanMissileTypes</definition>
+        <argsstring>()</argsstring>
+        <name>CleanMissileTypes</name>
+        <briefdescription>
+<para>Clean missile-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up missile-types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1364" column="6" bodyfile="src/missile/missile.cpp" bodystart="1364" bodyend="1370"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1abc7c9b66e53b7d998f2a4d7b99149293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitMissiles</definition>
+        <argsstring>()</argsstring>
+        <name>InitMissiles</name>
+        <briefdescription>
+<para>Initialize missiles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize missiles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1375" column="6" bodyfile="src/missile/missile.cpp" bodystart="1375" bodyend="1377"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1a03d67e651d2ab20b1f327f825715154a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void CleanMissiles</definition>
+        <argsstring>()</argsstring>
+        <name>CleanMissiles</name>
+        <briefdescription>
+<para>Clean missiles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up missiles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1390" column="6" bodyfile="src/missile/missile.cpp" bodystart="1390" bodyend="1402"/>
+      </memberdef>
+      <memberdef kind="function" id="missile_8cpp_1af9e49ee1a2505883ad32ea140cd8c103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void FreeBurningBuildingFrames</definition>
+        <argsstring>()</argsstring>
+        <name>FreeBurningBuildingFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/missile/missile.cpp" line="1404" column="6" bodyfile="src/missile/missile.cpp" bodystart="1404" bodyend="1411"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/missile/missile.cpp"/>
+  </compounddef>
+</doxygen>

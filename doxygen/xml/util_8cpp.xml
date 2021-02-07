@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="util_8cpp" kind="file" language="C++">
+    <compoundname>util.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includes local="yes">SDL.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">windows.h</includes>
+    <includes refid="st__backtrace_8h" local="yes">st_backtrace.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>stdarg.h</label>
+      </node>
+      <node id="15">
+        <label>windows.h</label>
+      </node>
+      <node id="1">
+        <label>src/stratagus/util.cpp</label>
+        <link refid="util_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SDL.h</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stdlib.h</label>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>errno.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>st_backtrace.h</label>
+        <link refid="st__backtrace_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="10">
+        <label>ctype.h</label>
+      </node>
+      <node id="12">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>util.cpp - General utilites.</header>
+      <memberdef kind="variable" id="util_8cpp_1a9f57699911066a5ea61011010f7828af" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned SyncRandSeed</definition>
+        <argsstring></argsstring>
+        <name>SyncRandSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="58" column="10" bodyfile="src/stratagus/util.cpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8cpp_1a30f4b713169e4fdba52893a2492f191b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FileChecksums</definition>
+        <argsstring></argsstring>
+        <name>FileChecksums</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>sync random seed value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sync random seed value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="59" column="10" bodyfile="src/stratagus/util.cpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8cpp_1ae30f05ee1e2e5652f174a35c7875d25e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int opterr</definition>
+        <argsstring></argsstring>
+        <name>opterr</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard implementation of getopt(3).</para>
+<para>One extension: If the first character of the optionsstring is a &apos;:&apos; the error return for &apos;argument required&apos; is a &apos;:&apos; not a &apos;?&apos;. This makes it easier to differentiate between an &apos;illegal option&apos; and an &apos;argument required&apos; error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="315" column="5" bodyfile="src/stratagus/util.cpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8cpp_1ad5e1c16213bbee2d5e8cc363309f418c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optind</definition>
+        <argsstring></argsstring>
+        <name>optind</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="316" column="5" bodyfile="src/stratagus/util.cpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8cpp_1a475b8db98445da73e5f62a1ef6324b95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optopt</definition>
+        <argsstring></argsstring>
+        <name>optopt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="317" column="5" bodyfile="src/stratagus/util.cpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="util_8cpp_1adb50a0eab9fed92fc3bfc7dfa4f2c410" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* optarg</definition>
+        <argsstring></argsstring>
+        <name>optarg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="318" column="6" bodyfile="src/stratagus/util.cpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1ab8c1df28e23e39176edfdced0cd74bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void InitSyncRand</definition>
+        <argsstring>()</argsstring>
+        <name>InitSyncRand</name>
+        <briefdescription>
+<para>checksums of all loaded lua files </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Inititalize sync rand seed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="64" column="6" bodyfile="src/stratagus/util.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a294fe13ed3e38a9e7bafc3eed984816e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SyncRand</definition>
+        <argsstring>()</argsstring>
+        <name>SyncRand</name>
+        <briefdescription>
+<para>Initialize the syncron rand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronized random number.</para>
+<para><simplesect kind="note"><para>This random value must be same on all machines in network game. Very simple random generations, enough for us. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="75" column="5" bodyfile="src/stratagus/util.cpp" bodystart="75" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a038af6a956dff54b300f59d3d0785587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SyncRand</definition>
+        <argsstring>(int max)</argsstring>
+        <name>SyncRand</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Syncron rand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronized random number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max value of random number to return </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="91" column="5" bodyfile="src/stratagus/util.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a5665d4c73acbcb626e49749b0e4ab366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyRand</definition>
+        <argsstring>()</argsstring>
+        <name>MyRand</name>
+        <briefdescription>
+<para>Syncron rand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>rand only used on this computer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="98" column="5" bodyfile="src/stratagus/util.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1ab352f2879af6b516e5d30d5b9a9525d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long isqrt</definition>
+        <argsstring>(long num)</argsstring>
+        <name>isqrt</name>
+        <param>
+          <type>long</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Compute a square root using ints. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute a square root using ints</para>
+<para>Uses John Halleck&apos;s method, see <ulink url="http://www.cc.utah.edu/~nahaj/factoring/isqrt.legalize.c.html">http://www.cc.utah.edu/~nahaj/factoring/isqrt.legalize.c.html</ulink></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Calculate the square root of this number</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The integer square root. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="117" column="6" bodyfile="src/stratagus/util.cpp" bodystart="117" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a5f2987959fe9e7617b166ef98bb8a690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t fletcher32</definition>
+        <argsstring>(const std::string &amp;content)</argsstring>
+        <name>fletcher32</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="156" column="10" bodyfile="src/stratagus/util.cpp" bodystart="156" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a9a1c6cc25e38ba5dc489380ddfa96acb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="util_8h_1a46a037236862ac1a534efbe605c10f42" kindref="member">errno_t</ref></type>
+        <definition>errno_t strcpy_s</definition>
+        <argsstring>(char *dst, size_t dstsize, const char *src)</argsstring>
+        <name>strcpy_s</name>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dstsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="184" column="9" bodyfile="src/stratagus/util.cpp" bodystart="184" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a6dfc8c38276f4801119bae9cb5f6a859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t strnlen</definition>
+        <argsstring>(const char *str, size_t strsize)</argsstring>
+        <name>strnlen</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>strsize</declname>
+        </param>
+        <briefdescription>
+<para>determine length of a fixed-length string </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="198" column="8" bodyfile="src/stratagus/util.cpp" bodystart="198" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1acd0e1f2ddf443f0017ebe3129c6b38eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="util_8h_1a46a037236862ac1a534efbe605c10f42" kindref="member">errno_t</ref></type>
+        <definition>errno_t strncpy_s</definition>
+        <argsstring>(char *dst, size_t dstsize, const char *src, size_t count)</argsstring>
+        <name>strncpy_s</name>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dstsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="213" column="9" bodyfile="src/stratagus/util.cpp" bodystart="213" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1ae8e57af8291e08d30a69cab8a7ea9697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="util_8h_1a46a037236862ac1a534efbe605c10f42" kindref="member">errno_t</ref></type>
+        <definition>errno_t strcat_s</definition>
+        <argsstring>(char *dst, size_t dstsize, const char *src)</argsstring>
+        <name>strcat_s</name>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dstsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="242" column="9" bodyfile="src/stratagus/util.cpp" bodystart="242" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a10acc91fa932379489ed5e4ad3df8756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* strcasestr</definition>
+        <argsstring>(const char *a, const char *b)</argsstring>
+        <name>strcasestr</name>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>case insensitive strstr </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Case insensitive version of strstr</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to search in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Substring to search for</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to first occurrence of b or NULL if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="273" column="6" bodyfile="src/stratagus/util.cpp" bodystart="273" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1aa5fa0860227355d0ebb8890ab01d65a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void getopt_err</definition>
+        <argsstring>(const char *argv0, const char *str, char opt)</argsstring>
+        <name>getopt_err</name>
+        <param>
+          <type>const char *</type>
+          <declname>argv0</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="320" column="13" bodyfile="src/stratagus/util.cpp" bodystart="320" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a499da2e3b5778187cbf7c81d1e5551fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getopt</definition>
+        <argsstring>(int argc, char *const *argv, const char *opts)</argsstring>
+        <name>getopt</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *const *</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="333" column="5" bodyfile="src/stratagus/util.cpp" bodystart="333" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a62c0228a5dd2abb7bc91f29c88dec5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetClipboard</definition>
+        <argsstring>(std::string &amp;str)</argsstring>
+        <name>GetClipboard</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Paste text from the clipboard </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="382" column="5" bodyfile="src/stratagus/util.cpp" bodystart="382" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a4ac1eaa21f2fbfe2953fce0cf3786910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UTF8GetPrev</definition>
+        <argsstring>(const std::string &amp;text, int curpos)</argsstring>
+        <name>UTF8GetPrev</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>curpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="399" column="5" bodyfile="src/stratagus/util.cpp" bodystart="399" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a1a532b81815666c3cf143c21e4a5c9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UTF8GetNext</definition>
+        <argsstring>(const std::string &amp;text, int curpos)</argsstring>
+        <name>UTF8GetNext</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>curpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="417" column="5" bodyfile="src/stratagus/util.cpp" bodystart="417" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1ad6aa6d5da016ce7b8b521e5e7613c1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PrintLocation</definition>
+        <argsstring>(const char *file, int line, const char *funcName)</argsstring>
+        <name>PrintLocation</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>funcName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="441" column="6" bodyfile="src/stratagus/util.cpp" bodystart="441" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a3779e931c407722fd74d494598e12c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AbortAt</definition>
+        <argsstring>(const char *file, int line, const char *funcName, const char *conditionStr)</argsstring>
+        <name>AbortAt</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>funcName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>conditionStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="446" column="6" bodyfile="src/stratagus/util.cpp" bodystart="446" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8cpp_1a36dd610688bb1cd9e3f655dd8c1fca71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void PrintOnStdOut</definition>
+        <argsstring>(const char *format,...)</argsstring>
+        <name>PrintOnStdOut</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stratagus/util.cpp" line="461" column="6" bodyfile="src/stratagus/util.cpp" bodystart="461" bodyend="468"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/stratagus/util.cpp"/>
+  </compounddef>
+</doxygen>

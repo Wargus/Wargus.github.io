@@ -1,0 +1,1422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ai__resource_8cpp" kind="file" language="C++">
+    <compoundname>ai_resource.cpp</compoundname>
+    <includes refid="stratagus_8h" local="yes">stratagus.h</includes>
+    <includes refid="ai__local_8h" local="yes">ai_local.h</includes>
+    <includes refid="action__build_8h" local="yes">action/action_build.h</includes>
+    <includes refid="action__repair_8h" local="yes">action/action_repair.h</includes>
+    <includes refid="action__resource_8h" local="yes">action/action_resource.h</includes>
+    <includes refid="commands_8h" local="yes">commands.h</includes>
+    <includes refid="depend_8h" local="yes">depend.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes refid="pathfinder_8h" local="yes">pathfinder.h</includes>
+    <includes refid="player_8h" local="yes">player.h</includes>
+    <includes refid="tileset_8h" local="yes">tileset.h</includes>
+    <includes refid="unit_8h" local="yes">unit.h</includes>
+    <includes refid="unit__find_8h" local="yes">unit_find.h</includes>
+    <includes refid="unittype_8h" local="yes">unittype.h</includes>
+    <includes refid="upgrade_8h" local="yes">upgrade.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>upgrade_structs.h</label>
+        <link refid="upgrade__structs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>queue</label>
+      </node>
+      <node id="18">
+        <label>action/action_repair.h</label>
+        <link refid="action__repair_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stdint.h</label>
+      </node>
+      <node id="16">
+        <label>actions.h</label>
+        <link refid="actions_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pathfinder.h</label>
+        <link refid="pathfinder_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>network/netsockets.h</label>
+        <link refid="netsockets_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="37">
+        <label>map</label>
+      </node>
+      <node id="19">
+        <label>action/action_resource.h</label>
+        <link refid="action__resource_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>upgrade.h</label>
+        <link refid="upgrade_8h"/>
+      </node>
+      <node id="17">
+        <label>unitptr.h</label>
+        <link refid="unitptr_8h"/>
+      </node>
+      <node id="12">
+        <label>unit_cache.h</label>
+        <link refid="unit__cache_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ai_local.h</label>
+        <link refid="ai__local_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/ai/ai_resource.cpp</label>
+        <link refid="ai__resource_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="35">
+        <label>missileconfig.h</label>
+        <link refid="missileconfig_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>action/action_build.h</label>
+        <link refid="action__build_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>stratagus.h</label>
+        <link refid="stratagus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>color.h</label>
+        <link refid="include_2color_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>unitsound.h</label>
+        <link refid="unitsound_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>icons.h</label>
+        <link refid="icons_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="40">
+        <label>network.h</label>
+        <link refid="network_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>depend.h</label>
+        <link refid="depend_8h"/>
+      </node>
+      <node id="36">
+        <label>climits</label>
+      </node>
+      <node id="22">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec2i.h</label>
+        <link refid="vec2i_8h"/>
+      </node>
+      <node id="31">
+        <label>unit.h</label>
+        <link refid="unit_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>tileset.h</label>
+        <link refid="tileset_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>tile.h</label>
+        <link refid="tile_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>unit_find.h</label>
+        <link refid="unit__find_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>set</label>
+      </node>
+      <node id="32">
+        <label>unittype.h</label>
+        <link refid="unittype_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>commands.h</label>
+        <link refid="commands_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIsAEnemyUnitOf" prot="public">IsAEnemyUnitOf</innerclass>
+    <innerclass refid="classIsAEnemyUnitWhichCanCounterAttackOf" prot="public">IsAEnemyUnitWhichCanCounterAttackOf</innerclass>
+    <innerclass refid="structcnode" prot="public">cnode</innerclass>
+    <innerclass refid="classIsAWorker" prot="public">IsAWorker</innerclass>
+    <innerclass refid="classCompareDepotsByDistance" prot="public">CompareDepotsByDistance</innerclass>
+      <sectiondef kind="user-defined">
+      <header>ai_resource.cpp - AI resource manager.</header>
+      <memberdef kind="define" id="ai__resource_8cpp_1abe83b79fe391bddae9f670518998ac3f" prot="public" static="no">
+        <name>COLLECT_RESOURCES_INTERVAL</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="60" column="9" bodyfile="src/ai/ai_resource.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1aa722e8d998ec99da161279f65270a6db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiMakeUnit</definition>
+        <argsstring>(CUnitType &amp;type, const Vec2i &amp;nearPos)</argsstring>
+        <name>AiMakeUnit</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+          <defname>typeToMake</defname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>nearPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can make a unit-type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type that must be made.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if made, false if can&apos;t be made.</para>
+</simplesect>
+<simplesect kind="note"><para>We must check if the dependencies are fulfilled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="653" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="653" bodyend="705" declfile="src/ai/ai_resource.cpp" declline="66" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a16ba634a8a816163390c61343ed279d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiCheckCosts</definition>
+        <argsstring>(const int *costs)</argsstring>
+        <name>AiCheckCosts</name>
+        <param>
+          <type>const int *</type>
+          <declname>costs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the costs are available for the AI.</para>
+<para>Take reserve and already used resources into account.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Costs for something.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A bit field of the missing costs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="77" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="77" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1ab754cb45fa786e142f9607859cdc8e84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiCheckSupply</definition>
+        <argsstring>(const PlayerAi &amp;pai, const CUnitType &amp;type)</argsstring>
+        <name>AiCheckSupply</name>
+        <param>
+          <type>const <ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> &amp;</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the AI player needs food.</para>
+<para>It counts buildings in progress and units in training queues.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AI player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type that should be build.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if enought, false otherwise.</para>
+</simplesect>
+<xrefsect id="todo_1_todo000011"><xreftitle>Todo</xreftitle><xrefdescription><para>The number of food currently trained can be stored global for faster use. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="129" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="129" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a16b3496525d966b6c91c4726793477bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiCheckUnitTypeCosts</definition>
+        <argsstring>(const CUnitType &amp;type)</argsstring>
+        <name>AiCheckUnitTypeCosts</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the costs for an unit-type are available for the AI.</para>
+<para>Take reserve and already used resources into account.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit-type to check the costs for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A bit field of the missing costs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="166" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a122dccb44e39f2ac1c36b5bcb25d4b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiEnemyUnitsInDistance</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnitType *type, const Vec2i &amp;pos, unsigned range)</argsstring>
+        <name>AiEnemyUnitsInDistance</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Enemy units in distance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enemy units in distance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find enemies of this player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional unit type to check if enemy can target this </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance range to look.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of enemy units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="210" column="5" bodyfile="src/ai/ai_resource.cpp" bodystart="210" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a317eb55ddab1d3630123d6495fb9854e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiEnemyUnitsInDistance</definition>
+        <argsstring>(const CUnit &amp;unit, unsigned range)</argsstring>
+        <name>AiEnemyUnitsInDistance</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enemy units in distance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find in distance for this unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance range to look.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of enemy units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="236" column="5" bodyfile="src/ai/ai_resource.cpp" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a55cfc6d174054a40d45370bab73406f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IsAlreadyWorking</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>IsAlreadyWorking</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="241" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="241" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a69e8f61747f4302ea5e9fcda2fb391a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiBuildBuilding</definition>
+        <argsstring>(const CUnitType &amp;type, CUnitType &amp;building, const Vec2i &amp;nearPos)</argsstring>
+        <name>AiBuildBuilding</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>building</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>nearPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can build the building.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that can build the building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Building to be build.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if made, false if can&apos;t be made.</para>
+</simplesect>
+<simplesect kind="note"><para>We must check if the dependencies are fulfilled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="271" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="271" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a0bbe30f5246d170c8f628aa6ccc8cf99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiRequestedTypeAllowed</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnitType &amp;type)</argsstring>
+        <name>AiRequestedTypeAllowed</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="315" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="315" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a95846913dccff64cdc6d201937560507" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cnode_cmp</definition>
+        <argsstring>(const cnode &amp;lhs, const cnode &amp;rhs)</argsstring>
+        <name>cnode_cmp</name>
+        <param>
+          <type>const <ref refid="structcnode" kindref="compound">cnode</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcnode" kindref="compound">cnode</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="335" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="335" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a87594f2bea5a0b2b21fdfb443087ae0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiGetBuildRequestsCount</definition>
+        <argsstring>(const PlayerAi &amp;pai, int(&amp;counter)[UnitTypeMax])</argsstring>
+        <name>AiGetBuildRequestsCount</name>
+        <param>
+          <type>const <ref refid="classPlayerAi" kindref="compound">PlayerAi</ref> &amp;</type>
+          <declname>pai</declname>
+        </param>
+        <param>
+          <type>int(&amp;)</type>
+          <declname>counter</declname>
+          <array>[UnitTypeMax]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="340" column="5" bodyfile="src/ai/ai_resource.cpp" bodystart="340" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a1907b658686c118d97e78b60b87d89d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* FindDepositNearLoc</definition>
+        <argsstring>(CPlayer &amp;p, const Vec2i &amp;pos, int range, int resource)</argsstring>
+        <name>FindDepositNearLoc</name>
+        <param>
+          <type><ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="352" column="14" bodyfile="src/unit/unit_find.cpp" bodystart="278" bodyend="293" declfile="src/ai/ai_resource.cpp" declline="352" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a18c887f5c3e56082a6ba7ca4c1591ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiNewDepotRequest</definition>
+        <argsstring>(CUnit &amp;worker)</argsstring>
+        <name>AiNewDepotRequest</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="355" column="6" bodyfile="src/ai/ai_resource.cpp" bodystart="355" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a16da540a647941f46bf426ddc8cf2b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+        <definition>CUnit* AiGetSuitableDepot</definition>
+        <argsstring>(const CUnit &amp;worker, const CUnit &amp;oldDepot, CUnit **resUnit)</argsstring>
+        <name>AiGetSuitableDepot</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>oldDepot</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> **</type>
+          <declname>resUnit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a suitable depot for better resource harvesting.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Worker itself. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oldDepot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Old assigned depot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resUnit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to harvest from, if succeed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new depot if found, NULL otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="464" column="7" bodyfile="src/ai/ai_resource.cpp" bodystart="464" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1ae88ea944bb41f9f0e68f7afc6f4d53f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiRequestSupply</definition>
+        <argsstring>()</argsstring>
+        <name>AiRequestSupply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build new units to reduce the food shortage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="512" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="512" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1af47a9a97b44706e23976b390548c7335" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiTrainUnit</definition>
+        <argsstring>(const CUnitType &amp;type, CUnitType &amp;what)</argsstring>
+        <name>AiTrainUnit</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can train the unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that can train the unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What to be trained.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if made, false if can&apos;t be made.</para>
+</simplesect>
+<simplesect kind="note"><para>We must check if the dependencies are fulfilled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="628" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="628" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a3df3bfd07930eebb286c6921bb910650" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiResearchUpgrade</definition>
+        <argsstring>(const CUnitType &amp;type, CUpgrade &amp;what)</argsstring>
+        <name>AiResearchUpgrade</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUpgrade" kindref="compound">CUpgrade</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can research the upgrade.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that can research the upgrade. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What should be researched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if made, false if can&apos;t be made.</para>
+</simplesect>
+<simplesect kind="note"><para>We must check if the dependencies are fulfilled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="717" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="717" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a9960c5ecaaf4f470626fa6567afffd36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAddResearchRequest</definition>
+        <argsstring>(CUpgrade *upgrade)</argsstring>
+        <name>AiAddResearchRequest</name>
+        <param>
+          <type><ref refid="classCUpgrade" kindref="compound">CUpgrade</ref> *</type>
+          <declname>upgrade</declname>
+        </param>
+        <briefdescription>
+<para>Add research request to resource manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the research can be done.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upgrade</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upgrade to research </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="738" column="6" bodyfile="src/ai/ai_resource.cpp" bodystart="738" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a3dd12f7e2908d233624108cd022fa7d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiUpgradeTo</definition>
+        <argsstring>(const CUnitType &amp;type, CUnitType &amp;what)</argsstring>
+        <name>AiUpgradeTo</name>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can upgrade to unit-type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that can upgrade to unit-type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>To what should be upgraded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if made, false if can&apos;t be made. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="783" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="783" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1af9a0d86a4b5b88e1421e2684e3719265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAddUpgradeToRequest</definition>
+        <argsstring>(CUnitType &amp;type)</argsstring>
+        <name>AiAddUpgradeToRequest</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Add upgrade-to request to resource manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the upgrade-to can be done.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FIXME: docu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="811" column="6" bodyfile="src/ai/ai_resource.cpp" bodystart="811" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1ad522172610366181a86a48a0ea8fceb4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiCheckingWork</definition>
+        <argsstring>()</argsstring>
+        <name>AiCheckingWork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check what must be built / trained. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="856" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="856" bodyend="911"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a99c945a8a4c8e4d622cb12063b29a2ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiAssignHarvesterFromTerrain</definition>
+        <argsstring>(CUnit &amp;unit, int resource)</argsstring>
+        <name>AiAssignHarvesterFromTerrain</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign worker to gather a certain resource from terrain.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource identification.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if the worker was assigned, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="925" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="925" bodyend="940"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1ad4c72e562bd06e88edc9637e355701ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiAssignHarvesterFromUnit</definition>
+        <argsstring>(CUnit &amp;unit, int resource)</argsstring>
+        <name>AiAssignHarvesterFromUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign worker to gather a certain resource from Unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource identification.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if the worker was assigned, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="950" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="950" bodyend="987"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a94db4d6121e018976bf0f52cdd07749b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiAssignHarvester</definition>
+        <argsstring>(CUnit &amp;unit, int resource)</argsstring>
+        <name>AiAssignHarvester</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign worker to gather a certain resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource identification.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if the worker was assigned, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="996" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="996" bodyend="1011"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1ae1746440d450c933d0b65d199d4f113f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool CmpWorkers</definition>
+        <argsstring>(const CUnit *lhs, const CUnit *rhs)</argsstring>
+        <name>CmpWorkers</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1013" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1013" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1aee0bbe1317c8da1ed67d0dd1fd9987a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiCollectResources</definition>
+        <argsstring>()</argsstring>
+        <name>AiCollectResources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign workers to collect resources.</para>
+<para>If we have a shortage of a resource, let many workers collecting this. If no shortage, split workers to all resources. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1024" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1024" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1adb20db57f1bc168056ba18142807e6ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IsReadyToRepair</definition>
+        <argsstring>(const CUnit &amp;unit)</argsstring>
+        <name>IsReadyToRepair</name>
+        <param>
+          <type>const <ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1229" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1229" bodyend="1241"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a99962d98d36175dfb5629030f2e8f098" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool AiRepairBuilding</definition>
+        <argsstring>(const CPlayer &amp;player, const CUnitType &amp;type, CUnit &amp;building)</argsstring>
+        <name>AiRepairBuilding</name>
+        <param>
+          <type>const <ref refid="classCPlayer" kindref="compound">CPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>building</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can repair the building.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that can repair the building. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>building</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Building to be repaired.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if can repair, false if can&apos;t repair.. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1251" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1251" bodyend="1293"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a090cc1f4e25a3c0b3074587f0b6ae2bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AiRepairUnit</definition>
+        <argsstring>(CUnit &amp;unit)</argsstring>
+        <name>AiRepairUnit</name>
+        <param>
+          <type><ref refid="classCUnit" kindref="compound">CUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if we can repair this unit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit that must be repaired.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if made, false if can&apos;t be made. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1302" column="12" bodyfile="src/ai/ai_resource.cpp" bodystart="1302" bodyend="1331"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a9906eea5bc21efb4bb12162e54cc761c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>static void AiCheckRepair</definition>
+        <argsstring>()</argsstring>
+        <name>AiCheckRepair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if there&apos;s a unit that should be repaired. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1336" column="13" bodyfile="src/ai/ai_resource.cpp" bodystart="1336" bodyend="1420"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a04bd2ba722c95986d692fa9abeb7f765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiAddUnitTypeRequest</definition>
+        <argsstring>(CUnitType &amp;type, int count)</argsstring>
+        <name>AiAddUnitTypeRequest</name>
+        <param>
+          <type><ref refid="classCUnitType" kindref="compound">CUnitType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Current AI player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add unit-type request to resource manager.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unit type requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many units.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000012"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME: should store the end of list and not search it. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1430" column="6" bodyfile="src/ai/ai_resource.cpp" bodystart="1430" bodyend="1438"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1ae21b965ba756eb43ae1fa49d78347afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiExplore</definition>
+        <argsstring>(const Vec2i &amp;pos, int mask)</argsstring>
+        <name>AiExplore</name>
+        <param>
+          <type>const <ref refid="vec2i_8h_1a5824c689f07870d960ebe92af31f90a8" kindref="member">Vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Ask the ai to explore around pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark that a zone is requiring exploration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pos of the zone </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask to explore ( land/sea/air ) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1446" column="6" bodyfile="src/ai/ai_resource.cpp" bodystart="1446" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="ai__resource_8cpp_1a958fffa9626977f32fff1b7e8ba68573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shaders_8cpp_1a7206f6ae7a09ba9ca63f80e09015869c" kindref="member">void</ref></type>
+        <definition>void AiResourceManager</definition>
+        <argsstring>()</argsstring>
+        <name>AiResourceManager</name>
+        <briefdescription>
+<para>Periodic called resource manager handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point of resource manager, periodically called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/ai_resource.cpp" line="1461" column="6" bodyfile="src/ai/ai_resource.cpp" bodystart="1461" bodyend="1481"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/ai_resource.cpp"/>
+  </compounddef>
+</doxygen>
