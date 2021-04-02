@@ -36,6 +36,11 @@ Wargus is not an official Blizzard product, its a Warcraft2 modification, by
 Warcraft2 fans for Warcraft2 fans. You need a copy of the original Warcraft2.
 Warcraft is a registered trademark of Blizzard Entertainment. 
 
+### Community
+
+There is a page on [gamebanana](https://gamebanana.com/games/8682) with custom maps
+using some of Wargus' unique features.
+
 ### Development
 
 Wargus is an open source software. It is developed at
