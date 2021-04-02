@@ -5,10 +5,11 @@ icon: general.svg
 ---
 ### Frequently Asked Questions
 
-* [A Note for Windows XP users](#winxp)
-* [Linux packages](#linux)
-* [How to build Wargus/War1gus from sources](#build)</a>
-* More questions? [Open a new issue at github](https://github.com/Wargus/wargus/issues)
+Have a questions that's not answered? [Open a new issue at github](https://github.com/Wargus/wargus/issues) or jump on our [Discord](https://discord.gg/dQGxaw3QfB)!
+
+### <a id='maps'></a>Building custom maps and campaigns
+
+See our document [here](mapbuilding.html).
 
 ### <a id='winxp'></a>A note for Windows XP users
 
