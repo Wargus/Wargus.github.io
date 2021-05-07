@@ -5,7 +5,9 @@ package_title: wargus
 icon: wargus.svg
 version: 3.0.0
 next_version: 3.0.1
+
 ---
+
 ### About Wargus
 
 Wargus is a Warcraft2 Mod that allows you to play Warcraft2 with the Stratagus
@@ -38,12 +40,16 @@ Warcraft is a registered trademark of Blizzard Entertainment.
 
 ### Community
 
-There is a page on [gamebanana](https://gamebanana.com/games/8682) with custom maps
-using some of Wargus' unique features.
+There is a page on [GameBanana](https://gamebanana.com/games/8682) with custom maps using some of Wargus' unique features.
+
+Here are some maps:
+
+- [![](https://gamebanana.com/mods/embeddables/166221?variant=medium)](https://gamebanana.com/mods/166221)
+- [![](https://gamebanana.com/mods/embeddables/151154?variant=medium)](https://gamebanana.com/mods/151154)
+- [![](https://gamebanana.com/mods/embeddables/151153?variant=medium)](https://gamebanana.com/mods/151153)
 
 ### Development
 
 Wargus is an open source software. It is developed at
 [![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
-
