@@ -215,7 +215,7 @@
                         <summary>AddMessage</summary>
                         <p><br> <b>Description</b><br><br>  Add a new message.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		AddMessage("Hello World!")<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1166 CclAddMessage</summary>
+                          <summary>/ui/script_ui.cpp:1253 CclAddMessage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAddMessage</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -229,9 +229,9 @@
                         
                         <details>
                         <summary>SetKeyScrollSpeed</summary>
-                        <p><br>  Set speed of key scroll<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set speed of key scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetKeyScrollSpeed(4)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:81 CclSetKeyScrollSpeed</summary>
+                          <summary>/ui/script_ui.cpp:91 CclSetKeyScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetKeyScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -245,9 +245,9 @@
                         
                         <details>
                         <summary>GetKeyScrollSpeed</summary>
-                        <p><br>  Get speed of key scroll<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Get speed of key scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		scroll_speed = GetKeyScrollSpeed()<br>		print(scroll_speed)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:93 CclGetKeyScrollSpeed</summary>
+                          <summary>/ui/script_ui.cpp:114 CclGetKeyScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetKeyScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -261,9 +261,9 @@
                         
                         <details>
                         <summary>SetMouseScrollSpeed</summary>
-                        <p><br>  Set speed of mouse scroll<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set speed of mouse scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetMouseScrollSpeed(2)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:105 CclSetMouseScrollSpeed</summary>
+                          <summary>/ui/script_ui.cpp:136 CclSetMouseScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMouseScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -277,9 +277,9 @@
                         
                         <details>
                         <summary>GetMouseScrollSpeed</summary>
-                        <p><br>  Get speed of mouse scroll<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Get speed of mouse scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		scroll_speed = GetMouseScrollSpeed()<br>		print(scroll_speed)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:117 CclGetMouseScrollSpeed</summary>
+                          <summary>/ui/script_ui.cpp:159 CclGetMouseScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetMouseScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -295,7 +295,7 @@
                         <summary>SetMouseScrollSpeedDefault</summary>
                         <p><br>  Set speed of middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:129 CclSetMouseScrollSpeedDefault</summary>
+                          <summary>/ui/script_ui.cpp:171 CclSetMouseScrollSpeedDefault</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMouseScrollSpeedDefault</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -311,7 +311,7 @@
                         <summary>GetMouseScrollSpeedDefault</summary>
                         <p><br>  Get speed of middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:141 CclGetMouseScrollSpeedDefault</summary>
+                          <summary>/ui/script_ui.cpp:183 CclGetMouseScrollSpeedDefault</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetMouseScrollSpeedDefault</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -327,7 +327,7 @@
                         <summary>SetMouseScrollSpeedControl</summary>
                         <p><br>  Set speed of ctrl-middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:153 CclSetMouseScrollSpeedControl</summary>
+                          <summary>/ui/script_ui.cpp:195 CclSetMouseScrollSpeedControl</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMouseScrollSpeedControl</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -343,7 +343,7 @@
                         <summary>GetMouseScrollSpeedControl</summary>
                         <p><br>  Get speed of ctrl-middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:165 CclGetMouseScrollSpeedControl</summary>
+                          <summary>/ui/script_ui.cpp:207 CclGetMouseScrollSpeedControl</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetMouseScrollSpeedControl</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -359,7 +359,7 @@
                         <summary>SetClickMissile</summary>
                         <p><br>  Set which missile is used for right click<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:183 CclSetClickMissile</summary>
+                          <summary>/ui/script_ui.cpp:225 CclSetClickMissile</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetClickMissile</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">args</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -381,7 +381,7 @@
                         <summary>SetDamageMissile</summary>
                         <p><br>  Set which missile shows Damage<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:202 CclSetDamageMissile</summary>
+                          <summary>/ui/script_ui.cpp:244 CclSetDamageMissile</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetDamageMissile</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">args</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -402,9 +402,9 @@
                         
                         <details>
                         <summary>SetVideoResolution</summary>
-                        <p><br>  Set the video resolution.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set the video resolution.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetVideoResolution(640,480)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:220 CclSetVideoResolution</summary>
+                          <summary>/ui/script_ui.cpp:272 CclSetVideoResolution</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetVideoResolution</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -424,9 +424,9 @@
                         
                         <details>
                         <summary>GetVideoResolution</summary>
-                        <p><br>  Get the video resolution.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Get the video resolution.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		width,height = GetVideoResolution()<br><br>		print("Resolution  is " .. width .. "x" .. height)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:233 CclGetVideoResolution</summary>
+                          <summary>/ui/script_ui.cpp:296 CclGetVideoResolution</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetVideoResolution</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -441,9 +441,9 @@
                         
                         <details>
                         <summary>SetVideoFullScreen</summary>
-                        <p><br>  Set the video fullscreen mode.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set the video fullscreen mode.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Full Screen mode enabled<br>		SetVideoFullScreen(true)<br>		-- Full Screen mode disabled<br>		SetVideoFullScreen(false)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:250 CclSetVideoFullScreen</summary>
+                          <summary>/ui/script_ui.cpp:326 CclSetVideoFullScreen</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetVideoFullScreen</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -462,9 +462,9 @@
                         
                         <details>
                         <summary>GetVideoFullScreen</summary>
-                        <p><br>  Get the video fullscreen mode.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Get the video fullscreen mode.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		fullscreenmode = GetVideoFullScreen()<br>		print(fullscreenmode)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:262 CclGetVideoFullScreen</summary>
+                          <summary>/ui/script_ui.cpp:349 CclGetVideoFullScreen</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetVideoFullScreen</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -480,7 +480,7 @@
                         <summary>SetWindowSize</summary>
                         <p><br> Request a specific initial window size</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:278 CclSetWindowSize</summary>
+                          <summary>/ui/script_ui.cpp:365 CclSetWindowSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetWindowSize</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -502,7 +502,7 @@
                         <summary>SetVerticalPixelSize</summary>
                         <p><br> For games with non-square pixels, this sets the scale of vertical pixels versus horizontal pixels.<br> e.g., if your assets are 320x200, but you render at 320x240, this is 1.2.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:292 CclSetVerticalPixelSize</summary>
+                          <summary>/ui/script_ui.cpp:379 CclSetVerticalPixelSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetVerticalPixelSize</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -521,7 +521,7 @@
                         <summary>SetTitleScreens</summary>
                         <p><br>  Default title screens.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:389 CclSetTitleScreens</summary>
+                          <summary>/ui/script_ui.cpp:476 CclSetTitleScreens</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTitleScreens</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">TitleScreens</span><span class="p">)</span> <span class="p">{</span>
@@ -612,7 +612,7 @@
                         
                         <details>
                         <summary>ShowTitleScreens</summary>
-                        <p>/ui/script_ui.cpp:300 CclShowTitleScreens</p>
+                        <p>/ui/script_ui.cpp:387 CclShowTitleScreens</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclShowTitleScreens</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -628,7 +628,7 @@
                         <summary>DefinePanelContents</summary>
                         <p><br>  Define the Panels.<br>  Define what is shown in the panel(text, icon, variables)<br><br>  @param l  Lua state.<br>  @return   0.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:573 CclDefinePanelContents</summary>
+                          <summary>/ui/script_ui.cpp:660 CclDefinePanelContents</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePanelContents</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -687,7 +687,7 @@
                         <summary>DefinePopup</summary>
                         <p><br>  Define the Panels.<br>  Define what is shown in the panel(text, icon, variables)<br><br>  @param l  Lua state.<br>  @return   0.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:625 CclDefinePopup</summary>
+                          <summary>/ui/script_ui.cpp:712 CclDefinePopup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePopup</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">Assert</span><span class="p">(</span><span class="n">lua_istable</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
@@ -741,7 +741,7 @@
                         <summary>DefineViewports</summary>
                         <p><br>  Define the viewports.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:659 CclDefineViewports</summary>
+                          <summary>/ui/script_ui.cpp:746 CclDefineViewports</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineViewports</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -779,7 +779,7 @@
                         <summary>RightButtonAttacks</summary>
                         <p><br>  Fighter right button attacks as default.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:671 CclRightButtonAttacks</summary>
+                          <summary>/ui/script_ui.cpp:758 CclRightButtonAttacks</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRightButtonAttacks</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -795,7 +795,7 @@
                         <summary>RightButtonMoves</summary>
                         <p><br>  Fighter right button moves as default.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:683 CclRightButtonMoves</summary>
+                          <summary>/ui/script_ui.cpp:770 CclRightButtonMoves</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRightButtonMoves</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -811,7 +811,7 @@
                         <summary>SetFancyBuildings</summary>
                         <p><br>  Enable/disable the fancy buildings.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:695 CclSetFancyBuildings</summary>
+                          <summary>/ui/script_ui.cpp:782 CclSetFancyBuildings</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFancyBuildings</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -827,7 +827,7 @@
                         <summary>DefineButton</summary>
                         <p><br>  Define a button style<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:859 CclDefineButton</summary>
+                          <summary>/ui/script_ui.cpp:946 CclDefineButton</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineButtonStyle</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -912,7 +912,7 @@
                         <summary>ClearButtons</summary>
                         <p><br>  Clear all buttons<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:903 CclClearButtons</summary>
+                          <summary>/ui/script_ui.cpp:990 CclClearButtons</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclClearButtons</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -928,7 +928,7 @@
                         <summary>DefineButtonStyle</summary>
                         <p><br>  Define a button style<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:859 CclDefineButtonStyle</summary>
+                          <summary>/ui/script_ui.cpp:946 CclDefineButtonStyle</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineButtonStyle</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -1013,7 +1013,7 @@
                         <summary>PresentMap</summary>
                         <p><br> Set basic map caracteristics.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1196 CclPresentMap</summary>
+                          <summary>/ui/script_ui.cpp:1283 CclPresentMap</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclPresentMap</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
@@ -1035,7 +1035,7 @@
                         <summary>DefineMapSetup</summary>
                         <p><br> Define the lua file that will build the map<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1209 CclDefineMapSetup</summary>
+                          <summary>/ui/script_ui.cpp:1296 CclDefineMapSetup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineMapSetup</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1052,7 +1052,7 @@
                         <summary>SetSelectionStyle</summary>
                         <p><br>  Set selection style.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1144 CclSetSelectionStyle</summary>
+                          <summary>/ui/script_ui.cpp:1231 CclSetSelectionStyle</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetSelectionStyle</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1082,7 +1082,7 @@
                         <summary>SetGroupKeys</summary>
                         <p><br>  Set the keys which are use for grouping units, helpful for other keyboards<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1178 CclSetGroupKeys</summary>
+                          <summary>/ui/script_ui.cpp:1265 CclSetGroupKeys</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetGroupKeys</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1382,9 +1382,9 @@
                         <hr>/unit/script_unit.cpp<hr>
                         <details>
                         <summary>SetTrainingQueue</summary>
-                        <p><br>  Set training queue<br><br>  @param l  Lua state.<br><br>  @return  The old state of the training queue</p>
+                        <p><br> <b>Description</b><br><br>  Set training queue<br><br>  @param l  Lua state.<br><br>  @return  The old state of the training queue<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Training queue available. Train multiple units.<br>		SetTrainingQueue(true)<br>		-- Train one unit at a time.<br>		SetTrainingQueue(false)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:79 CclSetTrainingQueue</summary>
+                          <summary>/unit/script_unit.cpp:92 CclSetTrainingQueue</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTrainingQueue</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1400,7 +1400,7 @@
                         <summary>SetBuildingCapture</summary>
                         <p><br>  Set capture buildings<br><br>  @param l  Lua state.<br><br>  @return   The old state of the flag</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:93 CclSetBuildingCapture</summary>
+                          <summary>/unit/script_unit.cpp:106 CclSetBuildingCapture</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetBuildingCapture</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1416,7 +1416,7 @@
                         <summary>SetRevealAttacker</summary>
                         <p><br>  Set reveal attacker<br><br>  @param l  Lua state.<br><br>  @return   The old state of the flag</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:107 CclSetRevealAttacker</summary>
+                          <summary>/unit/script_unit.cpp:120 CclSetRevealAttacker</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetRevealAttacker</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1432,7 +1432,7 @@
                         <summary>ResourcesMultiBuildersMultiplier</summary>
                         <p><br>  Set cost multiplier to RepairCost for buildings additional workers helping (0 = no additional cost)<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:119 CclResourcesMultiBuildersMultiplier</summary>
+                          <summary>/unit/script_unit.cpp:132 CclResourcesMultiBuildersMultiplier</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclResourcesMultiBuildersMultiplier</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1448,7 +1448,7 @@
                         <summary>Unit</summary>
                         <p><br>  Parse unit<br><br>  @param l  Lua state.<br><br>  @todo  Verify that vision table is always correct (transporter)<br>  @todo (PlaceUnit() and host-info).</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:605 CclUnit</summary>
+                          <summary>/unit/script_unit.cpp:618 CclUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">slot</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1788,7 +1788,7 @@
                         <summary>MoveUnit</summary>
                         <p><br>  Move a unit on map.<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made placed.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:635 CclMoveUnit</summary>
+                          <summary>/unit/script_unit.cpp:648 CclMoveUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclMoveUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -1818,9 +1818,9 @@
                         
                         <details>
                         <summary>RemoveUnit</summary>
-                        <p><br>  Remove unit from the map.<br><br>  @param l  Lua state.<br><br>  @return   Returns 1.</p>
+                        <p><br> <b>Description</b><br><br>  Remove unit from the map.<br><br>  @param l  Lua state.<br><br>  @return   Returns 1.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		ogre = CreateUnit("unit-ogre", 0, {24, 89})<br><br>		AddTrigger(<br>  		function() return (GameCycle > 150) end,<br>  		function()<br>    			RemoveUnit(ogre)<br>    			return false end -- end of function<br>		)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:654 CclRemoveUnit</summary>
+                          <summary>/unit/script_unit.cpp:684 CclRemoveUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRemoveUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1841,7 +1841,7 @@
                         <summary>CreateUnit</summary>
                         <p><br> <b>Description</b><br><br>  Create a unit and place it on the map<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		CreateUnit("unit-human-transport", 1, {94, 0})<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:718 CclCreateUnit</summary>
+                          <summary>/unit/script_unit.cpp:748 CclCreateUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclCreateUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -1895,9 +1895,9 @@
                         
                         <details>
                         <summary>TransformUnit</summary>
-                        <p><br>  'Upgrade' a unit in place to a unit of different type.<br><br>  @param l  Lua state.<br><br>  @return   Returns success.</p>
+                        <p><br> <b>Description</b><br><br>  'Upgrade' a unit in place to a unit of different type.<br><br>  @param l  Lua state.<br><br>  @return   Returns success.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Make a peon for player 5<br>		peon = CreateUnit("unit-peon", 5, {58, 9})<br>		-- The peon will be trasformed into a Grunt<br>		TransformUnit(peon,"unit-grunt")<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:738 CclTransformUnit</summary>
+                          <summary>/unit/script_unit.cpp:781 CclTransformUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclTransformUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">lua_pushvalue</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1917,9 +1917,9 @@
                         
                         <details>
                         <summary>DamageUnit</summary>
-                        <p><br>  Damages unit, additionally using another unit as first's attacker<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.</p>
+                        <p><br> <b>Description</b><br><br>  Damages unit, additionally using another unit as first's attacker<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Damage the grunt with 15 points<br>		DamageUnit(-1,grunt,15)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:763 CclDamageUnit</summary>
+                          <summary>/unit/script_unit.cpp:819 CclDamageUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDamageUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -1946,7 +1946,7 @@
                         <summary>SetResourcesHeld</summary>
                         <p><br>  Set resources held by a unit<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:788 CclSetResourcesHeld</summary>
+                          <summary>/unit/script_unit.cpp:844 CclSetResourcesHeld</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetResourcesHeld</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -1975,7 +1975,7 @@
                         <summary>SetTeleportDestination</summary>
                         <p><br>  Set teleport deastination for teleporter unit<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:813 CclSetTeleportDestination</summary>
+                          <summary>/unit/script_unit.cpp:869 CclSetTeleportDestination</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTeleportDestination</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -2002,9 +2002,9 @@
                         
                         <details>
                         <summary>OrderUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Order a unit<br><br>  @param l  Lua state.<br><br>  OrderUnit(player, unit-type, sloc, dloc, order)<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		OrderUnit(1,"unit-human-transport",{94,0},{80,9},"move")<br> 	</code><br> </div></p>
+                        <p><br> <b>Description</b><br><br>  Order a unit<br><br>  @param l  Lua state.<br><br>  OrderUnit(player, unit-type, sloc, dloc, order)<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Move transport from position x=94,y=0 to x=80,y=9<br>		OrderUnit(1,"unit-human-transport",{94,0},{80,9},"move")<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:900 CclOrderUnit</summary>
+                          <summary>/unit/script_unit.cpp:957 CclOrderUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclOrderUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
@@ -2081,9 +2081,9 @@
                         
                         <details>
                         <summary>KillUnit</summary>
-                        <p><br>  Kill a unit<br><br>  @param l  Lua state.<br><br>  @return   Returns true if a unit was killed.</p>
+                        <p><br> <b>Description</b><br><br>  Kill a unit<br><br>  @param l  Lua state.<br><br>  @return   Returns true if a unit was killed.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Kills an ogre controlled by player 3<br>		KillUnit("unit-ogre", 3)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:952 CclKillUnit</summary>
+                          <summary>/unit/script_unit.cpp:1020 CclKillUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclKillUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -2120,9 +2120,9 @@
                         
                         <details>
                         <summary>KillUnitAt</summary>
-                        <p><br>  Kill a unit at a location<br><br>  @param l  Lua state.<br><br>  @return   Returns the number of units killed.</p>
+                        <p><br> <b>Description</b><br><br>  Kill a unit at a location<br><br>  @param l  Lua state.<br><br>  @return   Returns the number of units killed.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Kill 8 peasants controlled by player 7 from position {27,1} to {34,5}<br>		KillUnitAt("unit-peasant",7,8,{27,1},{34,5})<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1001 CclKillUnitAt</summary>
+                          <summary>/unit/script_unit.cpp:1080 CclKillUnitAt</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclKillUnitAt</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
@@ -2171,9 +2171,9 @@
                         
                         <details>
                         <summary>GetUnits</summary>
-                        <p><br>  Get a player's units<br><br>  @param l  Lua state.<br><br>  @return   Array of units.</p>
+                        <p><br> <b>Description</b><br><br>  Get a player's units<br><br>  @param l  Lua state.<br><br>  @return   Array of units.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1031 CclGetUnits</summary>
+                          <summary>/unit/script_unit.cpp:1112 CclGetUnits</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnits</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2205,7 +2205,7 @@
                         <summary>GetUnitsAroundUnit</summary>
                         <p><br>  Get a player's units in rectangle box specified with 2 coordinates<br><br>  @param l  Lua state.<br><br>  @return   Array of units.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1069 CclGetUnitsAroundUnit</summary>
+                          <summary>/unit/script_unit.cpp:1150 CclGetUnitsAroundUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitsAroundUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -2245,7 +2245,7 @@
                         <summary>GetUnitBoolFlag</summary>
                         <p><br><br>  Get the value of the unit bool-flag.<br><br>  @param l  Lua state.<br><br>  @return   The value of the bool-flag of the unit.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1094 CclGetUnitBoolFlag</summary>
+                          <summary>/unit/script_unit.cpp:1175 CclGetUnitBoolFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitBoolFlag</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -2269,9 +2269,9 @@
                         
                         <details>
                         <summary>GetUnitVariable</summary>
-                        <p><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.</p>
+                        <p><br> <b>Description</b><br><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Take the name of the unit<br>		unit_name = GetUnitVariable(grunt,"Name")<br>		-- Take the player number based on the unit<br>		player_type = GetUnitVariable(grunt,"PlayerType")<br>		-- Take the value of the armor<br>		armor_value = GetUnitVariable(grunt,"Armor")<br>		-- Show the message in the game.<br>		AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1181 CclGetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1281 CclGetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -2358,9 +2358,9 @@
                         
                         <details>
                         <summary>SetUnitVariable</summary>
-                        <p><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.</p>
+                        <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Create a blacksmith for player 2<br>		blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br>		-- Specify the amount of hit points to assign to the blacksmith<br>		SetUnitVariable(blacksmith,"HitPoints",344)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1280 CclSetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1393 CclSetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -2461,7 +2461,7 @@
                         <summary>SlotUsage</summary>
                         <p><br>  Get the usage of unit slots during load to allocate memory<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1291 CclSlotUsage</summary>
+                          <summary>/unit/script_unit.cpp:1404 CclSlotUsage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSlotUsage</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">UnitManager</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -2474,8 +2474,10 @@
                         
                         <details>
                         <summary>SelectSingleUnit</summary>
-                        <p>/unit/script_unit.cpp:1303 CclSelectSingleUnit</p>
-                        <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
+                        <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		SelectSingleUnit(grom)<br> 	</code><br> </div></p>
+                          <details>
+                          <summary>/unit/script_unit.cpp:1436 CclSelectSingleUnit</summary>
+                          <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
 	<span class="n">Assert</span><span class="p">(</span><span class="n">nargs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
@@ -2488,13 +2490,14 @@
 <span class="p">}</span>
 </pre></div>
 </p>
+                          </details>
                         </details>
                         
                         <details>
                         <summary>EnableSimplifiedAutoTargeting</summary>
                         <p><br>  Enable/disable simplified auto targeting <br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1323 CclEnableSimplifiedAutoTargeting</summary>
+                          <summary>/unit/script_unit.cpp:1456 CclEnableSimplifiedAutoTargeting</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclEnableSimplifiedAutoTargeting</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3292,9 +3295,9 @@
                         
                         <details>
                         <summary>DefineUnitStats</summary>
-                        <p><br>  Parse unit-stats.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Parse unit-stats.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  DefineUnitStats("unit-berserker", 2, {<br><br>    		"HitPoints", {Value = 55, Max = 55, Increase = 0, Enable = true},<br><br>    		"AttackRange", {Value = 5, Max = 6, Increase = 0, Enable = true},<br><br>    		"SightRange", {Value = 7, Max = 7, Increase = 0, Enable = true},<br><br>  		})<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1249 CclDefineUnitStats</summary>
+                          <summary>/unit/script_unittype.cpp:1263 CclDefineUnitStats</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitStats</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">CUnitType</span> <span class="o">*</span><span class="n">type</span> <span class="o">=</span> <span class="n">UnitTypeByIdent</span><span class="p">(</span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
@@ -3389,7 +3392,7 @@
                         <summary>DefineBoolFlags</summary>
                         <p><br>  Define boolean flag.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1674 CclDefineBoolFlags</summary>
+                          <summary>/unit/script_unittype.cpp:1709 CclDefineBoolFlags</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineBoolFlags</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">old</span> <span class="o">=</span> <span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberBoolFlag</span><span class="p">();</span>
@@ -3418,7 +3421,7 @@
                         <summary>DefineVariables</summary>
                         <p><br>  Define user variables.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1649 CclDefineVariables</summary>
+                          <summary>/unit/script_unittype.cpp:1684 CclDefineVariables</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineVariables</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">old</span> <span class="o">=</span> <span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberVariable</span><span class="p">();</span>
@@ -3451,7 +3454,7 @@
                         <summary>DefineDecorations</summary>
                         <p><br>  Define Decorations for user variables<br><br>  @param l  Lua state.<br><br>  @todo modify Assert with luastate with User Error.<br>  @todo continue to add configuration.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1852 CclDefineDecorations</summary>
+                          <summary>/unit/script_unittype.cpp:1887 CclDefineDecorations</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineDecorations</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">struct</span> <span class="p">{</span>
@@ -3630,7 +3633,7 @@
                         <summary>DefineExtraDeathTypes</summary>
                         <p><br>  Define default extra death types.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1871 CclDefineExtraDeathTypes</summary>
+                          <summary>/unit/script_unittype.cpp:1906 CclDefineExtraDeathTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineExtraDeathTypes</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">args</span><span class="p">;</span>
@@ -3653,7 +3656,7 @@
                         <summary>UnitType</summary>
                         <p><br>  Get unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   Unit-type structure.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1291 CclUnitType</summary>
+                          <summary>/unit/script_unittype.cpp:1305 CclUnitType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3674,7 +3677,7 @@
                         <summary>UnitTypeArray</summary>
                         <p><br>  Get all unit-type structures.<br><br>  @param l  Lua state.<br><br>  @return   An array of all unit-type structures.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1313 CclUnitTypeArray</summary>
+                          <summary>/unit/script_unittype.cpp:1327 CclUnitTypeArray</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitTypeArray</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -3698,7 +3701,7 @@
                         <summary>GetUnitTypeIdent</summary>
                         <p><br>  Get the ident of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The identifier of the unit-type.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1333 CclGetUnitTypeIdent</summary>
+                          <summary>/unit/script_unittype.cpp:1347 CclGetUnitTypeIdent</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeIdent</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3718,9 +3721,9 @@
                         
                         <details>
                         <summary>GetUnitTypeName</summary>
-                        <p><br>  Get the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.</p>
+                        <p><br> <b>Description</b><br><br>  Get the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  name = GetUnitTypeName("unit-knight")<br><br>		  print(name)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1349 CclGetUnitTypeName</summary>
+                          <summary>/unit/script_unittype.cpp:1374 CclGetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3736,9 +3739,9 @@
                         
                         <details>
                         <summary>SetUnitTypeName</summary>
-                        <p><br>  Set the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.</p>
+                        <p><br> <b>Description</b><br><br>  Set the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  SetUnitTypeName("unit-beast-cry","Doomhammer")<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1369 CclSetUnitTypeName</summary>
+                          <summary>/unit/script_unittype.cpp:1404 CclSetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -3760,7 +3763,7 @@
                         <summary>GetUnitTypeData</summary>
                         <p><br>  Get unit type data.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1585 CclGetUnitTypeData</summary>
+                          <summary>/unit/script_unittype.cpp:1620 CclGetUnitTypeData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeData</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -4201,7 +4204,7 @@
                         <hr>/video/shaders.cpp<hr>
                         <details>
                         <summary>GetShaderNames</summary>
-                        <p>/video/shaders.cpp:436 CclGetShaderNames</p>
+                        <p>/video/shaders.cpp:445 CclGetShaderNames</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetShaderNames</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span> <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 	<span class="n">lua_newtable</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -4217,7 +4220,7 @@
                         
                         <details>
                         <summary>GetShader</summary>
-                        <p>/video/shaders.cpp:405 CclGetShader</p>
+                        <p>/video/shaders.cpp:414 CclGetShader</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetShader</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span> <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 	<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">shaderName</span> <span class="o">=</span> <span class="n">shaderNames</span><span class="p">[</span><span class="n">currentShaderIdx</span><span class="p">];</span>
@@ -4234,7 +4237,7 @@
                         
                         <details>
                         <summary>SetShader</summary>
-                        <p>/video/shaders.cpp:426 CclSetShader</p>
+                        <p>/video/shaders.cpp:435 CclSetShader</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetShader</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span> <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 	<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">shaderName</span> <span class="o">=</span> <span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -4827,9 +4830,9 @@
                         
                         <details>
                         <summary>CenterMap</summary>
-                        <p><br>  Center the map.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Center the map.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  -- Center the view at position x=11 and y=1.<br><br>		  CenterMap(11, 1)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/map/script_map.cpp:165 CclCenterMap</summary>
+                          <summary>/map/script_map.cpp:176 CclCenterMap</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclCenterMap</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -4845,9 +4848,9 @@
                         
                         <details>
                         <summary>SetStartView</summary>
-                        <p><br>  Define the starting viewpoint for a given player.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Define the starting viewpoint for a given player.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  -- Start view for player 0.<br><br>		  SetStartView(0, 25, 12)<br><br>		  -- Start view for player 1.<br><br>		  SetStartView(1, 71, 38)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/map/script_map.cpp:181 CclSetStartView</summary>
+                          <summary>/map/script_map.cpp:205 CclSetStartView</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetStartView</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -4867,7 +4870,7 @@
                         <summary>ShowMapLocation</summary>
                         <p><br>  Show Map Location<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:212 CclShowMapLocation</summary>
+                          <summary>/map/script_map.cpp:236 CclShowMapLocation</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclShowMapLocation</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="c1">// Put a unit on map, use its properties, except for</span>
@@ -4902,7 +4905,7 @@
                         <summary>SetTileSize</summary>
                         <p><br>  Define size in pixels (x,y) of a tile in this game<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:627 CclSetTileSize</summary>
+                          <summary>/map/script_map.cpp:666 CclSetTileSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTileSize</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -4919,7 +4922,7 @@
                         <summary>SetFogOfWar</summary>
                         <p><br> <b>Description</b><br><br>  Set fog of war on/off.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetFogOfWar(true)<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:239 CclSetFogOfWar</summary>
+                          <summary>/map/script_map.cpp:263 CclSetFogOfWar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -4938,7 +4941,7 @@
                         
                         <details>
                         <summary>GetFogOfWar</summary>
-                        <p>/map/script_map.cpp:246 CclGetFogOfWar</p>
+                        <p>/map/script_map.cpp:270 CclGetFogOfWar</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetFogOfWar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -4953,7 +4956,7 @@
                         <summary>SetMinimapTerrain</summary>
                         <p><br>  Enable display of terrain in minimap.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:258 CclSetMinimapTerrain</summary>
+                          <summary>/map/script_map.cpp:282 CclSetMinimapTerrain</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMinimapTerrain</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -4969,7 +4972,7 @@
                         <summary>SetEnableMapGrid</summary>
                         <p><br>  Activate map grid  (true|false)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:272 CclSetEnableMapGrid</summary>
+                          <summary>/map/script_map.cpp:296 CclSetEnableMapGrid</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetEnableMapGrid</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -4985,7 +4988,7 @@
                         <summary>GetIsMapGridEnabled</summary>
                         <p><br>  Check if map grid is enabled</p>
                           <details>
-                          <summary>/map/script_map.cpp:282 CclGetIsMapGridEnabled</summary>
+                          <summary>/map/script_map.cpp:306 CclGetIsMapGridEnabled</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetIsMapGridEnabled</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5001,7 +5004,7 @@
                         <summary>SetFieldOfViewType</summary>
                         <p><br>  Select unit's field of view algorithm -  ShadowCasting or SimpleRadial<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:316 CclSetFieldOfViewType</summary>
+                          <summary>/map/script_map.cpp:340 CclSetFieldOfViewType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFieldOfViewType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5037,7 +5040,7 @@
                         <summary>GetFieldOfViewType</summary>
                         <p><br>  Get unit's field of view type -  ShadowCasting or SimpleRadial</p>
                           <details>
-                          <summary>/map/script_map.cpp:326 CclGetFieldOfViewType</summary>
+                          <summary>/map/script_map.cpp:350 CclGetFieldOfViewType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetFieldOfViewType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5053,7 +5056,7 @@
                         <summary>SetOpaqueFor</summary>
                         <p><br>  Set opaque for the tile's terrain.<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong tile's terrain;</p>
                           <details>
-                          <summary>/map/script_map.cpp:364 CclSetOpaqueFor</summary>
+                          <summary>/map/script_map.cpp:388 CclSetOpaqueFor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetOpaqueFor</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">uint16_t</span> <span class="n">new_flag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -5091,7 +5094,7 @@
                         
                         <details>
                         <summary>RemoveOpaqueFor</summary>
-                        <p>/map/script_map.cpp:421 CclRemoveOpaqueFor</p>
+                        <p>/map/script_map.cpp:445 CclRemoveOpaqueFor</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRemoveOpaqueFor</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">new_flag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -5130,7 +5133,7 @@
                         <summary>GetIsOpaqueFor</summary>
                         <p><br>  Check opacity for the tile's terrain.<br><br>  @param l  Lua state.<br></p>
                           <details>
-                          <summary>/map/script_map.cpp:390 CclGetIsOpaqueFor</summary>
+                          <summary>/map/script_map.cpp:414 CclGetIsOpaqueFor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetIsOpaqueFor</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5160,7 +5163,7 @@
                         <summary>SetFogOfWarType</summary>
                         <p><br>  Select which type of Fog of War to use<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:457 CclSetFogOfWarType</summary>
+                          <summary>/map/script_map.cpp:481 CclSetFogOfWarType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5197,7 +5200,7 @@
                         <summary>GetFogOfWarType</summary>
                         <p><br>  Get Fog of War type - legacy or enhanced</p>
                           <details>
-                          <summary>/map/script_map.cpp:467 CclGetFogOfWarType</summary>
+                          <summary>/map/script_map.cpp:491 CclGetFogOfWarType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetFogOfWarType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5213,7 +5216,7 @@
                         <summary>SetFogOfWarBlur</summary>
                         <p><br>  Set parameters for FOW blurer (radiuses and number of iterations)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:500 CclSetFogOfWarBlur</summary>
+                          <summary>/map/script_map.cpp:524 CclSetFogOfWarBlur</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarBlur</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -5247,7 +5250,7 @@
                         <summary>SetFogOfWarBilinear</summary>
                         <p><br>  Activate FOW bilinear upscaling type  (true|false)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:514 CclSetFogOfWarBilinear</summary>
+                          <summary>/map/script_map.cpp:538 CclSetFogOfWarBilinear</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarBilinear</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5263,7 +5266,7 @@
                         <summary>GetIsFogOfWarBilinear</summary>
                         <p><br>  Check if FOW bilinear upscaling enabled</p>
                           <details>
-                          <summary>/map/script_map.cpp:524 CclGetIsFogOfWarBilinear</summary>
+                          <summary>/map/script_map.cpp:548 CclGetIsFogOfWarBilinear</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetIsFogOfWarBilinear</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5279,7 +5282,7 @@
                         <summary>SetFogOfWarGraphics</summary>
                         <p><br>  Define Fog graphics<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:614 CclSetFogOfWarGraphics</summary>
+                          <summary>/map/script_map.cpp:653 CclSetFogOfWarGraphics</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarGraphics</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">FogGraphicFile</span><span class="p">;</span>
@@ -5302,7 +5305,7 @@
                         <summary>SetFogOfWarOpacity</summary>
                         <p><br>  Fog of war opacity.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:546 CclSetFogOfWarOpacity</summary>
+                          <summary>/map/script_map.cpp:570 CclSetFogOfWarOpacity</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarOpacity</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5328,7 +5331,7 @@
                         <summary>SetFogOfWarColor</summary>
                         <p><br>  Set Fog color.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:595 CclSetFogOfWarColor</summary>
+                          <summary>/map/script_map.cpp:634 CclSetFogOfWarColor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarColor</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -5356,9 +5359,9 @@
                         
                         <details>
                         <summary>SetForestRegeneration</summary>
-                        <p><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed</p>
+                        <p><br> <b>Description</b><br><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  -- No regeneration.<br><br>		  SetForestRegeneration(0)<br><br>		  -- Slow regeneration.<br><br>		  SetForestRegeneration(50)<br><br>		  -- Maximum value for regeneration.<br><br>		  SetForestRegeneration(255)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/map/script_map.cpp:569 CclSetForestRegeneration</summary>
+                          <summary>/map/script_map.cpp:608 CclSetForestRegeneration</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetForestRegeneration</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5383,7 +5386,7 @@
                         <summary>LoadTileModels</summary>
                         <p><br> Load the lua file which will define the tile models<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:717 CclLoadTileModels</summary>
+                          <summary>/map/script_map.cpp:756 CclLoadTileModels</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLoadTileModels</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
@@ -5405,7 +5408,7 @@
                         <summary>DefinePlayerTypes</summary>
                         <p><br>  Define the type of each player available for the map<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:699 CclDefinePlayerTypes</summary>
+                          <summary>/map/script_map.cpp:738 CclDefinePlayerTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePlayerTypes</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">numplayers</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span> <span class="cm">/* Number of players == number of arguments */</span>
@@ -5452,7 +5455,7 @@
                         <summary>DefineTileset</summary>
                         <p><br>  Define tileset<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:735 CclDefineTileset</summary>
+                          <summary>/map/script_map.cpp:774 CclDefineTileset</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineTileset</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">Map</span><span class="p">.</span><span class="n">Tileset</span><span class="o">-&gt;</span><span class="n">parse</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -5474,7 +5477,7 @@
                         <summary>SetTileFlags</summary>
                         <p><br>  Set the flags like "water" for a tile of a tileset<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:774 CclSetTileFlags</summary>
+                          <summary>/map/script_map.cpp:813 CclSetTileFlags</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTileFlags</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -5504,7 +5507,7 @@
                         <summary>BuildTilesetTables</summary>
                         <p><br> Build tileset tables like humanWallTable or mixedLookupTable<br><br> Called after DefineTileset and only for tilesets that have wall,<br> trees and rocks. This function will be deleted when removing<br> support of walls and alike in the tileset.</p>
                           <details>
-                          <summary>/map/script_map.cpp:749 CclBuildTilesetTables</summary>
+                          <summary>/map/script_map.cpp:788 CclBuildTilesetTables</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclBuildTilesetTables</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5521,7 +5524,7 @@
                         <summary>GetTileTerrainName</summary>
                         <p><br>  Get the name of the terrain of the tile.<br><br>  @param l  Lua state.<br><br>  @return   The name of the terrain of the tile.</p>
                           <details>
-                          <summary>/map/script_map.cpp:797 CclGetTileTerrainName</summary>
+                          <summary>/map/script_map.cpp:836 CclGetTileTerrainName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetTileTerrainName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -5546,7 +5549,7 @@
                         <summary>GetTileTerrainHasFlag</summary>
                         <p><br>  Check if the tile's terrain has a particular flag.<br><br>  @param l  Lua state.<br><br>  @return   True if has the flag, false if not.</p>
                           <details>
-                          <summary>/map/script_map.cpp:843 CclGetTileTerrainHasFlag</summary>
+                          <summary>/map/script_map.cpp:882 CclGetTileTerrainHasFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetTileTerrainHasFlag</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -5594,7 +5597,7 @@
                         <summary>SetEnableWallsForSP</summary>
                         <p><br>  Enable walls enabled for single player games (for debug purposes)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:857 CclSetEnableWallsForSP</summary>
+                          <summary>/map/script_map.cpp:896 CclSetEnableWallsForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetEnableWallsForSP</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5610,7 +5613,7 @@
                         <summary>GetIsWallsEnabledForSP</summary>
                         <p><br>  Check if walls enabled for single player games (for debug purposes)</p>
                           <details>
-                          <summary>/map/script_map.cpp:867 CclIsWallsEnabledForSP</summary>
+                          <summary>/map/script_map.cpp:906 CclIsWallsEnabledForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclIsWallsEnabledForSP</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5626,7 +5629,7 @@
                         <summary>GetIsGameHoster</summary>
                         <p><br>  Check if network game was created on this PC</p>
                           <details>
-                          <summary>/map/script_map.cpp:877 CclGetIsGameHoster</summary>
+                          <summary>/map/script_map.cpp:916 CclGetIsGameHoster</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetIsGameHoster</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5783,9 +5786,9 @@
                         
                         <details>
                         <summary>ChangeUnitsOwner</summary>
-                        <p><br> <b>Description</b><br><br>  Change unit owner<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		ChangeUnitsOwner({16, 17},{30, 32},0,1)<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Change unit owner<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		-- Changes the unit owner from player 0 to player 1<br><br>		ChangeUnitsOwner({16, 17},{30, 32},0,1)<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:369 CclChangeUnitsOwner</summary>
+                          <summary>/stratagus/script_player.cpp:370 CclChangeUnitsOwner</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclChangeUnitsOwner</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
@@ -5813,7 +5816,7 @@
                         <summary>GetThisPlayer</summary>
                         <p><br> <b>Description</b><br><br>  Get ThisPlayer.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		GetThisPlayer()<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:395 CclGetThisPlayer</summary>
+                          <summary>/stratagus/script_player.cpp:396 CclGetThisPlayer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetThisPlayer</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5833,7 +5836,7 @@
                         <summary>SetThisPlayer</summary>
                         <p><br> <b>Description</b><br><br>  Set ThisPlayer.<br><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:413 CclSetThisPlayer</summary>
+                          <summary>/stratagus/script_player.cpp:414 CclSetThisPlayer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetThisPlayer</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5850,9 +5853,9 @@
                         
                         <details>
                         <summary>SetMaxSelectable</summary>
-                        <p><br>  Set MaxSelectable<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set the maximum amount of units that can be selected.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  -- 9 units can be selected together<br><br>		  SetMaxSelectable(9)<br><br>		  -- 18 units can be selected together<br><br>		  SetMaxSelectable(18)<br><br>		  -- 50 units can be selected together<br><br>		  SetMaxSelectable(50)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:427 CclSetMaxSelectable</summary>
+                          <summary>/stratagus/script_player.cpp:443 CclSetMaxSelectable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMaxSelectable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5868,9 +5871,9 @@
                         
                         <details>
                         <summary>SetAllPlayersUnitLimit</summary>
-                        <p><br>  Set player unit limit.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set players units limit.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  SetAllPlayersUnitLimit(200)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:443 CclSetAllPlayersUnitLimit</summary>
+                          <summary>/stratagus/script_player.cpp:469 CclSetAllPlayersUnitLimit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetAllPlayersUnitLimit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5888,9 +5891,9 @@
                         
                         <details>
                         <summary>SetAllPlayersBuildingLimit</summary>
-                        <p><br>  Set player unit limit.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set players buildings limit.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  SetAllPlayersBuildingLimit(200)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:459 CclSetAllPlayersBuildingLimit</summary>
+                          <summary>/stratagus/script_player.cpp:495 CclSetAllPlayersBuildingLimit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetAllPlayersBuildingLimit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5908,9 +5911,9 @@
                         
                         <details>
                         <summary>SetAllPlayersTotalUnitLimit</summary>
-                        <p><br> <b>Description</b><br><br>  Set players unit limit.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set players total units limit.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		  SetAllPlayersTotalUnitLimit(400)<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:477 CclSetAllPlayersTotalUnitLimit</summary>
+                          <summary>/stratagus/script_player.cpp:521 CclSetAllPlayersTotalUnitLimit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetAllPlayersTotalUnitLimit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5930,7 +5933,7 @@
                         <summary>SetDiplomacy</summary>
                         <p><br> <b>Description</b><br><br>  Change the diplomacy from player to another player.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetDiplomacy(0,"allied",1)<br><br>		SetDiplomacy(1,"allied",0)<br><br>		<br><br>		SetDiplomacy(0,"enemy",2)<br><br>		SetDiplomacy(1,"enemy",2)<br> 	</code><br> </div><br><br>  @param l  Lua state.<br><br>  @return          FIXME: should return old state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:517 CclSetDiplomacy</summary>
+                          <summary>/stratagus/script_player.cpp:561 CclSetDiplomacy</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetDiplomacy</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -5958,7 +5961,7 @@
                         <summary>Diplomacy</summary>
                         <p><br>  Change the diplomacy from ThisPlayer to another player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:529 CclDiplomacy</summary>
+                          <summary>/stratagus/script_player.cpp:573 CclDiplomacy</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDiplomacy</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">ThisPlayer</span><span class="o">-&gt;</span><span class="n">Index</span><span class="p">);</span>
@@ -5974,7 +5977,7 @@
                         <summary>SetSharedVision</summary>
                         <p><br> <b>Description</b><br><br>  Change the shared vision from player to another player.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetSharedVision(0,true,1)<br><br>		SetSharedVision(1,true,0)<br><br>		<br><br>		SetSharedVision(0,false,2)<br><br>		SetSharedVision(1,false,2)<br> 	</code><br> </div><br><br>  @param l  Lua state.<br><br>  @return   FIXME: should return old state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:563 CclSetSharedVision</summary>
+                          <summary>/stratagus/script_player.cpp:607 CclSetSharedVision</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetSharedVision</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -5996,7 +5999,7 @@
                         <summary>SharedVision</summary>
                         <p><br>  Change the shared vision from ThisPlayer to another player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:575 CclSharedVision</summary>
+                          <summary>/stratagus/script_player.cpp:619 CclSharedVision</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSharedVision</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">ThisPlayer</span><span class="o">-&gt;</span><span class="n">Index</span><span class="p">);</span>
@@ -6012,7 +6015,7 @@
                         <summary>SetRevelationType</summary>
                         <p><br> <b>Description</b><br><br>  Change the players revelation type - reveal all units, only buidings or don't reveal anything<br><br> Example:<br><br> <div class="example"><br> 	<code><br> 		SetRevelationType("no-revelation")<br><br> 		SetRevelationType("buildings-only")<br><br> 		SetRevelationType("all-units")<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:611 CclSetRevelationType</summary>
+                          <summary>/stratagus/script_player.cpp:655 CclSetRevelationType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetRevelationType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6040,7 +6043,7 @@
                         <summary>DefineRaceNames</summary>
                         <p><br> Define race names<br><br> @param l Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:662 CclDefineRaceNames</summary>
+                          <summary>/stratagus/script_player.cpp:706 CclDefineRaceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineRaceNames</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">PlayerRaces</span><span class="p">.</span><span class="n">Clean</span><span class="p">();</span>
@@ -6055,7 +6058,7 @@
                         <summary>DefineNewRaceNames</summary>
                         <p><br> Define race names<br><br> @param l Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:662 CclDefineRaceNames</summary>
+                          <summary>/stratagus/script_player.cpp:706 CclDefineRaceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineRaceNames</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">PlayerRaces</span><span class="p">.</span><span class="n">Clean</span><span class="p">();</span>
@@ -6068,9 +6071,9 @@
                         
                         <details>
                         <summary>DefinePlayerColors</summary>
-                        <p><br>  Define player colors<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Define player colors<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>	DefinePlayerColors({<br><br>		"red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}},<br><br>		"blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}},<br><br>		"green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}},<br><br>		"violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}},<br><br>		"orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}},<br><br>		"black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}},<br><br>		"white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}},<br><br>		"yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}},<br><br>		"red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}},<br><br>		"blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}},<br><br>		"green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}},<br><br>		"violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}},<br><br>		"orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}},<br><br>		"black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}},<br><br>		"white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}},<br><br>		"yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}},<br><br>	})<br> 	</code><br> </div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:696 CclDefinePlayerColors</summary>
+                          <summary>/stratagus/script_player.cpp:767 CclDefinePlayerColors</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePlayerColors</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6108,7 +6111,7 @@
                         <summary>DefinePlayerColorIndex</summary>
                         <p><br>  Define player color indexes<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:729 CclDefinePlayerColorIndex</summary>
+                          <summary>/stratagus/script_player.cpp:800 CclDefinePlayerColorIndex</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePlayerColorIndex</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6132,7 +6135,7 @@
                         <summary>NewColors</summary>
                         <p><br>  Make new player colors<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:709 CclNewPlayerColors</summary>
+                          <summary>/stratagus/script_player.cpp:780 CclNewPlayerColors</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclNewPlayerColors</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -6149,7 +6152,7 @@
                         <summary>GetPlayerData</summary>
                         <p><br> <b>Description</b><br><br>  Get player data.<br><br> Example:<br><br> <div class="example"><br> 	<code><br> 		GetPlayerData(0,"TotalNumUnits")<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:896 CclGetPlayerData</summary>
+                          <summary>/stratagus/script_player.cpp:967 CclGetPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetPlayerData</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -6308,7 +6311,7 @@
                         <summary>SetPlayerData</summary>
                         <p><br> <b>Description</b><br><br>  Set player data.<br><br> Example:<br><br> <div class="example"><br> 	<code><br>		SetPlayerData(0,"Name","Nation of Stromgarde")<br><br>		SetPlayerData(0,"RaceName","human")<br><br> 		SetPlayerData(0,"Resources","gold",1700)<br> 	</code><br> </div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1016 CclSetPlayerData</summary>
+                          <summary>/stratagus/script_player.cpp:1087 CclSetPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetPlayerData</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6418,9 +6421,9 @@
                         
                         <details>
                         <summary>SetAiType</summary>
-                        <p><br>  Set ai player algo.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b> <br> <br>  Set ai player algo.<br><br>  @param l  Lua state.<br> <br> Example: <br> <br> <div class="example"> <br> 	<code> <br>		  -- Player 1 has a passive A.I<br> <br>		  SetAiType(1, "Passive") <br> 	</code> <br> </div> </p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1037 CclSetAiType</summary>
+                          <summary>/stratagus/script_player.cpp:1119 CclSetAiType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetAiType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">CPlayer</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
@@ -6518,7 +6521,7 @@
                         <summary>Add</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Add", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1572 CclAdd</summary>
+                          <summary>/stratagus/script.cpp:1568 CclAdd</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAdd</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6533,7 +6536,7 @@
                         <summary>Sub</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Div", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1586 CclSub</summary>
+                          <summary>/stratagus/script.cpp:1582 CclSub</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSub</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6548,7 +6551,7 @@
                         <summary>Mul</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Mul", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1599 CclMul</summary>
+                          <summary>/stratagus/script.cpp:1595 CclMul</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclMul</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6563,7 +6566,7 @@
                         <summary>Div</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Div", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1612 CclDiv</summary>
+                          <summary>/stratagus/script.cpp:1608 CclDiv</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDiv</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6578,7 +6581,7 @@
                         <summary>Min</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Min", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1625 CclMin</summary>
+                          <summary>/stratagus/script.cpp:1621 CclMin</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclMin</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6593,7 +6596,7 @@
                         <summary>Max</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Max", {arg1, arg2, argn}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1638 CclMax</summary>
+                          <summary>/stratagus/script.cpp:1634 CclMax</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclMax</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6608,7 +6611,7 @@
                         <summary>Rand</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Rand", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1651 CclRand</summary>
+                          <summary>/stratagus/script.cpp:1647 CclRand</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRand</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6623,7 +6626,7 @@
                         <summary>GreaterThan</summary>
                         <p><br>  Return equivalent lua table for GreaterThan.<br>  {"GreaterThan", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1664 CclGreaterThan</summary>
+                          <summary>/stratagus/script.cpp:1660 CclGreaterThan</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGreaterThan</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6638,7 +6641,7 @@
                         <summary>LessThan</summary>
                         <p><br>  Return equivalent lua table for LessThan.<br>  {"LessThan", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1690 CclLessThan</summary>
+                          <summary>/stratagus/script.cpp:1686 CclLessThan</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLessThan</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6653,7 +6656,7 @@
                         <summary>Equal</summary>
                         <p><br>  Return equivalent lua table for Equal.<br>  {"Equal", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1716 CclEqual</summary>
+                          <summary>/stratagus/script.cpp:1712 CclEqual</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclEqual</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6668,7 +6671,7 @@
                         <summary>GreaterThanOrEq</summary>
                         <p><br>  Return equivalent lua table for GreaterThanOrEq.<br>  {"GreaterThanOrEq", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1677 CclGreaterThanOrEq</summary>
+                          <summary>/stratagus/script.cpp:1673 CclGreaterThanOrEq</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGreaterThanOrEq</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6683,7 +6686,7 @@
                         <summary>LessThanOrEq</summary>
                         <p><br>  Return equivalent lua table for LessThanOrEq.<br>  {"LessThanOrEq", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1703 CclLessThanOrEq</summary>
+                          <summary>/stratagus/script.cpp:1699 CclLessThanOrEq</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLessThanOrEq</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6698,7 +6701,7 @@
                         <summary>NotEqual</summary>
                         <p><br>  Return equivalent lua table for NotEqual.<br>  {"NotEqual", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1729 CclNotEqual</summary>
+                          <summary>/stratagus/script.cpp:1725 CclNotEqual</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclNotEqual</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6713,7 +6716,7 @@
                         <summary>VideoTextLength</summary>
                         <p><br>  Return equivalent lua table for VideoTextLength.<br>  {"VideoTextLength", {Text = arg1, Font = arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1877 CclVideoTextLength</summary>
+                          <summary>/stratagus/script.cpp:1873 CclVideoTextLength</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclVideoTextLength</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6743,7 +6746,7 @@
                         <summary>StringFind</summary>
                         <p><br>  Return equivalent lua table for StringFind.<br>  {"StringFind", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1891 CclStringFind</summary>
+                          <summary>/stratagus/script.cpp:1887 CclStringFind</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclStringFind</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6758,7 +6761,7 @@
                         <summary>AttackerVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Unit", {Unit = "Attacker", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1478 CclUnitAttackerVar</summary>
+                          <summary>/stratagus/script.cpp:1474 CclUnitAttackerVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitAttackerVar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6775,7 +6778,7 @@
                         <summary>DefenderVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Unit", {Unit = "Defender", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1494 CclUnitDefenderVar</summary>
+                          <summary>/stratagus/script.cpp:1490 CclUnitDefenderVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitDefenderVar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6792,7 +6795,7 @@
                         <summary>ActiveUnitVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Unit", {Unit = "Active", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1510 CclActiveUnitVar</summary>
+                          <summary>/stratagus/script.cpp:1506 CclActiveUnitVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclActiveUnitVar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6809,7 +6812,7 @@
                         <summary>TypeVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Type", {Type = "Active", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1526 CclActiveTypeVar</summary>
+                          <summary>/stratagus/script.cpp:1522 CclActiveTypeVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclActiveTypeVar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6826,7 +6829,7 @@
                         <summary>Concat</summary>
                         <p><br>  Return equivalent lua table for Concat.<br>  {"Concat", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1747 CclConcat</summary>
+                          <summary>/stratagus/script.cpp:1743 CclConcat</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclConcat</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// FIXME do extra job for 1.</span>
@@ -6843,7 +6846,7 @@
                         <summary>String</summary>
                         <p><br>  Return equivalent lua table for String.<br>  {"String", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1761 CclString</summary>
+                          <summary>/stratagus/script.cpp:1757 CclString</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclString</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6858,7 +6861,7 @@
                         <summary>InverseVideo</summary>
                         <p><br>  Return equivalent lua table for InverseVideo.<br>  {"InverseVideo", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1774 CclInverseVideo</summary>
+                          <summary>/stratagus/script.cpp:1770 CclInverseVideo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclInverseVideo</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6873,7 +6876,7 @@
                         <summary>UnitName</summary>
                         <p><br>  Return equivalent lua table for UnitName.<br>  {"UnitName", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1787 CclUnitName</summary>
+                          <summary>/stratagus/script.cpp:1783 CclUnitName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6888,7 +6891,7 @@
                         <summary>SubString</summary>
                         <p><br>  Return equivalent lua table for SubString.<br>  {"SubString", {arg1, arg2, arg3}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1818 CclSubString</summary>
+                          <summary>/stratagus/script.cpp:1814 CclSubString</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSubString</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6905,7 +6908,7 @@
                         <summary>Line</summary>
                         <p><br>  Return equivalent lua table for Line.<br>  {"Line", {arg1, arg2[, arg3]}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1834 CclLine</summary>
+                          <summary>/stratagus/script.cpp:1830 CclLine</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLine</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">||</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
@@ -6922,7 +6925,7 @@
                         <summary>GameInfo</summary>
                         <p><br>  Return equivalent lua table for Line.<br>  {"Line", "arg1"}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1848 CclGameInfo</summary>
+                          <summary>/stratagus/script.cpp:1844 CclGameInfo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGameInfo</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6937,7 +6940,7 @@
                         <summary>PlayerName</summary>
                         <p><br>  Return equivalent lua table for PlayerName.<br>  {"PlayerName", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1937 CclPlayerName</summary>
+                          <summary>/stratagus/script.cpp:1933 CclPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclPlayerName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6952,7 +6955,7 @@
                         <summary>PlayerData</summary>
                         <p><br>  Return equivalent lua table for PlayerData.<br>  {"PlayerData", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1923 CclPlayerData</summary>
+                          <summary>/stratagus/script.cpp:1919 CclPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclPlayerData</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6969,7 +6972,7 @@
                         <summary>If</summary>
                         <p><br>  Return equivalent lua table for If.<br>  {"If", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1802 CclIf</summary>
+                          <summary>/stratagus/script.cpp:1798 CclIf</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclIf</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -6986,7 +6989,7 @@
                         <summary>NumIf</summary>
                         <p><br>  Return equivalent lua table for NumIf.<br>  {"NumIf", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1907 CclNumIf</summary>
+                          <summary>/stratagus/script.cpp:1903 CclNumIf</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclNumIf</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
@@ -7003,7 +7006,7 @@
                         <summary>LibraryPath</summary>
                         <p><br>  Return the stratagus library path.<br><br>  @param l  Lua state.<br><br>  @return   Current libray path.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1999 CclStratagusLibraryPath</summary>
+                          <summary>/stratagus/script.cpp:1995 CclStratagusLibraryPath</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclStratagusLibraryPath</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">StratagusLibPath</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
@@ -7018,7 +7021,7 @@
                         <summary>ListDirectory</summary>
                         <p><br>  Return a table with the files or directories found in the subdirectory.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2061 CclListDirectory</summary>
+                          <summary>/stratagus/script.cpp:2057 CclListDirectory</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclListDirectory</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">return</span> <span class="n">CclFilteredListDirectory</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -7032,7 +7035,7 @@
                         <summary>ListFilesInDirectory</summary>
                         <p><br>  Return a table with the files found in the subdirectory.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2069 CclListFilesInDirectory</summary>
+                          <summary>/stratagus/script.cpp:2065 CclListFilesInDirectory</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclListFilesInDirectory</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">return</span> <span class="n">CclFilteredListDirectory</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mh">0x1</span><span class="p">,</span> <span class="mh">0x1</span><span class="p">);</span>
@@ -7046,7 +7049,7 @@
                         <summary>ListDirsInDirectory</summary>
                         <p><br>  Return a table with the files found in the subdirectory.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2077 CclListDirsInDirectory</summary>
+                          <summary>/stratagus/script.cpp:2073 CclListDirsInDirectory</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclListDirsInDirectory</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">return</span> <span class="n">CclFilteredListDirectory</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">,</span> <span class="mh">0x1</span><span class="p">);</span>
@@ -7060,7 +7063,7 @@
                         <summary>SetDamageFormula</summary>
                         <p><br>  Set damage computation method.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2093 CclSetDamageFormula</summary>
+                          <summary>/stratagus/script.cpp:2089 CclSetDamageFormula</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetDamageFormula</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">Assert</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -7080,7 +7083,7 @@
                         <summary>SavePreferences</summary>
                         <p><br>  Save preferences<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:277 CclSavePreferences</summary>
+                          <summary>/stratagus/script.cpp:273 CclSavePreferences</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSavePreferences</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -7096,7 +7099,7 @@
                         <summary>Load</summary>
                         <p><br>  Load a file and execute it.<br><br>  @param l  Lua state.<br><br>  @return   0 in success, else exit.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:294 CclLoad</summary>
+                          <summary>/stratagus/script.cpp:290 CclLoad</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLoad</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7115,7 +7118,7 @@
                         <summary>LoadBuffer</summary>
                         <p><br>  Load a file into a buffer and return it.<br><br>  @param l  Lua state.<br><br>  @return   buffer or nil on failure</p>
                           <details>
-                          <summary>/stratagus/script.cpp:314 CclLoadBuffer</summary>
+                          <summary>/stratagus/script.cpp:310 CclLoadBuffer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLoadBuffer</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7137,7 +7140,7 @@
                         <summary>DebugPrint</summary>
                         <p><br>  Print debug message with info about current script name, line number and function.<br><br>  @see DebugPrint<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2114 CclDebugPrint</summary>
+                          <summary>/stratagus/script.cpp:2110 CclDebugPrint</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDebugPrint</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7961,7 +7964,7 @@
                         <summary>Log</summary>
                         <p><br> Parse log</p>
                           <details>
-                          <summary>/game/replay.cpp:573 CclLog</summary>
+                          <summary>/game/replay.cpp:575 CclLog</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLog</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LogEntry</span> <span class="o">*</span><span class="n">log</span><span class="p">;</span>
@@ -8006,7 +8009,7 @@
 		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;Num&quot;</span><span class="p">))</span> <span class="p">{</span>
 			<span class="n">log</span><span class="o">-&gt;</span><span class="n">Num</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;SyncRandSeed&quot;</span><span class="p">))</span> <span class="p">{</span>
-			<span class="n">log</span><span class="o">-&gt;</span><span class="n">SyncRandSeed</span> <span class="o">=</span> <span class="n">LuaToUnsignedNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+			<span class="n">log</span><span class="o">-&gt;</span><span class="n">SyncRandSeed</span> <span class="o">=</span> <span class="n">lua_tointeger</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 			<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;Unsupported key: %s&quot;</span> <span class="n">_C_</span> <span class="n">value</span><span class="p">);</span>
 		<span class="p">}</span>
@@ -8032,7 +8035,7 @@
                         <summary>ReplayLog</summary>
                         <p><br> Parse replay-log</p>
                           <details>
-                          <summary>/game/replay.cpp:698 CclReplayLog</summary>
+                          <summary>/game/replay.cpp:700 CclReplayLog</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclReplayLog</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">FullReplay</span> <span class="o">*</span><span class="n">replay</span><span class="p">;</span>
@@ -10650,6 +10653,11 @@
 	<span class="n">CMinimap</span> <span class="n">Minimap</span><span class="p">;</span>
 	<span class="n">CStatusLine</span> <span class="n">StatusLine</span><span class="p">;</span>
 	<span class="n">CUITimer</span> <span class="n">Timer</span><span class="p">;</span>
+
+	<span class="n">Vec2i</span> <span class="n">EditorSettingsAreaTopLeft</span><span class="p">;</span>
+	<span class="n">Vec2i</span> <span class="n">EditorSettingsAreaBottomRight</span><span class="p">;</span>
+	<span class="n">Vec2i</span> <span class="n">EditorButtonAreaTopLeft</span><span class="p">;</span>
+	<span class="n">Vec2i</span> <span class="n">EditorButtonAreaBottomRight</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></div>
 </p>
