@@ -4100,8 +4100,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/unit/script_unittype.cpp<hr>
                         <details>
                         <summary>DefineUnitType</summary>
-                        <p>/unit/script_unittype.cpp:1193 CclDefineUnitType</p>
-                        <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
+                        <p><br> <b>Description</b><br><br>  Parse unit-type.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>DefineUnitType("unit-silvermoon-archer", { Name = _("Silvermoon Archer"),<br>			Image = {"file", "human/units/elven_archer.png", "size", {72, 72}},<br>			Animations = "animations-archer", Icon = "icon-archer",<br>			Costs = {"time", 70, "gold", 500, "wood", 50},<br>			Speed = 10,<br>			HitPoints = 45,<br>			DrawLevel = 40,<br>			TileSize = {1, 1}, BoxSize = {33, 33},<br>			SightRange = 6, ComputerReactionRange = 7, PersonReactionRange = 6,<br>			BasicDamage = 4, PiercingDamage = 6, Missile = "missile-arrow",<br>			MaxAttackRange = 4,<br>			Priority = 75,<br>			Points = 60,<br>			Demand = 1,<br>			Corpse = "unit-human-dead-body",<br>			Type = "land",<br>			RightMouseAction = "attack",<br>			CanAttack = true,<br>			CanTargetLand = true, CanTargetSea = true, CanTargetAir = true,<br>			LandUnit = true,<br>			organic = true,<br>			SelectableByRectangle = true,<br>			Sounds = {<br>				"selected", "archer-selected",<br>				"acknowledge", "archer-acknowledge",<br>				"ready", "archer-ready",<br>				"help", "basic human voices help 1",<br>				"dead", "basic human voices dead"} } )</code></div></p>
+                          <details>
+                          <summary>/unit/script_unittype.cpp:1193 CclDefineUnitType</summary>
+                          <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">lua_istable</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="p">{</span>
@@ -4822,6 +4824,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 </pre></div>
 </p>
+                          </details>
                         </details>
                         
                         <details>
