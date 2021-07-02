@@ -16,7 +16,6 @@ named groups, larger group selection, more player factions in multiplayer games,
 a map editor, and multiple towns. This screenshot gives a feeling of what it is
 like: ![](img/screenshotWar1gus.png)
 
-
 ### Installation
 
 During the first start of War1gus you will be asked for a copy of the original
@@ -32,9 +31,14 @@ modification, by Warcraft fans for Warcraft fans. You need a copy of the
 original Warcraft.  Warcraft is a registered trademark of Blizzard
 Entertainment.
 
+### Community
+
+There is a page on [gamebanana](https://gamebanana.com/games/9777) with custom stuff like:
+
+- [Maps](https://gamebanana.com/mods/cats/12553)
 
 ### Development
 
 War1gus is an open source software. It is developed at
-[![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
+[![](img/github.svg)GitHub](https://github.com/Wargus/war1gus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
