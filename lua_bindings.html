@@ -481,7 +481,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/game/game.cpp<hr>
                         <details>
                         <summary>SetGameName</summary>
-                        <p><br> <b>Description</b><br><br>  Return of game name.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetGameName("Wargus Map - Chapter 1")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Return of game name.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetGameName</strong>("Wargus Map - Chapter 1")</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1159 CclSetGameName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetGameName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -525,7 +525,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetGodMode</summary>
-                        <p><br> <b>Description</b><br><br>  Set God mode.<br><br>  @param l  Lua state.<br><br>  @return   The old mode.<br><br> Example:<br><br> <div class="example"><code>-- God Mode enabled<br>		SetGodMode(true)<br>		-- God Mode disabled<br>		SetGodMode(false)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set God mode.<br><br>  @param l  Lua state.<br><br>  @return   The old mode.<br><br> Example:<br><br> <div class="example"><code>-- God Mode enabled<br>		<strong>SetGodMode</strong>(true)<br>		-- God Mode disabled<br>		<strong>SetGodMode</strong>(false)</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1194 CclSetGodMode</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetGodMode</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -541,7 +541,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetGodMode</summary>
-                        <p><br> <b>Description</b><br><br>  Get God mode.<br><br>  @param l  Lua state.<br><br>  @return   God mode.<br><br> Example:<br><br> <div class="example"><code>g_mode = GetGodMode()<br>		print(g_mode)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get God mode.<br><br>  @param l  Lua state.<br><br>  @return   God mode.<br><br> Example:<br><br> <div class="example"><code>g_mode = <strong>GetGodMode</strong>()<br>		print(g_mode)</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1215 CclGetGodMode</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetGodMode</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -854,7 +854,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetLocalPlayerName</summary>
-                        <p><br> <b>Description</b><br><br>  Set the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetLocalPlayerName("Stormreaver Clan")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetLocalPlayerName</strong>("Stormreaver Clan")</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1476 CclSetLocalPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetLocalPlayerName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -870,7 +870,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetLocalPlayerName</summary>
-                        <p><br> <b>Description</b><br><br>  Get the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>GetLocalPlayerName()</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>GetLocalPlayerName</strong>()</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1494 CclGetLocalPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetLocalPlayerName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -899,7 +899,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetStratagusVersion</summary>
-                        <p><br> <b>Description</b><br><br>  Get Stratagus Version<br><br> Example:<br><br> <div class="example"><code>version = GetStratagusVersion()<br>		print(version)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get Stratagus Version<br><br> Example:<br><br> <div class="example"><code>version = <strong>GetStratagusVersion</strong>()<br>		print(version)</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1511 CclGetStratagusVersion</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetStratagusVersion</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -915,7 +915,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetStratagusHomepage</summary>
-                        <p><br> <b>Description</b><br><br>  Get Stratagus Homepage<br><br> Example:<br><br> <div class="example"><code>url = GetStratagusHomepage()<br>	print(url)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get Stratagus Homepage<br><br> Example:<br><br> <div class="example"><code>url = <strong>GetStratagusHomepage</strong>()<br>	print(url)</code></div></p>
                           <details>
                           <summary>/game/game.cpp:1528 CclGetStratagusHomepage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetStratagusHomepage</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -971,7 +971,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/game/trigger.cpp<hr>
                         <details>
                         <summary>AddTrigger</summary>
-                        <p><br> <b>Description</b><br><br>  Add a trigger.<br><br> Example:<br><br> <div class="example"><code>AddTrigger(<br>			function() return (GetPlayerData(1,"UnitTypesCount","unit-farm") >= 4) end,<br>			function() return ActionVictory() end<br>		)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Add a trigger.<br><br> Example:<br><br> <div class="example"><code><strong>AddTrigger</strong>(<br>			function() return (GetPlayerData(1,"UnitTypesCount","unit-farm") >= 4) end,<br>			function() return ActionVictory() end<br>		)</code></div></p>
                           <details>
                           <summary>/game/trigger.cpp:500 CclAddTrigger</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAddTrigger</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1039,7 +1039,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetNumUnitsAt</summary>
-                        <p><br> <b>Description</b><br><br>  Return the number of units of a given unit-type and player at a location.<br><br> Example:<br><br> <div class="example"><code>-- Get the number of knights from player 1 from position 0,0 to 20,15<br>			num_units = GetNumUnitsAt(1,"unit-knight",{0,0},{20,15})<br>			print(num_units)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Return the number of units of a given unit-type and player at a location.<br><br> Example:<br><br> <div class="example"><code>-- Get the number of knights from player 1 from position 0,0 to 20,15<br>			num_units = <strong>GetNumUnitsAt</strong>(1,"unit-knight",{0,0},{20,15})<br>			print(num_units)</code></div></p>
                           <details>
                           <summary>/game/trigger.cpp:204 CclGetNumUnitsAt</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetNumUnitsAt</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1088,7 +1088,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>IfNearUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Player has the quantity of unit-type near to unit-type.<br><br> Example:<br><br> <div class="example"><code>AddTrigger(<br>    function() return IfNearUnit(0,">",1,"unit-peasant","unit-town-hall") end,<br>    function()<br>        AddMessage("Player 0 has more than 1 peasant near the Town Hall")<br>        return false end<br>	)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Player has the quantity of unit-type near to unit-type.<br><br> Example:<br><br> <div class="example"><code>AddTrigger(<br>    function() return <strong>IfNearUnit</strong>(0,">",1,"unit-peasant","unit-town-hall") end,<br>    function()<br>        AddMessage("Player 0 has more than 1 peasant near the Town Hall")<br>        return false end<br>	)</code></div></p>
                           <details>
                           <summary>/game/trigger.cpp:277 CclIfNearUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclIfNearUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1156,7 +1156,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>IfRescuedNearUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Player has the quantity of rescued unit-type near to unit-type.<br><br> Example:<br><br> <div class="example"><code>IfRescuedNearUnit("this", ">=", 1, "unit-archer", "unit-circle-of-power")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Player has the quantity of rescued unit-type near to unit-type.<br><br> Example:<br><br> <div class="example"><code><strong>IfRescuedNearUnit</strong>("this", ">=", 1, "unit-archer", "unit-circle-of-power")</code></div></p>
                           <details>
                           <summary>/game/trigger.cpp:345 CclIfRescuedNearUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclIfRescuedNearUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1513,7 +1513,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/sound/script_sound.cpp<hr>
                         <details>
                         <summary>SetGlobalSoundRange</summary>
-                        <p><br> <b>Description</b><br><br>  Set the cut off distance.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetGlobalSoundRange(200)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the cut off distance.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetGlobalSoundRange</strong>(200)</code></div></p>
                           <details>
                           <summary>/sound/script_sound.cpp:338 CclSetGlobalSoundRange</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetGlobalSoundRange</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1750,7 +1750,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>PlaySound</summary>
-                        <p><br> <b>Description</b><br><br>  Ask the sound system to play the specified sound.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>PlaySound("rescue (orc)")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Ask the sound system to play the specified sound.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>PlaySound</strong>("rescue (orc)")</code></div></p>
                           <details>
                           <summary>/sound/script_sound.cpp:220 CclPlaySound</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclPlaySound</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1777,9 +1777,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/ui/script_ui.cpp<hr>
                         <details>
                         <summary>AddMessage</summary>
-                        <p><br> <b>Description</b><br><br>  Add a new message.<br><br> Example:<br><br> <div class="example"><code>AddMessage("Hello World!")</code></div><br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Add a new message.<br><br> Example:<br><br> <div class="example"><code><strong>AddMessage</strong>("Hello World!")</code></div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1227 CclAddMessage</summary>
+                          <summary>/ui/script_ui.cpp:1226 CclAddMessage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAddMessage</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1793,7 +1793,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetKeyScrollSpeed</summary>
-                        <p><br> <b>Description</b><br><br>  Set speed of key scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetKeyScrollSpeed(4)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set speed of key scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetKeyScrollSpeed</strong>(4)</code></div></p>
                           <details>
                           <summary>/ui/script_ui.cpp:87 CclSetKeyScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetKeyScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1809,7 +1809,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetKeyScrollSpeed</summary>
-                        <p><br> <b>Description</b><br><br>  Get speed of key scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>scroll_speed = GetKeyScrollSpeed()<br>		print(scroll_speed)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get speed of key scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>scroll_speed = <strong>GetKeyScrollSpeed</strong>()<br>		print(scroll_speed)</code></div></p>
                           <details>
                           <summary>/ui/script_ui.cpp:106 CclGetKeyScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetKeyScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1825,7 +1825,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetMouseScrollSpeed</summary>
-                        <p><br> <b>Description</b><br><br>  Set speed of mouse scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetMouseScrollSpeed(2)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set speed of mouse scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetMouseScrollSpeed</strong>(2)</code></div></p>
                           <details>
                           <summary>/ui/script_ui.cpp:124 CclSetMouseScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMouseScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -1841,9 +1841,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetMouseScrollSpeed</summary>
-                        <p><br> <b>Description</b><br><br>  Get speed of mouse scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><br> 	<code>scroll_speed = GetMouseScrollSpeed()<br>		print(scroll_speed)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get speed of mouse scroll<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>scroll_speed = <strong>GetMouseScrollSpeed</strong>()<br>		print(scroll_speed)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:144 CclGetMouseScrollSpeed</summary>
+                          <summary>/ui/script_ui.cpp:143 CclGetMouseScrollSpeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetMouseScrollSpeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -1859,7 +1859,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetMouseScrollSpeedDefault</summary>
                         <p><br>  Set speed of middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:156 CclSetMouseScrollSpeedDefault</summary>
+                          <summary>/ui/script_ui.cpp:155 CclSetMouseScrollSpeedDefault</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMouseScrollSpeedDefault</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1875,7 +1875,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetMouseScrollSpeedDefault</summary>
                         <p><br>  Get speed of middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:168 CclGetMouseScrollSpeedDefault</summary>
+                          <summary>/ui/script_ui.cpp:167 CclGetMouseScrollSpeedDefault</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetMouseScrollSpeedDefault</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -1891,7 +1891,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetMouseScrollSpeedControl</summary>
                         <p><br>  Set speed of ctrl-middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:180 CclSetMouseScrollSpeedControl</summary>
+                          <summary>/ui/script_ui.cpp:179 CclSetMouseScrollSpeedControl</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetMouseScrollSpeedControl</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -1907,7 +1907,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetMouseScrollSpeedControl</summary>
                         <p><br>  Get speed of ctrl-middle-mouse scroll<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:192 CclGetMouseScrollSpeedControl</summary>
+                          <summary>/ui/script_ui.cpp:191 CclGetMouseScrollSpeedControl</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetMouseScrollSpeedControl</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -1923,7 +1923,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetClickMissile</summary>
                         <p><br>  Set which missile is used for right click<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:210 CclSetClickMissile</summary>
+                          <summary>/ui/script_ui.cpp:209 CclSetClickMissile</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetClickMissile</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">args</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -1945,7 +1945,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetDamageMissile</summary>
                         <p><br>  Set which missile shows Damage<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:229 CclSetDamageMissile</summary>
+                          <summary>/ui/script_ui.cpp:228 CclSetDamageMissile</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetDamageMissile</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">args</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -1966,9 +1966,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetVideoResolution</summary>
-                        <p><br> <b>Description</b><br><br>  Set the video resolution.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetVideoResolution(640,480)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the video resolution.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetVideoResolution</strong>(640,480)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:253 CclSetVideoResolution</summary>
+                          <summary>/ui/script_ui.cpp:252 CclSetVideoResolution</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetVideoResolution</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -1988,9 +1988,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetVideoResolution</summary>
-                        <p><br> <b>Description</b><br><br>  Get the video resolution.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>width,height = GetVideoResolution()<br>		print("Resolution  is " .. width .. "x" .. height)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get the video resolution.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>width,height = <strong>GetVideoResolution</strong>()<br>		print("Resolution  is " .. width .. "x" .. height)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:273 CclGetVideoResolution</summary>
+                          <summary>/ui/script_ui.cpp:272 CclGetVideoResolution</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetVideoResolution</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -2005,9 +2005,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetVideoFullScreen</summary>
-                        <p><br> <b>Description</b><br><br>  Set the video fullscreen mode.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Full Screen mode enabled<br>		SetVideoFullScreen(true)<br>		-- Full Screen mode disabled<br>		SetVideoFullScreen(false)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the video fullscreen mode.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Full Screen mode enabled<br>		<strong>SetVideoFullScreen</strong>(true)<br>		-- Full Screen mode disabled<br>		<strong>SetVideoFullScreen</strong>(false)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:299 CclSetVideoFullScreen</summary>
+                          <summary>/ui/script_ui.cpp:298 CclSetVideoFullScreen</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetVideoFullScreen</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2026,9 +2026,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetVideoFullScreen</summary>
-                        <p><br> <b>Description</b><br><br>  Get the video fullscreen mode.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>fullscreenmode = GetVideoFullScreen()<br>		print(fullscreenmode)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get the video fullscreen mode.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>fullscreenmode = <strong>GetVideoFullScreen</strong>()<br>		print(fullscreenmode)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:318 CclGetVideoFullScreen</summary>
+                          <summary>/ui/script_ui.cpp:317 CclGetVideoFullScreen</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetVideoFullScreen</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -2044,7 +2044,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetWindowSize</summary>
                         <p><br> Request a specific initial window size</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:334 CclSetWindowSize</summary>
+                          <summary>/ui/script_ui.cpp:333 CclSetWindowSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetWindowSize</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -2066,7 +2066,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetVerticalPixelSize</summary>
                         <p><br> For games with non-square pixels, this sets the scale of vertical pixels versus horizontal pixels.<br> e.g., if your assets are 320x200, but you render at 320x240, this is 1.2.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:348 CclSetVerticalPixelSize</summary>
+                          <summary>/ui/script_ui.cpp:347 CclSetVerticalPixelSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetVerticalPixelSize</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2085,7 +2085,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetTitleScreens</summary>
                         <p><br>  Default title screens.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:445 CclSetTitleScreens</summary>
+                          <summary>/ui/script_ui.cpp:444 CclSetTitleScreens</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTitleScreens</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">TitleScreens</span><span class="p">)</span> <span class="p">{</span>
@@ -2176,7 +2176,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>ShowTitleScreens</summary>
-                        <p>/ui/script_ui.cpp:356 CclShowTitleScreens</p>
+                        <p>/ui/script_ui.cpp:355 CclShowTitleScreens</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclShowTitleScreens</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -2192,7 +2192,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePanelContents</summary>
                         <p><br>  Define the Panels.<br>  Define what is shown in the panel(text, icon, variables)<br><br>  @param l  Lua state.<br>  @return   0.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:629 CclDefinePanelContents</summary>
+                          <summary>/ui/script_ui.cpp:628 CclDefinePanelContents</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePanelContents</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -2251,7 +2251,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePopup</summary>
                         <p><br>  Define the Panels.<br>  Define what is shown in the panel(text, icon, variables)<br><br>  @param l  Lua state.<br>  @return   0.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:681 CclDefinePopup</summary>
+                          <summary>/ui/script_ui.cpp:680 CclDefinePopup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePopup</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">Assert</span><span class="p">(</span><span class="n">lua_istable</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
@@ -2305,7 +2305,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineViewports</summary>
                         <p><br>  Define the viewports.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:715 CclDefineViewports</summary>
+                          <summary>/ui/script_ui.cpp:714 CclDefineViewports</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineViewports</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -2343,7 +2343,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>RightButtonAttacks</summary>
                         <p><br>  Fighter right button attacks as default.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:727 CclRightButtonAttacks</summary>
+                          <summary>/ui/script_ui.cpp:726 CclRightButtonAttacks</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRightButtonAttacks</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -2359,7 +2359,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>RightButtonMoves</summary>
                         <p><br>  Fighter right button moves as default.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:739 CclRightButtonMoves</summary>
+                          <summary>/ui/script_ui.cpp:738 CclRightButtonMoves</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRightButtonMoves</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -2373,9 +2373,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetFancyBuildings</summary>
-                        <p><br> <b>Description</b><br><br>  Enable/disable the fancy buildings.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Enable fancy buildings<br>		  SetFancyBuildings(true)<br>		  -- Disable fancy buildings<br>		  SetFancyBuildings(false)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Enable/disable the fancy buildings.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Enable fancy buildings<br>		  <strong>SetFancyBuildings</strong>(true)<br>		  -- Disable fancy buildings<br>		  <strong>SetFancyBuildings</strong>(false)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:760 CclSetFancyBuildings</summary>
+                          <summary>/ui/script_ui.cpp:759 CclSetFancyBuildings</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFancyBuildings</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2391,7 +2391,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineButton</summary>
                         <p><br>  Define a button.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1157 CclDefineButton</summary>
+                          <summary>/ui/script_ui.cpp:1156 CclDefineButton</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineButton</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2584,7 +2584,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>ClearButtons</summary>
                         <p><br>  Clear all buttons<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:968 CclClearButtons</summary>
+                          <summary>/ui/script_ui.cpp:967 CclClearButtons</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclClearButtons</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -2600,7 +2600,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineButtonStyle</summary>
                         <p><br>  Define a button style<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:924 CclDefineButtonStyle</summary>
+                          <summary>/ui/script_ui.cpp:923 CclDefineButtonStyle</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineButtonStyle</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -2683,9 +2683,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>PresentMap</summary>
-                        <p><br> <b>Description</b><br><br> Set basic map caracteristics.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>PresentMap("Map description", 1, 128, 128, 17)</code></div></p>
+                        <p><br> <b>Description</b><br><br> Set basic map caracteristics.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>PresentMap</strong>("Map description", 1, 128, 128, 17)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1263 CclPresentMap</summary>
+                          <summary>/ui/script_ui.cpp:1262 CclPresentMap</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclPresentMap</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
@@ -2705,9 +2705,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>DefineMapSetup</summary>
-                        <p><br> <b>Description</b><br><br> Define the lua file that will build the map<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Load map setup from file<br>		DefineMapSetup("Setup.sms")</code></div></p>
+                        <p><br> <b>Description</b><br><br> Define the lua file that will build the map<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Load map setup from file<br>		<strong>DefineMapSetup</strong>("Setup.sms")</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1283 CclDefineMapSetup</summary>
+                          <summary>/ui/script_ui.cpp:1282 CclDefineMapSetup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineMapSetup</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2724,7 +2724,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSelectionStyle</summary>
                         <p><br>  Set selection style.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1209 CclSetSelectionStyle</summary>
+                          <summary>/ui/script_ui.cpp:1208 CclSetSelectionStyle</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetSelectionStyle</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2754,7 +2754,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGroupKeys</summary>
                         <p><br>  Set the keys which are use for grouping units, helpful for other keyboards<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1239 CclSetGroupKeys</summary>
+                          <summary>/ui/script_ui.cpp:1238 CclSetGroupKeys</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetGroupKeys</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -2768,7 +2768,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/unit/script_unit.cpp<hr>
                         <details>
                         <summary>SetTrainingQueue</summary>
-                        <p><br> <b>Description</b><br><br>  Set training queue<br><br>  @param l  Lua state.<br><br>  @return  The old state of the training queue<br><br> Example:<br><br> <div class="example"><code>-- Training queue available. Train multiple units.<br>		SetTrainingQueue(true)<br>		-- Train one unit at a time.<br>		SetTrainingQueue(false)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set training queue<br><br>  @param l  Lua state.<br><br>  @return  The old state of the training queue<br><br> Example:<br><br> <div class="example"><code>-- Training queue available. Train multiple units.<br>		<strong>SetTrainingQueue</strong>(true)<br>		-- Train one unit at a time.<br>		<strong>SetTrainingQueue</strong>(false)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:88 CclSetTrainingQueue</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTrainingQueue</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3204,7 +3204,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>RemoveUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Remove unit from the map.<br><br>  @param l  Lua state.<br><br>  @return   Returns 1.<br><br> Example:<br><br> <div class="example"><code>ogre = CreateUnit("unit-ogre", 0, {24, 89})<br><br>		AddTrigger(<br>  		function() return (GameCycle > 150) end,<br>  		function()<br>    			RemoveUnit(ogre)<br>    			return false end -- end of function<br>		)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Remove unit from the map.<br><br>  @param l  Lua state.<br><br>  @return   Returns 1.<br><br> Example:<br><br> <div class="example"><code>ogre = CreateUnit("unit-ogre", 0, {24, 89})<br><br>		AddTrigger(<br>  		function() return (GameCycle > 150) end,<br>  		function()<br>    			<strong>RemoveUnit</strong>(ogre)<br>    			return false end -- end of function<br>		)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:676 CclRemoveUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclRemoveUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3225,7 +3225,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>CreateUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Create a unit and place it on the map<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><code>CreateUnit("unit-human-transport", 1, {94, 0})</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Create a unit and place it on the map<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><code><strong>CreateUnit</strong>("unit-human-transport", 1, {94, 0})</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:736 CclCreateUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclCreateUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3281,7 +3281,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>TransformUnit</summary>
-                        <p><br> <b>Description</b><br><br>  'Upgrade' a unit in place to a unit of different type.<br><br>  @param l  Lua state.<br><br>  @return   Returns success.<br><br> Example:<br><br> <div class="example"><code>-- Make a peon for player 5<br>		peon = CreateUnit("unit-peon", 5, {58, 9})<br>		-- The peon will be trasformed into a Grunt<br>		TransformUnit(peon,"unit-grunt")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  'Upgrade' a unit in place to a unit of different type.<br><br>  @param l  Lua state.<br><br>  @return   Returns success.<br><br> Example:<br><br> <div class="example"><code>-- Make a peon for player 5<br>		peon = CreateUnit("unit-peon", 5, {58, 9})<br>		-- The peon will be trasformed into a Grunt<br>		<strong>TransformUnit</strong>(peon,"unit-grunt")</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:765 CclTransformUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclTransformUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3303,7 +3303,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>DamageUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Damages unit, additionally using another unit as first's attacker<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Damage the grunt with 15 points<br>		DamageUnit(-1,grunt,15)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Damages unit, additionally using another unit as first's attacker<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Damage the grunt with 15 points<br>		<strong>DamageUnit</strong>(-1,grunt,15)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:799 CclDamageUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDamageUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3388,7 +3388,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>OrderUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Order a unit<br><br>  @param l  Lua state.<br><br>  OrderUnit(player, unit-type, start_loc, dest_loc, order)<br><br> Example:<br><br> <div class="example"><code>-- Move transport from position x=94,y=0 to x=80,y=9<br>		OrderUnit(1,"unit-human-transport",{94,0},{80,9},"move")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Order a unit<br><br>  @param l  Lua state.<br><br>  OrderUnit(player, unit-type, start_loc, dest_loc, order)<br><br> Example:<br><br> <div class="example"><code>-- Move transport from position x=94,y=0 to x=80,y=9<br>		<strong>OrderUnit</strong>(1,"unit-human-transport",{94,0},{80,9},"move")</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:933 CclOrderUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclOrderUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3467,7 +3467,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>KillUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Kill a unit<br><br>  @param l  Lua state.<br><br>  @return   Returns true if a unit was killed.<br><br> Example:<br><br> <div class="example"><code>-- Kills an ogre controlled by player 3<br>		KillUnit("unit-ogre", 3)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Kill a unit<br><br>  @param l  Lua state.<br><br>  @return   Returns true if a unit was killed.<br><br> Example:<br><br> <div class="example"><code>-- Kills an ogre controlled by player 3<br>		<strong>KillUnit</strong>("unit-ogre", 3)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:992 CclKillUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclKillUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3506,7 +3506,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>KillUnitAt</summary>
-                        <p><br> <b>Description</b><br><br>  Kill a unit at a location<br><br>  @param l  Lua state.<br><br>  @return   Returns the number of units killed.<br><br> Example:<br><br> <div class="example"><code>-- Kill 8 peasants controlled by player 7 from position {27,1} to {34,5}<br>		KillUnitAt("unit-peasant",7,8,{27,1},{34,5})</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Kill a unit at a location<br><br>  @param l  Lua state.<br><br>  @return   Returns the number of units killed.<br><br> Example:<br><br> <div class="example"><code>-- Kill 8 peasants controlled by player 7 from position {27,1} to {34,5}<br>		<strong>KillUnitAt</strong>("unit-peasant",7,8,{27,1},{34,5})</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:1048 CclKillUnitAt</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclKillUnitAt</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3655,7 +3655,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetUnitVariable</summary>
-                        <p><br> <b>Description</b><br><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Take the name of the unit<br>		unit_name = GetUnitVariable(grunt,"Name")<br>		-- Take the player number based on the unit<br>		player_type = GetUnitVariable(grunt,"PlayerType")<br>		-- Take the value of the armor<br>		armor_value = GetUnitVariable(grunt,"Armor")<br>		-- Show the message in the game.<br>		AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Take the name of the unit<br>		unit_name = <strong>GetUnitVariable</strong>(grunt,"Name")<br>		-- Take the player number based on the unit<br>		player_type = <strong>GetUnitVariable</strong>(grunt,"PlayerType")<br>		-- Take the value of the armor<br>		armor_value = <strong>GetUnitVariable</strong>(grunt,"Armor")<br>		-- Show the message in the game.<br>		AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:1245 CclGetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3744,7 +3744,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetUnitVariable</summary>
-                        <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Create a blacksmith for player 2<br>		blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br>		-- Specify the amount of hit points to assign to the blacksmith<br>		SetUnitVariable(blacksmith,"HitPoints",344)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Create a blacksmith for player 2<br>		blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br>		-- Specify the amount of hit points to assign to the blacksmith<br>		<strong>SetUnitVariable</strong>(blacksmith,"HitPoints",344)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:1353 CclSetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -3860,7 +3860,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SelectSingleUnit</summary>
-                        <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><code>-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		SelectSingleUnit(grom)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><code>-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		<strong>SelectSingleUnit</strong>(grom)</code></div></p>
                           <details>
                           <summary>/unit/script_unit.cpp:1392 CclSelectSingleUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -4025,7 +4025,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>DefineAllow</summary>
-                        <p><br> <b>Description</b><br><br>  Define which units/upgrades are allowed.<br><br> Example:<br><br> <div class="example"><code>DefineAllow("unit-town-hall","AAAAAAAAAAAAAAAA") -- Available for everybody<br>		DefineAllow("unit-stables","FFFFFFFFFFFFFFFF") -- Not available<br>		DefineAllow("upgrade-sword1","RRRRRRRRRRRRRRRR") -- Upgrade already researched.</code></div><br></p>
+                        <p><br> <b>Description</b><br><br>  Define which units/upgrades are allowed.<br><br> Example:<br><br> <div class="example"><code><strong>DefineAllow</strong>("unit-town-hall","AAAAAAAAAAAAAAAA") -- Available for everybody<br>		<strong>DefineAllow</strong>("unit-stables","FFFFFFFFFFFFFFFF") -- Not available<br>		<strong>DefineAllow</strong>("upgrade-sword1","RRRRRRRRRRRRRRRR") -- Upgrade already researched.</code></div><br></p>
                           <details>
                           <summary>/unit/upgrade.cpp:430 CclDefineAllow</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineAllow</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -4100,7 +4100,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/unit/script_unittype.cpp<hr>
                         <details>
                         <summary>DefineUnitType</summary>
-                        <p><br> <b>Description</b><br><br>  Parse unit-type.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>DefineUnitType("unit-silvermoon-archer", { Name = _("Silvermoon Archer"),<br>			Image = {"file", "human/units/elven_archer.png", "size", {72, 72}},<br>			Animations = "animations-archer", Icon = "icon-archer",<br>			Costs = {"time", 70, "gold", 500, "wood", 50},<br>			Speed = 10,<br>			HitPoints = 45,<br>			DrawLevel = 40,<br>			TileSize = {1, 1}, BoxSize = {33, 33},<br>			SightRange = 6, ComputerReactionRange = 7, PersonReactionRange = 6,<br>			BasicDamage = 4, PiercingDamage = 6, Missile = "missile-arrow",<br>			MaxAttackRange = 4,<br>			Priority = 75,<br>			Points = 60,<br>			Demand = 1,<br>			Corpse = "unit-human-dead-body",<br>			Type = "land",<br>			RightMouseAction = "attack",<br>			CanAttack = true,<br>			CanTargetLand = true, CanTargetSea = true, CanTargetAir = true,<br>			LandUnit = true,<br>			organic = true,<br>			SelectableByRectangle = true,<br>			Sounds = {<br>				"selected", "archer-selected",<br>				"acknowledge", "archer-acknowledge",<br>				"ready", "archer-ready",<br>				"help", "basic human voices help 1",<br>				"dead", "basic human voices dead"} } )</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Parse unit-type.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>DefineUnitType</strong>("unit-silvermoon-archer", { Name = _("Silvermoon Archer"),<br>			Image = {"file", "human/units/elven_archer.png", "size", {72, 72}},<br>			Animations = "animations-archer", Icon = "icon-archer",<br>			Costs = {"time", 70, "gold", 500, "wood", 50},<br>			Speed = 10,<br>			HitPoints = 45,<br>			DrawLevel = 40,<br>			TileSize = {1, 1}, BoxSize = {33, 33},<br>			SightRange = 6, ComputerReactionRange = 7, PersonReactionRange = 6,<br>			BasicDamage = 4, PiercingDamage = 6, Missile = "missile-arrow",<br>			MaxAttackRange = 4,<br>			Priority = 75,<br>			Points = 60,<br>			Demand = 1,<br>			Corpse = "unit-human-dead-body",<br>			Type = "land",<br>			RightMouseAction = "attack",<br>			CanAttack = true,<br>			CanTargetLand = true, CanTargetSea = true, CanTargetAir = true,<br>			LandUnit = true,<br>			organic = true,<br>			SelectableByRectangle = true,<br>			Sounds = {<br>				"selected", "archer-selected",<br>				"acknowledge", "archer-acknowledge",<br>				"ready", "archer-ready",<br>				"help", "basic human voices help 1",<br>				"dead", "basic human voices dead"} } )</code></div></p>
                           <details>
                           <summary>/unit/script_unittype.cpp:1193 CclDefineUnitType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -4829,7 +4829,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>DefineUnitStats</summary>
-                        <p><br> <b>Description</b><br><br>  Parse unit-stats.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>DefineUnitStats("unit-berserker", 2, {<br>    		"HitPoints", {Value = 55, Max = 55, Increase = 0, Enable = true},<br>    		"AttackRange", {Value = 5, Max = 6, Increase = 0, Enable = true},<br>    		"SightRange", {Value = 7, Max = 7, Increase = 0, Enable = true},<br>  		})</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Parse unit-stats.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>DefineUnitStats</strong>("unit-berserker", 2, {<br>    		"HitPoints", {Value = 55, Max = 55, Increase = 0, Enable = true},<br>    		"AttackRange", {Value = 5, Max = 6, Increase = 0, Enable = true},<br>    		"SightRange", {Value = 7, Max = 7, Increase = 0, Enable = true},<br>  		})</code></div></p>
                           <details>
                           <summary>/unit/script_unittype.cpp:1294 CclDefineUnitStats</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitStats</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -5255,7 +5255,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetUnitTypeName</summary>
-                        <p><br> <b>Description</b><br><br>  Get the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code>name = GetUnitTypeName("unit-knight")<br>		  print(name)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code>name = <strong>GetUnitTypeName</strong>("unit-knight")<br>		  print(name)</code></div></p>
                           <details>
                           <summary>/unit/script_unittype.cpp:1401 CclGetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -5273,7 +5273,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetUnitTypeName</summary>
-                        <p><br> <b>Description</b><br><br>  Set the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code>SetUnitTypeName("unit-beast-cry","Doomhammer")</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code><strong>SetUnitTypeName</strong>("unit-beast-cry","Doomhammer")</code></div></p>
                           <details>
                           <summary>/unit/script_unittype.cpp:1427 CclSetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -5295,7 +5295,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetUnitTypeData</summary>
-                        <p><br> <b>Description</b><br><br>  Get unit type data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Get the amount of supply from Human Farms<br>		  supply = GetUnitTypeData("unit-farm","Supply")<br>		  print(supply)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get unit type data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Get the amount of supply from Human Farms<br>		  supply = <strong>GetUnitTypeData</strong>("unit-farm","Supply")<br>		  print(supply)</code></div></p>
                           <details>
                           <summary>/unit/script_unittype.cpp:1651 CclGetUnitTypeData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeData</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -5818,7 +5818,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>CenterMap</summary>
-                        <p><br> <b>Description</b><br><br>  Center the map.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Center the view at position x=11 and y=1.<br>		  CenterMap(11, 1)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Center the map.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Center the view at position x=11 and y=1.<br>		  <strong>CenterMap</strong>(11, 1)</code></div></p>
                           <details>
                           <summary>/map/script_map.cpp:172 CclCenterMap</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclCenterMap</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -5836,7 +5836,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetStartView</summary>
-                        <p><br> <b>Description</b><br><br>  Define the starting viewpoint for a given player.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Start view for player 0.<br>		  SetStartView(0, 25, 12)<br>		  -- Start view for player 1.<br>		  SetStartView(1, 71, 38)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Define the starting viewpoint for a given player.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Start view for player 0.<br>		  <strong>SetStartView</strong>(0, 25, 12)<br>		  -- Start view for player 1.<br>		  <strong>SetStartView</strong>(1, 71, 38)</code></div></p>
                           <details>
                           <summary>/map/script_map.cpp:197 CclSetStartView</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetStartView</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -5908,7 +5908,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetFogOfWar</summary>
-                        <p><br> <b>Description</b><br><br>  Set fog of war on/off.<br><br> Example:<br><br> <div class="example"><code>SetFogOfWar(true)</code></div><br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set fog of war on/off.<br><br> Example:<br><br> <div class="example"><code><strong>SetFogOfWar</strong>(true)</code></div><br><br>  @param l  Lua state.</p>
                           <details>
                           <summary>/map/script_map.cpp:251 CclSetFogOfWar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWar</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -6347,7 +6347,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetForestRegeneration</summary>
-                        <p><br> <b>Description</b><br><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed<br><br> Example:<br><br> <div class="example"><code>-- No regeneration.<br>		  SetForestRegeneration(0)<br>		  -- Slow regeneration.<br>		  SetForestRegeneration(50)<br>		  -- Maximum value for regeneration.<br>		  SetForestRegeneration(255)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed<br><br> Example:<br><br> <div class="example"><code>-- No regeneration.<br>		  <strong>SetForestRegeneration</strong>(0)<br>		  -- Slow regeneration.<br>		  <strong>SetForestRegeneration</strong>(50)<br>		  -- Maximum value for regeneration.<br>		  <strong>SetForestRegeneration</strong>(255)</code></div></p>
                           <details>
                           <summary>/map/script_map.cpp:592 CclSetForestRegeneration</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetForestRegeneration</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -6930,7 +6930,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>DefineAi</summary>
-                        <p><br> <b>Description</b><br><br>  Define an AI engine.<br><br>  @param l  Lua state.<br><br>  @return   FIXME: docu<br><br> Example:<br><br> <div class="example"><code>-- Those instructions will be executed forever<br>		local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return AiSleep(9000) end,<br>			-- Repeat the functions from start.<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		-- The initial instructions the A.I has to execute<br>		local simple_ai = {<br>			function() return AiSleep(1800) end, -- Sleep for 1 in game minute<br>			function() return AiNeed("unit-town-hall") end, -- One Town Hall is needed<br>			function() return AiWait("unit-town-hall") end, -- Wait until the Town Hall is completed<br>			function() return AiSet("unit-peasant", 4) end, -- Make 4 peasants<br>			-- Basic buildings<br>			function() return AiSet("unit-farm", 4) end, -- Make 4 farms<br>			function() return AiWait("unit-farm") end, -- Wait until all 4 farms are build.<br>			function() return AiNeed("unit-human-barracks") end, -- Need a Barrarck<br>			function() return AiWait("unit-human-barracks") end, -- Wait until the Barracks has been built<br>			-- Defense force for the base<br>			function() return AiForce(1, {"unit-footman", 3}) end, -- Make a force of 3 footmen<br>			function() return AiWaitForce(1) end, -- Wait until the 3 footmen are trained<br>			function() return AiForceRole(1,"defend") end, -- Make this force as a defense force<br>			-- Execute the instructions in simple_ai_loop<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		-- function that calls the instructions in simple_ai inside DefineAi<br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		-- Make an A.I for the human race that calls the function custom_ai<br>		DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Define an AI engine.<br><br>  @param l  Lua state.<br><br>  @return   FIXME: docu<br><br> Example:<br><br> <div class="example"><code>-- Those instructions will be executed forever<br>		local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return AiSleep(9000) end,<br>			-- Repeat the functions from start.<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		-- The initial instructions the A.I has to execute<br>		local simple_ai = {<br>			function() return AiSleep(1800) end, -- Sleep for 1 in game minute<br>			function() return AiNeed("unit-town-hall") end, -- One Town Hall is needed<br>			function() return AiWait("unit-town-hall") end, -- Wait until the Town Hall is completed<br>			function() return AiSet("unit-peasant", 4) end, -- Make 4 peasants<br>			-- Basic buildings<br>			function() return AiSet("unit-farm", 4) end, -- Make 4 farms<br>			function() return AiWait("unit-farm") end, -- Wait until all 4 farms are build.<br>			function() return AiNeed("unit-human-barracks") end, -- Need a Barracks<br>			function() return AiWait("unit-human-barracks") end, -- Wait until the Barracks has been built<br>			-- Defense force for the base<br>			function() return AiForce(1, {"unit-footman", 3}) end, -- Make a force of 3 footmen<br>			function() return AiWaitForce(1) end, -- Wait until the 3 footmen are trained<br>			function() return AiForceRole(1,"defend") end, -- Make this force as a defense force<br>			-- Execute the instructions in simple_ai_loop<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		-- function that calls the instructions in simple_ai inside DefineAi<br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		-- Make an A.I for the human race that calls the function custom_ai<br>		<strong>DefineAi</strong>("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
                           <summary>/ai/script_ai.cpp:452 CclDefineAi</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineAi</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -7003,7 +7003,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiGetSleepCycles</summary>
-                        <p><br> <b>Description</b><br><br>  Get the number of cycles to sleep.<br><br>  @param l  Lua state<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return AiSleep(9000) end,<br>			-- Repeat the instructions forever.<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		local simple_ai = {<br>			-- Get the number of cycles to sleep.<br>			function() return AiSleep(<b>AiGetSleepCycles()</b>) end,<br>			-- Execute the instructions in simple_ai_loop<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Get the number of cycles to sleep.<br><br>  @param l  Lua state<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return AiSleep(9000) end,<br>			-- Repeat the instructions forever.<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		local simple_ai = {<br>			-- Get the number of cycles to sleep.<br>			function() return AiSleep(<strong>AiGetSleepCycles()</strong>) end,<br>			-- Execute the instructions in simple_ai_loop<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
                           <summary>/ai/script_ai.cpp:574 CclAiGetSleepCycles</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiGetSleepCycles</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -7082,7 +7082,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiNeed</summary>
-                        <p><br> <b>Description</b><br><br>  Need a unit.<br><br>  @param l  Lua state.<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return AiSleep(9000) end,<br>			-- Repeat the instructions forever.<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		local simple_ai = {<br>			function() return AiSleep(AiGetSleepCycles()) end,<br>			-- Tell to the A.I that it needs a Town Hall.<br>			function() return <b>AiNeed</b>("unit-town-hall") end,<br>			-- Execute the instructions in simple_ai_loop<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Need a unit.<br><br>  @param l  Lua state.<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return AiSleep(9000) end,<br>			-- Repeat the instructions forever.<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		local simple_ai = {<br>			function() return AiSleep(AiGetSleepCycles()) end,<br>			-- Tell to the A.I that it needs a Town Hall.<br>			function() return <strong>AiNeed</strong>("unit-town-hall") end,<br>			-- Execute the instructions in simple_ai_loop<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
                           <summary>/ai/script_ai.cpp:676 CclAiNeed</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiNeed</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -7100,7 +7100,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiSet</summary>
-                        <p><br> <b>Description</b><br><br>  Set the number of units.<br><br>  @param l  Lua state<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		-- Sleep for 5 in game minutes<br>		function() return AiSleep(9000) end,<br>		-- Repeat the instructions forever.<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		-- Tell to the A.I that it needs a Town Hall.<br>		function() return AiNeed("unit-town-hall") end,<br>		-- Wait until the town-hall has been built.<br>		function() return AiWait("unit-town-hall") end,<br>		-- Tell to the A.I that it needs 4 peasants<br>		function() return <b>AiSet</b>("unit-peasant",4) end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the number of units.<br><br>  @param l  Lua state<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		-- Sleep for 5 in game minutes<br>		function() return AiSleep(9000) end,<br>		-- Repeat the instructions forever.<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		-- Tell to the A.I that it needs a Town Hall.<br>		function() return AiNeed("unit-town-hall") end,<br>		-- Wait until the town-hall has been built.<br>		function() return AiWait("unit-town-hall") end,<br>		-- Tell to the A.I that it needs 4 peasants<br>		function() return <strong>AiSet</strong>("unit-peasant",4) end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
                           <summary>/ai/script_ai.cpp:727 CclAiSet</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiSet</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -7127,7 +7127,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiWait</summary>
-                        <p><br> <b>Description</b><br><br>  Wait for a unit.<br><br>  @param l  Lua State.<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		-- Sleep for 5 in game minutes<br>		function() return AiSleep(9000) end,<br>		-- Repeat the instructions forever.<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		-- Tell to the A.I that it needs a Town Hall.<br>		function() return AiNeed("unit-town-hall") end,<br>		-- Wait until the Town Hall has been built.<br>		function() return <b>AiWait</b>("unit-town-hall") end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Wait for a unit.<br><br>  @param l  Lua State.<br><br>  @return   Number of return values<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		-- Sleep for 5 in game minutes<br>		function() return AiSleep(9000) end,<br>		-- Repeat the instructions forever.<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		-- Tell to the A.I that it needs a Town Hall.<br>		function() return AiNeed("unit-town-hall") end,<br>		-- Wait until the Town Hall has been built.<br>		function() return <strong>AiWait</strong>("unit-town-hall") end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
                           <summary>/ai/script_ai.cpp:807 CclAiWait</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiWait</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -7211,7 +7211,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiForce</summary>
-                        <p><br> <b>Description</b><br><br>  Define a force, a groups of units.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		-- Sleep for 5 in game minutes<br>		function() return AiSleep(9000) end,<br>		-- Repeat the instructions forever.<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		-- Tell to the A.I that it needs a Town Hall.<br>		function() return AiNeed("unit-town-hall") end,<br>		-- Wait until the Town Hall has been built.<br>		function() return AiWait("unit-town-hall") end,<br>		-- Tell to the A.I that it needs 4 peasants<br>		function() return AiSet("unit-peasant",4) end,<br>		-- Tell to the A.I that it needs a Barracks.<br>		function() return AiNeed("unit-human-barracks") end,<br>		-- Tell to the A.I that it needs a Lumbermill.<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		-- Wait until the Barracks has been built.<br>		function() return AiWait("unit-human-barracks") end,<br>		-- Wait until the Lumbermill has been built.<br>		function() return AiWait("unit-elven-lumber-mill") end,<br>		-- Specify the force number 1 made only of 3 footmen<br>		function() return <b>AiForce</b>(1,{"unit-footman", 3}) end,<br>		-- Specify the force number 2 made only of 2 archers<br>		function() return <b>AiForce</b>(2,{"unit-archer", 2}) end,<br>		-- Specify the force number 3 made of 2 footmen and 1 archer<br>		function() return <b>AiForce</b>(3,{"unit-footman", 2, "unit-archer", 1}) end,<br>		-- Wait for all three forces<br>		function() return AiWaitForce(1) end,<br>		function() return AiWaitForce(2) end,<br>		function() return AiWaitForce(3) end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Define a force, a groups of units.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		-- Sleep for 5 in game minutes<br>		function() return AiSleep(9000) end,<br>		-- Repeat the instructions forever.<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		-- Tell to the A.I that it needs a Town Hall.<br>		function() return AiNeed("unit-town-hall") end,<br>		-- Wait until the Town Hall has been built.<br>		function() return AiWait("unit-town-hall") end,<br>		-- Tell to the A.I that it needs 4 peasants<br>		function() return AiSet("unit-peasant",4) end,<br>		-- Tell to the A.I that it needs a Barracks.<br>		function() return AiNeed("unit-human-barracks") end,<br>		-- Tell to the A.I that it needs a Lumbermill.<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		-- Wait until the Barracks has been built.<br>		function() return AiWait("unit-human-barracks") end,<br>		-- Wait until the Lumbermill has been built.<br>		function() return AiWait("unit-elven-lumber-mill") end,<br>		-- Specify the force number 1 made only of 3 footmen<br>		function() return <strong>AiForce</strong>(1,{"unit-footman", 3}) end,<br>		-- Specify the force number 2 made only of 2 archers<br>		function() return <strong>AiForce</strong>(2,{"unit-archer", 2}) end,<br>		-- Specify the force number 3 made of 2 footmen and 1 archer<br>		function() return <strong>AiForce</strong>(3,{"unit-footman", 2, "unit-archer", 1}) end,<br>		-- Wait for all three forces<br>		function() return AiWaitForce(1) end,<br>		function() return AiWaitForce(2) end,<br>		function() return AiWaitForce(3) end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
                           <summary>/ai/script_ai.cpp:953 CclAiForce</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiForce</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
@@ -7295,7 +7295,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiReleaseForce</summary>
                         <p><br>  Release force.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1007 CclAiReleaseForce</summary>
+                          <summary>/ai/script_ai.cpp:1038 CclAiReleaseForce</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiReleaseForce</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7324,9 +7324,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiForceRole</summary>
-                        <p><br>  Define the role of a force.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Define the role of a force.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		-- Force 1 has the role of attacker<br>		function() return <strong>AiForceRole</strong>(1,"<u>attack</u>") end,<br>		-- Force 2 has the role of defender<br>		function() return <strong>AiForceRole</strong>(2,"<u>defend</u>") end,<br>		function() return AiForce(1,{"unit-footman", 3}) end,<br>		function() return AiForce(2,{"unit-archer", 2}) end,<br>		function() return AiWaitForce(1) end,<br>		function() return AiWaitForce(2) end,<br>		-- Execute the instructions in simple_ai_loop<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:980 CclAiForceRole</summary>
+                          <summary>/ai/script_ai.cpp:1011 CclAiForceRole</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiForceRole</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -7357,7 +7357,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiCheckForce</summary>
                         <p><br>  Check if a force ready.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1027 CclAiCheckForce</summary>
+                          <summary>/ai/script_ai.cpp:1058 CclAiCheckForce</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiCheckForce</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7379,9 +7379,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiWaitForce</summary>
-                        <p><br>  Wait for a force ready.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Wait for a force ready.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiWait("unit-human-barracks") end,<br>		function() return AiForce(1,{"unit-footman", 3}) end,<br>		-- Wait until force 1 is completed<br>		function() return <strong>AiWaitForce</strong>(1) end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1052 CclAiWaitForce</summary>
+                          <summary>/ai/script_ai.cpp:1108 CclAiWaitForce</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiWaitForce</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7408,9 +7408,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiAttackWithForce</summary>
-                        <p><br>  Attack with force.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Attack with one single force.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiWait("unit-human-barracks") end,<br>		function() return AiForce(1,{"unit-footman", 3}) end,<br>		function() return AiWaitForce(1) end,<br>		-- Attack with Force 1<br>		function() return <strong>AiAttackWithForce</strong>(<u>1</u>) end,<br><br>		function() return AiForce(2,{"unit-footman",5}) end,<br>		function() return AiWaitForce(2) end,<br>		-- Attack with Force 2<br>		function() return <strong>AiAttackWithForce</strong>(<u>2</u>) end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1069 CclAiAttackWithForce</summary>
+                          <summary>/ai/script_ai.cpp:1156 CclAiAttackWithForce</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiAttackWithForce</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7429,9 +7429,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiSleep</summary>
-                        <p><br>  Sleep n cycles.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Sleep for n cycles.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>			-- Sleep for 5 in game minutes<br>			function() return <strong>AiSleep</strong>(9000) end,<br>			function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>		}<br><br>		local simple_ai = {<br>			-- Get the number of cycles to sleep<br>			function() return <strong>AiSleep</strong>(AiGetSleepCycles()) end,<br>			function() return AiNeed("unit-town-hall") end,<br>			function() return AiWait("unit-town-hall") end,<br>			function() return AiSet("unit-peasant",4) end,<br>			-- Sleep for 1 in game minute<br>			function() return <strong>AiSleep</strong>(1800) end,<br>			function() return AiNeed("unit-human-blacksmith") end,<br>			function() return AiWait("unit-human-blacksmith") end,<br>			function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>		}<br><br>		function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>		DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1146 CclAiSleep</summary>
+                          <summary>/ai/script_ai.cpp:1319 CclAiSleep</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiSleep</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7455,9 +7455,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiResearch</summary>
-                        <p><br>  Research an upgrade.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Research an upgrade.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		-- Get the number of cycles to sleep<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiWait("unit-human-barracks") end,<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		function() return AiWait("unit-elven-lumber-mill") end,<br>		function() return AiForce(1,{"unit-footman", 1, "unit-archer", 2}) end,<br>		function() return AiWaitForce(1) end,<br>		-- Upgrade the archers arrow.<br>		function() return <strong>AiResearch</strong>("upgrade-arrow1") end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1168 CclAiResearch</summary>
+                          <summary>/ai/script_ai.cpp:1370 CclAiResearch</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiResearch</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7481,9 +7481,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiUpgradeTo</summary>
-                        <p><br>  Upgrade an unit to an new unit-type.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Upgrade an unit to an new unit-type.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiWait("unit-human-barracks") end,<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		function() return AiWait("unit-elven-lumber-mill") end,<br>		function() return AiSleep(1800) end,<br>		-- Upgrade the Town Hall to Keep<br>		function() return <strong>AiUpgradeTo</strong>("unit-keep") end,<br>		function() return AiWait("unit-keep") end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1183 CclAiUpgradeTo</summary>
+                          <summary>/ai/script_ai.cpp:1413 CclAiUpgradeTo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiUpgradeTo</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7502,7 +7502,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiPlayer</summary>
                         <p><br>  Return the player of the running AI.<br><br>  @param l  Lua state.<br><br>  @return  Player number of the AI.</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1197 CclAiPlayer</summary>
+                          <summary>/ai/script_ai.cpp:1427 CclAiPlayer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiPlayer</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -7518,7 +7518,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiSetReserve</summary>
                         <p><br>  Set AI player resource reserve.<br><br>  @param l  Lua state.<br><br>  @return     Old resource vector</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1221 CclAiSetReserve</summary>
+                          <summary>/ai/script_ai.cpp:1451 CclAiSetReserve</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiSetReserve</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7542,9 +7542,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiSetCollect</summary>
-                        <p><br>  Set AI player resource collect percent.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set AI player resource collect percent.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		-- The peasants will focus only on gathering gold<br>		function() return <strong>AiSetCollect</strong>({0,100,0,0,0,0,0}) end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiWait("unit-peasant") end,<br>		function() return AiSleep(1800) end,<br>		-- The peasants will now focus 50% on gathering gold and 50% on gathering lumber<br>		function() return <strong>AiSetCollect</strong>({0,50,50,0,0,0,0}) end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1238 CclAiSetCollect</summary>
+                          <summary>/ai/script_ai.cpp:1494 CclAiSetCollect</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiSetCollect</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7565,7 +7565,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiSetBuildDepots</summary>
                         <p><br>  Set AI player build.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1253 CclAiSetBuildDepots</summary>
+                          <summary>/ai/script_ai.cpp:1509 CclAiSetBuildDepots</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiSetBuildDepots</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7582,9 +7582,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiDump</summary>
-                        <p><br>  Dump some AI debug information.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Dump some AI debug information.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(3600) end,<br>		-- Get the information from all the A.I players<br>		function() return <strong>AiDump</strong>() end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiWait("unit-peasant") end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1326 CclAiDump</summary>
+                          <summary>/ai/script_ai.cpp:1605 CclAiDump</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiDump</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -7661,7 +7661,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineAiPlayer</summary>
                         <p><br> Define an AI player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1614 CclDefineAiPlayer</summary>
+                          <summary>/ai/script_ai.cpp:1893 CclDefineAiPlayer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineAiPlayer</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">playerIdx</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
@@ -7908,9 +7908,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiAttackWithForces</summary>
-                        <p><br>  Attack with forces.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Attack with forces.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiWait("unit-human-barracks") end,<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		function() return AiWait("unit-elven-lumber-mill") end,<br>		function() return AiForce(1,{"unit-footman", 2}) end,<br>		function() return AiForce(2,{"unit-archer",1}) end,<br>		function() return AiForce(3,{"unit-archer",1,"unit-footman",3}) end,<br>		-- Wait all three forces to be ready<br>		function() return AiWaitForces({1,2,3}) end,<br>		-- Attack with all three forces<br>		function() return <strong>AiAttackWithForces</strong>({1,2,3}) end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1124 CclAiAttackWithForces</summary>
+                          <summary>/ai/script_ai.cpp:1271 CclAiAttackWithForces</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiAttackWithForces</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">Forces</span><span class="p">[</span><span class="n">AI_MAX_FORCE_INTERNAL</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
@@ -7940,9 +7940,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiWaitForces</summary>
-                        <p><br>  Wait for a forces ready.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Wait for a forces ready.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>local simple_ai_loop = {<br>		function() return AiSleep(9000) end,<br>		function() stratagus.gameData.AIState.loop_index[1 + AiPlayer()] = 0; return false; end,<br>	}<br><br>	local simple_ai = {<br>		function() return AiSleep(AiGetSleepCycles()) end,<br>		function() return AiNeed("unit-town-hall") end,<br>		function() return AiWait("unit-town-hall") end,<br>		function() return AiSet("unit-peasant",4) end,<br>		function() return AiNeed("unit-human-barracks") end,<br>		function() return AiWait("unit-human-barracks") end,<br>		function() return AiNeed("unit-elven-lumber-mill") end,<br>		function() return AiWait("unit-elven-lumber-mill") end,<br>		function() return AiForce(1,{"unit-footman", 2}) end,<br>		function() return AiForce(2,{"unit-archer",1}) end,<br>		function() return AiForce(3,{"unit-archer",1,"unit-footman",3}) end,<br>		-- Wait all three forces to be ready<br>		function() return <strong>AiWaitForces</strong>({1,2,3}) end,<br>		function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end,<br>	}<br><br>	function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end<br>	DefineAi("example_ai","human","class_ai",custom_ai)</code></div></p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1096 CclAiWaitForces</summary>
+                          <summary>/ai/script_ai.cpp:1212 CclAiWaitForces</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiWaitForces</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -7973,7 +7973,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiProcessorSetup</summary>
                         <p><br> AiProcessorSetup(host, port, number_of_state_variables, number_of_actions)<br><br> Connect to an AI agent running at host:port, that will consume<br> number_of_state_variables every step and select one of number_of_actions.</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1647 CclAiProcessorSetup</summary>
+                          <summary>/ai/script_ai.cpp:1926 CclAiProcessorSetup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiProcessorSetup</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">InitNetwork1</span><span class="p">();</span>
@@ -8009,7 +8009,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AiProcessorStep</summary>
                         <p><br> AiProcessorStep(handle, reward_since_last_call, table_of_state_variables)</p>
                           <details>
-                          <summary>/ai/script_ai.cpp:1702 CclAiProcessorStep</summary>
+                          <summary>/ai/script_ai.cpp:1981 CclAiProcessorStep</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiProcessorStep</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="c1">// A single step in a reinforcement learning network</span>
@@ -8034,7 +8034,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>AiProcessorEnd</summary>
-                        <p>/ai/script_ai.cpp:1710 CclAiProcessorEnd</p>
+                        <p>/ai/script_ai.cpp:1989 CclAiProcessorEnd</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclAiProcessorEnd</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">CTCPSocket</span> <span class="o">*</span><span class="n">s</span> <span class="o">=</span> <span class="n">AiProcessorSendState</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="sc">&#39;E&#39;</span><span class="p">);</span>
