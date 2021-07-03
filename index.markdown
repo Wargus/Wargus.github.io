@@ -8,9 +8,9 @@ next_version: 3.0.1
 ---
 ### About Wargus
 
-Wargus is a Warcraft2 Mod that allows you to play Warcraft2 with the Stratagus
-engine. The game looks and sounds almost exactly like Warcraft2.  The gameplay
-is very close to Warcraft2's gameplay, with slight enhancements towards
+Wargus is a Warcraft 2 Mod that allows you to play Warcraft 2 with the Stratagus
+engine. The game looks and sounds almost exactly like Warcraft 2.  The gameplay
+is very close to Warcraft 2's gameplay, with slight enhancements towards
 Starcraft and other more modern RTS games.
 
 ![screenshot](img/screenshotWargus.png)
@@ -24,26 +24,30 @@ on how to install Wargus.
 
 ### The benefits of Wargus over original Warcraft 2
 
-* You can play under Linux, MacOS X, and Windows.
-* You can play in high resolution, with OpenGL shaders to improve or change the visuals
-* You can play over the internet
-* You can tweak many of the game's parameters using Lua language
+* You can play on different operating systems like Linux, MacOS X, and Windows.
+* Play in high resolution, with OpenGL shaders to improve or change the visuals.
+* Local and Online multiplayer.
+* You can tweak many of the game's parameters using the Lua language.
 * You can set game parameters right from the command line
 
 ### Disclaimer
 
-Wargus is not an official Blizzard product, its a Warcraft2 modification, by
-Warcraft2 fans for Warcraft2 fans. You need a copy of the original Warcraft2.
+Wargus is not an official Blizzard product, it's a Warcraft 2 modification, by
+Warcraft 2 fans for Warcraft 2 fans. You need a copy of the original Warcraft 2.
 Warcraft is a registered trademark of Blizzard Entertainment. 
 
 ### Community
 
-There is a page on [gamebanana](https://gamebanana.com/games/8682) with custom maps
-using some of Wargus' unique features.
+There is a page on [gamebanana](https://gamebanana.com/games/8682) with custom stuff like:
+
+- [Maps](https://gamebanana.com/mods/cats/6915)
+
+- [UI](https://gamebanana.com/mods/cats/12621)
+
+- [Scripts](https://gamebanana.com/scripts/games/8682)
 
 ### Development
 
 Wargus is an open source software. It is developed at
 [![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
-
