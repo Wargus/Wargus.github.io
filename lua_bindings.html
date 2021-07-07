@@ -3657,7 +3657,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitVariable</summary>
                         <p><br> <b>Description</b><br><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Take the name of the unit<br>		unit_name = <strong>GetUnitVariable</strong>(grunt,"Name")<br>		-- Take the player number based on the unit<br>		player_type = <strong>GetUnitVariable</strong>(grunt,"PlayerType")<br>		-- Take the value of the armor<br>		armor_value = <strong>GetUnitVariable</strong>(grunt,"Armor")<br>		-- Show the message in the game.<br>		AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1245 CclGetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1247 CclGetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -3728,6 +3728,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 				<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Max</span><span class="p">);</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;Increase&quot;</span><span class="p">))</span> <span class="p">{</span>
 				<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Increase</span><span class="p">);</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;IncreaseFrequency&quot;</span><span class="p">))</span> <span class="p">{</span>
+				<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">IncreaseFrequency</span><span class="p">);</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;Enable&quot;</span><span class="p">))</span> <span class="p">{</span>
 				<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Enable</span><span class="p">);</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -3746,7 +3748,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUnitVariable</summary>
                         <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Create a blacksmith for player 2<br>		blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br>		-- Specify the amount of hit points to assign to the blacksmith<br>		<strong>SetUnitVariable</strong>(blacksmith,"HitPoints",344)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1353 CclSetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1369 CclSetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -3767,8 +3769,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 		<span class="n">value</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
 		<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Summoned</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
 	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;RegenerationRate&quot;</span><span class="p">))</span> <span class="p">{</span>
-		<span class="n">value</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
 		<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">Increase</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">Max</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;RegenerationFrequency&quot;</span><span class="p">))</span> <span class="p">{</span>
+		<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">!=</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;RegenerationFrequency out of range!&quot;</span><span class="p">);</span>
+		<span class="p">}</span>
 	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;IndividualUpgrade&quot;</span><span class="p">))</span> <span class="p">{</span>
 		<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
 		<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">upgrade_ident</span> <span class="o">=</span> <span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -3813,6 +3819,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Stats</span><span class="o">-&gt;</span><span class="n">Variables</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Max</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;Increase&quot;</span><span class="p">))</span> <span class="p">{</span>
 				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Stats</span><span class="o">-&gt;</span><span class="n">Variables</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Increase</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;IncreaseFrequency&quot;</span><span class="p">))</span> <span class="p">{</span>
+				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Stats</span><span class="o">-&gt;</span><span class="n">Variables</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Stats</span><span class="o">-&gt;</span><span class="n">Variables</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">!=</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;%s.IncreaseFrequency out of range!&quot;</span> <span class="n">_C_</span> <span class="n">type</span><span class="p">);</span>
+				<span class="p">}</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;Enable&quot;</span><span class="p">))</span> <span class="p">{</span>
 				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Stats</span><span class="o">-&gt;</span><span class="n">Variables</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Enable</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -3828,6 +3839,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Max</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;Increase&quot;</span><span class="p">))</span> <span class="p">{</span>
 				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Increase</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;IncreaseFrequency&quot;</span><span class="p">))</span> <span class="p">{</span>
+				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">!=</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;%s.IncreaseFrequency out of range!&quot;</span> <span class="n">_C_</span> <span class="n">type</span><span class="p">);</span>
+				<span class="p">}</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;Enable&quot;</span><span class="p">))</span> <span class="p">{</span>
 				<span class="n">unit</span><span class="o">-&gt;</span><span class="n">Variable</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="n">Enable</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -3847,7 +3863,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SlotUsage</summary>
                         <p><br>  Get the usage of unit slots during load to allocate memory<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1364 CclSlotUsage</summary>
+                          <summary>/unit/script_unit.cpp:1380 CclSlotUsage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSlotUsage</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">UnitManager</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -3862,7 +3878,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SelectSingleUnit</summary>
                         <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><code>-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		<strong>SelectSingleUnit</strong>(grom)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1392 CclSelectSingleUnit</summary>
+                          <summary>/unit/script_unit.cpp:1408 CclSelectSingleUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">nargs</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -3883,7 +3899,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>EnableSimplifiedAutoTargeting</summary>
                         <p><br>  Enable/disable simplified auto targeting <br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1412 CclEnableSimplifiedAutoTargeting</summary>
+                          <summary>/unit/script_unit.cpp:1428 CclEnableSimplifiedAutoTargeting</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclEnableSimplifiedAutoTargeting</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3905,7 +3921,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineModifier</summary>
                         <p><br>  Define a new upgrade modifier.<br><br>  @param l  List of modifiers.</p>
                           <details>
-                          <summary>/unit/upgrade.cpp:358 CclDefineModifier</summary>
+                          <summary>/unit/upgrade.cpp:360 CclDefineModifier</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineModifier</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">args</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -3946,6 +3962,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="cp">#endif</span>
 		<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s">&quot;regeneration-rate&quot;</span><span class="p">))</span> <span class="p">{</span>
 			<span class="n">um</span><span class="o">-&gt;</span><span class="n">Modifier</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">Increase</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s">&quot;regeneration-frequency&quot;</span><span class="p">))</span> <span class="p">{</span>
+			<span class="n">um</span><span class="o">-&gt;</span><span class="n">Modifier</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s">&quot;cost&quot;</span><span class="p">))</span> <span class="p">{</span>
 			<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">lua_istable</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">||</span> <span class="n">lua_rawlen</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
 				<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;incorrect argument&quot;</span><span class="p">);</span>
@@ -4027,7 +4045,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineAllow</summary>
                         <p><br> <b>Description</b><br><br>  Define which units/upgrades are allowed.<br><br> Example:<br><br> <div class="example"><code><strong>DefineAllow</strong>("unit-town-hall","AAAAAAAAAAAAAAAA") -- Available for everybody<br>		<strong>DefineAllow</strong>("unit-stables","FFFFFFFFFFFFFFFF") -- Not available<br>		<strong>DefineAllow</strong>("upgrade-sword1","RRRRRRRRRRRRRRRR") -- Upgrade already researched.</code></div><br></p>
                           <details>
-                          <summary>/unit/upgrade.cpp:430 CclDefineAllow</summary>
+                          <summary>/unit/upgrade.cpp:432 CclDefineAllow</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineAllow</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">UnitMax</span> <span class="o">=</span> <span class="mi">65536</span><span class="p">;</span> <span class="c1">/// How many units supported</span>
@@ -4073,7 +4091,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineUnitAllow</summary>
                         <p><br>  Define which units are allowed and how much.</p>
                           <details>
-                          <summary>/unit/upgrade.cpp:381 CclDefineUnitAllow</summary>
+                          <summary>/unit/upgrade.cpp:383 CclDefineUnitAllow</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitAllow</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">int</span> <span class="n">args</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -4102,7 +4120,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineUnitType</summary>
                         <p><br> <b>Description</b><br><br>  Parse unit-type.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>DefineUnitType</strong>("unit-silvermoon-archer", { Name = _("Silvermoon Archer"),<br>			Image = {"file", "human/units/elven_archer.png", "size", {72, 72}},<br>			Animations = "animations-archer", Icon = "icon-archer",<br>			Costs = {"time", 70, "gold", 500, "wood", 50},<br>			Speed = 10,<br>			HitPoints = 45,<br>			DrawLevel = 40,<br>			TileSize = {1, 1}, BoxSize = {33, 33},<br>			SightRange = 6, ComputerReactionRange = 7, PersonReactionRange = 6,<br>			BasicDamage = 4, PiercingDamage = 6, Missile = "missile-arrow",<br>			MaxAttackRange = 4,<br>			Priority = 75,<br>			Points = 60,<br>			Demand = 1,<br>			Corpse = "unit-human-dead-body",<br>			Type = "land",<br>			RightMouseAction = "attack",<br>			CanAttack = true,<br>			CanTargetLand = true, CanTargetSea = true, CanTargetAir = true,<br>			LandUnit = true,<br>			organic = true,<br>			SelectableByRectangle = true,<br>			Sounds = {<br>				"selected", "archer-selected",<br>				"acknowledge", "archer-acknowledge",<br>				"ready", "archer-ready",<br>				"help", "basic human voices help 1",<br>				"dead", "basic human voices dead"} } )</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1193 CclDefineUnitType</summary>
+                          <summary>/unit/script_unittype.cpp:1199 CclDefineUnitType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -4276,6 +4294,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 			<span class="n">type</span><span class="o">-&gt;</span><span class="n">StartingResources</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">-1</span><span class="p">);</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;RegenerationRate&quot;</span><span class="p">))</span> <span class="p">{</span>
 			<span class="n">type</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">Increase</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">-1</span><span class="p">);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;RegenerationFrequency&quot;</span><span class="p">))</span> <span class="p">{</span>
+			<span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">-1</span><span class="p">);</span>
+			<span class="n">type</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">type</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">HP_INDEX</span><span class="p">].</span><span class="n">IncreaseFrequency</span> <span class="o">!=</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;RegenerationFrequency out of range!&quot;</span><span class="p">);</span>
+			<span class="p">}</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;BurnPercent&quot;</span><span class="p">))</span> <span class="p">{</span>
 			<span class="n">type</span><span class="o">-&gt;</span><span class="n">BurnPercent</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">-1</span><span class="p">);</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;BurnDamageRate&quot;</span><span class="p">))</span> <span class="p">{</span>
@@ -4831,7 +4855,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineUnitStats</summary>
                         <p><br> <b>Description</b><br><br>  Parse unit-stats.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>DefineUnitStats</strong>("unit-berserker", 2, {<br>    		"HitPoints", {Value = 55, Max = 55, Increase = 0, Enable = true},<br>    		"AttackRange", {Value = 5, Max = 6, Increase = 0, Enable = true},<br>    		"SightRange", {Value = 7, Max = 7, Increase = 0, Enable = true},<br>  		})</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1294 CclDefineUnitStats</summary>
+                          <summary>/unit/script_unittype.cpp:1300 CclDefineUnitStats</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineUnitStats</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">CUnitType</span> <span class="o">*</span><span class="n">type</span> <span class="o">=</span> <span class="n">UnitTypeByIdent</span><span class="p">(</span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
@@ -4926,7 +4950,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineBoolFlags</summary>
                         <p><br>  Define boolean flag.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1740 CclDefineBoolFlags</summary>
+                          <summary>/unit/script_unittype.cpp:1752 CclDefineBoolFlags</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineBoolFlags</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">old</span> <span class="o">=</span> <span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberBoolFlag</span><span class="p">();</span>
@@ -4955,7 +4979,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineVariables</summary>
                         <p><br>  Define user variables.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1715 CclDefineVariables</summary>
+                          <summary>/unit/script_unittype.cpp:1727 CclDefineVariables</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineVariables</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">old</span> <span class="o">=</span> <span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberVariable</span><span class="p">();</span>
@@ -4988,7 +5012,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDecorations</summary>
                         <p><br>  Define Decorations for user variables<br><br>  @param l  Lua state.<br><br>  @todo modify Assert with luastate with User Error.<br>  @todo continue to add configuration.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1918 CclDefineDecorations</summary>
+                          <summary>/unit/script_unittype.cpp:1930 CclDefineDecorations</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineDecorations</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">struct</span> <span class="p">{</span>
@@ -5167,7 +5191,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineExtraDeathTypes</summary>
                         <p><br>  Define default extra death types.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1937 CclDefineExtraDeathTypes</summary>
+                          <summary>/unit/script_unittype.cpp:1949 CclDefineExtraDeathTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineExtraDeathTypes</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">args</span><span class="p">;</span>
@@ -5190,7 +5214,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>UnitType</summary>
                         <p><br>  Get unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   Unit-type structure.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1336 CclUnitType</summary>
+                          <summary>/unit/script_unittype.cpp:1342 CclUnitType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitType</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5211,7 +5235,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>UnitTypeArray</summary>
                         <p><br>  Get all unit-type structures.<br><br>  @param l  Lua state.<br><br>  @return   An array of all unit-type structures.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1358 CclUnitTypeArray</summary>
+                          <summary>/unit/script_unittype.cpp:1364 CclUnitTypeArray</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclUnitTypeArray</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -5235,7 +5259,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitTypeIdent</summary>
                         <p><br>  Get the ident of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The identifier of the unit-type.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1378 CclGetUnitTypeIdent</summary>
+                          <summary>/unit/script_unittype.cpp:1384 CclGetUnitTypeIdent</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeIdent</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5257,7 +5281,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitTypeName</summary>
                         <p><br> <b>Description</b><br><br>  Get the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code>name = <strong>GetUnitTypeName</strong>("unit-knight")<br>		  print(name)</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1401 CclGetUnitTypeName</summary>
+                          <summary>/unit/script_unittype.cpp:1407 CclGetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -5275,7 +5299,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUnitTypeName</summary>
                         <p><br> <b>Description</b><br><br>  Set the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code><strong>SetUnitTypeName</strong>("unit-beast-cry","Doomhammer")</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1427 CclSetUnitTypeName</summary>
+                          <summary>/unit/script_unittype.cpp:1433 CclSetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -5297,7 +5321,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitTypeData</summary>
                         <p><br> <b>Description</b><br><br>  Get unit type data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Get the amount of supply from Human Farms<br>		  supply = <strong>GetUnitTypeData</strong>("unit-farm","Supply")<br>		  print(supply)</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1651 CclGetUnitTypeData</summary>
+                          <summary>/unit/script_unittype.cpp:1657 CclGetUnitTypeData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetUnitTypeData</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -5893,7 +5917,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetTileSize</summary>
                         <p><br>  Define size in pixels (x,y) of a tile in this game<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:650 CclSetTileSize</summary>
+                          <summary>/map/script_map.cpp:654 CclSetTileSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTileSize</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6270,7 +6294,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarGraphics</summary>
                         <p><br>  Define Fog graphics<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:637 CclSetFogOfWarGraphics</summary>
+                          <summary>/map/script_map.cpp:641 CclSetFogOfWarGraphics</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarGraphics</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">FogGraphicFile</span><span class="p">;</span>
@@ -6319,7 +6343,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarColor</summary>
                         <p><br>  Set Fog color.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:618 CclSetFogOfWarColor</summary>
+                          <summary>/map/script_map.cpp:622 CclSetFogOfWarColor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetFogOfWarColor</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -6347,20 +6371,24 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetForestRegeneration</summary>
-                        <p><br> <b>Description</b><br><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed<br><br> Example:<br><br> <div class="example"><code>-- No regeneration.<br>		  <strong>SetForestRegeneration</strong>(0)<br>		  -- Slow regeneration.<br>		  <strong>SetForestRegeneration</strong>(50)<br>		  -- Maximum value for regeneration.<br>		  <strong>SetForestRegeneration</strong>(255)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed<br><br> Example:<br><br> <div class="example"><code>-- No regeneration.<br>		  <strong>SetForestRegeneration</strong>(0)<br>		  -- Slow regeneration every 50 seconds<br>		  <strong>SetForestRegeneration</strong>(50)<br>		  -- Extremely slow regeneration every 1h of game time<br>		  <strong>SetForestRegeneration</strong>(3600)</code></div></p>
                           <details>
-                          <summary>/map/script_map.cpp:592 CclSetForestRegeneration</summary>
+                          <summary>/map/script_map.cpp:596 CclSetForestRegeneration</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetForestRegeneration</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 	<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-	<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">)</span> <span class="p">{</span>
-		<span class="n">PrintFunction</span><span class="p">();</span>
-		<span class="n">fprintf</span><span class="p">(</span><span class="n">stdout</span><span class="p">,</span> <span class="s">&quot;Regeneration speed should be 0 - 255</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-		<span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">frequency</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="s">&quot;Regeneration speed should be &gt;= 0</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 	<span class="p">}</span>
-	<span class="k">const</span> <span class="kt">int</span> <span class="n">old</span> <span class="o">=</span> <span class="n">ForestRegeneration</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="n">frequency</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">frequency</span><span class="o">++</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">/</span> <span class="n">frequency</span><span class="p">;</span>
+	<span class="k">const</span> <span class="kt">int</span> <span class="n">old</span> <span class="o">=</span> <span class="n">ForestRegeneration</span> <span class="o">*</span> <span class="n">ForestRegenerationFrequency</span><span class="p">;</span>
 	<span class="n">ForestRegeneration</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+	<span class="n">ForestRegenerationFrequency</span> <span class="o">=</span> <span class="n">frequency</span><span class="p">;</span>
 
 	<span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">old</span><span class="p">);</span>
 	<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
@@ -6374,7 +6402,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>LoadTileModels</summary>
                         <p><br> Load the lua file which will define the tile models<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:740 CclLoadTileModels</summary>
+                          <summary>/map/script_map.cpp:744 CclLoadTileModels</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclLoadTileModels</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
@@ -6396,7 +6424,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePlayerTypes</summary>
                         <p><br>  Define the type of each player available for the map<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:722 CclDefinePlayerTypes</summary>
+                          <summary>/map/script_map.cpp:726 CclDefinePlayerTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefinePlayerTypes</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="kt">int</span> <span class="n">numplayers</span> <span class="o">=</span> <span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span> <span class="cm">/* Number of players == number of arguments */</span>
@@ -6443,7 +6471,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineTileset</summary>
                         <p><br>  Define tileset<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:758 CclDefineTileset</summary>
+                          <summary>/map/script_map.cpp:762 CclDefineTileset</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclDefineTileset</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">Map</span><span class="p">.</span><span class="n">Tileset</span><span class="o">-&gt;</span><span class="n">parse</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
@@ -6465,7 +6493,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetTileFlags</summary>
                         <p><br>  Set the flags like "water" for a tile of a tileset<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:797 CclSetTileFlags</summary>
+                          <summary>/map/script_map.cpp:801 CclSetTileFlags</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetTileFlags</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">if</span> <span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -6495,7 +6523,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>BuildTilesetTables</summary>
                         <p><br> Build tileset tables like humanWallTable or mixedLookupTable<br><br> Called after DefineTileset and only for tilesets that have wall,<br> trees and rocks. This function will be deleted when removing<br> support of walls and alike in the tileset.</p>
                           <details>
-                          <summary>/map/script_map.cpp:772 CclBuildTilesetTables</summary>
+                          <summary>/map/script_map.cpp:776 CclBuildTilesetTables</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclBuildTilesetTables</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -6512,7 +6540,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetTileTerrainName</summary>
                         <p><br>  Get the name of the terrain of the tile.<br><br>  @param l  Lua state.<br><br>  @return   The name of the terrain of the tile.</p>
                           <details>
-                          <summary>/map/script_map.cpp:820 CclGetTileTerrainName</summary>
+                          <summary>/map/script_map.cpp:824 CclGetTileTerrainName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetTileTerrainName</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -6537,7 +6565,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetTileTerrainHasFlag</summary>
                         <p><br>  Check if the tile's terrain has a particular flag.<br><br>  @param l  Lua state.<br><br>  @return   True if has the flag, false if not.</p>
                           <details>
-                          <summary>/map/script_map.cpp:866 CclGetTileTerrainHasFlag</summary>
+                          <summary>/map/script_map.cpp:870 CclGetTileTerrainHasFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetTileTerrainHasFlag</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -6585,7 +6613,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetEnableWallsForSP</summary>
                         <p><br>  Enable walls enabled for single player games (for debug purposes)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:880 CclSetEnableWallsForSP</summary>
+                          <summary>/map/script_map.cpp:884 CclSetEnableWallsForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclSetEnableWallsForSP</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -6601,7 +6629,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsWallsEnabledForSP</summary>
                         <p><br>  Check if walls enabled for single player games (for debug purposes)</p>
                           <details>
-                          <summary>/map/script_map.cpp:890 CclIsWallsEnabledForSP</summary>
+                          <summary>/map/script_map.cpp:894 CclIsWallsEnabledForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclIsWallsEnabledForSP</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
@@ -6617,7 +6645,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsGameHoster</summary>
                         <p><br>  Check if network game was created on this PC</p>
                           <details>
-                          <summary>/map/script_map.cpp:900 CclGetIsGameHoster</summary>
+                          <summary>/map/script_map.cpp:904 CclGetIsGameHoster</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">int</span> <span class="nf">CclGetIsGameHoster</span><span class="p">(</span><span class="n">lua_State</span> <span class="o">*</span><span class="n">l</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
