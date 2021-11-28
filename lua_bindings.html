@@ -4716,9 +4716,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetTileSize</summary>
-                        <p><br>  Define size in pixels (x,y) of a tile in this game<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Define size in pixels (x,y) of a tile in this game<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetTileSize</strong>(32,32)</code></div></p>
                           <details>
-                          <summary>/map/script_map.cpp:712 CclSetTileSize</summary>
+                          <summary>/map/script_map.cpp:743 CclSetTileSize</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetTileSize</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -4755,8 +4755,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetFogOfWar</summary>
-                        <p>/map/script_map.cpp:276 CclGetFogOfWar</p>
-                        <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetFogOfWar</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
+                        <p><br> <b>Description</b><br><br>  Get if the fog of war is enabled.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>GetFogOfWar</strong>()</code></div></p>
+                          <details>
+                          <summary>/map/script_map.cpp:287 CclGetFogOfWar</summary>
+                          <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetFogOfWar</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="n">lua_pushboolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="o">!</span><span class="n">Map</span><span class="p">.</span><span class="n">NoFogOfWar</span><span class="p">);</span><span class="w"></span>
@@ -4764,13 +4766,14 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </p>
+                          </details>
                         </details>
                         
                         <details>
                         <summary>SetMinimapTerrain</summary>
-                        <p><br>  Enable display of terrain in minimap.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Enable display of terrain in minimap.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Show the minimap terrain<br>		<strong>SetMinimapTerrain</strong>(true)</code></div></p>
                           <details>
-                          <summary>/map/script_map.cpp:288 CclSetMinimapTerrain</summary>
+                          <summary>/map/script_map.cpp:306 CclSetMinimapTerrain</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetMinimapTerrain</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -4786,7 +4789,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetEnableMapGrid</summary>
                         <p><br>  Activate map grid  (true|false)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:302 CclSetEnableMapGrid</summary>
+                          <summary>/map/script_map.cpp:320 CclSetEnableMapGrid</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetEnableMapGrid</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -4802,7 +4805,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsMapGridEnabled</summary>
                         <p><br>  Check if map grid is enabled</p>
                           <details>
-                          <summary>/map/script_map.cpp:312 CclGetIsMapGridEnabled</summary>
+                          <summary>/map/script_map.cpp:330 CclGetIsMapGridEnabled</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetIsMapGridEnabled</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -4818,7 +4821,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFieldOfViewType</summary>
                         <p><br>  Select unit's field of view algorithm -  ShadowCasting or SimpleRadial<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:346 CclSetFieldOfViewType</summary>
+                          <summary>/map/script_map.cpp:364 CclSetFieldOfViewType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFieldOfViewType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -4854,7 +4857,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetFieldOfViewType</summary>
                         <p><br>  Get unit's field of view type -  ShadowCasting or SimpleRadial</p>
                           <details>
-                          <summary>/map/script_map.cpp:356 CclGetFieldOfViewType</summary>
+                          <summary>/map/script_map.cpp:374 CclGetFieldOfViewType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetFieldOfViewType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -4870,7 +4873,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetOpaqueFor</summary>
                         <p><br>  Set opaque for the tile's terrain.<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong tile's terrain;</p>
                           <details>
-                          <summary>/map/script_map.cpp:394 CclSetOpaqueFor</summary>
+                          <summary>/map/script_map.cpp:412 CclSetOpaqueFor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetOpaqueFor</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">new_flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -4908,7 +4911,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>RemoveOpaqueFor</summary>
-                        <p>/map/script_map.cpp:451 CclRemoveOpaqueFor</p>
+                        <p>/map/script_map.cpp:469 CclRemoveOpaqueFor</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclRemoveOpaqueFor</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="n">new_flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -4947,7 +4950,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsOpaqueFor</summary>
                         <p><br>  Check opacity for the tile's terrain.<br><br>  @param l  Lua state.<br></p>
                           <details>
-                          <summary>/map/script_map.cpp:420 CclGetIsOpaqueFor</summary>
+                          <summary>/map/script_map.cpp:438 CclGetIsOpaqueFor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetIsOpaqueFor</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -4977,7 +4980,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarType</summary>
                         <p><br>  Select which type of Fog of War to use<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:487 CclSetFogOfWarType</summary>
+                          <summary>/map/script_map.cpp:505 CclSetFogOfWarType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFogOfWarType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5014,7 +5017,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetFogOfWarType</summary>
                         <p><br>  Get Fog of War type - legacy or enhanced</p>
                           <details>
-                          <summary>/map/script_map.cpp:497 CclGetFogOfWarType</summary>
+                          <summary>/map/script_map.cpp:515 CclGetFogOfWarType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetFogOfWarType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -5030,7 +5033,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarOpacityLevels</summary>
                         <p><br>  Set opacity (alpha) for different levels of fog of war - explored, revealed, unseen<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:531 CclSetFogOfWarOpacityLevels</summary>
+                          <summary>/map/script_map.cpp:549 CclSetFogOfWarOpacityLevels</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFogOfWarOpacityLevels</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -5066,7 +5069,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarBlur</summary>
                         <p><br>  Set parameters for FOW blurer (radiuses and number of iterations)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:563 CclSetFogOfWarBlur</summary>
+                          <summary>/map/script_map.cpp:581 CclSetFogOfWarBlur</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFogOfWarBlur</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -5100,7 +5103,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarBilinear</summary>
                         <p><br>  Activate FOW bilinear upscaling type  (true|false)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:577 CclSetFogOfWarBilinear</summary>
+                          <summary>/map/script_map.cpp:595 CclSetFogOfWarBilinear</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFogOfWarBilinear</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5116,7 +5119,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsFogOfWarBilinear</summary>
                         <p><br>  Check if FOW bilinear upscaling enabled</p>
                           <details>
-                          <summary>/map/script_map.cpp:587 CclGetIsFogOfWarBilinear</summary>
+                          <summary>/map/script_map.cpp:605 CclGetIsFogOfWarBilinear</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetIsFogOfWarBilinear</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -5132,7 +5135,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFogOfWarGraphics</summary>
                         <p><br>  Define Fog graphics<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:664 CclSetFogOfWarGraphics</summary>
+                          <summary>/map/script_map.cpp:689 CclSetFogOfWarGraphics</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFogOfWarGraphics</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">FogGraphicFile</span><span class="p">;</span><span class="w"></span>
@@ -5150,9 +5153,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetFogOfWarColor</summary>
-                        <p><br>  Set Fog color.<br><br>  @param l  Lua state.</p>
+                        <p><br> <b>Description</b><br><br>  Set Fog color.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Red fog of war<br>		<strong>SetFogOfWarColor</strong>(128,0,0)</code></div></p>
                           <details>
-                          <summary>/map/script_map.cpp:648 CclSetFogOfWarColor</summary>
+                          <summary>/map/script_map.cpp:673 CclSetFogOfWarColor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFogOfWarColor</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -5179,7 +5182,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetMMFogOfWarOpacityLevels</summary>
                         <p><br>  Set opacity (alpha) for different levels of fog of war - explored, revealed, unexplored for mini map<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:699 CclSetMMFogOfWarOpacityLevels</summary>
+                          <summary>/map/script_map.cpp:724 CclSetMMFogOfWarOpacityLevels</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetMMFogOfWarOpacityLevels</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -5215,7 +5218,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetForestRegeneration</summary>
                         <p><br> <b>Description</b><br><br>  Set forest regeneration speed.<br><br>  @param l  Lua state.<br><br>  @return   Old speed<br><br> Example:<br><br> <div class="example"><code>-- No regeneration.<br>		  <strong>SetForestRegeneration</strong>(0)<br>		  -- Slow regeneration every 50 seconds<br>		  <strong>SetForestRegeneration</strong>(50)<br>		  -- Extremely slow regeneration every 1h of game time<br>		  <strong>SetForestRegeneration</strong>(3600)</code></div></p>
                           <details>
-                          <summary>/map/script_map.cpp:625 CclSetForestRegeneration</summary>
+                          <summary>/map/script_map.cpp:643 CclSetForestRegeneration</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetForestRegeneration</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5244,7 +5247,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>LoadTileModels</summary>
                         <p><br> Load the lua file which will define the tile models<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:802 CclLoadTileModels</summary>
+                          <summary>/map/script_map.cpp:833 CclLoadTileModels</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLoadTileModels</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -5266,7 +5269,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePlayerTypes</summary>
                         <p><br>  Define the type of each player available for the map<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:784 CclDefinePlayerTypes</summary>
+                          <summary>/map/script_map.cpp:815 CclDefinePlayerTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefinePlayerTypes</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">numplayers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"> </span><span class="cm">/* Number of players == number of arguments */</span><span class="w"></span>
@@ -5313,7 +5316,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineTileset</summary>
                         <p><br>  Define tileset<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:820 CclDefineTileset</summary>
+                          <summary>/map/script_map.cpp:851 CclDefineTileset</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineTileset</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Map</span><span class="p">.</span><span class="n">Tileset</span><span class="o">-&gt;</span><span class="n">parse</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -5335,7 +5338,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetTileFlags</summary>
                         <p><br>  Set the flags like "water" for a tile of a tileset<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/map/script_map.cpp:859 CclSetTileFlags</summary>
+                          <summary>/map/script_map.cpp:890 CclSetTileFlags</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetTileFlags</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -5365,7 +5368,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>BuildTilesetTables</summary>
                         <p><br> Build tileset tables like humanWallTable or mixedLookupTable<br><br> Called after DefineTileset and only for tilesets that have wall,<br> trees and rocks. This function will be deleted when removing<br> support of walls and alike in the tileset.</p>
                           <details>
-                          <summary>/map/script_map.cpp:834 CclBuildTilesetTables</summary>
+                          <summary>/map/script_map.cpp:865 CclBuildTilesetTables</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclBuildTilesetTables</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -5382,7 +5385,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetTileTerrainName</summary>
                         <p><br>  Get the name of the terrain of the tile.<br><br>  @param l  Lua state.<br><br>  @return   The name of the terrain of the tile.</p>
                           <details>
-                          <summary>/map/script_map.cpp:882 CclGetTileTerrainName</summary>
+                          <summary>/map/script_map.cpp:913 CclGetTileTerrainName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetTileTerrainName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -5407,7 +5410,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetTileTerrainHasFlag</summary>
                         <p><br>  Check if the tile's terrain has a particular flag.<br><br>  @param l  Lua state.<br><br>  @return   True if has the flag, false if not.</p>
                           <details>
-                          <summary>/map/script_map.cpp:928 CclGetTileTerrainHasFlag</summary>
+                          <summary>/map/script_map.cpp:959 CclGetTileTerrainHasFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetTileTerrainHasFlag</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -5455,7 +5458,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetEnableWallsForSP</summary>
                         <p><br>  Enable walls enabled for single player games (for debug purposes)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:942 CclSetEnableWallsForSP</summary>
+                          <summary>/map/script_map.cpp:973 CclSetEnableWallsForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetEnableWallsForSP</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5471,7 +5474,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsWallsEnabledForSP</summary>
                         <p><br>  Check if walls enabled for single player games (for debug purposes)</p>
                           <details>
-                          <summary>/map/script_map.cpp:952 CclIsWallsEnabledForSP</summary>
+                          <summary>/map/script_map.cpp:983 CclIsWallsEnabledForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclIsWallsEnabledForSP</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -5487,7 +5490,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsGameHoster</summary>
                         <p><br>  Check if network game was created on this PC</p>
                           <details>
-                          <summary>/map/script_map.cpp:962 CclGetIsGameHoster</summary>
+                          <summary>/map/script_map.cpp:993 CclGetIsGameHoster</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetIsGameHoster</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -8920,9 +8923,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetUnitsAroundUnit</summary>
-                        <p><br>  Get a player's units in rectangle box specified with 2 coordinates<br><br>  @param l  Lua state.<br><br>  @return   Array of units.</p>
+                        <p><br> <b>Description</b><br><br>  Get a player's units in rectangle box specified with 2 coordinates<br><br>  @param l  Lua state.<br><br>  @return   Array of units.<br><br> Example:<br><br> <div class="example"><code>circlePower = CreateUnit("unit-circle-of-power", 15, {59, 4})<br>		-- Get the units near the circle of power.<br>      unitsOnCircle = <strong>GetUnitsAroundUnit</strong>(circle,1,true)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1122 CclGetUnitsAroundUnit</summary>
+                          <summary>/unit/script_unit.cpp:1130 CclGetUnitsAroundUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitsAroundUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -8962,7 +8965,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitBoolFlag</summary>
                         <p><br><br>  Get the value of the unit bool-flag.<br><br>  @param l  Lua state.<br><br>  @return   The value of the bool-flag of the unit.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1147 CclGetUnitBoolFlag</summary>
+                          <summary>/unit/script_unit.cpp:1155 CclGetUnitBoolFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitBoolFlag</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -8988,7 +8991,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitVariable</summary>
                         <p><br> <b>Description</b><br><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Take the name of the unit<br>		unit_name = <strong>GetUnitVariable</strong>(grunt,"Name")<br>		-- Take the player number based on the unit<br>		player_type = <strong>GetUnitVariable</strong>(grunt,"PlayerType")<br>		-- Take the value of the armor<br>		armor_value = <strong>GetUnitVariable</strong>(grunt,"Armor")<br>		-- Show the message in the game.<br>		AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1253 CclGetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1261 CclGetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -9081,7 +9084,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUnitVariable</summary>
                         <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Create a blacksmith for player 2<br>		blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br>		-- Specify the amount of hit points to assign to the blacksmith<br>		<strong>SetUnitVariable</strong>(blacksmith,"HitPoints",344)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1377 CclSetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1385 CclSetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -9198,7 +9201,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SlotUsage</summary>
                         <p><br>  Get the usage of unit slots during load to allocate memory<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1388 CclSlotUsage</summary>
+                          <summary>/unit/script_unit.cpp:1396 CclSlotUsage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSlotUsage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">UnitManager</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -9213,7 +9216,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SelectSingleUnit</summary>
                         <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><code>-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		<strong>SelectSingleUnit</strong>(grom)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1416 CclSelectSingleUnit</summary>
+                          <summary>/unit/script_unit.cpp:1424 CclSelectSingleUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -9234,7 +9237,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>EnableSimplifiedAutoTargeting</summary>
                         <p><br>  Enable/disable simplified auto targeting <br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1436 CclEnableSimplifiedAutoTargeting</summary>
+                          <summary>/unit/script_unit.cpp:1444 CclEnableSimplifiedAutoTargeting</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclEnableSimplifiedAutoTargeting</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
