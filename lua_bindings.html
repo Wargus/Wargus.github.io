@@ -1492,7 +1492,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGameName</summary>
                         <p><br> <b>Description</b><br><br>  Return of game name.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetGameName</strong>("Wargus Map - Chapter 1")</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1159 CclSetGameName</summary>
+                          <summary>/game/game.cpp:1176 CclSetGameName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGameName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -1516,7 +1516,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetFullGameName</summary>
-                        <p>/game/game.cpp:1171 CclSetFullGameName</p>
+                        <p>/game/game.cpp:1188 CclSetFullGameName</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFullGameName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -1536,7 +1536,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGodMode</summary>
                         <p><br> <b>Description</b><br><br>  Set God mode.<br><br>  @param l  Lua state.<br><br>  @return   The old mode.<br><br> Example:<br><br> <div class="example"><code>-- God Mode enabled<br>		<strong>SetGodMode</strong>(true)<br>		-- God Mode disabled<br>		<strong>SetGodMode</strong>(false)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1194 CclSetGodMode</summary>
+                          <summary>/game/game.cpp:1211 CclSetGodMode</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGodMode</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1552,7 +1552,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetGodMode</summary>
                         <p><br> <b>Description</b><br><br>  Get God mode.<br><br>  @param l  Lua state.<br><br>  @return   God mode.<br><br> Example:<br><br> <div class="example"><code>g_mode = <strong>GetGodMode</strong>()<br>		print(g_mode)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1215 CclGetGodMode</summary>
+                          <summary>/game/game.cpp:1232 CclGetGodMode</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetGodMode</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -1568,7 +1568,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedResourcesHarvest</summary>
                         <p><br>  Set resource harvesting speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1232 CclSetSpeedResourcesHarvest</summary>
+                          <summary>/game/game.cpp:1249 CclSetSpeedResourcesHarvest</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedResourcesHarvest</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -1589,7 +1589,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedResourcesReturn</summary>
                         <p><br>  Set resource returning speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1249 CclSetSpeedResourcesReturn</summary>
+                          <summary>/game/game.cpp:1266 CclSetSpeedResourcesReturn</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedResourcesReturn</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -1610,7 +1610,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedBuild</summary>
                         <p><br>  Set building speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1262 CclSetSpeedBuild</summary>
+                          <summary>/game/game.cpp:1279 CclSetSpeedBuild</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedBuild</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -1627,7 +1627,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetSpeedBuild</summary>
                         <p><br>  Get building speed (deprecated).<br><br>  @param l  Lua state.<br><br>  @return   Building speed.</p>
                           <details>
-                          <summary>/game/game.cpp:1277 CclGetSpeedBuild</summary>
+                          <summary>/game/game.cpp:1294 CclGetSpeedBuild</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetSpeedBuild</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1644,7 +1644,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedTrain</summary>
                         <p><br>  Set training speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1290 CclSetSpeedTrain</summary>
+                          <summary>/game/game.cpp:1307 CclSetSpeedTrain</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedTrain</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -1661,7 +1661,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetSpeedTrain</summary>
                         <p><br>  Get training speed (deprecated).<br><br>  @param l  Lua state.<br><br>  @return   Training speed.</p>
                           <details>
-                          <summary>/game/game.cpp:1305 CclGetSpeedTrain</summary>
+                          <summary>/game/game.cpp:1322 CclGetSpeedTrain</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetSpeedTrain</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1678,7 +1678,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedUpgrade</summary>
                         <p><br>  For debug increase upgrading speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1320 CclSetSpeedUpgrade</summary>
+                          <summary>/game/game.cpp:1337 CclSetSpeedUpgrade</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedUpgrade</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -1697,7 +1697,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedResearch</summary>
                         <p><br>  For debug increase researching speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1335 CclSetSpeedResearch</summary>
+                          <summary>/game/game.cpp:1352 CclSetSpeedResearch</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedResearch</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -1716,7 +1716,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeeds</summary>
                         <p><br>  For debug increase all speeds (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1356 CclSetSpeeds</summary>
+                          <summary>/game/game.cpp:1373 CclSetSpeeds</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeeds</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1741,7 +1741,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultIncomes</summary>
                         <p><br>  Define default incomes for a new player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1370 CclDefineDefaultIncomes</summary>
+                          <summary>/game/game.cpp:1387 CclDefineDefaultIncomes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultIncomes</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -1759,7 +1759,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultActions</summary>
                         <p><br>  Define default action for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1387 CclDefineDefaultActions</summary>
+                          <summary>/game/game.cpp:1404 CclDefineDefaultActions</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultActions</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MaxCosts</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1780,7 +1780,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultResourceNames</summary>
                         <p><br>  Define default names for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1404 CclDefineDefaultResourceNames</summary>
+                          <summary>/game/game.cpp:1421 CclDefineDefaultResourceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultResourceNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MaxCosts</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1801,7 +1801,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultResourceAmounts</summary>
                         <p><br>  Define default names for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1426 CclDefineDefaultResourceAmounts</summary>
+                          <summary>/game/game.cpp:1443 CclDefineDefaultResourceAmounts</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultResourceAmounts</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -1827,7 +1827,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultResourceMaxAmounts</summary>
                         <p><br>  Define max amounts for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1444 CclDefineDefaultResourceMaxAmounts</summary>
+                          <summary>/game/game.cpp:1461 CclDefineDefaultResourceMaxAmounts</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultResourceMaxAmounts</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">),</span><span class="w"> </span><span class="n">MaxCosts</span><span class="p">);</span><span class="w"></span>
@@ -1849,7 +1849,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUseHPForXp</summary>
                         <p><br>  Affect UseHPForXp.<br><br>  @param l  Lua state.<br><br>  @return 0.</p>
                           <details>
-                          <summary>/game/game.cpp:1458 ScriptSetUseHPForXp</summary>
+                          <summary>/game/game.cpp:1475 ScriptSetUseHPForXp</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">ScriptSetUseHPForXp</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1865,7 +1865,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetLocalPlayerName</summary>
                         <p><br> <b>Description</b><br><br>  Set the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetLocalPlayerName</strong>("Stormreaver Clan")</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1476 CclSetLocalPlayerName</summary>
+                          <summary>/game/game.cpp:1493 CclSetLocalPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetLocalPlayerName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1881,7 +1881,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetLocalPlayerName</summary>
                         <p><br> <b>Description</b><br><br>  Get the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>GetLocalPlayerName</strong>()</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1494 CclGetLocalPlayerName</summary>
+                          <summary>/game/game.cpp:1511 CclGetLocalPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetLocalPlayerName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -1895,7 +1895,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetMenuRace</summary>
-                        <p>/game/game.cpp:1535 CclSetMenuRace</p>
+                        <p>/game/game.cpp:1552 CclSetMenuRace</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetMenuRace</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -1910,7 +1910,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetStratagusVersion</summary>
                         <p><br> <b>Description</b><br><br>  Get Stratagus Version<br><br> Example:<br><br> <div class="example"><code>version = <strong>GetStratagusVersion</strong>()<br>		print(version)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1511 CclGetStratagusVersion</summary>
+                          <summary>/game/game.cpp:1528 CclGetStratagusVersion</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetStratagusVersion</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -1926,7 +1926,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetStratagusHomepage</summary>
                         <p><br> <b>Description</b><br><br>  Get Stratagus Homepage<br><br> Example:<br><br> <div class="example"><code>url = <strong>GetStratagusHomepage</strong>()<br>	print(url)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1528 CclGetStratagusHomepage</summary>
+                          <summary>/game/game.cpp:1545 CclGetStratagusHomepage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetStratagusHomepage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -1942,7 +1942,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SavedGameInfo</summary>
                         <p><br>  Load the SavedGameInfo Header<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1571 CclSavedGameInfo</summary>
+                          <summary>/game/game.cpp:1588 CclSavedGameInfo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSavedGameInfo</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -2429,6 +2429,36 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         </details>
                         
                         <details>
+                        <summary>GetDiplomacy</summary>
+                        <p><br>  Get diplomacy from one player to another. Returns the strings "allied",<br>  "enemy", "neutral", or "crazy".</p>
+                          <details>
+                          <summary>/stratagus/script_player.cpp:570 CclGetDiplomacy</summary>
+                          <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetDiplomacy</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">plynr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">state</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">base</span><span class="p">].</span><span class="n">IsEnemy</span><span class="p">(</span><span class="n">plynr</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">base</span><span class="p">].</span><span class="n">IsAllied</span><span class="p">(</span><span class="n">plynr</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">			</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;crazy&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">			</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;enemy&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">		</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">base</span><span class="p">].</span><span class="n">IsAllied</span><span class="p">(</span><span class="n">plynr</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;allied&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;neutral&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</p>
+                          </details>
+                        </details>
+                        
+                        <details>
                         <summary>Diplomacy</summary>
                         <p><br>  Change the diplomacy from ThisPlayer to another player.<br><br>  @param l  Lua state.</p>
                           <details>
@@ -2448,7 +2478,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSharedVision</summary>
                         <p><br> <b>Description</b><br><br>  Change the shared vision from player to another player.<br><br><br>  @param l  Lua state.<br><br>  @return FIXME: should return old state.<br><br> Example:<br><br> <div class="example"><code>SetSharedVision(0,true,1)<br>		SetSharedVision(1,true,0)<br>		<br>		SetSharedVision(0,false,2)<br>		SetSharedVision(1,false,2)</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:576 CclSetSharedVision</summary>
+                          <summary>/stratagus/script_player.cpp:601 CclSetSharedVision</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSharedVision</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -2470,7 +2500,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SharedVision</summary>
                         <p><br>  Change the shared vision from ThisPlayer to another player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:588 CclSharedVision</summary>
+                          <summary>/stratagus/script_player.cpp:613 CclSharedVision</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSharedVision</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">ThisPlayer</span><span class="o">-&gt;</span><span class="n">Index</span><span class="p">);</span><span class="w"></span>
@@ -2486,7 +2516,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetRevelationType</summary>
                         <p><br> <b>Description</b><br><br>  Change the players revelation type - reveal all units, only buidings or don't reveal anything<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetRevelationType("no-revelation")<br> 		SetRevelationType("buildings-only")<br> 		SetRevelationType("all-units")</code></div><br></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:621 CclSetRevelationType</summary>
+                          <summary>/stratagus/script_player.cpp:646 CclSetRevelationType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetRevelationType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -2514,7 +2544,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineRaceNames</summary>
                         <p><br> Define race names<br><br> @param l Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:672 CclDefineRaceNames</summary>
+                          <summary>/stratagus/script_player.cpp:697 CclDefineRaceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineRaceNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerRaces</span><span class="p">.</span><span class="n">Clean</span><span class="p">();</span><span class="w"></span>
@@ -2529,7 +2559,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineNewRaceNames</summary>
                         <p><br> Define race names<br><br> @param l Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:672 CclDefineRaceNames</summary>
+                          <summary>/stratagus/script_player.cpp:697 CclDefineRaceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineRaceNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerRaces</span><span class="p">.</span><span class="n">Clean</span><span class="p">();</span><span class="w"></span>
@@ -2544,7 +2574,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePlayerColors</summary>
                         <p><br> <b>Description</b><br><br>  Define player colors<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>DefinePlayerColors({<br>		"red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}},<br>		"blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}},<br>		"green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}},<br>		"violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}},<br>		"orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}},<br>		"black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}},<br>		"white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}},<br>		"yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}},<br>		"red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}},<br>		"blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}},<br>		"green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}},<br>		"violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}},<br>		"orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}},<br>		"black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}},<br>		"white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}},<br>		"yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}},<br>	})</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:729 CclDefinePlayerColors</summary>
+                          <summary>/stratagus/script_player.cpp:754 CclDefinePlayerColors</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefinePlayerColors</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -2582,7 +2612,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePlayerColorIndex</summary>
                         <p><br>  Define player color indexes<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:762 CclDefinePlayerColorIndex</summary>
+                          <summary>/stratagus/script_player.cpp:787 CclDefinePlayerColorIndex</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefinePlayerColorIndex</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -2606,7 +2636,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>NewColors</summary>
                         <p><br>  Make new player colors<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:742 CclNewPlayerColors</summary>
+                          <summary>/stratagus/script_player.cpp:767 CclNewPlayerColors</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclNewPlayerColors</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -2623,7 +2653,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetPlayerData</summary>
                         <p><br> <b>Description</b><br><br>  Get player data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>GetPlayerData(0,"TotalNumUnits")</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:925 CclGetPlayerData</summary>
+                          <summary>/stratagus/script_player.cpp:950 CclGetPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetPlayerData</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -2782,7 +2812,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetPlayerData</summary>
                         <p><br> <b>Description</b><br><br>  Set player data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetPlayerData(0,"Name","Nation of Stromgarde")<br>		SetPlayerData(0,"RaceName","human")<br> 		SetPlayerData(0,"Resources","gold",1700)</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1041 CclSetPlayerData</summary>
+                          <summary>/stratagus/script_player.cpp:1066 CclSetPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetPlayerData</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -2894,7 +2924,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetAiType</summary>
                         <p><br> <b>Description</b> <br> <br>  Set ai player algo.<br><br>  @param l  Lua state.<br> <br> Example: <br> <br> <div class="example"> <code> -- Player 1 has a passive A.I <br>		  SetAiType(1, "Passive")</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1069 CclSetAiType</summary>
+                          <summary>/stratagus/script_player.cpp:1094 CclSetAiType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetAiType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CPlayer</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="p">;</span><span class="w"></span>
@@ -3038,7 +3068,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Add</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Add", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1568 CclAdd</summary>
+                          <summary>/stratagus/script.cpp:1575 CclAdd</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclAdd</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3053,7 +3083,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Sub</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Div", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1582 CclSub</summary>
+                          <summary>/stratagus/script.cpp:1589 CclSub</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSub</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3068,7 +3098,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Mul</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Mul", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1595 CclMul</summary>
+                          <summary>/stratagus/script.cpp:1602 CclMul</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclMul</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3083,7 +3113,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Div</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Div", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1608 CclDiv</summary>
+                          <summary>/stratagus/script.cpp:1615 CclDiv</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDiv</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3098,7 +3128,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Min</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Min", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1621 CclMin</summary>
+                          <summary>/stratagus/script.cpp:1628 CclMin</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclMin</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3113,7 +3143,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Max</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Max", {arg1, arg2, argn}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1634 CclMax</summary>
+                          <summary>/stratagus/script.cpp:1641 CclMax</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclMax</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3128,7 +3158,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Rand</summary>
                         <p><br>  Return equivalent lua table for add.<br>  {"Rand", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1647 CclRand</summary>
+                          <summary>/stratagus/script.cpp:1654 CclRand</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclRand</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3143,7 +3173,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GreaterThan</summary>
                         <p><br>  Return equivalent lua table for GreaterThan.<br>  {"GreaterThan", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1660 CclGreaterThan</summary>
+                          <summary>/stratagus/script.cpp:1667 CclGreaterThan</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGreaterThan</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3158,7 +3188,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>LessThan</summary>
                         <p><br>  Return equivalent lua table for LessThan.<br>  {"LessThan", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1686 CclLessThan</summary>
+                          <summary>/stratagus/script.cpp:1693 CclLessThan</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLessThan</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3173,7 +3203,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Equal</summary>
                         <p><br>  Return equivalent lua table for Equal.<br>  {"Equal", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1712 CclEqual</summary>
+                          <summary>/stratagus/script.cpp:1719 CclEqual</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclEqual</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3188,7 +3218,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GreaterThanOrEq</summary>
                         <p><br>  Return equivalent lua table for GreaterThanOrEq.<br>  {"GreaterThanOrEq", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1673 CclGreaterThanOrEq</summary>
+                          <summary>/stratagus/script.cpp:1680 CclGreaterThanOrEq</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGreaterThanOrEq</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3203,7 +3233,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>LessThanOrEq</summary>
                         <p><br>  Return equivalent lua table for LessThanOrEq.<br>  {"LessThanOrEq", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1699 CclLessThanOrEq</summary>
+                          <summary>/stratagus/script.cpp:1706 CclLessThanOrEq</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLessThanOrEq</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3218,7 +3248,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>NotEqual</summary>
                         <p><br>  Return equivalent lua table for NotEqual.<br>  {"NotEqual", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1725 CclNotEqual</summary>
+                          <summary>/stratagus/script.cpp:1732 CclNotEqual</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclNotEqual</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3233,7 +3263,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>VideoTextLength</summary>
                         <p><br>  Return equivalent lua table for VideoTextLength.<br>  {"VideoTextLength", {Text = arg1, Font = arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1873 CclVideoTextLength</summary>
+                          <summary>/stratagus/script.cpp:1880 CclVideoTextLength</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclVideoTextLength</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3263,7 +3293,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>StringFind</summary>
                         <p><br>  Return equivalent lua table for StringFind.<br>  {"StringFind", {arg1, arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1887 CclStringFind</summary>
+                          <summary>/stratagus/script.cpp:1894 CclStringFind</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclStringFind</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -3278,7 +3308,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AttackerVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Unit", {Unit = "Attacker", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1474 CclUnitAttackerVar</summary>
+                          <summary>/stratagus/script.cpp:1481 CclUnitAttackerVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclUnitAttackerVar</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3295,7 +3325,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefenderVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Unit", {Unit = "Defender", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1490 CclUnitDefenderVar</summary>
+                          <summary>/stratagus/script.cpp:1497 CclUnitDefenderVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclUnitDefenderVar</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3312,7 +3342,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>ActiveUnitVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Unit", {Unit = "Active", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1506 CclActiveUnitVar</summary>
+                          <summary>/stratagus/script.cpp:1513 CclActiveUnitVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclActiveUnitVar</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3329,7 +3359,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>TypeVar</summary>
                         <p><br>  Return equivalent lua table for .<br>  {"Type", {Type = "Active", Variable = arg1, Component = "Value" or arg2}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1522 CclActiveTypeVar</summary>
+                          <summary>/stratagus/script.cpp:1529 CclActiveTypeVar</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclActiveTypeVar</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3346,7 +3376,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Concat</summary>
                         <p><br>  Return equivalent lua table for Concat.<br>  {"Concat", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1743 CclConcat</summary>
+                          <summary>/stratagus/script.cpp:1750 CclConcat</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclConcat</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// FIXME do extra job for 1.</span>
@@ -3363,7 +3393,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>String</summary>
                         <p><br>  Return equivalent lua table for String.<br>  {"String", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1757 CclString</summary>
+                          <summary>/stratagus/script.cpp:1764 CclString</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclString</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3378,7 +3408,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>InverseVideo</summary>
                         <p><br>  Return equivalent lua table for InverseVideo.<br>  {"InverseVideo", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1770 CclInverseVideo</summary>
+                          <summary>/stratagus/script.cpp:1777 CclInverseVideo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclInverseVideo</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3393,7 +3423,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>UnitName</summary>
                         <p><br>  Return equivalent lua table for UnitName.<br>  {"UnitName", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1783 CclUnitName</summary>
+                          <summary>/stratagus/script.cpp:1790 CclUnitName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclUnitName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3408,7 +3438,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SubString</summary>
                         <p><br>  Return equivalent lua table for SubString.<br>  {"SubString", {arg1, arg2, arg3}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1814 CclSubString</summary>
+                          <summary>/stratagus/script.cpp:1821 CclSubString</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSubString</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3425,7 +3455,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Line</summary>
                         <p><br>  Return equivalent lua table for Line.<br>  {"Line", {arg1, arg2[, arg3]}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1830 CclLine</summary>
+                          <summary>/stratagus/script.cpp:1837 CclLine</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLine</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3442,7 +3472,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GameInfo</summary>
                         <p><br>  Return equivalent lua table for Line.<br>  {"Line", "arg1"}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1844 CclGameInfo</summary>
+                          <summary>/stratagus/script.cpp:1851 CclGameInfo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGameInfo</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3457,7 +3487,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>PlayerName</summary>
                         <p><br>  Return equivalent lua table for PlayerName.<br>  {"PlayerName", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1933 CclPlayerName</summary>
+                          <summary>/stratagus/script.cpp:1940 CclPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclPlayerName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3472,7 +3502,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>PlayerData</summary>
                         <p><br>  Return equivalent lua table for PlayerData.<br>  {"PlayerData", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1919 CclPlayerData</summary>
+                          <summary>/stratagus/script.cpp:1926 CclPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclPlayerData</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3489,7 +3519,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>If</summary>
                         <p><br>  Return equivalent lua table for If.<br>  {"If", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1798 CclIf</summary>
+                          <summary>/stratagus/script.cpp:1805 CclIf</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclIf</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3506,7 +3536,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>NumIf</summary>
                         <p><br>  Return equivalent lua table for NumIf.<br>  {"NumIf", {arg1}}<br><br>  @param l  Lua state.<br><br>  @return   equivalent lua table.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1903 CclNumIf</summary>
+                          <summary>/stratagus/script.cpp:1910 CclNumIf</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclNumIf</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -3523,7 +3553,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>LibraryPath</summary>
                         <p><br>  Return the stratagus library path.<br><br>  @param l  Lua state.<br><br>  @return   Current libray path.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:1995 CclStratagusLibraryPath</summary>
+                          <summary>/stratagus/script.cpp:2002 CclStratagusLibraryPath</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclStratagusLibraryPath</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">StratagusLibPath</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
@@ -3538,7 +3568,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>ListDirectory</summary>
                         <p><br>  Return a table with the files or directories found in the subdirectory.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2057 CclListDirectory</summary>
+                          <summary>/stratagus/script.cpp:2064 CclListDirectory</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclListDirectory</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="n">CclFilteredListDirectory</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -3552,7 +3582,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>ListFilesInDirectory</summary>
                         <p><br>  Return a table with the files found in the subdirectory.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2065 CclListFilesInDirectory</summary>
+                          <summary>/stratagus/script.cpp:2072 CclListFilesInDirectory</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclListFilesInDirectory</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="n">CclFilteredListDirectory</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1</span><span class="p">);</span><span class="w"></span>
@@ -3566,7 +3596,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>ListDirsInDirectory</summary>
                         <p><br>  Return a table with the files found in the subdirectory.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2073 CclListDirsInDirectory</summary>
+                          <summary>/stratagus/script.cpp:2080 CclListDirsInDirectory</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclListDirsInDirectory</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="n">CclFilteredListDirectory</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1</span><span class="p">);</span><span class="w"></span>
@@ -3580,7 +3610,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetDamageFormula</summary>
                         <p><br>  Set damage computation method.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2089 CclSetDamageFormula</summary>
+                          <summary>/stratagus/script.cpp:2096 CclSetDamageFormula</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetDamageFormula</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Assert</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -3600,7 +3630,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SavePreferences</summary>
                         <p><br>  Save preferences<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:273 CclSavePreferences</summary>
+                          <summary>/stratagus/script.cpp:280 CclSavePreferences</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSavePreferences</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -3616,7 +3646,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Load</summary>
                         <p><br>  Load a file and execute it.<br><br>  @param l  Lua state.<br><br>  @return   0 in success, else exit.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:290 CclLoad</summary>
+                          <summary>/stratagus/script.cpp:297 CclLoad</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLoad</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3635,7 +3665,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>LoadBuffer</summary>
                         <p><br>  Load a file into a buffer and return it.<br><br>  @param l  Lua state.<br><br>  @return   buffer or nil on failure</p>
                           <details>
-                          <summary>/stratagus/script.cpp:310 CclLoadBuffer</summary>
+                          <summary>/stratagus/script.cpp:317 CclLoadBuffer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLoadBuffer</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -3657,7 +3687,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DebugPrint</summary>
                         <p><br>  Print debug message with info about current script name, line number and function.<br><br>  @see DebugPrint<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script.cpp:2110 CclDebugPrint</summary>
+                          <summary>/stratagus/script.cpp:2117 CclDebugPrint</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDebugPrint</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -10560,6 +10590,19 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </details>
                     
                     <details>
+                    <summary>class TextBox : public Widget</summary>
+                    <p></p>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TextBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">TextBox</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setEditable</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">editable</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">getText</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</p>
+                    </details>
+                    
+                    <details>
                     <summary>class TextField : public Widget</summary>
                     <p></p>
                     <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TextField</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
@@ -10830,6 +10873,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CMapInfo</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Description</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Filename</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">Preamble</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">Postamble</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">MapWidth</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">MapHeight</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">PlayerType</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"></span>
