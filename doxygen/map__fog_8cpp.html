@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -77,17 +77,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">map_fog.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;omp.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="actions_8h_source.html">actions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fov_8h_source.html">fov.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="minimap_8h_source.html">minimap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tileset_8h_source.html">tileset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ui_8h_source.html">ui.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="unit_8h_source.html">unit.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="unit__manager_8h_source.html">unit_manager.h</a>&quot;</code><br />
@@ -101,32 +104,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__TileSeen.html">_TileSeen&lt; MARK &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ab50625f71b28d4adc4eb43cdd7ea2034"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#ab50625f71b28d4adc4eb43cdd7ea2034">IsMapFieldExploredTable</a>(index)&#160;&#160;&#160;(<a class="el" href="map__fog_8cpp.html#ae8f75f4fa080a72cfb6b8187c52d9707">VisibleTable</a>[(index)])</td></tr>
-<tr class="separator:ab50625f71b28d4adc4eb43cdd7ea2034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace461bf83cf0aad264901b14c96c039c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#ace461bf83cf0aad264901b14c96c039c">IsMapFieldVisibleTable</a>(index)&#160;&#160;&#160;(<a class="el" href="map__fog_8cpp.html#ae8f75f4fa080a72cfb6b8187c52d9707">VisibleTable</a>[(index)] &gt; 1)</td></tr>
-<tr class="separator:ace461bf83cf0aad264901b14c96c039c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 map_fog.cpp - The map fog of war handling.</h2></td></tr>
-<tr class="memitem:a6e13c9e00b4fdf7021614fc5adb78212"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a6e13c9e00b4fdf7021614fc5adb78212">FogOfWarOpacity</a></td></tr>
-<tr class="memdesc:a6e13c9e00b4fdf7021614fc5adb78212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the current map.  <a href="map__fog_8cpp.html#a6e13c9e00b4fdf7021614fc5adb78212">More...</a><br /></td></tr>
-<tr class="separator:a6e13c9e00b4fdf7021614fc5adb78212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2c902c33c86622c269f72d904fb426"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#add2c902c33c86622c269f72d904fb426">FogOfWarColorSDL</a></td></tr>
-<tr class="memdesc:add2c902c33c86622c269f72d904fb426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fog of war Opacity.  <a href="map__fog_8cpp.html#add2c902c33c86622c269f72d904fb426">More...</a><br /></td></tr>
-<tr class="separator:add2c902c33c86622c269f72d904fb426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a294ffce9f215979ce40ed67e6c2fabd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCColor.html">CColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a294ffce9f215979ce40ed67e6c2fabd3">FogOfWarColor</a></td></tr>
-<tr class="memdesc:a294ffce9f215979ce40ed67e6c2fabd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">fog of war color  <a href="map__fog_8cpp.html#a294ffce9f215979ce40ed67e6c2fabd3">More...</a><br /></td></tr>
-<tr class="separator:a294ffce9f215979ce40ed67e6c2fabd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4356ca1cb4464c01ebff36e2f0348ff0"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a4356ca1cb4464c01ebff36e2f0348ff0">FogTable</a> [16]</td></tr>
-<tr class="separator:a4356ca1cb4464c01ebff36e2f0348ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f75f4fa080a72cfb6b8187c52d9707"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; unsigned short &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#ae8f75f4fa080a72cfb6b8187c52d9707">VisibleTable</a></td></tr>
-<tr class="separator:ae8f75f4fa080a72cfb6b8187c52d9707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d0baffbea27fa637e71d022891b30d"><td class="memItemLeft" align="right" valign="top">static SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a06d0baffbea27fa637e71d022891b30d">OnlyFogSurface</a></td></tr>
-<tr class="separator:a06d0baffbea27fa637e71d022891b30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f46647837fb3f6a02aa5eaa1e407c08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCGraphic.html">CGraphic</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a7f46647837fb3f6a02aa5eaa1e407c08">AlphaFogG</a></td></tr>
-<tr class="separator:a7f46647837fb3f6a02aa5eaa1e407c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a34a805cd7277b77c53be21c38cba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFieldOfView.html">CFieldOfView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a68a34a805cd7277b77c53be21c38cba9">FieldOfView</a></td></tr>
+<tr class="separator:a68a34a805cd7277b77c53be21c38cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d977f01362a4cb84159e21bc712fe22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a5d977f01362a4cb84159e21bc712fe22">MapFogFilterFlags</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const unsigned int index, int mask)</td></tr>
 <tr class="separator:a5d977f01362a4cb84159e21bc712fe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0242dd8a2f1a242e4d539a13e179cd9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a0242dd8a2f1a242e4d539a13e179cd9f">MapFogFilterFlags</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int mask)</td></tr>
@@ -152,163 +133,14 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 <tr class="separator:a28fa00aed36aa23674658ab8a4876ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31974e2f549ad1df6cdf5946db0d3140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a31974e2f549ad1df6cdf5946db0d3140">MapUnmarkTileDetectCloak</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos)</td></tr>
 <tr class="separator:a31974e2f549ad1df6cdf5946db0d3140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13d6a362c9b2249c38607fa1875a9ee5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a13d6a362c9b2249c38607fa1875a9ee5">MapSight</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range, <a class="el" href="map_8h.html#adb91ef202d7ab2ba4da1d7637ea2f146">MapMarkerFunc</a> *marker)</td></tr>
-<tr class="memdesc:a13d6a362c9b2249c38607fa1875a9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark sight changes.  <a href="map__fog_8cpp.html#a13d6a362c9b2249c38607fa1875a9ee5">More...</a><br /></td></tr>
-<tr class="separator:a13d6a362c9b2249c38607fa1875a9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1047ff94ac97e9bf4d983948eae4b01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#ad1047ff94ac97e9bf4d983948eae4b01">MapSight</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range, <a class="el" href="map_8h.html#adb91ef202d7ab2ba4da1d7637ea2f146">MapMarkerFunc</a> *marker)</td></tr>
+<tr class="memdesc:ad1047ff94ac97e9bf4d983948eae4b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark sight changes.  <a href="map__fog_8cpp.html#ad1047ff94ac97e9bf4d983948eae4b01">More...</a><br /></td></tr>
+<tr class="separator:ad1047ff94ac97e9bf4d983948eae4b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2ff514698744d1122de835f713c81a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a4d2ff514698744d1122de835f713c81a">UpdateFogOfWarChange</a> ()</td></tr>
 <tr class="memdesc:a4d2ff514698744d1122de835f713c81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update fog of war.  <a href="map__fog_8cpp.html#a4d2ff514698744d1122de835f713c81a">More...</a><br /></td></tr>
 <tr class="separator:a4d2ff514698744d1122de835f713c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63383fe816d230ee2c0ce6c3b82d2c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a63383fe816d230ee2c0ce6c3b82d2c8f">VideoDrawOnlyFog</a> (int x, int y)</td></tr>
-<tr class="separator:a63383fe816d230ee2c0ce6c3b82d2c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264cf4bc924b829f95b14890f4abd5f7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a264cf4bc924b829f95b14890f4abd5f7">GetFogOfWarTile</a> (int sx, int sy, int *fogTile, int *blackFogTile)</td></tr>
-<tr class="separator:a264cf4bc924b829f95b14890f4abd5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7029a4ad9fa764d532dd6bf4f590bde2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__fog_8cpp.html#a7029a4ad9fa764d532dd6bf4f590bde2">DrawFogOfWarTile</a> (int sx, int sy, int dx, int dy)</td></tr>
-<tr class="separator:a7029a4ad9fa764d532dd6bf4f590bde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ab50625f71b28d4adc4eb43cdd7ea2034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab50625f71b28d4adc4eb43cdd7ea2034">&#9670;&nbsp;</a></span>IsMapFieldExploredTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IsMapFieldExploredTable</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">index</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="map__fog_8cpp.html#ae8f75f4fa080a72cfb6b8187c52d9707">VisibleTable</a>[(index)])</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ace461bf83cf0aad264901b14c96c039c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace461bf83cf0aad264901b14c96c039c">&#9670;&nbsp;</a></span>IsMapFieldVisibleTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IsMapFieldVisibleTable</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">index</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="map__fog_8cpp.html#ae8f75f4fa080a72cfb6b8187c52d9707">VisibleTable</a>[(index)] &gt; 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7029a4ad9fa764d532dd6bf4f590bde2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7029a4ad9fa764d532dd6bf4f590bde2">&#9670;&nbsp;</a></span>DrawFogOfWarTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> DrawFogOfWarTile </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Draw fog of war tile.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sx</td><td>Offset into fields to current tile. </td></tr>
-    <tr><td class="paramname">sy</td><td>Start of the current row. </td></tr>
-    <tr><td class="paramname">dx</td><td>X position into video memory. </td></tr>
-    <tr><td class="paramname">dy</td><td>Y position into video memory. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a264cf4bc924b829f95b14890f4abd5f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a264cf4bc924b829f95b14890f4abd5f7">&#9670;&nbsp;</a></span>GetFogOfWarTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> GetFogOfWarTile </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>fogTile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>blackFogTile</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5d977f01362a4cb84159e21bc712fe22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d977f01362a4cb84159e21bc712fe22">&#9670;&nbsp;</a></span>MapFogFilterFlags() <span class="overload">[1/2]</span></h2>
 
@@ -517,8 +349,8 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
-<a id="a13d6a362c9b2249c38607fa1875a9ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13d6a362c9b2249c38607fa1875a9ee5">&#9670;&nbsp;</a></span>MapSight()</h2>
+<a id="ad1047ff94ac97e9bf4d983948eae4b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1047ff94ac97e9bf4d983948eae4b01">&#9670;&nbsp;</a></span>MapSight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,6 +360,12 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -616,6 +454,7 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Assert(*v != 0); This could happen if shadow caster type of field of view is enabled, because of multiple calls for tiles in vertical/horizontal/diagonal lines</p>
 
 </div>
 </div>
@@ -680,6 +519,7 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>TODO: change ThisPlayer to currently rendered player/players #RenderTargets</p>
 
 </div>
 </div>
@@ -833,180 +673,17 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
-<a id="a63383fe816d230ee2c0ce6c3b82d2c8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63383fe816d230ee2c0ce6c3b82d2c8f">&#9670;&nbsp;</a></span>VideoDrawOnlyFog()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> VideoDrawOnlyFog </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Draw only fog of war</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>X position into video memory </td></tr>
-    <tr><td class="paramname">y</td><td>Y position into video memory </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a7f46647837fb3f6a02aa5eaa1e407c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f46647837fb3f6a02aa5eaa1e407c08">&#9670;&nbsp;</a></span>AlphaFogG</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCGraphic.html">CGraphic</a>* AlphaFogG</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a294ffce9f215979ce40ed67e6c2fabd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a294ffce9f215979ce40ed67e6c2fabd3">&#9670;&nbsp;</a></span>FogOfWarColor</h2>
+<a id="a68a34a805cd7277b77c53be21c38cba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a34a805cd7277b77c53be21c38cba9">&#9670;&nbsp;</a></span>FieldOfView</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCColor.html">CColor</a> FogOfWarColor</td>
+          <td class="memname"><a class="el" href="classCFieldOfView.html">CFieldOfView</a> FieldOfView</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>fog of war color </p>
-
-</div>
-</div>
-<a id="add2c902c33c86622c269f72d904fb426"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add2c902c33c86622c269f72d904fb426">&#9670;&nbsp;</a></span>FogOfWarColorSDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Uint32 FogOfWarColorSDL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fog of war Opacity. </p>
-
-</div>
-</div>
-<a id="a6e13c9e00b4fdf7021614fc5adb78212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e13c9e00b4fdf7021614fc5adb78212">&#9670;&nbsp;</a></span>FogOfWarOpacity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FogOfWarOpacity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Path to the current map. </p>
-<p>Contrast of fog of war </p>
-
-</div>
-</div>
-<a id="a4356ca1cb4464c01ebff36e2f0348ff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4356ca1cb4464c01ebff36e2f0348ff0">&#9670;&nbsp;</a></span>FogTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FogTable[16]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        0, 11, 10, 2,  13, 6, 14, 3,  12, 15, 4, 1,  8, 9, 7, 0,</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Mapping for fog of war tiles. </p>
-
-</div>
-</div>
-<a id="a06d0baffbea27fa637e71d022891b30d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06d0baffbea27fa637e71d022891b30d">&#9670;&nbsp;</a></span>OnlyFogSurface</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Surface* OnlyFogSurface</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae8f75f4fa080a72cfb6b8187c52d9707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8f75f4fa080a72cfb6b8187c52d9707">&#9670;&nbsp;</a></span>VisibleTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;unsigned short&gt; VisibleTable</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1014,7 +691,7 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

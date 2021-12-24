@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -144,30 +144,35 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCUnitManager.html#af5b6285e4e9ff08f37eb41ccca06f356">Add</a>(<a class="code" href="classCUnit.html">CUnit</a> *unit);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classCUnitManager.html#a9a9ba9f80ac8fabe0f68f4dceb6ea460">Iterator</a> <a class="code" href="classCUnitManager.html#ac9bece58f7f9e75f7241d53c5d437db7">begin</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classCUnitManager.html#a9a9ba9f80ac8fabe0f68f4dceb6ea460">Iterator</a> <a class="code" href="classCUnitManager.html#aa04eaf024dd0415c6f82ba85188b0d48">end</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCUnitManager.html#ab170294a178ded6796ad9605640068fb">empty</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *<a class="code" href="classCUnitManager.html#a9360b502d51c77f71959dd13a8171027">lastCreatedUnit</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// Following is mainly for scripting</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> &amp;<a class="code" href="classCUnitManager.html#a5d866a1a3abbfd4004588833ed0b2d52">GetSlotUnit</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCUnitManager.html#a93cd9ca6bee6fac8ccd5207b6c26dbcc">GetUsedSlotCount</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::vector&lt;CUnit *&gt; units;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        std::vector&lt;CUnit *&gt; unitSlots;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::list&lt;CUnit *&gt; releasedUnits;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *lastCreated;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/*----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">--  Variables</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">----------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classCUnitManager.html#a23a36a25fc0b1e94d13ec3050e2cf7f9">   67</a></span>&#160;        <span class="keyword">const</span> std::vector&lt;CUnit *&gt; &amp;<a class="code" href="classCUnitManager.html#a23a36a25fc0b1e94d13ec3050e2cf7f9">GetUnits</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">return</span> units;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCUnitManager.html#ab170294a178ded6796ad9605640068fb">empty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *<a class="code" href="classCUnitManager.html#a9360b502d51c77f71959dd13a8171027">lastCreatedUnit</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Following is mainly for scripting</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> &amp;<a class="code" href="classCUnitManager.html#a5d866a1a3abbfd4004588833ed0b2d52">GetSlotUnit</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCUnitManager.html#a93cd9ca6bee6fac8ccd5207b6c26dbcc">GetUsedSlotCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        std::vector&lt;CUnit *&gt; units;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::vector&lt;CUnit *&gt; unitSlots;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::list&lt;CUnit *&gt; releasedUnits;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *lastCreated;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">extern</span> <a class="code" href="classCUnitManager.html">CUnitManager</a> <a class="code" href="unit__manager_8h.html#a8748150e560a7ea94d8cc2b6f409ddf1">UnitManager</a>;   </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // !__UNITMANAGER_H__</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/*----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">--  Variables</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">----------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">extern</span> <a class="code" href="classCUnitManager.html">CUnitManager</a> <a class="code" href="unit__manager_8h.html#a8748150e560a7ea94d8cc2b6f409ddf1">UnitManager</a>;   </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // !__UNITMANAGER_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassCUnitManager_html_aac39af6f20643aea5020220fb3afc9ae"><div class="ttname"><a href="classCUnitManager.html#aac39af6f20643aea5020220fb3afc9ae">CUnitManager::AllocUnit</a></div><div class="ttdeci">CUnit * AllocUnit()</div><div class="ttdef"><b>Definition:</b> unit_manager.cpp:82</div></div>
 <div class="ttc" id="aclassCUnitManager_html_a223e80b5dbfd6e0541fa94a506dc924e"><div class="ttname"><a href="classCUnitManager.html#a223e80b5dbfd6e0541fa94a506dc924e">CUnitManager::ReleaseUnit</a></div><div class="ttdeci">void ReleaseUnit(CUnit *unit)</div><div class="ttdef"><b>Definition:</b> unit_manager.cpp:107</div></div>
@@ -181,6 +186,7 @@ $(function() {
 <div class="ttc" id="aclassCUnitManager_html_a5d866a1a3abbfd4004588833ed0b2d52"><div class="ttname"><a href="classCUnitManager.html#a5d866a1a3abbfd4004588833ed0b2d52">CUnitManager::GetSlotUnit</a></div><div class="ttdeci">CUnit &amp; GetSlotUnit(int index) const</div><div class="ttdef"><b>Definition:</b> unit_manager.cpp:128</div></div>
 <div class="ttc" id="aclassCUnitManager_html"><div class="ttname"><a href="classCUnitManager.html">CUnitManager</a></div><div class="ttdef"><b>Definition:</b> unit_manager.h:50</div></div>
 <div class="ttc" id="aclassCUnitManager_html_ab170294a178ded6796ad9605640068fb"><div class="ttname"><a href="classCUnitManager.html#ab170294a178ded6796ad9605640068fb">CUnitManager::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Definition:</b> unit_manager.cpp:148</div></div>
+<div class="ttc" id="aclassCUnitManager_html_a23a36a25fc0b1e94d13ec3050e2cf7f9"><div class="ttname"><a href="classCUnitManager.html#a23a36a25fc0b1e94d13ec3050e2cf7f9">CUnitManager::GetUnits</a></div><div class="ttdeci">const std::vector&lt; CUnit * &gt; &amp; GetUnits() const</div><div class="ttdef"><b>Definition:</b> unit_manager.h:67</div></div>
 <div class="ttc" id="aclassCUnitManager_html_a9a9ba9f80ac8fabe0f68f4dceb6ea460"><div class="ttname"><a href="classCUnitManager.html#a9a9ba9f80ac8fabe0f68f4dceb6ea460">CUnitManager::Iterator</a></div><div class="ttdeci">std::vector&lt; CUnit * &gt;::iterator Iterator</div><div class="ttdef"><b>Definition:</b> unit_manager.h:53</div></div>
 <div class="ttc" id="aunit__manager_8h_html_a8748150e560a7ea94d8cc2b6f409ddf1"><div class="ttname"><a href="unit__manager_8h.html#a8748150e560a7ea94d8cc2b6f409ddf1">UnitManager</a></div><div class="ttdeci">CUnitManager UnitManager</div><div class="ttdef"><b>Definition:</b> unit_manager.cpp:48</div></div>
 <div class="ttc" id="aclassCUnitManager_html_a9360b502d51c77f71959dd13a8171027"><div class="ttname"><a href="classCUnitManager.html#a9360b502d51c77f71959dd13a8171027">CUnitManager::lastCreatedUnit</a></div><div class="ttdeci">CUnit * lastCreatedUnit()</div><div class="ttdef"><b>Definition:</b> unit_manager.cpp:153</div></div>
@@ -190,7 +196,7 @@ $(function() {
 <div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:134</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:55 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

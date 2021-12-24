@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classCMinimap-members.html">List of all members</a>  </div>
@@ -115,6 +116,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 minimap.cpp - The minimap.</h2></td></tr>
+<tr class="memitem:a15c190bad8cdfe399d1a0567d577e377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMinimap.html#a15c190bad8cdfe399d1a0567d577e377">SetFogOpacityLevels</a> (const uint8_t explored, const uint8_t revealed, const uint8_t unseen)</td></tr>
+<tr class="separator:a15c190bad8cdfe399d1a0567d577e377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067dd5cc268fe1aed1432b2e9d416bb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMinimap.html#a067dd5cc268fe1aed1432b2e9d416bb9">UpdateXY</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos)</td></tr>
 <tr class="separator:a067dd5cc268fe1aed1432b2e9d416bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2415edf03728e7d3e6c5f9817ed5928d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMinimap.html#a2415edf03728e7d3e6c5f9817ed5928d">Update</a> ()</td></tr>
@@ -316,6 +319,49 @@ minimap.cpp - The minimap.</h2></td></tr>
 
 </div>
 </div>
+<a id="a15c190bad8cdfe399d1a0567d577e377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c190bad8cdfe399d1a0567d577e377">&#9670;&nbsp;</a></span>SetFogOpacityLevels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMinimap::SetFogOpacityLevels </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>explored</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>revealed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>unseen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set fog of war opacity (alpha chanel values) for different levels of visibility</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">explored</td><td>alpha channel value for explored tiles </td></tr>
+    <tr><td class="paramname">revealed</td><td>alpha channel value for revealed tiles (when the map revealed) </td></tr>
+    <tr><td class="paramname">unseen</td><td>alpha channel value for unseen tiles </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a190bc53f8b3b719fb5aec8f58d8000cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a190bc53f8b3b719fb5aec8f58d8000cc">&#9670;&nbsp;</a></span>TilePosToScreenPos()</h2>
 
@@ -357,6 +403,7 @@ minimap.cpp - The minimap.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Update the minimap with the current game information </p>
+<p>Alpha blending the fog of war texture to minimap TODO: switch to hardware rendering</p>
 
 </div>
 </div>
@@ -559,7 +606,7 @@ minimap.cpp - The minimap.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

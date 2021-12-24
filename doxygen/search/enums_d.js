@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['t_5fhash_5fvariant_13782',['t_hash_variant',['../namespacepvpgn.html#a073d69e5b1cebfe0fad20021944d3ed5',1,'pvpgn']]],
-  ['targettype_13783',['TargetType',['../spells_8h.html#a0d59972970c855496cb4c877501e668f',1,'spells.h']]],
-  ['textalignment_13784',['TextAlignment',['../ui_8h.html#aa56f1a82069b5feeadbb4591cb3e474f',1,'ui.h']]],
-  ['tiletype_13785',['TileType',['../tileset_8h.html#ac9e486ec80ccfdb28a4f4837d419c9f1',1,'tileset.h']]]
+  ['setvar_5fmodifytypes_14164',['SetVar_ModifyTypes',['../animation_8h.html#a36102828642401da552d31e4d1d8e2bd',1,'animation.h']]],
+  ['spawnmissile_5fflags_14165',['SpawnMissile_Flags',['../animation__spawnmissile_8h.html#ae4b4243d0a561827018700e19467dd06',1,'animation_spawnmissile.h']]],
+  ['spawnunit_5fflags_14166',['SpawnUnit_Flags',['../animation__spawnunit_8h.html#ad73455c8290a4496837772749a3c3010',1,'animation_spawnunit.h']]],
+  ['states_14167',['States',['../classCFogOfWar.html#a400a8d1046a0e8bc3af35386ceca44dd',1,'CFogOfWar']]]
 ];

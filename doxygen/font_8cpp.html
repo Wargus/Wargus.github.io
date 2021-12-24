@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,8 @@ font.cpp - The color fonts.</h2></td></tr>
 <tr class="memitem:a1c55c2ec0b14a0287c4aede92b2e8e25"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCFont.html">CFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#a1c55c2ec0b14a0287c4aede92b2e8e25">GameFont</a></td></tr>
 <tr class="memdesc:a1c55c2ec0b14a0287c4aede92b2e8e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small font used in stats.  <a href="font_8cpp.html#a1c55c2ec0b14a0287c4aede92b2e8e25">More...</a><br /></td></tr>
 <tr class="separator:a1c55c2ec0b14a0287c4aede92b2e8e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b3a8272942c91e502a528db546a733"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#ae9b3a8272942c91e502a528db546a733">extended_ascii</a> []</td></tr>
+<tr class="separator:ae9b3a8272942c91e502a528db546a733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a19be5c0eb8d692b3ce717d0c29dad5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#a4a19be5c0eb8d692b3ce717d0c29dad5">FormatNumber</a> (int number, char *buf)</td></tr>
 <tr class="memdesc:a4a19be5c0eb8d692b3ce717d0c29dad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal font used in game.  <a href="font_8cpp.html#a4a19be5c0eb8d692b3ce717d0c29dad5">More...</a><br /></td></tr>
 <tr class="separator:a4a19be5c0eb8d692b3ce717d0c29dad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +147,8 @@ font.cpp - The color fonts.</h2></td></tr>
 <tr class="memitem:adabe0ecb3e31de822b4aba50ebaf888f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#adabe0ecb3e31de822b4aba50ebaf888f">GetDefaultTextColors</a> (std::string &amp;normalp, std::string &amp;reversep)</td></tr>
 <tr class="memdesc:adabe0ecb3e31de822b4aba50ebaf888f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default text colors for normal and reverse text.  <a href="font_8cpp.html#adabe0ecb3e31de822b4aba50ebaf888f">More...</a><br /></td></tr>
 <tr class="separator:adabe0ecb3e31de822b4aba50ebaf888f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9982a6c3a41bc9d8b9999cb2b8146eb6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#a9982a6c3a41bc9d8b9999cb2b8146eb6">utf8_to_ascii</a> (const int utf8)</td></tr>
+<tr class="separator:a9982a6c3a41bc9d8b9999cb2b8146eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d617ea14f90fd5b3e2c07bda447bd5c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#a3d617ea14f90fd5b3e2c07bda447bd5c">GetUTF8</a> (const std::string &amp;text, size_t &amp;pos, int &amp;utf8)</td></tr>
 <tr class="separator:a3d617ea14f90fd5b3e2c07bda447bd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4b08d6da4258efcc967f14233a07cf4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="font_8cpp.html#ac4b08d6da4258efcc967f14233a07cf4">GetUTF8</a> (const char text[], const size_t len, size_t &amp;pos, int &amp;utf8)</td></tr>
@@ -699,6 +703,39 @@ font.cpp - The color fonts.</h2></td></tr>
 
 </div>
 </div>
+<a id="a9982a6c3a41bc9d8b9999cb2b8146eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9982a6c3a41bc9d8b9999cb2b8146eb6">&#9670;&nbsp;</a></span>utf8_to_ascii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int utf8_to_ascii </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>utf8</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a UTF8 char to an ASCII-extended char, based on the convert table to work with Stratagus char. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">utf8</td><td>the char to convert (must be in range 0x90..0xFF) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the ASCII equivalent, or '?' if char is unsuported. </dd></dl>
+
+</div>
+</div>
 <a id="a34315fe423ab45d9c8d1eba900c85397"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34315fe423ab45d9c8d1eba900c85397">&#9670;&nbsp;</a></span>VideoDrawChar()</h2>
 
@@ -942,6 +979,47 @@ font.cpp - The color fonts.</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9b3a8272942c91e502a528db546a733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b3a8272942c91e502a528db546a733">&#9670;&nbsp;</a></span>extended_ascii</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char extended_ascii[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        </div>
+<div class="line">        </div>
+<div class="line">        </div>
+<div class="line">        0x00, 0x00, 0x9f, 0x00, 0x00, 0x00, 0x00, 0x00, </div>
+<div class="line">        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, </div>
+<div class="line">        0x00,  <span class="charliteral">&#39;!&#39;</span>, 0x9b, 0x9c, 0x00, 0x9d, 0x00, 0x00,  </div>
+<div class="line">        0x00, 0x00, 0x00, 0x00, 0xaa,  <span class="charliteral">&#39;-&#39;</span>, 0xa9, 0x00, </div>
+<div class="line">        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, </div>
+<div class="line">        0x00, 0x00, 0xa8, 0x00, 0x00, 0x00, 0x00, 0xa8, </div>
+<div class="line">        0x00, 0xa0, 0x00, 0x00, 0x8e, 0x8f, 0x92, 0x80, </div>
+<div class="line">        0x00, 0x90, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, </div>
+<div class="line">        0x00, 0xa5, 0x00, 0x95, 0x00, 0x00, 0x99, 0x00, </div>
+<div class="line">        0x9d, 0x97, 0x00, 0x00, 0x9a, 0x00, 0x00, 0xe1, </div>
+<div class="line">        0x85, 0xa0, 0x83, 0x00, 0x84, 0x86, 0x91, 0x87, </div>
+<div class="line">        0x8a, 0x82, 0x88, 0x89, 0x00, 0xa1, 0x8c, 0x8b, </div>
+<div class="line">        0x00, 0xa4, 0x95, 0xa2, 0x93, 0x00, 0x94, 0x00, </div>
+<div class="line">        0x9b, 0x97, 0xa3, 0x96, 0x81, 0x00, 0x00, 0x98, </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ade502390383f4f8aed0e1e91d1d7bf08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade502390383f4f8aed0e1e91d1d7bf08">&#9670;&nbsp;</a></span>FontColor</h2>
 
@@ -1129,7 +1207,7 @@ font.cpp - The color fonts.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

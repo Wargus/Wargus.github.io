@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -172,6 +172,8 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 <tr class="separator:a63f2368f9e5d8615976c9dc70d89e49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69bed461752e540fab8c642d33f101bd"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a69bed461752e540fab8c642d33f101bd">ALWAYSTHREAT_KEY</a> [] = &quot;AlwaysThreat&quot;</td></tr>
 <tr class="separator:a69bed461752e540fab8c642d33f101bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda597da0abfce11c43ae634c6988c79"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#acda597da0abfce11c43ae634c6988c79">ELEVATED_KEY</a> [] = &quot;Elevated&quot;</td></tr>
+<tr class="separator:acda597da0abfce11c43ae634c6988c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3594b18633253d46391088ec4c3bed0b"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a3594b18633253d46391088ec4c3bed0b">NOFRIENDLYFIRE_KEY</a> [] = &quot;NoFriendlyFire&quot;</td></tr>
 <tr class="separator:a3594b18633253d46391088ec4c3bed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f643a98af9bda81a766d045b75499c"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#ae9f643a98af9bda81a766d045b75499c">MAINFACILITY_KEY</a> [] = &quot;MainFacility&quot;</td></tr>
@@ -436,14 +438,16 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Parse unit-stats.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code><b>DefineUnitStats</b>("unit-berserker", 2, { "HitPoints", {Value = 55, Max = 55, Increase = 0, Enable = true}, "AttackRange", {Value = 5, Max = 6, Increase = 0, Enable = true}, "SightRange", {Value = 7, Max = 7, Increase = 0, Enable = true}, })</code></div> 
 </div>
 </div>
 <a id="a9e0e2ecd22f8ce2935b46ca1469b8904"></a>
@@ -469,7 +473,16 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p><b>Description</b></p>
+<p>Parse unit-type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example:</p>
+<div class="example"><code><b>DefineUnitType</b>("unit-silvermoon-archer", { Name = _("Silvermoon Archer"), <a class="el" href="classImage.html">Image</a> = {"file", "human/units/elven_archer.png", "size", {72, 72}}, Animations = "animations-archer", Icon = "icon-archer", Costs = {"time", 70, "gold", 500, "wood", 50}, Speed = 10, HitPoints = 45, DrawLevel = 40, TileSize = {1, 1}, BoxSize = {33, 33}, SightRange = 6, ComputerReactionRange = 7, PersonReactionRange = 6, BasicDamage = 4, PiercingDamage = 6, <a class="el" href="classMissile.html" title="Missile on the map.">Missile</a> = "missile-arrow", MaxAttackRange = 4, Priority = 75, Points = 60, Demand = 1, Corpse = "unit-human-dead-body", Type = "land", RightMouseAction = "attack", CanAttack = true, CanTargetLand = true, CanTargetSea = true, CanTargetAir = true, LandUnit = true, organic = true, SelectableByRectangle = true, Sounds = { "selected", "archer-selected", "acknowledge", "archer-acknowledge", "ready", "archer-ready", "help", "basic human voices help 1", "dead", "basic human voices dead"} } )</code></div> 
 </div>
 </div>
 <a id="aa6677fa5f91bdcd46bd62921ffb19f50"></a>
@@ -581,14 +594,16 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get unit type data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Get the amount of supply from Human Farms supply = <b>GetUnitTypeData</b>("unit-farm","Supply") print(supply)</code></div> 
 </div>
 </div>
 <a id="a6caaf55ff6d33095a2d65a58749aef18"></a>
@@ -648,6 +663,7 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get the name of the unit-type structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -655,8 +671,9 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The name of the unit-type. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The name of the unit-type.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>name = <b>GetUnitTypeName</b>("unit-knight") print(name)</code></div> 
 </div>
 </div>
 <a id="a5ef7187b1a2fa65353d0004a10dce267"></a>
@@ -682,6 +699,7 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set the name of the unit-type structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -689,8 +707,9 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The name of the unit-type. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The name of the unit-type.</dd></dl>
+<p>Example:</p>
+<div class="example"><code><b>SetUnitTypeName</b>("unit-beast-cry","Doomhammer")</code></div> 
 </div>
 </div>
 <a id="a87d1e6f20a9b8799bc51b8906d13f372"></a>
@@ -1473,6 +1492,28 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const char DETECTCLOAK_KEY[] = &quot;DetectCloak&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acda597da0abfce11c43ae634c6988c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda597da0abfce11c43ae634c6988c79">&#9670;&nbsp;</a></span>ELEVATED_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char ELEVATED_KEY[] = &quot;Elevated&quot;</td>
         </tr>
       </table>
   </td>
@@ -2273,13 +2314,6 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parse unit-type.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -2784,7 +2818,7 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

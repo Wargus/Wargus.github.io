@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -206,8 +206,16 @@ net_message.h - The network message header file.</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a262474e81e3ebaeb28e09972bf1fde57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f45f4e768b50cdb77b806cb2aa53a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4">_extended_message_type_</a> { <a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4ab56235d8ce35dcb258bd638d8e6eacf3">ExtendedMessageDiplomacy</a>, 
-<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4afe8b647f2e88748a025f5d2681664391">ExtendedMessageSharedVision</a>
+<tr class="memitem:a24f45f4e768b50cdb77b806cb2aa53a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4">_extended_message_type_</a> { <br />
+&#160;&#160;<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4ab56235d8ce35dcb258bd638d8e6eacf3">ExtendedMessageDiplomacy</a>, 
+<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4afe8b647f2e88748a025f5d2681664391">ExtendedMessageSharedVision</a>, 
+<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4a9b88d3f8b90a3eeddd16dbf237735c22">ExtendedMessageAutoTargetingDB</a>, 
+<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4a4303f800fe05118076c2feddd15c4198">ExtendedMessageFieldOfViewDB</a>, 
+<br />
+&#160;&#160;<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4a5f8d5afe20aa7712b5cf079f9d54cda2">ExtendedMessageMapFieldsOpacityDB</a>, 
+<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4a39264e6059fb887e4af72d2d2bc2bfec">ExtendedMessageRevealMapDB</a>, 
+<a class="el" href="net__message_8h.html#a24f45f4e768b50cdb77b806cb2aa53a4a1d3d84e318465271abc5fa0ee73046c0">ExtendedMessageFogOfWarDB</a>
+<br />
  }</td></tr>
 <tr class="separator:a24f45f4e768b50cdb77b806cb2aa53a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -257,7 +265,17 @@ net_message.h - The network message header file.</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4ab56235d8ce35dcb258bd638d8e6eacf3"></a>ExtendedMessageDiplomacy&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4afe8b647f2e88748a025f5d2681664391"></a>ExtendedMessageSharedVision&#160;</td><td class="fielddoc"><p>Change diplomacy. </p>
-<p>Change shared vision </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4a9b88d3f8b90a3eeddd16dbf237735c22"></a>ExtendedMessageAutoTargetingDB&#160;</td><td class="fielddoc"><p>Change shared vision. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4a4303f800fe05118076c2feddd15c4198"></a>ExtendedMessageFieldOfViewDB&#160;</td><td class="fielddoc"><p>Change Auto targetting algorithm. Used for debug purposes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4a5f8d5afe20aa7712b5cf079f9d54cda2"></a>ExtendedMessageMapFieldsOpacityDB&#160;</td><td class="fielddoc"><p>Change field of view type (shadow casting or radial). Used for debug purposes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4a39264e6059fb887e4af72d2d2bc2bfec"></a>ExtendedMessageRevealMapDB&#160;</td><td class="fielddoc"><p>Change opaque flag for forest, rocks or walls. Used for debug purposes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24f45f4e768b50cdb77b806cb2aa53a4a1d3d84e318465271abc5fa0ee73046c0"></a>ExtendedMessageFogOfWarDB&#160;</td><td class="fielddoc"><p>Change map reveal mode. Used for debug purposes. </p>
+<p>Enable/Disable fog of war. Used for debug purposes </p>
 </td></tr>
 </table>
 
@@ -405,7 +423,7 @@ net_message.h - The network message header file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

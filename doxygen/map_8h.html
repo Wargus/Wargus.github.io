@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,8 @@ $(function() {
 <div class="title">map.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="tile_8h_source.html">tile.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="include_2color_8h_source.html">color.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vec2i_8h_source.html">vec2i.h</a>&quot;</code><br />
@@ -103,8 +104,6 @@ map.h - The map headerfile.</h2></td></tr>
 <tr class="separator:ab8084e7311d6e076b6e889e757961d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8744809d1332ba203dbcc40f6863cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a8f8744809d1332ba203dbcc40f6863cd">MaxMapHeight</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:a8f8744809d1332ba203dbcc40f6863cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adceb10424c7da474161c4c8f656685c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#adceb10424c7da474161c4c8f656685c2">MARKER_ON_INDEX</a></td></tr>
-<tr class="separator:adceb10424c7da474161c4c8f656685c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb91ef202d7ab2ba4da1d7637ea2f146"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#adb91ef202d7ab2ba4da1d7637ea2f146">MapMarkerFunc</a>(const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const unsigned int index)</td></tr>
 <tr class="memdesc:adb91ef202d7ab2ba4da1d7637ea2f146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to (un)mark the vision table.  <a href="map_8h.html#adb91ef202d7ab2ba4da1d7637ea2f146">More...</a><br /></td></tr>
 <tr class="separator:adb91ef202d7ab2ba4da1d7637ea2f146"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,15 +112,12 @@ map.h - The map headerfile.</h2></td></tr>
 <tr class="memitem:aa059812436acab52e2392bbdec137577"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aa059812436acab52e2392bbdec137577">CurrentMapPath</a> [1024]</td></tr>
 <tr class="memdesc:aa059812436acab52e2392bbdec137577"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current map.  <a href="map_8h.html#aa059812436acab52e2392bbdec137577">More...</a><br /></td></tr>
 <tr class="separator:aa059812436acab52e2392bbdec137577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e13c9e00b4fdf7021614fc5adb78212"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a6e13c9e00b4fdf7021614fc5adb78212">FogOfWarOpacity</a></td></tr>
-<tr class="memdesc:a6e13c9e00b4fdf7021614fc5adb78212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the current map.  <a href="map_8h.html#a6e13c9e00b4fdf7021614fc5adb78212">More...</a><br /></td></tr>
-<tr class="separator:a6e13c9e00b4fdf7021614fc5adb78212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a294ffce9f215979ce40ed67e6c2fabd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCColor.html">CColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a294ffce9f215979ce40ed67e6c2fabd3">FogOfWarColor</a></td></tr>
-<tr class="memdesc:a294ffce9f215979ce40ed67e6c2fabd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">fog of war color  <a href="map_8h.html#a294ffce9f215979ce40ed67e6c2fabd3">More...</a><br /></td></tr>
-<tr class="separator:a294ffce9f215979ce40ed67e6c2fabd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62483f5137c59b1d55d14612f4d9e77e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a62483f5137c59b1d55d14612f4d9e77e">ForestRegeneration</a></td></tr>
-<tr class="memdesc:a62483f5137c59b1d55d14612f4d9e77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forest regeneration.  <a href="map_8h.html#a62483f5137c59b1d55d14612f4d9e77e">More...</a><br /></td></tr>
+<tr class="memdesc:a62483f5137c59b1d55d14612f4d9e77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the current map.  <a href="map_8h.html#a62483f5137c59b1d55d14612f4d9e77e">More...</a><br /></td></tr>
 <tr class="separator:a62483f5137c59b1d55d14612f4d9e77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0274620fc87c17996fd30482eb129595"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a0274620fc87c17996fd30482eb129595">ForestRegenerationFrequency</a></td></tr>
+<tr class="memdesc:a0274620fc87c17996fd30482eb129595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forest regeneration.  <a href="map_8h.html#a0274620fc87c17996fd30482eb129595">More...</a><br /></td></tr>
+<tr class="separator:a0274620fc87c17996fd30482eb129595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a038988ea88088d8d3e77a1423aca6a83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a038988ea88088d8d3e77a1423aca6a83">FlagRevealMap</a></td></tr>
 <tr class="memdesc:a038988ea88088d8d3e77a1423aca6a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag must reveal the map.  <a href="map_8h.html#a038988ea88088d8d3e77a1423aca6a83">More...</a><br /></td></tr>
 <tr class="separator:a038988ea88088d8d3e77a1423aca6a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +153,9 @@ map.h - The map headerfile.</h2></td></tr>
 <tr class="separator:a0242dd8a2f1a242e4d539a13e179cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d977f01362a4cb84159e21bc712fe22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a5d977f01362a4cb84159e21bc712fe22">MapFogFilterFlags</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const unsigned int index, int mask)</td></tr>
 <tr class="separator:a5d977f01362a4cb84159e21bc712fe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13d6a362c9b2249c38607fa1875a9ee5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a13d6a362c9b2249c38607fa1875a9ee5">MapSight</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range, <a class="el" href="map_8h.html#adb91ef202d7ab2ba4da1d7637ea2f146">MapMarkerFunc</a> *marker)</td></tr>
-<tr class="memdesc:a13d6a362c9b2249c38607fa1875a9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark sight changes.  <a href="map_8h.html#a13d6a362c9b2249c38607fa1875a9ee5">More...</a><br /></td></tr>
-<tr class="separator:a13d6a362c9b2249c38607fa1875a9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1047ff94ac97e9bf4d983948eae4b01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ad1047ff94ac97e9bf4d983948eae4b01">MapSight</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range, <a class="el" href="map_8h.html#adb91ef202d7ab2ba4da1d7637ea2f146">MapMarkerFunc</a> *marker)</td></tr>
+<tr class="memdesc:ad1047ff94ac97e9bf4d983948eae4b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark sight changes.  <a href="map_8h.html#ad1047ff94ac97e9bf4d983948eae4b01">More...</a><br /></td></tr>
+<tr class="separator:ad1047ff94ac97e9bf4d983948eae4b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2ff514698744d1122de835f713c81a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a4d2ff514698744d1122de835f713c81a">UpdateFogOfWarChange</a> ()</td></tr>
 <tr class="memdesc:a4d2ff514698744d1122de835f713c81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update fog of war.  <a href="map_8h.html#a4d2ff514698744d1122de835f713c81a">More...</a><br /></td></tr>
 <tr class="separator:a4d2ff514698744d1122de835f713c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,9 +176,9 @@ map.h - The map headerfile.</h2></td></tr>
 <tr class="memitem:ae5954fc096d29f40945fb8e225da8996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae5954fc096d29f40945fb8e225da8996">MapCclRegister</a> ()</td></tr>
 <tr class="memdesc:ae5954fc096d29f40945fb8e225da8996"><td class="mdescLeft">&#160;</td><td class="mdescRight">register ccl features  <a href="map_8h.html#ae5954fc096d29f40945fb8e225da8996">More...</a><br /></td></tr>
 <tr class="separator:ae5954fc096d29f40945fb8e225da8996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30c63fd1488f1cf44fb0a63ecf24a89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae30c63fd1488f1cf44fb0a63ecf24a89">SaveStratagusMap</a> (const std::string &amp;filename, <a class="el" href="classCMap.html">CMap</a> &amp;map, int writeTerrain)</td></tr>
-<tr class="memdesc:ae30c63fd1488f1cf44fb0a63ecf24a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a stratagus map (smp format)  <a href="map_8h.html#ae30c63fd1488f1cf44fb0a63ecf24a89">More...</a><br /></td></tr>
-<tr class="separator:ae30c63fd1488f1cf44fb0a63ecf24a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34caa142186bb53b6b5e80d57c29ad4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aa34caa142186bb53b6b5e80d57c29ad4">SaveStratagusMap</a> (const std::string &amp;filename, <a class="el" href="classCMap.html">CMap</a> &amp;map, int writeTerrain, <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> newSize={0, 0}, <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> offset={0, 0})</td></tr>
+<tr class="memdesc:aa34caa142186bb53b6b5e80d57c29ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a stratagus map (smp format)  <a href="map_8h.html#aa34caa142186bb53b6b5e80d57c29ad4">More...</a><br /></td></tr>
+<tr class="separator:aa34caa142186bb53b6b5e80d57c29ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b490a724c6502535dbf795dc088fe34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a3b490a724c6502535dbf795dc088fe34">LoadStratagusMapInfo</a> (const std::string &amp;mapname)</td></tr>
 <tr class="memdesc:a3b490a724c6502535dbf795dc088fe34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load map presentation.  <a href="map_8h.html#a3b490a724c6502535dbf795dc088fe34">More...</a><br /></td></tr>
 <tr class="separator:a3b490a724c6502535dbf795dc088fe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,35 +200,27 @@ map.h - The map headerfile.</h2></td></tr>
 <tr class="memitem:ac74331fb73e9f83af60ad442ce29acc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ac74331fb73e9f83af60ad442ce29acc6">MapUnmarkUnitSight</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
 <tr class="memdesc:ac74331fb73e9f83af60ad442ce29acc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmark on vision table the Sight of the unit.  <a href="map_8h.html#ac74331fb73e9f83af60ad442ce29acc6">More...</a><br /></td></tr>
 <tr class="separator:ac74331fb73e9f83af60ad442ce29acc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd893826f1ac767de0eccfd996d3d2b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#afd893826f1ac767de0eccfd996d3d2b0">MapRefreshUnitsSight</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;tilePos, const bool resetSight=false)</td></tr>
+<tr class="memdesc:afd893826f1ac767de0eccfd996d3d2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark/Unmark on vision table the Sight for the units around the tilePos.  <a href="map_8h.html#afd893826f1ac767de0eccfd996d3d2b0">More...</a><br /></td></tr>
+<tr class="separator:afd893826f1ac767de0eccfd996d3d2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fc9d688e29699bedaf75795f09f108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a61fc9d688e29699bedaf75795f09f108">MapRefreshUnitsSight</a> (const bool resetSight=false)</td></tr>
+<tr class="memdesc:a61fc9d688e29699bedaf75795f09f108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark/Unmark on vision table the Sight for all units on the map.  <a href="map_8h.html#a61fc9d688e29699bedaf75795f09f108">More...</a><br /></td></tr>
+<tr class="separator:a61fc9d688e29699bedaf75795f09f108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad915f8ba8812af2733256054d7478af6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ad915f8ba8812af2733256054d7478af6">CanMoveToMask</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int mask)</td></tr>
 <tr class="memdesc:ad915f8ba8812af2733256054d7478af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can a unit with 'mask' enter the field.  <a href="map_8h.html#ad915f8ba8812af2733256054d7478af6">More...</a><br /></td></tr>
 <tr class="separator:ad915f8ba8812af2733256054d7478af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954f5234cd579b0942ef9abf532fd0dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a954f5234cd579b0942ef9abf532fd0dc">MapMarkRadar</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
-<tr class="memdesc:a954f5234cd579b0942ef9abf532fd0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle Marking and Unmarking of radar vision.  <a href="map_8h.html#a954f5234cd579b0942ef9abf532fd0dc">More...</a><br /></td></tr>
-<tr class="separator:a954f5234cd579b0942ef9abf532fd0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d99b3ff9eda5a3f0cedc775be380b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a4d99b3ff9eda5a3f0cedc775be380b1b">MapUnmarkRadar</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
-<tr class="separator:a4d99b3ff9eda5a3f0cedc775be380b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa7e6815b91839ad83c8fa168aa3f40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a0fa7e6815b91839ad83c8fa168aa3f40">MapMarkRadarJammer</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
-<tr class="memdesc:a0fa7e6815b91839ad83c8fa168aa3f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle Marking and Unmarking of radar vision.  <a href="map_8h.html#a0fa7e6815b91839ad83c8fa168aa3f40">More...</a><br /></td></tr>
-<tr class="separator:a0fa7e6815b91839ad83c8fa168aa3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6962a4da2b35531d59aa3504efd84a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae6962a4da2b35531d59aa3504efd84a6">MapUnmarkRadarJammer</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
-<tr class="separator:ae6962a4da2b35531d59aa3504efd84a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f03f4880f6afd90179a49eeb5ca741e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a0f03f4880f6afd90179a49eeb5ca741e">MapMarkRadar</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
+<tr class="memdesc:a0f03f4880f6afd90179a49eeb5ca741e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle Marking and Unmarking of radar vision.  <a href="map_8h.html#a0f03f4880f6afd90179a49eeb5ca741e">More...</a><br /></td></tr>
+<tr class="separator:a0f03f4880f6afd90179a49eeb5ca741e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557086c51d1e4f19862defea47187bce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a557086c51d1e4f19862defea47187bce">MapUnmarkRadar</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
+<tr class="separator:a557086c51d1e4f19862defea47187bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff80180fa77a3ddc516ad50121b9d9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a8ff80180fa77a3ddc516ad50121b9d9e">MapMarkRadarJammer</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
+<tr class="memdesc:a8ff80180fa77a3ddc516ad50121b9d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle Marking and Unmarking of radar vision.  <a href="map_8h.html#a8ff80180fa77a3ddc516ad50121b9d9e">More...</a><br /></td></tr>
+<tr class="separator:a8ff80180fa77a3ddc516ad50121b9d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe588d7544f919dfeca9b775b6e1509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a6fe588d7544f919dfeca9b775b6e1509">MapUnmarkRadarJammer</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int range)</td></tr>
+<tr class="separator:a6fe588d7544f919dfeca9b775b6e1509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adceb10424c7da474161c4c8f656685c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adceb10424c7da474161c4c8f656685c2">&#9670;&nbsp;</a></span>MARKER_ON_INDEX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MARKER_ON_INDEX</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8f8744809d1332ba203dbcc40f6863cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f8744809d1332ba203dbcc40f6863cd">&#9670;&nbsp;</a></span>MaxMapHeight</h2>
 
@@ -564,8 +552,8 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a954f5234cd579b0942ef9abf532fd0dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a954f5234cd579b0942ef9abf532fd0dc">&#9670;&nbsp;</a></span>MapMarkRadar()</h2>
+<a id="a0f03f4880f6afd90179a49eeb5ca741e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f03f4880f6afd90179a49eeb5ca741e">&#9670;&nbsp;</a></span>MapMarkRadar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,6 +566,12 @@ map.h - The map headerfile.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -620,8 +614,8 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a0fa7e6815b91839ad83c8fa168aa3f40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fa7e6815b91839ad83c8fa168aa3f40">&#9670;&nbsp;</a></span>MapMarkRadarJammer()</h2>
+<a id="a8ff80180fa77a3ddc516ad50121b9d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff80180fa77a3ddc516ad50121b9d9e">&#9670;&nbsp;</a></span>MapMarkRadarJammer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,6 +628,12 @@ map.h - The map headerfile.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -704,8 +704,75 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a13d6a362c9b2249c38607fa1875a9ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13d6a362c9b2249c38607fa1875a9ee5">&#9670;&nbsp;</a></span>MapSight()</h2>
+<a id="a61fc9d688e29699bedaf75795f09f108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61fc9d688e29699bedaf75795f09f108">&#9670;&nbsp;</a></span>MapRefreshUnitsSight() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> MapRefreshUnitsSight </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>resetSight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark/Unmark on vision table the Sight for all units on the map. </p>
+<p>Mark/Unmark on vision table the Sight for all units on the map</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resetSight</td><td>Unmark sight if True, Mark otherwise</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>MapUnmarkUnitSight/MapMarkUnitSight </dd></dl>
+
+</div>
+</div>
+<a id="afd893826f1ac767de0eccfd996d3d2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd893826f1ac767de0eccfd996d3d2b0">&#9670;&nbsp;</a></span>MapRefreshUnitsSight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> MapRefreshUnitsSight </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;&#160;</td>
+          <td class="paramname"><em>tilePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>resetSight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark/Unmark on vision table the Sight for the units around the tilePos. </p>
+<p>Mark/Unmark on vision table the Sight for the units around the tilePos (and units inside for transporter)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilePos</td><td>Position of the tile around which to update units vision for </td></tr>
+    <tr><td class="paramname">resetSight</td><td>Unmark sight if True, Mark otherwise</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>MapUnmarkUnitSight/MapMarkUnitSight </dd></dl>
+
+</div>
+</div>
+<a id="ad1047ff94ac97e9bf4d983948eae4b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1047ff94ac97e9bf4d983948eae4b01">&#9670;&nbsp;</a></span>MapSight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -715,6 +782,12 @@ map.h - The map headerfile.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -770,8 +843,8 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d99b3ff9eda5a3f0cedc775be380b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d99b3ff9eda5a3f0cedc775be380b1b">&#9670;&nbsp;</a></span>MapUnmarkRadar()</h2>
+<a id="a557086c51d1e4f19862defea47187bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557086c51d1e4f19862defea47187bce">&#9670;&nbsp;</a></span>MapUnmarkRadar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,6 +857,12 @@ map.h - The map headerfile.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -824,8 +903,8 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6962a4da2b35531d59aa3504efd84a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6962a4da2b35531d59aa3504efd84a6">&#9670;&nbsp;</a></span>MapUnmarkRadarJammer()</h2>
+<a id="a6fe588d7544f919dfeca9b775b6e1509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe588d7544f919dfeca9b775b6e1509">&#9670;&nbsp;</a></span>MapUnmarkRadarJammer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,6 +917,12 @@ map.h - The map headerfile.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -926,8 +1011,8 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="ae30c63fd1488f1cf44fb0a63ecf24a89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae30c63fd1488f1cf44fb0a63ecf24a89">&#9670;&nbsp;</a></span>SaveStratagusMap()</h2>
+<a id="aa34caa142186bb53b6b5e80d57c29ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34caa142186bb53b6b5e80d57c29ad4">&#9670;&nbsp;</a></span>SaveStratagusMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -948,7 +1033,19 @@ map.h - The map headerfile.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>writeTerrain</em>&#160;</td>
+          <td class="paramname"><em>writeTerrain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a>&#160;</td>
+          <td class="paramname"><em>newSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a>&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1197,39 +1294,6 @@ map.h - The map headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a294ffce9f215979ce40ed67e6c2fabd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a294ffce9f215979ce40ed67e6c2fabd3">&#9670;&nbsp;</a></span>FogOfWarColor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCColor.html">CColor</a> FogOfWarColor</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>fog of war color </p>
-
-</div>
-</div>
-<a id="a6e13c9e00b4fdf7021614fc5adb78212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e13c9e00b4fdf7021614fc5adb78212">&#9670;&nbsp;</a></span>FogOfWarOpacity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FogOfWarOpacity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Path to the current map. </p>
-<p>Contrast of fog of war </p>
-
-</div>
-</div>
 <a id="a62483f5137c59b1d55d14612f4d9e77e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62483f5137c59b1d55d14612f4d9e77e">&#9670;&nbsp;</a></span>ForestRegeneration</h2>
 
@@ -1242,7 +1306,24 @@ map.h - The map headerfile.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Forest regeneration. </p>
+<p>Path to the current map. </p>
+<p>Forest regeneration</p>
+<p>Path to the current map. </p>
+
+</div>
+</div>
+<a id="a0274620fc87c17996fd30482eb129595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0274620fc87c17996fd30482eb129595">&#9670;&nbsp;</a></span>ForestRegenerationFrequency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ForestRegenerationFrequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Forest regeneration. </p>
 
 </div>
@@ -1409,7 +1490,7 @@ map.h - The map headerfile.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -229,10 +229,11 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aaebcfc1ec00ba97f4a15b46efd5b3717">SKIRMISHER_INDEX</a>, 
 <a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a2580767b6413206a85ed758c5a45c148">ALWAYSTHREAT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a34b243cd4db26bcf51c720ea6c8a2313">ELEVATED_INDEX</a>, 
 <a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a24a65ec115f6d3c82246e1bff606badb">NOFRIENDLYFIRE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a28db5290f665e964eb635765a6c6a29a">MAINFACILITY_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a06f9461311635e1aad1c4fe5fcbb2b4c">NBARALREADYDEFINED</a>
+&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a28db5290f665e964eb635765a6c6a29a">MAINFACILITY_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a06f9461311635e1aad1c4fe5fcbb2b4c">NBARALREADYDEFINED</a>
 <br />
  }</td></tr>
 <tr class="separator:a77867ab4129f63159b37bca3b652a798"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -606,7 +607,9 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aaebcfc1ec00ba97f4a15b46efd5b3717"></a>SKIRMISHER_INDEX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a2580767b6413206a85ed758c5a45c148"></a>ALWAYSTHREAT_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a24a65ec115f6d3c82246e1bff606badb"></a>NOFRIENDLYFIRE_INDEX&#160;</td><td class="fielddoc"><p>Unit always considered as threat for auto targeting algorihm, useful for unit without main attack ability, but which can cast spells (f.e. defiler in SC:BW) </p>
+<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a34b243cd4db26bcf51c720ea6c8a2313"></a>ELEVATED_INDEX&#160;</td><td class="fielddoc"><p>Unit always considered as threat for auto targeting algorihm, useful for unit without main attack ability, but which can cast spells (f.e. defiler in SC:BW) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a24a65ec115f6d3c82246e1bff606badb"></a>NOFRIENDLYFIRE_INDEX&#160;</td><td class="fielddoc"><p>Unit is elevated and can see over opaque tiles placed in the same ground level with the unit. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a28db5290f665e964eb635765a6c6a29a"></a>MAINFACILITY_INDEX&#160;</td><td class="fielddoc"><p>Unit accepts friendly fire for splash attacks. </p>
 </td></tr>
@@ -887,7 +890,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo:</a></b></dt><dd>Do screen position caculation in high level. Better way to handle in x mirrored sprites. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo:</a></b></dt><dd>Do screen position caculation in high level. Better way to handle in x mirrored sprites. </dd></dl>
 
 </div>
 </div>
@@ -1252,7 +1255,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 <p>All unit-types. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>this hardcoded unit-types must be removed!! </dd></dl>
 <p>Next unit type are used hardcoded in the source.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000120">Todo:</a></b></dt><dd>find a way to make it configurable! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo:</a></b></dt><dd>find a way to make it configurable! </dd></dl>
 
 </div>
 </div>
@@ -1303,7 +1306,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

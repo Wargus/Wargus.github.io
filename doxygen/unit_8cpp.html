@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,12 @@ unit.cpp - The units.</h2></td></tr>
 <tr class="memitem:ac74331fb73e9f83af60ad442ce29acc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit_8cpp.html#ac74331fb73e9f83af60ad442ce29acc6">MapUnmarkUnitSight</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
 <tr class="memdesc:ac74331fb73e9f83af60ad442ce29acc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmark on vision table the Sight of the unit.  <a href="unit_8cpp.html#ac74331fb73e9f83af60ad442ce29acc6">More...</a><br /></td></tr>
 <tr class="separator:ac74331fb73e9f83af60ad442ce29acc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97d7c564dc5e74816b78bdbc66f384a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit_8cpp.html#af97d7c564dc5e74816b78bdbc66f384a">MapRefreshUnitsSight</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;tilePos, const bool resetSight)</td></tr>
+<tr class="memdesc:af97d7c564dc5e74816b78bdbc66f384a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark/Unmark on vision table the Sight for the units around the tilePos.  <a href="unit_8cpp.html#af97d7c564dc5e74816b78bdbc66f384a">More...</a><br /></td></tr>
+<tr class="separator:af97d7c564dc5e74816b78bdbc66f384a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4184410001c9d784e187d559c9ce447e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit_8cpp.html#a4184410001c9d784e187d559c9ce447e">MapRefreshUnitsSight</a> (const bool resetSight)</td></tr>
+<tr class="memdesc:a4184410001c9d784e187d559c9ce447e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark/Unmark on vision table the Sight for all units on the map.  <a href="unit_8cpp.html#a4184410001c9d784e187d559c9ce447e">More...</a><br /></td></tr>
+<tr class="separator:a4184410001c9d784e187d559c9ce447e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d108c683459a597a9a42272e1c90b3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit_8cpp.html#a3d108c683459a597a9a42272e1c90b3b">UpdateUnitSightRange</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
 <tr class="memdesc:a3d108c683459a597a9a42272e1c90b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update unit-&gt;CurrentSightRange.  <a href="unit_8cpp.html#a3d108c683459a597a9a42272e1c90b3b">More...</a><br /></td></tr>
 <tr class="separator:a3d108c683459a597a9a42272e1c90b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1442,7 +1448,7 @@ unit.cpp - The units.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Is target within attack range of this unit? </p>
-<p>Returns true, if target is in attack range of the unit and there is no obstacles between them (when inside caves) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo:</a></b></dt><dd>: Do we have to check range from unit.Container pos if unit is bunkered or in transport?</dd></dl>
+<p>Returns true, if target is in attack range of the unit and there are no obstacles between them (when inside caves)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unit</td><td>Unit to check for. </td></tr>
@@ -1481,7 +1487,7 @@ unit.cpp - The units.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Is tile within attack range of this unit? </p>
-<p>Returns true, if tile is in attack range of the unit and there is no obstacles between them (when inside caves) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo:</a></b></dt><dd>: Do we have to check range from unit.Container pos if unit is bunkered or in transport?</dd></dl>
+<p>Returns true, if tile is in attack range of the unit and there are no obstacles between them (when inside caves)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unit</td><td>Unit to check for. </td></tr>
@@ -1863,6 +1869,73 @@ unit.cpp - The units.</h2></td></tr>
 
 </div>
 </div>
+<a id="a4184410001c9d784e187d559c9ce447e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4184410001c9d784e187d559c9ce447e">&#9670;&nbsp;</a></span>MapRefreshUnitsSight() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> MapRefreshUnitsSight </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>resetSight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark/Unmark on vision table the Sight for all units on the map. </p>
+<p>Mark/Unmark on vision table the Sight for all units on the map</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resetSight</td><td>Unmark sight if True, Mark otherwise</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>MapUnmarkUnitSight/MapMarkUnitSight </dd></dl>
+
+</div>
+</div>
+<a id="af97d7c564dc5e74816b78bdbc66f384a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97d7c564dc5e74816b78bdbc66f384a">&#9670;&nbsp;</a></span>MapRefreshUnitsSight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> MapRefreshUnitsSight </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;&#160;</td>
+          <td class="paramname"><em>tilePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>resetSight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark/Unmark on vision table the Sight for the units around the tilePos. </p>
+<p>Mark/Unmark on vision table the Sight for the units around the tilePos (and units inside for transporter)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilePos</td><td>Position of the tile around which to update units vision for </td></tr>
+    <tr><td class="paramname">resetSight</td><td>Unmark sight if True, Mark otherwise</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>MapUnmarkUnitSight/MapMarkUnitSight </dd></dl>
+
+</div>
+</div>
 <a id="ac74331fb73e9f83af60ad442ce29acc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac74331fb73e9f83af60ad442ce29acc6">&#9670;&nbsp;</a></span>MapUnmarkUnitSight()</h2>
 
@@ -2077,6 +2150,7 @@ unit.cpp - The units.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Check if target attacks us (or has us as goal for any action)</p>
+<p>Unit can attack back.</p>
 
 </div>
 </div>
@@ -2560,7 +2634,7 @@ unit.cpp - The units.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd>FIXME: is it the correct place to put this function in? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo:</a></b></dt><dd>FIXME: is it the correct place to put this function in? </dd></dl>
 
 </div>
 </div>
@@ -2588,7 +2662,7 @@ unit.cpp - The units.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd>FIXME: is it the correct place to put this function in? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo:</a></b></dt><dd>FIXME: is it the correct place to put this function in? </dd></dl>
 
 </div>
 </div>
@@ -2733,7 +2807,7 @@ unit.cpp - The units.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

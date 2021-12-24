@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab5794a633b12e62ad09ac4cfc39d3858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01a20a1057fab8c9877b8e910b6594e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMapField.html">CMapField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a01a20a1057fab8c9877b8e910b6594e5">Field</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos) const</td></tr>
 <tr class="separator:a01a20a1057fab8c9877b8e910b6594e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ced2671767cb3ef32a3d319bb7b6a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a27ced2671767cb3ef32a3d319bb7b6a8">isInitialized</a> () const</td></tr>
+<tr class="separator:a27ced2671767cb3ef32a3d319bb7b6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df2bfe1ee78e68d5b8868edb87ad898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a8df2bfe1ee78e68d5b8868edb87ad898">FixSelectionArea</a> (<a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;minpos, <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;maxpos)</td></tr>
 <tr class="separator:a8df2bfe1ee78e68d5b8868edb87ad898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">map_wall.cpp - The map wall handling.</div></td></tr>
@@ -137,8 +139,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aaa4b6a3786d6ebed5efc80833dde0e72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGraphic.html">CGraphic</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#aaa4b6a3786d6ebed5efc80833dde0e72">TileGraphic</a></td></tr>
 <tr class="memdesc:aaa4b6a3786d6ebed5efc80833dde0e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">lua filename that loads all tilemodels  <a href="classCMap.html#aaa4b6a3786d6ebed5efc80833dde0e72">More...</a><br /></td></tr>
 <tr class="separator:aaa4b6a3786d6ebed5efc80833dde0e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ae56be992ce552204146d31926b62a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#ab9ae56be992ce552204146d31926b62a">isMapInitialized</a> { false }</td></tr>
+<tr class="memdesc:ab9ae56be992ce552204146d31926b62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">graphic for all the tiles  <a href="classCMap.html#ab9ae56be992ce552204146d31926b62a">More...</a><br /></td></tr>
+<tr class="separator:ab9ae56be992ce552204146d31926b62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5c7b681e0e33e8163262ae079af860d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMapInfo.html">CMapInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#ac5c7b681e0e33e8163262ae079af860d">Info</a></td></tr>
-<tr class="memdesc:ac5c7b681e0e33e8163262ae079af860d"><td class="mdescLeft">&#160;</td><td class="mdescRight">graphic for fog of war  <a href="classCMap.html#ac5c7b681e0e33e8163262ae079af860d">More...</a><br /></td></tr>
 <tr class="separator:ac5c7b681e0e33e8163262ae079af860d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -153,15 +157,12 @@ map.cpp - The map.</h2></td></tr>
 <tr class="memitem:a604f597cf8d0f5a5428bceba203f8550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a604f597cf8d0f5a5428bceba203f8550">Init</a> ()</td></tr>
 <tr class="memdesc:a604f597cf8d0f5a5428bceba203f8550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build tables for map.  <a href="classCMap.html#a604f597cf8d0f5a5428bceba203f8550">More...</a><br /></td></tr>
 <tr class="separator:a604f597cf8d0f5a5428bceba203f8550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379123dbf069a7b9582763b3ac5ab212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a379123dbf069a7b9582763b3ac5ab212">Clean</a> ()</td></tr>
-<tr class="memdesc:a379123dbf069a7b9582763b3ac5ab212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean the map.  <a href="classCMap.html#a379123dbf069a7b9582763b3ac5ab212">More...</a><br /></td></tr>
-<tr class="separator:a379123dbf069a7b9582763b3ac5ab212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173b04ebc42dfd052f332fd66e8e4574"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a173b04ebc42dfd052f332fd66e8e4574">ClearWoodTile</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos)</td></tr>
-<tr class="memdesc:a173b04ebc42dfd052f332fd66e8e4574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove wood from the map.  <a href="classCMap.html#a173b04ebc42dfd052f332fd66e8e4574">More...</a><br /></td></tr>
-<tr class="separator:a173b04ebc42dfd052f332fd66e8e4574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77b4490b96b57e7d00f17967121181ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a77b4490b96b57e7d00f17967121181ad">ClearRockTile</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos)</td></tr>
-<tr class="memdesc:a77b4490b96b57e7d00f17967121181ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove rock from the map.  <a href="classCMap.html#a77b4490b96b57e7d00f17967121181ad">More...</a><br /></td></tr>
-<tr class="separator:a77b4490b96b57e7d00f17967121181ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a2f63247b60c1d8cfddadf21c5dafb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a58a2f63247b60c1d8cfddadf21c5dafb">Clean</a> (const bool isHardClean=false)</td></tr>
+<tr class="memdesc:a58a2f63247b60c1d8cfddadf21c5dafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean the map.  <a href="classCMap.html#a58a2f63247b60c1d8cfddadf21c5dafb">More...</a><br /></td></tr>
+<tr class="separator:a58a2f63247b60c1d8cfddadf21c5dafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae8e641725381d3ccde3014e395c0b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a3ae8e641725381d3ccde3014e395c0b0">ClearTile</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;tilePos)</td></tr>
+<tr class="memdesc:a3ae8e641725381d3ccde3014e395c0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove wood, rock or wall from the map and update nearby unit's vision if needed.  <a href="classCMap.html#a3ae8e641725381d3ccde3014e395c0b0">More...</a><br /></td></tr>
+<tr class="separator:a3ae8e641725381d3ccde3014e395c0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48ea0ceabb62502794106a33ea63ef18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a48ea0ceabb62502794106a33ea63ef18">MapPixelPosToTilePos</a> (const <a class="el" href="vec2i_8h.html#a20cc8627b3e52515a26778e489bda2ae">PixelPos</a> &amp;mapPos) const</td></tr>
 <tr class="memdesc:a48ea0ceabb62502794106a33ea63ef18"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert map pixelpos coordonates into tilepos  <a href="classCMap.html#a48ea0ceabb62502794106a33ea63ef18">More...</a><br /></td></tr>
 <tr class="separator:a48ea0ceabb62502794106a33ea63ef18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +178,9 @@ map.cpp - The map.</h2></td></tr>
 <tr class="memitem:a28a64fdf269b29b76e7626150162088f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a28a64fdf269b29b76e7626150162088f">RegenerateForest</a> ()</td></tr>
 <tr class="memdesc:a28a64fdf269b29b76e7626150162088f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regenerate the forest.  <a href="classCMap.html#a28a64fdf269b29b76e7626150162088f">More...</a><br /></td></tr>
 <tr class="separator:a28a64fdf269b29b76e7626150162088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f32032ac6e5bbf80fa8061eb13bc3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a43f32032ac6e5bbf80fa8061eb13bc3a">Reveal</a> ()</td></tr>
-<tr class="memdesc:a43f32032ac6e5bbf80fa8061eb13bc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reveal the complete map, make everything known.  <a href="classCMap.html#a43f32032ac6e5bbf80fa8061eb13bc3a">More...</a><br /></td></tr>
-<tr class="separator:a43f32032ac6e5bbf80fa8061eb13bc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24dbe5b4a494e3c4da95cdeb4959ab82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a24dbe5b4a494e3c4da95cdeb4959ab82">Reveal</a> (const int mode=<a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a1606d227732859dcb9507c4b76564f9a">MapRevealModes::cKnown</a>)</td></tr>
+<tr class="memdesc:a24dbe5b4a494e3c4da95cdeb4959ab82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set map reveal mode: hidden/known/fully explored.  <a href="classCMap.html#a24dbe5b4a494e3c4da95cdeb4959ab82">More...</a><br /></td></tr>
+<tr class="separator:a24dbe5b4a494e3c4da95cdeb4959ab82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfb72e03be3c55acfc864cb89e25e146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#abfb72e03be3c55acfc864cb89e25e146">Save</a> (<a class="el" href="classCFile.html">CFile</a> &amp;file) const</td></tr>
 <tr class="memdesc:abfb72e03be3c55acfc864cb89e25e146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the map.  <a href="classCMap.html#abfb72e03be3c55acfc864cb89e25e146">More...</a><br /></td></tr>
 <tr class="separator:abfb72e03be3c55acfc864cb89e25e146"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,15 +193,6 @@ map.cpp - The map.</h2></td></tr>
 <tr class="memitem:a55972db733be7a6861b8c061f9a0328e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a55972db733be7a6861b8c061f9a0328e">OrcWallOnMap</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos) const</td></tr>
 <tr class="memdesc:a55972db733be7a6861b8c061f9a0328e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if orc wall on the map tile field.  <a href="classCMap.html#a55972db733be7a6861b8c061f9a0328e">More...</a><br /></td></tr>
 <tr class="separator:a55972db733be7a6861b8c061f9a0328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-map_fog.cpp - The map fog of war handling.</h2></td></tr>
-<tr class="memitem:ac0412d56525c93483724e256f58e6968"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCGraphic.html">CGraphic</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#ac0412d56525c93483724e256f58e6968">FogGraphic</a></td></tr>
-<tr class="memdesc:ac0412d56525c93483724e256f58e6968"><td class="mdescLeft">&#160;</td><td class="mdescRight">graphic for all the tiles  <a href="classCMap.html#ac0412d56525c93483724e256f58e6968">More...</a><br /></td></tr>
-<tr class="separator:ac0412d56525c93483724e256f58e6968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051af5e424d3dd287bbdaf8c4472e248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMap.html#a051af5e424d3dd287bbdaf8c4472e248">CleanFogOfWar</a> ()</td></tr>
-<tr class="memdesc:a051af5e424d3dd287bbdaf8c4472e248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup memory for fog of war tables.  <a href="classCMap.html#a051af5e424d3dd287bbdaf8c4472e248">More...</a><br /></td></tr>
-<tr class="separator:a051af5e424d3dd287bbdaf8c4472e248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the world map. </p>
@@ -217,9 +209,9 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 <p>Lua filename that loads all tilemodels</p>
 <p><a class="el" href="classCMap.html#aaa4b6a3786d6ebed5efc80833dde0e72" title="lua filename that loads all tilemodels">CMap::TileGraphic</a></p>
 <p>Graphic for all the tiles</p>
-<p><a class="el" href="classCMap.html#ac0412d56525c93483724e256f58e6968" title="graphic for all the tiles">CMap::FogGraphic</a></p>
+<p>CMap::FogGraphic</p>
 <p>Graphic for fog of war</p>
-<p><a class="el" href="classCMap.html#ac5c7b681e0e33e8163262ae079af860d" title="graphic for fog of war">CMap::Info</a></p>
+<p><a class="el" href="classCMap.html#ac5c7b681e0e33e8163262ae079af860d">CMap::Info</a></p>
 <p>Descriptive information of the map. See <a class="el" href="classCMapInfo.html">CMapInfo</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7ad71523562247ed2183e57eaed018e8"></a>
@@ -275,8 +267,8 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
-<a id="a379123dbf069a7b9582763b3ac5ab212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a379123dbf069a7b9582763b3ac5ab212">&#9670;&nbsp;</a></span>Clean()</h2>
+<a id="a58a2f63247b60c1d8cfddadf21c5dafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a2f63247b60c1d8cfddadf21c5dafb">&#9670;&nbsp;</a></span>Clean()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +276,8 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMap::Clean </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isHardClean</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -295,63 +288,30 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
-<a id="a051af5e424d3dd287bbdaf8c4472e248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a051af5e424d3dd287bbdaf8c4472e248">&#9670;&nbsp;</a></span>CleanFogOfWar()</h2>
+<a id="a3ae8e641725381d3ccde3014e395c0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae8e641725381d3ccde3014e395c0b0">&#9670;&nbsp;</a></span>ClearTile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMap::CleanFogOfWar </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cleanup memory for fog of war tables. </p>
-<p>Cleanup the fog of war. </p>
-
-</div>
-</div>
-<a id="a77b4490b96b57e7d00f17967121181ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77b4490b96b57e7d00f17967121181ad">&#9670;&nbsp;</a></span>ClearRockTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMap::ClearRockTile </td>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMap::ClearTile </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td class="paramname"><em>tilePos</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove rock from the map. </p>
-
-</div>
-</div>
-<a id="a173b04ebc42dfd052f332fd66e8e4574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a173b04ebc42dfd052f332fd66e8e4574">&#9670;&nbsp;</a></span>ClearWoodTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMap::ClearWoodTile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove wood from the map. </p>
+<p>Remove wood, rock or wall from the map and update nearby unit's vision if needed. </p>
+<p>Remove Wood, Rock or Wall tile from the map It checks if field is opaque and recalc vision for nearby units</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilePos</td><td>Map tile-position. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -676,6 +636,31 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
+<a id="a27ced2671767cb3ef32a3d319bb7b6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ced2671767cb3ef32a3d319bb7b6a8">&#9670;&nbsp;</a></span>isInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMap::isInitialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a48ea0ceabb62502794106a33ea63ef18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48ea0ceabb62502794106a33ea63ef18">&#9670;&nbsp;</a></span>MapPixelPosToTilePos()</h2>
 
@@ -827,8 +812,8 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
-<a id="a43f32032ac6e5bbf80fa8061eb13bc3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43f32032ac6e5bbf80fa8061eb13bc3a">&#9670;&nbsp;</a></span>Reveal()</h2>
+<a id="a24dbe5b4a494e3c4da95cdeb4959ab82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24dbe5b4a494e3c4da95cdeb4959ab82">&#9670;&nbsp;</a></span>Reveal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -836,14 +821,16 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CMap::Reveal </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a1606d227732859dcb9507c4b76564f9a">MapRevealModes::cKnown</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reveal the complete map, make everything known. </p>
+<p>Set map reveal mode: hidden/known/fully explored. </p>
 <p>Reveal the entire map. </p>
+<p>We can't do "unrevealing" yet</p>
 
 </div>
 </div>
@@ -910,6 +897,8 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
   </dd>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000044">Todo:</a></b></dt><dd>FIXME: support for more races. </dd></dl>
+<p>Refresh vision of nearby units in case is walls are set as opaque field</p>
+<p>Refresh vision of nearby units in case is walls are set as opaque field</p>
 
 </div>
 </div>
@@ -996,30 +985,6 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0412d56525c93483724e256f58e6968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0412d56525c93483724e256f58e6968">&#9670;&nbsp;</a></span>FogGraphic</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCGraphic.html">CGraphic</a> * CMap::FogGraphic</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>graphic for all the tiles </p>
-
-</div>
-</div>
 <a id="ac5c7b681e0e33e8163262ae079af860d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5c7b681e0e33e8163262ae079af860d">&#9670;&nbsp;</a></span>Info</h2>
 
@@ -1032,7 +997,21 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>graphic for fog of war </p>
+</div>
+</div>
+<a id="ab9ae56be992ce552204146d31926b62a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ae56be992ce552204146d31926b62a">&#9670;&nbsp;</a></span>isMapInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMap::isMapInitialized { false }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>graphic for all the tiles </p>
 
 </div>
 </div>
@@ -1103,14 +1082,13 @@ map_fog.cpp - The map fog of war handling.</h2></td></tr>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/include/<a class="el" href="map_8h_source.html">map.h</a></li>
 <li>src/map/<a class="el" href="map_8cpp.html">map.cpp</a></li>
-<li>src/map/<a class="el" href="map__fog_8cpp.html">map_fog.cpp</a></li>
 <li>src/map/<a class="el" href="map__wall_8cpp.html">map_wall.cpp</a></li>
 <li>src/unit/<a class="el" href="unit__cache_8cpp.html">unit_cache.cpp</a></li>
 </ul>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

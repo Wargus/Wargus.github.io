@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -98,10 +98,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2670f6df48453b48b082b3321d1c91f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f2de91dbdf37e8a2eda6fb7e78f953a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCUnit.html">CUnit</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a3f2de91dbdf37e8a2eda6fb7e78f953a">UnitEnd</a> ()</td></tr>
 <tr class="separator:a3f2de91dbdf37e8a2eda6fb7e78f953a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0bb698f14d49ee7081e71fca64ef18"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCUnit.html">CUnit</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a1e0bb698f14d49ee7081e71fca64ef18">GetUnits</a> () const</td></tr>
+<tr class="separator:a1e0bb698f14d49ee7081e71fca64ef18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3240775198ccd5cbe1a58d3fb0e84e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a3240775198ccd5cbe1a58d3fb0e84e0d">IsEnemy</a> (const int index) const</td></tr>
 <tr class="separator:a3240775198ccd5cbe1a58d3fb0e84e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51606daa3146e55d1cfb0c5c29c8712b"><td class="memItemLeft" align="right" valign="top">const std::set&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a51606daa3146e55d1cfb0c5c29c8712b">GetSharedVision</a> () const</td></tr>
-<tr class="separator:a51606daa3146e55d1cfb0c5c29c8712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30527802cebf848b660fec230b3cbed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#ab30527802cebf848b660fec230b3cbed">IsAllied</a> (const int index) const</td></tr>
+<tr class="separator:ab30527802cebf848b660fec230b3cbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb00b3aa08a05dd0cb9472899450094"><td class="memItemLeft" align="right" valign="top">const std::set&lt; uint8_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#acfb00b3aa08a05dd0cb9472899450094">GetSharedVision</a> () const</td></tr>
+<tr class="separator:acfb00b3aa08a05dd0cb9472899450094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb21212fc8003f85990998249a4ffce"><td class="memItemLeft" align="right" valign="top">const std::set&lt; uint8_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a8eb21212fc8003f85990998249a4ffce">GetGaveVisionTo</a> () const</td></tr>
+<tr class="separator:a8eb21212fc8003f85990998249a4ffce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa02193b93a5df844725fa11886803fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#aaa02193b93a5df844725fa11886803fd">HasSharedVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
+<tr class="separator:aaa02193b93a5df844725fa11886803fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cd2731d3b66328616481cbf3df20287"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a5cd2731d3b66328616481cbf3df20287">IsRevealed</a> () const</td></tr>
 <tr class="separator:a5cd2731d3b66328616481cbf3df20287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">script_player.cpp - The player ccl functions.</div></td></tr>
@@ -333,14 +341,6 @@ player.cpp - The players.</h2></td></tr>
 <tr class="separator:a01f14dcc0b461ab1d4ab11fcde4059d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab257b6eb740d5296dfb36c9cea68e15f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#ab257b6eb740d5296dfb36c9cea68e15f">IsVisionSharing</a> () const</td></tr>
 <tr class="separator:ab257b6eb740d5296dfb36c9cea68e15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa02193b93a5df844725fa11886803fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#aaa02193b93a5df844725fa11886803fd">HasSharedVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
-<tr class="separator:aaa02193b93a5df844725fa11886803fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56163fb95292065c490191ae27f9a95e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a56163fb95292065c490191ae27f9a95e">HasSharedVisionWith</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
-<tr class="separator:a56163fb95292065c490191ae27f9a95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2032bd891530cb4b87e5daa72cefc99d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a2032bd891530cb4b87e5daa72cefc99d">HasMutualSharedVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
-<tr class="separator:a2032bd891530cb4b87e5daa72cefc99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ace213805c9ca0ca6051c45c96ca2be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a4ace213805c9ca0ca6051c45c96ca2be">HasMutualSharedVisionWith</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
-<tr class="separator:a4ace213805c9ca0ca6051c45c96ca2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6a81e215323fd3853c2d8f88a1cf565"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#af6a81e215323fd3853c2d8f88a1cf565">IsTeamed</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
 <tr class="separator:af6a81e215323fd3853c2d8f88a1cf565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42372a0e8bd982b3acbfd2a3420b965"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#ae42372a0e8bd982b3acbfd2a3420b965">IsTeamed</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
@@ -353,10 +353,14 @@ player.cpp - The players.</h2></td></tr>
 <tr class="separator:ae9948a1671faee1933bcdfce6afc62c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9488560cbe059a6cbe510085df8c72a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a9488560cbe059a6cbe510085df8c72a4">SetDiplomacyCrazyWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
 <tr class="separator:a9488560cbe059a6cbe510085df8c72a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51872d1787cad76774f9c8b78c9b277f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a51872d1787cad76774f9c8b78c9b277f">ShareVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
-<tr class="separator:a51872d1787cad76774f9c8b78c9b277f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e4fa3a172d966c09cbcc68d4c75b1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#af1e4fa3a172d966c09cbcc68d4c75b1a">UnshareVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
-<tr class="separator:af1e4fa3a172d966c09cbcc68d4c75b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16327e05aad7903f2c841fee643c0599"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a16327e05aad7903f2c841fee643c0599">ShareVisionWith</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
+<tr class="separator:a16327e05aad7903f2c841fee643c0599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eebe78115a8ea7025157b9780ba7a8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a3eebe78115a8ea7025157b9780ba7a8a">EnableSharedVisionFrom</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
+<tr class="separator:a3eebe78115a8ea7025157b9780ba7a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad84f9a0902ba452bf993c0201c18c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a6ad84f9a0902ba452bf993c0201c18c2">UnshareVisionWith</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
+<tr class="separator:a6ad84f9a0902ba452bf993c0201c18c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ffb4fa43a76a73b1c62b6b9cc129e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#ad5ffb4fa43a76a73b1c62b6b9cc129e1">DisableSharedVisionFrom</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player)</td></tr>
+<tr class="separator:ad5ffb4fa43a76a73b1c62b6b9cc129e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ea35f8d92d0298d1cc880f44e36779b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#a4ea35f8d92d0298d1cc880f44e36779b">Init</a> (int type)</td></tr>
 <tr class="separator:a4ea35f8d92d0298d1cc880f44e36779b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca284fc55ca97f83c45f008004638e43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html#aca284fc55ca97f83c45f008004638e43">Save</a> (<a class="el" href="classCFile.html">CFile</a> &amp;file) const</td></tr>
@@ -765,6 +769,67 @@ player.cpp - The players.</h2></td></tr>
 
 </div>
 </div>
+<a id="ad5ffb4fa43a76a73b1c62b6b9cc129e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ffb4fa43a76a73b1c62b6b9cc129e1">&#9670;&nbsp;</a></span>DisableSharedVisionFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CPlayer::DisableSharedVisionFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eebe78115a8ea7025157b9780ba7a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eebe78115a8ea7025157b9780ba7a8a">&#9670;&nbsp;</a></span>EnableSharedVisionFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CPlayer::EnableSharedVisionFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eb21212fc8003f85990998249a4ffce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb21212fc8003f85990998249a4ffce">&#9670;&nbsp;</a></span>GetGaveVisionTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;uint8_t&gt;&amp; CPlayer::GetGaveVisionTo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a751dc24195c8f627ff6342404a1d86de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a751dc24195c8f627ff6342404a1d86de">&#9670;&nbsp;</a></span>GetResource()</h2>
 
@@ -831,8 +896,8 @@ player.cpp - The players.</h2></td></tr>
 
 </div>
 </div>
-<a id="a51606daa3146e55d1cfb0c5c29c8712b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51606daa3146e55d1cfb0c5c29c8712b">&#9670;&nbsp;</a></span>GetSharedVision()</h2>
+<a id="acfb00b3aa08a05dd0cb9472899450094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb00b3aa08a05dd0cb9472899450094">&#9670;&nbsp;</a></span>GetSharedVision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -841,7 +906,7 @@ player.cpp - The players.</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::set&lt;int&gt;&amp; CPlayer::GetSharedVision </td>
+          <td class="memname">const std::set&lt;uint8_t&gt;&amp; CPlayer::GetSharedVision </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -891,6 +956,31 @@ player.cpp - The players.</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e0bb698f14d49ee7081e71fca64ef18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e0bb698f14d49ee7081e71fca64ef18">&#9670;&nbsp;</a></span>GetUnits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="classCUnit.html">CUnit</a> *&gt;&amp; CPlayer::GetUnits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a11698444c3a8fa41cb95851f375f5ce4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11698444c3a8fa41cb95851f375f5ce4">&#9670;&nbsp;</a></span>GetUnitTotalCount()</h2>
 
@@ -911,49 +1001,14 @@ player.cpp - The players.</h2></td></tr>
 
 </div>
 </div>
-<a id="a2032bd891530cb4b87e5daa72cefc99d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2032bd891530cb4b87e5daa72cefc99d">&#9670;&nbsp;</a></span>HasMutualSharedVisionWith() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CPlayer::HasMutualSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>player</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if the both players share vision </p>
-
-</div>
-</div>
-<a id="a4ace213805c9ca0ca6051c45c96ca2be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ace213805c9ca0ca6051c45c96ca2be">&#9670;&nbsp;</a></span>HasMutualSharedVisionWith() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CPlayer::HasMutualSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if the player and the unit share vision </p>
-
-</div>
-</div>
 <a id="aaa02193b93a5df844725fa11886803fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa02193b93a5df844725fa11886803fd">&#9670;&nbsp;</a></span>HasSharedVisionWith() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa02193b93a5df844725fa11886803fd">&#9670;&nbsp;</a></span>HasSharedVisionWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool CPlayer::HasSharedVisionWith </td>
@@ -963,27 +1018,12 @@ player.cpp - The players.</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Check if the player shares vision with the player </p>
-
-</div>
-</div>
-<a id="a56163fb95292065c490191ae27f9a95e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56163fb95292065c490191ae27f9a95e">&#9670;&nbsp;</a></span>HasSharedVisionWith() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CPlayer::HasSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if the player shares vision with the unit </p>
 
 </div>
 </div>
@@ -1063,7 +1103,7 @@ player.cpp - The players.</h2></td></tr>
 </div>
 </div>
 <a id="a9887ea735bb36a9edabda422147a243d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9887ea735bb36a9edabda422147a243d">&#9670;&nbsp;</a></span>IsAllied() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9887ea735bb36a9edabda422147a243d">&#9670;&nbsp;</a></span>IsAllied() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1082,7 +1122,7 @@ player.cpp - The players.</h2></td></tr>
 </div>
 </div>
 <a id="a01f14dcc0b461ab1d4ab11fcde4059d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01f14dcc0b461ab1d4ab11fcde4059d4">&#9670;&nbsp;</a></span>IsAllied() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f14dcc0b461ab1d4ab11fcde4059d4">&#9670;&nbsp;</a></span>IsAllied() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1097,6 +1137,33 @@ player.cpp - The players.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Check if the unit is an ally </p>
+
+</div>
+</div>
+<a id="ab30527802cebf848b660fec230b3cbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30527802cebf848b660fec230b3cbed">&#9670;&nbsp;</a></span>IsAllied() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPlayer::IsAllied </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the player index is an enemy </p>
 
 </div>
 </div>
@@ -1643,8 +1710,8 @@ player.cpp - The players.</h2></td></tr>
 
 </div>
 </div>
-<a id="a51872d1787cad76774f9c8b78c9b277f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51872d1787cad76774f9c8b78c9b277f">&#9670;&nbsp;</a></span>ShareVisionWith()</h2>
+<a id="a16327e05aad7903f2c841fee643c0599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16327e05aad7903f2c841fee643c0599">&#9670;&nbsp;</a></span>ShareVisionWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1652,7 +1719,7 @@ player.cpp - The players.</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CPlayer::ShareVisionWith </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1821,8 +1888,8 @@ player.cpp - The players.</h2></td></tr>
 
 </div>
 </div>
-<a id="af1e4fa3a172d966c09cbcc68d4c75b1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1e4fa3a172d966c09cbcc68d4c75b1a">&#9670;&nbsp;</a></span>UnshareVisionWith()</h2>
+<a id="a6ad84f9a0902ba452bf993c0201c18c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ad84f9a0902ba452bf993c0201c18c2">&#9670;&nbsp;</a></span>UnshareVisionWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1830,7 +1897,7 @@ player.cpp - The players.</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CPlayer::UnshareVisionWith </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2562,7 +2629,7 @@ buildings allowed</h1>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:57 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:40 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

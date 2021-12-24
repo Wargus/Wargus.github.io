@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -153,9 +153,9 @@ commands.h - The commands header file.</h2></td></tr>
 <tr class="memitem:a141d6dd814f21a999af6a0c8987b6d32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a141d6dd814f21a999af6a0c8987b6d32">CommandCancelTraining</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit, int slot, const <a class="el" href="classCUnitType.html">CUnitType</a> *type)</td></tr>
 <tr class="memdesc:a141d6dd814f21a999af6a0c8987b6d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare command cancel training.  <a href="commands_8h.html#a141d6dd814f21a999af6a0c8987b6d32">More...</a><br /></td></tr>
 <tr class="separator:a141d6dd814f21a999af6a0c8987b6d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac52972472194478178b435848d33235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#aac52972472194478178b435848d33235">CommandUpgradeTo</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit, <a class="el" href="classCUnitType.html">CUnitType</a> &amp;what, int flush)</td></tr>
-<tr class="memdesc:aac52972472194478178b435848d33235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare command upgrade to.  <a href="commands_8h.html#aac52972472194478178b435848d33235">More...</a><br /></td></tr>
-<tr class="separator:aac52972472194478178b435848d33235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7353139ccf3bd11a833700b9eaeeb8cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a7353139ccf3bd11a833700b9eaeeb8cc">CommandUpgradeTo</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit, <a class="el" href="classCUnitType.html">CUnitType</a> &amp;what, int flush, bool instant=false)</td></tr>
+<tr class="memdesc:a7353139ccf3bd11a833700b9eaeeb8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare command upgrade to.  <a href="commands_8h.html#a7353139ccf3bd11a833700b9eaeeb8cc">More...</a><br /></td></tr>
+<tr class="separator:a7353139ccf3bd11a833700b9eaeeb8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51f6a8eb4d941ef70c858ac8f20e7987"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a51f6a8eb4d941ef70c858ac8f20e7987">CommandTransformIntoType</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit, <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type)</td></tr>
 <tr class="memdesc:a51f6a8eb4d941ef70c858ac8f20e7987"><td class="mdescLeft">&#160;</td><td class="mdescRight">immediate transforming into type.  <a href="commands_8h.html#a51f6a8eb4d941ef70c858ac8f20e7987">More...</a><br /></td></tr>
 <tr class="separator:a51f6a8eb4d941ef70c858ac8f20e7987"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1240,7 +1240,7 @@ commands.h - The commands header file.</h2></td></tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CommandSharedVision </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>player</em>, </td>
+          <td class="paramname"><em>playerIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1252,7 +1252,7 @@ commands.h - The commands header file.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>opponent</em>&#160;</td>
+          <td class="paramname"><em>opponentIndex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1266,12 +1266,13 @@ commands.h - The commands header file.</h2></td></tr>
 <p>Shared vision changed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">player</td><td>Player which changes his state. </td></tr>
+    <tr><td class="paramname">playerIndex</td><td>Player which changes his state. </td></tr>
     <tr><td class="paramname">state</td><td>New shared vision state. </td></tr>
-    <tr><td class="paramname">opponent</td><td>Opponent. </td></tr>
+    <tr><td class="paramname">opponentIndex</td><td>Opponent. </td></tr>
   </table>
   </dd>
 </dl>
+<p>TODO: change ThisPlayer to currently rendered player/players #RenderTargets</p>
 
 </div>
 </div>
@@ -1540,8 +1541,8 @@ commands.h - The commands header file.</h2></td></tr>
 
 </div>
 </div>
-<a id="aac52972472194478178b435848d33235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac52972472194478178b435848d33235">&#9670;&nbsp;</a></span>CommandUpgradeTo()</h2>
+<a id="a7353139ccf3bd11a833700b9eaeeb8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7353139ccf3bd11a833700b9eaeeb8cc">&#9670;&nbsp;</a></span>CommandUpgradeTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1562,7 +1563,13 @@ commands.h - The commands header file.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flush</em>&#160;</td>
+          <td class="paramname"><em>flush</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>instant</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1707,6 +1714,18 @@ commands.h - The commands header file.</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>arg1: 0:true / 1:false</p>
+<p>CommandLog(...);</p>
+<p>CommandLog(...);</p>
+<p>arg1: 0:cShadowCasting / 1:cSimpleRadial</p>
+<p>CommandLog(...);</p>
+<p>CommandLog(...);</p>
+<p>Arg2: Opaque fields flags</p>
+<p>CommandLog(...);</p>
+<p>CommandLog(...);</p>
+<p>arg1: enable/disable fog</p>
+<p>arg2: request for update</p>
+<p>CommandLog(...);</p>
 
 </div>
 </div>
@@ -2922,7 +2941,7 @@ commands.h - The commands header file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

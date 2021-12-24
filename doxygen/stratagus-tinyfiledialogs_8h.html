@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -88,118 +88,232 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
 <code>#include &lt;limits.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;dirent.h&gt;</code><br />
 <code>#include &lt;termios.h&gt;</code><br />
 <code>#include &lt;sys/utsname.h&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
 </div>
 <p><a href="stratagus-tinyfiledialogs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a3024ccd4a9af5109d24e6c57565d74a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a3024ccd4a9af5109d24e6c57565d74a1">_POSIX_C_SOURCE</a>&#160;&#160;&#160;2 /* to accept POSIX 2 in old ANSI C standards */</td></tr>
+<tr class="separator:a3024ccd4a9af5109d24e6c57565d74a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69eb17477fd6f6af2c9ca2d5f4c7df3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a69eb17477fd6f6af2c9ca2d5f4c7df3c">SLASH</a>&#160;&#160;&#160;&quot;/&quot;</td></tr>
 <tr class="separator:a69eb17477fd6f6af2c9ca2d5f4c7df3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03da67b2aa763d88422ba0f6aaa6d29b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a03da67b2aa763d88422ba0f6aaa6d29b">MAX_PATH_OR_CMD</a>&#160;&#160;&#160;1024 /* _MAX_PATH or MAX_PATH */</td></tr>
 <tr class="separator:a03da67b2aa763d88422ba0f6aaa6d29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab03206e07f091b649d81cfff24b751b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aab03206e07f091b649d81cfff24b751b">MAX_MULTIPLE</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:aab03206e07f091b649d81cfff24b751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0612543f1a6828a8b0008da041c06f6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a0612543f1a6828a8b0008da041c06f6a">MAX_MULTIPLE_FILES</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a0612543f1a6828a8b0008da041c06f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790242f2501dc16dd67d87533154258c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a790242f2501dc16dd67d87533154258c">LOW_MULTIPLE_FILES</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a790242f2501dc16dd67d87533154258c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae02051d7645e0674b53cea5b134e0c8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ae02051d7645e0674b53cea5b134e0c8e">tinyfd_messageBox</a> (char const *const aTitle, char const *const aMessage, char const *const aDialogType, char const *const aIconType, int const aDefaultButton)</td></tr>
-<tr class="separator:ae02051d7645e0674b53cea5b134e0c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa62ab6b77b31cf202c0c28301d6cef1e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aa62ab6b77b31cf202c0c28301d6cef1e">tinyfd_inputBox</a> (char const *const aTitle, char const *const aMessage, char const *const aDefaultInput)</td></tr>
-<tr class="separator:aa62ab6b77b31cf202c0c28301d6cef1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9387551d93e63cb5edc68bc50032d7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a3b9387551d93e63cb5edc68bc50032d7">tinyfd_saveFileDialog</a> (char const *const aTitle, char const *const aDefaultPathAndFile, int const aNumOfFilterPatterns, char const *const *const aFilterPatterns, char const *const aSingleFilterDescription)</td></tr>
-<tr class="separator:a3b9387551d93e63cb5edc68bc50032d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcc57955f2b7902dd438fbe6878cf66"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#acbcc57955f2b7902dd438fbe6878cf66">tinyfd_openFileDialog</a> (char const *const aTitle, char const *const aDefaultPathAndFile, int const aNumOfFilterPatterns, char const *const *const aFilterPatterns, char const *const aSingleFilterDescription, int const aAllowMultipleSelects)</td></tr>
-<tr class="separator:acbcc57955f2b7902dd438fbe6878cf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24392c044f7a21a1adcae7759f8b19f1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a24392c044f7a21a1adcae7759f8b19f1">tinyfd_selectFolderDialog</a> (char const *const aTitle, char const *const aDefaultPath)</td></tr>
-<tr class="separator:a24392c044f7a21a1adcae7759f8b19f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a737a93c27d364599c911dd50a872a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a07a737a93c27d364599c911dd50a872a">tinyfd_colorChooser</a> (char const *const aTitle, char const *const aDefaultHexRGB, unsigned char const aDefaultRGB[3], unsigned char aoResultRGB[3])</td></tr>
-<tr class="separator:a07a737a93c27d364599c911dd50a872a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a665105580a5c190f885c91b039b2229c"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a665105580a5c190f885c91b039b2229c">getPathWithoutFinalSlash</a> (char *const aoDestination, char const *const aSource)</td></tr>
-<tr class="separator:a665105580a5c190f885c91b039b2229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af66d838ed078419a713c2b876f967d7e"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#af66d838ed078419a713c2b876f967d7e">getLastName</a> (char *const aoDestination, char const *const aSource)</td></tr>
-<tr class="separator:af66d838ed078419a713c2b876f967d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe0bae3c48a66aad831f30834eeccc06"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#afe0bae3c48a66aad831f30834eeccc06">ensureFinalSlash</a> (char *const aioString)</td></tr>
-<tr class="separator:afe0bae3c48a66aad831f30834eeccc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387b4d21335e8f5ff11526b05b443e13"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a387b4d21335e8f5ff11526b05b443e13">tinyfd_getGlobalChar</a> (char const *aCharVariableName)</td></tr>
+<tr class="separator:a387b4d21335e8f5ff11526b05b443e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2369e180c58a73d4861bb0130cd82dab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a2369e180c58a73d4861bb0130cd82dab">tinyfd_getGlobalInt</a> (char const *aIntVariableName)</td></tr>
+<tr class="separator:a2369e180c58a73d4861bb0130cd82dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4d4275e2731ee2c0939ffd711446cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a1e4d4275e2731ee2c0939ffd711446cd">tinyfd_setGlobalInt</a> (char const *aIntVariableName, int aValue)</td></tr>
+<tr class="separator:a1e4d4275e2731ee2c0939ffd711446cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c19cd62f9b9ff0f7def8971d2bc3f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a0c19cd62f9b9ff0f7def8971d2bc3f9d">tinyfd_beep</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a0c19cd62f9b9ff0f7def8971d2bc3f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91628b8a0640682241aa189f03a30ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ad91628b8a0640682241aa189f03a30ba">tinyfd_notifyPopup</a> (char const *aTitle, char const *aMessage, char const *aIconType)</td></tr>
+<tr class="separator:ad91628b8a0640682241aa189f03a30ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5082e6c1f4693110f1703664b3fa9fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ac5082e6c1f4693110f1703664b3fa9fc">tinyfd_messageBox</a> (char const *aTitle, char const *aMessage, char const *aDialogType, char const *aIconType, int aDefaultButton)</td></tr>
+<tr class="separator:ac5082e6c1f4693110f1703664b3fa9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2db23282c31c40c4c12b4847b92659b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aa2db23282c31c40c4c12b4847b92659b">tinyfd_inputBox</a> (char const *aTitle, char const *aMessage, char const *aDefaultInput)</td></tr>
+<tr class="separator:aa2db23282c31c40c4c12b4847b92659b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e759ffc973e4ac401dee78915e1908"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a52e759ffc973e4ac401dee78915e1908">tinyfd_saveFileDialog</a> (char const *aTitle, char const *aDefaultPathAndFile, int aNumOfFilterPatterns, char const *const *aFilterPatterns, char const *aSingleFilterDescription)</td></tr>
+<tr class="separator:a52e759ffc973e4ac401dee78915e1908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cffdf70572bb1388d8bef1f1645734f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4cffdf70572bb1388d8bef1f1645734f">tinyfd_openFileDialog</a> (char const *aTitle, char const *aDefaultPathAndFile, int aNumOfFilterPatterns, char const *const *aFilterPatterns, char const *aSingleFilterDescription, int aAllowMultipleSelects)</td></tr>
+<tr class="separator:a4cffdf70572bb1388d8bef1f1645734f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26568df53ae8a94f7ffbf5a267c9a6ae"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a26568df53ae8a94f7ffbf5a267c9a6ae">tinyfd_selectFolderDialog</a> (char const *aTitle, char const *aDefaultPath)</td></tr>
+<tr class="separator:a26568df53ae8a94f7ffbf5a267c9a6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa695aeb3e9421913447afe95e6521e7f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aa695aeb3e9421913447afe95e6521e7f">tinyfd_colorChooser</a> (char const *aTitle, char const *aDefaultHexRGB, unsigned char const aDefaultRGB[3], unsigned char aoResultRGB[3])</td></tr>
+<tr class="separator:aa695aeb3e9421913447afe95e6521e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c87c0dfbae15a0f58ac7dc6aae9df3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a41c87c0dfbae15a0f58ac7dc6aae9df3">getenvDISPLAY</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a41c87c0dfbae15a0f58ac7dc6aae9df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade09309ff58892f8bcaa444e440c36d0"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ade09309ff58892f8bcaa444e440c36d0">getCurDir</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:ade09309ff58892f8bcaa444e440c36d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6ad1f832c8368c8799447d661c2e4b"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a6b6ad1f832c8368c8799447d661c2e4b">getPathWithoutFinalSlash</a> (char *aoDestination, char const *aSource)</td></tr>
+<tr class="separator:a6b6ad1f832c8368c8799447d661c2e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e21eec46d56cee2ede392879228b99"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a25e21eec46d56cee2ede392879228b99">getLastName</a> (char *aoDestination, char const *aSource)</td></tr>
+<tr class="separator:a25e21eec46d56cee2ede392879228b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9ba9ef8cebd0306a4bb4fd20981ebc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a1b9ba9ef8cebd0306a4bb4fd20981ebc">ensureFinalSlash</a> (char *aioString)</td></tr>
+<tr class="separator:a1b9ba9ef8cebd0306a4bb4fd20981ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff0350472478184cf8ade7246701ead"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5ff0350472478184cf8ade7246701ead">Hex2RGB</a> (char const aHexRGB[8], unsigned char aoResultRGB[3])</td></tr>
 <tr class="separator:a5ff0350472478184cf8ade7246701ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed7f837768a100336551374a1008b978"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aed7f837768a100336551374a1008b978">RGB2Hex</a> (unsigned char const aRGB[3], char aoResultHexRGB[8])</td></tr>
 <tr class="separator:aed7f837768a100336551374a1008b978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75636a5024e43832363f670ebf226e3f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a75636a5024e43832363f670ebf226e3f">replaceSubStr</a> (char const *const aSource, char const *const aOldSubStr, char const *const aNewSubStr, char *const aoDestination)</td></tr>
-<tr class="separator:a75636a5024e43832363f670ebf226e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dca85a6156606154f63c09f71a5fd4c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4dca85a6156606154f63c09f71a5fd4c">replaceChr</a> (char *const aString, char const aOldChr, char const aNewChr)</td></tr>
-<tr class="separator:a4dca85a6156606154f63c09f71a5fd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae28f503764a748ed1f95f4dff368859a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ae28f503764a748ed1f95f4dff368859a">filenameValid</a> (char const *const aFileNameWithoutPath)</td></tr>
-<tr class="separator:ae28f503764a748ed1f95f4dff368859a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2402060108b45c5bb1a3214813d57e6b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a2402060108b45c5bb1a3214813d57e6b">fileExists</a> (char const *const aFilePathAndName)</td></tr>
-<tr class="separator:a2402060108b45c5bb1a3214813d57e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5415fd52d8566847df8a4a2942ae2e"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4f5415fd52d8566847df8a4a2942ae2e">ensureFilesExist</a> (char *const aDestination, char const *const aSourcePathsAndNames)</td></tr>
-<tr class="separator:a4f5415fd52d8566847df8a4a2942ae2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cf394d7bdd2b7ffcdcea67100579ae0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a9cf394d7bdd2b7ffcdcea67100579ae0">isDarwin</a> ()</td></tr>
-<tr class="separator:a9cf394d7bdd2b7ffcdcea67100579ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b13bedd2f300e88b427f5c48fab0c02"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5b13bedd2f300e88b427f5c48fab0c02">dirExists</a> (char const *const aDirPath)</td></tr>
-<tr class="separator:a5b13bedd2f300e88b427f5c48fab0c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f93bcb5f463e8eee12312f01be4f5b6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a6f93bcb5f463e8eee12312f01be4f5b6">detectPresence</a> (char const *const aExecutable)</td></tr>
-<tr class="separator:a6f93bcb5f463e8eee12312f01be4f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52162784767214d0f73997add9c4c416"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a52162784767214d0f73997add9c4c416">tryCommand</a> (char const *const aCommand)</td></tr>
-<tr class="separator:a52162784767214d0f73997add9c4c416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab684f7416f4d82894c087c2a6eb5a2c5"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ab684f7416f4d82894c087c2a6eb5a2c5">terminalName</a> ()</td></tr>
-<tr class="separator:ab684f7416f4d82894c087c2a6eb5a2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ecc69d243ddc1d3fe613ffacdb9702"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a57ecc69d243ddc1d3fe613ffacdb9702">dialogName</a> ()</td></tr>
-<tr class="separator:a57ecc69d243ddc1d3fe613ffacdb9702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4088d63ec9a205d49007dfec9352e4b4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4088d63ec9a205d49007dfec9352e4b4">whiptailPresent</a> ()</td></tr>
-<tr class="separator:a4088d63ec9a205d49007dfec9352e4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d2428b6f571efd1d6d14b7067938fa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ac8d2428b6f571efd1d6d14b7067938fa">graphicMode</a> ()</td></tr>
-<tr class="separator:ac8d2428b6f571efd1d6d14b7067938fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df0708fd358f224d2c16eeb8e0c44c0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5df0708fd358f224d2c16eeb8e0c44c0">xmessagePresent</a> ()</td></tr>
-<tr class="separator:a5df0708fd358f224d2c16eeb8e0c44c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4813e9a9f924bf8fa2fd10d64f2a01f3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4813e9a9f924bf8fa2fd10d64f2a01f3">gxmessagePresent</a> ()</td></tr>
-<tr class="separator:a4813e9a9f924bf8fa2fd10d64f2a01f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b049a850599475d53f860fc9db26fc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ad5b049a850599475d53f860fc9db26fc">notifysendPresent</a> ()</td></tr>
-<tr class="separator:ad5b049a850599475d53f860fc9db26fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7243b7327424978ee23e6e45c4f6a401"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a7243b7327424978ee23e6e45c4f6a401">xdialogPresent</a> ()</td></tr>
-<tr class="separator:a7243b7327424978ee23e6e45c4f6a401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a581f6eaf875774c93284e5f56dce5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a18a581f6eaf875774c93284e5f56dce5">gdialogPresent</a> ()</td></tr>
-<tr class="separator:a18a581f6eaf875774c93284e5f56dce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab686858dd13f512c5d94d715e5153f06"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ab686858dd13f512c5d94d715e5153f06">osascriptPresent</a> ()</td></tr>
-<tr class="separator:ab686858dd13f512c5d94d715e5153f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1b7d60b71fef56e437c2f149245887d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#af1b7d60b71fef56e437c2f149245887d">kdialogPresent</a> ()</td></tr>
-<tr class="separator:af1b7d60b71fef56e437c2f149245887d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1317484f17bff27ccfa9a7a32198a3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aeb1317484f17bff27ccfa9a7a32198a3">zenityPresent</a> ()</td></tr>
-<tr class="separator:aeb1317484f17bff27ccfa9a7a32198a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af677f06c48d79a5976d2d3a70ed747eb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#af677f06c48d79a5976d2d3a70ed747eb">zenity3Present</a> ()</td></tr>
-<tr class="separator:af677f06c48d79a5976d2d3a70ed747eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d53554f854779b54526ac7a4e81b1a1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5d53554f854779b54526ac7a4e81b1a1">tkinter2Present</a> ()</td></tr>
-<tr class="separator:a5d53554f854779b54526ac7a4e81b1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803e4bfce6989645d3678292083340c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a803e4bfce6989645d3678292083340c0">tfd_replaceSubStr</a> (char const *aSource, char const *aOldSubStr, char const *aNewSubStr, char *aoDestination)</td></tr>
+<tr class="separator:a803e4bfce6989645d3678292083340c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3beb3f1dca5f349b7af2b398e8082e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4c3beb3f1dca5f349b7af2b398e8082e">filenameValid</a> (char const *aFileNameWithoutPath)</td></tr>
+<tr class="separator:a4c3beb3f1dca5f349b7af2b398e8082e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e63ac78de438ae96c964f71005f43d8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4e63ac78de438ae96c964f71005f43d8">fileExists</a> (char const *aFilePathAndName)</td></tr>
+<tr class="separator:a4e63ac78de438ae96c964f71005f43d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5f7e6887a84fa89753f97d0422a380"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#afb5f7e6887a84fa89753f97d0422a380">wipefile</a> (char const *aFilename)</td></tr>
+<tr class="separator:afb5f7e6887a84fa89753f97d0422a380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789b9cfa9fb2cf888db0246f9c2dca9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a789b9cfa9fb2cf888db0246f9c2dca9a">tfd_quoteDetected</a> (char const *aString)</td></tr>
+<tr class="separator:a789b9cfa9fb2cf888db0246f9c2dca9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a8c6160d266c22471c92d312a95ac0"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a25a8c6160d266c22471c92d312a95ac0">ensureFilesExist</a> (char *aDestination, char const *aSourcePathsAndNames)</td></tr>
+<tr class="separator:a25a8c6160d266c22471c92d312a95ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a75d29f7cc1a6606e1b709fb2d13756"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a6a75d29f7cc1a6606e1b709fb2d13756">tfd_isDarwin</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a6a75d29f7cc1a6606e1b709fb2d13756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e751e9e56dccd769a6b46d9fbbb3e8b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a8e751e9e56dccd769a6b46d9fbbb3e8b">dirExists</a> (char const *aDirPath)</td></tr>
+<tr class="separator:a8e751e9e56dccd769a6b46d9fbbb3e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c08f25c3ef21ad9751ce4e167d962d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a59c08f25c3ef21ad9751ce4e167d962d">detectPresence</a> (char const *aExecutable)</td></tr>
+<tr class="separator:a59c08f25c3ef21ad9751ce4e167d962d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1826e1aa138f7342056fb2c78879d93"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aa1826e1aa138f7342056fb2c78879d93">getVersion</a> (char const *aExecutable)</td></tr>
+<tr class="separator:aa1826e1aa138f7342056fb2c78879d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c7539481edef61716be515bffe6669"><td class="memItemLeft" align="right" valign="top">static int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a90c7539481edef61716be515bffe6669">getMajorMinorPatch</a> (char const *aExecutable)</td></tr>
+<tr class="separator:a90c7539481edef61716be515bffe6669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954a6bd12583a32a5c204ef4e8fcb3c5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a954a6bd12583a32a5c204ef4e8fcb3c5">tryCommand</a> (char const *aCommand)</td></tr>
+<tr class="separator:a954a6bd12583a32a5c204ef4e8fcb3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132d61d56463b9f8f38111bde865a6b4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a132d61d56463b9f8f38111bde865a6b4">isTerminalRunning</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a132d61d56463b9f8f38111bde865a6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4008e85bddaea8f3aac9e8866735bf"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#adf4008e85bddaea8f3aac9e8866735bf">dialogNameOnly</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:adf4008e85bddaea8f3aac9e8866735bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f8aa977cd899f2e44c677491cb1a5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a47f8aa977cd899f2e44c677491cb1a5d">isDialogVersionBetter09b</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a47f8aa977cd899f2e44c677491cb1a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc205dab59e5c68d541aa62ae6793a96"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#adc205dab59e5c68d541aa62ae6793a96">whiptailPresentOnly</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:adc205dab59e5c68d541aa62ae6793a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb27c82040748f9ed13e6d803e5ec74c"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#abb27c82040748f9ed13e6d803e5ec74c">terminalName</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:abb27c82040748f9ed13e6d803e5ec74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2497154987af60e28a041af366728368"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a2497154987af60e28a041af366728368">dialogName</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a2497154987af60e28a041af366728368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ed717116731f10c744d92f27042492"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a52ed717116731f10c744d92f27042492">whiptailPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a52ed717116731f10c744d92f27042492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6f0894743de5d9d85408deb51cac51"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ace6f0894743de5d9d85408deb51cac51">graphicMode</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:ace6f0894743de5d9d85408deb51cac51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24954081edc416d569cf41e5140c2d1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#af24954081edc416d569cf41e5140c2d1">pactlPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:af24954081edc416d569cf41e5140c2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5171c842f8a29471dd479114347aaf8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ac5171c842f8a29471dd479114347aaf8">speakertestPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:ac5171c842f8a29471dd479114347aaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6a3c4bfcebd2d84adc10da9710271b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a0b6a3c4bfcebd2d84adc10da9710271b">playPresent</a> ()</td></tr>
+<tr class="separator:a0b6a3c4bfcebd2d84adc10da9710271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a15fc383ad618fc6689ae8d612d0ab"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ae9a15fc383ad618fc6689ae8d612d0ab">beepexePresent</a> ()</td></tr>
+<tr class="separator:ae9a15fc383ad618fc6689ae8d612d0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f365a63ff70ac2fcbbf5923bab4a141"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a1f365a63ff70ac2fcbbf5923bab4a141">beepPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a1f365a63ff70ac2fcbbf5923bab4a141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe12b48306b2f76c96ba459c0a32fec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a3fe12b48306b2f76c96ba459c0a32fec">xmessagePresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a3fe12b48306b2f76c96ba459c0a32fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534a425bbbaeaea0f48ceb48ebce8129"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a534a425bbbaeaea0f48ceb48ebce8129">gxmessagePresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a534a425bbbaeaea0f48ceb48ebce8129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c50a053d690eb0e3a134dd20464f14"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a73c50a053d690eb0e3a134dd20464f14">gmessagePresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a73c50a053d690eb0e3a134dd20464f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd3781e2bf25c58931d74a91cba4d3e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#affd3781e2bf25c58931d74a91cba4d3e">notifysendPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:affd3781e2bf25c58931d74a91cba4d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9677656a80e40a01f7862b7b0d9bed6e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a9677656a80e40a01f7862b7b0d9bed6e">perlPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a9677656a80e40a01f7862b7b0d9bed6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3525e4f5f301fa91e3e4575ab2e0042f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a3525e4f5f301fa91e3e4575ab2e0042f">afplayPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a3525e4f5f301fa91e3e4575ab2e0042f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340a95c24c9e36eac5e8d3d41e69e316"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a340a95c24c9e36eac5e8d3d41e69e316">xdialogPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a340a95c24c9e36eac5e8d3d41e69e316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a975a42ad504050daa9c7f132e280d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a26a975a42ad504050daa9c7f132e280d">gdialogPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a26a975a42ad504050daa9c7f132e280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8e4657dc09540d450c4d9c2f40e462"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a8c8e4657dc09540d450c4d9c2f40e462">osascriptPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a8c8e4657dc09540d450c4d9c2f40e462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207f7a0539c4f1488d49a4f05a0cdb73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a207f7a0539c4f1488d49a4f05a0cdb73">tfd_qarmaPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a207f7a0539c4f1488d49a4f05a0cdb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11ed1c0d8ae0c30f5453048d1cdf7d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ae11ed1c0d8ae0c30f5453048d1cdf7d0">tfd_matedialogPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:ae11ed1c0d8ae0c30f5453048d1cdf7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7ff3f21aee78c73276da8eba075edd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a0f7ff3f21aee78c73276da8eba075edd">tfd_shellementaryPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a0f7ff3f21aee78c73276da8eba075edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fdc38cfcc89302704d4554221c85f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a15fdc38cfcc89302704d4554221c85f7">tfd_xpropPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a15fdc38cfcc89302704d4554221c85f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae8f7bd22b5c7d457771295e9a04cc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a1ae8f7bd22b5c7d457771295e9a04cc5">tfd_zenityPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a1ae8f7bd22b5c7d457771295e9a04cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5702c782c083fb90757b8bb6a95de325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5702c782c083fb90757b8bb6a95de325">tfd_yadPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a5702c782c083fb90757b8bb6a95de325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca140f9622c8b2ac27a1a7b93d426cf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aca140f9622c8b2ac27a1a7b93d426cf6">tfd_zenity3Present</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:aca140f9622c8b2ac27a1a7b93d426cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c4dde5df84387f5e8764f33bf04ba3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a77c4dde5df84387f5e8764f33bf04ba3">tfd_kdialogPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a77c4dde5df84387f5e8764f33bf04ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea610393d0670ec39a589bf9933390d5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aea610393d0670ec39a589bf9933390d5">osx9orBetter</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:aea610393d0670ec39a589bf9933390d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26815ea1b89f91afe306eb553643ef4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#af26815ea1b89f91afe306eb553643ef4">python3Present</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:af26815ea1b89f91afe306eb553643ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88663c2faf8d055b310097b44d9bb6dc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a88663c2faf8d055b310097b44d9bb6dc">python2Present</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a88663c2faf8d055b310097b44d9bb6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2fc2b6dc016de1e409061009dcafcc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5d2fc2b6dc016de1e409061009dcafcc">tkinter3Present</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a5d2fc2b6dc016de1e409061009dcafcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a88b80d423f3774772e9f4425843e22"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a4a88b80d423f3774772e9f4425843e22">tkinter2Present</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a4a88b80d423f3774772e9f4425843e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a41668657205389536d7cde08f77e40"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a1a41668657205389536d7cde08f77e40">pythonDbusPresent</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>)</td></tr>
+<tr class="separator:a1a41668657205389536d7cde08f77e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7828fcd639e7fbb2aef0b7571dc4e2c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a7828fcd639e7fbb2aef0b7571dc4e2c9">sigHandler</a> (int signum)</td></tr>
+<tr class="separator:a7828fcd639e7fbb2aef0b7571dc4e2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a570a95a1dce391ed29f7fc5861ecee69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a570a95a1dce391ed29f7fc5861ecee69">tinyfd_forceConsole</a></td></tr>
+<tr class="memitem:a99cc4a09215f4e4d40eb73c5bdcaf40e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a99cc4a09215f4e4d40eb73c5bdcaf40e">tinyfd_version</a> [8] = &quot;3.8.8&quot;</td></tr>
+<tr class="separator:a99cc4a09215f4e4d40eb73c5bdcaf40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4030a6c220e5a7d8732ac0e03e4ae04"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ac4030a6c220e5a7d8732ac0e03e4ae04">tinyfd_needs</a> []</td></tr>
+<tr class="separator:ac4030a6c220e5a7d8732ac0e03e4ae04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeedca8836f3872ca50ebfe723423b25d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aeedca8836f3872ca50ebfe723423b25d">tinyfd_verbose</a> = 0</td></tr>
+<tr class="separator:aeedca8836f3872ca50ebfe723423b25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3441498bf910ce05abb03d769782074"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#aa3441498bf910ce05abb03d769782074">tinyfd_silent</a> = 1</td></tr>
+<tr class="separator:aa3441498bf910ce05abb03d769782074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7e8db3c74f9830ad9ddcf5b0dee82f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a0b7e8db3c74f9830ad9ddcf5b0dee82f">tinyfd_allowCursesDialogs</a> = 1</td></tr>
+<tr class="separator:a0b7e8db3c74f9830ad9ddcf5b0dee82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570a95a1dce391ed29f7fc5861ecee69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a570a95a1dce391ed29f7fc5861ecee69">tinyfd_forceConsole</a> = 0</td></tr>
 <tr class="separator:a570a95a1dce391ed29f7fc5861ecee69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82bccad0a6f0cae09188b400783d259"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#af82bccad0a6f0cae09188b400783d259">tinyfd_assumeGraphicDisplay</a> = 0</td></tr>
+<tr class="separator:af82bccad0a6f0cae09188b400783d259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53091a8e12d2a1da8115f34075919138"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a53091a8e12d2a1da8115f34075919138">tinyfd_response</a> [1024]</td></tr>
+<tr class="separator:a53091a8e12d2a1da8115f34075919138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f689b2493dcd6fcc70ab5f71fedb1b2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a8f689b2493dcd6fcc70ab5f71fedb1b2">gWarningDisplayed</a> = 0</td></tr>
 <tr class="separator:a8f689b2493dcd6fcc70ab5f71fedb1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad70c29eb98f8f5bc7d84c0e8948b4ce8"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ad70c29eb98f8f5bc7d84c0e8948b4ce8">gTitle</a> [] = &quot;missing software! (so we switch to basic console input)&quot;</td></tr>
+<tr class="memitem:ad70c29eb98f8f5bc7d84c0e8948b4ce8"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ad70c29eb98f8f5bc7d84c0e8948b4ce8">gTitle</a> [] = &quot;missing software! (we will try basic console input)&quot;</td></tr>
 <tr class="separator:ad70c29eb98f8f5bc7d84c0e8948b4ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a453344da48e83454eca03b2cbc82fe5b"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a453344da48e83454eca03b2cbc82fe5b">gMessageWin</a> []</td></tr>
-<tr class="separator:a453344da48e83454eca03b2cbc82fe5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f8dca31c53ac752139dd2ef87be39c"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ae6f8dca31c53ac752139dd2ef87be39c">gMessageUnix</a> []</td></tr>
-<tr class="separator:ae6f8dca31c53ac752139dd2ef87be39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9185939b446f5dbc3ac54712e34ff6f"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ad9185939b446f5dbc3ac54712e34ff6f">gPython2Name</a> [16]</td></tr>
 <tr class="separator:ad9185939b446f5dbc3ac54712e34ff6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b455cb5ada701c88d3981f850c4fa7"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#ad1b455cb5ada701c88d3981f850c4fa7">gPython3Name</a> [16]</td></tr>
+<tr class="separator:ad1b455cb5ada701c88d3981f850c4fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed241b7966a7201a1971a00d356304b"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus-tinyfiledialogs_8h.html#a5ed241b7966a7201a1971a00d356304b">gPythonName</a> [16]</td></tr>
+<tr class="separator:a5ed241b7966a7201a1971a00d356304b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aab03206e07f091b649d81cfff24b751b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab03206e07f091b649d81cfff24b751b">&#9670;&nbsp;</a></span>MAX_MULTIPLE</h2>
+<a id="a3024ccd4a9af5109d24e6c57565d74a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3024ccd4a9af5109d24e6c57565d74a1">&#9670;&nbsp;</a></span>_POSIX_C_SOURCE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_MULTIPLE&#160;&#160;&#160;32</td>
+          <td class="memname">#define _POSIX_C_SOURCE&#160;&#160;&#160;2 /* to accept POSIX 2 in old ANSI C standards */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a790242f2501dc16dd67d87533154258c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790242f2501dc16dd67d87533154258c">&#9670;&nbsp;</a></span>LOW_MULTIPLE_FILES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOW_MULTIPLE_FILES&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0612543f1a6828a8b0008da041c06f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0612543f1a6828a8b0008da041c06f6a">&#9670;&nbsp;</a></span>MAX_MULTIPLE_FILES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MULTIPLE_FILES&#160;&#160;&#160;1024</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -235,8 +349,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6f93bcb5f463e8eee12312f01be4f5b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f93bcb5f463e8eee12312f01be4f5b6">&#9670;&nbsp;</a></span>detectPresence()</h2>
+<a id="a3525e4f5f301fa91e3e4575ab2e0042f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3525e4f5f301fa91e3e4575ab2e0042f">&#9670;&nbsp;</a></span>afplayPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,10 +359,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int detectPresence </td>
+          <td class="memname">static int afplayPresent </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
-          <td class="paramname"><em>aExecutable</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -261,8 +375,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a57ecc69d243ddc1d3fe613ffacdb9702"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57ecc69d243ddc1d3fe613ffacdb9702">&#9670;&nbsp;</a></span>dialogName()</h2>
+<a id="ae9a15fc383ad618fc6689ae8d612d0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a15fc383ad618fc6689ae8d612d0ab">&#9670;&nbsp;</a></span>beepexePresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +385,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const char* dialogName </td>
+          <td class="memname">static int beepexePresent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -286,8 +400,112 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b13bedd2f300e88b427f5c48fab0c02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b13bedd2f300e88b427f5c48fab0c02">&#9670;&nbsp;</a></span>dirExists()</h2>
+<a id="a1f365a63ff70ac2fcbbf5923bab4a141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f365a63ff70ac2fcbbf5923bab4a141">&#9670;&nbsp;</a></span>beepPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int beepPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59c08f25c3ef21ad9751ce4e167d962d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c08f25c3ef21ad9751ce4e167d962d">&#9670;&nbsp;</a></span>detectPresence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int detectPresence </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aExecutable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2497154987af60e28a041af366728368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2497154987af60e28a041af366728368">&#9670;&nbsp;</a></span>dialogName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* dialogName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf4008e85bddaea8f3aac9e8866735bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4008e85bddaea8f3aac9e8866735bf">&#9670;&nbsp;</a></span>dialogNameOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* dialogNameOnly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e751e9e56dccd769a6b46d9fbbb3e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e751e9e56dccd769a6b46d9fbbb3e8b">&#9670;&nbsp;</a></span>dirExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +516,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int dirExists </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDirPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -312,8 +530,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f5415fd52d8566847df8a4a2942ae2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5415fd52d8566847df8a4a2942ae2e">&#9670;&nbsp;</a></span>ensureFilesExist()</h2>
+<a id="a25a8c6160d266c22471c92d312a95ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a8c6160d266c22471c92d312a95ac0">&#9670;&nbsp;</a></span>ensureFilesExist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,15 +540,15 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const char* ensureFilesExist </td>
+          <td class="memname">static char* ensureFilesExist </td>
           <td>(</td>
-          <td class="paramtype">char *const&#160;</td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>aDestination</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aSourcePathsAndNames</em>&#160;</td>
         </tr>
         <tr>
@@ -348,8 +566,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe0bae3c48a66aad831f30834eeccc06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe0bae3c48a66aad831f30834eeccc06">&#9670;&nbsp;</a></span>ensureFinalSlash()</h2>
+<a id="a1b9ba9ef8cebd0306a4bb4fd20981ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9ba9ef8cebd0306a4bb4fd20981ebc">&#9670;&nbsp;</a></span>ensureFinalSlash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +578,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> ensureFinalSlash </td>
           <td>(</td>
-          <td class="paramtype">char *const&#160;</td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>aioString</em></td><td>)</td>
           <td></td>
         </tr>
@@ -374,8 +592,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2402060108b45c5bb1a3214813d57e6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2402060108b45c5bb1a3214813d57e6b">&#9670;&nbsp;</a></span>fileExists()</h2>
+<a id="a4e63ac78de438ae96c964f71005f43d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e63ac78de438ae96c964f71005f43d8">&#9670;&nbsp;</a></span>fileExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +604,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int fileExists </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aFilePathAndName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -400,8 +618,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae28f503764a748ed1f95f4dff368859a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae28f503764a748ed1f95f4dff368859a">&#9670;&nbsp;</a></span>filenameValid()</h2>
+<a id="a4c3beb3f1dca5f349b7af2b398e8082e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3beb3f1dca5f349b7af2b398e8082e">&#9670;&nbsp;</a></span>filenameValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +630,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int filenameValid </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aFileNameWithoutPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -426,8 +644,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a18a581f6eaf875774c93284e5f56dce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18a581f6eaf875774c93284e5f56dce5">&#9670;&nbsp;</a></span>gdialogPresent()</h2>
+<a id="a26a975a42ad504050daa9c7f132e280d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a975a42ad504050daa9c7f132e280d">&#9670;&nbsp;</a></span>gdialogPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,6 +656,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int gdialogPresent </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -451,8 +670,60 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af66d838ed078419a713c2b876f967d7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af66d838ed078419a713c2b876f967d7e">&#9670;&nbsp;</a></span>getLastName()</h2>
+<a id="ade09309ff58892f8bcaa444e440c36d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade09309ff58892f8bcaa444e440c36d0">&#9670;&nbsp;</a></span>getCurDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* getCurDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41c87c0dfbae15a0f58ac7dc6aae9df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c87c0dfbae15a0f58ac7dc6aae9df3">&#9670;&nbsp;</a></span>getenvDISPLAY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getenvDISPLAY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25e21eec46d56cee2ede392879228b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e21eec46d56cee2ede392879228b99">&#9670;&nbsp;</a></span>getLastName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,13 +734,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static char* getLastName </td>
           <td>(</td>
-          <td class="paramtype">char *const&#160;</td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>aoDestination</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aSource</em>&#160;</td>
         </tr>
         <tr>
@@ -487,8 +758,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a665105580a5c190f885c91b039b2229c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a665105580a5c190f885c91b039b2229c">&#9670;&nbsp;</a></span>getPathWithoutFinalSlash()</h2>
+<a id="a90c7539481edef61716be515bffe6669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c7539481edef61716be515bffe6669">&#9670;&nbsp;</a></span>getMajorMinorPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int* getMajorMinorPatch </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aExecutable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b6ad1f832c8368c8799447d661c2e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6ad1f832c8368c8799447d661c2e4b">&#9670;&nbsp;</a></span>getPathWithoutFinalSlash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,13 +796,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static char* getPathWithoutFinalSlash </td>
           <td>(</td>
-          <td class="paramtype">char *const&#160;</td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>aoDestination</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aSource</em>&#160;</td>
         </tr>
         <tr>
@@ -523,8 +820,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac8d2428b6f571efd1d6d14b7067938fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d2428b6f571efd1d6d14b7067938fa">&#9670;&nbsp;</a></span>graphicMode()</h2>
+<a id="aa1826e1aa138f7342056fb2c78879d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1826e1aa138f7342056fb2c78879d93">&#9670;&nbsp;</a></span>getVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,8 +830,35 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int graphicMode </td>
+          <td class="memname">static char* getVersion </td>
           <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aExecutable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73c50a053d690eb0e3a134dd20464f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c50a053d690eb0e3a134dd20464f14">&#9670;&nbsp;</a></span>gmessagePresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int gmessagePresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -548,8 +872,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4813e9a9f924bf8fa2fd10d64f2a01f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4813e9a9f924bf8fa2fd10d64f2a01f3">&#9670;&nbsp;</a></span>gxmessagePresent()</h2>
+<a id="ace6f0894743de5d9d85408deb51cac51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6f0894743de5d9d85408deb51cac51">&#9670;&nbsp;</a></span>graphicMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int graphicMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a534a425bbbaeaea0f48ceb48ebce8129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534a425bbbaeaea0f48ceb48ebce8129">&#9670;&nbsp;</a></span>gxmessagePresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,6 +910,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int gxmessagePresent </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -609,8 +960,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9cf394d7bdd2b7ffcdcea67100579ae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cf394d7bdd2b7ffcdcea67100579ae0">&#9670;&nbsp;</a></span>isDarwin()</h2>
+<a id="a47f8aa977cd899f2e44c677491cb1a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f8aa977cd899f2e44c677491cb1a5d">&#9670;&nbsp;</a></span>isDialogVersionBetter09b()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isDialogVersionBetter09b </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a132d61d56463b9f8f38111bde865a6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132d61d56463b9f8f38111bde865a6b4">&#9670;&nbsp;</a></span>isTerminalRunning()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,8 +988,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int isDarwin </td>
+          <td class="memname">static int isTerminalRunning </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -634,33 +1004,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af1b7d60b71fef56e437c2f149245887d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1b7d60b71fef56e437c2f149245887d">&#9670;&nbsp;</a></span>kdialogPresent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int kdialogPresent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad5b049a850599475d53f860fc9db26fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5b049a850599475d53f860fc9db26fc">&#9670;&nbsp;</a></span>notifysendPresent()</h2>
+<a id="affd3781e2bf25c58931d74a91cba4d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd3781e2bf25c58931d74a91cba4d3e">&#9670;&nbsp;</a></span>notifysendPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,6 +1016,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int notifysendPresent </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -684,8 +1030,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab686858dd13f512c5d94d715e5153f06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab686858dd13f512c5d94d715e5153f06">&#9670;&nbsp;</a></span>osascriptPresent()</h2>
+<a id="a8c8e4657dc09540d450c4d9c2f40e462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8e4657dc09540d450c4d9c2f40e462">&#9670;&nbsp;</a></span>osascriptPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,6 +1042,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int osascriptPresent </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -709,8 +1056,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4dca85a6156606154f63c09f71a5fd4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dca85a6156606154f63c09f71a5fd4c">&#9670;&nbsp;</a></span>replaceChr()</h2>
+<a id="aea610393d0670ec39a589bf9933390d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea610393d0670ec39a589bf9933390d5">&#9670;&nbsp;</a></span>osx9orBetter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,27 +1066,11 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int replaceChr </td>
+          <td class="memname">static int osx9orBetter </td>
           <td>(</td>
-          <td class="paramtype">char *const&#160;</td>
-          <td class="paramname"><em>aString</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">char const&#160;</td>
-          <td class="paramname"><em>aOldChr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char const&#160;</td>
-          <td class="paramname"><em>aNewChr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -751,8 +1082,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75636a5024e43832363f670ebf226e3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75636a5024e43832363f670ebf226e3f">&#9670;&nbsp;</a></span>replaceSubStr()</h2>
+<a id="af24954081edc416d569cf41e5140c2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24954081edc416d569cf41e5140c2d1">&#9670;&nbsp;</a></span>pactlPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -761,33 +1092,140 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> replaceSubStr </td>
+          <td class="memname">static int pactlPresent </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
-          <td class="paramname"><em>aSource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
-          <td class="paramname"><em>aOldSubStr</em>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9677656a80e40a01f7862b7b0d9bed6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9677656a80e40a01f7862b7b0d9bed6e">&#9670;&nbsp;</a></span>perlPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">static int perlPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
-          <td class="paramname"><em>aNewSubStr</em>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b6a3c4bfcebd2d84adc10da9710271b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6a3c4bfcebd2d84adc10da9710271b">&#9670;&nbsp;</a></span>playPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">static int playPresent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *const&#160;</td>
-          <td class="paramname"><em>aoDestination</em>&#160;</td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88663c2faf8d055b310097b44d9bb6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88663c2faf8d055b310097b44d9bb6dc">&#9670;&nbsp;</a></span>python2Present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
+          <td class="memname">static int python2Present </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af26815ea1b89f91afe306eb553643ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26815ea1b89f91afe306eb553643ef4">&#9670;&nbsp;</a></span>python3Present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int python3Present </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a41668657205389536d7cde08f77e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a41668657205389536d7cde08f77e40">&#9670;&nbsp;</a></span>pythonDbusPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int pythonDbusPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -835,8 +1273,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab684f7416f4d82894c087c2a6eb5a2c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab684f7416f4d82894c087c2a6eb5a2c5">&#9670;&nbsp;</a></span>terminalName()</h2>
+<a id="a7828fcd639e7fbb2aef0b7571dc4e2c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7828fcd639e7fbb2aef0b7571dc4e2c9">&#9670;&nbsp;</a></span>sigHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -845,8 +1283,35 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const char* terminalName </td>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> sigHandler </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5171c842f8a29471dd479114347aaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5171c842f8a29471dd479114347aaf8">&#9670;&nbsp;</a></span>speakertestPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int speakertestPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -860,22 +1325,286 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a07a737a93c27d364599c911dd50a872a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07a737a93c27d364599c911dd50a872a">&#9670;&nbsp;</a></span>tinyfd_colorChooser()</h2>
+<a id="abb27c82040748f9ed13e6d803e5ec74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb27c82040748f9ed13e6d803e5ec74c">&#9670;&nbsp;</a></span>terminalName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* terminalName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a75d29f7cc1a6606e1b709fb2d13756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a75d29f7cc1a6606e1b709fb2d13756">&#9670;&nbsp;</a></span>tfd_isDarwin()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyfd_colorChooser </td>
+          <td class="memname">int tfd_isDarwin </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77c4dde5df84387f5e8764f33bf04ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c4dde5df84387f5e8764f33bf04ba3">&#9670;&nbsp;</a></span>tfd_kdialogPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_kdialogPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae11ed1c0d8ae0c30f5453048d1cdf7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11ed1c0d8ae0c30f5453048d1cdf7d0">&#9670;&nbsp;</a></span>tfd_matedialogPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_matedialogPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a207f7a0539c4f1488d49a4f05a0cdb73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207f7a0539c4f1488d49a4f05a0cdb73">&#9670;&nbsp;</a></span>tfd_qarmaPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_qarmaPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a789b9cfa9fb2cf888db0246f9c2dca9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789b9cfa9fb2cf888db0246f9c2dca9a">&#9670;&nbsp;</a></span>tfd_quoteDetected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_quoteDetected </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a803e4bfce6989645d3678292083340c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803e4bfce6989645d3678292083340c0">&#9670;&nbsp;</a></span>tfd_replaceSubStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> tfd_replaceSubStr </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aOldSubStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aNewSubStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>aoDestination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f7ff3f21aee78c73276da8eba075edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7ff3f21aee78c73276da8eba075edd">&#9670;&nbsp;</a></span>tfd_shellementaryPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_shellementaryPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15fdc38cfcc89302704d4554221c85f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15fdc38cfcc89302704d4554221c85f7">&#9670;&nbsp;</a></span>tfd_xpropPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_xpropPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5702c782c083fb90757b8bb6a95de325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5702c782c083fb90757b8bb6a95de325">&#9670;&nbsp;</a></span>tfd_yadPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_yadPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca140f9622c8b2ac27a1a7b93d426cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca140f9622c8b2ac27a1a7b93d426cf6">&#9670;&nbsp;</a></span>tfd_zenity3Present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_zenity3Present </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ae8f7bd22b5c7d457771295e9a04cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae8f7bd22b5c7d457771295e9a04cc5">&#9670;&nbsp;</a></span>tfd_zenityPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tfd_zenityPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c19cd62f9b9ff0f7def8971d2bc3f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c19cd62f9b9ff0f7def8971d2bc3f9d">&#9670;&nbsp;</a></span>tinyfd_beep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> tinyfd_beep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa695aeb3e9421913447afe95e6521e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa695aeb3e9421913447afe95e6521e7f">&#9670;&nbsp;</a></span>tinyfd_colorChooser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * tinyfd_colorChooser </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aTitle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDefaultHexRGB</em>, </td>
         </tr>
         <tr>
@@ -900,28 +1629,64 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa62ab6b77b31cf202c0c28301d6cef1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa62ab6b77b31cf202c0c28301d6cef1e">&#9670;&nbsp;</a></span>tinyfd_inputBox()</h2>
+<a id="a387b4d21335e8f5ff11526b05b443e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a387b4d21335e8f5ff11526b05b443e13">&#9670;&nbsp;</a></span>tinyfd_getGlobalChar()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyfd_inputBox </td>
+          <td class="memname">const char * tinyfd_getGlobalChar </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aCharVariableName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2369e180c58a73d4861bb0130cd82dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2369e180c58a73d4861bb0130cd82dab">&#9670;&nbsp;</a></span>tinyfd_getGlobalInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tinyfd_getGlobalInt </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aIntVariableName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2db23282c31c40c4c12b4847b92659b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2db23282c31c40c4c12b4847b92659b">&#9670;&nbsp;</a></span>tinyfd_inputBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * tinyfd_inputBox </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aTitle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aMessage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDefaultInput</em>&#160;</td>
         </tr>
         <tr>
@@ -934,8 +1699,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae02051d7645e0674b53cea5b134e0c8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae02051d7645e0674b53cea5b134e0c8e">&#9670;&nbsp;</a></span>tinyfd_messageBox()</h2>
+<a id="ac5082e6c1f4693110f1703664b3fa9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5082e6c1f4693110f1703664b3fa9fc">&#9670;&nbsp;</a></span>tinyfd_messageBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -943,31 +1708,31 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int tinyfd_messageBox </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aTitle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aMessage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDialogType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aIconType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int const&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>aDefaultButton</em>&#160;</td>
         </tr>
         <tr>
@@ -980,46 +1745,80 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acbcc57955f2b7902dd438fbe6878cf66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbcc57955f2b7902dd438fbe6878cf66">&#9670;&nbsp;</a></span>tinyfd_openFileDialog()</h2>
+<a id="ad91628b8a0640682241aa189f03a30ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91628b8a0640682241aa189f03a30ba">&#9670;&nbsp;</a></span>tinyfd_notifyPopup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyfd_openFileDialog </td>
+          <td class="memname">int tinyfd_notifyPopup </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aTitle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aIconType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cffdf70572bb1388d8bef1f1645734f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cffdf70572bb1388d8bef1f1645734f">&#9670;&nbsp;</a></span>tinyfd_openFileDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * tinyfd_openFileDialog </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDefaultPathAndFile</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int const&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>aNumOfFilterPatterns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const *const&#160;</td>
+          <td class="paramtype">char const *const *&#160;</td>
           <td class="paramname"><em>aFilterPatterns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aSingleFilterDescription</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int const&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>aAllowMultipleSelects</em>&#160;</td>
         </tr>
         <tr>
@@ -1032,40 +1831,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b9387551d93e63cb5edc68bc50032d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b9387551d93e63cb5edc68bc50032d7">&#9670;&nbsp;</a></span>tinyfd_saveFileDialog()</h2>
+<a id="a52e759ffc973e4ac401dee78915e1908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e759ffc973e4ac401dee78915e1908">&#9670;&nbsp;</a></span>tinyfd_saveFileDialog()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyfd_saveFileDialog </td>
+          <td class="memname">char * tinyfd_saveFileDialog </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aTitle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDefaultPathAndFile</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int const&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>aNumOfFilterPatterns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const *const&#160;</td>
+          <td class="paramtype">char const *const *&#160;</td>
           <td class="paramname"><em>aFilterPatterns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aSingleFilterDescription</em>&#160;</td>
         </tr>
         <tr>
@@ -1078,22 +1877,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a24392c044f7a21a1adcae7759f8b19f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24392c044f7a21a1adcae7759f8b19f1">&#9670;&nbsp;</a></span>tinyfd_selectFolderDialog()</h2>
+<a id="a26568df53ae8a94f7ffbf5a267c9a6ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26568df53ae8a94f7ffbf5a267c9a6ae">&#9670;&nbsp;</a></span>tinyfd_selectFolderDialog()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyfd_selectFolderDialog </td>
+          <td class="memname">char * tinyfd_selectFolderDialog </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aTitle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aDefaultPath</em>&#160;</td>
         </tr>
         <tr>
@@ -1106,8 +1905,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d53554f854779b54526ac7a4e81b1a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d53554f854779b54526ac7a4e81b1a1">&#9670;&nbsp;</a></span>tkinter2Present()</h2>
+<a id="a1e4d4275e2731ee2c0939ffd711446cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4d4275e2731ee2c0939ffd711446cd">&#9670;&nbsp;</a></span>tinyfd_setGlobalInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tinyfd_setGlobalInt </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aIntVariableName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a88b80d423f3774772e9f4425843e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a88b80d423f3774772e9f4425843e22">&#9670;&nbsp;</a></span>tkinter2Present()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1118,6 +1945,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int tkinter2Present </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1131,8 +1959,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a52162784767214d0f73997add9c4c416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52162784767214d0f73997add9c4c416">&#9670;&nbsp;</a></span>tryCommand()</h2>
+<a id="a5d2fc2b6dc016de1e409061009dcafcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2fc2b6dc016de1e409061009dcafcc">&#9670;&nbsp;</a></span>tkinter3Present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int tkinter3Present </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a954a6bd12583a32a5c204ef4e8fcb3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954a6bd12583a32a5c204ef4e8fcb3c5">&#9670;&nbsp;</a></span>tryCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1143,7 +1997,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int tryCommand </td>
           <td>(</td>
-          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>aCommand</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1157,8 +2011,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4088d63ec9a205d49007dfec9352e4b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4088d63ec9a205d49007dfec9352e4b4">&#9670;&nbsp;</a></span>whiptailPresent()</h2>
+<a id="a52ed717116731f10c744d92f27042492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ed717116731f10c744d92f27042492">&#9670;&nbsp;</a></span>whiptailPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1169,6 +2023,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int whiptailPresent </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1182,8 +2037,60 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7243b7327424978ee23e6e45c4f6a401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7243b7327424978ee23e6e45c4f6a401">&#9670;&nbsp;</a></span>xdialogPresent()</h2>
+<a id="adc205dab59e5c68d541aa62ae6793a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc205dab59e5c68d541aa62ae6793a96">&#9670;&nbsp;</a></span>whiptailPresentOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int whiptailPresentOnly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb5f7e6887a84fa89753f97d0422a380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5f7e6887a84fa89753f97d0422a380">&#9670;&nbsp;</a></span>wipefile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> wipefile </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>aFilename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a340a95c24c9e36eac5e8d3d41e69e316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340a95c24c9e36eac5e8d3d41e69e316">&#9670;&nbsp;</a></span>xdialogPresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1194,6 +2101,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int xdialogPresent </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1207,8 +2115,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5df0708fd358f224d2c16eeb8e0c44c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5df0708fd358f224d2c16eeb8e0c44c0">&#9670;&nbsp;</a></span>xmessagePresent()</h2>
+<a id="a3fe12b48306b2f76c96ba459c0a32fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe12b48306b2f76c96ba459c0a32fec">&#9670;&nbsp;</a></span>xmessagePresent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1219,56 +2127,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static int xmessagePresent </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af677f06c48d79a5976d2d3a70ed747eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af677f06c48d79a5976d2d3a70ed747eb">&#9670;&nbsp;</a></span>zenity3Present()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int zenity3Present </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb1317484f17bff27ccfa9a7a32198a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1317484f17bff27ccfa9a7a32198a3">&#9670;&nbsp;</a></span>zenityPresent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int zenityPresent </td>
-          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1283,59 +2142,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ae6f8dca31c53ac752139dd2ef87be39c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f8dca31c53ac752139dd2ef87be39c">&#9670;&nbsp;</a></span>gMessageUnix</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char gMessageUnix[]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;tiny file dialogs on UNIX needs:\n\tapplescript\</span></div>
-<div class="line"><span class="stringliteral">\nor\tzenity (version 3 for the color chooser)\nor\tkdialog\</span></div>
-<div class="line"><span class="stringliteral">\nor\tXdialog\nor\tpython 2 with tkinter\</span></div>
-<div class="line"><span class="stringliteral">\nor\tdialog (opens a console if needed)\</span></div>
-<div class="line"><span class="stringliteral">\nor\twhiptail, gdialog or gxmessage (really?)\</span></div>
-<div class="line"><span class="stringliteral">\nor\tit will open a console (if needed) for basic input (you had it comming!)&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a453344da48e83454eca03b2cbc82fe5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a453344da48e83454eca03b2cbc82fe5b">&#9670;&nbsp;</a></span>gMessageWin</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char gMessageWin[]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;tiny file dialogs on Windows needs:\n\t\</span></div>
-<div class="line"><span class="stringliteral">a graphic display\nor\tdialog.exe (enhanced console mode)\</span></div>
-<div class="line"><span class="stringliteral">\nor\ta console for basic input&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="ad9185939b446f5dbc3ac54712e34ff6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9185939b446f5dbc3ac54712e34ff6f">&#9670;&nbsp;</a></span>gPython2Name</h2>
 
@@ -1358,6 +2164,50 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ad1b455cb5ada701c88d3981f850c4fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b455cb5ada701c88d3981f850c4fa7">&#9670;&nbsp;</a></span>gPython3Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char gPython3Name[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ed241b7966a7201a1971a00d356304b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed241b7966a7201a1971a00d356304b">&#9670;&nbsp;</a></span>gPythonName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char gPythonName[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad70c29eb98f8f5bc7d84c0e8948b4ce8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad70c29eb98f8f5bc7d84c0e8948b4ce8">&#9670;&nbsp;</a></span>gTitle</h2>
 
@@ -1368,7 +2218,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char gTitle[] = &quot;missing software! (so we switch to basic console input)&quot;</td>
+          <td class="memname">char gTitle[] = &quot;missing software! (we will try basic console input)&quot;</td>
         </tr>
       </table>
   </td>
@@ -1402,6 +2252,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a0b7e8db3c74f9830ad9ddcf5b0dee82f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7e8db3c74f9830ad9ddcf5b0dee82f">&#9670;&nbsp;</a></span>tinyfd_allowCursesDialogs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tinyfd_allowCursesDialogs = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af82bccad0a6f0cae09188b400783d259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82bccad0a6f0cae09188b400783d259">&#9670;&nbsp;</a></span>tinyfd_assumeGraphicDisplay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tinyfd_assumeGraphicDisplay = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a570a95a1dce391ed29f7fc5861ecee69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a570a95a1dce391ed29f7fc5861ecee69">&#9670;&nbsp;</a></span>tinyfd_forceConsole</h2>
 
@@ -1409,7 +2287,91 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int tinyfd_forceConsole</td>
+          <td class="memname">int tinyfd_forceConsole = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4030a6c220e5a7d8732ac0e03e4ae04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4030a6c220e5a7d8732ac0e03e4ae04">&#9670;&nbsp;</a></span>tinyfd_needs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char tinyfd_needs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;\</span></div>
+<div class="line"><span class="stringliteral"> ___________\n\</span></div>
+<div class="line"><span class="stringliteral">/           \\ \n\</span></div>
+<div class="line"><span class="stringliteral">| tiny file |\n\</span></div>
+<div class="line"><span class="stringliteral">|  dialogs  |\n\</span></div>
+<div class="line"><span class="stringliteral">\\_____  ____/\n\</span></div>
+<div class="line"><span class="stringliteral">      \\|\</span></div>
+<div class="line"><span class="stringliteral">\ntiny file dialogs on UNIX needs:\</span></div>
+<div class="line"><span class="stringliteral">\n   applescript or kdialog or yad or Xdialog\</span></div>
+<div class="line"><span class="stringliteral">\nor zenity (or matedialog or shellementary or qarma)\</span></div>
+<div class="line"><span class="stringliteral">\nor python (2 or 3) + tkinter + python-dbus (optional)\</span></div>
+<div class="line"><span class="stringliteral">\nor dialog (opens console if needed)\</span></div>
+<div class="line"><span class="stringliteral">\nor xterm + bash (opens console for basic input)\</span></div>
+<div class="line"><span class="stringliteral">\nor existing console for basic input&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a53091a8e12d2a1da8115f34075919138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53091a8e12d2a1da8115f34075919138">&#9670;&nbsp;</a></span>tinyfd_response</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char tinyfd_response</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3441498bf910ce05abb03d769782074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3441498bf910ce05abb03d769782074">&#9670;&nbsp;</a></span>tinyfd_silent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tinyfd_silent = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeedca8836f3872ca50ebfe723423b25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeedca8836f3872ca50ebfe723423b25d">&#9670;&nbsp;</a></span>tinyfd_verbose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tinyfd_verbose = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99cc4a09215f4e4d40eb73c5bdcaf40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99cc4a09215f4e4d40eb73c5bdcaf40e">&#9670;&nbsp;</a></span>tinyfd_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char tinyfd_version = &quot;3.8.8&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1419,7 +2381,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:55 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

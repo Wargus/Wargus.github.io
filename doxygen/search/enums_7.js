@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['locbasetype_13768',['LocBaseType',['../spell__spawnmissile_8h.html#a7c7e25af7893c5502f6e8b3452730713',1,'spell_spawnmissile.h']]]
+  ['gameresults_14149',['GameResults',['../results_8h.html#aa7bd90ce8f7f8fff95fd8fa4c90c532f',1,'results.h']]],
+  ['gametypes_14150',['GameTypes',['../settings_8h.html#a93994a16367c56cc8b776db421376819',1,'settings.h']]],
+  ['groupselectionmode_14151',['GroupSelectionMode',['../unittype_8h.html#ab96c61edcddf49116827ef61f0b41ac0',1,'unittype.h']]]
 ];

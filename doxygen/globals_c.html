@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -125,6 +125,9 @@ $(function() {
 <li>CallLuaStringFunction()
 : <a class="el" href="script_8cpp.html#a2d38a9e7342fb1f6f0f91535fab32945">script.cpp</a>
 </li>
+<li>CallPeriod
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91">mainloop.cpp</a>
+</li>
 <li>CanAccessFile()
 : <a class="el" href="iolib_8h.html#a3ff7f191072cb5a016ef50b0b6694d42">iolib.h</a>
 , <a class="el" href="iolib_8cpp.html#a3ff7f191072cb5a016ef50b0b6694d42">iolib.cpp</a>
@@ -150,8 +153,8 @@ $(function() {
 : <a class="el" href="mouse_8cpp.html#a78c2f9a5f3c3e3764f50e6aaaceb716e">mouse.cpp</a>
 </li>
 <li>CanBuildUnitType()
-: <a class="el" href="build_8cpp.html#ae4c0b1f704da4c1b4756bd9b8c14cd2b">build.cpp</a>
-, <a class="el" href="unit_8h.html#ae4c0b1f704da4c1b4756bd9b8c14cd2b">unit.h</a>
+: <a class="el" href="unit_8h.html#ae4c0b1f704da4c1b4756bd9b8c14cd2b">unit.h</a>
+, <a class="el" href="build_8cpp.html#ae4c0b1f704da4c1b4756bd9b8c14cd2b">build.cpp</a>
 </li>
 <li>CanCastSpell()
 : <a class="el" href="spells_8h.html#a64b90c580cd6d44910eb187c21c6e2ce">spells.h</a>
@@ -490,6 +493,12 @@ $(function() {
 <li>CclDiv()
 : <a class="el" href="script_8cpp.html#a23e5719baec3b998eeb39affe4c4a5dc">script.cpp</a>
 </li>
+<li>CclEditorResizeMap()
+: <a class="el" href="script__editor_8cpp.html#a316f0ac73fa9e3993f0154118a83f5d9">script_editor.cpp</a>
+</li>
+<li>CclEnableSimplifiedAutoTargeting()
+: <a class="el" href="script__unit_8cpp.html#a1a764cba1f5417bc81a29d913d7338a5">script_unit.cpp</a>
+</li>
 <li>CclEqual()
 : <a class="el" href="script_8cpp.html#a52b5249e9ac76ea58e520413978e31e2">script.cpp</a>
 </li>
@@ -502,11 +511,32 @@ $(function() {
 <li>CclGetDependency()
 : <a class="el" href="depend_8cpp.html#a27756ef1634284b744eda4bac766b219">depend.cpp</a>
 </li>
+<li>CclGetDiplomacy()
+: <a class="el" href="script__player_8cpp.html#a37703511659da0786a79d8577f910a4d">script_player.cpp</a>
+</li>
+<li>CclGetFieldOfViewType()
+: <a class="el" href="script__map_8cpp.html#ad97c8b7eb28d68cbeb13644d4440c3fb">script_map.cpp</a>
+</li>
 <li>CclGetFogOfWar()
 : <a class="el" href="script__map_8cpp.html#a3f6edf88e9b3c9d45654b79be0760054">script_map.cpp</a>
 </li>
+<li>CclGetFogOfWarType()
+: <a class="el" href="script__map_8cpp.html#a6eb38764f041fcac7b115a1eb142a704">script_map.cpp</a>
+</li>
 <li>CclGetGodMode()
 : <a class="el" href="game_8cpp.html#a1ef7fc029d3370ee2fc151278f358c03">game.cpp</a>
+</li>
+<li>CclGetIsFogOfWarBilinear()
+: <a class="el" href="script__map_8cpp.html#ae5c3f1c8fd8dad84a809a14706d6d7ca">script_map.cpp</a>
+</li>
+<li>CclGetIsGameHoster()
+: <a class="el" href="script__map_8cpp.html#a4e64fdffbcdf841dc0acc591fa81e9ab">script_map.cpp</a>
+</li>
+<li>CclGetIsMapGridEnabled()
+: <a class="el" href="script__map_8cpp.html#a30200a4377de13aa9022eb53df78c57b">script_map.cpp</a>
+</li>
+<li>CclGetIsOpaqueFor()
+: <a class="el" href="script__map_8cpp.html#a42538cfa247caef2260f51c6e0708d3e">script_map.cpp</a>
 </li>
 <li>CclGetKeyScrollSpeed()
 : <a class="el" href="script__ui_8cpp.html#a553071a4e10774436d3c70fcfad28510">script_ui.cpp</a>
@@ -632,6 +662,9 @@ $(function() {
 </li>
 <li>CclInverseVideo()
 : <a class="el" href="script_8cpp.html#abfab94b4a7bab6965eac6c615098b2e8">script.cpp</a>
+</li>
+<li>CclIsWallsEnabledForSP()
+: <a class="el" href="script__map_8cpp.html#af53e3dad852995a9bf6d76e26b81f04b">script_map.cpp</a>
 </li>
 <li>CclJoinChannel()
 : <a class="el" href="online__service_8cpp.html#aabcfcb63bea6876ddee1f95b33de1579">online_service.cpp</a>
@@ -770,6 +803,9 @@ $(function() {
 <li>CclRand()
 : <a class="el" href="script_8cpp.html#ab2d6b7576636973c795aeb172b69c479">script.cpp</a>
 </li>
+<li>CclRemoveOpaqueFor()
+: <a class="el" href="script__map_8cpp.html#a56af5a1adb7f497186abda0e3f23d1b5">script_map.cpp</a>
+</li>
 <li>CclRemoveUnit()
 : <a class="el" href="script__unit_8cpp.html#a68bfd03fe4c8fb0fe5fe54a56c7e11eb">script_unit.cpp</a>
 </li>
@@ -845,11 +881,26 @@ $(function() {
 <li>CclSetEditorUnitsIcon()
 : <a class="el" href="script__editor_8cpp.html#ac84c22d79b1df99ecd370d553c5fa027">script_editor.cpp</a>
 </li>
+<li>CclSetEnableMapGrid()
+: <a class="el" href="script__map_8cpp.html#a2aca198a7093469b4a885adc4b8363d4">script_map.cpp</a>
+</li>
+<li>CclSetEnableWallsForSP()
+: <a class="el" href="script__map_8cpp.html#a85413b52292990a644044afecb5b2463">script_map.cpp</a>
+</li>
 <li>CclSetFancyBuildings()
 : <a class="el" href="script__ui_8cpp.html#a8cb486efcbe9a5fb60266810192c2788">script_ui.cpp</a>
 </li>
+<li>CclSetFieldOfViewType()
+: <a class="el" href="script__map_8cpp.html#a906bd2ffc1585ee3217fb1bac6ff159d">script_map.cpp</a>
+</li>
 <li>CclSetFogOfWar()
 : <a class="el" href="script__map_8cpp.html#af41cd230c55929006dc82dcad19ce7ec">script_map.cpp</a>
+</li>
+<li>CclSetFogOfWarBilinear()
+: <a class="el" href="script__map_8cpp.html#a8a1a09e0ce3c31ed83455fa8db5e50af">script_map.cpp</a>
+</li>
+<li>CclSetFogOfWarBlur()
+: <a class="el" href="script__map_8cpp.html#a15e4ab69c2aee0ea6ca487196ea77d80">script_map.cpp</a>
 </li>
 <li>CclSetFogOfWarColor()
 : <a class="el" href="script__map_8cpp.html#ad74f157a9cbddce559079a058e27a45e">script_map.cpp</a>
@@ -857,8 +908,11 @@ $(function() {
 <li>CclSetFogOfWarGraphics()
 : <a class="el" href="script__map_8cpp.html#ab0e4f3407256e5294f7613e5807bfbba">script_map.cpp</a>
 </li>
-<li>CclSetFogOfWarOpacity()
-: <a class="el" href="script__map_8cpp.html#a7dcd89ea21f376ae6d150b450c0c44c0">script_map.cpp</a>
+<li>CclSetFogOfWarOpacityLevels()
+: <a class="el" href="script__map_8cpp.html#a9132d3cc24518df7cca42bf224bf4bad">script_map.cpp</a>
+</li>
+<li>CclSetFogOfWarType()
+: <a class="el" href="script__map_8cpp.html#a893ba6441c204cad28b9d7c62c51c1a5">script_map.cpp</a>
 </li>
 <li>CclSetForestRegeneration()
 : <a class="el" href="script__map_8cpp.html#af8d8e022357a7e5b1bc1eb543a05e010">script_map.cpp</a>
@@ -899,6 +953,9 @@ $(function() {
 <li>CclSetMinimapTerrain()
 : <a class="el" href="script__map_8cpp.html#a4d9c4e41a5a7481d03c743126e1fa1e3">script_map.cpp</a>
 </li>
+<li>CclSetMMFogOfWarOpacityLevels()
+: <a class="el" href="script__map_8cpp.html#a846ae8039f4c8af11975d13db543dbba">script_map.cpp</a>
+</li>
 <li>CclSetMouseScrollSpeed()
 : <a class="el" href="script__ui_8cpp.html#aaad21940dcccbee6c612672f5e9d1bad">script_ui.cpp</a>
 </li>
@@ -907,6 +964,9 @@ $(function() {
 </li>
 <li>CclSetMouseScrollSpeedDefault()
 : <a class="el" href="script__ui_8cpp.html#adc6d77e915c656479f629c56aef2b1e6">script_ui.cpp</a>
+</li>
+<li>CclSetOpaqueFor()
+: <a class="el" href="script__map_8cpp.html#a1e42989dd41c8934255b7a19e1cce516">script_map.cpp</a>
 </li>
 <li>CclSetPlayerData()
 : <a class="el" href="script__player_8cpp.html#ad1ce3eba2075e6f80b03489d09cc5751">script_player.cpp</a>
@@ -1143,6 +1203,33 @@ $(function() {
 : <a class="el" href="interface_8h.html#ac134d8805ffbff57bd1a8c963b831d2c">interface.h</a>
 , <a class="el" href="mainscr_8cpp.html#a2f70de90f3edbabb61daf834227b3a6e">mainscr.cpp</a>
 </li>
+<li>cEvery128th
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a3983f810e59a1415e55a2b345ff8444d">mainloop.cpp</a>
+</li>
+<li>cEvery16th
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a1e64f622b799e5fc3603cc760461d727">mainloop.cpp</a>
+</li>
+<li>cEvery256th
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a96276ffbe3c425389b69499add205494">mainloop.cpp</a>
+</li>
+<li>cEvery2nd
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a4f5350106e538476d1b9c279ec8a20d7">mainloop.cpp</a>
+</li>
+<li>cEvery32nd
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a1a2252828d8430e4f0cee5a1b0280b81">mainloop.cpp</a>
+</li>
+<li>cEvery4th
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a0246ce533abcd8021057ec7848def86d">mainloop.cpp</a>
+</li>
+<li>cEvery64th
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a27629ba611b75d89e75b56cc4da97631">mainloop.cpp</a>
+</li>
+<li>cEvery8th
+: <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a64c61c024bac18cf720d0298f7682c71">mainloop.cpp</a>
+</li>
+<li>cExplored
+: <a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6adba74c7c7e2a815278672586354aa9be">settings.h</a>
+</li>
 <li>ChangePlayerOwner()
 : <a class="el" href="unit_8cpp.html#abda232ecfc1b7bfa0bcbeb8a55a81fbe">unit.cpp</a>
 </li>
@@ -1150,8 +1237,8 @@ $(function() {
 : <a class="el" href="selection_8cpp.html#aba564795bd513a6e8416702796e87f2c">selection.cpp</a>
 </li>
 <li>ChangeTeamSelectedUnits()
-: <a class="el" href="unit_8h.html#a18060ec4446a3230eb4339a3080b9bba">unit.h</a>
-, <a class="el" href="selection_8cpp.html#a18060ec4446a3230eb4339a3080b9bba">selection.cpp</a>
+: <a class="el" href="selection_8cpp.html#a18060ec4446a3230eb4339a3080b9bba">selection.cpp</a>
+, <a class="el" href="unit_8h.html#a18060ec4446a3230eb4339a3080b9bba">unit.h</a>
 </li>
 <li>ChangeTile()
 : <a class="el" href="edmap_8cpp.html#afc3b8e6a61d646e08b30793a9973d2aa">edmap.cpp</a>
@@ -1190,8 +1277,8 @@ $(function() {
 : <a class="el" href="action__build_8cpp.html#ad2bad77cb3514d818cfe94349ac79bd4">action_build.cpp</a>
 </li>
 <li>CheckMusicFinished()
-: <a class="el" href="sound_8h.html#a79d3438ed055dc49fcf43dcd7450b4cc">sound.h</a>
-, <a class="el" href="music_8cpp.html#a0e67e9f74bbf4004fc2b22ca03840125">music.cpp</a>
+: <a class="el" href="music_8cpp.html#a0e67e9f74bbf4004fc2b22ca03840125">music.cpp</a>
+, <a class="el" href="sound_8h.html#a79d3438ed055dc49fcf43dcd7450b4cc">sound.h</a>
 </li>
 <li>CheckObstaclesBetweenTiles()
 : <a class="el" href="unit__find_8h.html#a97755adfde54d5bc34b4668912e0fb1a">unit_find.h</a>
@@ -1207,6 +1294,9 @@ $(function() {
 : <a class="el" href="ui_8h.html#a4a094e655b634d67809aee72be0f169d">ui.h</a>
 , <a class="el" href="ui_8cpp.html#a4a094e655b634d67809aee72be0f169d">ui.cpp</a>
 </li>
+<li>cHidden
+: <a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a81cc937c0c085372517a0d25865d1e0e">settings.h</a>
+</li>
 <li>ChooseRandomUnexploredPositionNear()
 : <a class="el" href="ai__plan_8cpp.html#a54e933bd0e841a81cf7c2c9c392cf0de">ai_plan.cpp</a>
 </li>
@@ -1215,6 +1305,9 @@ $(function() {
 </li>
 <li>ChooseUnitVoiceSound()
 : <a class="el" href="sound_8cpp.html#a3af44e902bb636f4b5c0e27f4f0c1900">sound.cpp</a>
+</li>
+<li>cKnown
+: <a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a1606d227732859dcb9507c4b76564f9a">settings.h</a>
 </li>
 <li>CL_OPEN_READ
 : <a class="el" href="iolib_8h.html#a04c24b9a82dd0a6355fd1a7210404b30">iolib.h</a>
@@ -1236,16 +1329,16 @@ $(function() {
 , <a class="el" href="ai_8h.html#a8123cbd5d95a217900789de7f05bb21c">ai.h</a>
 </li>
 <li>CleanButtons()
-: <a class="el" href="interface_8h.html#a0cc84859d5528048d5b5dc57f06b94ff">interface.h</a>
-, <a class="el" href="botpanel_8cpp.html#a0cc84859d5528048d5b5dc57f06b94ff">botpanel.cpp</a>
+: <a class="el" href="botpanel_8cpp.html#a0cc84859d5528048d5b5dc57f06b94ff">botpanel.cpp</a>
+, <a class="el" href="interface_8h.html#a0cc84859d5528048d5b5dc57f06b94ff">interface.h</a>
 </li>
 <li>CleanConstructions()
 : <a class="el" href="construct_8h.html#a24a9391b6df812756801b1163102a02a">construct.h</a>
 , <a class="el" href="construct_8cpp.html#a24a9391b6df812756801b1163102a02a">construct.cpp</a>
 </li>
 <li>CleanCursors()
-: <a class="el" href="cursor_8h.html#a3f356d11cbb23f36aac904ac8b74b0dd">cursor.h</a>
-, <a class="el" href="cursor_8cpp.html#a3f356d11cbb23f36aac904ac8b74b0dd">cursor.cpp</a>
+: <a class="el" href="cursor_8cpp.html#a3f356d11cbb23f36aac904ac8b74b0dd">cursor.cpp</a>
+, <a class="el" href="cursor_8h.html#a3f356d11cbb23f36aac904ac8b74b0dd">cursor.h</a>
 </li>
 <li>CleanDecorations()
 : <a class="el" href="unit_8h.html#ae34006b0883475a1c105e7f205e920c4">unit.h</a>
@@ -1260,23 +1353,23 @@ $(function() {
 , <a class="el" href="font_8cpp.html#ab59fa10e7064a523e106b8e5e92ac866">font.cpp</a>
 </li>
 <li>CleanGame()
-: <a class="el" href="editloop_8cpp.html#a33ec4c449fd788e8aceef2e55bc7ac27">editloop.cpp</a>
-, <a class="el" href="game_8cpp.html#a33ec4c449fd788e8aceef2e55bc7ac27">game.cpp</a>
+: <a class="el" href="game_8cpp.html#a33ec4c449fd788e8aceef2e55bc7ac27">game.cpp</a>
+, <a class="el" href="editloop_8cpp.html#a33ec4c449fd788e8aceef2e55bc7ac27">editloop.cpp</a>
 </li>
 <li>CleanGame_Lua()
 : <a class="el" href="game_8cpp.html#a9a7cf31ee14f200d2849d6ded3476f2b">game.cpp</a>
 </li>
 <li>CleanGroups()
-: <a class="el" href="groups_8cpp.html#ac93dd902d65b48eca06283c9a3cd2041">groups.cpp</a>
-, <a class="el" href="unit_8h.html#ac93dd902d65b48eca06283c9a3cd2041">unit.h</a>
+: <a class="el" href="unit_8h.html#ac93dd902d65b48eca06283c9a3cd2041">unit.h</a>
+, <a class="el" href="groups_8cpp.html#ac93dd902d65b48eca06283c9a3cd2041">groups.cpp</a>
 </li>
 <li>CleanIcons()
 : <a class="el" href="icons_8h.html#a7ee8b7c59aef0630c01d492051129de4">icons.h</a>
 , <a class="el" href="icons_8cpp.html#a7ee8b7c59aef0630c01d492051129de4">icons.cpp</a>
 </li>
 <li>CleanMessages()
-: <a class="el" href="mainscr_8cpp.html#a825093882a032be58901b4e2bdc807f5">mainscr.cpp</a>
-, <a class="el" href="interface_8h.html#a825093882a032be58901b4e2bdc807f5">interface.h</a>
+: <a class="el" href="interface_8h.html#a825093882a032be58901b4e2bdc807f5">interface.h</a>
+, <a class="el" href="mainscr_8cpp.html#a825093882a032be58901b4e2bdc807f5">mainscr.cpp</a>
 </li>
 <li>CleanMissiles()
 : <a class="el" href="missile_8h.html#a03d67e651d2ab20b1f327f825715154a">missile.h</a>
@@ -1291,24 +1384,24 @@ $(function() {
 , <a class="el" href="game_8h.html#acc02906c8131fe59e4285c9475457d6c">game.h</a>
 </li>
 <li>CleanPlayers()
-: <a class="el" href="player_8cpp.html#a7805a65a493bd28abc24374220d84010">player.cpp</a>
-, <a class="el" href="player_8h.html#a7805a65a493bd28abc24374220d84010">player.h</a>
+: <a class="el" href="player_8h.html#a7805a65a493bd28abc24374220d84010">player.h</a>
+, <a class="el" href="player_8cpp.html#a7805a65a493bd28abc24374220d84010">player.cpp</a>
 </li>
 <li>CleanReplayLog()
 : <a class="el" href="replay_8cpp.html#abbc93bb6a6d23da26bf888674d2c4ffe">replay.cpp</a>
 , <a class="el" href="replay_8h.html#abbc93bb6a6d23da26bf888674d2c4ffe">replay.h</a>
 </li>
 <li>CleanSelections()
-: <a class="el" href="selection_8cpp.html#a732bfbc91cbfa0f207ad3daf0548c909">selection.cpp</a>
-, <a class="el" href="unit_8h.html#a732bfbc91cbfa0f207ad3daf0548c909">unit.h</a>
+: <a class="el" href="unit_8h.html#a732bfbc91cbfa0f207ad3daf0548c909">unit.h</a>
+, <a class="el" href="selection_8cpp.html#a732bfbc91cbfa0f207ad3daf0548c909">selection.cpp</a>
 </li>
 <li>CleanSpells()
 : <a class="el" href="spells_8h.html#a3c94cb920401e1158879fbcbb20cdfdb">spells.h</a>
 , <a class="el" href="spells_8cpp.html#a3c94cb920401e1158879fbcbb20cdfdb">spells.cpp</a>
 </li>
 <li>CleanTriggers()
-: <a class="el" href="trigger_8h.html#ab9c29ed6533b4730de6ab1936e33bedf">trigger.h</a>
-, <a class="el" href="trigger_8cpp.html#ab9c29ed6533b4730de6ab1936e33bedf">trigger.cpp</a>
+: <a class="el" href="trigger_8cpp.html#ab9c29ed6533b4730de6ab1936e33bedf">trigger.cpp</a>
+, <a class="el" href="trigger_8h.html#ab9c29ed6533b4730de6ab1936e33bedf">trigger.h</a>
 </li>
 <li>CleanUnits()
 : <a class="el" href="unit_8h.html#aba064081dd49cbd8a610d39f7958d0d5">unit.h</a>
@@ -1326,16 +1419,16 @@ $(function() {
 : <a class="el" href="stratagus_8cpp.html#adb07bf9110890773e1b61857f7f7b459">stratagus.cpp</a>
 </li>
 <li>CleanUserInterface()
-: <a class="el" href="ui_8h.html#af156467e9087c298689eca94220ee939">ui.h</a>
-, <a class="el" href="ui_8cpp.html#af156467e9087c298689eca94220ee939">ui.cpp</a>
+: <a class="el" href="ui_8cpp.html#af156467e9087c298689eca94220ee939">ui.cpp</a>
+, <a class="el" href="ui_8h.html#af156467e9087c298689eca94220ee939">ui.h</a>
 </li>
 <li>ClearAllColorCyclingRange()
 : <a class="el" href="video_8h.html#a352973a8ec9fa8e02d65cfb8080e44e3">video.h</a>
 , <a class="el" href="video_8cpp.html#a352973a8ec9fa8e02d65cfb8080e44e3">video.cpp</a>
 </li>
 <li>ClearGroup()
-: <a class="el" href="unit_8h.html#ae89f01408bdf8fac082f80c35840a7df">unit.h</a>
-, <a class="el" href="groups_8cpp.html#ae89f01408bdf8fac082f80c35840a7df">groups.cpp</a>
+: <a class="el" href="groups_8cpp.html#ae89f01408bdf8fac082f80c35840a7df">groups.cpp</a>
+, <a class="el" href="unit_8h.html#ae89f01408bdf8fac082f80c35840a7df">unit.h</a>
 </li>
 <li>ClearNewAction()
 : <a class="el" href="command_8cpp.html#afb5d078fec64836e1b4d7d65ed638eb3">command.cpp</a>
@@ -1359,8 +1452,8 @@ $(function() {
 : <a class="el" href="interface_8cpp.html#a1fb9092bcdeada2d206bdc74afbbe122a2c714f81b983c7da3db9751acfd62297">interface.cpp</a>
 </li>
 <li>ClickMissile
-: <a class="el" href="ui_8h.html#a3b2c393ef1c37c5b6a403869250e067a">ui.h</a>
-, <a class="el" href="script__ui_8cpp.html#a3b2c393ef1c37c5b6a403869250e067a">script_ui.cpp</a>
+: <a class="el" href="script__ui_8cpp.html#a3b2c393ef1c37c5b6a403869250e067a">script_ui.cpp</a>
+, <a class="el" href="ui_8h.html#a3b2c393ef1c37c5b6a403869250e067a">ui.h</a>
 </li>
 <li>Client
 : <a class="el" href="netconnect_8cpp.html#a9d21217dde879e20df3eb2e98f8aa238">netconnect.cpp</a>
@@ -1372,9 +1465,9 @@ $(function() {
 : <a class="el" href="netconnect_8cpp.html#a1a05d6693178363f6756c2aa067d6a43">netconnect.cpp</a>
 </li>
 <li>CliMapName
-: <a class="el" href="stratagus_8cpp.html#a4ee1f1db083092e88f95794d77871b70">stratagus.cpp</a>
-, <a class="el" href="title_8cpp.html#a4ee1f1db083092e88f95794d77871b70">title.cpp</a>
+: <a class="el" href="title_8cpp.html#a4ee1f1db083092e88f95794d77871b70">title.cpp</a>
 , <a class="el" href="tolua_8cpp.html#a4ee1f1db083092e88f95794d77871b70">tolua.cpp</a>
+, <a class="el" href="stratagus_8cpp.html#a4ee1f1db083092e88f95794d77871b70">stratagus.cpp</a>
 </li>
 <li>CLIP_RECTANGLE
 : <a class="el" href="intern__video_8h.html#ad6e63efb94d7467eeb2d611047caa952">intern_video.h</a>
@@ -1404,16 +1497,16 @@ $(function() {
 : <a class="el" href="ui_8cpp.html#a65d9e79d35a9457b55669367cf2736f0">ui.cpp</a>
 </li>
 <li>ClipX1
-: <a class="el" href="video_8cpp.html#a1f76ccb3d6f3805ac629503418443fa1">video.cpp</a>
-, <a class="el" href="intern__video_8h.html#a1f76ccb3d6f3805ac629503418443fa1">intern_video.h</a>
+: <a class="el" href="intern__video_8h.html#a1f76ccb3d6f3805ac629503418443fa1">intern_video.h</a>
+, <a class="el" href="video_8cpp.html#a1f76ccb3d6f3805ac629503418443fa1">video.cpp</a>
 </li>
 <li>ClipX2
-: <a class="el" href="intern__video_8h.html#a2e5b34284d634538ea9c985bb61845e7">intern_video.h</a>
-, <a class="el" href="video_8cpp.html#a2e5b34284d634538ea9c985bb61845e7">video.cpp</a>
+: <a class="el" href="video_8cpp.html#a2e5b34284d634538ea9c985bb61845e7">video.cpp</a>
+, <a class="el" href="intern__video_8h.html#a2e5b34284d634538ea9c985bb61845e7">intern_video.h</a>
 </li>
 <li>ClipY1
-: <a class="el" href="video_8cpp.html#ac0ddbfe4c1622e34d91bafa43e9557cc">video.cpp</a>
-, <a class="el" href="intern__video_8h.html#ac0ddbfe4c1622e34d91bafa43e9557cc">intern_video.h</a>
+: <a class="el" href="intern__video_8h.html#ac0ddbfe4c1622e34d91bafa43e9557cc">intern_video.h</a>
+, <a class="el" href="video_8cpp.html#ac0ddbfe4c1622e34d91bafa43e9557cc">video.cpp</a>
 </li>
 <li>ClipY2
 : <a class="el" href="intern__video_8h.html#a64c6bea016f4b61e03995589278ca005">intern_video.h</a>
@@ -1437,6 +1530,9 @@ $(function() {
 <li>cnode_cmp()
 : <a class="el" href="ai__resource_8cpp.html#a95846913dccff64cdc6d201937560507">ai_resource.cpp</a>
 </li>
+<li>cNumOfModes
+: <a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a6f63acffde143cfb3823c84a80476b78">settings.h</a>
+</li>
 <li>COAST_TILE
 : <a class="el" href="edmap_8cpp.html#a45a1f495a2dc9b34add95806093dec76">edmap.cpp</a>
 </li>
@@ -1451,16 +1547,16 @@ $(function() {
 , <a class="el" href="video_8cpp.html#a7671c57f02ebded14c3be81b606ef6f5">video.cpp</a>
 </li>
 <li>ColorBlue
-: <a class="el" href="video_8cpp.html#afdf8bbb9bf86ef3d9169c60c72b41ef3">video.cpp</a>
-, <a class="el" href="video_8h.html#afdf8bbb9bf86ef3d9169c60c72b41ef3">video.h</a>
+: <a class="el" href="video_8h.html#afdf8bbb9bf86ef3d9169c60c72b41ef3">video.h</a>
+, <a class="el" href="video_8cpp.html#afdf8bbb9bf86ef3d9169c60c72b41ef3">video.cpp</a>
 </li>
 <li>ColorCycle()
-: <a class="el" href="video_8cpp.html#ac928602e0ce71db9bbe0ae6ab52d84d5">video.cpp</a>
-, <a class="el" href="video_8h.html#ac928602e0ce71db9bbe0ae6ab52d84d5">video.h</a>
+: <a class="el" href="video_8h.html#ac928602e0ce71db9bbe0ae6ab52d84d5">video.h</a>
+, <a class="el" href="video_8cpp.html#ac928602e0ce71db9bbe0ae6ab52d84d5">video.cpp</a>
 </li>
 <li>ColorCycleSurface()
-: <a class="el" href="video_8cpp.html#a8661bead2aee2f23a5bfd05a2ec5ebb8">video.cpp</a>
-, <a class="el" href="intern__video_8h.html#a8661bead2aee2f23a5bfd05a2ec5ebb8">intern_video.h</a>
+: <a class="el" href="intern__video_8h.html#a8661bead2aee2f23a5bfd05a2ec5ebb8">intern_video.h</a>
+, <a class="el" href="video_8cpp.html#a8661bead2aee2f23a5bfd05a2ec5ebb8">video.cpp</a>
 </li>
 <li>ColorCycleSurface_Reverse()
 : <a class="el" href="video_8cpp.html#ac6104a119724b4bd99b3dbd51d2702c5">video.cpp</a>
@@ -1478,16 +1574,16 @@ $(function() {
 , <a class="el" href="video_8h.html#a22f245e46d91891d0135dbfe2fecb0e4">video.h</a>
 </li>
 <li>ColorGreen
-: <a class="el" href="video_8cpp.html#aae850c37b75ed907f2f2441b25f63e28">video.cpp</a>
-, <a class="el" href="video_8h.html#aae850c37b75ed907f2f2441b25f63e28">video.h</a>
+: <a class="el" href="video_8h.html#aae850c37b75ed907f2f2441b25f63e28">video.h</a>
+, <a class="el" href="video_8cpp.html#aae850c37b75ed907f2f2441b25f63e28">video.cpp</a>
 </li>
 <li>ColorLightBlue
 : <a class="el" href="video_8cpp.html#aeca24e7f4c88ec5a55fe48981f24b39e">video.cpp</a>
 , <a class="el" href="video_8h.html#aeca24e7f4c88ec5a55fe48981f24b39e">video.h</a>
 </li>
 <li>ColorLightGray
-: <a class="el" href="video_8h.html#a367c86449f23829d3f01e6e353b2e8ce">video.h</a>
-, <a class="el" href="video_8cpp.html#a367c86449f23829d3f01e6e353b2e8ce">video.cpp</a>
+: <a class="el" href="video_8cpp.html#a367c86449f23829d3f01e6e353b2e8ce">video.cpp</a>
+, <a class="el" href="video_8h.html#a367c86449f23829d3f01e6e353b2e8ce">video.h</a>
 </li>
 <li>ColorNames
 : <a class="el" href="video_8h.html#aee248eeffe74c7abc42464b241e0f9ac">video.h</a>
@@ -1513,8 +1609,8 @@ $(function() {
 , <a class="el" href="commands_8h.html#a3d200971776180ed9d3b50d913a45d20">commands.h</a>
 </li>
 <li>CommandAttackGround()
-: <a class="el" href="command_8cpp.html#a152b44b9f6e7f9eefa59ee047a977c81">command.cpp</a>
-, <a class="el" href="commands_8h.html#a152b44b9f6e7f9eefa59ee047a977c81">commands.h</a>
+: <a class="el" href="commands_8h.html#a152b44b9f6e7f9eefa59ee047a977c81">commands.h</a>
+, <a class="el" href="command_8cpp.html#a152b44b9f6e7f9eefa59ee047a977c81">command.cpp</a>
 </li>
 <li>CommandAutoRepair()
 : <a class="el" href="command_8cpp.html#acde207f0d6358fbb0c62dcce193be9c3">command.cpp</a>
@@ -1557,12 +1653,12 @@ $(function() {
 , <a class="el" href="commands_8h.html#afcbace3c8c5ccf0de600bfd92b46d2cd">commands.h</a>
 </li>
 <li>CommandExplore()
-: <a class="el" href="command_8cpp.html#aac16d274a815568b6daa82233e8b70d9">command.cpp</a>
-, <a class="el" href="commands_8h.html#aac16d274a815568b6daa82233e8b70d9">commands.h</a>
+: <a class="el" href="commands_8h.html#aac16d274a815568b6daa82233e8b70d9">commands.h</a>
+, <a class="el" href="command_8cpp.html#aac16d274a815568b6daa82233e8b70d9">command.cpp</a>
 </li>
 <li>CommandFollow()
-: <a class="el" href="command_8cpp.html#a2f9425cd5c83987d0d677d8bb817f531">command.cpp</a>
-, <a class="el" href="commands_8h.html#a2f9425cd5c83987d0d677d8bb817f531">commands.h</a>
+: <a class="el" href="commands_8h.html#a2f9425cd5c83987d0d677d8bb817f531">commands.h</a>
+, <a class="el" href="command_8cpp.html#a2f9425cd5c83987d0d677d8bb817f531">command.cpp</a>
 </li>
 <li>CommandKey()
 : <a class="el" href="interface_8cpp.html#a08272666cc866495975d32dc137c7975">interface.cpp</a>
@@ -1578,8 +1674,8 @@ $(function() {
 , <a class="el" href="replay_8cpp.html#a06ade5dbf0244828d1e9b59fc252605b">replay.cpp</a>
 </li>
 <li>CommandLogDisabled
-: <a class="el" href="replay_8h.html#a324c5051498650d0bb36aa285f306339">replay.h</a>
-, <a class="el" href="replay_8cpp.html#a324c5051498650d0bb36aa285f306339">replay.cpp</a>
+: <a class="el" href="replay_8cpp.html#a324c5051498650d0bb36aa285f306339">replay.cpp</a>
+, <a class="el" href="replay_8h.html#a324c5051498650d0bb36aa285f306339">replay.h</a>
 </li>
 <li>CommandMove()
 : <a class="el" href="commands_8h.html#aa85837bff105908c0c9bc897fa8b980e">commands.h</a>
@@ -1590,8 +1686,8 @@ $(function() {
 , <a class="el" href="commands_8h.html#aaf46039b4547e531166e0905782f2a77">commands.h</a>
 </li>
 <li>CommandQuit()
-: <a class="el" href="commands_8h.html#a4b12a07f9e58bdfb64389c3335acb59b">commands.h</a>
-, <a class="el" href="command_8cpp.html#a4b12a07f9e58bdfb64389c3335acb59b">command.cpp</a>
+: <a class="el" href="command_8cpp.html#a4b12a07f9e58bdfb64389c3335acb59b">command.cpp</a>
+, <a class="el" href="commands_8h.html#a4b12a07f9e58bdfb64389c3335acb59b">commands.h</a>
 </li>
 <li>CommandRepair()
 : <a class="el" href="command_8cpp.html#a12eb3ddde5ad077ce0098c8c1674512d">command.cpp</a>
@@ -1610,12 +1706,12 @@ $(function() {
 , <a class="el" href="command_8cpp.html#a5915704748125d8432735ee4c02fc9ed">command.cpp</a>
 </li>
 <li>CommandReturnGoods()
-: <a class="el" href="command_8cpp.html#ad56f5074d2d9d8f1a4e67740f8f04113">command.cpp</a>
-, <a class="el" href="commands_8h.html#ad56f5074d2d9d8f1a4e67740f8f04113">commands.h</a>
+: <a class="el" href="commands_8h.html#ad56f5074d2d9d8f1a4e67740f8f04113">commands.h</a>
+, <a class="el" href="command_8cpp.html#ad56f5074d2d9d8f1a4e67740f8f04113">command.cpp</a>
 </li>
 <li>CommandSharedVision()
 : <a class="el" href="commands_8h.html#a5aaedf63108fab622b22a88e467c66ee">commands.h</a>
-, <a class="el" href="command_8cpp.html#a5aaedf63108fab622b22a88e467c66ee">command.cpp</a>
+, <a class="el" href="command_8cpp.html#ad7226d78ba255e83324be1d3e9b07527">command.cpp</a>
 </li>
 <li>CommandsIn
 : <a class="el" href="network_8cpp.html#a6cb1d1e2e050382053d07bd385027952">network.cpp</a>
@@ -1629,8 +1725,8 @@ $(function() {
 , <a class="el" href="commands_8h.html#a0c911fb6f537a08150b861a479d6d64c">commands.h</a>
 </li>
 <li>CommandStopUnit()
-: <a class="el" href="commands_8h.html#a447e331da43b577e4088c42d374b8cef">commands.h</a>
-, <a class="el" href="command_8cpp.html#a447e331da43b577e4088c42d374b8cef">command.cpp</a>
+: <a class="el" href="command_8cpp.html#a447e331da43b577e4088c42d374b8cef">command.cpp</a>
+, <a class="el" href="commands_8h.html#a447e331da43b577e4088c42d374b8cef">commands.h</a>
 </li>
 <li>CommandTrainUnit()
 : <a class="el" href="command_8cpp.html#ab7a3b4550af871cd2334c9e65735b745">command.cpp</a>
@@ -1645,8 +1741,8 @@ $(function() {
 , <a class="el" href="commands_8h.html#af9e0b0f874e91291ef54a47f73ed19e7">commands.h</a>
 </li>
 <li>CommandUpgradeTo()
-: <a class="el" href="commands_8h.html#aac52972472194478178b435848d33235">commands.h</a>
-, <a class="el" href="command_8cpp.html#a9cabd4f1cdedeef7b82962226af145a7">command.cpp</a>
+: <a class="el" href="command_8cpp.html#a6bddbe079bef2375a77fd80acb61ec06">command.cpp</a>
+, <a class="el" href="commands_8h.html#a7353139ccf3bd11a833700b9eaeeb8cc">commands.h</a>
 </li>
 <li>CompareEq()
 : <a class="el" href="trigger_8cpp.html#aa3d6f62f0856c33f600b8bd8fc3a57db">trigger.cpp</a>
@@ -1694,12 +1790,12 @@ $(function() {
 : <a class="el" href="spells_8h.html#a15cd26ca9fdfe27f7523a33efc79cbdf">spells.h</a>
 </li>
 <li>ConstructionByIdent()
-: <a class="el" href="construct_8h.html#ace64bfcfc408d6bb55f11ef278bf3eca">construct.h</a>
-, <a class="el" href="construct_8cpp.html#ac9f7297abc41e07c23a79265ca457c63">construct.cpp</a>
+: <a class="el" href="construct_8cpp.html#ac9f7297abc41e07c23a79265ca457c63">construct.cpp</a>
+, <a class="el" href="construct_8h.html#ace64bfcfc408d6bb55f11ef278bf3eca">construct.h</a>
 </li>
 <li>ConstructionCclRegister()
-: <a class="el" href="construct_8cpp.html#af596458135830789776131d667713d91">construct.cpp</a>
-, <a class="el" href="construct_8h.html#af596458135830789776131d667713d91">construct.h</a>
+: <a class="el" href="construct_8h.html#af596458135830789776131d667713d91">construct.h</a>
+, <a class="el" href="construct_8cpp.html#af596458135830789776131d667713d91">construct.cpp</a>
 </li>
 <li>ConstructionFileConstruction
 : <a class="el" href="construct_8h.html#acf37452d948547d209a76fe93dfe0894a4fbc80c44ea4ddb9270b0f8baee2b4c3">construct.h</a>
@@ -1740,12 +1836,12 @@ $(function() {
 , <a class="el" href="actions_8h.html#a8554d8f04b5cd0306a4c85e23f02b4ce">actions.h</a>
 </li>
 <li>CorrectWallDirections()
-: <a class="el" href="unit_8h.html#aff90bda053a2fa0f7e38bde47bed96ce">unit.h</a>
-, <a class="el" href="unit_8cpp.html#aff90bda053a2fa0f7e38bde47bed96ce">unit.cpp</a>
+: <a class="el" href="unit_8cpp.html#aff90bda053a2fa0f7e38bde47bed96ce">unit.cpp</a>
+, <a class="el" href="unit_8h.html#aff90bda053a2fa0f7e38bde47bed96ce">unit.h</a>
 </li>
 <li>CorrectWallNeighBours()
-: <a class="el" href="unit_8h.html#a8ea33915635ac074fc37f8b74eb0a41d">unit.h</a>
-, <a class="el" href="unit_8cpp.html#a8ea33915635ac074fc37f8b74eb0a41d">unit.cpp</a>
+: <a class="el" href="unit_8cpp.html#a8ea33915635ac074fc37f8b74eb0a41d">unit.cpp</a>
+, <a class="el" href="unit_8h.html#a8ea33915635ac074fc37f8b74eb0a41d">unit.h</a>
 </li>
 <li>Cost4
 : <a class="el" href="upgrade__structs_8h.html#ae4f0e57a58ec795fadb63d34f0d9de72aa6c6d81b1db68e9df4100f3c60dbcf3c">upgrade_structs.h</a>
@@ -1785,14 +1881,14 @@ $(function() {
 , <a class="el" href="iolib_8cpp.html#af7f30e534354c70f70c9279fac599f49">iolib.cpp</a>
 </li>
 <li>CreateGame()
-: <a class="el" href="settings_8h.html#a02ca7c82426f8881e4c3ee0e596209dd">settings.h</a>
-, <a class="el" href="game_8cpp.html#a02ca7c82426f8881e4c3ee0e596209dd">game.cpp</a>
+: <a class="el" href="game_8cpp.html#a02ca7c82426f8881e4c3ee0e596209dd">game.cpp</a>
+, <a class="el" href="settings_8h.html#a02ca7c82426f8881e4c3ee0e596209dd">settings.h</a>
 , <a class="el" href="games_8cpp.html#aca5a8e4c8509b13e4f7ec205d9b277c1">games.cpp</a>
 , <a class="el" href="games_8h.html#aca5a8e4c8509b13e4f7ec205d9b277c1">games.h</a>
 </li>
 <li>CreatePlayer()
-: <a class="el" href="player_8h.html#a84fc1a469107082db541eeb2f051c893">player.h</a>
-, <a class="el" href="player_8cpp.html#a84fc1a469107082db541eeb2f051c893">player.cpp</a>
+: <a class="el" href="player_8cpp.html#a84fc1a469107082db541eeb2f051c893">player.cpp</a>
+, <a class="el" href="player_8h.html#a84fc1a469107082db541eeb2f051c893">player.h</a>
 </li>
 <li>CRT
 : <a class="el" href="shaders_8cpp.html#a221888f4c36cc891a981dd70075a4586">shaders.cpp</a>
@@ -1806,8 +1902,8 @@ $(function() {
 , <a class="el" href="ui_8h.html#acd653d7f1b5282ed7cd4c2bde280316a">ui.h</a>
 </li>
 <li>CurrentMapPath
-: <a class="el" href="map_8h.html#aa059812436acab52e2392bbdec137577">map.h</a>
-, <a class="el" href="map_8cpp.html#aa059812436acab52e2392bbdec137577">map.cpp</a>
+: <a class="el" href="map_8cpp.html#aa059812436acab52e2392bbdec137577">map.cpp</a>
+, <a class="el" href="map_8h.html#aa059812436acab52e2392bbdec137577">map.h</a>
 </li>
 <li>currentMusic
 : <a class="el" href="sound__server_8cpp.html#abb56d0b50d5766b387d2593b51be1fa2">sound_server.cpp</a>
@@ -1826,16 +1922,16 @@ $(function() {
 : <a class="el" href="interface_8cpp.html#af9f63456b2b1e3b4b4ee68f5cbf297c2">interface.cpp</a>
 </li>
 <li>CursorAction
-: <a class="el" href="cursor_8cpp.html#a5f183bc2349f051161eb557c91567d04">cursor.cpp</a>
-, <a class="el" href="cursor_8h.html#a5f183bc2349f051161eb557c91567d04">cursor.h</a>
+: <a class="el" href="cursor_8h.html#a5f183bc2349f051161eb557c91567d04">cursor.h</a>
+, <a class="el" href="cursor_8cpp.html#a5f183bc2349f051161eb557c91567d04">cursor.cpp</a>
 </li>
 <li>CursorAnimate()
 : <a class="el" href="cursor_8h.html#ac2d19d0ca6e21b9a11c833de6148ffd1">cursor.h</a>
 , <a class="el" href="cursor_8cpp.html#ac2d19d0ca6e21b9a11c833de6148ffd1">cursor.cpp</a>
 </li>
 <li>CursorBuilding
-: <a class="el" href="cursor_8cpp.html#ae12f5fe600719b858493c8fd3da3c5b1">cursor.cpp</a>
-, <a class="el" href="cursor_8h.html#ae12f5fe600719b858493c8fd3da3c5b1">cursor.h</a>
+: <a class="el" href="cursor_8h.html#ae12f5fe600719b858493c8fd3da3c5b1">cursor.h</a>
+, <a class="el" href="cursor_8cpp.html#ae12f5fe600719b858493c8fd3da3c5b1">cursor.cpp</a>
 </li>
 <li>CursorByIdent()
 : <a class="el" href="cursor_8cpp.html#a83a9fa479655735823b9666d68844b55">cursor.cpp</a>
@@ -1886,8 +1982,8 @@ $(function() {
 : <a class="el" href="interface_8h.html#a4e0f5b7dc29d371dcdfff2891216ca7aa4b380c3a0805a4a88b68b3bc1b29d414">interface.h</a>
 </li>
 <li>CursorScreenPos
-: <a class="el" href="cursor_8cpp.html#a5f19f5babf5f5dff6d8caea990a8d003">cursor.cpp</a>
-, <a class="el" href="cursor_8h.html#a5f19f5babf5f5dff6d8caea990a8d003">cursor.h</a>
+: <a class="el" href="cursor_8h.html#a5f19f5babf5f5dff6d8caea990a8d003">cursor.h</a>
+, <a class="el" href="cursor_8cpp.html#a5f19f5babf5f5dff6d8caea990a8d003">cursor.cpp</a>
 </li>
 <li>CursorStartMapPos
 : <a class="el" href="cursor_8cpp.html#aacf144fc0a5f1b0275838470077c6ee1">cursor.cpp</a>
@@ -1898,8 +1994,8 @@ $(function() {
 , <a class="el" href="cursor_8cpp.html#ad14298f58aab223244cf519b5ef55700">cursor.cpp</a>
 </li>
 <li>CursorState
-: <a class="el" href="cursor_8h.html#aac3882941e0d183e0e0364a469f2075b">cursor.h</a>
-, <a class="el" href="cursor_8cpp.html#aac3882941e0d183e0e0364a469f2075b">cursor.cpp</a>
+: <a class="el" href="cursor_8cpp.html#aac3882941e0d183e0e0364a469f2075b">cursor.cpp</a>
+, <a class="el" href="cursor_8h.html#aac3882941e0d183e0e0364a469f2075b">cursor.h</a>
 </li>
 <li>CursorStatePieMenu
 : <a class="el" href="cursor_8h.html#aa3991d494b318a914ac40dcaa18a49d4a9aa9cb52a94dd9518ea1398dfe443cbf">cursor.h</a>
@@ -1935,7 +2031,7 @@ $(function() {
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:58 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:42 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

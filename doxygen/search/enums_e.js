@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['unitaction_13786',['UnitAction',['../actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9',1,'actions.h']]],
-  ['unittypetype_13787',['UnitTypeType',['../unittype_8h.html#afe35dd4934363bb7626f498bdc947a4a',1,'unittype.h']]],
-  ['unitvoicegroup_13788',['UnitVoiceGroup',['../sound_8h.html#aaf31cc42154462aed53e0633f14d9831',1,'sound.h']]],
-  ['ustrinttype_13789',['UStrIntType',['../script_8cpp.html#a6dd7a6d2277649d6729081d3f3a129a4',1,'UStrIntType():&#160;script.cpp'],['../contenttype_8cpp.html#a6dd7a6d2277649d6729081d3f3a129a4',1,'UStrIntType():&#160;contenttype.cpp'],['../mainscr_8cpp.html#a6dd7a6d2277649d6729081d3f3a129a4',1,'UStrIntType():&#160;mainscr.cpp']]]
+  ['t_5fhash_5fvariant_14168',['t_hash_variant',['../namespacepvpgn.html#a073d69e5b1cebfe0fad20021944d3ed5',1,'pvpgn']]],
+  ['targettype_14169',['TargetType',['../spells_8h.html#a0d59972970c855496cb4c877501e668f',1,'spells.h']]],
+  ['textalignment_14170',['TextAlignment',['../ui_8h.html#aa56f1a82069b5feeadbb4591cb3e474f',1,'ui.h']]],
+  ['tiletype_14171',['TileType',['../tileset_8h.html#ac9e486ec80ccfdb28a4f4837d419c9f1',1,'tileset.h']]]
 ];

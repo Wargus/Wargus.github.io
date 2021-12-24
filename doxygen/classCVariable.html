@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -102,9 +102,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a76ac447fcc22b58f52e7086a048470de"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCVariable.html#a76ac447fcc22b58f52e7086a048470de">Increase</a></td></tr>
 <tr class="memdesc:a76ac447fcc22b58f52e7086a048470de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current (or initial) value of the variable (or initial value).  <a href="classCVariable.html#a76ac447fcc22b58f52e7086a048470de">More...</a><br /></td></tr>
 <tr class="separator:a76ac447fcc22b58f52e7086a048470de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0f18b144938571e7cd886027295bd9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCVariable.html#a1e0f18b144938571e7cd886027295bd9">Enable</a></td></tr>
-<tr class="memdesc:a1e0f18b144938571e7cd886027295bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number to increase(decrease) Value by second.  <a href="classCVariable.html#a1e0f18b144938571e7cd886027295bd9">More...</a><br /></td></tr>
-<tr class="separator:a1e0f18b144938571e7cd886027295bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc269aec9629ad98d100d75a7bce59a0"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCVariable.html#adc269aec9629ad98d100d75a7bce59a0">IncreaseFrequency</a>:7</td></tr>
+<tr class="memdesc:adc269aec9629ad98d100d75a7bce59a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number to increase(decrease) Value by second.  <a href="classCVariable.html#adc269aec9629ad98d100d75a7bce59a0">More...</a><br /></td></tr>
+<tr class="separator:adc269aec9629ad98d100d75a7bce59a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03ddbeef596af59019e62adaa6751a8"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCVariable.html#aa03ddbeef596af59019e62adaa6751a8">Enable</a>:1</td></tr>
+<tr class="memdesc:aa03ddbeef596af59019e62adaa6751a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every how many seconds we should apply the increase.  <a href="classCVariable.html#aa03ddbeef596af59019e62adaa6751a8">More...</a><br /></td></tr>
+<tr class="separator:aa03ddbeef596af59019e62adaa6751a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>User defined variable type.</p>
@@ -189,19 +192,19 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1e0f18b144938571e7cd886027295bd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e0f18b144938571e7cd886027295bd9">&#9670;&nbsp;</a></span>Enable</h2>
+<a id="aa03ddbeef596af59019e62adaa6751a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03ddbeef596af59019e62adaa6751a8">&#9670;&nbsp;</a></span>Enable</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char CVariable::Enable</td>
+          <td class="memname">unsigned char CVariable::Enable</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Number to increase(decrease) Value by second. </p>
+<p>Every how many seconds we should apply the increase. </p>
 
 </div>
 </div>
@@ -218,6 +221,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Current (or initial) value of the variable (or initial value). </p>
+
+</div>
+</div>
+<a id="adc269aec9629ad98d100d75a7bce59a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc269aec9629ad98d100d75a7bce59a0">&#9670;&nbsp;</a></span>IncreaseFrequency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char CVariable::IncreaseFrequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number to increase(decrease) Value by second. </p>
 
 </div>
 </div>
@@ -257,7 +276,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:57 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:40 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

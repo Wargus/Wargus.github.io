@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="construct_8h_source.html">construct.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="interface_8h_source.html">interface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="netconnect_8h_source.html">netconnect.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pathfinder_8h_source.html">pathfinder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="script_8h_source.html">script.h</a>&quot;</code><br />
@@ -162,6 +164,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac4b1841a26be14a319ac3ab11aa82c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0155d1079a8b5bc602f039c16b3fa62"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#ab0155d1079a8b5bc602f039c16b3fa62">CclSelectSingleUnit</a> (lua_State *l)</td></tr>
 <tr class="separator:ab0155d1079a8b5bc602f039c16b3fa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a764cba1f5417bc81a29d913d7338a5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#a1a764cba1f5417bc81a29d913d7338a5">CclEnableSimplifiedAutoTargeting</a> (lua_State *l)</td></tr>
+<tr class="separator:a1a764cba1f5417bc81a29d913d7338a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb7752b5eaefcfa16da13e0619db432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#a3eb7752b5eaefcfa16da13e0619db432">UnitCclRegister</a> ()</td></tr>
 <tr class="memdesc:a3eb7752b5eaefcfa16da13e0619db432"><td class="mdescLeft">&#160;</td><td class="mdescRight">register CCL units features  <a href="script__unit_8cpp.html#a3eb7752b5eaefcfa16da13e0619db432">More...</a><br /></td></tr>
 <tr class="separator:a3eb7752b5eaefcfa16da13e0619db432"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +194,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Create a unit and place it on the map</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -197,8 +202,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the slot number of the made unit. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Returns the slot number of the made unit.</dd></dl>
+<p>Example:</p>
+<div class="example"><code><b>CreateUnit</b>("unit-human-transport", 1, {94, 0})</code></div> 
 </div>
 </div>
 <a id="a6437a05ed16c8e59c3ade0f9b3347f6b"></a>
@@ -224,6 +230,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Damages unit, additionally using another unit as first's attacker</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -231,7 +238,42 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the slot number of the made unit. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the slot number of the made unit.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Make a grunt for player 5 grunt = CreateUnit("unit-grunt", 5, {58, 8}) &ndash; Damage the grunt with 15 points <b>DamageUnit</b>(-1,grunt,15)</code></div> 
+</div>
+</div>
+<a id="a1a764cba1f5417bc81a29d913d7338a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a764cba1f5417bc81a29d913d7338a5">&#9670;&nbsp;</a></span>CclEnableSimplifiedAutoTargeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclEnableSimplifiedAutoTargeting </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable/disable simplified auto targeting</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
 
 </div>
 </div>
@@ -382,6 +424,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get a player's units</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -416,6 +459,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get a player's units in rectangle box specified with 2 coordinates</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -423,8 +467,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of units. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Array of units.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>circlePower = CreateUnit("unit-circle-of-power", 15, {59, 4}) &ndash; Get the units near the circle of power. unitsOnCircle = <b>GetUnitsAroundUnit</b>(circle,1,true)</code></div> 
 </div>
 </div>
 <a id="a682f4dfe5b91823ec0fc387b20423633"></a>
@@ -450,6 +495,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get the value of the unit variable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -457,8 +503,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value of the variable of the unit. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The value of the variable of the unit.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Make a grunt for player 5 grunt = CreateUnit("unit-grunt", 5, {58, 8}) &ndash; Take the name of the unit unit_name = <b>GetUnitVariable</b>(grunt,"Name") &ndash; Take the player number based on the unit player_type = <b>GetUnitVariable</b>(grunt,"PlayerType") &ndash; Take the value of the armor armor_value = <b>GetUnitVariable</b>(grunt,"Armor") &ndash; Show the message in the game. AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)</code></div> 
 </div>
 </div>
 <a id="a552852c43b432ad4ae4e80ad30730925"></a>
@@ -484,6 +531,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Kill a unit</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -491,8 +539,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if a unit was killed. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Returns true if a unit was killed.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Kills an ogre controlled by player 3 <b>KillUnit</b>("unit-ogre", 3)</code></div> 
 </div>
 </div>
 <a id="a3ec0a492bc4695e924d0ef19c557bd75"></a>
@@ -518,6 +567,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Kill a unit at a location</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -525,8 +575,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the number of units killed. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Returns the number of units killed.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Kill 8 peasants controlled by player 7 from position {27,1} to {34,5} <b>KillUnitAt</b>("unit-peasant",7,8,{27,1},{34,5})</code></div> 
 </div>
 </div>
 <a id="a2c5ac4b706775b64bb361b990a57d038"></a>
@@ -586,6 +637,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Order a unit</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -593,8 +645,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>OrderUnit(player, unit-type, sloc, dloc, order) </p>
-
+<p>OrderUnit(player, unit-type, start_loc, dest_loc, order)</p>
+<p>Example:</p>
+<div class="example"><code>&ndash; Move transport from position x=94,y=0 to x=80,y=9 <b>OrderUnit</b>(1,"unit-human-transport",{94,0},{80,9},"move")</code></div> 
 </div>
 </div>
 <a id="a1e47ca04663063cb3b140ed84a1d1332"></a>
@@ -664,6 +717,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Remove unit from the map.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -671,8 +725,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 1. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Returns 1.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>ogre = CreateUnit("unit-ogre", 0, {24, 89}) <pre class="fragment">    AddTrigger(
+            function() return (GameCycle &gt; 150) end,
+            function()
+                    &lt;strong&gt;RemoveUnit&lt;/strong&gt;(ogre)
+                    return false end -- end of function
+    )&lt;/code&gt;&lt;/div&gt;
+</pre> </code></div>
 </div>
 </div>
 <a id="af57dcdd550c17207cf42e0df1c75cb9f"></a>
@@ -731,7 +792,17 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p><b>Description</b></p>
+<p>Select a single unit</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0, meaning the unit is selected.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Make the hero unit Grom Hellscream for player 5 grom = CreateUnit("unit-beast-cry", 5, {58, 8}) &ndash; Select only the unit Grom Hellscream <b>SelectSingleUnit</b>(grom)</code></div> 
 </div>
 </div>
 <a id="a07cd7757c16245e5f6f81340b35b0c6d"></a>
@@ -891,6 +962,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set training queue</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -898,8 +970,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The old state of the training queue </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The old state of the training queue</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Training queue available. Train multiple units. <b>SetTrainingQueue</b>(true) &ndash; Train one unit at a time. <b>SetTrainingQueue</b>(false)</code></div> 
 </div>
 </div>
 <a id="a226e19eb6cc961bd11005433a2773667"></a>
@@ -925,6 +998,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set the value of the unit variable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -932,8 +1006,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new value of the unit. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The new value of the unit.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Create a blacksmith for player 2 blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71}) &ndash; Specify the amount of hit points to assign to the blacksmith <b>SetUnitVariable</b>(blacksmith,"HitPoints",344)</code></div> 
 </div>
 </div>
 <a id="ac4b1841a26be14a319ac3ab11aa82c91"></a>
@@ -992,6 +1067,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>'Upgrade' a unit in place to a unit of different type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -999,8 +1075,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns success. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Returns success.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Make a peon for player 5 peon = CreateUnit("unit-peon", 5, {58, 9}) &ndash; The peon will be trasformed into a Grunt <b>TransformUnit</b>(peon,"unit-grunt")</code></div> 
 </div>
 </div>
 <a id="acdd39032a1d0913dbd2aadea9eb96af6"></a>
@@ -1062,7 +1139,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

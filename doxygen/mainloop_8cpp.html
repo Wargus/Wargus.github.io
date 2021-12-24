@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="actions_8h_source.html">actions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="editor_8h_source.html">editor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fow_8h_source.html">fow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="missile_8h_source.html">missile.h</a>&quot;</code><br />
@@ -101,6 +102,19 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 mainloop.cpp - The main game loop.</h2></td></tr>
+<tr class="memitem:a6b0d93d808929b564adf517b2d548c91"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91">CallPeriod</a> { <br />
+&#160;&#160;<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a4f5350106e538476d1b9c279ec8a20d7">cEvery2nd</a> = 0b1, 
+<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a0246ce533abcd8021057ec7848def86d">cEvery4th</a> = 0b11, 
+<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a64c61c024bac18cf720d0298f7682c71">cEvery8th</a> = 0b111, 
+<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a1e64f622b799e5fc3603cc760461d727">cEvery16th</a> = 0b1111, 
+<br />
+&#160;&#160;<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a1a2252828d8430e4f0cee5a1b0280b81">cEvery32nd</a> = 0b11111, 
+<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a27629ba611b75d89e75b56cc4da97631">cEvery64th</a> = 0b111111, 
+<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a3983f810e59a1415e55a2b345ff8444d">cEvery128th</a> = 0b1111111, 
+<a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91a96276ffbe3c425389b69499add205494">cEvery256th</a> = 0b11111111
+<br />
+ }</td></tr>
+<tr class="separator:a6b0d93d808929b564adf517b2d548c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5c369f7fe868bdf94faadd02263f07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainloop_8cpp.html#a0e5c369f7fe868bdf94faadd02263f07">KeyScrollState</a> = <a class="el" href="interface_8h.html#a49aa813aad4c259f2e98385603814bd3">ScrollNone</a></td></tr>
 <tr class="memdesc:a0e5c369f7fe868bdf94faadd02263f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">variable set when we are scrolling via keyboard  <a href="mainloop_8cpp.html#a0e5c369f7fe868bdf94faadd02263f07">More...</a><br /></td></tr>
 <tr class="separator:a0e5c369f7fe868bdf94faadd02263f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +149,31 @@ mainloop.cpp - The main game loop.</h2></td></tr>
 <tr class="memdesc:a230c3dd76ac6ab44458adbb098f15f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the map area.  <a href="mainloop_8cpp.html#a230c3dd76ac6ab44458adbb098f15f93">More...</a><br /></td></tr>
 <tr class="separator:a230c3dd76ac6ab44458adbb098f15f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a6b0d93d808929b564adf517b2d548c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0d93d808929b564adf517b2d548c91">&#9670;&nbsp;</a></span>CallPeriod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mainloop_8cpp.html#a6b0d93d808929b564adf517b2d548c91">CallPeriod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a4f5350106e538476d1b9c279ec8a20d7"></a>cEvery2nd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a0246ce533abcd8021057ec7848def86d"></a>cEvery4th&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a64c61c024bac18cf720d0298f7682c71"></a>cEvery8th&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a1e64f622b799e5fc3603cc760461d727"></a>cEvery16th&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a1a2252828d8430e4f0cee5a1b0280b81"></a>cEvery32nd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a27629ba611b75d89e75b56cc4da97631"></a>cEvery64th&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a3983f810e59a1415e55a2b345ff8444d"></a>cEvery128th&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b0d93d808929b564adf517b2d548c91a96276ffbe3c425389b69499add205494"></a>cEvery256th&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7fb05a99814ce14ba6a0f29d7841ed0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fb05a99814ce14ba6a0f29d7841ed0e">&#9670;&nbsp;</a></span>DisplayLoop()</h2>
@@ -430,7 +469,7 @@ mainloop.cpp - The main game loop.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

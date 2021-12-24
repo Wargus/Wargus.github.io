@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -98,13 +98,13 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#elif defined(USE_WIN32)</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#if 0 // the below would mean we give up XP support</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#if 1 // the below would mean we give up XP support</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;windows.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;winbase.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;dbghelp.h&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;process.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">print_backtrace</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">   25</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">print_backtrace</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> *stack[100];</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> frames;</div>
@@ -133,15 +133,15 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            name = <span class="stringliteral">&quot;&lt;unknown frame&gt;&quot;</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (SymGetLineFromAddr64(process, (DWORD64)(stack[i]), &amp;displacement, line)) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            fprintf(stderr, srder, <span class="stringliteral">&quot;%d: %s in %s:%d 0x%x\n&quot;</span>, frames - i - 1, name, line-&gt;FileName, line-&gt;LineNumber, symbol-&gt;Address);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            fprintf(stderr, <span class="stringliteral">&quot;%d: %s in %s:%d 0x%llx\n&quot;</span>, frames - i - 1, name, line-&gt;FileName, line-&gt;LineNumber, symbol-&gt;Address);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            fprintf(stderr, <span class="stringliteral">&quot;%d: %s 0x%x\n&quot;</span>, frames - i - 1, name, symbol-&gt;Address);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            fprintf(stderr, <span class="stringliteral">&quot;%d: %s 0x%llx\n&quot;</span>, frames - i - 1, name, symbol-&gt;Address);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    free(symbol);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">   62</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">print_backtrace</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">print_backtrace</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
@@ -155,10 +155,10 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="ast__backtrace_8h_html_af59eb33b8e21e56a05e95ee5a8be75f1"><div class="ttname"><a href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">print_backtrace</a></div><div class="ttdeci">void print_backtrace(void)</div><div class="ttdef"><b>Definition:</b> st_backtrace.h:62</div></div>
+<div class="ttc" id="ast__backtrace_8h_html_af59eb33b8e21e56a05e95ee5a8be75f1"><div class="ttname"><a href="st__backtrace_8h.html#af59eb33b8e21e56a05e95ee5a8be75f1">print_backtrace</a></div><div class="ttdeci">void print_backtrace(void)</div><div class="ttdef"><b>Definition:</b> st_backtrace.h:25</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:55 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

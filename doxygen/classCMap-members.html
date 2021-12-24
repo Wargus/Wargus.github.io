@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -80,10 +80,8 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classCMap.html">CMap</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classCMap.html#aeaadb7a11d3c4e41e17074a7b1548a52">Clamp</a>(Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a379123dbf069a7b9582763b3ac5ab212">Clean</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a051af5e424d3dd287bbdaf8c4472e248">CleanFogOfWar</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a77b4490b96b57e7d00f17967121181ad">ClearRockTile</a>(const Vec2i &amp;pos)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a173b04ebc42dfd052f332fd66e8e4574">ClearWoodTile</a>(const Vec2i &amp;pos)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a58a2f63247b60c1d8cfddadf21c5dafb">Clean</a>(const bool isHardClean=false)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a3ae8e641725381d3ccde3014e395c0b0">ClearTile</a>(const Vec2i &amp;tilePos)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classCMap.html#a7ad71523562247ed2183e57eaed018e8">CMap</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a8965eb791321a75665b10a2bbe5c72d8">Create</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classCMap.html#ac6f3fb54c36bc544dea73dd601d6d4ef">Field</a>(unsigned int index) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -91,35 +89,36 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classCMap.html#a01a20a1057fab8c9877b8e910b6594e5">Field</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a1a9a4ef4635c5b3d68211c7b4cfd583b">Fields</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classCMap.html#a8df2bfe1ee78e68d5b8868edb87ad898">FixSelectionArea</a>(Vec2i &amp;minpos, Vec2i &amp;maxpos)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#ac0412d56525c93483724e256f58e6968">FogGraphic</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a07e2b895a91d94f932dba7e87c9b6b27">getIndex</a>(int x, int y) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#af9dea75afddfddf0e6a5d7e3ee0a91b6">getIndex</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a93b8280da0a722cfd77d2b8ea254d46b">HitWall</a>(const Vec2i &amp;pos, unsigned damage)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a1e568377b6cff48de8c8c275906069f0">HumanWallOnMap</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#ac5c7b681e0e33e8163262ae079af860d">Info</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a604f597cf8d0f5a5428bceba203f8550">Init</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#afd0c41c24a172f894636a756e93fc5c0">Insert</a>(CUnit &amp;unit)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a48ea0ceabb62502794106a33ea63ef18">MapPixelPosToTilePos</a>(const PixelPos &amp;mapPos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#ac1e8494fa015d7eeac9ae8a8e2044747">MarkSeenTile</a>(CMapField &amp;mf)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#ab11a698e5612fa36b1a661b20cb71396">NoFogOfWar</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a55972db733be7a6861b8c061f9a0328e">OrcWallOnMap</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a28a64fdf269b29b76e7626150162088f">RegenerateForest</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a9a1d94e0acca77340fa8a93912117baf">Remove</a>(CUnit &amp;unit)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a38a94c0d361d0ce865053dc8f366476c">RemoveWall</a>(const Vec2i &amp;pos)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a43f32032ac6e5bbf80fa8061eb13bc3a">Reveal</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#abfb72e03be3c55acfc864cb89e25e146">Save</a>(CFile &amp;file) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#aa6fbf8b498ff3aa85c847756c4246862">SetWall</a>(const Vec2i &amp;pos, bool humanwall)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#aaa4b6a3786d6ebed5efc80833dde0e72">TileGraphic</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a83a2e213b8373c4ab5537530e8e1da8d">TileModelsFileName</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#aa45b9488fee078f02d2d9bd2fae9ffee">TilePosToMapPixelPos_Center</a>(const Vec2i &amp;tilePos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#ae0d19d141295a0181d7503f912d3147c">TilePosToMapPixelPos_TopLeft</a>(const Vec2i &amp;tilePos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a221f66ade56ecbc6f96be1c83d6f22a4">Tileset</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCMap.html#a612d5898c9e9a2ba13b468c354c02273">WallOnMap</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a9419f5696c22e9569612b79db2872e02">~CMap</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a07e2b895a91d94f932dba7e87c9b6b27">getIndex</a>(int x, int y) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#af9dea75afddfddf0e6a5d7e3ee0a91b6">getIndex</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a93b8280da0a722cfd77d2b8ea254d46b">HitWall</a>(const Vec2i &amp;pos, unsigned damage)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a1e568377b6cff48de8c8c275906069f0">HumanWallOnMap</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#ac5c7b681e0e33e8163262ae079af860d">Info</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a604f597cf8d0f5a5428bceba203f8550">Init</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#afd0c41c24a172f894636a756e93fc5c0">Insert</a>(CUnit &amp;unit)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a27ced2671767cb3ef32a3d319bb7b6a8">isInitialized</a>() const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#ab9ae56be992ce552204146d31926b62a">isMapInitialized</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a48ea0ceabb62502794106a33ea63ef18">MapPixelPosToTilePos</a>(const PixelPos &amp;mapPos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#ac1e8494fa015d7eeac9ae8a8e2044747">MarkSeenTile</a>(CMapField &amp;mf)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#ab11a698e5612fa36b1a661b20cb71396">NoFogOfWar</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a55972db733be7a6861b8c061f9a0328e">OrcWallOnMap</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a28a64fdf269b29b76e7626150162088f">RegenerateForest</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a9a1d94e0acca77340fa8a93912117baf">Remove</a>(CUnit &amp;unit)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a38a94c0d361d0ce865053dc8f366476c">RemoveWall</a>(const Vec2i &amp;pos)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a24dbe5b4a494e3c4da95cdeb4959ab82">Reveal</a>(const int mode=MapRevealModes::cKnown)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#abfb72e03be3c55acfc864cb89e25e146">Save</a>(CFile &amp;file) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#aa6fbf8b498ff3aa85c847756c4246862">SetWall</a>(const Vec2i &amp;pos, bool humanwall)</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#aaa4b6a3786d6ebed5efc80833dde0e72">TileGraphic</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a83a2e213b8373c4ab5537530e8e1da8d">TileModelsFileName</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#aa45b9488fee078f02d2d9bd2fae9ffee">TilePosToMapPixelPos_Center</a>(const Vec2i &amp;tilePos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#ae0d19d141295a0181d7503f912d3147c">TilePosToMapPixelPos_TopLeft</a>(const Vec2i &amp;tilePos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a221f66ade56ecbc6f96be1c83d6f22a4">Tileset</a></td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCMap.html#a612d5898c9e9a2ba13b468c354c02273">WallOnMap</a>(const Vec2i &amp;pos) const</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCMap.html#a9419f5696c22e9569612b79db2872e02">~CMap</a>()</td><td class="entry"><a class="el" href="classCMap.html">CMap</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

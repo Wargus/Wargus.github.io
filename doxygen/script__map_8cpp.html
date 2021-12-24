@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,11 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fov_8h_source.html">fov.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fow_8h_source.html">fow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="iolib_8h_source.html">iolib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="netconnect_8h_source.html">netconnect.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="script_8h_source.html">script.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tileset_8h_source.html">tileset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="translate_8h_source.html">translate.h</a>&quot;</code><br />
@@ -110,14 +114,40 @@ Functions</h2></td></tr>
 <tr class="separator:a3f6edf88e9b3c9d45654b79be0760054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9c4e41a5a7481d03c743126e1fa1e3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a4d9c4e41a5a7481d03c743126e1fa1e3">CclSetMinimapTerrain</a> (lua_State *l)</td></tr>
 <tr class="separator:a4d9c4e41a5a7481d03c743126e1fa1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dcd89ea21f376ae6d150b450c0c44c0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a7dcd89ea21f376ae6d150b450c0c44c0">CclSetFogOfWarOpacity</a> (lua_State *l)</td></tr>
-<tr class="separator:a7dcd89ea21f376ae6d150b450c0c44c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aca198a7093469b4a885adc4b8363d4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a2aca198a7093469b4a885adc4b8363d4">CclSetEnableMapGrid</a> (lua_State *l)</td></tr>
+<tr class="separator:a2aca198a7093469b4a885adc4b8363d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30200a4377de13aa9022eb53df78c57b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a30200a4377de13aa9022eb53df78c57b">CclGetIsMapGridEnabled</a> (lua_State *l)</td></tr>
+<tr class="separator:a30200a4377de13aa9022eb53df78c57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906bd2ffc1585ee3217fb1bac6ff159d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a906bd2ffc1585ee3217fb1bac6ff159d">CclSetFieldOfViewType</a> (lua_State *l)</td></tr>
+<tr class="separator:a906bd2ffc1585ee3217fb1bac6ff159d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97c8b7eb28d68cbeb13644d4440c3fb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#ad97c8b7eb28d68cbeb13644d4440c3fb">CclGetFieldOfViewType</a> (lua_State *l)</td></tr>
+<tr class="separator:ad97c8b7eb28d68cbeb13644d4440c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e42989dd41c8934255b7a19e1cce516"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a1e42989dd41c8934255b7a19e1cce516">CclSetOpaqueFor</a> (lua_State *l)</td></tr>
+<tr class="separator:a1e42989dd41c8934255b7a19e1cce516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42538cfa247caef2260f51c6e0708d3e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a42538cfa247caef2260f51c6e0708d3e">CclGetIsOpaqueFor</a> (lua_State *l)</td></tr>
+<tr class="separator:a42538cfa247caef2260f51c6e0708d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56af5a1adb7f497186abda0e3f23d1b5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a56af5a1adb7f497186abda0e3f23d1b5">CclRemoveOpaqueFor</a> (lua_State *l)</td></tr>
+<tr class="separator:a56af5a1adb7f497186abda0e3f23d1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893ba6441c204cad28b9d7c62c51c1a5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a893ba6441c204cad28b9d7c62c51c1a5">CclSetFogOfWarType</a> (lua_State *l)</td></tr>
+<tr class="separator:a893ba6441c204cad28b9d7c62c51c1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb38764f041fcac7b115a1eb142a704"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a6eb38764f041fcac7b115a1eb142a704">CclGetFogOfWarType</a> (lua_State *l)</td></tr>
+<tr class="separator:a6eb38764f041fcac7b115a1eb142a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9132d3cc24518df7cca42bf224bf4bad"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a9132d3cc24518df7cca42bf224bf4bad">CclSetFogOfWarOpacityLevels</a> (lua_State *l)</td></tr>
+<tr class="separator:a9132d3cc24518df7cca42bf224bf4bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e4ab69c2aee0ea6ca487196ea77d80"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a15e4ab69c2aee0ea6ca487196ea77d80">CclSetFogOfWarBlur</a> (lua_State *l)</td></tr>
+<tr class="separator:a15e4ab69c2aee0ea6ca487196ea77d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1a09e0ce3c31ed83455fa8db5e50af"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a8a1a09e0ce3c31ed83455fa8db5e50af">CclSetFogOfWarBilinear</a> (lua_State *l)</td></tr>
+<tr class="separator:a8a1a09e0ce3c31ed83455fa8db5e50af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c3f1c8fd8dad84a809a14706d6d7ca"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#ae5c3f1c8fd8dad84a809a14706d6d7ca">CclGetIsFogOfWarBilinear</a> (lua_State *l)</td></tr>
+<tr class="separator:ae5c3f1c8fd8dad84a809a14706d6d7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d8e022357a7e5b1bc1eb543a05e010"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#af8d8e022357a7e5b1bc1eb543a05e010">CclSetForestRegeneration</a> (lua_State *l)</td></tr>
 <tr class="separator:af8d8e022357a7e5b1bc1eb543a05e010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad74f157a9cbddce559079a058e27a45e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#ad74f157a9cbddce559079a058e27a45e">CclSetFogOfWarColor</a> (lua_State *l)</td></tr>
 <tr class="separator:ad74f157a9cbddce559079a058e27a45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e4f3407256e5294f7613e5807bfbba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#ab0e4f3407256e5294f7613e5807bfbba">CclSetFogOfWarGraphics</a> (lua_State *l)</td></tr>
 <tr class="separator:ab0e4f3407256e5294f7613e5807bfbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846ae8039f4c8af11975d13db543dbba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a846ae8039f4c8af11975d13db543dbba">CclSetMMFogOfWarOpacityLevels</a> (lua_State *l)</td></tr>
+<tr class="separator:a846ae8039f4c8af11975d13db543dbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5912c845801e8582d033471ae3ff6204"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a5912c845801e8582d033471ae3ff6204">CclSetTileSize</a> (lua_State *l)</td></tr>
 <tr class="separator:a5912c845801e8582d033471ae3ff6204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7474b8ea6b47f46c541220105e46eec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a7474b8ea6b47f46c541220105e46eec7">SetTile</a> (unsigned int tileIndex, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int value)</td></tr>
@@ -137,6 +167,12 @@ Functions</h2></td></tr>
 <tr class="separator:a787e1709bf2933d322806406d8e149e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7de8a309fa8a69ee5e9fe2da92be405"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#ac7de8a309fa8a69ee5e9fe2da92be405">CclGetTileTerrainHasFlag</a> (lua_State *l)</td></tr>
 <tr class="separator:ac7de8a309fa8a69ee5e9fe2da92be405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85413b52292990a644044afecb5b2463"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a85413b52292990a644044afecb5b2463">CclSetEnableWallsForSP</a> (lua_State *l)</td></tr>
+<tr class="separator:a85413b52292990a644044afecb5b2463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53e3dad852995a9bf6d76e26b81f04b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#af53e3dad852995a9bf6d76e26b81f04b">CclIsWallsEnabledForSP</a> (lua_State *l)</td></tr>
+<tr class="separator:af53e3dad852995a9bf6d76e26b81f04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e64fdffbcdf841dc0acc591fa81e9ab"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#a4e64fdffbcdf841dc0acc591fa81e9ab">CclGetIsGameHoster</a> (lua_State *l)</td></tr>
+<tr class="separator:a4e64fdffbcdf841dc0acc591fa81e9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5954fc096d29f40945fb8e225da8996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__map_8cpp.html#ae5954fc096d29f40945fb8e225da8996">MapCclRegister</a> ()</td></tr>
 <tr class="memdesc:ae5954fc096d29f40945fb8e225da8996"><td class="mdescLeft">&#160;</td><td class="mdescRight">register ccl features  <a href="script__map_8cpp.html#ae5954fc096d29f40945fb8e225da8996">More...</a><br /></td></tr>
 <tr class="separator:ae5954fc096d29f40945fb8e225da8996"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,14 +229,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Center the map.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Center the view at position x=11 and y=1. <b>CenterMap</b>(11, 1)</code></div> 
 </div>
 </div>
 <a id="ad8c380f8cc356d499fc4830dad488228"></a>
@@ -269,6 +307,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad97c8b7eb28d68cbeb13644d4440c3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97c8b7eb28d68cbeb13644d4440c3fb">&#9670;&nbsp;</a></span>CclGetFieldOfViewType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGetFieldOfViewType </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get unit's field of view type - ShadowCasting or SimpleRadial </p>
+
+</div>
+</div>
 <a id="a3f6edf88e9b3c9d45654b79be0760054"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f6edf88e9b3c9d45654b79be0760054">&#9670;&nbsp;</a></span>CclGetFogOfWar()</h2>
 
@@ -292,6 +357,156 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
+<p>Get if the fog of war is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example:</p>
+<div class="example"><code><b>GetFogOfWar</b>()</code></div> 
+</div>
+</div>
+<a id="a6eb38764f041fcac7b115a1eb142a704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb38764f041fcac7b115a1eb142a704">&#9670;&nbsp;</a></span>CclGetFogOfWarType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGetFogOfWarType </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get Fog of War type - legacy or enhanced </p>
+
+</div>
+</div>
+<a id="ae5c3f1c8fd8dad84a809a14706d6d7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c3f1c8fd8dad84a809a14706d6d7ca">&#9670;&nbsp;</a></span>CclGetIsFogOfWarBilinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGetIsFogOfWarBilinear </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if FOW bilinear upscaling enabled </p>
+
+</div>
+</div>
+<a id="a4e64fdffbcdf841dc0acc591fa81e9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e64fdffbcdf841dc0acc591fa81e9ab">&#9670;&nbsp;</a></span>CclGetIsGameHoster()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGetIsGameHoster </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if network game was created on this PC </p>
+
+</div>
+</div>
+<a id="a30200a4377de13aa9022eb53df78c57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30200a4377de13aa9022eb53df78c57b">&#9670;&nbsp;</a></span>CclGetIsMapGridEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGetIsMapGridEnabled </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if map grid is enabled </p>
+
+</div>
+</div>
+<a id="a42538cfa247caef2260f51c6e0708d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42538cfa247caef2260f51c6e0708d3e">&#9670;&nbsp;</a></span>CclGetIsOpaqueFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGetIsOpaqueFor </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check opacity for the tile's terrain.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -363,6 +578,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af53e3dad852995a9bf6d76e26b81f04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53e3dad852995a9bf6d76e26b81f04b">&#9670;&nbsp;</a></span>CclIsWallsEnabledForSP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclIsWallsEnabledForSP </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if walls enabled for single player games (for debug purposes) </p>
+
+</div>
+</div>
 <a id="a1cc12b004933f56630daea0f512eb92b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cc12b004933f56630daea0f512eb92b">&#9670;&nbsp;</a></span>CclLoadTileModels()</h2>
 
@@ -393,6 +635,32 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a56af5a1adb7f497186abda0e3f23d1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56af5a1adb7f497186abda0e3f23d1b5">&#9670;&nbsp;</a></span>CclRemoveOpaqueFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclRemoveOpaqueFor </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -429,6 +697,109 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2aca198a7093469b4a885adc4b8363d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aca198a7093469b4a885adc4b8363d4">&#9670;&nbsp;</a></span>CclSetEnableMapGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetEnableMapGrid </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Activate map grid (true|false)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+
+</div>
+</div>
+<a id="a85413b52292990a644044afecb5b2463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85413b52292990a644044afecb5b2463">&#9670;&nbsp;</a></span>CclSetEnableWallsForSP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetEnableWallsForSP </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable walls enabled for single player games (for debug purposes)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+
+</div>
+</div>
+<a id="a906bd2ffc1585ee3217fb1bac6ff159d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906bd2ffc1585ee3217fb1bac6ff159d">&#9670;&nbsp;</a></span>CclSetFieldOfViewType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetFieldOfViewType </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Select unit's field of view algorithm - ShadowCasting or SimpleRadial</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+<p>Tiled types of FOW don't work with shadow casting</p>
+
+</div>
+</div>
 <a id="af41cd230c55929006dc82dcad19ce7ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af41cd230c55929006dc82dcad19ce7ec">&#9670;&nbsp;</a></span>CclSetFogOfWar()</h2>
 
@@ -452,13 +823,83 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set fog of war on/off.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Example:</p>
+<div class="example"><code><b>SetFogOfWar</b>(true)</code></div><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l</td><td>Lua state. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8a1a09e0ce3c31ed83455fa8db5e50af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1a09e0ce3c31ed83455fa8db5e50af">&#9670;&nbsp;</a></span>CclSetFogOfWarBilinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetFogOfWarBilinear </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Activate FOW bilinear upscaling type (true|false)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+
+</div>
+</div>
+<a id="a15e4ab69c2aee0ea6ca487196ea77d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e4ab69c2aee0ea6ca487196ea77d80">&#9670;&nbsp;</a></span>CclSetFogOfWarBlur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetFogOfWarBlur </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set parameters for FOW blurer (radiuses and number of iterations)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
 
 </div>
 </div>
@@ -485,14 +926,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set Fog color.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Red fog of war <b>SetFogOfWarColor</b>(128,0,0)</code></div> 
 </div>
 </div>
 <a id="ab0e4f3407256e5294f7613e5807bfbba"></a>
@@ -528,8 +971,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7dcd89ea21f376ae6d150b450c0c44c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dcd89ea21f376ae6d150b450c0c44c0">&#9670;&nbsp;</a></span>CclSetFogOfWarOpacity()</h2>
+<a id="a9132d3cc24518df7cca42bf224bf4bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9132d3cc24518df7cca42bf224bf4bad">&#9670;&nbsp;</a></span>CclSetFogOfWarOpacityLevels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -538,7 +981,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int CclSetFogOfWarOpacity </td>
+          <td class="memname">static int CclSetFogOfWarOpacityLevels </td>
           <td>(</td>
           <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>l</em></td><td>)</td>
@@ -551,13 +994,49 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Fog of war opacity.</p>
+<p>Set opacity (alpha) for different levels of fog of war - explored, revealed, unseen</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+
+</div>
+</div>
+<a id="a893ba6441c204cad28b9d7c62c51c1a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a893ba6441c204cad28b9d7c62c51c1a5">&#9670;&nbsp;</a></span>CclSetFogOfWarType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetFogOfWarType </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Select which type of Fog of War to use</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+<p>Tiled types of FOW don't work with shadow casting</p>
 
 </div>
 </div>
@@ -584,6 +1063,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set forest regeneration speed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -591,8 +1071,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Old speed </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Old speed</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; No regeneration. <b>SetForestRegeneration</b>(0) &ndash; Slow regeneration every 50 seconds <b>SetForestRegeneration</b>(50) &ndash; Extremely slow regeneration every 1h of game time <b>SetForestRegeneration</b>(3600)</code></div> 
 </div>
 </div>
 <a id="a4d9c4e41a5a7481d03c743126e1fa1e3"></a>
@@ -618,13 +1099,83 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Enable display of terrain in minimap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Show the minimap terrain <b>SetMinimapTerrain</b>(true)</code></div> 
+</div>
+</div>
+<a id="a846ae8039f4c8af11975d13db543dbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846ae8039f4c8af11975d13db543dbba">&#9670;&nbsp;</a></span>CclSetMMFogOfWarOpacityLevels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetMMFogOfWarOpacityLevels </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set opacity (alpha) for different levels of fog of war - explored, revealed, unexplored for mini map</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
+
+</div>
+</div>
+<a id="a1e42989dd41c8934255b7a19e1cce516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e42989dd41c8934255b7a19e1cce516">&#9670;&nbsp;</a></span>CclSetOpaqueFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetOpaqueFor </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set opaque for the tile's terrain.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong tile's terrain; </dd></dl>
 
 </div>
 </div>
@@ -651,14 +1202,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Define the starting viewpoint for a given player.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Start view for player 0. <b>SetStartView</b>(0, 25, 12) &ndash; Start view for player 1. <b>SetStartView</b>(1, 71, 38)</code></div> 
 </div>
 </div>
 <a id="a26c26db57c0c16d7663957dcabc88035"></a>
@@ -717,14 +1270,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Define size in pixels (x,y) of a tile in this game</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code><b>SetTileSize</b>(32,32)</code></div> 
 </div>
 </div>
 <a id="aa51509a1de0cb3847aa1c392d93fe4aa"></a>
@@ -861,7 +1416,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

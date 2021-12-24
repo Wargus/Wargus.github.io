@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -184,14 +184,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab7dd9f3b99448a65893b1a39ccc923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7006741c575f144fbdd737d74f8e6299"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#a7006741c575f144fbdd737d74f8e6299">IsAllied</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
 <tr class="separator:a7006741c575f144fbdd737d74f8e6299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a974d7fd1d8ea250acda4aa4e75c2d0f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#a974d7fd1d8ea250acda4aa4e75c2d0f3">HasSharedVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
-<tr class="separator:a974d7fd1d8ea250acda4aa4e75c2d0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d832d3cb0713109008f4a55665e1d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#aa6d832d3cb0713109008f4a55665e1d1">HasSharedVisionWith</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
-<tr class="separator:aa6d832d3cb0713109008f4a55665e1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac71d1b0d1540f071a298d63a23522a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#aac71d1b0d1540f071a298d63a23522a9">HasMutualSharedVisionWith</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
-<tr class="separator:aac71d1b0d1540f071a298d63a23522a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788414cb1cebaf0bda4d77f13461555e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#a788414cb1cebaf0bda4d77f13461555e">HasMutualSharedVisionWith</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
-<tr class="separator:a788414cb1cebaf0bda4d77f13461555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c37d40a0f2e51d56aa0cbe38981136"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#af3c37d40a0f2e51d56aa0cbe38981136">IsTeamed</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player) const</td></tr>
 <tr class="separator:af3c37d40a0f2e51d56aa0cbe38981136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b15458b21889f0642a0dcb782f38574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnit.html#a9b15458b21889f0642a0dcb782f38574">IsTeamed</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit) const</td></tr>
@@ -775,6 +767,7 @@ Public Attributes</h2></td></tr>
 
 <p>Draw a single unit. </p>
 <p>Units on map: Draw unit on map. </p>
+<p>TODO: change ThisPlayer to currently rendered player/players #RenderTargets</p>
 
 </div>
 </div>
@@ -826,106 +819,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac71d1b0d1540f071a298d63a23522a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac71d1b0d1540f071a298d63a23522a9">&#9670;&nbsp;</a></span>HasMutualSharedVisionWith() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CUnit::HasMutualSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>player</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if both players share vision</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Player to check </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a788414cb1cebaf0bda4d77f13461555e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a788414cb1cebaf0bda4d77f13461555e">&#9670;&nbsp;</a></span>HasMutualSharedVisionWith() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CUnit::HasMutualSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if both units share vision</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Unit to check </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a974d7fd1d8ea250acda4aa4e75c2d0f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a974d7fd1d8ea250acda4aa4e75c2d0f3">&#9670;&nbsp;</a></span>HasSharedVisionWith() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CUnit::HasSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>player</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if unit shares vision with the player</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Player to check </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa6d832d3cb0713109008f4a55665e1d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d832d3cb0713109008f4a55665e1d1">&#9670;&nbsp;</a></span>HasSharedVisionWith() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CUnit::HasSharedVisionWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if the unit shares vision with the unit</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Unit to check </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1281,7 +1174,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if the unit is unusable (for attacking...) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo:</a></b></dt><dd>look if correct used (UnitActionBuilt is no problem if attacked)? </dd></dl>
+<p>Check if the unit is unusable (for attacking...) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd>look if correct used (UnitActionBuilt is no problem if attacked)? </dd></dl>
 
 </div>
 </div>
@@ -2733,7 +2626,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:57 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:40 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

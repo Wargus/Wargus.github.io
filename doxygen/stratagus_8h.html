@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -122,6 +122,12 @@ stratagus.h - The main header file.</h2></td></tr>
 <tr class="memitem:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a041bc0ec5975683b7cbbed389d0dc0aa">EnableUnitDebug</a></td></tr>
 <tr class="memdesc:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, halt on assertion failures  <a href="stratagus_8h.html#a041bc0ec5975683b7cbbed389d0dc0aa">More...</a><br /></td></tr>
 <tr class="separator:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a3be4118c1d928572b36c6d3e8d6d9f28">IsDebugEnabled</a></td></tr>
+<tr class="memdesc:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8h.html#a3be4118c1d928572b36c6d3e8d6d9f28">More...</a><br /></td></tr>
+<tr class="separator:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd72ad929774d23801f2864f5541b700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#afd72ad929774d23801f2864f5541b700">EnableWallsInSinglePlayer</a></td></tr>
+<tr class="memdesc:afd72ad929774d23801f2864f5541b700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is debug enabled? Flag to pass into lua code.  <a href="stratagus_8h.html#afd72ad929774d23801f2864f5541b700">More...</a><br /></td></tr>
+<tr class="separator:afd72ad929774d23801f2864f5541b700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17efbe9eb356ac3b060f74272aa7e423"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a17efbe9eb356ac3b060f74272aa7e423">NameLine</a> []</td></tr>
 <tr class="memdesc:a17efbe9eb356ac3b060f74272aa7e423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text string: Name, Version, Copyright.  <a href="stratagus_8h.html#a17efbe9eb356ac3b060f74272aa7e423">More...</a><br /></td></tr>
 <tr class="separator:a17efbe9eb356ac3b060f74272aa7e423"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -683,7 +689,7 @@ stratagus.h - The main header file.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000127">Todo:</a></b></dt><dd><p class="startdd">Needs code cleanup. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000125">Todo:</a></b></dt><dd><p class="startdd">Needs code cleanup. </p>
 <p class="interdd">Needs compatibility checks. </p>
 <p class="enddd">Needs error message unification. </p>
 </dd></dl>
@@ -703,6 +709,22 @@ stratagus.h - The main header file.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>if enabled, halt on assertion failures </p>
+
+</div>
+</div>
+<a id="afd72ad929774d23801f2864f5541b700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd72ad929774d23801f2864f5541b700">&#9670;&nbsp;</a></span>EnableWallsInSinglePlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EnableWallsInSinglePlayer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is debug enabled? Flag to pass into lua code. </p>
 
 </div>
 </div>
@@ -733,6 +755,22 @@ stratagus.h - The main header file.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3be4118c1d928572b36c6d3e8d6d9f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be4118c1d928572b36c6d3e8d6d9f28">&#9670;&nbsp;</a></span>IsDebugEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsDebugEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if enabled, a unit info dump will be created </p>
 
 </div>
 </div>
@@ -788,7 +826,7 @@ stratagus.h - The main header file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

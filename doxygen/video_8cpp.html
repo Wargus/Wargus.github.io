@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;omp.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="video_8h_source.html">video.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="intern__video_8h_source.html">intern_video.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cursor_8h_source.html">cursor.h</a>&quot;</code><br />
@@ -205,6 +206,9 @@ video.cpp - The universal video functions.</h2></td></tr>
 <tr class="memitem:ae053444c05f67013c9d54e16523f9521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#ae053444c05f67013c9d54e16523f9521">VideoCclRegister</a> ()</td></tr>
 <tr class="memdesc:ae053444c05f67013c9d54e16523f9521"><td class="mdescLeft">&#160;</td><td class="mdescRight">register lua function  <a href="video_8cpp.html#ae053444c05f67013c9d54e16523f9521">More...</a><br /></td></tr>
 <tr class="separator:ae053444c05f67013c9d54e16523f9521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d532235676f496086f9fd834d6af250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a8d532235676f496086f9fd834d6af250">BlitSurfaceAlphaBlending_32bpp</a> (const SDL_Surface *srcSurface, const SDL_Rect *srcRect, SDL_Surface *dstSurface, const SDL_Rect *dstRect, const bool enableMT)</td></tr>
+<tr class="memdesc:a8d532235676f496086f9fd834d6af250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blit a surface into another with alpha blending.  <a href="video_8cpp.html#a8d532235676f496086f9fd834d6af250">More...</a><br /></td></tr>
+<tr class="separator:a8d532235676f496086f9fd834d6af250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc92ce382f972b380c71e6f2e1c81dff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#abc92ce382f972b380c71e6f2e1c81dff">VideoPaletteListAdd</a> (SDL_Surface *surface)</td></tr>
 <tr class="separator:abc92ce382f972b380c71e6f2e1c81dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7246e4ae8399bbac97de2c2d193b1348"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a7246e4ae8399bbac97de2c2d193b1348">VideoPaletteListRemove</a> (SDL_Surface *surface)</td></tr>
@@ -266,6 +270,59 @@ video.cpp - The universal video functions.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d532235676f496086f9fd834d6af250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d532235676f496086f9fd834d6af250">&#9670;&nbsp;</a></span>BlitSurfaceAlphaBlending_32bpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> BlitSurfaceAlphaBlending_32bpp </td>
+          <td>(</td>
+          <td class="paramtype">const SDL_Surface *&#160;</td>
+          <td class="paramname"><em>srcSurface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>srcRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>dstSurface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>dstRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>enableMT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blit a surface into another with alpha blending. </p>
+<p>This implementation of blittind doesn't scale</p>
+<p>Crop rectangles if necessary</p>
+<p>Alpha blending of the src texture into the dst</p>
+<p>TODO: change numOfThreads for small rectangles to prevent False Sharing</p>
+<p>pragma omp parallel</p>
 
 </div>
 </div>
@@ -1122,7 +1179,7 @@ video.cpp - The universal video functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

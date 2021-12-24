@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -182,10 +182,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a756b9ff686421a90a25776386352a756"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMissileConfig.html">MissileConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnitType.html#a756b9ff686421a90a25776386352a756">Impact</a> [<a class="el" href="unitsound_8h.html#ae81ef090059991bcd9ddbd8e09286ca0">ANIMATIONS_DEATHTYPES</a>+2]</td></tr>
 <tr class="memdesc:a756b9ff686421a90a25776386352a756"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classMissile.html" title="Missile on the map.">Missile</a> for unit explosion.  <a href="classCUnitType.html#a756b9ff686421a90a25776386352a756">More...</a><br /></td></tr>
 <tr class="separator:a756b9ff686421a90a25776386352a756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bb00182bd9011effa5e7a18a23ac395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLuaCallback.html">LuaCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnitType.html#a5bb00182bd9011effa5e7a18a23ac395">DeathExplosion</a></td></tr>
-<tr class="memdesc:a5bb00182bd9011effa5e7a18a23ac395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Missiles spawned if unit is hit(+shield)  <a href="classCUnitType.html#a5bb00182bd9011effa5e7a18a23ac395">More...</a><br /></td></tr>
-<tr class="separator:a5bb00182bd9011effa5e7a18a23ac395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558d38e4466e1b6f9e2f6756ccc1fe0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLuaCallback.html">LuaCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnitType.html#a558d38e4466e1b6f9e2f6756ccc1fe0f">OnDeath</a></td></tr>
+<tr class="memdesc:a558d38e4466e1b6f9e2f6756ccc1fe0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Missiles spawned if unit is hit(+shield)  <a href="classCUnitType.html#a558d38e4466e1b6f9e2f6756ccc1fe0f">More...</a><br /></td></tr>
+<tr class="separator:a558d38e4466e1b6f9e2f6756ccc1fe0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca8af4f1dd3cc99dbb81ef7a7c73d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLuaCallback.html">LuaCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnitType.html#a3ca8af4f1dd3cc99dbb81ef7a7c73d94">OnHit</a></td></tr>
+<tr class="memdesc:a3ca8af4f1dd3cc99dbb81ef7a7c73d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">lua function called when unit is about to die, receives x,y,unit  <a href="classCUnitType.html#a3ca8af4f1dd3cc99dbb81ef7a7c73d94">More...</a><br /></td></tr>
 <tr class="separator:a3ca8af4f1dd3cc99dbb81ef7a7c73d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c9a25cd37507c40781a993847a75b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLuaCallback.html">LuaCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUnitType.html#a73c9a25cd37507c40781a993847a75b5">OnEachCycle</a></td></tr>
 <tr class="memdesc:a73c9a25cd37507c40781a993847a75b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">lua function called when unit is hit  <a href="classCUnitType.html#a73c9a25cd37507c40781a993847a75b5">More...</a><br /></td></tr>
@@ -424,7 +425,7 @@ Public Attributes</h2></td></tr>
 <p>Corpse unit-type name, should only be used during setup.</p>
 <p><a class="el" href="classCUnitType.html#a1777b67757020f6d80ddbc042296fb22" title="Corpse type name.">CUnitType::CorpseType</a></p>
 <p>Corpse unit-type pointer, only this should be used during run time. Many unit-types can share the same corpse.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo:</a></b></dt><dd>continue this documentation</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000111">Todo:</a></b></dt><dd>continue this documentation</dd></dl>
 <p><a class="el" href="classCUnitType.html#a295268c6c2c505589bf9e5b4024bddab" title="Corpse unit-type.">CUnitType::Construction</a></p>
 <p>What is shown in construction phase.</p>
 <p>CUnitType::SightRange</p>
@@ -466,7 +467,7 @@ Public Attributes</h2></td></tr>
 <p>Decay rate in 1/6 seconds</p>
 <p><a class="el" href="classCUnitType.html#a054a8fd137646b9fedb9ed4c449b33d0" title="Decay rate in 1/6 seconds.">CUnitType::AnnoyComputerFactor</a></p>
 <p>How much this annoys the computer</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo:</a></b></dt><dd>not used</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo:</a></b></dt><dd>not used</dd></dl>
 <p><a class="el" href="classCUnitType.html#ae654be21025ae468e6d7fa2a0df26b71" title="Min radius for AI build surroundings checking.">CUnitType::MouseAction</a></p>
 <p>Right click action</p>
 <p>CUnitType::Points</p>
@@ -506,22 +507,22 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="classCUnitType.html#a8a19f508835742ee8dd2bbc3238cf28f" title="Building.">CUnitType::CanAttack</a></p>
 <p>Unit is able to attack.</p>
 <p><a class="el" href="classCUnitType.html#a5e10e0e857ab4fc0b0adba409b73b3e6" title="HP burn rate per sec.">CUnitType::RepairRange</a></p>
-<p>Unit can repair buildings. It will use the actack animation. It will heal 4 points for every repair cycle, and cost 1 of each resource, alternatively(1 cycle wood, 1 cycle gold) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo:</a></b></dt><dd>The above should be more configurable. If units have a repair range, they can repair, and this is the distance.</dd></dl>
+<p>Unit can repair buildings. It will use the actack animation. It will heal 4 points for every repair cycle, and cost 1 of each resource, alternatively(1 cycle wood, 1 cycle gold) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo:</a></b></dt><dd>The above should be more configurable. If units have a repair range, they can repair, and this is the distance.</dd></dl>
 <p>CUnitType::ShieldPiercing</p>
 <p>Can directly damage shield-protected units, without shield damaging.</p>
 <p><a class="el" href="classCUnitType.html#a17ef50fcecc09891f01683edabe90273" title="Minimap Color for Neutral Units.">CUnitType::Sound</a></p>
 <p>Sounds for events</p>
 <p>CUnitType::Weapon</p>
 <p>Current sound for weapon</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo:</a></b></dt><dd>temporary solution</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo:</a></b></dt><dd>temporary solution</dd></dl>
 <p><a class="el" href="classCUnitType.html#acf20cead8f012a8eaf6070960987a1c3" title="How much health is drained every second when poisoned.">CUnitType::FieldFlags</a></p>
 <p>Flags that are set, if a unit enters a map field or cleared, if a unit leaves a map field.</p>
 <p><a class="el" href="classCUnitType.html#a48d3200fdf7b44c51bb4bed6d3407cc3" title="Unit map field flags.">CUnitType::MovementMask</a></p>
 <p>Movement mask, this value is and'ed to the map field flags, to see if a unit can enter or placed on the map field.</p>
 <p><a class="el" href="classCUnitType.html#a4de9f1fe59e6b62de7168ad5d0d781eb" title="Unit check this map flags for move.">CUnitType::Stats</a>[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</p>
-<p>Unit status for each player </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo:</a></b></dt><dd>This stats should? be moved into the player struct</dd></dl>
+<p>Unit status for each player </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo:</a></b></dt><dd>This stats should? be moved into the player struct</dd></dl>
 <p>CUnitType::Type</p>
-<p>Type as number </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo:</a></b></dt><dd>Should us a general name f.e. Slot here?</dd></dl>
+<p>Type as number </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo:</a></b></dt><dd>Should us a general name f.e. Slot here?</dd></dl>
 <p><a class="el" href="classCUnitType.html#abe36a9fafca5bf67394790a0ccbfa844" title="Unit status for each player.">CUnitType::Sprite</a></p>
 <p>Sprite images</p>
 <p><a class="el" href="classCUnitType.html#a0ffc673cac9b686b957cce9bbfc55239" title="Sprite images.">CUnitType::ShadowSprite</a></p>
@@ -1115,22 +1116,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5bb00182bd9011effa5e7a18a23ac395"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bb00182bd9011effa5e7a18a23ac395">&#9670;&nbsp;</a></span>DeathExplosion</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLuaCallback.html">LuaCallback</a>* CUnitType::DeathExplosion</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Missiles spawned if unit is hit(+shield) </p>
-
-</div>
-</div>
 <a id="a10823cdf9d86751be9183d59baab0a3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10823cdf9d86751be9183d59baab0a3b">&#9670;&nbsp;</a></span>DecayRate</h2>
 
@@ -1570,6 +1555,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a558d38e4466e1b6f9e2f6756ccc1fe0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558d38e4466e1b6f9e2f6756ccc1fe0f">&#9670;&nbsp;</a></span>OnDeath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLuaCallback.html">LuaCallback</a>* CUnitType::OnDeath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Missiles spawned if unit is hit(+shield) </p>
+
+</div>
+</div>
 <a id="a73c9a25cd37507c40781a993847a75b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73c9a25cd37507c40781a993847a75b5">&#9670;&nbsp;</a></span>OnEachCycle</h2>
 
@@ -1613,6 +1614,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>lua function called when unit is about to die, receives x,y,unit </p>
 
 </div>
 </div>
@@ -2199,7 +2202,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:57 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:40 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

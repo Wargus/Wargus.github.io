@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -102,26 +102,30 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 minimap.cpp - The minimap.</h2></td></tr>
-<tr class="memitem:a700ae8345109ec65559e33a4c0a8ff8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a700ae8345109ec65559e33a4c0a8ff8a">MINIMAP_FAC</a>&#160;&#160;&#160;(16 * 3)</td></tr>
-<tr class="separator:a700ae8345109ec65559e33a4c0a8ff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30326d10ca1dc5fd80423605f79c0696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a30326d10ca1dc5fd80423605f79c0696">ATTACK_RED_DURATION</a>&#160;&#160;&#160;(1 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>)</td></tr>
-<tr class="memdesc:a30326d10ca1dc5fd80423605f79c0696"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit attacked are shown red for at least this amount of cycles  <a href="minimap_8cpp.html#a30326d10ca1dc5fd80423605f79c0696">More...</a><br /></td></tr>
-<tr class="separator:a30326d10ca1dc5fd80423605f79c0696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b083c155711b082a89edc7dcdc605cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a4b083c155711b082a89edc7dcdc605cc">ATTACK_BLINK_DURATION</a>&#160;&#160;&#160;(7 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>)</td></tr>
-<tr class="memdesc:a4b083c155711b082a89edc7dcdc605cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit attacked are shown blinking for this amount of cycles  <a href="minimap_8cpp.html#a4b083c155711b082a89edc7dcdc605cc">More...</a><br /></td></tr>
-<tr class="separator:a4b083c155711b082a89edc7dcdc605cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a028d872bc1474b338ac5e260ba7e180a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a028d872bc1474b338ac5e260ba7e180a">SCALE_PRECISION</a>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:a028d872bc1474b338ac5e260ba7e180a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66a25a1304cfdd3093c4242373dc4fc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a66a25a1304cfdd3093c4242373dc4fc6">MAX_MINIMAP_EVENTS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memdesc:a66a25a1304cfdd3093c4242373dc4fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimap scale to fit into window.  <a href="minimap_8cpp.html#a66a25a1304cfdd3093c4242373dc4fc6">More...</a><br /></td></tr>
 <tr class="separator:a66a25a1304cfdd3093c4242373dc4fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88e11b2db4d5a1a7530e36ff01e9d86"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#ad88e11b2db4d5a1a7530e36ff01e9d86">MinimapSurface</a></td></tr>
+<tr class="memitem:a5192e62721aadf8148f6264be76a3f3a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a5192e62721aadf8148f6264be76a3f3a">MINIMAP_FAC</a> {16 * 3}</td></tr>
+<tr class="memdesc:a5192e62721aadf8148f6264be76a3f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer scale factor  <a href="minimap_8cpp.html#a5192e62721aadf8148f6264be76a3f3a">More...</a><br /></td></tr>
+<tr class="separator:a5192e62721aadf8148f6264be76a3f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26671769a20f38f1ef64060a783b7313"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a26671769a20f38f1ef64060a783b7313">ATTACK_RED_DURATION</a> {1 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>}</td></tr>
+<tr class="memdesc:a26671769a20f38f1ef64060a783b7313"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit attacked are shown red for at least this amount of cycles  <a href="minimap_8cpp.html#a26671769a20f38f1ef64060a783b7313">More...</a><br /></td></tr>
+<tr class="separator:a26671769a20f38f1ef64060a783b7313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7b9562ccaed00eeadf4ed8cf53506f"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#adf7b9562ccaed00eeadf4ed8cf53506f">ATTACK_BLINK_DURATION</a> {7 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>}</td></tr>
+<tr class="memdesc:adf7b9562ccaed00eeadf4ed8cf53506f"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit attacked are shown blinking for this amount of cycles  <a href="minimap_8cpp.html#adf7b9562ccaed00eeadf4ed8cf53506f">More...</a><br /></td></tr>
+<tr class="separator:adf7b9562ccaed00eeadf4ed8cf53506f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d44ad80b1bf7e231ce2bff0ceefd6e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a65d44ad80b1bf7e231ce2bff0ceefd6e">SCALE_PRECISION</a> {100}</td></tr>
+<tr class="separator:a65d44ad80b1bf7e231ce2bff0ceefd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88e11b2db4d5a1a7530e36ff01e9d86"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#ad88e11b2db4d5a1a7530e36ff01e9d86">MinimapSurface</a> {nullptr}</td></tr>
 <tr class="separator:ad88e11b2db4d5a1a7530e36ff01e9d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d844aebf182f191248f0840fb75fe3"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a48d844aebf182f191248f0840fb75fe3">MinimapTerrainSurface</a></td></tr>
+<tr class="memitem:a48d844aebf182f191248f0840fb75fe3"><td class="memItemLeft" align="right" valign="top">static SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a48d844aebf182f191248f0840fb75fe3">MinimapTerrainSurface</a> {nullptr}</td></tr>
 <tr class="memdesc:a48d844aebf182f191248f0840fb75fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">generated minimap  <a href="minimap_8cpp.html#a48d844aebf182f191248f0840fb75fe3">More...</a><br /></td></tr>
 <tr class="separator:a48d844aebf182f191248f0840fb75fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2374ee8d930effba457924e7b71d560d"><td class="memItemLeft" align="right" valign="top">static SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#a2374ee8d930effba457924e7b71d560d">MinimapFogSurface</a> {nullptr}</td></tr>
+<tr class="memdesc:a2374ee8d930effba457924e7b71d560d"><td class="mdescLeft">&#160;</td><td class="mdescRight">generated minimap terrain  <a href="minimap_8cpp.html#a2374ee8d930effba457924e7b71d560d">More...</a><br /></td></tr>
+<tr class="separator:a2374ee8d930effba457924e7b71d560d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06ca8d2ec3be43a89871265e0c29470"><td class="memItemLeft" align="right" valign="top">static int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#aa06ca8d2ec3be43a89871265e0c29470">Minimap2MapX</a></td></tr>
-<tr class="memdesc:aa06ca8d2ec3be43a89871265e0c29470"><td class="mdescLeft">&#160;</td><td class="mdescRight">generated minimap terrain  <a href="minimap_8cpp.html#aa06ca8d2ec3be43a89871265e0c29470">More...</a><br /></td></tr>
+<tr class="memdesc:aa06ca8d2ec3be43a89871265e0c29470"><td class="mdescLeft">&#160;</td><td class="mdescRight">generated minimap fog of war  <a href="minimap_8cpp.html#aa06ca8d2ec3be43a89871265e0c29470">More...</a><br /></td></tr>
 <tr class="separator:aa06ca8d2ec3be43a89871265e0c29470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee6cbc4e689e01d65210bf2c16dce10"><td class="memItemLeft" align="right" valign="top">static int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimap_8cpp.html#aeee6cbc4e689e01d65210bf2c16dce10">Minimap2MapY</a></td></tr>
 <tr class="memdesc:aeee6cbc4e689e01d65210bf2c16dce10"><td class="mdescLeft">&#160;</td><td class="mdescRight">fast conversion table  <a href="minimap_8cpp.html#aeee6cbc4e689e01d65210bf2c16dce10">More...</a><br /></td></tr>
@@ -150,38 +154,6 @@ minimap.cpp - The minimap.</h2></td></tr>
 <tr class="separator:ae8d5036f30ba0bdaa1c8c199fedb9230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4b083c155711b082a89edc7dcdc605cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b083c155711b082a89edc7dcdc605cc">&#9670;&nbsp;</a></span>ATTACK_BLINK_DURATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ATTACK_BLINK_DURATION&#160;&#160;&#160;(7 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>unit attacked are shown blinking for this amount of cycles </p>
-
-</div>
-</div>
-<a id="a30326d10ca1dc5fd80423605f79c0696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30326d10ca1dc5fd80423605f79c0696">&#9670;&nbsp;</a></span>ATTACK_RED_DURATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ATTACK_RED_DURATION&#160;&#160;&#160;(1 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>unit attacked are shown red for at least this amount of cycles </p>
-
-</div>
-</div>
 <a id="a66a25a1304cfdd3093c4242373dc4fc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66a25a1304cfdd3093c4242373dc4fc6">&#9670;&nbsp;</a></span>MAX_MINIMAP_EVENTS</h2>
 
@@ -195,34 +167,6 @@ minimap.cpp - The minimap.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Minimap scale to fit into window. </p>
-
-</div>
-</div>
-<a id="a700ae8345109ec65559e33a4c0a8ff8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a700ae8345109ec65559e33a4c0a8ff8a">&#9670;&nbsp;</a></span>MINIMAP_FAC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MINIMAP_FAC&#160;&#160;&#160;(16 * 3)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a028d872bc1474b338ac5e260ba7e180a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a028d872bc1474b338ac5e260ba7e180a">&#9670;&nbsp;</a></span>SCALE_PRECISION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCALE_PRECISION&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -358,6 +302,54 @@ minimap.cpp - The minimap.</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="adf7b9562ccaed00eeadf4ed8cf53506f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7b9562ccaed00eeadf4ed8cf53506f">&#9670;&nbsp;</a></span>ATTACK_BLINK_DURATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int ATTACK_BLINK_DURATION {7 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unit attacked are shown blinking for this amount of cycles </p>
+
+</div>
+</div>
+<a id="a26671769a20f38f1ef64060a783b7313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26671769a20f38f1ef64060a783b7313">&#9670;&nbsp;</a></span>ATTACK_RED_DURATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int ATTACK_RED_DURATION {1 * <a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unit attacked are shown red for at least this amount of cycles </p>
+
+</div>
+</div>
 <a id="a2aa7a20665b8565f1f4d9b1d216e298d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2aa7a20665b8565f1f4d9b1d216e298d">&#9670;&nbsp;</a></span>Map2MinimapX</h2>
 
@@ -426,7 +418,7 @@ minimap.cpp - The minimap.</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>generated minimap terrain </p>
+<p>generated minimap fog of war </p>
 
 </div>
 </div>
@@ -454,6 +446,30 @@ minimap.cpp - The minimap.</h2></td></tr>
 
 </div>
 </div>
+<a id="a5192e62721aadf8148f6264be76a3f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5192e62721aadf8148f6264be76a3f3a">&#9670;&nbsp;</a></span>MINIMAP_FAC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int MINIMAP_FAC {16 * 3}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>integer scale factor </p>
+
+</div>
+</div>
 <a id="abee33f83c65d77fa80c49c3ac1fdd3cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abee33f83c65d77fa80c49c3ac1fdd3cd">&#9670;&nbsp;</a></span>MinimapEvents</h2>
 
@@ -465,6 +481,30 @@ minimap.cpp - The minimap.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2374ee8d930effba457924e7b71d560d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2374ee8d930effba457924e7b71d560d">&#9670;&nbsp;</a></span>MinimapFogSurface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* MinimapFogSurface {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generated minimap terrain </p>
 
 </div>
 </div>
@@ -523,7 +563,7 @@ minimap.cpp - The minimap.</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_Surface* MinimapSurface</td>
+          <td class="memname">SDL_Surface* MinimapSurface {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -535,11 +575,19 @@ minimap.cpp - The minimap.</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_Surface* MinimapTerrainSurface</td>
+          <td class="memname">SDL_Surface* MinimapTerrainSurface {nullptr}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>generated minimap </p>
@@ -560,10 +608,32 @@ minimap.cpp - The minimap.</h2></td></tr>
 
 </div>
 </div>
+<a id="a65d44ad80b1bf7e231ce2bff0ceefd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d44ad80b1bf7e231ce2bff0ceefd6e">&#9670;&nbsp;</a></span>SCALE_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int SCALE_PRECISION {100}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

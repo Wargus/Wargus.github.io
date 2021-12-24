@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['replaytype_13777',['ReplayType',['../replay_8h.html#a256288a5ba9b2772ba5ed0757f7af72d',1,'replay.h']]],
-  ['revealtypes_13778',['RevealTypes',['../player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccf',1,'player.h']]]
+  ['playerracesold_14158',['PlayerRacesOld',['../player_8h.html#ab3cae3f48dd322d7e0d01358e4940681',1,'player.h']]],
+  ['playertypes_14159',['PlayerTypes',['../player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3',1,'player.h']]],
+  ['popupbuttoninfo_5ftypes_14160',['PopupButtonInfo_Types',['../popup_8h.html#a908c3716a20ece1182ee70547e470f01',1,'popup.h']]],
+  ['process_5fdpi_5fawareness_14161',['PROCESS_DPI_AWARENESS',['../sdl_8cpp.html#a0b4072c3e306aab56e4b1f41f66ecfd0',1,'sdl.cpp']]]
 ];

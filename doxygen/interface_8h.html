@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -515,6 +515,9 @@ interface.h - The user interface header file.</h2></td></tr>
 <tr class="memitem:a475382be2daecd2aacd9341f4d0315f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a475382be2daecd2aacd9341f4d0315f6">ButtonCheckSingleResearch</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;button)</td></tr>
 <tr class="memdesc:a475382be2daecd2aacd9341f4d0315f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if all requirements for a single research are meet.  <a href="interface_8h.html#a475382be2daecd2aacd9341f4d0315f6">More...</a><br /></td></tr>
 <tr class="separator:a475382be2daecd2aacd9341f4d0315f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ecb897ae8617ebf640a5fa8a82fcb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#af0ecb897ae8617ebf640a5fa8a82fcb1">ButtonCheckDebug</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;button)</td></tr>
+<tr class="memdesc:af0ecb897ae8617ebf640a5fa8a82fcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for button enabled, if requested condition passes check. Used for debug purposes.  <a href="interface_8h.html#af0ecb897ae8617ebf640a5fa8a82fcb1">More...</a><br /></td></tr>
+<tr class="separator:af0ecb897ae8617ebf640a5fa8a82fcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13461428545f624dfc015d1168105c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a13461428545f624dfc015d1168105c85">SelectionChanged</a> ()</td></tr>
 <tr class="memdesc:a13461428545f624dfc015d1168105c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever the units selection is altered.  <a href="interface_8h.html#a13461428545f624dfc015d1168105c85">More...</a><br /></td></tr>
 <tr class="separator:a13461428545f624dfc015d1168105c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1279,6 +1282,46 @@ interface.h - The user interface header file.</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if enabled. </dd></dl>
+
+</div>
+</div>
+<a id="af0ecb897ae8617ebf640a5fa8a82fcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ecb897ae8617ebf640a5fa8a82fcb1">&#9670;&nbsp;</a></span>ButtonCheckDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ButtonCheckDebug </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>button</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check for button enabled, if requested condition passes check. Used for debug purposes. </p>
+<p>Check for button enabled, if requested condition passes check Used for debug purposes</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>Pointer to unit for button. </td></tr>
+    <tr><td class="paramname">button</td><td>Pointer to button to check/enable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if check passed. </dd></dl>
+<p>Check if enabled walls for singleplayer games</p>
 
 </div>
 </div>
@@ -3900,7 +3943,7 @@ interface.h - The user interface header file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -334,8 +334,10 @@ trigger.cpp - The trigger handling.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Add a trigger. </p>
-
+<p><b>Description</b></p>
+<p>Add a trigger.</p>
+<p>Example:</p>
+<div class="example"><code><b>AddTrigger</b>( function() return (GetPlayerData(1,"UnitTypesCount","unit-farm") &gt;= 4) end, function() return <a class="el" href="trigger_8cpp.html#ab0982ca8158de611318a46f0ea025e4f">ActionVictory()</a> end )</code></div> 
 </div>
 </div>
 <a id="a0812d051a215311c97bda187bb372313"></a>
@@ -361,8 +363,10 @@ trigger.cpp - The trigger handling.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the number of units of a given unit-type and player at a location. </p>
-
+<p><b>Description</b></p>
+<p>Return the number of units of a given unit-type and player at a location.</p>
+<p>Example:</p>
+<div class="example"><code>&ndash; Get the number of knights from player 1 from position 0,0 to 20,15 num_units = <b>GetNumUnitsAt</b>(1,"unit-knight",{0,0},{20,15}) print(num_units)</code></div> 
 </div>
 </div>
 <a id="a79d246b33ccffb54687cce17a39e330b"></a>
@@ -388,8 +392,10 @@ trigger.cpp - The trigger handling.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Player has the quantity of unit-type near to unit-type. </p>
-
+<p><b>Description</b></p>
+<p>Player has the quantity of unit-type near to unit-type.</p>
+<p>Example:</p>
+<div class="example"><code>AddTrigger( function() return <b>IfNearUnit</b>(0,"&gt;",1,"unit-peasant","unit-town-hall") end, function() AddMessage("Player 0 has more than 1 peasant near the Town Hall") return false end )</code></div> 
 </div>
 </div>
 <a id="a92a4abda9f9469ff943796ab21707f0d"></a>
@@ -415,8 +421,10 @@ trigger.cpp - The trigger handling.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Player has the quantity of rescued unit-type near to unit-type. </p>
-
+<p><b>Description</b></p>
+<p>Player has the quantity of rescued unit-type near to unit-type.</p>
+<p>Example:</p>
+<div class="example"><code><b>IfRescuedNearUnit</b>("this", "&gt;=", 1, "unit-archer", "unit-circle-of-power")</code></div> 
 </div>
 </div>
 <a id="a7b33f354cf60ed00d9a1b7849b8b13cc"></a>
@@ -731,6 +739,7 @@ trigger.cpp - The trigger handling.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Returns the number of opponents of a given player. </p>
 
 </div>
@@ -1082,7 +1091,7 @@ trigger.cpp - The trigger handling.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:55 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

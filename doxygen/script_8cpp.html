@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -150,8 +150,8 @@ script.cpp - The configuration language.</h2></td></tr>
 <tr class="separator:a35742973eccb40319cb6863bca22e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4356d1ada64f846267bbafd9ed08f1c3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a4356d1ada64f846267bbafd9ed08f1c3">GetFileContent</a> (const std::string &amp;file, std::string &amp;content)</td></tr>
 <tr class="separator:a4356d1ada64f846267bbafd9ed08f1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa4a17b59780129fa348261d2c15d02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a4fa4a17b59780129fa348261d2c15d02">LuaLoadFile</a> (const std::string &amp;file, const std::string &amp;strArg)</td></tr>
-<tr class="separator:a4fa4a17b59780129fa348261d2c15d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e6538328e38b7c397af260498dbcce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#aa8e6538328e38b7c397af260498dbcce">LuaLoadFile</a> (const std::string &amp;file, const std::string &amp;strArg, bool exitOnError)</td></tr>
+<tr class="separator:aa8e6538328e38b7c397af260498dbcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28a00a4d42d9d44efe241cbad3dc7bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#ae28a00a4d42d9d44efe241cbad3dc7bb">CclSavePreferences</a> (lua_State *l)</td></tr>
 <tr class="separator:ae28a00a4d42d9d44efe241cbad3dc7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd4e08d229334d6fa4a867e248c7c40"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#accd4e08d229334d6fa4a867e248c7c40">CclLoad</a> (lua_State *l)</td></tr>
@@ -163,6 +163,8 @@ script.cpp - The configuration language.</h2></td></tr>
 <tr class="separator:ae7ebdb35dfd86a87b99bad571c5751a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb69f4f7506a7c09561da071646fc5b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#acb69f4f7506a7c09561da071646fc5b3">LuaToNumber</a> (lua_State *l, int narg)</td></tr>
 <tr class="separator:acb69f4f7506a7c09561da071646fc5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdcd9a4fdf7aff9d9c126c12a053c03"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#aefdcd9a4fdf7aff9d9c126c12a053c03">LuaToFloat</a> (lua_State *l, int narg)</td></tr>
+<tr class="separator:aefdcd9a4fdf7aff9d9c126c12a053c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24d7932fe4347d865f371623740221c7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a24d7932fe4347d865f371623740221c7">LuaToUnsignedNumber</a> (lua_State *l, int narg)</td></tr>
 <tr class="separator:a24d7932fe4347d865f371623740221c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6df754449e633b5b9a24aba5e03dc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a7f6df754449e633b5b9a24aba5e03dc8">LuaToBoolean</a> (lua_State *l, int narg)</td></tr>
@@ -2622,8 +2624,8 @@ script.cpp - The configuration language.</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fa4a17b59780129fa348261d2c15d02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa4a17b59780129fa348261d2c15d02">&#9670;&nbsp;</a></span>LuaLoadFile()</h2>
+<a id="aa8e6538328e38b7c397af260498dbcce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e6538328e38b7c397af260498dbcce">&#9670;&nbsp;</a></span>LuaLoadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2638,7 +2640,13 @@ script.cpp - The configuration language.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>strArg</em>&#160;</td>
+          <td class="paramname"><em>strArg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exitOnError</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2727,6 +2735,43 @@ script.cpp - The configuration language.</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 for true, 0 for false from lua. </dd></dl>
+
+</div>
+</div>
+<a id="aefdcd9a4fdf7aff9d9c126c12a053c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefdcd9a4fdf7aff9d9c126c12a053c03">&#9670;&nbsp;</a></span>LuaToFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LuaToFloat </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>narg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert lua number in C float. It checks also type and exit in case of error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">narg</td><td>Argument number.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>C number from lua. </dd></dl>
 
 </div>
 </div>
@@ -3410,7 +3455,7 @@ script.cpp - The configuration language.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -275,8 +275,10 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Add a new message.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Example:</p>
+<div class="example"><code><b>AddMessage</b>("Hello World!")</code></div><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l</td><td>Lua state. </td></tr>
   </table>
@@ -407,14 +409,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Define the lua file that will build the map</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Load map setup from file <b>DefineMapSetup</b>("Setup.sms")</code></div> 
 </div>
 </div>
 <a id="a3e5b12a978cdb5338393e1805e30115c"></a>
@@ -541,14 +545,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get speed of key scroll</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>scroll_speed = <b>GetKeyScrollSpeed</b>() print(scroll_speed)</code></div> 
 </div>
 </div>
 <a id="acd338f5b97e2d190cf54d61b92fece87"></a>
@@ -574,14 +580,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get speed of mouse scroll</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>scroll_speed = <b>GetMouseScrollSpeed</b>() print(scroll_speed)</code></div> 
 </div>
 </div>
 <a id="aef434c1e3b8c8209cb18eb031aa262bc"></a>
@@ -673,14 +681,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get the video fullscreen mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>fullscreenmode = <b>GetVideoFullScreen</b>() print(fullscreenmode)</code></div> 
 </div>
 </div>
 <a id="ac6ef4460a8366b46c902bf6f325288ed"></a>
@@ -706,14 +716,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get the video resolution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>width,height = <b>GetVideoResolution</b>() print("Resolution  is " .. width .. "x" .. height)</code></div> 
 </div>
 </div>
 <a id="a1c3c5554b0faee776b8cc13408412974"></a>
@@ -765,14 +777,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set basic map caracteristics.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code><b>PresentMap</b>("Map description", 1, 128, 128, 17)</code></div> 
 </div>
 </div>
 <a id="afa35a895336632bfb03f3edf2233afcd"></a>
@@ -930,14 +944,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Enable/disable the fancy buildings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Enable fancy buildings <b>SetFancyBuildings</b>(true) &ndash; Disable fancy buildings <b>SetFancyBuildings</b>(false)</code></div> 
 </div>
 </div>
 <a id="a4c2871a64f855e683ca4d986ceb624fa"></a>
@@ -996,14 +1012,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set speed of key scroll</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code><b>SetKeyScrollSpeed</b>(4)</code></div> 
 </div>
 </div>
 <a id="aaad21940dcccbee6c612672f5e9d1bad"></a>
@@ -1029,14 +1047,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set speed of mouse scroll</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code><b>SetMouseScrollSpeed</b>(2)</code></div> 
 </div>
 </div>
 <a id="ad3a3c657e1065d7d54c08d6f4057f14d"></a>
@@ -1221,14 +1241,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set the video fullscreen mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; Full Screen mode enabled <b>SetVideoFullScreen</b>(true) &ndash; Full Screen mode disabled <b>SetVideoFullScreen</b>(false)</code></div> 
 </div>
 </div>
 <a id="af3aeec422ab93ba2d75a7953cf5b3805"></a>
@@ -1254,14 +1276,16 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set the video resolution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code><b>SetVideoResolution</b>(640,480)</code></div> 
 </div>
 </div>
 <a id="a772f8d636f4adeca51d95877c6060021"></a>
@@ -1614,7 +1638,7 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

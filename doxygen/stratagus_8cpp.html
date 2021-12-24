@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -140,6 +140,12 @@ stratagus.cpp - The main file.</h2></td></tr>
 <tr class="memitem:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a041bc0ec5975683b7cbbed389d0dc0aa">EnableUnitDebug</a></td></tr>
 <tr class="memdesc:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, halt on assertion failures  <a href="stratagus_8cpp.html#a041bc0ec5975683b7cbbed389d0dc0aa">More...</a><br /></td></tr>
 <tr class="separator:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a3be4118c1d928572b36c6d3e8d6d9f28">IsDebugEnabled</a> {false}</td></tr>
+<tr class="memdesc:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8cpp.html#a3be4118c1d928572b36c6d3e8d6d9f28">More...</a><br /></td></tr>
+<tr class="separator:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd72ad929774d23801f2864f5541b700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#afd72ad929774d23801f2864f5541b700">EnableWallsInSinglePlayer</a> {false}</td></tr>
+<tr class="memdesc:afd72ad929774d23801f2864f5541b700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is debug enabled? Flag to pass into lua code.  <a href="stratagus_8cpp.html#afd72ad929774d23801f2864f5541b700">More...</a><br /></td></tr>
+<tr class="separator:afd72ad929774d23801f2864f5541b700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d6bad4053e1ea399b31345f718239ce"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a3d6bad4053e1ea399b31345f718239ce">stdoutFile</a></td></tr>
 <tr class="separator:a3d6bad4053e1ea399b31345f718239ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaeb4be241988b87540871219709eb0f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#adaeb4be241988b87540871219709eb0f">stderrFile</a></td></tr>
@@ -147,7 +153,7 @@ stratagus.cpp - The main file.</h2></td></tr>
 <tr class="memitem:ad26f462b322b7f47aed3a00d65578e94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#ad26f462b322b7f47aed3a00d65578e94">beos_init</a> (int argc, char **argv)</td></tr>
 <tr class="separator:ad26f462b322b7f47aed3a00d65578e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97a069a51f79085bca93dcdb93d3a7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#ab97a069a51f79085bca93dcdb93d3a7b">PreMenuSetup</a> ()</td></tr>
-<tr class="memdesc:ab97a069a51f79085bca93dcdb93d3a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8cpp.html#ab97a069a51f79085bca93dcdb93d3a7b">More...</a><br /></td></tr>
+<tr class="memdesc:ab97a069a51f79085bca93dcdb93d3a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for debug purposes  <a href="stratagus_8cpp.html#ab97a069a51f79085bca93dcdb93d3a7b">More...</a><br /></td></tr>
 <tr class="separator:ab97a069a51f79085bca93dcdb93d3a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08fd0fbb812ebb13d00f7602f4c80368"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a08fd0fbb812ebb13d00f7602f4c80368">MenuLoop</a> ()</td></tr>
 <tr class="separator:a08fd0fbb812ebb13d00f7602f4c80368"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,8 +413,9 @@ stratagus.cpp - The main file.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>if enabled, a unit info dump will be created </p>
-<p>Pre menu setup. </p>
+<p>used for debug purposes </p>
+<p>Pre menu setup.</p>
+<p>Enables ability to build walls in the single player games Pre menu setup. </p>
 
 </div>
 </div>
@@ -607,6 +614,38 @@ stratagus.cpp - The main file.</h2></td></tr>
 
 </div>
 </div>
+<a id="afd72ad929774d23801f2864f5541b700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd72ad929774d23801f2864f5541b700">&#9670;&nbsp;</a></span>EnableWallsInSinglePlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EnableWallsInSinglePlayer {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is debug enabled? Flag to pass into lua code. </p>
+
+</div>
+</div>
+<a id="a3be4118c1d928572b36c6d3e8d6d9f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be4118c1d928572b36c6d3e8d6d9f28">&#9670;&nbsp;</a></span>IsDebugEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsDebugEnabled {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if enabled, a unit info dump will be created </p>
+
+</div>
+</div>
 <a id="ae1f79eba7419a610cfa65d4bc302c644"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1f79eba7419a610cfa65d4bc302c644">&#9670;&nbsp;</a></span>MenuRace</h2>
 
@@ -703,7 +742,7 @@ stratagus.cpp - The main file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

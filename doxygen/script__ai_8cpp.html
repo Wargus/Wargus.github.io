@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -320,14 +320,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Attack with force.</p>
+<p><b>Description</b></p>
+<p>Attack with one single force.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiWait("unit-human-barracks") end, function() return <a class="el" href="classAiForce.html">AiForce</a>(1,{"unit-footman", 3}) end, function() return AiWaitForce(1) end, &ndash; Attack with Force 1 function() return <b>AiAttackWithForce</b>(<u>1</u>) end,</code></div><div class="example"><code> function() return <a class="el" href="classAiForce.html">AiForce</a>(2,{"unit-footman",5}) end, function() return AiWaitForce(2) end, &ndash; Attack with Force 2 function() return <b>AiAttackWithForce</b>(<u>2</u>) end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a26802dac8813000fcf87fc04ca17746f"></a>
@@ -353,14 +355,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Attack with forces.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiWait("unit-human-barracks") end, function() return AiNeed("unit-elven-lumber-mill") end, function() return AiWait("unit-elven-lumber-mill") end, function() return <a class="el" href="classAiForce.html">AiForce</a>(1,{"unit-footman", 2}) end, function() return <a class="el" href="classAiForce.html">AiForce</a>(2,{"unit-archer",1}) end, function() return <a class="el" href="classAiForce.html">AiForce</a>(3,{"unit-archer",1,"unit-footman",3}) end, &ndash; Wait all three forces to be ready function() return AiWaitForces({1,2,3}) end, &ndash; Attack with all three forces function() return <b>AiAttackWithForces</b>({1,2,3}) end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a3e8e5a1eec0280d758ca938c6f45c448"></a>
@@ -487,14 +491,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Dump some AI debug information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(3600) end, &ndash; Get the information from all the A.I players function() return <b>AiDump</b>() end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiWait("unit-peasant") end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="aff0ab3f0e256dbfeb88c95228335a94c"></a>
@@ -520,14 +526,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Define a force, a groups of units.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return AiSleep(9000) end, &ndash; Repeat the instructions forever. function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, &ndash; Tell to the A.I that it needs a Town Hall. function() return AiNeed("unit-town-hall") end, &ndash; Wait until the Town Hall has been built. function() return AiWait("unit-town-hall") end, &ndash; Tell to the A.I that it needs 4 peasants function() return AiSet("unit-peasant",4) end, &ndash; Tell to the A.I that it needs a Barracks. function() return AiNeed("unit-human-barracks") end, &ndash; Tell to the A.I that it needs a Lumbermill. function() return AiNeed("unit-elven-lumber-mill") end, &ndash; Wait until the Barracks has been built. function() return AiWait("unit-human-barracks") end, &ndash; Wait until the Lumbermill has been built. function() return AiWait("unit-elven-lumber-mill") end, &ndash; Specify the force number 1 made only of 3 footmen function() return <b><a class="el" href="classAiForce.html">AiForce</a></b>(1,{"unit-footman", 3}) end, &ndash; Specify the force number 2 made only of 2 archers function() return <b><a class="el" href="classAiForce.html">AiForce</a></b>(2,{"unit-archer", 2}) end, &ndash; Specify the force number 3 made of 2 footmen and 1 archer function() return <b><a class="el" href="classAiForce.html">AiForce</a></b>(3,{"unit-footman", 2, "unit-archer", 1}) end, &ndash; Wait for all three forces function() return AiWaitForce(1) end, function() return AiWaitForce(2) end, function() return AiWaitForce(3) end, &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a5daf81dd664bb8cbe8a931cd664dba14"></a>
@@ -553,14 +561,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Define the role of a force.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiNeed("unit-elven-lumber-mill") end, &ndash; Force 1 has the role of attacker function() return <b>AiForceRole</b>(1,"&lt;u&gt;attack&lt;/u&gt;") end, &ndash; Force 2 has the role of defender function() return <b>AiForceRole</b>(2,"&lt;u&gt;defend&lt;/u&gt;") end, function() return <a class="el" href="classAiForce.html">AiForce</a>(1,{"unit-footman", 3}) end, function() return <a class="el" href="classAiForce.html">AiForce</a>(2,{"unit-archer", 2}) end, function() return AiWaitForce(1) end, function() return AiWaitForce(2) end, &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a6cbd5044b0374a74c90ca35edd193dda"></a>
@@ -619,6 +629,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Get the number of cycles to sleep.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -626,8 +637,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of return values </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Number of return values</dd></dl>
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return AiSleep(9000) end, &ndash; Repeat the instructions forever. function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { &ndash; Get the number of cycles to sleep. function() return AiSleep(<b>AiGetSleepCycles()</b>) end, &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="aeb811abe8baaf37bdad63fd1aefed0f5"></a>
@@ -653,6 +665,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Need a unit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -660,8 +673,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of return values </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Number of return values</dd></dl>
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return AiSleep(9000) end, &ndash; Repeat the instructions forever. function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, &ndash; Tell to the A.I that it needs a Town Hall. function() return <b>AiNeed</b>("unit-town-hall") end, &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a28395098a6eeac218ef1edff2798605e"></a>
@@ -869,14 +883,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Research an upgrade.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { &ndash; Get the number of cycles to sleep function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiWait("unit-human-barracks") end, function() return AiNeed("unit-elven-lumber-mill") end, function() return AiWait("unit-elven-lumber-mill") end, function() return <a class="el" href="classAiForce.html">AiForce</a>(1,{"unit-footman", 1, "unit-archer", 2}) end, function() return AiWaitForce(1) end, &ndash; Upgrade the archers arrow. function() return <b>AiResearch</b>("upgrade-arrow1") end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a4118fd333e3688db01726f8bdfcff15c"></a>
@@ -902,6 +918,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set the number of units.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -909,8 +926,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of return values </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Number of return values</dd></dl>
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return AiSleep(9000) end, &ndash; Repeat the instructions forever. function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, &ndash; Tell to the A.I that it needs a Town Hall. function() return AiNeed("unit-town-hall") end, &ndash; Wait until the town-hall has been built. function() return AiWait("unit-town-hall") end, &ndash; Tell to the A.I that it needs 4 peasants function() return <b>AiSet</b>("unit-peasant",4) end, &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="aeb38ee8109fc4654601a7fc0111cad5c"></a>
@@ -969,14 +987,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Set AI player resource collect percent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, &ndash; The peasants will focus only on gathering gold function() return <b>AiSetCollect</b>({0,100,0,0,0,0,0}) end, function() return AiSet("unit-peasant",4) end, function() return AiWait("unit-peasant") end, function() return AiSleep(1800) end, &ndash; The peasants will now focus 50% on gathering gold and 50% on gathering lumber function() return <b>AiSetCollect</b>({0,50,50,0,0,0,0}) end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a706a776dc45bc961327b443fd7acf335"></a>
@@ -1036,14 +1056,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sleep n cycles.</p>
+<p><b>Description</b></p>
+<p>Sleep for n cycles.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return <b>AiSleep</b>(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { &ndash; Get the number of cycles to sleep function() return <b>AiSleep</b>(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, &ndash; Sleep for 1 in game minute function() return <b>AiSleep</b>(1800) end, function() return AiNeed("unit-human-blacksmith") end, function() return AiWait("unit-human-blacksmith") end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="aa81086ace3004c440c3535821e33a317"></a>
@@ -1069,14 +1091,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Upgrade an unit to an new unit-type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiWait("unit-human-barracks") end, function() return AiNeed("unit-elven-lumber-mill") end, function() return AiWait("unit-elven-lumber-mill") end, function() return AiSleep(1800) end, &ndash; Upgrade the Town Hall to Keep function() return <b>AiUpgradeTo</b>("unit-keep") end, function() return AiWait("unit-keep") end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a1f78fe8fa4e16052763fbd41b8a13361"></a>
@@ -1102,6 +1126,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Wait for a unit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1109,8 +1134,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of return values </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Number of return values</dd></dl>
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return AiSleep(9000) end, &ndash; Repeat the instructions forever. function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, &ndash; Tell to the A.I that it needs a Town Hall. function() return AiNeed("unit-town-hall") end, &ndash; Wait until the Town Hall has been built. function() return <b>AiWait</b>("unit-town-hall") end, &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a1c146cafb44266d8733568d183cadfbd"></a>
@@ -1136,14 +1162,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Wait for a force ready.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiWait("unit-human-barracks") end, function() return <a class="el" href="classAiForce.html">AiForce</a>(1,{"unit-footman", 3}) end, &ndash; Wait until force 1 is completed function() return <b>AiWaitForce</b>(1) end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a7972ff904de68e32bb4be690e20604c2"></a>
@@ -1169,14 +1197,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Wait for a forces ready.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>local simple_ai_loop = { function() return AiSleep(9000) end, function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> local simple_ai = { function() return AiSleep(AiGetSleepCycles()) end, function() return AiNeed("unit-town-hall") end, function() return AiWait("unit-town-hall") end, function() return AiSet("unit-peasant",4) end, function() return AiNeed("unit-human-barracks") end, function() return AiWait("unit-human-barracks") end, function() return AiNeed("unit-elven-lumber-mill") end, function() return AiWait("unit-elven-lumber-mill") end, function() return <a class="el" href="classAiForce.html">AiForce</a>(1,{"unit-footman", 2}) end, function() return <a class="el" href="classAiForce.html">AiForce</a>(2,{"unit-archer",1}) end, function() return <a class="el" href="classAiForce.html">AiForce</a>(3,{"unit-archer",1,"unit-footman",3}) end, &ndash; Wait all three forces to be ready function() return <b>AiWaitForces</b>({1,2,3}) end, function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end DefineAi("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="af71463cab1e3097752ad6fea7c094138"></a>
@@ -1202,6 +1232,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><b>Description</b></p>
 <p>Define an AI engine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1209,8 +1240,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>FIXME: docu </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>FIXME: docu</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Those instructions will be executed forever local simple_ai_loop = { &ndash; Sleep for 5 in game minutes function() return AiSleep(9000) end, &ndash; Repeat the functions from start. function() stratagus.gameData.AIState.loop_index[1 + <a class="el" href="ai_8cpp.html#a3072dd83ffe0038d2f6a8781d5af54b9" title="AI helper variables.">AiPlayer()</a>] = 0; return false; end, }</code></div><div class="example"><code> &ndash; The initial instructions the A.I has to execute local simple_ai = { function() return AiSleep(1800) end, &ndash; Sleep for 1 in game minute function() return AiNeed("unit-town-hall") end, &ndash; One Town Hall is needed function() return AiWait("unit-town-hall") end, &ndash; Wait until the Town Hall is completed function() return AiSet("unit-peasant", 4) end, &ndash; Make 4 peasants &ndash; Basic buildings function() return AiSet("unit-farm", 4) end, &ndash; Make 4 farms function() return AiWait("unit-farm") end, &ndash; Wait until all 4 farms are build. function() return AiNeed("unit-human-barracks") end, &ndash; Need a Barracks function() return AiWait("unit-human-barracks") end, &ndash; Wait until the Barracks has been built &ndash; Defense force for the base function() return <a class="el" href="classAiForce.html">AiForce</a>(1, {"unit-footman", 3}) end, &ndash; Make a force of 3 footmen function() return AiWaitForce(1) end, &ndash; Wait until the 3 footmen are trained function() return AiForceRole(1,"defend") end, &ndash; Make this force as a defense force &ndash; Execute the instructions in simple_ai_loop function() return AiLoop(simple_ai_loop, stratagus.gameData.AIState.loop_index) end, }</code></div><div class="example"><code> &ndash; function that calls the instructions in simple_ai inside DefineAi function custom_ai() return AiLoop(simple_ai,stratagus.gameData.AIState.index) end &ndash; Make an A.I for the human race that calls the function custom_ai <b>DefineAi</b>("example_ai","human","class_ai",custom_ai)</code></div> 
 </div>
 </div>
 <a id="a5ec94ecaf351ccc88baa73b4913d8cff"></a>
@@ -1676,7 +1708,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:55 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

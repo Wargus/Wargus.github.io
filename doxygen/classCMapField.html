@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.0.1</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0dbaf63e38872e975ab9d1ac0a4cc74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1076f78734df83e04986c384b47b1758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMapField.html#a1076f78734df83e04986c384b47b1758">setTileIndex</a> (const <a class="el" href="classCTileset.html">CTileset</a> &amp;tileset, unsigned int tileIndex, int value)</td></tr>
 <tr class="separator:a1076f78734df83e04986c384b47b1758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff1bcd7d590def76c63f7a1cdd47e7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMapField.html#a8ff1bcd7d590def76c63f7a1cdd47e7c">isOpaque</a> () const</td></tr>
+<tr class="memdesc:a8ff1bcd7d590def76c63f7a1cdd47e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a field is opaque for field of view.  <a href="classCMapField.html#a8ff1bcd7d590def76c63f7a1cdd47e7c">More...</a><br /></td></tr>
+<tr class="separator:a8ff1bcd7d590def76c63f7a1cdd47e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab514388e292747e5bda28e793a9e42a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMapField.html#ab514388e292747e5bda28e793a9e42a8">CheckMask</a> (int mask) const</td></tr>
 <tr class="memdesc:ab514388e292747e5bda28e793a9e42a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a field flags.  <a href="classCMapField.html#ab514388e292747e5bda28e793a9e42a8">More...</a><br /></td></tr>
 <tr class="separator:ab514388e292747e5bda28e793a9e42a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -419,6 +422,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8ff1bcd7d590def76c63f7a1cdd47e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff1bcd7d590def76c63f7a1cdd47e7c">&#9670;&nbsp;</a></span>isOpaque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMapField::isOpaque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a field is opaque for field of view. </p>
+<p>Check if a field is opaque We check not only MapFieldOpaque flag because some field types (f.e. forest/rock/wall) may be set in the FieldOfView as opaque as well. </p>
+
+</div>
+</div>
 <a id="a641925d9be3f4f1377d2857037d659c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a641925d9be3f4f1377d2857037d659c9">&#9670;&nbsp;</a></span>IsTerrainResourceOnMap() <span class="overload">[1/2]</span></h2>
 
@@ -660,7 +683,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 7 2021 22:19:56 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>
