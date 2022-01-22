@@ -11,22 +11,22 @@ span.linenos { color: inherit; background-color: transparent; padding-left: 5px;
 td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .hll { background-color: #ffffcc }
-.c { color: #408080; font-style: italic } /* Comment */
+.c { color: #3D7B7B; font-style: italic } /* Comment */
 .err { border: 1px solid #FF0000 } /* Error */
 .k { color: #008000; font-weight: bold } /* Keyword */
 .o { color: #666666 } /* Operator */
-.ch { color: #408080; font-style: italic } /* Comment.Hashbang */
-.cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.cp { color: #BC7A00 } /* Comment.Preproc */
-.cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
-.c1 { color: #408080; font-style: italic } /* Comment.Single */
-.cs { color: #408080; font-style: italic } /* Comment.Special */
+.ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.cp { color: #9C6500 } /* Comment.Preproc */
+.cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
 .gd { color: #A00000 } /* Generic.Deleted */
 .ge { font-style: italic } /* Generic.Emph */
-.gr { color: #FF0000 } /* Generic.Error */
+.gr { color: #E40000 } /* Generic.Error */
 .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-.gi { color: #00A000 } /* Generic.Inserted */
-.go { color: #888888 } /* Generic.Output */
+.gi { color: #008400 } /* Generic.Inserted */
+.go { color: #717171 } /* Generic.Output */
 .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .gs { font-weight: bold } /* Generic.Strong */
 .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
@@ -39,15 +39,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .kt { color: #B00040 } /* Keyword.Type */
 .m { color: #666666 } /* Literal.Number */
 .s { color: #BA2121 } /* Literal.String */
-.na { color: #7D9029 } /* Name.Attribute */
+.na { color: #687822 } /* Name.Attribute */
 .nb { color: #008000 } /* Name.Builtin */
 .nc { color: #0000FF; font-weight: bold } /* Name.Class */
 .no { color: #880000 } /* Name.Constant */
 .nd { color: #AA22FF } /* Name.Decorator */
-.ni { color: #999999; font-weight: bold } /* Name.Entity */
-.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.ni { color: #717171; font-weight: bold } /* Name.Entity */
+.ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
 .nf { color: #0000FF } /* Name.Function */
-.nl { color: #A0A000 } /* Name.Label */
+.nl { color: #767600 } /* Name.Label */
 .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
 .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .nv { color: #19177C } /* Name.Variable */
@@ -64,11 +64,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .s2 { color: #BA2121 } /* Literal.String.Double */
-.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
 .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
 .sx { color: #008000 } /* Literal.String.Other */
-.sr { color: #BB6688 } /* Literal.String.Regex */
+.sr { color: #A45A77 } /* Literal.String.Regex */
 .s1 { color: #BA2121 } /* Literal.String.Single */
 .ss { color: #19177C } /* Literal.String.Symbol */
 .bp { color: #008000 } /* Name.Builtin.Pseudo */
@@ -549,7 +549,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="n">FogOfWarTypes</span><span class="w"> </span><span class="n">new_type</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">type_name</span><span class="w"> </span><span class="p">{</span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)};</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">type_name</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;tiled&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">type_name</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;fast&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">new_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type_name</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;tiled&quot;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">FogOfWarTypes</span><span class="o">::</span><span class="nl">cTiled</span> <span class="p">:</span><span class="w"> </span><span class="n">FogOfWarTypes</span><span class="o">::</span><span class="n">cTiledLegacy</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">new_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type_name</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;tiled&quot;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">FogOfWarTypes</span><span class="o">::</span><span class="n">cTiled</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FogOfWarTypes</span><span class="o">::</span><span class="n">cTiledLegacy</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="c1">/// Tiled types of FOW don&#39;t work with shadow casting</span>
 <span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">FieldOfView</span><span class="p">.</span><span class="n">GetType</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">FieldOfViewTypes</span><span class="o">::</span><span class="n">cShadowCasting</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsNetworkGame</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -5096,7 +5096,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 <span class="w">	</span><span class="c1">// The assumption of this function is that UnitTypeBuilt will be always be</span>
 <span class="w">	</span><span class="c1">// fairly small so we iterate each time instead of doing any caching</span>
-<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="nl">b</span> <span class="p">:</span><span class="w"> </span><span class="n">AiPlayer</span><span class="o">-&gt;</span><span class="n">UnitTypeBuilt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">AiPlayer</span><span class="o">-&gt;</span><span class="n">UnitTypeBuilt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">Type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="n">lua_pushinteger</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">Want</span><span class="p">);</span><span class="w"></span>
 <span class="w">			</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
@@ -7019,7 +7019,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                           <summary>/unit/script_unittype.cpp:1930 CclDefineDecorations</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDecorations</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">	</span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="k">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">OffsetX</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">OffsetY</span><span class="p">;</span><span class="w"></span>
@@ -8886,9 +8886,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetUnitVariable</summary>
-                        <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Create a blacksmith for player 2<br>		blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br>		-- Specify the amount of hit points to assign to the blacksmith<br>		<strong>SetUnitVariable</strong>(blacksmith,"HitPoints",344)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><br> <code><br> -- Create a blacksmith for player 2<br> blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br> -- Specify the amount of hit points to assign to the blacksmith<br> <strong>SetUnitVariable</strong>(blacksmith,"HitPoints",344)<br> -- Set the blacksmiths color to the color of player 4<br> <strong>SetUnitVariable</strong>(blacksmith,"Color",4)<br> </code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1402 CclSetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1410 CclSetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -8901,7 +8901,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Player&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">AssignToPlayer</span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">value</span><span class="p">]);</span><span class="w"></span>
+<span class="w">		</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">ChangeOwner</span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">value</span><span class="p">]);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Color&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
+<span class="w">		</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Players</span><span class="p">[</span><span class="n">value</span><span class="p">].</span><span class="n">UnitColors</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TTL&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">TTL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GameCycle</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
@@ -9005,7 +9008,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SlotUsage</summary>
                         <p><br>  Get the usage of unit slots during load to allocate memory<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1413 CclSlotUsage</summary>
+                          <summary>/unit/script_unit.cpp:1421 CclSlotUsage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSlotUsage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">UnitManager</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -9020,7 +9023,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SelectSingleUnit</summary>
                         <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><code>-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		<strong>SelectSingleUnit</strong>(grom)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1441 CclSelectSingleUnit</summary>
+                          <summary>/unit/script_unit.cpp:1449 CclSelectSingleUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -9041,7 +9044,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>EnableSimplifiedAutoTargeting</summary>
                         <p><br>  Enable/disable simplified auto targeting <br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1461 CclEnableSimplifiedAutoTargeting</summary>
+                          <summary>/unit/script_unit.cpp:1469 CclEnableSimplifiedAutoTargeting</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclEnableSimplifiedAutoTargeting</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -9715,7 +9718,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUnitType</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUnitType</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUnitType</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">Ident</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
@@ -9761,7 +9764,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Vec2i</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Vec2i</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Vec2i</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
@@ -9773,7 +9776,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUnit</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUnit</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUnit</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">tolua_readonly</span><span class="w"> </span><span class="n">Vec2i</span><span class="w"> </span><span class="n">tilePos</span><span class="p">;</span><span class="w"></span>
 
@@ -9790,7 +9793,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CPreference</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CPreference</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CPreference</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowSightRange</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowReactionRange</span><span class="p">;</span><span class="w"></span>
@@ -9824,7 +9827,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUnitManager</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUnitManager</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUnitManager</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CUnit</span><span class="w"> </span><span class="o">&amp;</span><span class="nf">GetSlotUnit</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
@@ -9865,7 +9868,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUpgrade</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUpgrade</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUpgrade</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">CUpgrade</span><span class="w"> </span><span class="o">*</span><span class="nf">New</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">CUpgrade</span><span class="w"> </span><span class="o">*</span><span class="nf">Get</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
@@ -9881,7 +9884,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CFont</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CFont</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CFont</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CFont</span><span class="w"> </span><span class="o">*</span><span class="nf">New</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">,</span><span class="w"> </span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">g</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CFont</span><span class="w"> </span><span class="o">*</span><span class="nf">Get</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
@@ -9896,7 +9899,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CFontColor</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CFontColor</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CFontColor</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CFontColor</span><span class="w"> </span><span class="o">*</span><span class="nf">New</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CFontColor</span><span class="w"> </span><span class="o">*</span><span class="nf">Get</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
@@ -9910,7 +9913,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>enum ViewportModeType {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">ViewportModeType</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">ViewportModeType</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">VIEWPORT_SINGLE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
 <span class="w">	</span><span class="n">VIEWPORT_SPLIT_HORIZ</span><span class="p">,</span><span class="w"></span>
 <span class="w">	</span><span class="n">VIEWPORT_SPLIT_HORIZ3</span><span class="p">,</span><span class="w"></span>
@@ -9924,7 +9927,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class LuaActionListener</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LuaActionListener</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LuaActionListener</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaActionListener</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">lua</span><span class="p">,</span><span class="w"> </span><span class="n">lua_Object</span><span class="w"> </span><span class="n">luaref</span><span class="p">);</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
@@ -9935,7 +9938,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUIButton</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUIButton</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUIButton</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CUIButton</span><span class="p">();</span><span class="w"></span>
 
@@ -9952,7 +9955,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CMapArea</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CMapArea</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CMapArea</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Y</span><span class="p">;</span><span class="w"></span>
@@ -9970,7 +9973,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CViewport</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CViewport</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CViewport</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
@@ -9980,7 +9983,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CFiller</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CFiller</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CFiller</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CFiller</span><span class="p">();</span><span class="w"></span>
 
@@ -9995,7 +9998,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class vector</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">vector</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">vector</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">TOLUA_TEMPLATE_BIND</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">CFiller</span><span class="p">,</span><span class="w"> </span><span class="n">CUIButton</span><span class="p">,</span><span class="w"> </span><span class="n">CUIUserButton</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">)</span><span class="w"></span>
 
@@ -10027,7 +10030,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CButtonPanel</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CButtonPanel</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CButtonPanel</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Y</span><span class="p">;</span><span class="w"></span>
@@ -10042,7 +10045,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CPieMenu</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CPieMenu</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CPieMenu</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">G</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">MouseButton</span><span class="p">;</span><span class="w"></span>
@@ -10058,7 +10061,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CResourceInfo</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CResourceInfo</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CResourceInfo</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">G</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">IconFrame</span><span class="p">;</span><span class="w"></span>
@@ -10075,7 +10078,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CInfoPanel</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CInfoPanel</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CInfoPanel</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">G</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"></span>
@@ -10088,7 +10091,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUIUserButton</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUIUserButton</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUIUserButton</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CUIUserButton</span><span class="p">();</span><span class="w"> </span>
 
@@ -10102,7 +10105,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CStatusLine</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CStatusLine</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CStatusLine</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">Set</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">status</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="nf">Get</span><span class="p">();</span><span class="w"></span>
@@ -10120,7 +10123,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUITimer</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUITimer</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUITimer</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Y</span><span class="p">;</span><span class="w"></span>
@@ -10133,7 +10136,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CUserInterface</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CUserInterface</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CUserInterface</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">NormalFontColor</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">ReverseFontColor</span><span class="p">;</span><span class="w"></span>
@@ -10201,7 +10204,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CIcon</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CIcon</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CIcon</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CIcon</span><span class="w"> </span><span class="o">*</span><span class="nf">New</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CIcon</span><span class="w"> </span><span class="o">*</span><span class="nf">Get</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ident</span><span class="p">);</span><span class="w"></span>
@@ -10287,7 +10290,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Color</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Color</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Color</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Color</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">g</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">;</span><span class="w"></span>
@@ -10302,9 +10305,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Graphics</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Graphics</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Graphics</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">	</span><span class="k">enum</span> <span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">LEFT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
 <span class="w">		</span><span class="n">CENTER</span><span class="p">,</span><span class="w"></span>
 <span class="w">		</span><span class="n">RIGHT</span><span class="w"></span>
@@ -10316,7 +10319,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setWidth</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getWidth</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
@@ -10329,7 +10332,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getY</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPosition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setBorderSize</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getBorderSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getBorderSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setEnabled</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isEnabled</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setVisible</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">visible</span><span class="p">);</span><span class="w"></span>
@@ -10369,7 +10372,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class BasicContainer : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">BasicContainer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">BasicContainer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
@@ -10379,7 +10382,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ScrollArea : public BasicContainer</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ScrollArea</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ScrollArea</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ScrollArea</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setContent</span><span class="p">(</span><span class="n">Widget</span><span class="w"> </span><span class="o">*</span><span class="n">widget</span><span class="p">);</span><span class="w"></span>
@@ -10396,7 +10399,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageWidget : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageWidget</span><span class="p">(</span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">image</span><span class="p">);</span><span class="w"></span>
 <span class="w">        </span><span class="n">ImageWidget</span><span class="p">(</span><span class="n">Mng</span><span class="w"> </span><span class="o">*</span><span class="n">image</span><span class="p">);</span><span class="w"></span>
@@ -10409,7 +10412,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Button : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Button</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Button</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
@@ -10419,7 +10422,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ButtonWidget : public Button</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ButtonWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Button</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ButtonWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Button</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ButtonWidget</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setCaption</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
@@ -10433,7 +10436,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageButton : public Button</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Button</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Button</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageButton</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageButton</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
@@ -10449,7 +10452,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class RadioButton : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RadioButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">RadioButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">RadioButton</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">RadioButton</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">group</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">marked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
@@ -10469,7 +10472,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageRadioButton : public RadioButton</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageRadioButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">RadioButton</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageRadioButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">RadioButton</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageRadioButton</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageRadioButton</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">group</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">marked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
@@ -10488,7 +10491,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CheckBox : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CheckBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CheckBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CheckBox</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">CheckBox</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">marked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
@@ -10506,7 +10509,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageCheckBox : public CheckBox</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageCheckBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CheckBox</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageCheckBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CheckBox</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageCheckBox</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageCheckBox</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">marked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
@@ -10525,7 +10528,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Slider : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Slider</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Slider</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Slider</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">scaleEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="n">Slider</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">scaleStart</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">scaleEnd</span><span class="p">);</span><span class="w"></span>
@@ -10539,11 +10542,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setMarkerLength</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getMarkerLength</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setOrientation</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">orientation</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getOrientation</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getOrientation</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setStepLength</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">length</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">getStepLength</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">	</span><span class="k">enum</span> <span class="p">{</span><span class="w"> </span><span class="n">HORIZONTAL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">VERTICAL</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">	</span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">HORIZONTAL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">VERTICAL</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </p>
@@ -10552,7 +10555,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageSlider : public Slider</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageSlider</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Slider</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageSlider</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Slider</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageSlider</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">scaleEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageSlider</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">scaleStart</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">scaleEnd</span><span class="p">);</span><span class="w"></span>
@@ -10567,13 +10570,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Label : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Label</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Label</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Label</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="nf">getCaption</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">setCaption</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAlignment</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">alignment</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getAlignment</span><span class="p">();</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getAlignment</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">adjustSize</span><span class="p">();</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
@@ -10583,7 +10586,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class MultiLineLabel : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MultiLineLabel</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MultiLineLabel</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">MultiLineLabel</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">MultiLineLabel</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
@@ -10591,15 +10594,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setCaption</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="nf">getCaption</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAlignment</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">alignment</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getAlignment</span><span class="p">();</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getAlignment</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setVerticalAlignment</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">alignment</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getVerticalAlignment</span><span class="p">();</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getVerticalAlignment</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setLineWidth</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getLineWidth</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">adjustSize</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw</span><span class="p">(</span><span class="n">gcn</span><span class="o">::</span><span class="n">Graphics</span><span class="w"> </span><span class="o">*</span><span class="n">graphics</span><span class="p">);</span><span class="w"></span>
 
-<span class="w">	</span><span class="k">enum</span> <span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">LEFT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
 <span class="w">		</span><span class="n">CENTER</span><span class="p">,</span><span class="w"></span>
 <span class="w">		</span><span class="n">RIGHT</span><span class="p">,</span><span class="w"></span>
@@ -10613,7 +10616,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class TextBox : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TextBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">TextBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">TextBox</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">);</span><span class="w"></span>
 <span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setEditable</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">editable</span><span class="p">);</span><span class="w"></span>
@@ -10626,7 +10629,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class TextField : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TextField</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">TextField</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">TextField</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">);</span><span class="w"></span>
@@ -10639,7 +10642,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageTextField : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageTextField</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageTextField</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageTextField</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">);</span><span class="w"></span>
@@ -10653,7 +10656,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ListBox : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
@@ -10663,7 +10666,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageListBox : public ListBox</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageListBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ListBox</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageListBox</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ListBox</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
@@ -10673,7 +10676,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ListBoxWidget : public ScrollArea</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListBoxWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ScrollArea</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListBoxWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ScrollArea</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ListBoxWidget</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">setList</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">lua</span><span class="p">,</span><span class="w"> </span><span class="n">lua_Object</span><span class="w"> </span><span class="o">*</span><span class="n">lo</span><span class="p">);</span><span class="w"></span>
@@ -10687,7 +10690,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageListBoxWidget : public ListBoxWidget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageListBoxWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ListBoxWidget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageListBoxWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ListBoxWidget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageListBoxWidget</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">setList</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">lua</span><span class="p">,</span><span class="w"> </span><span class="n">lua_Object</span><span class="w"> </span><span class="o">*</span><span class="n">lo</span><span class="p">);</span><span class="w"></span>
@@ -10713,7 +10716,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Window : public BasicContainer</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Window</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Window</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Window</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="n">Window</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
@@ -10722,13 +10725,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setCaption</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caption</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="nf">getCaption</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAlignment</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">alignment</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getAlignment</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getAlignment</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setContent</span><span class="p">(</span><span class="n">Widget</span><span class="o">*</span><span class="w"> </span><span class="n">widget</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="n">Widget</span><span class="o">*</span><span class="w"> </span><span class="nf">getContent</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPadding</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">padding</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getPadding</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getPadding</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setTitleBarHeight</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getTitleBarHeight</span><span class="p">();</span><span class="w"></span>
+<span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getTitleBarHeight</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setMovable</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">movable</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isMovable</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">resizeToContent</span><span class="p">();</span><span class="w"></span>
@@ -10742,7 +10745,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Windows : public Window</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Windows</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Window</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Windows</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Window</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Windows</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">Widget</span><span class="w"> </span><span class="o">*</span><span class="n">widget</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
@@ -10754,7 +10757,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ScrollingWidget : public ScrollArea</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ScrollingWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ScrollArea</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ScrollingWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ScrollArea</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ScrollingWidget</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">Widget</span><span class="w"> </span><span class="o">*</span><span class="n">widget</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
@@ -10769,7 +10772,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class DropDown : public BasicContainer</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DropDown</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">DropDown</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getSelected</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSelected</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">selected</span><span class="p">);</span><span class="w"></span>
@@ -10785,7 +10788,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class DropDownWidget : public DropDown</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DropDownWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">DropDown</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">DropDownWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">DropDown</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">DropDownWidget</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">setList</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">lua</span><span class="p">,</span><span class="w"> </span><span class="n">lua_Object</span><span class="w"> </span><span class="o">*</span><span class="n">lo</span><span class="p">);</span><span class="w"></span>
@@ -10799,7 +10802,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class ImageDropDownWidget : public DropDown</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ImageDropDownWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">DropDown</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ImageDropDownWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">DropDown</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">ImageDropDownWidget</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">setList</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">lua</span><span class="p">,</span><span class="w"> </span><span class="n">lua_Object</span><span class="w"> </span><span class="o">*</span><span class="n">lo</span><span class="p">);</span><span class="w"></span>
@@ -10816,7 +10819,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class StatBoxWidget : public Widget</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">StatBoxWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">StatBoxWidget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Widget</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">StatBoxWidget</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span><span class="w"></span>
 
@@ -10832,7 +10835,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Container : public BasicContainer</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Container</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Container</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BasicContainer</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">Container</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setOpaque</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">opaque</span><span class="p">);</span><span class="w"></span>
@@ -10848,7 +10851,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class MenuScreen : public Container</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MenuScreen</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Container</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MenuScreen</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Container</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">MenuScreen</span><span class="p">();</span><span class="w"></span>
 
@@ -10891,7 +10894,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CMapInfo</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CMapInfo</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CMapInfo</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Description</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Filename</span><span class="p">;</span><span class="w"></span>
@@ -10908,7 +10911,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CTileset</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CTileset</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CTileset</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
@@ -10919,7 +10922,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CMap</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CMap</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CMap</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CMapInfo</span><span class="w"> </span><span class="n">Info</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">CTileset</span><span class="w"> </span><span class="o">*</span><span class="n">Tileset</span><span class="p">;</span><span class="w"></span>
@@ -10946,7 +10949,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CMinimap</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CMinimap</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CMinimap</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Y</span><span class="p">;</span><span class="w"></span>
@@ -11008,7 +11011,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CServerSetup {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CServerSetup</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CServerSetup</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">ResourcesOption</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">UnitsOption</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">FogOfWar</span><span class="p">;</span><span class="w"></span>
@@ -11094,7 +11097,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class GraphicAnimation</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">GraphicAnimation</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">GraphicAnimation</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">GraphicAnimation</span><span class="p">(</span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">g</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ticksPerFrame</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">clone</span><span class="p">();</span><span class="w"></span>
@@ -11106,7 +11109,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CParticle</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CParticle</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CParticle</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">virtual</span><span class="w"> </span><span class="n">CParticle</span><span class="o">*</span><span class="w"> </span><span class="nf">clone</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">setDrawLevel</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
@@ -11118,7 +11121,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class StaticParticle : public CParticle</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">StaticParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">StaticParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="n">StaticParticle</span><span class="p">(</span><span class="n">CPosition</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="n">animation</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">drawlevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -11130,7 +11133,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CChunkParticle : public CParticle</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CChunkParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CChunkParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="n">CChunkParticle</span><span class="p">(</span><span class="n">CPosition</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="n">smokeAnimation</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="n">debrisAnimation</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="n">destroyAnimation</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">minVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">minTrajectoryAngle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxTTL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">drawlevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -11146,7 +11149,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CSmokeParticle : public CParticle</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CSmokeParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CSmokeParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="n">CSmokeParticle</span><span class="p">(</span><span class="n">CPosition</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="n">animation</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">speedx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">speedy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-22.0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">drawlevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -11158,7 +11161,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CRadialParticle : public CParticle</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CRadialParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CRadialParticle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CParticle</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="n">CRadialParticle</span><span class="p">(</span><span class="n">CPosition</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicAnimation</span><span class="w"> </span><span class="o">*</span><span class="n">smokeAnimation</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxSpeed</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">drawlevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -11170,7 +11173,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CParticleManager</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CParticleManager</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CParticleManager</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="n">CParticleManager</span><span class="p">();</span><span class="w"></span>
@@ -11210,7 +11213,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>enum GameResults {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">GameResults</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">GameResults</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">GameNoResult</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">GameVictory</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">GameDefeat</span><span class="p">,</span><span class="w"></span>
@@ -11270,7 +11273,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class Settings {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Settings</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Settings</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">NetGameType</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">	</span><span class="n">SettingsPresets</span><span class="w"> </span><span class="n">Presets</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"></span>
@@ -11297,7 +11300,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>enum GameTypes {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">GameTypes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">GameTypes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">SettingsGameTypeMapDefault</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SettingsPresetMapDefault</span><span class="p">,</span><span class="w"></span>
 <span class="w">	</span><span class="n">SettingsGameTypeMelee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
 <span class="w">	</span><span class="n">SettingsGameTypeFreeForAll</span><span class="p">,</span><span class="w"></span>
@@ -11385,7 +11388,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>enum EditorRunningType {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">EditorRunningType</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">EditorRunningType</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">EditorNotRunning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="c1">/// Not Running</span>
 <span class="w">	</span><span class="n">EditorStarted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">       </span><span class="c1">/// Editor Enabled at all</span>
 <span class="w">	</span><span class="n">EditorCommandLine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">   </span><span class="c1">/// Called from Command Line</span>
@@ -11398,7 +11401,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CEditor</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CEditor</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CEditor</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">UnitTypes</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">TerrainEditable</span><span class="p">;</span><span class="w"></span>
@@ -11458,7 +11461,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CVideo</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CVideo</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CVideo</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Width</span><span class="p">;</span><span class="w"></span>
@@ -11484,7 +11487,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CGraphic</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CGraphic</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CGraphic</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">New</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -11502,7 +11505,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CPlayerColorGraphic : public CGraphic</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CPlayerColorGraphic</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CGraphic</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CPlayerColorGraphic</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">CGraphic</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">	</span><span class="k">static</span><span class="w"> </span><span class="n">CPlayerColorGraphic</span><span class="w"> </span><span class="o">*</span><span class="n">New</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -11515,7 +11518,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CColor {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CColor</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CColor</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CColor</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
 <span class="w">		</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
 
@@ -11541,7 +11544,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>enum PlayerTypes {</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">PlayerTypes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">PlayerTypes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerNeutral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerNobody</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerComputer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"></span>
@@ -11556,7 +11559,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>class CPlayer</summary>
                     <p></p>
-                    <p><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CPlayer</span><span class="w"></span>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CPlayer</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
