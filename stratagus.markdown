@@ -20,6 +20,7 @@ can download Stratagus from [GitHub](https://github.com/Wargus/stratagus){:targe
 * Stargus
 * Aleona's Tales
 * Wyrmsun
+* [Alvaro F. Perez' Astroseries](https://github.com/SenhorFlibble/Astroseries/releases/tag/v1.31b) 
 * Perhaps some other games (let us know)
 
 ### Development
