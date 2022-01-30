@@ -4555,7 +4555,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>CopyUnitType</summary>
                         <p><br> <b>Description</b><br><br>  Copy a unit type.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>CopyUnitType</strong>("unit-peasant", "unit-peasant-copy")</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1387 CclCopyUnitType</summary>
+                          <summary>/unit/script_unittype.cpp:1398 CclCopyUnitType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclCopyUnitType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -4634,7 +4634,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">ReactRangeComputer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">ReactRangeComputer</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">ReactRangePerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">ReactRangePerson</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Missile</span><span class="p">.</span><span class="n">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Missile</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Missile</span><span class="p">.</span><span class="n">Missile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Missile</span><span class="p">.</span><span class="n">Missile</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Missile</span><span class="p">.</span><span class="n">Missile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"> </span><span class="c1">// filled in later</span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">MinAttackRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">MinAttackRange</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">ATTACKRANGE_INDEX</span><span class="p">].</span><span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">ATTACKRANGE_INDEX</span><span class="p">].</span><span class="n">Value</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">ATTACKRANGE_INDEX</span><span class="p">].</span><span class="n">Max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">ATTACKRANGE_INDEX</span><span class="p">].</span><span class="n">Max</span><span class="p">;</span><span class="w"></span>
@@ -4651,7 +4651,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">DamageType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">DamageType</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">ExplodeWhenKilled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">ExplodeWhenKilled</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Explosion</span><span class="p">.</span><span class="n">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Explosion</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Explosion</span><span class="p">.</span><span class="n">Missile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Explosion</span><span class="p">.</span><span class="n">Missile</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Explosion</span><span class="p">.</span><span class="n">Missile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"> </span><span class="c1">// filled later</span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">TeleportCost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">TeleportCost</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">TeleportEffectIn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">TeleportEffectIn</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">TeleportEffectOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">TeleportEffectOut</span><span class="p">;</span><span class="w"></span>
@@ -4680,13 +4680,21 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">CanTarget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">CanTarget</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Building</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Building</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">BuildingRules</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
-<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">BuildingRules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">BuildingRules</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">rule</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">from</span><span class="o">-&gt;</span><span class="n">BuildingRules</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;WARNING: unit type copy %s of %s does not inherit BuildingRules</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fromName</span><span class="p">,</span><span class="w"> </span><span class="n">toName</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="c1">// XXX: should copy, not share, this will crash</span>
+<span class="w">	</span><span class="c1">// for (auto rule : from-&gt;BuildingRules) {</span>
+<span class="w">	</span><span class="c1">// 	to-&gt;BuildingRules.push_back(rule);</span>
+<span class="w">	</span><span class="c1">// }</span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">AiBuildingRules</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
-<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">AiBuildingRules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">AiBuildingRules</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">rule</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">from</span><span class="o">-&gt;</span><span class="n">AiBuildingRules</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;WARNING: unit type copy %s of %s does not inherit AiBuildingRules</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fromName</span><span class="p">,</span><span class="w"> </span><span class="n">toName</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="c1">// XXX: should copy, not share, this would crash</span>
+<span class="w">	</span><span class="c1">// for (auto rule : from-&gt;AiBuildingRules) {</span>
+<span class="w">	</span><span class="c1">// 	to-&gt;AiBuildingRules.push_back(rule);</span>
+<span class="w">	</span><span class="c1">// }</span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">AutoBuildRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">AutoBuildRate</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">LandUnit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">LandUnit</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">AirUnit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">AirUnit</span><span class="p">;</span><span class="w"></span>
@@ -4717,7 +4725,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Help</span><span class="p">.</span><span class="n">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Help</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">WorkComplete</span><span class="p">.</span><span class="n">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">WorkComplete</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="n">memcpy</span><span class="p">(</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Dead</span><span class="p">,</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Dead</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Dead</span><span class="p">));</span><span class="w"></span>
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">ANIMATIONS_DEATHTYPES</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Dead</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">Sound</span><span class="p">.</span><span class="n">Dead</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberVariable</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Enable</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="n">to</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="o">-&gt;</span><span class="n">DefaultStat</span><span class="p">.</span><span class="n">Variables</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Value</span><span class="p">;</span><span class="w"></span>
@@ -4730,6 +4740,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">CclInConfigFile</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">UpdateUnitStats</span><span class="p">(</span><span class="o">*</span><span class="n">to</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="n">LoadUnitTypes</span><span class="p">();</span><span class="w"></span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
@@ -4741,7 +4752,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineUnitStats</summary>
                         <p><br> <b>Description</b><br><br>  Parse unit-stats.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>DefineUnitStats</strong>("unit-berserker", 2, {<br>    		"HitPoints", {Value = 55, Max = 55, Increase = 0, Enable = true},<br>    		"AttackRange", {Value = 5, Max = 6, Increase = 0, Enable = true},<br>    		"SightRange", {Value = 7, Max = 7, Increase = 0, Enable = true},<br>  		})</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1488 CclDefineUnitStats</summary>
+                          <summary>/unit/script_unittype.cpp:1499 CclDefineUnitStats</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineUnitStats</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CUnitType</span><span class="w"> </span><span class="o">*</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitTypeByIdent</span><span class="p">(</span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span><span class="w"></span>
@@ -4836,7 +4847,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineBoolFlags</summary>
                         <p><br>  Define boolean flag.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1940 CclDefineBoolFlags</summary>
+                          <summary>/unit/script_unittype.cpp:1951 CclDefineBoolFlags</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineBoolFlags</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">old</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberBoolFlag</span><span class="p">();</span><span class="w"></span>
@@ -4865,7 +4876,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineVariables</summary>
                         <p><br>  Define user variables.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1915 CclDefineVariables</summary>
+                          <summary>/unit/script_unittype.cpp:1926 CclDefineVariables</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineVariables</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">old</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">GetNumberVariable</span><span class="p">();</span><span class="w"></span>
@@ -4898,7 +4909,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDecorations</summary>
                         <p><br>  Define Decorations for user variables<br><br>  @param l  Lua state.<br><br>  @todo modify Assert with luastate with User Error.<br>  @todo continue to add configuration.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:2129 CclDefineDecorations</summary>
+                          <summary>/unit/script_unittype.cpp:2140 CclDefineDecorations</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDecorations</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -5088,7 +5099,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineExtraDeathTypes</summary>
                         <p><br>  Define default extra death types.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:2148 CclDefineExtraDeathTypes</summary>
+                          <summary>/unit/script_unittype.cpp:2159 CclDefineExtraDeathTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineExtraDeathTypes</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="p">;</span><span class="w"></span>
@@ -5111,7 +5122,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>UnitType</summary>
                         <p><br>  Get unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   Unit-type structure.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1530 CclUnitType</summary>
+                          <summary>/unit/script_unittype.cpp:1541 CclUnitType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclUnitType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5132,7 +5143,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>UnitTypeArray</summary>
                         <p><br>  Get all unit-type structures.<br><br>  @param l  Lua state.<br><br>  @return   An array of all unit-type structures.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1552 CclUnitTypeArray</summary>
+                          <summary>/unit/script_unittype.cpp:1563 CclUnitTypeArray</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclUnitTypeArray</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -5156,7 +5167,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitTypeIdent</summary>
                         <p><br>  Get the ident of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The identifier of the unit-type.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1572 CclGetUnitTypeIdent</summary>
+                          <summary>/unit/script_unittype.cpp:1583 CclGetUnitTypeIdent</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitTypeIdent</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5178,7 +5189,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitTypeName</summary>
                         <p><br> <b>Description</b><br><br>  Get the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code>name = <strong>GetUnitTypeName</strong>("unit-knight")<br>		  print(name)</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1595 CclGetUnitTypeName</summary>
+                          <summary>/unit/script_unittype.cpp:1606 CclGetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5196,7 +5207,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUnitTypeName</summary>
                         <p><br> <b>Description</b><br><br>  Set the name of the unit-type structure.<br><br>  @param l  Lua state.<br><br>  @return   The name of the unit-type.<br><br> Example:<br><br> <div class="example"><code><strong>SetUnitTypeName</strong>("unit-beast-cry","Doomhammer")</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1621 CclSetUnitTypeName</summary>
+                          <summary>/unit/script_unittype.cpp:1632 CclSetUnitTypeName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetUnitTypeName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -5218,7 +5229,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitTypeData</summary>
                         <p><br> <b>Description</b><br><br>  Get unit type data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Get the amount of supply from Human Farms<br>		  supply = <strong>GetUnitTypeData</strong>("unit-farm","Supply")<br>		  print(supply)</code></div></p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:1845 CclGetUnitTypeData</summary>
+                          <summary>/unit/script_unittype.cpp:1856 CclGetUnitTypeData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitTypeData</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -7827,7 +7838,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AddMessage</summary>
                         <p><br> <b>Description</b><br><br>  Add a new message.<br><br> Example:<br><br> <div class="example"><code><strong>AddMessage</strong>("Hello World!")</code></div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1226 CclAddMessage</summary>
+                          <summary>/ui/script_ui.cpp:1228 CclAddMessage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclAddMessage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8133,7 +8144,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFontCodePage</summary>
                         <p><br> <b>Description</b><br><br> Declare which codepage the font files are in. Text is handled internally<br> as UTF-8 everywhere, but the font rendering system uses graphics with 256<br> symbols. Commonly, DOS and early Windows games used codepage 437 or 1252 for<br> western European languages, or 866 for Russian and some other cyrillic<br> writing systems. These are the only ones that are currently supported, but<br> more can easily be added. All text is mapped into the codepage that is set<br> for the font files. If the codepage is not one of the supported ones, or if<br> something doesn't map (for example, some accented characters with codepage<br> 866, or cyrillic letters with codepage 437), a simple "visual" mapping to<br> 7-bit ASCII is used to at least print something that may be recognizable.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1303 CclSetFontCodePage</summary>
+                          <summary>/ui/script_ui.cpp:1305 CclSetFontCodePage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFontCodePage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8456,7 +8467,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineButton</summary>
                         <p><br>  Define a button.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1156 CclDefineButton</summary>
+                          <summary>/ui/script_ui.cpp:1158 CclDefineButton</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineButton</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8565,6 +8576,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">				</span><span class="n">ba</span><span class="p">.</span><span class="n">Allowed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ButtonCheckUnitsAnd</span><span class="p">;</span><span class="w"></span>
 <span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;check-units-not&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">				</span><span class="n">ba</span><span class="p">.</span><span class="n">Allowed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ButtonCheckUnitsNot</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;check-units-nor&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">				</span><span class="n">ba</span><span class="p">.</span><span class="n">Allowed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ButtonCheckUnitsNor</span><span class="p">;</span><span class="w"></span>
 <span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;check-network&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">				</span><span class="n">ba</span><span class="p">.</span><span class="n">Allowed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ButtonCheckNetwork</span><span class="p">;</span><span class="w"></span>
 <span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;check-no-network&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -8750,7 +8763,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>PresentMap</summary>
                         <p><br> <b>Description</b><br><br> Set basic map caracteristics.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>PresentMap</strong>("Map description", 1, 128, 128, 17)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1262 CclPresentMap</summary>
+                          <summary>/ui/script_ui.cpp:1264 CclPresentMap</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclPresentMap</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
@@ -8772,7 +8785,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineMapSetup</summary>
                         <p><br> <b>Description</b><br><br> Define the lua file that will build the map<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Load map setup from file<br>		<strong>DefineMapSetup</strong>("Setup.sms")</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1282 CclDefineMapSetup</summary>
+                          <summary>/ui/script_ui.cpp:1284 CclDefineMapSetup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineMapSetup</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8789,7 +8802,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSelectionStyle</summary>
                         <p><br>  Set selection style.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1208 CclSetSelectionStyle</summary>
+                          <summary>/ui/script_ui.cpp:1210 CclSetSelectionStyle</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSelectionStyle</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8819,7 +8832,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGroupKeys</summary>
                         <p><br>  Set the keys which are use for grouping units, helpful for other keyboards<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1238 CclSetGroupKeys</summary>
+                          <summary>/ui/script_ui.cpp:1240 CclSetGroupKeys</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGroupKeys</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
