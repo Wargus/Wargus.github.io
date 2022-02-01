@@ -3305,7 +3305,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineCursor</summary>
                         <p><br>  Define a cursor.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/video/cursor.cpp:423 CclDefineCursor</summary>
+                          <summary>/video/cursor.cpp:524 CclDefineCursor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineCursor</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
@@ -3386,7 +3386,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGameCursor</summary>
                         <p><br>  Set the current game cursor.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/video/cursor.cpp:435 CclSetGameCursor</summary>
+                          <summary>/video/cursor.cpp:536 CclSetGameCursor</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGameCursor</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -11751,6 +11751,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">NoStatusLineTooltips</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">SimplifiedAutoTargeting</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">AiChecksDependencies</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">HardwareCursor</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ShowOrders</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ShowNameDelay</span><span class="p">;</span><span class="w"></span>
