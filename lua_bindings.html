@@ -4909,7 +4909,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDecorations</summary>
                         <p><br>  Define Decorations for user variables<br><br>  @param l  Lua state.<br><br>  @todo modify Assert with luastate with User Error.<br>  @todo continue to add configuration.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:2140 CclDefineDecorations</summary>
+                          <summary>/unit/script_unittype.cpp:2150 CclDefineDecorations</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDecorations</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -4928,6 +4928,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">		</span><span class="kt">bool</span><span class="w"> </span><span class="n">HideNeutral</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="kt">bool</span><span class="w"> </span><span class="n">HideAllied</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowOpponent</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="kt">bool</span><span class="w"> </span><span class="n">BoolFlagInvert</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">BoolFlag</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="n">tmp</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -5065,8 +5067,14 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">					</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid method &#39;%s&#39; for Method in DefineDecorations&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">key</span><span class="p">);</span><span class="w"></span>
 <span class="w">				</span><span class="p">}</span><span class="w"></span>
 <span class="w">				</span><span class="n">lua_pop</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// MethodName and data</span>
-<span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Error</span>
-<span class="w">				</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid key &#39;%s&#39; for DefineDecorations&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">key</span><span class="p">);</span><span class="w"></span>
+<span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">				</span><span class="n">tmp</span><span class="p">.</span><span class="n">BoolFlag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">BoolFlagNameLookup</span><span class="p">[</span><span class="n">key</span><span class="p">];</span><span class="w"></span>
+<span class="w">				</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tmp</span><span class="p">.</span><span class="n">BoolFlag</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">					</span><span class="n">tmp</span><span class="p">.</span><span class="n">BoolFlagInvert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToBoolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">				</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">					</span><span class="c1">// Error</span>
+<span class="w">					</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid key &#39;%s&#39; for DefineDecorations&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">key</span><span class="p">);</span><span class="w"></span>
+<span class="w">				</span><span class="p">}</span><span class="w"></span>
 <span class="w">			</span><span class="p">}</span><span class="w"></span>
 <span class="w">			</span><span class="n">lua_pop</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Pop the value</span>
 <span class="w">		</span><span class="p">}</span><span class="w"></span>
@@ -5085,6 +5093,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">		</span><span class="n">decovar</span><span class="o">-&gt;</span><span class="n">HideNeutral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tmp</span><span class="p">.</span><span class="n">HideNeutral</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="n">decovar</span><span class="o">-&gt;</span><span class="n">HideAllied</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tmp</span><span class="p">.</span><span class="n">HideAllied</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="n">decovar</span><span class="o">-&gt;</span><span class="n">ShowOpponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tmp</span><span class="p">.</span><span class="n">ShowOpponent</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">decovar</span><span class="o">-&gt;</span><span class="n">BoolFlag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tmp</span><span class="p">.</span><span class="n">BoolFlag</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">decovar</span><span class="o">-&gt;</span><span class="n">BoolFlagInvert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tmp</span><span class="p">.</span><span class="n">BoolFlagInvert</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="n">UnitTypeVar</span><span class="p">.</span><span class="n">DecoVar</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">decovar</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="n">Assert</span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">));</span><span class="w"></span>
@@ -5099,7 +5109,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineExtraDeathTypes</summary>
                         <p><br>  Define default extra death types.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unittype.cpp:2159 CclDefineExtraDeathTypes</summary>
+                          <summary>/unit/script_unittype.cpp:2169 CclDefineExtraDeathTypes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineExtraDeathTypes</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="p">;</span><span class="w"></span>
