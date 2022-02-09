@@ -7854,7 +7854,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>AddMessage</summary>
                         <p><br> <b>Description</b><br><br>  Add a new message.<br><br> Example:<br><br> <div class="example"><code><strong>AddMessage</strong>("Hello World!")</code></div><br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1228 CclAddMessage</summary>
+                          <summary>/ui/script_ui.cpp:1254 CclAddMessage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclAddMessage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8160,7 +8160,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetFontCodePage</summary>
                         <p><br> <b>Description</b><br><br> Declare which codepage the font files are in. Text is handled internally<br> as UTF-8 everywhere, but the font rendering system uses graphics with 256<br> symbols. Commonly, DOS and early Windows games used codepage 437 or 1252 for<br> western European languages, or 866 for Russian and some other cyrillic<br> writing systems. These are the only ones that are currently supported, but<br> more can easily be added. All text is mapped into the codepage that is set<br> for the font files. If the codepage is not one of the supported ones, or if<br> something doesn't map (for example, some accented characters with codepage<br> 866, or cyrillic letters with codepage 437), a simple "visual" mapping to<br> 7-bit ASCII is used to at least print something that may be recognizable.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1305 CclSetFontCodePage</summary>
+                          <summary>/ui/script_ui.cpp:1331 CclSetFontCodePage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFontCodePage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8691,6 +8691,38 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         </details>
                         
                         <details>
+                        <summary>CopyButtonsForUnitType</summary>
+                        <p>/ui/script_ui.cpp:1184 CclCopyButtonsForUnitType</p>
+                        <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclCopyButtonsForUnitType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">	</span><span class="c1">// Slot identifier</span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">fromName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="n">CUnitType</span><span class="w"> </span><span class="o">*</span><span class="n">from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitTypeByIdent</span><span class="p">(</span><span class="n">fromName</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">toName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="n">CUnitType</span><span class="w"> </span><span class="o">*</span><span class="n">to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitTypeByIdent</span><span class="p">(</span><span class="n">toName</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">to</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unknown unit-type &#39;%s&#39;</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">toName</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">from</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unknown unit-type &#39;%s&#39;</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">fromName</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">btn</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UnitButtonTable</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">btn</span><span class="o">-&gt;</span><span class="n">UnitMask</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">fromName</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">::</span><span class="n">npos</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">			</span><span class="n">btn</span><span class="o">-&gt;</span><span class="n">UnitMask</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">toName</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">btn</span><span class="o">-&gt;</span><span class="n">UnitMask</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</p>
+                        </details>
+                        
+                        <details>
                         <summary>DefineButtonStyle</summary>
                         <p><br>  Define a button style<br><br>  @param l  Lua state.</p>
                           <details>
@@ -8779,7 +8811,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>PresentMap</summary>
                         <p><br> <b>Description</b><br><br> Set basic map caracteristics.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>PresentMap</strong>("Map description", 1, 128, 128, 17)</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1264 CclPresentMap</summary>
+                          <summary>/ui/script_ui.cpp:1290 CclPresentMap</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclPresentMap</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
@@ -8801,7 +8833,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineMapSetup</summary>
                         <p><br> <b>Description</b><br><br> Define the lua file that will build the map<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>-- Load map setup from file<br>		<strong>DefineMapSetup</strong>("Setup.sms")</code></div></p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1284 CclDefineMapSetup</summary>
+                          <summary>/ui/script_ui.cpp:1310 CclDefineMapSetup</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineMapSetup</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8818,7 +8850,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSelectionStyle</summary>
                         <p><br>  Set selection style.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1210 CclSetSelectionStyle</summary>
+                          <summary>/ui/script_ui.cpp:1236 CclSetSelectionStyle</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSelectionStyle</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -8848,7 +8880,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGroupKeys</summary>
                         <p><br>  Set the keys which are use for grouping units, helpful for other keyboards<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/ui/script_ui.cpp:1240 CclSetGroupKeys</summary>
+                          <summary>/ui/script_ui.cpp:1266 CclSetGroupKeys</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGroupKeys</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
