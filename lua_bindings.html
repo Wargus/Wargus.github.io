@@ -9973,12 +9973,17 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetTileTerrainHasFlag</summary>
                         <p><br>  Check if the tile's terrain has a particular flag.<br><br>  @param l  Lua state.<br><br>  @return   True if has the flag, false if not.</p>
                           <details>
-                          <summary>/map/script_map.cpp:959 CclGetTileTerrainHasFlag</summary>
+                          <summary>/map/script_map.cpp:964 CclGetTileTerrainHasFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetTileTerrainHasFlag</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
 
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="n">Vec2i</span><span class="w"> </span><span class="n">pos</span><span class="p">(</span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">MapWidth</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">MapHeight</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="c1">// out of bounds, doesn&#39;t have it</span>
+<span class="w">		</span><span class="n">lua_pushboolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
 
 <span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">flag_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -10021,7 +10026,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetEnableWallsForSP</summary>
                         <p><br>  Enable walls enabled for single player games (for debug purposes)<br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/map/script_map.cpp:973 CclSetEnableWallsForSP</summary>
+                          <summary>/map/script_map.cpp:978 CclSetEnableWallsForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetEnableWallsForSP</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -10037,7 +10042,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsWallsEnabledForSP</summary>
                         <p><br>  Check if walls enabled for single player games (for debug purposes)</p>
                           <details>
-                          <summary>/map/script_map.cpp:983 CclIsWallsEnabledForSP</summary>
+                          <summary>/map/script_map.cpp:988 CclIsWallsEnabledForSP</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclIsWallsEnabledForSP</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -10053,7 +10058,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetIsGameHoster</summary>
                         <p><br>  Check if network game was created on this PC</p>
                           <details>
-                          <summary>/map/script_map.cpp:993 CclGetIsGameHoster</summary>
+                          <summary>/map/script_map.cpp:998 CclGetIsGameHoster</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetIsGameHoster</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -10341,7 +10346,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="n">CUnitType</span><span class="w"> </span><span class="o">*</span><span class="n">StartUnit</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">WriteCompressedMaps</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">EditorRunningType</span><span class="w"> </span><span class="n">Running</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">CreateRandomMap</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">CreateRandomMap</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">shuffleTranslitions</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </p>
