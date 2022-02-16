@@ -5900,7 +5900,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>MoveUnit</summary>
                         <p><br>  Move a unit on map.<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made placed.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:639 CclMoveUnit</summary>
+                          <summary>/unit/script_unit.cpp:643 CclMoveUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclMoveUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -5911,6 +5911,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 <span class="w">	</span><span class="n">Vec2i</span><span class="w"> </span><span class="n">ipos</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">CclGetPos</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ipos</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ipos</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Removed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Remove</span><span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Container</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
 
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">UnitCanBeAt</span><span class="p">(</span><span class="o">*</span><span class="n">unit</span><span class="p">,</span><span class="w"> </span><span class="n">ipos</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Place</span><span class="p">(</span><span class="n">ipos</span><span class="p">);</span><span class="w"></span>
@@ -5932,7 +5936,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>RemoveUnit</summary>
                         <p><br> <b>Description</b><br><br>  Remove unit from the map.<br><br>  @param l  Lua state.<br><br>  @return   Returns 1.<br><br> Example:<br><br> <div class="example"><code>ogre = CreateUnit("unit-ogre", 0, {24, 89})<br><br>		AddTrigger(<br>  		function() return (GameCycle > 150) end,<br>  		function()<br>    			<strong>RemoveUnit</strong>(ogre)<br>    			return false end -- end of function<br>		)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:673 CclRemoveUnit</summary>
+                          <summary>/unit/script_unit.cpp:677 CclRemoveUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclRemoveUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5955,7 +5959,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>CreateUnit</summary>
                         <p><br> <b>Description</b><br><br>  Create a unit and place it on the map<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><code><strong>CreateUnit</strong>("unit-human-transport", 1, {94, 0})</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:733 CclCreateUnit</summary>
+                          <summary>/unit/script_unit.cpp:737 CclCreateUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclCreateUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -6011,7 +6015,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>TransformUnit</summary>
                         <p><br> <b>Description</b><br><br>  'Upgrade' a unit in place to a unit of different type.<br><br>  @param l  Lua state.<br><br>  @return   Returns success.<br><br> Example:<br><br> <div class="example"><code>-- Make a peon for player 5<br>		peon = CreateUnit("unit-peon", 5, {58, 9})<br>		-- The peon will be trasformed into a Grunt<br>		<strong>TransformUnit</strong>(peon,"unit-grunt")</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:764 CclTransformUnit</summary>
+                          <summary>/unit/script_unit.cpp:768 CclTransformUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclTransformUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">lua_pushvalue</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -6035,7 +6039,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DamageUnit</summary>
                         <p><br> <b>Description</b><br><br>  Damages unit, additionally using another unit as first's attacker<br><br>  @param l  Lua state.<br><br>  @return   Returns the slot number of the made unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Damage the grunt with 15 points<br>		<strong>DamageUnit</strong>(-1,grunt,15)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:798 CclDamageUnit</summary>
+                          <summary>/unit/script_unit.cpp:802 CclDamageUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDamageUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -6062,7 +6066,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetResourcesHeld</summary>
                         <p><br>  Set resources held by a unit<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:823 CclSetResourcesHeld</summary>
+                          <summary>/unit/script_unit.cpp:827 CclSetResourcesHeld</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetResourcesHeld</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -6091,7 +6095,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetTeleportDestination</summary>
                         <p><br>  Set teleport deastination for teleporter unit<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:848 CclSetTeleportDestination</summary>
+                          <summary>/unit/script_unit.cpp:852 CclSetTeleportDestination</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetTeleportDestination</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -6120,7 +6124,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>OrderUnit</summary>
                         <p><br> <b>Description</b><br><br>  Order a unit<br><br>  @param l  Lua state.<br><br>  OrderUnit(player, unit-type, start_loc, dest_loc, order)<br><br> Example:<br><br> <div class="example"><code>-- Move transport from position x=94,y=0 to x=80,y=9<br>		<strong>OrderUnit</strong>(1,"unit-human-transport",{94,0},{80,9},"move")</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:932 CclOrderUnit</summary>
+                          <summary>/unit/script_unit.cpp:936 CclOrderUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclOrderUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
@@ -6199,7 +6203,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>KillUnit</summary>
                         <p><br> <b>Description</b><br><br>  Kill a unit<br><br>  @param l  Lua state.<br><br>  @return   Returns true if a unit was killed.<br><br> Example:<br><br> <div class="example"><code>-- Kills an ogre controlled by player 3<br>		<strong>KillUnit</strong>("unit-ogre", 3)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:991 CclKillUnit</summary>
+                          <summary>/unit/script_unit.cpp:995 CclKillUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclKillUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -6238,7 +6242,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>KillUnitAt</summary>
                         <p><br> <b>Description</b><br><br>  Kill a unit at a location<br><br>  @param l  Lua state.<br><br>  @return   Returns the number of units killed.<br><br> Example:<br><br> <div class="example"><code>-- Kill 8 peasants controlled by player 7 from position {27,1} to {34,5}<br>		<strong>KillUnitAt</strong>("unit-peasant",7,8,{27,1},{34,5})</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1053 CclKillUnitAt</summary>
+                          <summary>/unit/script_unit.cpp:1057 CclKillUnitAt</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclKillUnitAt</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
@@ -6292,10 +6296,45 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         </details>
                         
                         <details>
+                        <summary>FindNextResource</summary>
+                        <p><br>  Find the next reachable resource unit that gives resource starting from a worker.<br>  Optional third argument is the range to search.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><br>		peon = CreateUnit("unit-peon", 5, {58, 8})<br>      goldmine = <strong>FindNextResource(peon, 0)</strong></code></div></p>
+                          <details>
+                          <summary>/unit/script_unit.cpp:1504 CclFindNextResource</summary>
+                          <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclFindNextResource</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nargs</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;incorrect argument count&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+
+<span class="w">	</span><span class="n">lua_pushvalue</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="n">CUnit</span><span class="w"> </span><span class="o">*</span><span class="n">unit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CclGetUnit</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="n">lua_pop</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">	</span><span class="n">lua_pushvalue</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">resource</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CclGetResourceByName</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="n">lua_pop</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">	</span><span class="n">CUnit</span><span class="w"> </span><span class="o">*</span><span class="n">resourceUnit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UnitFindResource</span><span class="p">(</span><span class="o">*</span><span class="n">unit</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">unit</span><span class="p">,</span><span class="w"> </span><span class="n">range</span><span class="p">,</span><span class="w"> </span><span class="n">resource</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">resourceUnit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">UnitNumber</span><span class="p">(</span><span class="o">*</span><span class="n">unit</span><span class="p">));</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">lua_pushnil</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</p>
+                          </details>
+                        </details>
+                        
+                        <details>
                         <summary>GetUnits</summary>
                         <p><br> <b>Description</b><br><br>  Get a player's units<br><br>  @param l  Lua state.<br><br>  @return   Array of units.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1085 CclGetUnits</summary>
+                          <summary>/unit/script_unit.cpp:1089 CclGetUnits</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnits</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -6327,7 +6366,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitsAroundUnit</summary>
                         <p><br> <b>Description</b><br><br>  Get a player's units in rectangle box specified with 2 coordinates<br><br>  @param l  Lua state.<br><br>  @return   Array of units.<br><br> Example:<br><br> <div class="example"><code>circlePower = CreateUnit("unit-circle-of-power", 15, {59, 4})<br>		-- Get the units near the circle of power.<br>      unitsOnCircle = <strong>GetUnitsAroundUnit</strong>(circle,1,true)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1131 CclGetUnitsAroundUnit</summary>
+                          <summary>/unit/script_unit.cpp:1135 CclGetUnitsAroundUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitsAroundUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -6367,7 +6406,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitBoolFlag</summary>
                         <p><br><br>  Get the value of the unit bool-flag.<br><br>  @param l  Lua state.<br><br>  @return   The value of the bool-flag of the unit.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1156 CclGetUnitBoolFlag</summary>
+                          <summary>/unit/script_unit.cpp:1160 CclGetUnitBoolFlag</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitBoolFlag</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -6393,7 +6432,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetUnitVariable</summary>
                         <p><br> <b>Description</b><br><br>  Get the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return   The value of the variable of the unit.<br><br> Example:<br><br> <div class="example"><code>-- Make a grunt for player 5<br>		grunt = CreateUnit("unit-grunt", 5, {58, 8})<br>		-- Take the name of the unit<br>		unit_name = <strong>GetUnitVariable</strong>(grunt,"Name")<br>		-- Take the player number based on the unit<br>		player_type = <strong>GetUnitVariable</strong>(grunt,"PlayerType")<br>		-- Take the value of the armor<br>		armor_value = <strong>GetUnitVariable</strong>(grunt,"Armor")<br>		-- Show the message in the game.<br>		AddMessage(unit_name .. " " .. player_type .. " " .. armor_value)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1279 CclGetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1283 CclGetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -6503,7 +6542,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUnitVariable</summary>
                         <p><br> <b>Description</b><br><br>  Set the value of the unit variable.<br><br>  @param l  Lua state.<br><br>  @return The new value of the unit.<br><br> Example:<br><br> <div class="example"><br> <code><br> -- Create a blacksmith for player 2<br> blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71})<br> -- Specify the amount of hit points to assign to the blacksmith<br> <strong>SetUnitVariable</strong>(blacksmith,"HitPoints",344)<br> -- Set the blacksmiths color to the color of player 4<br> <strong>SetUnitVariable</strong>(blacksmith,"Color",4)<br> </code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1423 CclSetUnitVariable</summary>
+                          <summary>/unit/script_unit.cpp:1427 CclSetUnitVariable</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetUnitVariable</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -6635,7 +6674,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SlotUsage</summary>
                         <p><br>  Get the usage of unit slots during load to allocate memory<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1434 CclSlotUsage</summary>
+                          <summary>/unit/script_unit.cpp:1438 CclSlotUsage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSlotUsage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">UnitManager</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -6650,7 +6689,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SelectSingleUnit</summary>
                         <p><br> <b>Description</b><br><br>  Select a single unit <br><br>  @param l  Lua state.<br><br>  @return 0, meaning the unit is selected.<br><br> Example:<br><br> <div class="example"><code>-- Make the hero unit Grom Hellscream for player 5<br>		grom = CreateUnit("unit-beast-cry", 5, {58, 8})<br>		-- Select only the unit Grom Hellscream<br>		<strong>SelectSingleUnit</strong>(grom)</code></div></p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1462 CclSelectSingleUnit</summary>
+                          <summary>/unit/script_unit.cpp:1466 CclSelectSingleUnit</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSelectSingleUnit</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -6671,7 +6710,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>EnableSimplifiedAutoTargeting</summary>
                         <p><br>  Enable/disable simplified auto targeting <br><br>  @param l  Lua state.<br><br>  @return   0 for success, 1 for wrong type;</p>
                           <details>
-                          <summary>/unit/script_unit.cpp:1482 CclEnableSimplifiedAutoTargeting</summary>
+                          <summary>/unit/script_unit.cpp:1524 CclEnableSimplifiedAutoTargeting</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclEnableSimplifiedAutoTargeting</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
