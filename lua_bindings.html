@@ -701,13 +701,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetDiplomacy</summary>
                         <p><br>  Get diplomacy from one player to another. Returns the strings "allied",<br>  "enemy", "neutral", or "crazy".</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:699 CclGetDiplomacy</summary>
+                          <summary>/stratagus/script_player.cpp:698 CclGetDiplomacy</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetDiplomacy</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">plynr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">state</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">base</span><span class="p">].</span><span class="n">IsEnemy</span><span class="p">(</span><span class="n">plynr</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">base</span><span class="p">].</span><span class="n">IsAllied</span><span class="p">(</span><span class="n">plynr</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -747,7 +746,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSharedVision</summary>
                         <p><br> <b>Description</b><br><br>  Change the shared vision from player to another player.<br><br><br>  @param l  Lua state.<br><br>  @return FIXME: should return old state.<br><br> Example:<br><br> <div class="example"><code>SetSharedVision(0,true,1)<br>		SetSharedVision(1,true,0)<br>		<br>		SetSharedVision(0,false,2)<br>		SetSharedVision(1,false,2)</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:730 CclSetSharedVision</summary>
+                          <summary>/stratagus/script_player.cpp:729 CclSetSharedVision</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSharedVision</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -769,7 +768,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SharedVision</summary>
                         <p><br>  Change the shared vision from ThisPlayer to another player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:742 CclSharedVision</summary>
+                          <summary>/stratagus/script_player.cpp:741 CclSharedVision</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSharedVision</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">lua_pushnumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">ThisPlayer</span><span class="o">-&gt;</span><span class="n">Index</span><span class="p">);</span><span class="w"></span>
@@ -785,7 +784,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetRevelationType</summary>
                         <p><br> <b>Description</b><br><br>  Change the players revelation type - reveal all units, only buidings or don't reveal anything<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetRevelationType("no-revelation")<br> 		SetRevelationType("buildings-only")<br> 		SetRevelationType("all-units")</code></div><br></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:775 CclSetRevelationType</summary>
+                          <summary>/stratagus/script_player.cpp:774 CclSetRevelationType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetRevelationType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -813,7 +812,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineRaceNames</summary>
                         <p><br> Define race names<br><br> @param l Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:826 CclDefineRaceNames</summary>
+                          <summary>/stratagus/script_player.cpp:825 CclDefineRaceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineRaceNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerRaces</span><span class="p">.</span><span class="n">Clean</span><span class="p">();</span><span class="w"></span>
@@ -828,7 +827,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineNewRaceNames</summary>
                         <p><br> Define race names<br><br> @param l Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:826 CclDefineRaceNames</summary>
+                          <summary>/stratagus/script_player.cpp:825 CclDefineRaceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineRaceNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">PlayerRaces</span><span class="p">.</span><span class="n">Clean</span><span class="p">();</span><span class="w"></span>
@@ -843,7 +842,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePlayerColors</summary>
                         <p><br> <b>Description</b><br><br>  Define player colors. Pass "false" as an optional second<br>  argument to add the colors to the existing ones.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>DefinePlayerColors({<br>		"red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}},<br>		"blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}},<br>		"green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}},<br>		"violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}},<br>		"orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}},<br>		"black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}},<br>		"white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}},<br>		"yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}},<br>		"red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}},<br>		"blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}},<br>		"green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}},<br>		"violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}},<br>		"orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}},<br>		"black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}},<br>		"white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}},<br>		"yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}},<br>	})</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:912 CclDefinePlayerColors</summary>
+                          <summary>/stratagus/script_player.cpp:911 CclDefinePlayerColors</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefinePlayerColors</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -909,7 +908,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefinePlayerColorIndex</summary>
                         <p><br>  Define player color indexes<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:940 CclDefinePlayerColorIndex</summary>
+                          <summary>/stratagus/script_player.cpp:939 CclDefinePlayerColorIndex</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefinePlayerColorIndex</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -928,7 +927,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>NewColors</summary>
                         <p><br>  Make new player colors<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:925 CclNewPlayerColors</summary>
+                          <summary>/stratagus/script_player.cpp:924 CclNewPlayerColors</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclNewPlayerColors</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -945,7 +944,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetPlayerData</summary>
                         <p><br> <b>Description</b><br><br>  Get player data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>GetPlayerData(0,"TotalNumUnits")</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1103 CclGetPlayerData</summary>
+                          <summary>/stratagus/script_player.cpp:1102 CclGetPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetPlayerData</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1102,9 +1101,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetPlayerData</summary>
-                        <p><br> <b>Description</b><br><br>  Set player data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code>SetPlayerData(0,"Name","Nation of Stromgarde")<br>		SetPlayerData(0,"RaceName","human")<br> 		SetPlayerData(0,"Resources","gold",1700)</code></div></p>
+                        <p><br> <b>Description</b><br><br>  Set player data.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><br>  SetPlayerData(0,"Name","Nation of Stromgarde") -- set the name of this player<br>	SetPlayerData(0,"RaceName","human") -- the the race to human<br> 	SetPlayerData(0,"Resources","gold",1700) -- set the player to have 1700 gold<br>  SetPlayerData(0, "Allow", "upgrade-paladin", "R") -- give the player the Paladin upgrade<br> </code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1219 CclSetPlayerData</summary>
+                          <summary>/stratagus/script_player.cpp:1221 CclSetPlayerData</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetPlayerData</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1216,7 +1215,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetAiType</summary>
                         <p><br> <b>Description</b> <br> <br>  Set ai player algo.<br><br>  @param l  Lua state.<br> <br> Example: <br> <br> <div class="example"> <code> -- Player 1 has a passive A.I <br>		  SetAiType(1, "Passive")</code></div></p>
                           <details>
-                          <summary>/stratagus/script_player.cpp:1247 CclSetAiType</summary>
+                          <summary>/stratagus/script_player.cpp:1249 CclSetAiType</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetAiType</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">CPlayer</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="p">;</span><span class="w"></span>
@@ -1983,7 +1982,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="cp">#endif</span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">insertRestartArgument</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">argv</span><span class="p">[</span><span class="n">newArgc</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-r&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">argv</span><span class="p">[</span><span class="n">newArgc</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="s">&quot;-r&quot;</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="n">argv</span><span class="p">[</span><span class="n">newArgc</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="cp">#ifdef WIN32</span>
@@ -3436,7 +3435,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/video/shaders.cpp<hr>
                         <details>
                         <summary>GetShaderNames</summary>
-                        <p>/video/shaders.cpp:445 CclGetShaderNames</p>
+                        <p>/video/shaders.cpp:444 CclGetShaderNames</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetShaderNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="n">lua_newtable</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -3452,7 +3451,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>GetShader</summary>
-                        <p>/video/shaders.cpp:414 CclGetShader</p>
+                        <p>/video/shaders.cpp:413 CclGetShader</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetShader</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">shaderName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shaderNames</span><span class="p">[</span><span class="n">currentShaderIdx</span><span class="p">];</span><span class="w"></span>
@@ -3469,7 +3468,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetShader</summary>
-                        <p>/video/shaders.cpp:435 CclSetShader</p>
+                        <p>/video/shaders.cpp:434 CclSetShader</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetShader</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">shaderName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -5981,7 +5980,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">		</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;bad player&quot;</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
-<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">playerno</span><span class="p">].</span><span class="n">Type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">PlayerNobody</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Players</span><span class="p">[</span><span class="n">playerno</span><span class="p">].</span><span class="n">Type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerNobody</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;CreateUnit: player %d does not exist</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">playerno</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;bad player&quot;</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -6462,7 +6461,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Name&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Type</span><span class="o">-&gt;</span><span class="n">Name</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;PlayerType&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">lua_pushinteger</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Player</span><span class="o">-&gt;</span><span class="n">Type</span><span class="p">);</span><span class="w"></span>
+<span class="w">		</span><span class="n">lua_pushstring</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">PlayerTypeNames</span><span class="p">[</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Player</span><span class="o">-&gt;</span><span class="n">Type</span><span class="p">)].</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TTLPercent&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Summoned</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">TTL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">time_lived</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GameCycle</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">unit</span><span class="o">-&gt;</span><span class="n">Summoned</span><span class="p">;</span><span class="w"></span>
@@ -6716,7 +6715,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">isSimplified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToBoolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsNetworkGame</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">Preference</span><span class="p">.</span><span class="n">SimplifiedAutoTargeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isSimplified</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">GameSettings</span><span class="p">.</span><span class="n">SimplifiedAutoTargeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isSimplified</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">NetworkSendExtendedCommand</span><span class="p">(</span><span class="n">ExtendedMessageAutoTargetingDB</span><span class="p">,</span><span class="w"> </span>
 <span class="w">								   </span><span class="kt">int</span><span class="p">(</span><span class="n">isSimplified</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -6996,7 +6995,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGameName</summary>
                         <p><br> <b>Description</b><br><br>  Return of game name.<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetGameName</strong>("Wargus Map - Chapter 1")</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1170 CclSetGameName</summary>
+                          <summary>/game/game.cpp:1146 CclSetGameName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGameName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -7020,7 +7019,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetFullGameName</summary>
-                        <p>/game/game.cpp:1182 CclSetFullGameName</p>
+                        <p>/game/game.cpp:1158 CclSetFullGameName</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetFullGameName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -7040,7 +7039,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetGodMode</summary>
                         <p><br> <b>Description</b><br><br>  Set God mode.<br><br>  @param l  Lua state.<br><br>  @return   The old mode.<br><br> Example:<br><br> <div class="example"><code>-- God Mode enabled<br>		<strong>SetGodMode</strong>(true)<br>		-- God Mode disabled<br>		<strong>SetGodMode</strong>(false)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1205 CclSetGodMode</summary>
+                          <summary>/game/game.cpp:1181 CclSetGodMode</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetGodMode</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7056,7 +7055,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetGodMode</summary>
                         <p><br> <b>Description</b><br><br>  Get God mode.<br><br>  @param l  Lua state.<br><br>  @return   God mode.<br><br> Example:<br><br> <div class="example"><code>g_mode = <strong>GetGodMode</strong>()<br>		print(g_mode)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1226 CclGetGodMode</summary>
+                          <summary>/game/game.cpp:1202 CclGetGodMode</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetGodMode</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -7072,7 +7071,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedResourcesHarvest</summary>
                         <p><br>  Set resource harvesting speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1243 CclSetSpeedResourcesHarvest</summary>
+                          <summary>/game/game.cpp:1219 CclSetSpeedResourcesHarvest</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedResourcesHarvest</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -7093,7 +7092,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedResourcesReturn</summary>
                         <p><br>  Set resource returning speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1260 CclSetSpeedResourcesReturn</summary>
+                          <summary>/game/game.cpp:1236 CclSetSpeedResourcesReturn</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedResourcesReturn</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
@@ -7114,7 +7113,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedBuild</summary>
                         <p><br>  Set building speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1273 CclSetSpeedBuild</summary>
+                          <summary>/game/game.cpp:1249 CclSetSpeedBuild</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedBuild</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -7131,7 +7130,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetSpeedBuild</summary>
                         <p><br>  Get building speed (deprecated).<br><br>  @param l  Lua state.<br><br>  @return   Building speed.</p>
                           <details>
-                          <summary>/game/game.cpp:1288 CclGetSpeedBuild</summary>
+                          <summary>/game/game.cpp:1264 CclGetSpeedBuild</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetSpeedBuild</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7148,7 +7147,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedTrain</summary>
                         <p><br>  Set training speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1301 CclSetSpeedTrain</summary>
+                          <summary>/game/game.cpp:1277 CclSetSpeedTrain</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedTrain</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -7165,7 +7164,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetSpeedTrain</summary>
                         <p><br>  Get training speed (deprecated).<br><br>  @param l  Lua state.<br><br>  @return   Training speed.</p>
                           <details>
-                          <summary>/game/game.cpp:1316 CclGetSpeedTrain</summary>
+                          <summary>/game/game.cpp:1292 CclGetSpeedTrain</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetSpeedTrain</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7182,7 +7181,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedUpgrade</summary>
                         <p><br>  For debug increase upgrading speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1331 CclSetSpeedUpgrade</summary>
+                          <summary>/game/game.cpp:1307 CclSetSpeedUpgrade</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedUpgrade</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -7201,7 +7200,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeedResearch</summary>
                         <p><br>  For debug increase researching speed (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1346 CclSetSpeedResearch</summary>
+                          <summary>/game/game.cpp:1322 CclSetSpeedResearch</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeedResearch</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
@@ -7220,7 +7219,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetSpeeds</summary>
                         <p><br>  For debug increase all speeds (deprecated).<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1367 CclSetSpeeds</summary>
+                          <summary>/game/game.cpp:1343 CclSetSpeeds</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetSpeeds</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7245,7 +7244,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultIncomes</summary>
                         <p><br>  Define default incomes for a new player.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1381 CclDefineDefaultIncomes</summary>
+                          <summary>/game/game.cpp:1357 CclDefineDefaultIncomes</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultIncomes</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -7263,7 +7262,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultActions</summary>
                         <p><br>  Define default action for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1398 CclDefineDefaultActions</summary>
+                          <summary>/game/game.cpp:1374 CclDefineDefaultActions</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultActions</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MaxCosts</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -7284,7 +7283,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultResourceNames</summary>
                         <p><br>  Define default names for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1415 CclDefineDefaultResourceNames</summary>
+                          <summary>/game/game.cpp:1391 CclDefineDefaultResourceNames</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultResourceNames</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MaxCosts</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -7305,7 +7304,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultResourceAmounts</summary>
                         <p><br>  Define default names for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1437 CclDefineDefaultResourceAmounts</summary>
+                          <summary>/game/game.cpp:1413 CclDefineDefaultResourceAmounts</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultResourceAmounts</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
@@ -7331,7 +7330,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>DefineDefaultResourceMaxAmounts</summary>
                         <p><br>  Define max amounts for the resources.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1455 CclDefineDefaultResourceMaxAmounts</summary>
+                          <summary>/game/game.cpp:1431 CclDefineDefaultResourceMaxAmounts</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclDefineDefaultResourceMaxAmounts</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">),</span><span class="w"> </span><span class="n">MaxCosts</span><span class="p">);</span><span class="w"></span>
@@ -7353,7 +7352,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetUseHPForXp</summary>
                         <p><br>  Affect UseHPForXp.<br><br>  @param l  Lua state.<br><br>  @return 0.</p>
                           <details>
-                          <summary>/game/game.cpp:1469 ScriptSetUseHPForXp</summary>
+                          <summary>/game/game.cpp:1445 ScriptSetUseHPForXp</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">ScriptSetUseHPForXp</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7369,7 +7368,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SetLocalPlayerName</summary>
                         <p><br> <b>Description</b><br><br>  Set the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>SetLocalPlayerName</strong>("Stormreaver Clan")</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1487 CclSetLocalPlayerName</summary>
+                          <summary>/game/game.cpp:1463 CclSetLocalPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetLocalPlayerName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7385,7 +7384,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetLocalPlayerName</summary>
                         <p><br> <b>Description</b><br><br>  Get the local player name<br><br>  @param l  Lua state.<br><br> Example:<br><br> <div class="example"><code><strong>GetLocalPlayerName</strong>()</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1505 CclGetLocalPlayerName</summary>
+                          <summary>/game/game.cpp:1481 CclGetLocalPlayerName</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetLocalPlayerName</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -7399,7 +7398,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         
                         <details>
                         <summary>SetMenuRace</summary>
-                        <p>/game/game.cpp:1546 CclSetMenuRace</p>
+                        <p>/game/game.cpp:1522 CclSetMenuRace</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSetMenuRace</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7414,7 +7413,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetStratagusVersion</summary>
                         <p><br> <b>Description</b><br><br>  Get Stratagus Version<br><br> Example:<br><br> <div class="example"><code>version = <strong>GetStratagusVersion</strong>()<br>		print(version)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1522 CclGetStratagusVersion</summary>
+                          <summary>/game/game.cpp:1498 CclGetStratagusVersion</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetStratagusVersion</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -7430,7 +7429,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>GetStratagusHomepage</summary>
                         <p><br> <b>Description</b><br><br>  Get Stratagus Homepage<br><br> Example:<br><br> <div class="example"><code>url = <strong>GetStratagusHomepage</strong>()<br>	print(url)</code></div></p>
                           <details>
-                          <summary>/game/game.cpp:1539 CclGetStratagusHomepage</summary>
+                          <summary>/game/game.cpp:1515 CclGetStratagusHomepage</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclGetStratagusHomepage</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
@@ -7446,7 +7445,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>SavedGameInfo</summary>
                         <p><br>  Load the SavedGameInfo Header<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/game/game.cpp:1582 CclSavedGameInfo</summary>
+                          <summary>/game/game.cpp:1558 CclSavedGameInfo</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclSavedGameInfo</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -7746,7 +7745,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>Log</summary>
                         <p><br> Parse log</p>
                           <details>
-                          <summary>/game/replay.cpp:575 CclLog</summary>
+                          <summary>/game/replay.cpp:509 CclLog</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclLog</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LogEntry</span><span class="w"> </span><span class="o">*</span><span class="n">log</span><span class="p">;</span><span class="w"></span>
@@ -7817,7 +7816,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <summary>ReplayLog</summary>
                         <p><br> Parse replay-log</p>
                           <details>
-                          <summary>/game/replay.cpp:700 CclReplayLog</summary>
+                          <summary>/game/replay.cpp:614 CclReplayLog</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclReplayLog</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">FullReplay</span><span class="w"> </span><span class="o">*</span><span class="n">replay</span><span class="p">;</span><span class="w"></span>
@@ -7850,10 +7849,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">MapPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;MapId&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">MapId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Type&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Race&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Race</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;LocalPlayer&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">LocalPlayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Players&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -7872,17 +7867,17 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">				</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">lua_next</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">top</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">					</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-2</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Name&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Players</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">PlayerNames</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;AIScript&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Players</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">AIScript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">ReplaySettings</span><span class="p">.</span><span class="n">Presets</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">AIScript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;PlayerColor&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Players</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">PlayerColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">ReplaySettings</span><span class="p">.</span><span class="n">Presets</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">PlayerColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Race&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Players</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Race</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">ReplaySettings</span><span class="p">.</span><span class="n">Presets</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Race</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Team&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Players</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Team</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">ReplaySettings</span><span class="p">.</span><span class="n">Presets</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Team</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Type&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Players</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">						</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">ReplaySettings</span><span class="p">.</span><span class="n">Presets</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">Type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">PlayerTypes</span><span class="o">&gt;</span><span class="p">(</span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">));</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">						</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unsupported key: %s&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
 <span class="w">					</span><span class="p">}</span><span class="w"></span>
@@ -7890,24 +7885,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">				</span><span class="p">}</span><span class="w"></span>
 <span class="w">				</span><span class="n">lua_pop</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">			</span><span class="p">}</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Resource&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Resource</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;NumUnits&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">NumUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Difficulty&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Difficulty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;NoFow&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">NoFow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToBoolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Inside&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Inside</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToBoolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RevealMap&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">RevealMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;GameType&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">GameType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Opponents&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Opponents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;MapRichness&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">MapRichness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Engine&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">lua_istable</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">lua_rawlen</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">				</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;incorrect argument&quot;</span><span class="p">);</span><span class="w"></span>
@@ -7923,7 +7900,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Network</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
 <span class="w">			</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">Network</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unsupported key: %s&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+<span class="w">			</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">replay</span><span class="o">-&gt;</span><span class="n">ReplaySettings</span><span class="p">.</span><span class="n">SetField</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">LuaToNumber</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">				</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unsupported key: %s&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+<span class="w">			</span><span class="p">}</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"></span>
 <span class="w">		</span><span class="n">lua_pop</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
@@ -9215,7 +9194,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">newMode</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">MapRevealModes</span><span class="w"> </span><span class="n">newMode</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">revealMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">revealMode</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;hidden&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">newMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MapRevealModes</span><span class="o">::</span><span class="n">cHidden</span><span class="p">;</span><span class="w"></span>
@@ -9435,7 +9414,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">		</span><span class="c1">/// Tiled types of FOW don&#39;t work with shadow casting</span>
 <span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">FogOfWar</span><span class="p">.</span><span class="n">GetType</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">FogOfWarTypes</span><span class="o">::</span><span class="n">cEnhanced</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="n">FogOfWar</span><span class="p">.</span><span class="n">SetType</span><span class="p">(</span><span class="n">FogOfWarTypes</span><span class="o">::</span><span class="n">cEnhanced</span><span class="p">);</span><span class="w"></span>
-<span class="w">		</span><span class="p">}</span><span class="w">	</span>
+<span class="w">		</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type_name</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;simple-radial&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">		</span><span class="n">new_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FieldOfViewTypes</span><span class="o">::</span><span class="n">cSimpleRadial</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -9886,26 +9865,26 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">		</span><span class="p">}</span><span class="w"></span>
 <span class="w">		</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LuaToString</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;neutral&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerNeutral</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerNeutral</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nobody&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerNobody</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerNobody</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;computer&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerComputer</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerComputer</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;person&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerPerson</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerPerson</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rescue-passive&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerRescuePassive</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerRescuePassive</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rescue-active&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerRescueActive</span><span class="p">;</span><span class="w"></span>
+<span class="w">			</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerRescueActive</span><span class="p">;</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">			</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unsupported tag: %s&quot;</span><span class="w"> </span><span class="n">_C_</span><span class="w"> </span><span class="n">type</span><span class="p">);</span><span class="w"></span>
 <span class="w">		</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numplayers</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">PlayerMax</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerNobody</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerNobody</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numplayers</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">PlayerMax</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">		</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">PlayerMax</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerNeutral</span><span class="p">;</span><span class="w"></span>
+<span class="w">		</span><span class="n">Map</span><span class="p">.</span><span class="n">Info</span><span class="p">.</span><span class="n">PlayerType</span><span class="p">[</span><span class="n">PlayerMax</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlayerTypes</span><span class="o">::</span><span class="n">PlayerNeutral</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="p">}</span><span class="w"></span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
@@ -10111,13 +10090,17 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <hr>/network/netconnect.cpp<hr>
                         <details>
                         <summary>NoRandomPlacementMultiplayer</summary>
-                        <p><br>  Removes Randomization of Player position in Multiplayer mode<br><br>  @param l  Lua state.</p>
+                        <p><br>  Controls Randomization of Player position in Multiplayer mode.<br>  Without arguments, disables randomization. Otherwise, sets the<br>  NoRandomization flag to the boolean argument value.<br><br>  @param l  Lua state.</p>
                           <details>
-                          <summary>/network/netconnect.cpp:2110 CclNoRandomPlacementMultiplayer</summary>
+                          <summary>/network/netconnect.cpp:2029 CclNoRandomPlacementMultiplayer</summary>
                           <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclNoRandomPlacementMultiplayer</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">	</span><span class="n">NoRandomPlacementMultiplayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lua_gettop</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nargs</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">		</span><span class="n">LuaError</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;incorrect argument&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="p">}</span><span class="w"></span>
+<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nargs</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">LuaToBoolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">NoRandomPlacementMultiplayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
@@ -10126,8 +10109,24 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         </details>
                         
                         <details>
+                        <summary>UsesRandomPlacementMultiplayer</summary>
+                        <p><br>  Return if player positions in multiplayer mode are randomized.<br><br>  @param l  Lua state.</p>
+                          <details>
+                          <summary>/network/netconnect.cpp:2041 CclUsesRandomPlacementMultiplayer</summary>
+                          <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclUsesRandomPlacementMultiplayer</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="n">lua_pushboolean</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="o">!</span><span class="n">NoRandomPlacementMultiplayer</span><span class="p">);</span><span class="w"></span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</p>
+                          </details>
+                        </details>
+                        
+                        <details>
                         <summary>NetworkDiscoverServers</summary>
-                        <p>/network/netconnect.cpp:2130 CclNetworkDiscoverServers</p>
+                        <p>/network/netconnect.cpp:2061 CclNetworkDiscoverServers</p>
                         <p><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">CclNetworkDiscoverServers</span><span class="p">(</span><span class="n">lua_State</span><span class="w"> </span><span class="o">*</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="n">LuaCheckArgs</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -10516,10 +10515,34 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </details>
                     
                     <details>
+                    <summary>enum RevealTypes { </summary>
+                    <p></p>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">RevealTypes</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">	</span><span class="n">cNoRevelation</span><span class="p">,</span><span class="w"> </span>
+<span class="w">	</span><span class="n">cAllUnits</span><span class="p">,</span><span class="w"> </span>
+<span class="w">	</span><span class="n">cBuildingsOnly</span><span class="w"> </span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</p>
+                    </details>
+                    
+                    <details>
+                    <summary>enum NetGameTypes {</summary>
+                    <p></p>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">NetGameTypes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">SettingsSinglePlayerGame</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">SettingsMultiPlayerGame</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">Unset</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</p>
+                    </details>
+                    
+                    <details>
                     <summary>class Settings {</summary>
                     <p></p>
                     <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Settings</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">NetGameType</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">NetGameTypes</span><span class="w"> </span><span class="n">NetGameType</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">	</span><span class="n">SettingsPresets</span><span class="w"> </span><span class="n">Presets</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"></span>
 
@@ -10527,11 +10550,14 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">NumUnits</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Opponents</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Difficulty</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">GameType</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">NoFogOfWar</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">Inside</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">RevealMap</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">MapRichness</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">GameTypes</span><span class="w"> </span><span class="n">GameType</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">FieldOfViewTypes</span><span class="w"> </span><span class="n">FoV</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">MapRevealModes</span><span class="w"> </span><span class="n">RevealMap</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">RevealTypes</span><span class="w"> </span><span class="n">DefeatReveal</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">_Bitfield</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">Flags</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="nf">GetUserGameSetting</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">SetUserGameSetting</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">v</span><span class="p">);</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </p>
@@ -10540,6 +10566,31 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <details>
                     <summary>Settings GameSettings</summary>
                     <p></p>
+                    </details>
+                    
+                    <details>
+                    <summary>enum MapRevealModes {</summary>
+                    <p></p>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">MapRevealModes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">cHidden</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">cKnown</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">cExplored</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">cNumOfModes</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</p>
+                    </details>
+                    
+                    <details>
+                    <summary>enum FieldOfViewTypes {</summary>
+                    <p></p>
+                    <p><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="nc">FieldOfViewTypes</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">cShadowCasting</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">cSimpleRadial</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">NumOfTypes</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</p>
                     </details>
                     
                     <details>
@@ -10571,7 +10622,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">Postamble</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">MapWidth</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">MapHeight</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">PlayerType</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"></span>
+<span class="w">	</span><span class="n">PlayerTypes</span><span class="w"> </span><span class="n">PlayerType</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </p>
@@ -10633,7 +10684,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">Name</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Type</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">PlayerTypes</span><span class="w"> </span><span class="n">Type</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">Race</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="n">string</span><span class="w"> </span><span class="n">AiName</span><span class="p">;</span><span class="w"></span>
 
@@ -11842,21 +11893,38 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </details>
                     
                     <details>
+                    <summary>class ServerSetupStateRacesArray {</summary>
+                    <p></p>
+                    <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ServerSetupStateRacesArray</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">p</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">Race</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">p</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">Race</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">enum</span><span class="w"> </span><span class="nc">SlotOption</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">	</span><span class="n">Available</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">SlotAvailable</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">Computer</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">SlotComputer</span><span class="p">,</span><span class="w"></span>
+<span class="w">	</span><span class="n">Closed</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">SlotClosed</span><span class="p">,</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</p>
+                    </details>
+                    
+                    <details>
                     <summary>class CServerSetup {</summary>
                     <p></p>
                     <p><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CServerSetup</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">ResourcesOption</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">UnitsOption</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">FogOfWar</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">Inside</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">RevealMap</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">GameTypeOption</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">Difficulty</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">MapRichness</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">Opponents</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="n">CompOpt</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"> </span><span class="c1">// cannot use char since tolua interpret variable as string else.</span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="n">Ready</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w">   </span><span class="c1">// cannot use char since tolua interpret variable as string else.</span>
-<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="n">Race</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w">    </span><span class="c1">// cannot use char since tolua interpret variable as string else.</span>
+<span class="w">	</span><span class="n">Settings</span><span class="w"> </span><span class="n">ServerGameSettings</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">SlotOption</span><span class="w"> </span><span class="n">CompOpt</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"></span>
+<span class="w">	</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="n">Ready</span><span class="p">[</span><span class="n">PlayerMax</span><span class="p">];</span><span class="w"> </span><span class="c1">// cannot use char since tolua interpret variable as string.</span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">ResourcesOption</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">UnitsOption</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">FogOfWar</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">Inside</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">RevealMap</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">GameTypeOption</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">Difficulty</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">Opponents</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">tolua_property</span><span class="w"> </span><span class="n">tolua_readonly</span><span class="w"> </span><span class="n">ServerSetupStateRacesArray</span><span class="w"> </span><span class="o">*</span><span class="n">Race</span><span class="p">;</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </p>
@@ -11955,15 +12023,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowNoSelectionStats</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">BigScreen</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">PauseOnLeave</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">AiExplores</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">AiExplores</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">GrayscaleIcons</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">IconsShift</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">StereoSound</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">MineNotifications</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">DeselectInMine</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">NoStatusLineTooltips</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">SimplifiedAutoTargeting</span><span class="p">;</span><span class="w"></span>
-<span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">AiChecksDependencies</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">SimplifiedAutoTargeting</span><span class="p">;</span><span class="w"></span>
+<span class="w">	</span><span class="n">tolua_property</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">AiChecksDependencies</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">HardwareCursor</span><span class="p">;</span><span class="w"></span>
 <span class="w">	</span><span class="kt">bool</span><span class="w"> </span><span class="n">SelectionRectangleIndicatesDamage</span><span class="p">;</span><span class="w"></span>
 
