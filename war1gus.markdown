@@ -3,8 +3,8 @@ layout: default
 title: War1gus
 package_title: war1gus
 icon: war1gus.svg
-version: 3.2.0
-next_version: 3.2.1
+version: 3.3.0
+next_version: 3.3.1
 ---
 ### About War1gus
 
