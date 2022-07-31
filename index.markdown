@@ -38,7 +38,7 @@ Warcraft is a registered trademark of Blizzard Entertainment.
 
 ### Community
 
-Join us on Discord: https://discord.gg/dQGxaw3QfB
+Join us on [Discord](https://discord.gg/dQGxaw3QfB)!
 
 There is a page on [gamebanana](https://gamebanana.com/games/8682) with custom stuff like:
 
