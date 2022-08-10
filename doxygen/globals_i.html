@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(function() {
 <li>ICMMap
 : <a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99eaa60c24e44a436393a7966047dd622731">net_message.h</a>
 </li>
+<li>ICMMapNeeded
+: <a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea383e803f86bfbcabea98293501760d1d">net_message.h</a>
+</li>
 <li>ICMMapUidMismatch
 : <a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea9294900b305826c35e21dd510cecfe86">net_message.h</a>
 </li>
@@ -174,9 +177,6 @@ $(function() {
 <li>IconWidth
 : <a class="el" href="editloop_8cpp.html#aab80d57273a177145386ab2ad3e7414e">editloop.cpp</a>
 </li>
-<li>IdleSeconds()
-: <a class="el" href="netdriver_8cpp.html#a049ab6a14c18295021920330dcbeb8ec">netdriver.cpp</a>
-</li>
 <li>IF_AND
 : <a class="el" href="animation__ifvar_8cpp.html#adb47c9e382f5ddd809fb943c12ad88bea41c34a57dfc6cf79b1c774d06391a491">animation_ifvar.cpp</a>
 </li>
@@ -224,7 +224,7 @@ $(function() {
 : <a class="el" href="actions_8cpp.html#acdb6218219c40018d6002b1b80dd3460">actions.cpp</a>
 </li>
 <li>INDESTRUCTIBLE_INDEX
-: <a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a4f8805ae643be8faa730fa5270940b8f">unittype.h</a>
+: <a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa4f8805ae643be8faa730fa5270940b8f">unittype.h</a>
 </li>
 <li>INDESTRUCTIBLE_KEY
 : <a class="el" href="script__unittype_8cpp.html#a3e32ff486f43d2f6393476aa9c323164">script_unittype.cpp</a>
@@ -289,7 +289,7 @@ $(function() {
 , <a class="el" href="widgets_8cpp.html#ace39ba6783b3daffb8c2a19a13afcfa3">widgets.cpp</a>
 </li>
 <li>InitialMouseState
-: <a class="el" href="interface_8cpp.html#a1fb9092bcdeada2d206bdc74afbbe122ad2f3ad2faa45dd029d0ac7c290cda34b">interface.cpp</a>
+: <a class="el" href="interface_8cpp.html#af715e26dfffd1f8de1c18449e2770cffad2f3ad2faa45dd029d0ac7c290cda34b">interface.cpp</a>
 </li>
 <li>InitImageLoaders()
 : <a class="el" href="video_8h.html#ae9ee82b6aa396b8716d322582ef8fc70">video.h</a>
@@ -369,8 +369,8 @@ $(function() {
 , <a class="el" href="unit_8cpp.html#ab0616f5213816dc8835d713097398b55">unit.cpp</a>
 </li>
 <li>InitUnitTypes()
-: <a class="el" href="unittype_8cpp.html#a5128d0be6f5fc4073ae9d9f3ac7dbe5c">unittype.cpp</a>
-, <a class="el" href="unittype_8h.html#a5128d0be6f5fc4073ae9d9f3ac7dbe5c">unittype.h</a>
+: <a class="el" href="unittype_8h.html#a5128d0be6f5fc4073ae9d9f3ac7dbe5c">unittype.h</a>
+, <a class="el" href="unittype_8cpp.html#a5128d0be6f5fc4073ae9d9f3ac7dbe5c">unittype.cpp</a>
 </li>
 <li>InitUpgrades()
 : <a class="el" href="upgrade_8h.html#a0ace6a129b2840d3721c685deff2fb9b">upgrade.h</a>
@@ -460,8 +460,8 @@ $(function() {
 : <a class="el" href="unit_8h.html#af7bcd6ea29f1c0bde810ad6a5eaa81f4">unit.h</a>
 </li>
 <li>InReactRange()
-: <a class="el" href="unit_8h.html#ace8c59036621b4de5e70f53900325ba9">unit.h</a>
-, <a class="el" href="unit_8cpp.html#ace8c59036621b4de5e70f53900325ba9">unit.cpp</a>
+: <a class="el" href="unit_8cpp.html#ace8c59036621b4de5e70f53900325ba9">unit.cpp</a>
+, <a class="el" href="unit_8h.html#ace8c59036621b4de5e70f53900325ba9">unit.h</a>
 </li>
 <li>InsertResearchRequests()
 : <a class="el" href="script__ai_8cpp.html#a0a7c7de8d878c0d7cfdb40a96f653752">script_ai.cpp</a>
@@ -479,25 +479,32 @@ $(function() {
 : <a class="el" href="interface_8cpp.html#ad14e694bad4c466bdc242a8e0eeb9153">interface.cpp</a>
 , <a class="el" href="interface_8h.html#ad14e694bad4c466bdc242a8e0eeb9153">interface.h</a>
 </li>
+<li>InterpolateColor()
+: <a class="el" href="include_2color_8h.html#a3ea120981a8d34a25d53cc8ab2a6a109">color.h</a>
+, <a class="el" href="video_2color_8cpp.html#a3ea120981a8d34a25d53cc8ab2a6a109">color.cpp</a>
+</li>
 <li>Invalidate()
-: <a class="el" href="video_8h.html#ab9adfea0e765ab447b8ce7730a6cd812">video.h</a>
-, <a class="el" href="sdl_8cpp.html#ab9adfea0e765ab447b8ce7730a6cd812">sdl.cpp</a>
+: <a class="el" href="sdl_8cpp.html#ab9adfea0e765ab447b8ce7730a6cd812">sdl.cpp</a>
+, <a class="el" href="video_8h.html#ab9adfea0e765ab447b8ce7730a6cd812">video.h</a>
 </li>
 <li>InvalidateArea()
-: <a class="el" href="sdl_8cpp.html#a178d4f4906b9b28f5d7be8c4a3317159">sdl.cpp</a>
-, <a class="el" href="video_8h.html#a178d4f4906b9b28f5d7be8c4a3317159">video.h</a>
+: <a class="el" href="video_8h.html#a178d4f4906b9b28f5d7be8c4a3317159">video.h</a>
+, <a class="el" href="sdl_8cpp.html#a178d4f4906b9b28f5d7be8c4a3317159">sdl.cpp</a>
 </li>
 <li>invalidQuoteReplaceRegex()
 : <a class="el" href="shaders_8cpp.html#a619636550a1e993f73351197ceb3e405">shaders.cpp</a>
 </li>
 <li>INVISIBLE_INDEX
-: <a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a3d507dd0c7a5e81f5958b04afeb3f66e">unittype.h</a>
+: <a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda3d507dd0c7a5e81f5958b04afeb3f66e">unittype.h</a>
 </li>
 <li>INVISIBLE_KEY
 : <a class="el" href="script__unittype_8cpp.html#af5f3315088241528fada5af0daa4838e">script_unittype.cpp</a>
 </li>
+<li>is_track_end()
+: <a class="el" href="midiplayer_8c.html#a3f10a3f1afe6cced1c38b562691c4484">midiplayer.c</a>
+</li>
 <li>ISALIVE_INDEX
-: <a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a7855742bd86273a5e96fdddaf03b328a">unittype.h</a>
+: <a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda7855742bd86273a5e96fdddaf03b328a">unittype.h</a>
 </li>
 <li>ISALIVE_KEY
 : <a class="el" href="script__unittype_8cpp.html#a706e4a4599616c6905ec172eb49c4817">script_unittype.cpp</a>
@@ -518,8 +525,11 @@ $(function() {
 : <a class="el" href="script_8cpp.html#ac6664e45e0e371de6c5351b2f535591a">script.cpp</a>
 </li>
 <li>IsButtonAllowed()
-: <a class="el" href="botpanel_8cpp.html#aa29694adb09753b0364f1308e175430e">botpanel.cpp</a>
-, <a class="el" href="interface_8h.html#aa29694adb09753b0364f1308e175430e">interface.h</a>
+: <a class="el" href="interface_8h.html#aa29694adb09753b0364f1308e175430e">interface.h</a>
+, <a class="el" href="botpanel_8cpp.html#aa29694adb09753b0364f1308e175430e">botpanel.cpp</a>
+</li>
+<li>IsCallbackEnabled
+: <a class="el" href="music_8cpp.html#a83f3d85a6e9c27c14c3ed7c8d0ebc882">music.cpp</a>
 </li>
 <li>IsDebugEnabled
 : <a class="el" href="stratagus_8cpp.html#a3be4118c1d928572b36c6d3e8d6d9f28">stratagus.cpp</a>
@@ -536,8 +546,8 @@ $(function() {
 : <a class="el" href="action__unload_8cpp.html#a2677863e1f1385de5cef8a56d20d8587">action_unload.cpp</a>
 </li>
 <li>IsEffectsEnabled()
-: <a class="el" href="sound__server_8h.html#af7c4464eca5237efd65b9f49c1296339">sound_server.h</a>
-, <a class="el" href="sound__server_8cpp.html#af7c4464eca5237efd65b9f49c1296339">sound_server.cpp</a>
+: <a class="el" href="sound__server_8cpp.html#af7c4464eca5237efd65b9f49c1296339">sound_server.cpp</a>
+, <a class="el" href="sound__server_8h.html#af7c4464eca5237efd65b9f49c1296339">sound_server.h</a>
 </li>
 <li>IsFdValid()
 : <a class="el" href="SetupConsole__win32_8cpp.html#a4a127a513356ae44157e5b7b4e7629bd">SetupConsole_win32.cpp</a>
@@ -566,21 +576,21 @@ $(function() {
 : <a class="el" href="unit_8cpp.html#afd12da073a7b1546522238326b140625">unit.cpp</a>
 </li>
 <li>IsMusicEnabled()
-: <a class="el" href="sound__server_8h.html#ae84686c2536c251ee6c899c071380ecd">sound_server.h</a>
-, <a class="el" href="sound__server_8cpp.html#ae84686c2536c251ee6c899c071380ecd">sound_server.cpp</a>
+: <a class="el" href="sound__server_8cpp.html#ae84686c2536c251ee6c899c071380ecd">sound_server.cpp</a>
+, <a class="el" href="sound__server_8h.html#ae84686c2536c251ee6c899c071380ecd">sound_server.h</a>
 </li>
 <li>IsMusicPlaying()
-: <a class="el" href="sound__server_8cpp.html#a53d32d644554d55a93c378edd79ea00e">sound_server.cpp</a>
-, <a class="el" href="sound__server_8h.html#a53d32d644554d55a93c378edd79ea00e">sound_server.h</a>
+: <a class="el" href="sound__server_8h.html#a53d32d644554d55a93c378edd79ea00e">sound_server.h</a>
+, <a class="el" href="sound__server_8cpp.html#a53d32d644554d55a93c378edd79ea00e">sound_server.cpp</a>
 </li>
 <li>IsNetworkCommandReady()
-: <a class="el" href="network_8cpp.html#ae0c9443214942e8c4263f372a2d75368">network.cpp</a>
+: <a class="el" href="network_8cpp.html#af745b6fe4378ca28cbce70c10aa217a2">network.cpp</a>
 </li>
 <li>IsNetworkGame()
 : <a class="el" href="network_8h.html#aaa13ba2fecddf36549f40540bd9f3a32">network.h</a>
 </li>
 <li>ISNOTSELECTABLE_INDEX
-: <a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a65151bddbd5d01fb55368ad97e2cb0d5">unittype.h</a>
+: <a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa65151bddbd5d01fb55368ad97e2cb0d5">unittype.h</a>
 </li>
 <li>ISNOTSELECTABLE_KEY
 : <a class="el" href="script__unittype_8cpp.html#a6b7d99382bf93d49f8f07b9cf96f6765">script_unittype.cpp</a>
@@ -604,7 +614,12 @@ $(function() {
 </li>
 <li>IsReplayGame()
 : <a class="el" href="replay_8cpp.html#a16711d28d96362d9831b1ff4442779b0">replay.cpp</a>
+, <a class="el" href="replay_8h.html#a16711d28d96362d9831b1ff4442779b0">replay.h</a>
 , <a class="el" href="tolua_8cpp.html#a16711d28d96362d9831b1ff4442779b0">tolua.cpp</a>
+</li>
+<li>IsRestart
+: <a class="el" href="stratagus_8h.html#ae278c9dda877182fb0b5b5d44bd8d474">stratagus.h</a>
+, <a class="el" href="stratagus_8cpp.html#ae278c9dda877182fb0b5b5d44bd8d474">stratagus.cpp</a>
 </li>
 <li>IsSafeMapName()
 : <a class="el" href="netconnect_8cpp.html#acad42db4fc885871f380ce15ecdc5cc0">netconnect.cpp</a>
@@ -618,8 +633,8 @@ $(function() {
 , <a class="el" href="SetupConsole__win32_8h.html#ae00fdf91574e0299f770ce91c1bf27a2">SetupConsole_win32.h</a>
 </li>
 <li>IsStdoutConsole()
-: <a class="el" href="SetupConsole__win32_8cpp.html#a8528a98c7b18d8e6ba751a3af1ba200c">SetupConsole_win32.cpp</a>
-, <a class="el" href="SetupConsole__win32_8h.html#a8528a98c7b18d8e6ba751a3af1ba200c">SetupConsole_win32.h</a>
+: <a class="el" href="SetupConsole__win32_8h.html#a8528a98c7b18d8e6ba751a3af1ba200c">SetupConsole_win32.h</a>
+, <a class="el" href="SetupConsole__win32_8cpp.html#a8528a98c7b18d8e6ba751a3af1ba200c">SetupConsole_win32.cpp</a>
 </li>
 <li>IsStreamValid()
 : <a class="el" href="SetupConsole__win32_8cpp.html#a704cde0723d9b7df4566b80ba9eb70cd">SetupConsole_win32.cpp</a>
@@ -629,6 +644,7 @@ $(function() {
 </li>
 <li>isTextInput()
 : <a class="el" href="sdl_8cpp.html#a9a26866063d9f6a73c2e4104badd5f27">sdl.cpp</a>
+, <a class="el" href="sdlinput_8cpp.html#a9a26866063d9f6a73c2e4104badd5f27">sdlinput.cpp</a>
 </li>
 <li>IsTileRadarVisible()
 : <a class="el" href="map__radar_8cpp.html#a7de1d45e4f704b55516a7acdf413ee3c">map_radar.cpp</a>
@@ -640,7 +656,7 @@ $(function() {
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:42 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:34 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

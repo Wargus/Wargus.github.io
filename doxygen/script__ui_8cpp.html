@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -183,6 +183,8 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
 <tr class="separator:a688ad47844dfdb1327ac783d6db4c748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd70530cf67cdc5746a639941ee9e0a4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__ui_8cpp.html#abd70530cf67cdc5746a639941ee9e0a4">CclDefineButton</a> (lua_State *l)</td></tr>
 <tr class="separator:abd70530cf67cdc5746a639941ee9e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c390c9b53831b32336965fd4d4d342f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__ui_8cpp.html#a8c390c9b53831b32336965fd4d4d342f">CclCopyButtonsForUnitType</a> (lua_State *l)</td></tr>
+<tr class="separator:a8c390c9b53831b32336965fd4d4d342f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13461428545f624dfc015d1168105c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__ui_8cpp.html#a13461428545f624dfc015d1168105c85">SelectionChanged</a> ()</td></tr>
 <tr class="memdesc:a13461428545f624dfc015d1168105c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever the units selection is altered.  <a href="script__ui_8cpp.html#a13461428545f624dfc015d1168105c85">More...</a><br /></td></tr>
 <tr class="separator:a13461428545f624dfc015d1168105c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +201,8 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
 <tr class="separator:a2d528be038b854eb722a4fa130c4766e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91bb7c5682ae5512ee6494c44bfacd9a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__ui_8cpp.html#a91bb7c5682ae5512ee6494c44bfacd9a">CclDefineMapSetup</a> (lua_State *l)</td></tr>
 <tr class="separator:a91bb7c5682ae5512ee6494c44bfacd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4dba1cc040cc7965b35e1d3729c4a76"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__ui_8cpp.html#aa4dba1cc040cc7965b35e1d3729c4a76">CclSetFontCodePage</a> (lua_State *l)</td></tr>
+<tr class="separator:aa4dba1cc040cc7965b35e1d3729c4a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e9776bacc2ae78040c14478dc893b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__ui_8cpp.html#a39e9776bacc2ae78040c14478dc893b3">UserInterfaceCclRegister</a> ()</td></tr>
 <tr class="memdesc:a39e9776bacc2ae78040c14478dc893b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register ccl features.  <a href="script__ui_8cpp.html#a39e9776bacc2ae78040c14478dc893b3">More...</a><br /></td></tr>
 <tr class="separator:a39e9776bacc2ae78040c14478dc893b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,6 +321,32 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8c390c9b53831b32336965fd4d4d342f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c390c9b53831b32336965fd4d4d342f">&#9670;&nbsp;</a></span>CclCopyButtonsForUnitType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclCopyButtonsForUnitType </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -954,6 +984,34 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
 </dl>
 <p>Example:</p>
 <div class="example"><code>&ndash; Enable fancy buildings <b>SetFancyBuildings</b>(true) &ndash; Disable fancy buildings <b>SetFancyBuildings</b>(false)</code></div> 
+</div>
+</div>
+<a id="aa4dba1cc040cc7965b35e1d3729c4a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4dba1cc040cc7965b35e1d3729c4a76">&#9670;&nbsp;</a></span>CclSetFontCodePage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclSetFontCodePage </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><b>Description</b></p>
+<p>Declare which codepage the font files are in. Text is handled internally as UTF-8 everywhere, but the font rendering system uses graphics with 256 symbols. Commonly, DOS and early <a class="el" href="classWindows.html">Windows</a> games used codepage 437 or 1252 for western European languages, or 866 for Russian and some other cyrillic writing systems. These are the only ones that are currently supported, but more can easily be added. All text is mapped into the codepage that is set for the font files. If the codepage is not one of the supported ones, or if something doesn't map (for example, some accented characters with codepage 866, or cyrillic letters with codepage 437), a simple "visual" mapping to 7-bit ASCII is used to at least print something that may be recognizable. </p>
+
 </div>
 </div>
 <a id="a4c2871a64f855e683ca4d986ceb624fa"></a>
@@ -1638,7 +1696,7 @@ script_ui.cpp - The ui ccl functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

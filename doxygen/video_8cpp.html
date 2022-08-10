@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -77,15 +77,13 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">video.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;omp.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="video_8h_source.html">video.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="intern__video_8h_source.html">intern_video.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cursor_8h_source.html">cursor.h</a>&quot;</code><br />
@@ -102,11 +100,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCColorCycling.html">CColorCycling</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a4322bdf893a6cb0a81d21a91aa62dceb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a4322bdf893a6cb0a81d21a91aa62dceb">COLOR_CYCLE_SPEED</a>&#160;&#160;&#160;(<a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a> * 2)</td></tr>
-<tr class="separator:a4322bdf893a6cb0a81d21a91aa62dceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 video.cpp - The universal video functions.</h2></td></tr>
@@ -170,6 +163,8 @@ video.cpp - The universal video functions.</h2></td></tr>
 <tr class="separator:aae850c37b75ed907f2f2441b25f63e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e6999ef4f75acc4a82d20aaa7844e71"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a5e6999ef4f75acc4a82d20aaa7844e71">ColorYellow</a></td></tr>
 <tr class="separator:a5e6999ef4f75acc4a82d20aaa7844e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7e939be9a8ebd27acd95a9fc8e2f8e"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a7d7e939be9a8ebd27acd95a9fc8e2f8e">ColorCycleSpeed</a> = <a class="el" href="settings_8h.html#abebea85d391f1e415049225563d0c6b1">CYCLES_PER_SECOND</a></td></tr>
+<tr class="separator:a7d7e939be9a8ebd27acd95a9fc8e2f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46d5b9bafc100245c60d8b0ff0b50267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a46d5b9bafc100245c60d8b0ff0b50267">InitVideoSdl</a> ()</td></tr>
 <tr class="separator:a46d5b9bafc100245c60d8b0ff0b50267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf6ecd90aeccb239973b8d4b8b656d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#aadf6ecd90aeccb239973b8d4b8b656d9">SdlLockScreen</a> ()</td></tr>
@@ -217,6 +212,8 @@ video.cpp - The universal video functions.</h2></td></tr>
 <tr class="separator:a352973a8ec9fa8e02d65cfb8080e44e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ffc0dd8e0bc6a9aaf6ed4b50be1606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a47ffc0dd8e0bc6a9aaf6ed4b50be1606">AddColorCyclingRange</a> (unsigned int begin, unsigned int end)</td></tr>
 <tr class="separator:a47ffc0dd8e0bc6a9aaf6ed4b50be1606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2116135d0f3be605b068d046449ba97c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a2116135d0f3be605b068d046449ba97c">SetColorCycleSpeed</a> (unsigned int speed)</td></tr>
+<tr class="separator:a2116135d0f3be605b068d046449ba97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8e0c4aef628a5b2af656a69d4b08c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a4d8e0c4aef628a5b2af656a69d4b08c7">SetColorCycleAll</a> (bool value)</td></tr>
 <tr class="separator:a4d8e0c4aef628a5b2af656a69d4b08c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8661bead2aee2f23a5bfd05a2ec5ebb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a8661bead2aee2f23a5bfd05a2ec5ebb8">ColorCycleSurface</a> (SDL_Surface &amp;surface)</td></tr>
@@ -229,21 +226,6 @@ video.cpp - The universal video functions.</h2></td></tr>
 <tr class="memitem:a835b1a185f42f1961c77047d64fc649c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8cpp.html#a835b1a185f42f1961c77047d64fc649c">RestoreColorCyclingSurface</a> ()</td></tr>
 <tr class="separator:a835b1a185f42f1961c77047d64fc649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4322bdf893a6cb0a81d21a91aa62dceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4322bdf893a6cb0a81d21a91aa62dceb">&#9670;&nbsp;</a></span>COLOR_CYCLE_SPEED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COLOR_CYCLE_SPEED&#160;&#160;&#160;(<a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a> * 2)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a47ffc0dd8e0bc6a9aaf6ed4b50be1606"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47ffc0dd8e0bc6a9aaf6ed4b50be1606">&#9670;&nbsp;</a></span>AddColorCyclingRange()</h2>
@@ -733,6 +715,25 @@ video.cpp - The universal video functions.</h2></td></tr>
 
 </div>
 </div>
+<a id="a2116135d0f3be605b068d046449ba97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2116135d0f3be605b068d046449ba97c">&#9670;&nbsp;</a></span>SetColorCycleSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SetColorCycleSpeed </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the <a class="el" href="classColor.html">Color</a> Cycle speed. </p><dl class="section return"><dt>Returns</dt><dd>the previous speed </dd></dl>
+
+</div>
+</div>
 <a id="ae053444c05f67013c9d54e16523f9521"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae053444c05f67013c9d54e16523f9521">&#9670;&nbsp;</a></span>VideoCclRegister()</h2>
 
@@ -918,6 +919,28 @@ video.cpp - The universal video functions.</h2></td></tr>
           <td class="memname">Uint32 ColorBlue</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d7e939be9a8ebd27acd95a9fc8e2f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7e939be9a8ebd27acd95a9fc8e2f8e">&#9670;&nbsp;</a></span>ColorCycleSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ColorCycleSpeed = <a class="el" href="settings_8h.html#abebea85d391f1e415049225563d0c6b1">CYCLES_PER_SECOND</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1172,14 +1195,14 @@ video.cpp - The universal video functions.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Video synchronization speed. Synchronization time in percent. If =0, video framerate is not synchronized. 100 is exact CYCLES_PER_SECOND (30). <a class="el" href="classGame.html">Game</a> will try to redraw screen within intervals of VideoSyncSpeed, not more, not less. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c" title="Game cycles per second to simulate (original 30-40)">CYCLES_PER_SECOND</a> </dd></dl>
+<p>Video synchronization speed. Synchronization time in percent. If =0, video framerate is not synchronized. 100 is exact CYCLES_PER_SECOND (30). <a class="el" href="classGame.html">Game</a> will try to redraw screen within intervals of VideoSyncSpeed, not more, not less. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#abebea85d391f1e415049225563d0c6b1" title="Game cycles per second to simulate (original 30-40)">CYCLES_PER_SECOND</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

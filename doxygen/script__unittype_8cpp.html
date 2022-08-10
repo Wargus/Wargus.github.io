@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -218,6 +218,10 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 <tr class="separator:a2af4805479764d6ee6f383415aac05de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cfa11eb99a65c270c0b677db031c007"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a7cfa11eb99a65c270c0b677db031c007">POSY_KEY</a> [] = &quot;PosY&quot;</td></tr>
 <tr class="separator:a7cfa11eb99a65c270c0b677db031c007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828fcee6c5a9b483adee143ac5c9275d"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a828fcee6c5a9b483adee143ac5c9275d">POS_RIGHT_KEY</a> [] = &quot;PosRight&quot;</td></tr>
+<tr class="separator:a828fcee6c5a9b483adee143ac5c9275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a2762687074bd3b0e49de4b0315ecc"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a10a2762687074bd3b0e49de4b0315ecc">POS_BOTTOM_KEY</a> [] = &quot;PosBottom&quot;</td></tr>
+<tr class="separator:a10a2762687074bd3b0e49de4b0315ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12d7200558a240fac4d59e4e42898ce1"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a12d7200558a240fac4d59e4e42898ce1">TARGETPOSX_KEY</a> [] = &quot;TargetPosX&quot;</td></tr>
 <tr class="separator:a12d7200558a240fac4d59e4e42898ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95563cba52a54c74938249c0b0b489c2"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a95563cba52a54c74938249c0b0b489c2">TARGETPOSY_KEY</a> [] = &quot;TargetPosY&quot;</td></tr>
@@ -274,6 +278,8 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 <tr class="separator:a2b851b2a3366d74b9028f0075db0b60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e0e2ecd22f8ce2935b46ca1469b8904"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a9e0e2ecd22f8ce2935b46ca1469b8904">CclDefineUnitType</a> (lua_State *l)</td></tr>
 <tr class="separator:a9e0e2ecd22f8ce2935b46ca1469b8904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b493679e2f8f0bba1071122c2919423"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a0b493679e2f8f0bba1071122c2919423">CclCopyUnitType</a> (lua_State *l)</td></tr>
+<tr class="separator:a0b493679e2f8f0bba1071122c2919423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a224132f17ea9bd6ef3d982d1371328fd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a224132f17ea9bd6ef3d982d1371328fd">CclDefineUnitStats</a> (lua_State *l)</td></tr>
 <tr class="separator:a224132f17ea9bd6ef3d982d1371328fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fba46f1a1e160534d0cf3323212c0f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUnitType.html">CUnitType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a0fba46f1a1e160534d0cf3323212c0f5">CclGetUnitType</a> (lua_State *l)</td></tr>
@@ -301,6 +307,8 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 <tr class="separator:a1848595c741720636d8a3a67cf5d73bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae431010c802ba2c2cdfa93547474a469"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#ae431010c802ba2c2cdfa93547474a469">CclDefineExtraDeathTypes</a> (lua_State *l)</td></tr>
 <tr class="separator:ae431010c802ba2c2cdfa93547474a469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779e18bb4951fa83445a0551f3c94ff5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a779e18bb4951fa83445a0551f3c94ff5">CclDefinePaletteSwap</a> (lua_State *l)</td></tr>
+<tr class="separator:a779e18bb4951fa83445a0551f3c94ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d7ab03512f434c5c7ad555b78c925e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unittype_8cpp.html#a87d7ab03512f434c5c7ad555b78c925e">UpdateUnitVariables</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
 <tr class="memdesc:a87d7ab03512f434c5c7ad555b78c925e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update custom Variables with other variable (like Hp, ...)  <a href="script__unittype_8cpp.html#a87d7ab03512f434c5c7ad555b78c925e">More...</a><br /></td></tr>
 <tr class="separator:a87d7ab03512f434c5c7ad555b78c925e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,6 +321,41 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 <tr class="separator:a35b282531a0bd796ec63e515d6b6449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0b493679e2f8f0bba1071122c2919423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b493679e2f8f0bba1071122c2919423">&#9670;&nbsp;</a></span>CclCopyUnitType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclCopyUnitType </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><b>Description</b></p>
+<p>Copy a unit type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example:</p>
+<div class="example"><code><b>CopyUnitType</b>("unit-peasant", "unit-peasant-copy")</code></div> 
+</div>
+</div>
 <a id="a4db8f7bf65e6c049b7235ad3dfcf6353"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4db8f7bf65e6c049b7235ad3dfcf6353">&#9670;&nbsp;</a></span>CclDefineBoolFlags()</h2>
 
@@ -412,6 +455,32 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a779e18bb4951fa83445a0551f3c94ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779e18bb4951fa83445a0551f3c94ff5">&#9670;&nbsp;</a></span>CclDefinePaletteSwap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclDefinePaletteSwap </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2075,6 +2144,50 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 
 </div>
 </div>
+<a id="a10a2762687074bd3b0e49de4b0315ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a2762687074bd3b0e49de4b0315ecc">&#9670;&nbsp;</a></span>POS_BOTTOM_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char POS_BOTTOM_KEY[] = &quot;PosBottom&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a828fcee6c5a9b483adee143ac5c9275d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828fcee6c5a9b483adee143ac5c9275d">&#9670;&nbsp;</a></span>POS_RIGHT_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char POS_RIGHT_KEY[] = &quot;PosRight&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2af4805479764d6ee6f383415aac05de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2af4805479764d6ee6f383415aac05de">&#9670;&nbsp;</a></span>POSX_KEY</h2>
 
@@ -2818,7 +2931,7 @@ script_unittype.cpp - The unit-type ccl functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

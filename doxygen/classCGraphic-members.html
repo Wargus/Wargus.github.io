@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -117,9 +117,9 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#a81e88caba6ef6c0ed639bf1f25e9d441">Image</a>(const std::string &amp;filename)</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgcn_1_1Image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a>()</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#abbe772bb6faebbbe6dc8c55969f5ba4a">isDirty</a>() const</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#aa9aae7d2062b1a4f901ff9bf34477ed2">IsLoaded</a>() const</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a811633893a469aa8509dbc95d8de7a15">IsLoaded</a>(bool flipped=false) const</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classCGraphic.html#ae631ceb24a60cfc14b8ed9181b596164">Load</a>(bool grayscale=false)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#affabfa062df16d84fea230c70d6e98b3">MakeShadow</a>()</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#aa60c8e7595db991d6bc1f042b61dcfaa">MakeShadow</a>(int xOffset, int yOffset)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#a84c8af438a681f25fe717394fcf582da">mData</a></td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgcn_1_1Image.html#ae012fbcf0cb9dcda897318f5fcb412e8">mHeight</a></td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#aa6c69d9bbc2e6c2282361c5e59a8a7a9">mImageLoader</a></td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
@@ -127,22 +127,23 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#a9cf1dea27f7dee81ec7a1a7241e4a39b">mWidth</a></td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a4c741041ec018cd1673ec137bd27280e">New</a>(const std::string &amp;file, int w=0, int h=0)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classCGraphic.html#ab71fd375d907eaa1e3570371bda79e33">NumFrames</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a2ca5f2f38a3d817b73dea293ff11ceb3">Refs</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCGraphic.html#a83b4943f05dfca551fb1ace42a9a3799">Resize</a>(int w, int h)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a6957d77db34ec4d81f286dc01d96f931">Resized</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#a3206d37614fd1dd7893137f2e21c64f4">setImageLoader</a>(ImageLoader *imageLoader)</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#acfc80da8c0c984a4ec4753d14d2f0830">SetOriginalSize</a>()</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCGraphic.html#a8df34e19ef428992f887098fb56bdaea">SetPaletteColor</a>(int idx, int r, int g, int b)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#aecf174ef39e6643a6918de449a5eec74">Surface</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCGraphic.html#a92eaef2d70aa1bb615995fe91460ed57">SurfaceFlip</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#ac4a8f7f8a3b2fc091626e4bd1048da51">TransparentPixel</a>(int x, int y)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCGraphic.html#a31f57d207a74e73bbe459e4b94abe08e">Width</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a81d9a54365e7bf31240dbf0327ebabec">~CGraphic</a>()</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classgcn_1_1Image.html#a0294f63700543e11c0f0da85601c7ae5">~Image</a>()</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#aedd62e6a209c45ba57a94479a5b4c168">OverlayGraphic</a>(CGraphic *other, bool mask=false)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCGraphic.html#a2ca5f2f38a3d817b73dea293ff11ceb3">Refs</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a83b4943f05dfca551fb1ace42a9a3799">Resize</a>(int w, int h)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCGraphic.html#a6957d77db34ec4d81f286dc01d96f931">Resized</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgcn_1_1Image.html#a3206d37614fd1dd7893137f2e21c64f4">setImageLoader</a>(ImageLoader *imageLoader)</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCGraphic.html#acfc80da8c0c984a4ec4753d14d2f0830">SetOriginalSize</a>()</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a8df34e19ef428992f887098fb56bdaea">SetPaletteColor</a>(int idx, int r, int g, int b)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCGraphic.html#aecf174ef39e6643a6918de449a5eec74">Surface</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a92eaef2d70aa1bb615995fe91460ed57">SurfaceFlip</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCGraphic.html#ac4a8f7f8a3b2fc091626e4bd1048da51">TransparentPixel</a>(int x, int y)</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCGraphic.html#a31f57d207a74e73bbe459e4b94abe08e">Width</a></td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCGraphic.html#a81d9a54365e7bf31240dbf0327ebabec">~CGraphic</a>()</td><td class="entry"><a class="el" href="classCGraphic.html">CGraphic</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgcn_1_1Image.html#a0294f63700543e11c0f0da85601c7ae5">~Image</a>()</td><td class="entry"><a class="el" href="classgcn_1_1Image.html">gcn::Image</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

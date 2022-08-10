@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -130,6 +130,9 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
 <tr class="memitem:a64e4666fc38d8a31e33511959e464870"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a64e4666fc38d8a31e33511959e464870">AStarUnknownTerrainCost</a></td></tr>
 <tr class="memdesc:a64e4666fc38d8a31e33511959e464870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cost of using a square we haven't seen before.  <a href="pathfinder_8h.html#a64e4666fc38d8a31e33511959e464870">More...</a><br /></td></tr>
 <tr class="separator:a64e4666fc38d8a31e33511959e464870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6854a078ec74a91dd332bf72bcd2f45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#ae6854a078ec74a91dd332bf72bcd2f45">AStarMaxSearchIterations</a></td></tr>
+<tr class="memdesc:ae6854a078ec74a91dd332bf72bcd2f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of iterations of A* before giving up.  <a href="pathfinder_8h.html#ae6854a078ec74a91dd332bf72bcd2f45">More...</a><br /></td></tr>
+<tr class="separator:ae6854a078ec74a91dd332bf72bcd2f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466bb80ff01775e98efaa1fc886156b4"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a466bb80ff01775e98efaa1fc886156b4">Heading2X</a> [9]</td></tr>
 <tr class="separator:a466bb80ff01775e98efaa1fc886156b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48699dd113800ebf2e4b246aab3e7436"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a48699dd113800ebf2e4b246aab3e7436">Heading2Y</a> [9]</td></tr>
@@ -145,15 +148,15 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
 <tr class="memitem:ac9649a22697f58879ce0c99b54629769"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#ac9649a22697f58879ce0c99b54629769">NextPathElement</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit, short int *xdp, short int *ydp)</td></tr>
 <tr class="memdesc:ac9649a22697f58879ce0c99b54629769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next element of the path.  <a href="pathfinder_8h.html#ac9649a22697f58879ce0c99b54629769">More...</a><br /></td></tr>
 <tr class="separator:ac9649a22697f58879ce0c99b54629769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5801433f3de2d6d336e151cffc0b9801"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a5801433f3de2d6d336e151cffc0b9801">UnitReachable</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;src, const <a class="el" href="classCUnit.html">CUnit</a> &amp;dst, int range)</td></tr>
-<tr class="memdesc:a5801433f3de2d6d336e151cffc0b9801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return path length to unit 'dst'.  <a href="pathfinder_8h.html#a5801433f3de2d6d336e151cffc0b9801">More...</a><br /></td></tr>
-<tr class="separator:a5801433f3de2d6d336e151cffc0b9801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0864f2e077d4f09bb6e716c14de22030"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a0864f2e077d4f09bb6e716c14de22030">UnitReachable</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;src, const <a class="el" href="classCUnit.html">CUnit</a> &amp;dst, int range, bool from_outside_container)</td></tr>
+<tr class="memdesc:a0864f2e077d4f09bb6e716c14de22030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return path length to unit 'dst'.  <a href="pathfinder_8h.html#a0864f2e077d4f09bb6e716c14de22030">More...</a><br /></td></tr>
+<tr class="separator:a0864f2e077d4f09bb6e716c14de22030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac407f00f8c062d496e1950c6f0064785"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#ac407f00f8c062d496e1950c6f0064785">CalcPathLengthToUnit</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;src, const <a class="el" href="classCUnit.html">CUnit</a> &amp;dst, const int minrange, const int range)</td></tr>
 <tr class="memdesc:ac407f00f8c062d496e1950c6f0064785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return path length to unit 'dst' or error code.  <a href="pathfinder_8h.html#ac407f00f8c062d496e1950c6f0064785">More...</a><br /></td></tr>
 <tr class="separator:ac407f00f8c062d496e1950c6f0064785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb15372371f12efedf13c888986824ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#abb15372371f12efedf13c888986824ef">PlaceReachable</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;src, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int minrange, int maxrange)</td></tr>
-<tr class="memdesc:abb15372371f12efedf13c888986824ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the unit 'src' reach the place x,y.  <a href="pathfinder_8h.html#abb15372371f12efedf13c888986824ef">More...</a><br /></td></tr>
-<tr class="separator:abb15372371f12efedf13c888986824ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc0f96dd3f6a56142edfe7833216da0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a0fc0f96dd3f6a56142edfe7833216da0">PlaceReachable</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;src, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int w, int h, int minrange, int maxrange, bool from_outside_container)</td></tr>
+<tr class="memdesc:a0fc0f96dd3f6a56142edfe7833216da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the unit 'src' reach the place x,y.  <a href="pathfinder_8h.html#a0fc0f96dd3f6a56142edfe7833216da0">More...</a><br /></td></tr>
+<tr class="separator:a0fc0f96dd3f6a56142edfe7833216da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99385d16d8f0b1079169760da310e819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#a99385d16d8f0b1079169760da310e819">SetAStarFixedUnitCrossingCost</a> (int cost)</td></tr>
 <tr class="separator:a99385d16d8f0b1079169760da310e819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6bf6f9d99c30020fe0db4724382ba4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinder_8h.html#ae6bf6f9d99c30020fe0db4724382ba4c">GetAStarFixedUnitCrossingCost</a> ()</td></tr>
@@ -468,8 +471,8 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="abb15372371f12efedf13c888986824ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb15372371f12efedf13c888986824ef">&#9670;&nbsp;</a></span>PlaceReachable()</h2>
+<a id="a0fc0f96dd3f6a56142edfe7833216da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc0f96dd3f6a56142edfe7833216da0">&#9670;&nbsp;</a></span>PlaceReachable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,7 +511,13 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>range</em>&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>from_outside_container</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -609,8 +618,8 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a5801433f3de2d6d336e151cffc0b9801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5801433f3de2d6d336e151cffc0b9801">&#9670;&nbsp;</a></span>UnitReachable()</h2>
+<a id="a0864f2e077d4f09bb6e716c14de22030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0864f2e077d4f09bb6e716c14de22030">&#9670;&nbsp;</a></span>UnitReachable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +640,13 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>range</em>&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>from_outside_container</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -686,6 +701,22 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to have knowledge of terrain that we haven't visited yet. </p>
+
+</div>
+</div>
+<a id="ae6854a078ec74a91dd332bf72bcd2f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6854a078ec74a91dd332bf72bcd2f45">&#9670;&nbsp;</a></span>AStarMaxSearchIterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AStarMaxSearchIterations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of iterations of A* before giving up. </p>
 
 </div>
 </div>
@@ -766,7 +797,7 @@ pathfinder.h - The path finder headerfile.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

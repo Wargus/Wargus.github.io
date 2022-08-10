@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -80,40 +80,32 @@ $(function() {
 <div class="title">stratagus.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
 </div>
 <p><a href="stratagus_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 stratagus.h - The main header file.</h2></td></tr>
+<tr class="memitem:a889ec205c635b219999c761b28cc39ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a889ec205c635b219999c761b28cc39ba">omp_get_thread_num</a>()&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a889ec205c635b219999c761b28cc39ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4353281743925f182316dba7cda58fee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a4353281743925f182316dba7cda58fee">omp_get_num_threads</a>()&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4353281743925f182316dba7cda58fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f64c424fc4e04a8b3afd79a1e245625"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a5f64c424fc4e04a8b3afd79a1e245625">UNUSED</a>(var)&#160;&#160;&#160;(var)</td></tr>
 <tr class="separator:a5f64c424fc4e04a8b3afd79a1e245625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1e2b34b78762c9a782e9bcea69fadc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a3b1e2b34b78762c9a782e9bcea69fadc">PRINTF_VAARG_ATTRIBUTE</a>(a,  b)</td></tr>
 <tr class="separator:a3b1e2b34b78762c9a782e9bcea69fadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11ee8334d3e3d1551143b92e219bf44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#ac11ee8334d3e3d1551143b92e219bf44">_C_</a>&#160;&#160;&#160;,</td></tr>
 <tr class="separator:ac11ee8334d3e3d1551143b92e219bf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcc0e789ba732934b113913135e66b47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">PrintFunction</a>()&#160;&#160;&#160;<a class="el" href="metaserver_2main_8cpp.html#ad6aa6d5da016ce7b8b521e5e7613c1d3">PrintLocation</a>(__FILE__, __LINE__, __func__);</td></tr>
+<tr class="memitem:afcc0e789ba732934b113913135e66b47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">PrintFunction</a>()&#160;&#160;&#160;<a class="el" href="util_8cpp.html#ad6aa6d5da016ce7b8b521e5e7613c1d3">PrintLocation</a>(__FILE__, __LINE__, __func__);</td></tr>
 <tr class="memdesc:afcc0e789ba732934b113913135e66b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print function in debug macros.  <a href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">More...</a><br /></td></tr>
 <tr class="separator:afcc0e789ba732934b113913135e66b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb4297d7ce1aebd4c26a74392ff8bad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#accb4297d7ce1aebd4c26a74392ff8bad">Assert</a>(cond)&#160;&#160;&#160;do { if (<a class="el" href="metaserver_2main_8cpp.html#a1985cba2f9362edebf68b587dc941d49">EnableAssert</a> &amp;&amp; !(cond)) { <a class="el" href="metaserver_2main_8cpp.html#a3779e931c407722fd74d494598e12c26">AbortAt</a>(__FILE__, __LINE__, __func__, #cond); }} while (0)</td></tr>
+<tr class="memitem:accb4297d7ce1aebd4c26a74392ff8bad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#accb4297d7ce1aebd4c26a74392ff8bad">Assert</a>(cond)&#160;&#160;&#160;do { if (<a class="el" href="stratagus_8cpp.html#a1985cba2f9362edebf68b587dc941d49">EnableAssert</a> &amp;&amp; !(cond)) { <a class="el" href="util_8cpp.html#a3779e931c407722fd74d494598e12c26">AbortAt</a>(__FILE__, __LINE__, __func__, #cond); }} while (0)</td></tr>
 <tr class="separator:accb4297d7ce1aebd4c26a74392ff8bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19900ca5639c8190ee92b4c66a1beafd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a19900ca5639c8190ee92b4c66a1beafd">DebugPrint</a>(args)&#160;&#160;&#160;do { if (<a class="el" href="metaserver_2main_8cpp.html#af72ffbf669d1fe7972c09f05d66f3e06">EnableDebugPrint</a>) { <a class="el" href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">PrintFunction</a>(); <a class="el" href="metaserver_2main_8cpp.html#a36dd610688bb1cd9e3f655dd8c1fca71">PrintOnStdOut</a>(args); } } while (0)</td></tr>
+<tr class="memitem:a19900ca5639c8190ee92b4c66a1beafd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a19900ca5639c8190ee92b4c66a1beafd">DebugPrint</a>(args)&#160;&#160;&#160;do { if (<a class="el" href="stratagus_8cpp.html#af72ffbf669d1fe7972c09f05d66f3e06">EnableDebugPrint</a>) { <a class="el" href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">PrintFunction</a>(); <a class="el" href="util_8cpp.html#a36dd610688bb1cd9e3f655dd8c1fca71">PrintOnStdOut</a>(args); } } while (0)</td></tr>
 <tr class="separator:a19900ca5639c8190ee92b4c66a1beafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa48d8f52111bc8d9119f59e8aff45a73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:aa48d8f52111bc8d9119f59e8aff45a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4bebf69838b4fc3329656d608d22fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a8f4bebf69838b4fc3329656d608d22fe">UnitTypeMax</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="separator:a8f4bebf69838b4fc3329656d608d22fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795bf553361756b1f978bc8e71b0c833"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a795bf553361756b1f978bc8e71b0c833">UpgradeMax</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="separator:a795bf553361756b1f978bc8e71b0c833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f1557efbaca04e932287ce09a5b5206"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a4f1557efbaca04e932287ce09a5b5206">MAX_RACES</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:a4f1557efbaca04e932287ce09a5b5206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f9d29551f1bf30f03229da27cb532f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a85f9d29551f1bf30f03229da27cb532f">FRAMES_PER_SECOND</a>&#160;&#160;&#160;30</td></tr>
-<tr class="memdesc:a85f9d29551f1bf30f03229da27cb532f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames per second to display (original 30-40)  <a href="stratagus_8h.html#a85f9d29551f1bf30f03229da27cb532f">More...</a><br /></td></tr>
-<tr class="separator:a85f9d29551f1bf30f03229da27cb532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e0315586dc39327de201f159743d7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">CYCLES_PER_SECOND</a>&#160;&#160;&#160;30</td></tr>
-<tr class="memdesc:a32e0315586dc39327de201f159743d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html">Game</a> cycles per second to simulate (original 30-40)  <a href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c">More...</a><br /></td></tr>
-<tr class="separator:a32e0315586dc39327de201f159743d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af72ffbf669d1fe7972c09f05d66f3e06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#af72ffbf669d1fe7972c09f05d66f3e06">EnableDebugPrint</a></td></tr>
 <tr class="separator:af72ffbf669d1fe7972c09f05d66f3e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1985cba2f9362edebf68b587dc941d49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a1985cba2f9362edebf68b587dc941d49">EnableAssert</a></td></tr>
@@ -122,12 +114,17 @@ stratagus.h - The main header file.</h2></td></tr>
 <tr class="memitem:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a041bc0ec5975683b7cbbed389d0dc0aa">EnableUnitDebug</a></td></tr>
 <tr class="memdesc:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, halt on assertion failures  <a href="stratagus_8h.html#a041bc0ec5975683b7cbbed389d0dc0aa">More...</a><br /></td></tr>
 <tr class="separator:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae278c9dda877182fb0b5b5d44bd8d474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#ae278c9dda877182fb0b5b5d44bd8d474">IsRestart</a></td></tr>
+<tr class="memdesc:ae278c9dda877182fb0b5b5d44bd8d474"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8h.html#ae278c9dda877182fb0b5b5d44bd8d474">More...</a><br /></td></tr>
+<tr class="separator:ae278c9dda877182fb0b5b5d44bd8d474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a3be4118c1d928572b36c6d3e8d6d9f28">IsDebugEnabled</a></td></tr>
-<tr class="memdesc:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8h.html#a3be4118c1d928572b36c6d3e8d6d9f28">More...</a><br /></td></tr>
 <tr class="separator:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd72ad929774d23801f2864f5541b700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#afd72ad929774d23801f2864f5541b700">EnableWallsInSinglePlayer</a></td></tr>
 <tr class="memdesc:afd72ad929774d23801f2864f5541b700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is debug enabled? Flag to pass into lua code.  <a href="stratagus_8h.html#afd72ad929774d23801f2864f5541b700">More...</a><br /></td></tr>
 <tr class="separator:afd72ad929774d23801f2864f5541b700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b973e5320a27415296f843da0724e92"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a9b973e5320a27415296f843da0724e92">OriginalArgv</a></td></tr>
+<tr class="memdesc:a9b973e5320a27415296f843da0724e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true, the game skips some things like title screens  <a href="stratagus_8h.html#a9b973e5320a27415296f843da0724e92">More...</a><br /></td></tr>
+<tr class="separator:a9b973e5320a27415296f843da0724e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17efbe9eb356ac3b060f74272aa7e423"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a17efbe9eb356ac3b060f74272aa7e423">NameLine</a> []</td></tr>
 <tr class="memdesc:a17efbe9eb356ac3b060f74272aa7e423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text string: Name, Version, Copyright.  <a href="stratagus_8h.html#a17efbe9eb356ac3b060f74272aa7e423">More...</a><br /></td></tr>
 <tr class="separator:a17efbe9eb356ac3b060f74272aa7e423"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +139,6 @@ stratagus.h - The main header file.</h2></td></tr>
 <tr class="memdesc:a966b81acf13b4138966c2dc3360c36fd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html">Game</a> simulation cycle counter.  <a href="stratagus_8h.html#a966b81acf13b4138966c2dc3360c36fd">More...</a><br /></td></tr>
 <tr class="separator:a966b81acf13b4138966c2dc3360c36fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6aa6d5da016ce7b8b521e5e7613c1d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#ad6aa6d5da016ce7b8b521e5e7613c1d3">PrintLocation</a> (const char *file, int line, const char *funcName)</td></tr>
-<tr class="memdesc:ad6aa6d5da016ce7b8b521e5e7613c1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8h.html#ad6aa6d5da016ce7b8b521e5e7613c1d3">More...</a><br /></td></tr>
 <tr class="separator:ad6aa6d5da016ce7b8b521e5e7613c1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3779e931c407722fd74d494598e12c26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8h.html#a3779e931c407722fd74d494598e12c26">AbortAt</a> (const char *file, int line, const char *funcName, const char *conditionStr)</td></tr>
 <tr class="separator:a3779e931c407722fd74d494598e12c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,27 +192,11 @@ stratagus.h - The main header file.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">cond</td><td>)</td>
-          <td>&#160;&#160;&#160;do { if (<a class="el" href="metaserver_2main_8cpp.html#a1985cba2f9362edebf68b587dc941d49">EnableAssert</a> &amp;&amp; !(cond)) { <a class="el" href="metaserver_2main_8cpp.html#a3779e931c407722fd74d494598e12c26">AbortAt</a>(__FILE__, __LINE__, __func__, #cond); }} while (0)</td>
+          <td>&#160;&#160;&#160;do { if (<a class="el" href="stratagus_8cpp.html#a1985cba2f9362edebf68b587dc941d49">EnableAssert</a> &amp;&amp; !(cond)) { <a class="el" href="util_8cpp.html#a3779e931c407722fd74d494598e12c26">AbortAt</a>(__FILE__, __LINE__, __func__, #cond); }} while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Assert a condition. If cond is not true abort with file,line. </p>
-
-</div>
-</div>
-<a id="a32e0315586dc39327de201f159743d7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32e0315586dc39327de201f159743d7c">&#9670;&nbsp;</a></span>CYCLES_PER_SECOND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CYCLES_PER_SECOND&#160;&#160;&#160;30</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classGame.html">Game</a> cycles per second to simulate (original 30-40) </p>
 
 </div>
 </div>
@@ -231,7 +211,7 @@ stratagus.h - The main header file.</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">args</td><td>)</td>
-          <td>&#160;&#160;&#160;do { if (<a class="el" href="metaserver_2main_8cpp.html#af72ffbf669d1fe7972c09f05d66f3e06">EnableDebugPrint</a>) { <a class="el" href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">PrintFunction</a>(); <a class="el" href="metaserver_2main_8cpp.html#a36dd610688bb1cd9e3f655dd8c1fca71">PrintOnStdOut</a>(args); } } while (0)</td>
+          <td>&#160;&#160;&#160;do { if (<a class="el" href="stratagus_8cpp.html#af72ffbf669d1fe7972c09f05d66f3e06">EnableDebugPrint</a>) { <a class="el" href="stratagus_8h.html#afcc0e789ba732934b113913135e66b47">PrintFunction</a>(); <a class="el" href="util_8cpp.html#a36dd610688bb1cd9e3f655dd8c1fca71">PrintOnStdOut</a>(args); } } while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -239,44 +219,34 @@ stratagus.h - The main header file.</h2></td></tr>
 
 </div>
 </div>
-<a id="a85f9d29551f1bf30f03229da27cb532f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f9d29551f1bf30f03229da27cb532f">&#9670;&nbsp;</a></span>FRAMES_PER_SECOND</h2>
+<a id="a4353281743925f182316dba7cda58fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4353281743925f182316dba7cda58fee">&#9670;&nbsp;</a></span>omp_get_num_threads</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRAMES_PER_SECOND&#160;&#160;&#160;30</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frames per second to display (original 30-40) </p>
-
-</div>
-</div>
-<a id="a4f1557efbaca04e932287ce09a5b5206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f1557efbaca04e932287ce09a5b5206">&#9670;&nbsp;</a></span>MAX_RACES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_RACES&#160;&#160;&#160;8</td>
+          <td class="memname">#define omp_get_num_threads</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa48d8f52111bc8d9119f59e8aff45a73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa48d8f52111bc8d9119f59e8aff45a73">&#9670;&nbsp;</a></span>PlayerMax</h2>
+<a id="a889ec205c635b219999c761b28cc39ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889ec205c635b219999c761b28cc39ba">&#9670;&nbsp;</a></span>omp_get_thread_num</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PlayerMax&#160;&#160;&#160;16</td>
+          <td class="memname">#define omp_get_thread_num</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,26 +291,12 @@ stratagus.h - The main header file.</h2></td></tr>
           <td class="memname">#define PrintFunction</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="metaserver_2main_8cpp.html#ad6aa6d5da016ce7b8b521e5e7613c1d3">PrintLocation</a>(__FILE__, __LINE__, __func__);</td>
+          <td>&#160;&#160;&#160;<a class="el" href="util_8cpp.html#ad6aa6d5da016ce7b8b521e5e7613c1d3">PrintLocation</a>(__FILE__, __LINE__, __func__);</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Print function in debug macros. </p>
-
-</div>
-</div>
-<a id="a8f4bebf69838b4fc3329656d608d22fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f4bebf69838b4fc3329656d608d22fe">&#9670;&nbsp;</a></span>UnitTypeMax</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UnitTypeMax&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -356,20 +312,6 @@ stratagus.h - The main header file.</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">var</td><td>)</td>
           <td>&#160;&#160;&#160;(var)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a795bf553361756b1f978bc8e71b0c833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a795bf553361756b1f978bc8e71b0c833">&#9670;&nbsp;</a></span>UpgradeMax</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UpgradeMax&#160;&#160;&#160;2048</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -570,8 +512,6 @@ stratagus.h - The main header file.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>if enabled, a unit info dump will be created </p>
-
 </div>
 </div>
 <a id="a36dd610688bb1cd9e3f655dd8c1fca71"></a>
@@ -689,10 +629,6 @@ stratagus.h - The main header file.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000125">Todo:</a></b></dt><dd><p class="startdd">Needs code cleanup. </p>
-<p class="interdd">Needs compatibility checks. </p>
-<p class="enddd">Needs error message unification. </p>
-</dd></dl>
 
 </div>
 </div>
@@ -770,6 +706,20 @@ stratagus.h - The main header file.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="ae278c9dda877182fb0b5b5d44bd8d474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae278c9dda877182fb0b5b5d44bd8d474">&#9670;&nbsp;</a></span>IsRestart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsRestart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>if enabled, a unit info dump will be created </p>
 
 </div>
@@ -809,6 +759,22 @@ stratagus.h - The main header file.</h2></td></tr>
 
 </div>
 </div>
+<a id="a9b973e5320a27415296f843da0724e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b973e5320a27415296f843da0724e92">&#9670;&nbsp;</a></span>OriginalArgv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; OriginalArgv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if true, the game skips some things like title screens </p>
+
+</div>
+</div>
 <a id="a80c2de99513cedb1cafa0bf26fbbe147"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80c2de99513cedb1cafa0bf26fbbe147">&#9670;&nbsp;</a></span>StratagusLibPath</h2>
 
@@ -826,7 +792,7 @@ stratagus.h - The main header file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

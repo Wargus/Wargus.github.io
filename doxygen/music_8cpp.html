@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,8 @@ $(function() {
 <div class="title">music.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;atomic&gt;</code><br />
+<code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;SDL.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sound__server_8h_source.html">sound_server.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="script_8h_source.html">script.h</a>&quot;</code><br />
@@ -89,20 +90,27 @@ $(function() {
 music.cpp - Background music support</h2></td></tr>
 <tr class="memitem:a77d1b2bded1dbad162061f472afcfa62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a77d1b2bded1dbad162061f472afcfa62">SoundFrequency</a>&#160;&#160;&#160;44100</td></tr>
 <tr class="separator:a77d1b2bded1dbad162061f472afcfa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff7784b83bcf116bdc92cb48c58d522"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a9ff7784b83bcf116bdc92cb48c58d522">MusicFinished</a></td></tr>
-<tr class="separator:a9ff7784b83bcf116bdc92cb48c58d522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e73c48f7da9765b46b18663cda45e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#ab9e73c48f7da9765b46b18663cda45e5">CallbackMusic</a></td></tr>
-<tr class="memdesc:ab9e73c48f7da9765b46b18663cda45e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Music ended and we need a new file.  <a href="music_8cpp.html#ab9e73c48f7da9765b46b18663cda45e5">More...</a><br /></td></tr>
-<tr class="separator:ab9e73c48f7da9765b46b18663cda45e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14611e3d239ece1e424bc49e7735c398"><td class="memItemLeft" align="right" valign="top">static std::atomic_flag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a14611e3d239ece1e424bc49e7735c398">MusicFinishedEventQueued</a> = ATOMIC_FLAG_INIT</td></tr>
+<tr class="memdesc:a14611e3d239ece1e424bc49e7735c398"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag is set when a MusicFinishedCallback was enqueued in the event loop and should be handled, and unset when the handler has run.  <a href="music_8cpp.html#a14611e3d239ece1e424bc49e7735c398">More...</a><br /></td></tr>
+<tr class="separator:a14611e3d239ece1e424bc49e7735c398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f3d85a6e9c27c14c3ed7c8d0ebc882"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a83f3d85a6e9c27c14c3ed7c8d0ebc882">IsCallbackEnabled</a> = false</td></tr>
+<tr class="separator:a83f3d85a6e9c27c14c3ed7c8d0ebc882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7d4f88a02cdd9bb3100db877bbd4cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a4f7d4f88a02cdd9bb3100db877bbd4cd">CheckMusicFinished</a> ()</td></tr>
+<tr class="separator:a4f7d4f88a02cdd9bb3100db877bbd4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74c5da0bc8ec011803c8696f9a08d95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#ac74c5da0bc8ec011803c8696f9a08d95">MusicFinishedCallback</a> ()</td></tr>
-<tr class="memdesc:ac74c5da0bc8ec011803c8696f9a08d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag true callback ccl if stops  <a href="music_8cpp.html#ac74c5da0bc8ec011803c8696f9a08d95">More...</a><br /></td></tr>
 <tr class="separator:ac74c5da0bc8ec011803c8696f9a08d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e67e9f74bbf4004fc2b22ca03840125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a0e67e9f74bbf4004fc2b22ca03840125">CheckMusicFinished</a> (bool force)</td></tr>
-<tr class="memdesc:a0e67e9f74bbf4004fc2b22ca03840125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if music is finished and play the next song.  <a href="music_8cpp.html#a0e67e9f74bbf4004fc2b22ca03840125">More...</a><br /></td></tr>
-<tr class="separator:a0e67e9f74bbf4004fc2b22ca03840125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7fcc79f60094b3596d931faf354d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#adb7fcc79f60094b3596d931faf354d0c">InitMusic</a> ()</td></tr>
 <tr class="memdesc:adb7fcc79f60094b3596d931faf354d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize music.  <a href="music_8cpp.html#adb7fcc79f60094b3596d931faf354d0c">More...</a><br /></td></tr>
 <tr class="separator:adb7fcc79f60094b3596d931faf354d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3b3772a3b2d335d94e7f67a9213d2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#afd3b3772a3b2d335d94e7f67a9213d2a">CallbackMusicEnable</a> ()</td></tr>
+<tr class="memdesc:afd3b3772a3b2d335d94e7f67a9213d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn music stopped callback on.  <a href="music_8cpp.html#afd3b3772a3b2d335d94e7f67a9213d2a">More...</a><br /></td></tr>
+<tr class="separator:afd3b3772a3b2d335d94e7f67a9213d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb7edcb0b04fb3b1fa2e35c972dff65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#a6bb7edcb0b04fb3b1fa2e35c972dff65">CallbackMusicDisable</a> ()</td></tr>
+<tr class="memdesc:a6bb7edcb0b04fb3b1fa2e35c972dff65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip the next music stopped callback invocation.  <a href="music_8cpp.html#a6bb7edcb0b04fb3b1fa2e35c972dff65">More...</a><br /></td></tr>
+<tr class="separator:a6bb7edcb0b04fb3b1fa2e35c972dff65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac337e6568da6195ad0dda0e4db95b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="music_8cpp.html#aac337e6568da6195ad0dda0e4db95b5b">CallbackMusicTrigger</a> ()</td></tr>
+<tr class="memdesc:aac337e6568da6195ad0dda0e4db95b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn music stopped callback on and trigger it immediately.  <a href="music_8cpp.html#aac337e6568da6195ad0dda0e4db95b5b">More...</a><br /></td></tr>
+<tr class="separator:aac337e6568da6195ad0dda0e4db95b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a77d1b2bded1dbad162061f472afcfa62"></a>
@@ -120,23 +128,85 @@ music.cpp - Background music support</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0e67e9f74bbf4004fc2b22ca03840125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e67e9f74bbf4004fc2b22ca03840125">&#9670;&nbsp;</a></span>CheckMusicFinished()</h2>
+<a id="a6bb7edcb0b04fb3b1fa2e35c972dff65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb7edcb0b04fb3b1fa2e35c972dff65">&#9670;&nbsp;</a></span>CallbackMusicDisable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CheckMusicFinished </td>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CallbackMusicDisable </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>force</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if music is finished and play the next song. </p>
+<p>Skip the next music stopped callback invocation. </p>
+
+</div>
+</div>
+<a id="afd3b3772a3b2d335d94e7f67a9213d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3b3772a3b2d335d94e7f67a9213d2a">&#9670;&nbsp;</a></span>CallbackMusicEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CallbackMusicEnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn music stopped callback on. </p>
+
+</div>
+</div>
+<a id="aac337e6568da6195ad0dda0e4db95b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac337e6568da6195ad0dda0e4db95b5b">&#9670;&nbsp;</a></span>CallbackMusicTrigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CallbackMusicTrigger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn music stopped callback on and trigger it immediately. </p>
+
+</div>
+</div>
+<a id="a4f7d4f88a02cdd9bb3100db877bbd4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7d4f88a02cdd9bb3100db877bbd4cd">&#9670;&nbsp;</a></span>CheckMusicFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CheckMusicFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 <p>Check if music is finished and play the next song </p>
 
 </div>
@@ -183,48 +253,61 @@ music.cpp - Background music support</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>flag true callback ccl if stops </p>
-<p>Callback for when music has finished Note: we are in the sdl audio thread </p>
+<p>Callback for when music has finished Note: we are in the sdl audio thread, so dispatch an event to the main event loop </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ab9e73c48f7da9765b46b18663cda45e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9e73c48f7da9765b46b18663cda45e5">&#9670;&nbsp;</a></span>CallbackMusic</h2>
+<a id="a83f3d85a6e9c27c14c3ed7c8d0ebc882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f3d85a6e9c27c14c3ed7c8d0ebc882">&#9670;&nbsp;</a></span>IsCallbackEnabled</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool CallbackMusic</td>
+          <td class="memname">volatile bool IsCallbackEnabled = false</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Music ended and we need a new file. </p>
-<p><a class="el" href="classGame.html">Game</a> sound configuration. </p>
-
 </div>
 </div>
-<a id="a9ff7784b83bcf116bdc92cb48c58d522"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ff7784b83bcf116bdc92cb48c58d522">&#9670;&nbsp;</a></span>MusicFinished</h2>
+<a id="a14611e3d239ece1e424bc49e7735c398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14611e3d239ece1e424bc49e7735c398">&#9670;&nbsp;</a></span>MusicFinishedEventQueued</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool MusicFinished</td>
+          <td class="memname">std::atomic_flag MusicFinishedEventQueued = ATOMIC_FLAG_INIT</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>flag is set when a MusicFinishedCallback was enqueued in the event loop and should be handled, and unset when the handler has run. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

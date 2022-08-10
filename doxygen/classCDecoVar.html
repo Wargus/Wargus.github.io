@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -88,11 +88,12 @@ Inheritance diagram for CDecoVar:</div>
  <div class="center">
   <img src="classCDecoVar.png" usemap="#CDecoVar_map" alt=""/>
   <map id="CDecoVar_map" name="CDecoVar_map">
-<area href="classCDecoVarBar.html" alt="CDecoVarBar" shape="rect" coords="0,56,136,80"/>
-<area href="classCDecoVarFrame.html" alt="CDecoVarFrame" shape="rect" coords="146,56,282,80"/>
-<area href="classCDecoVarSpriteBar.html" title="Sprite contains frame from full (left)to empty state (right)." alt="CDecoVarSpriteBar" shape="rect" coords="292,56,428,80"/>
-<area href="classCDecoVarStaticSprite.html" title="use to show specific frame in a sprite." alt="CDecoVarStaticSprite" shape="rect" coords="438,56,574,80"/>
-<area href="classCDecoVarText.html" alt="CDecoVarText" shape="rect" coords="584,56,720,80"/>
+<area href="classCDecoVarAnimatedSprite.html" title="use to show specific frame in a sprite." alt="CDecoVarAnimatedSprite" shape="rect" coords="0,56,157,80"/>
+<area href="classCDecoVarBar.html" alt="CDecoVarBar" shape="rect" coords="167,56,324,80"/>
+<area href="classCDecoVarFrame.html" alt="CDecoVarFrame" shape="rect" coords="334,56,491,80"/>
+<area href="classCDecoVarSpriteBar.html" title="Sprite contains frame from full (left)to empty state (right)." alt="CDecoVarSpriteBar" shape="rect" coords="501,56,658,80"/>
+<area href="classCDecoVarStaticSprite.html" title="use to show specific frame in a sprite." alt="CDecoVarStaticSprite" shape="rect" coords="668,56,825,80"/>
+<area href="classCDecoVarText.html" alt="CDecoVarText" shape="rect" coords="835,56,992,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -105,6 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8218c978431aa4e28337a0a57a713e8b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVar.html#a8218c978431aa4e28337a0a57a713e8b">Draw</a> (int x, int y, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, const <a class="el" href="classCVariable.html">CVariable</a> &amp;var) const =0</td></tr>
 <tr class="memdesc:a8218c978431aa4e28337a0a57a713e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to draw the decorations.  <a href="classCDecoVar.html#a8218c978431aa4e28337a0a57a713e8b">More...</a><br /></td></tr>
 <tr class="separator:a8218c978431aa4e28337a0a57a713e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">unit_draw.cpp - The draw routines for units.</div></td></tr>
+<tr class="memitem:aa5d8245c7a7ff52d6d884ac8c705601f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVar.html#aa5d8245c7a7ff52d6d884ac8c705601f">BoolFlagMatches</a> (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type) const</td></tr>
+<tr class="memdesc:aa5d8245c7a7ff52d6d884ac8c705601f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this decoration defines a condition on boolean flags and if so, if that condition matches.  <a href="classCDecoVar.html#aa5d8245c7a7ff52d6d884ac8c705601f">More...</a><br /></td></tr>
+<tr class="separator:aa5d8245c7a7ff52d6d884ac8c705601f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -152,6 +157,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9411ba1b51558f303dc9ea8e988abbfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVar.html#a9411ba1b51558f303dc9ea8e988abbfe">ShowOpponent</a></td></tr>
 <tr class="memdesc:a9411ba1b51558f303dc9ea8e988abbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true, don't show for allied unit. (but show own units)  <a href="classCDecoVar.html#a9411ba1b51558f303dc9ea8e988abbfe">More...</a><br /></td></tr>
 <tr class="separator:a9411ba1b51558f303dc9ea8e988abbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5f53ea7cb49535fb4e3799cf45cc04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVar.html#aef5f53ea7cb49535fb4e3799cf45cc04">BoolFlagInvert</a></td></tr>
+<tr class="memdesc:aef5f53ea7cb49535fb4e3799cf45cc04"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true, show for opponent unit.  <a href="classCDecoVar.html#aef5f53ea7cb49535fb4e3799cf45cc04">More...</a><br /></td></tr>
+<tr class="separator:aef5f53ea7cb49535fb4e3799cf45cc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5ee351901ec530bfe473096f7c034e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVar.html#a2c5ee351901ec530bfe473096f7c034e">BoolFlag</a></td></tr>
+<tr class="memdesc:a2c5ee351901ec530bfe473096f7c034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">if 1, invert the bool flag check  <a href="classCDecoVar.html#a2c5ee351901ec530bfe473096f7c034e">More...</a><br /></td></tr>
+<tr class="separator:a2c5ee351901ec530bfe473096f7c034e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classDecoration.html">Decoration</a> for user defined variable.</p>
@@ -208,6 +219,33 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa5d8245c7a7ff52d6d884ac8c705601f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d8245c7a7ff52d6d884ac8c705601f">&#9670;&nbsp;</a></span>BoolFlagMatches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDecoVar::BoolFlagMatches </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if this decoration defines a condition on boolean flags and if so, if that condition matches. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the unit type to check against </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the decoration has a condition on a boolean variable and that condition matches, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a8218c978431aa4e28337a0a57a713e8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8218c978431aa4e28337a0a57a713e8b">&#9670;&nbsp;</a></span>Draw()</h2>
 
@@ -256,11 +294,43 @@ Public Attributes</h2></td></tr>
 
 <p>function to draw the decorations. </p>
 
-<p>Implemented in <a class="el" href="classCDecoVarStaticSprite.html#a0559efea5ef2aefe2672cd6cf2dad124">CDecoVarStaticSprite</a>, <a class="el" href="classCDecoVarSpriteBar.html#a482b07ef61dbf61d8f4ba2b62061dc9d">CDecoVarSpriteBar</a>, <a class="el" href="classCDecoVarText.html#ad656d3182bc2b354bfa2c555e0e0379d">CDecoVarText</a>, <a class="el" href="classCDecoVarFrame.html#aad7c3cf228a33b5b3028e1a3af904eeb">CDecoVarFrame</a>, and <a class="el" href="classCDecoVarBar.html#a103a10b586655934e984e76b6fecce5e">CDecoVarBar</a>.</p>
+<p>Implemented in <a class="el" href="classCDecoVarAnimatedSprite.html#a62ef2bf765b5e3870f69748566627991">CDecoVarAnimatedSprite</a>, <a class="el" href="classCDecoVarStaticSprite.html#a0559efea5ef2aefe2672cd6cf2dad124">CDecoVarStaticSprite</a>, <a class="el" href="classCDecoVarSpriteBar.html#a482b07ef61dbf61d8f4ba2b62061dc9d">CDecoVarSpriteBar</a>, <a class="el" href="classCDecoVarText.html#ad656d3182bc2b354bfa2c555e0e0379d">CDecoVarText</a>, <a class="el" href="classCDecoVarFrame.html#aad7c3cf228a33b5b3028e1a3af904eeb">CDecoVarFrame</a>, and <a class="el" href="classCDecoVarBar.html#a103a10b586655934e984e76b6fecce5e">CDecoVarBar</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2c5ee351901ec530bfe473096f7c034e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5ee351901ec530bfe473096f7c034e">&#9670;&nbsp;</a></span>BoolFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CDecoVar::BoolFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if 1, invert the bool flag check </p>
+
+</div>
+</div>
+<a id="aef5f53ea7cb49535fb4e3799cf45cc04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5f53ea7cb49535fb4e3799cf45cc04">&#9670;&nbsp;</a></span>BoolFlagInvert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDecoVar::BoolFlagInvert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if true, show for opponent unit. </p>
+
+</div>
+</div>
 <a id="af207688f012e3d2114a6c7e3d412239d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af207688f012e3d2114a6c7e3d412239d">&#9670;&nbsp;</a></span>HideAllied</h2>
 
@@ -500,13 +570,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/include/<a class="el" href="unittype_8h_source.html">unittype.h</a></li>
+<li>src/unit/<a class="el" href="unit__draw_8cpp.html">unit_draw.cpp</a></li>
 </ul>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

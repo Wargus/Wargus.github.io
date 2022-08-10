@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:a34e46c9d6624fc122bac599f228bf7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7b6599e301d515dbae7458ddb3bdc4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders_8cpp.html#a4c7b6599e301d515dbae7458ddb3bdc4">loadShaders</a> ()</td></tr>
 <tr class="separator:a4c7b6599e301d515dbae7458ddb3bdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceed6e60a4baaefa5052a589c6da61b4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders_8cpp.html#aceed6e60a4baaefa5052a589c6da61b4">RenderWithShaderInternal</a> (SDL_Renderer *renderer, SDL_Window *win, SDL_Texture *backBuffer)</td></tr>
+<tr class="separator:aceed6e60a4baaefa5052a589c6da61b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ee5d333ed2d711b79c63889adae4fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders_8cpp.html#a89ee5d333ed2d711b79c63889adae4fb">RenderWithShader</a> (SDL_Renderer *renderer, SDL_Window *win, SDL_Texture *backBuffer)</td></tr>
 <tr class="separator:a89ee5d333ed2d711b79c63889adae4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6faba529d34854f4cae791f78efadd17"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders_8cpp.html#a6faba529d34854f4cae791f78efadd17">CclGetShader</a> (lua_State *l)</td></tr>
@@ -369,7 +371,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p><b>Description</b></p>
+<p>Get the active shader.</p>
+<p>Example:</p>
+<div class="example"><code>shader_name = <b>GetShader</b>() print(shader_name)</code></div> 
 </div>
 </div>
 <a id="a26b9318f7f0293bfdc62ea93583a8015"></a>
@@ -395,7 +400,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p><b>Description</b></p>
+<p>Get the list of shaders.</p>
+<p>Example:</p>
+<div class="example"><code>shaders = <b>GetShaderNames</b>() for i,name in ipairs(shaders) do print(name) end</code></div> 
 </div>
 </div>
 <a id="a12e0cd21188e4ab0179378aa8039416b"></a>
@@ -421,7 +429,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p><b>Description</b></p>
+<p>Apply a shader.</p>
+<p>Example:</p>
+<div class="example"><code>&ndash; Apply a VHS shader <b>SetShader</b>("VHS")</code></div> 
 </div>
 </div>
 <a id="a34e46c9d6624fc122bac599f228bf7ca"></a>
@@ -610,6 +621,48 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aceed6e60a4baaefa5052a589c6da61b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceed6e60a4baaefa5052a589c6da61b4">&#9670;&nbsp;</a></span>RenderWithShaderInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RenderWithShaderInternal </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>backBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1675,7 +1728,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ashaders_8cpp_html_af143beb265fd5a356411c15eccf156b4"><div class="ttname"><a href="shaders_8cpp.html#af143beb265fd5a356411c15eccf156b4">compileProgramSource</a></div><div class="ttdeci">static GLuint compileProgramSource(std::string source)</div><div class="ttdef"><b>Definition:</b> shaders.cpp:140</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

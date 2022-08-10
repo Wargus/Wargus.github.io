@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="parameters_8h_source.html">parameters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 <code>#include &quot;SDL.h&quot;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;zlib.h&gt;</code><br />
@@ -135,6 +136,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8e29f0e3deb6a853ef6772a8c351fb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7f30e534354c70f70c9279fac599f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFileWriter.html">FileWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iolib_8cpp.html#af7f30e534354c70f70c9279fac599f49">CreateFileWriter</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:af7f30e534354c70f70c9279fac599f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6412772c8192d7224a0730a94aa90a10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iolib_8cpp.html#a6412772c8192d7224a0730a94aa90a10">QuoteArguments</a> (std::vector&lt; std::string &gt; args)</td></tr>
+<tr class="separator:a6412772c8192d7224a0730a94aa90a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="adf545e2153d8b1a78890551d8932c910"></a>
@@ -376,6 +379,25 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6412772c8192d7224a0730a94aa90a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6412772c8192d7224a0730a94aa90a10">&#9670;&nbsp;</a></span>QuoteArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; QuoteArguments </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Quote arguments for usage in calls to system(), popen() and similar. Really only needed on <a class="el" href="classWindows.html">Windows</a>, where all these calls just concatenate all arguments with a space and pass the full string to the next process. </p>
+
+</div>
+</div>
 <a id="a8e29f0e3deb6a853ef6772a8c351fb0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e29f0e3deb6a853ef6772a8c351fb0b">&#9670;&nbsp;</a></span>ReadDataDirectory()</h2>
 
@@ -608,7 +630,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

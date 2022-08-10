@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a423560f8b3e3776babe4b6e11bc30713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7475f2ef7bdddaf6a9db9e5d86fdaf9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgcn_1_1BasicContainer.html#ac7475f2ef7bdddaf6a9db9e5d86fdaf9">_announceDeath</a> (<a class="el" href="classgcn_1_1Widget.html">Widget</a> *widget)=0</td></tr>
 <tr class="separator:ac7475f2ef7bdddaf6a9db9e5d86fdaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d773b7bc715c2e697b875f768b0ea8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgcn_1_1BasicContainer.html#a50d773b7bc715c2e697b875f768b0ea8">isParentOfWidget</a> (<a class="el" href="classgcn_1_1Widget.html">Widget</a> *widget)</td></tr>
+<tr class="separator:a50d773b7bc715c2e697b875f768b0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgcn_1_1Widget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgcn_1_1Widget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgcn_1_1Widget.html">gcn::Widget</a></td></tr>
 <tr class="memitem:aa0bca79afea27b0d8785b3546608a064 inherit pub_methods_classgcn_1_1Widget"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgcn_1_1Widget.html#aa0bca79afea27b0d8785b3546608a064">Widget</a> ()</td></tr>
 <tr class="separator:aa0bca79afea27b0d8785b3546608a064 inherit pub_methods_classgcn_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +471,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a50d773b7bc715c2e697b875f768b0ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d773b7bc715c2e697b875f768b0ea8">&#9670;&nbsp;</a></span>isParentOfWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gcn::BasicContainer::isParentOfWidget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgcn_1_1Widget.html">Widget</a> *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to check if a widget regards this container as parent. This avoids using function calls so it can work with garbage collected widgets from Lua.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the parent pointer of the widget points to this container </dd>
+<dd>
+false if the parent pointer of the widget points to something else </dd></dl>
+
+</div>
+</div>
 <a id="a5feb8f12bbe3c4dc068f32129b197b0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5feb8f12bbe3c4dc068f32129b197b0b">&#9670;&nbsp;</a></span>moveToBottom()</h2>
 
@@ -545,7 +583,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:41 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:34 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classOnlineState-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OnlineState Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -88,7 +89,7 @@ Inheritance diagram for OnlineState:</div>
   <map id="OnlineState_map" name="OnlineState_map">
 <area href="classC2S__ENTERCHAT.html" alt="C2S_ENTERCHAT" shape="rect" coords="345,56,680,80"/>
 <area href="classC2S__LOGONRESPONSE2__OR__C2S__CREATEACCOUNT.html" alt="C2S_LOGONRESPONSE2_OR_C2S_CREATEACCOUNT" shape="rect" coords="345,112,680,136"/>
-<area href="classConnectState.html" alt="ConnectState" shape="rect" coords="345,168,680,192"/>
+<area href="classC2S__SID__AUTH__INFO.html" alt="C2S_SID_AUTH_INFO" shape="rect" coords="345,168,680,192"/>
 <area href="classDisconnectedState.html" alt="DisconnectedState" shape="rect" coords="345,224,680,248"/>
 <area href="classS2C__CHATEVENT.html" alt="S2C_CHATEVENT" shape="rect" coords="345,280,680,304"/>
 <area href="classS2C__CREATEACCOUNT2.html" alt="S2C_CREATEACCOUNT2" shape="rect" coords="345,336,680,360"/>
@@ -96,7 +97,6 @@ Inheritance diagram for OnlineState:</div>
 <area href="classS2C__LOGONRESPONSE2.html" alt="S2C_LOGONRESPONSE2" shape="rect" coords="345,448,680,472"/>
 <area href="classS2C__SID__AUTH__CHECK.html" alt="S2C_SID_AUTH_CHECK" shape="rect" coords="345,504,680,528"/>
 <area href="classS2C__SID__AUTH__INFO.html" alt="S2C_SID_AUTH_INFO" shape="rect" coords="345,560,680,584"/>
-<area href="classS2C__SID__PING.html" alt="S2C_SID_PING" shape="rect" coords="345,616,680,640"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -111,6 +111,31 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa67a3290cdebc97bc0066b485d469fd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#aa67a3290cdebc97bc0066b485d469fd0">send</a> (<a class="el" href="classContext.html">Context</a> *ctx, <a class="el" href="classBNCSOutputStream.html">BNCSOutputStream</a> *buf)</td></tr>
 <tr class="separator:aa67a3290cdebc97bc0066b485d469fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e91582e7d799c4e6a2ada917ec3b69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#a54e91582e7d799c4e6a2ada917ec3b69">handleNull</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:a54e91582e7d799c4e6a2ada917ec3b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadeeda1d659a295b6356955b0203f61f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#aadeeda1d659a295b6356955b0203f61f">handlePing</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:aadeeda1d659a295b6356955b0203f61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4016225dc218f0bd085df539497605f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#ab4016225dc218f0bd085df539497605f">handleChannelList</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:ab4016225dc218f0bd085df539497605f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ded58b4e0499c62877d9fa3f2c0da89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#a6ded58b4e0499c62877d9fa3f2c0da89">handleChatevent</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:a6ded58b4e0499c62877d9fa3f2c0da89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab88e67f82b8c747f6e3d4c5867a9e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#acab88e67f82b8c747f6e3d4c5867a9e9">handleGamelist</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:acab88e67f82b8c747f6e3d4c5867a9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78ffa476c33c44ca0f3c682c6e81cc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#af78ffa476c33c44ca0f3c682c6e81cc1">handleStartAdvertising</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:af78ffa476c33c44ca0f3c682c6e81cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994215bdc473ef417ee15de272d38d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#a994215bdc473ef417ee15de272d38d4b">handleFriendlist</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:a994215bdc473ef417ee15de272d38d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42dcd991226ffefa78d65ab3199e15f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#aa42dcd991226ffefa78d65ab3199e15f">handleUserdata</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:aa42dcd991226ffefa78d65ab3199e15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0173e764bb0d1e279267bced6ee716da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#a0173e764bb0d1e279267bced6ee716da">finishMessage</a> (<a class="el" href="classContext.html">Context</a> *)</td></tr>
+<tr class="separator:a0173e764bb0d1e279267bced6ee716da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd2ab6034915e5fecde44eff009b40a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#a5cd2ab6034915e5fecde44eff009b40a">handleGenericMessages</a> (<a class="el" href="classContext.html">Context</a> *ctx, uint8_t msg)</td></tr>
+<tr class="separator:a5cd2ab6034915e5fecde44eff009b40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a5da89808f54a8aac600209f07a7636fa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineState.html#a5da89808f54a8aac600209f07a7636fa">pingValue</a></td></tr>
+<tr class="separator:a5da89808f54a8aac600209f07a7636fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a756dcc9c8fd07feb37c1a79016fdbb42"></a>
@@ -167,6 +192,276 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0173e764bb0d1e279267bced6ee716da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0173e764bb0d1e279267bced6ee716da">&#9670;&nbsp;</a></span>finishMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::finishMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4016225dc218f0bd085df539497605f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4016225dc218f0bd085df539497605f">&#9670;&nbsp;</a></span>handleChannelList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleChannelList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ded58b4e0499c62877d9fa3f2c0da89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ded58b4e0499c62877d9fa3f2c0da89">&#9670;&nbsp;</a></span>handleChatevent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleChatevent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a994215bdc473ef417ee15de272d38d4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a994215bdc473ef417ee15de272d38d4b">&#9670;&nbsp;</a></span>handleFriendlist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleFriendlist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acab88e67f82b8c747f6e3d4c5867a9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab88e67f82b8c747f6e3d4c5867a9e9">&#9670;&nbsp;</a></span>handleGamelist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleGamelist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cd2ab6034915e5fecde44eff009b40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd2ab6034915e5fecde44eff009b40a">&#9670;&nbsp;</a></span>handleGenericMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OnlineState::handleGenericMessages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54e91582e7d799c4e6a2ada917ec3b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e91582e7d799c4e6a2ada917ec3b69">&#9670;&nbsp;</a></span>handleNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleNull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadeeda1d659a295b6356955b0203f61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadeeda1d659a295b6356955b0203f61f">&#9670;&nbsp;</a></span>handlePing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handlePing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af78ffa476c33c44ca0f3c682c6e81cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78ffa476c33c44ca0f3c682c6e81cc1">&#9670;&nbsp;</a></span>handleStartAdvertising()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleStartAdvertising </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa42dcd991226ffefa78d65ab3199e15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42dcd991226ffefa78d65ab3199e15f">&#9670;&nbsp;</a></span>handleUserdata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> OnlineState::handleUserdata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa67a3290cdebc97bc0066b485d469fd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa67a3290cdebc97bc0066b485d469fd0">&#9670;&nbsp;</a></span>send()</h2>
 
@@ -203,13 +498,36 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5da89808f54a8aac600209f07a7636fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da89808f54a8aac600209f07a7636fa">&#9670;&nbsp;</a></span>pingValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t OnlineState::pingValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/network/<a class="el" href="online__service_8cpp.html">online_service.cpp</a></li>
 </ul>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:41 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:33 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

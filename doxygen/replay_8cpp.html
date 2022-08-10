@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -110,8 +110,6 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogEntry.html">LogEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPPlayer.html">MPPlayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFullReplay.html">FullReplay</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,8 +126,11 @@ replay.cpp - Replay game.</h2></td></tr>
 <tr class="memitem:ac6d25d8a39c19740e7a05e883a0e5f88"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCFile.html">CFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="replay_8cpp.html#ac6d25d8a39c19740e7a05e883a0e5f88">LogFile</a></td></tr>
 <tr class="memdesc:ac6d25d8a39c19740e7a05e883a0e5f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disabled log for replay.  <a href="replay_8cpp.html#ac6d25d8a39c19740e7a05e883a0e5f88">More...</a><br /></td></tr>
 <tr class="separator:ac6d25d8a39c19740e7a05e883a0e5f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4cbbe09d001618eb3549afaf5527d8"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="replay_8cpp.html#aed4cbbe09d001618eb3549afaf5527d8">LastLogFileName</a></td></tr>
+<tr class="memdesc:aed4cbbe09d001618eb3549afaf5527d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replay log file.  <a href="replay_8cpp.html#aed4cbbe09d001618eb3549afaf5527d8">More...</a><br /></td></tr>
+<tr class="separator:aed4cbbe09d001618eb3549afaf5527d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1b35c5f024cb369ebea09c6f62bb840"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="replay_8cpp.html#af1b35c5f024cb369ebea09c6f62bb840">NextLogCycle</a></td></tr>
-<tr class="memdesc:af1b35c5f024cb369ebea09c6f62bb840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replay log file.  <a href="replay_8cpp.html#af1b35c5f024cb369ebea09c6f62bb840">More...</a><br /></td></tr>
+<tr class="memdesc:af1b35c5f024cb369ebea09c6f62bb840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last log file name.  <a href="replay_8cpp.html#af1b35c5f024cb369ebea09c6f62bb840">More...</a><br /></td></tr>
 <tr class="separator:af1b35c5f024cb369ebea09c6f62bb840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae49752d229bde45c3650e1c8574a72b1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="replay_8cpp.html#ae49752d229bde45c3650e1c8574a72b1">InitReplay</a></td></tr>
 <tr class="memdesc:ae49752d229bde45c3650e1c8574a72b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next log cycle number.  <a href="replay_8cpp.html#ae49752d229bde45c3650e1c8574a72b1">More...</a><br /></td></tr>
@@ -950,6 +951,30 @@ replay.cpp - Replay game.</h2></td></tr>
 
 </div>
 </div>
+<a id="aed4cbbe09d001618eb3549afaf5527d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4cbbe09d001618eb3549afaf5527d8">&#9670;&nbsp;</a></span>LastLogFileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LastLogFileName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Replay log file. </p>
+
+</div>
+</div>
 <a id="ac6d25d8a39c19740e7a05e883a0e5f88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6d25d8a39c19740e7a05e883a0e5f88">&#9670;&nbsp;</a></span>LogFile</h2>
 
@@ -994,7 +1019,7 @@ replay.cpp - Replay game.</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Replay log file. </p>
+<p>Last log file name. </p>
 
 </div>
 </div>
@@ -1040,7 +1065,7 @@ replay.cpp - Replay game.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

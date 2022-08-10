@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCOrder__Still.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCOrder__Still.html">COrder_Still</a> : <span class="keyword">public</span> <a class="code" href="classCOrder.html">COrder</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCOrder__Still.html#ac614b7f1693d6177026d815bdc33b409">   40</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classCOrder__Still.html#ac614b7f1693d6177026d815bdc33b409">COrder_Still</a>(<span class="keywordtype">bool</span> stand) : <a class="code" href="classCOrder.html">COrder</a>(stand ? <a class="code" href="actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9af6da1c6751babb8eba7d65cf1755315c">UnitActionStandGround</a> : <a class="code" href="actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9af540bd0057d1480060a6a243c4f170d2">UnitActionStill</a>), State(0) {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCOrder__Still.html#ac614b7f1693d6177026d815bdc33b409">   40</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classCOrder__Still.html#ac614b7f1693d6177026d815bdc33b409">COrder_Still</a>(<span class="keywordtype">bool</span> stand) : <a class="code" href="classCOrder.html">COrder</a>(stand ? <a class="code" href="actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9af6da1c6751babb8eba7d65cf1755315c">UnitActionStandGround</a> : <a class="code" href="actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9af540bd0057d1480060a6a243c4f170d2">UnitActionStill</a>), State(0), Sleep(0) {}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classCOrder__Still.html#a677df809e30ee224b0c04078929d05e1">   42</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCOrder__Still.html">COrder_Still</a> *<a class="code" href="classCOrder__Still.html#a677df809e30ee224b0c04078929d05e1">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classCOrder__Still.html#ac614b7f1693d6177026d815bdc33b409">COrder_Still</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
@@ -133,12 +133,13 @@ $(function() {
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">bool</span> AutoAttackStand(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">bool</span> AutoCastStand(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">int</span> State;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // !__ACTION_STILL_H__</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> State;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> Sleep;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // !__ACTION_STILL_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassCOrder__Still_html_a05e70d197981f122dcb7225877a23f44"><div class="ttname"><a href="classCOrder__Still.html#a05e70d197981f122dcb7225877a23f44">COrder_Still::OnAnimationAttack</a></div><div class="ttdeci">virtual void OnAnimationAttack(CUnit &amp;unit)</div><div class="ttdef"><b>Definition:</b> action_still.cpp:134</div></div>
 <div class="ttc" id="aclassCOrder__Still_html_ac614b7f1693d6177026d815bdc33b409"><div class="ttname"><a href="classCOrder__Still.html#ac614b7f1693d6177026d815bdc33b409">COrder_Still::COrder_Still</a></div><div class="ttdeci">COrder_Still(bool stand)</div><div class="ttdef"><b>Definition:</b> action_still.h:40</div></div>
@@ -153,16 +154,16 @@ $(function() {
 <div class="ttc" id="aclassCOrder__Still_html_a622e08bcf61e81731336736409890a38"><div class="ttname"><a href="classCOrder__Still.html#a622e08bcf61e81731336736409890a38">COrder_Still::Show</a></div><div class="ttdeci">virtual PixelPos Show(const CViewport &amp;vp, const PixelPos &amp;lastScreenPos) const</div><div class="ttdef"><b>Definition:</b> action_still.cpp:103</div></div>
 <div class="ttc" id="aclassCOrder__Still_html_abd943f46e9f9bf187781eac41aba20d8"><div class="ttname"><a href="classCOrder__Still.html#abd943f46e9f9bf187781eac41aba20d8">COrder_Still::Execute</a></div><div class="ttdeci">virtual void Execute(CUnit &amp;unit)</div><div class="ttdef"><b>Definition:</b> action_still.cpp:355</div></div>
 <div class="ttc" id="aactions_8h_html_a415d4b41e405029c0de7dcf19bee1bd9af540bd0057d1480060a6a243c4f170d2"><div class="ttname"><a href="actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9af540bd0057d1480060a6a243c4f170d2">UnitActionStill</a></div><div class="ttdeci">@ UnitActionStill</div><div class="ttdoc">No valid action.</div><div class="ttdef"><b>Definition:</b> actions.h:52</div></div>
-<div class="ttc" id="aclassCOrder_html_a347f8abee4516aa09c289da220966de5"><div class="ttname"><a href="classCOrder.html#a347f8abee4516aa09c289da220966de5">COrder::UpdatePathFinderData_NotCalled</a></div><div class="ttdeci">void UpdatePathFinderData_NotCalled(PathFinderInput &amp;input)</div><div class="ttdef"><b>Definition:</b> actions.cpp:106</div></div>
+<div class="ttc" id="aclassCOrder_html_a347f8abee4516aa09c289da220966de5"><div class="ttname"><a href="classCOrder.html#a347f8abee4516aa09c289da220966de5">COrder::UpdatePathFinderData_NotCalled</a></div><div class="ttdeci">void UpdatePathFinderData_NotCalled(PathFinderInput &amp;input)</div><div class="ttdef"><b>Definition:</b> actions.cpp:114</div></div>
 <div class="ttc" id="aclassCOrder__Still_html_ac23ae2cf355909e5548e366cf5a09fb3"><div class="ttname"><a href="classCOrder__Still.html#ac23ae2cf355909e5548e366cf5a09fb3">COrder_Still::IsValid</a></div><div class="ttdeci">virtual bool IsValid() const</div><div class="ttdef"><b>Definition:</b> action_still.cpp:98</div></div>
 <div class="ttc" id="aclassCOrder__Still_html"><div class="ttname"><a href="classCOrder__Still.html">COrder_Still</a></div><div class="ttdef"><b>Definition:</b> action_still.h:37</div></div>
 <div class="ttc" id="aclassCOrder__Still_html_a677df809e30ee224b0c04078929d05e1"><div class="ttname"><a href="classCOrder__Still.html#a677df809e30ee224b0c04078929d05e1">COrder_Still::Clone</a></div><div class="ttdeci">virtual COrder_Still * Clone() const</div><div class="ttdef"><b>Definition:</b> action_still.h:42</div></div>
 <div class="ttc" id="aclassCFile_html"><div class="ttname"><a href="classCFile.html">CFile</a></div><div class="ttdef"><b>Definition:</b> iolib.h:102</div></div>
-<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:134</div></div>
+<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:135</div></div>
 <div class="ttc" id="aclassCOrder__Still_html_a2b528a3cb4997af257c360bd1d53fce6"><div class="ttname"><a href="classCOrder__Still.html#a2b528a3cb4997af257c360bd1d53fce6">COrder_Still::Save</a></div><div class="ttdeci">virtual void Save(CFile &amp;file, const CUnit &amp;unit) const</div><div class="ttdef"><b>Definition:</b> action_still.cpp:71</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:31 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

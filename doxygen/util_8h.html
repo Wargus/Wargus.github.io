@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -145,10 +145,20 @@ util.h - General utilities.</h2></td></tr>
 <tr class="separator:a5ffa4c677fc71cecd94f140ef9db624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c0228a5dd2abb7bc91f29c88dec5fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a62c0228a5dd2abb7bc91f29c88dec5fb">GetClipboard</a> (std::string &amp;str)</td></tr>
 <tr class="separator:a62c0228a5dd2abb7bc91f29c88dec5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45151b3521fc71ae8203098edb69bbc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a45151b3521fc71ae8203098edb69bbc8">SetClipboard</a> (std::string &amp;str)</td></tr>
+<tr class="separator:a45151b3521fc71ae8203098edb69bbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a532b81815666c3cf143c21e4a5c9fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a1a532b81815666c3cf143c21e4a5c9fc">UTF8GetNext</a> (const std::string &amp;text, int curpos)</td></tr>
 <tr class="separator:a1a532b81815666c3cf143c21e4a5c9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac1eaa21f2fbfe2953fce0cf3786910"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4ac1eaa21f2fbfe2953fce0cf3786910">UTF8GetPrev</a> (const std::string &amp;text, int curpos)</td></tr>
 <tr class="separator:a4ac1eaa21f2fbfe2953fce0cf3786910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1dc4a1e73c832f2a98f95d35415628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0d1dc4a1e73c832f2a98f95d35415628">supportsSSE2</a> ()</td></tr>
+<tr class="separator:a0d1dc4a1e73c832f2a98f95d35415628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6490b8ccb139718eb07b8023604faf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac6490b8ccb139718eb07b8023604faf1">supportsAVX</a> ()</td></tr>
+<tr class="separator:ac6490b8ccb139718eb07b8023604faf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa4eb58b3172d37158f959845f4feb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a7aa4eb58b3172d37158f959845f4feb9">aligned_malloc</a> (size_t alignment, size_t size)</td></tr>
+<tr class="separator:a7aa4eb58b3172d37158f959845f4feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901a6a84dc112555050ce2659e6a93cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a901a6a84dc112555050ce2659e6a93cf">aligned_free</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> *block)</td></tr>
+<tr class="separator:a901a6a84dc112555050ce2659e6a93cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3b0962f967d51c4427fff94cb7f4d07f"></a>
@@ -181,6 +191,52 @@ util.h - General utilities.</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a901a6a84dc112555050ce2659e6a93cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901a6a84dc112555050ce2659e6a93cf">&#9670;&nbsp;</a></span>aligned_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> aligned_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> *&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7aa4eb58b3172d37158f959845f4feb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa4eb58b3172d37158f959845f4feb9">&#9670;&nbsp;</a></span>aligned_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>* aligned_malloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>alignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a907be153363468870f6361aa729d0c6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a907be153363468870f6361aa729d0c6a">&#9670;&nbsp;</a></span>clamp()</h2>
 
@@ -354,6 +410,24 @@ template&lt;typename T &gt; </div>
 
 <p>Syncron rand. </p>
 <p>rand only used on this computer. </p>
+
+</div>
+</div>
+<a id="a45151b3521fc71ae8203098edb69bbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45151b3521fc71ae8203098edb69bbc8">&#9670;&nbsp;</a></span>SetClipboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> SetClipboard </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -560,6 +634,40 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ac6490b8ccb139718eb07b8023604faf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6490b8ccb139718eb07b8023604faf1">&#9670;&nbsp;</a></span>supportsAVX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool supportsAVX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d1dc4a1e73c832f2a98f95d35415628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1dc4a1e73c832f2a98f95d35415628">&#9670;&nbsp;</a></span>supportsSSE2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool supportsSSE2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a294fe13ed3e38a9e7bafc3eed984816e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a294fe13ed3e38a9e7bafc3eed984816e">&#9670;&nbsp;</a></span>SyncRand() <span class="overload">[1/2]</span></h2>
 
@@ -755,7 +863,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

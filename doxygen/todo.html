@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -96,7 +96,7 @@ $(function() {
 <p class="enddd">transporter are more selective now (flag with unittypeland). We must manage it.  </p>
 </dd>
 <dt>Member <a class="el" href="cursor_8cpp.html#aa33468d8021725c8907b637601cca63f">AllCursors</a>  </dt>
-<dd><a class="anchor" id="_todo000120"></a>FIXME: Should this be move to ui part?  </dd>
+<dd><a class="anchor" id="_todo000121"></a>FIXME: Should this be move to ui part?  </dd>
 <dt>Member <a class="el" href="actions_8h.html#adc6573f35a70ad9a467601109916fbd7">AnimateActionAttack</a>  (<a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;unit, <a class="el" href="classCOrder.html">COrder</a> &amp;order)</dt>
 <dd><a class="anchor" id="_todo000002"></a>manage correctly unit with no animation attack.  </dd>
 <dt>Member <a class="el" href="classAutoCastInfo.html#adf7eb7269980004b0e516af61dfd06ba">AutoCastInfo::Range</a>  </dt>
@@ -120,7 +120,7 @@ $(function() {
 <dd><a class="anchor" id="_todo000092"></a>not written. </dd>
 <dt>Member <a class="el" href="script__unit_8cpp.html#acdd39032a1d0913dbd2aadea9eb96af6">CclUnit</a>  (lua_State *l)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000093"></a>Verify that vision table is always correct (transporter) </p>
-<p class="enddd">(PlaceUnit() and host-info).  </p>
+<p class="enddd">(PlaceUnit() and host-info). </p>
 </dd>
 <dt>Class <a class="el" href="classCConstruction.html">CConstruction</a>  </dt>
 <dd><a class="anchor" id="_todo000021"></a> Need ::TilesetByName, ... Only fixed number of constructions supported, more than a single construction frame is not supported, animated constructions aren't supported.  </dd>
@@ -130,6 +130,8 @@ $(function() {
 <dd><a class="anchor" id="_todo000073"></a><a class="el" href="classColor.html">Color</a> and percent value Parametrisation.  </dd>
 <dt>Class <a class="el" href="classCDecoVar.html">CDecoVar</a>  </dt>
 <dd><a class="anchor" id="_todo000039"></a>add more stuff in this struct.  </dd>
+<dt>Member <a class="el" href="classCDecoVarAnimatedSprite.html#a62ef2bf765b5e3870f69748566627991">CDecoVarAnimatedSprite::Draw</a>  (int x, int y, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, const <a class="el" href="classCVariable.html">CVariable</a> &amp;var) const</dt>
+<dd><a class="anchor" id="_todo000109"></a>fix sprite configuration configuration.  </dd>
 <dt>Member <a class="el" href="classCDecoVarBar.html#a103a10b586655934e984e76b6fecce5e">CDecoVarBar::Draw</a>  (int x, int y, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, const <a class="el" href="classCVariable.html">CVariable</a> &amp;var) const</dt>
 <dd><a class="anchor" id="_todo000104"></a>fix color configuration.  </dd>
 <dt>Member <a class="el" href="classCDecoVarFrame.html#aad7c3cf228a33b5b3028e1a3af904eeb">CDecoVarFrame::Draw</a>  (int x, int y, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, const <a class="el" href="classCVariable.html">CVariable</a> &amp;var) const</dt>
@@ -142,16 +144,16 @@ $(function() {
 <dd><a class="anchor" id="_todo000106"></a>fix font/color configuration.  </dd>
 <dt>Class <a class="el" href="classCFile.html">CFile</a>  </dt>
 <dd><a class="anchor" id="_todo000022"></a>zip archive support  </dd>
-<dt>Member <a class="el" href="classCGraphic.html#affabfa062df16d84fea230c70d6e98b3">CGraphic::MakeShadow</a>  ()</dt>
-<dd><a class="anchor" id="_todo000121"></a>FIXME: 32bpp  </dd>
+<dt>Member <a class="el" href="classCGraphic.html#aa60c8e7595db991d6bc1f042b61dcfaa">CGraphic::MakeShadow</a>  (int xOffset, int yOffset)</dt>
+<dd><a class="anchor" id="_todo000122"></a>FIXME: 32bpp  </dd>
 <dt>Member <a class="el" href="intern__video_8h.html#ad6e63efb94d7467eeb2d611047caa952">CLIP_RECTANGLE</a>  (x, y, width, height)</dt>
-<dd><a class="anchor" id="_todo000123"></a>FIXME: not easy to debug, but making it a function needs:<ul>
+<dd><a class="anchor" id="_todo000124"></a>FIXME: not easy to debug, but making it a function needs:<ul>
 <li>pointers to be able to alter given arguments</li>
 <li>special return value to denote 'outside' clipping region (which is now handled by a simple return in caller function) </li>
 </ul>
 </dd>
 <dt>Member <a class="el" href="intern__video_8h.html#ad7192d6be629bfa7fbfa4ecc65dcb074">CLIP_RECTANGLE_OFS</a>  (x, y, width, height, ofsx, ofsy, endx)</dt>
-<dd><a class="anchor" id="_todo000124"></a>FIXME: not easy to debug, but making it a function needs:<ul>
+<dd><a class="anchor" id="_todo000125"></a>FIXME: not easy to debug, but making it a function needs:<ul>
 <li>pointers to be able to alter given arguments</li>
 <li>special return value to denote 'outside' clipping region (which is now handled by a simple return in caller function) </li>
 </ul>
@@ -168,7 +170,7 @@ $(function() {
 <dd><a class="anchor" id="_todo000061"></a>FIXME: We must also notfiy allied players.  </dd>
 <dt>Member <a class="el" href="classCPlayer.html#a0b2998d08b92d1eb5c3a36abb448b24d">CPlayer::Notify</a>  (const char *fmt,...) const PRINTF_VAARG_ATTRIBUTE(2</dt>
 <dd><a class="anchor" id="_todo000062"></a>FIXME: We must also notfiy allied players.  </dd>
-<dt>Member <a class="el" href="settings_8h.html#a02ca7c82426f8881e4c3ee0e596209dd">CreateGame</a>  (const std::string &amp;filename, <a class="el" href="classCMap.html" title="Describes the world map.">CMap</a> *map)</dt>
+<dt>Member <a class="el" href="game_8cpp.html#a02ca7c82426f8881e4c3ee0e596209dd">CreateGame</a>  (const std::string &amp;filename, <a class="el" href="classCMap.html" title="Describes the world map.">CMap</a> *map)</dt>
 <dd><a class="anchor" id="_todo000018"></a>FIXME: use in this function InitModules / LoadModules!!!  </dd>
 <dt>Member <a class="el" href="classCStatusLine.html#a08837d41cb31a595efe26c01f462d94b">CStatusLine::DrawCosts</a>  ()</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000085"></a>FIXME : make DrawCosts more configurable. </p>
@@ -188,12 +190,12 @@ $(function() {
 <dd><a class="anchor" id="_todo000099"></a>radar support </dd>
 <dt>Class <a class="el" href="classCUnitType.html">CUnitType</a>  </dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000040"></a>n0body: AutoBuildRate not implemented. </p>
-<p class="interdd"><a class="anchor" id="_todo000111"></a>continue this documentation</p>
-<p class="interdd"><a class="anchor" id="_todo000112"></a>not used</p>
-<p class="interdd"><a class="anchor" id="_todo000113"></a>The above should be more configurable. If units have a repair range, they can repair, and this is the distance.</p>
-<p class="interdd"><a class="anchor" id="_todo000114"></a>temporary solution</p>
-<p class="interdd"><a class="anchor" id="_todo000115"></a>This stats should? be moved into the player struct</p>
-<p class="enddd"><a class="anchor" id="_todo000116"></a>Should us a general name f.e. Slot here? </p>
+<p class="interdd"><a class="anchor" id="_todo000112"></a>continue this documentation</p>
+<p class="interdd"><a class="anchor" id="_todo000113"></a>not used</p>
+<p class="interdd"><a class="anchor" id="_todo000114"></a>The above should be more configurable. If units have a repair range, they can repair, and this is the distance.</p>
+<p class="interdd"><a class="anchor" id="_todo000115"></a>temporary solution</p>
+<p class="interdd"><a class="anchor" id="_todo000116"></a>This stats should? be moved into the player struct</p>
+<p class="enddd"><a class="anchor" id="_todo000117"></a>Should us a general name f.e. Slot here? </p>
 </dd>
 <dt>Member <a class="el" href="classCUnitType.html#a4de9f1fe59e6b62de7168ad5d0d781eb">CUnitType::Stats</a>  [PlayerMax]</dt>
 <dd><a class="anchor" id="_todo000042"></a>This stats should? be moved into the player struct  </dd>
@@ -204,30 +206,25 @@ $(function() {
 <p class="enddd">If the scroll key is longer pressed the area is scrolled faster.  </p>
 </dd>
 <dt>Member <a class="el" href="unit__draw_8cpp.html#a508dfaa23f4acb1fc3fabb8cd5b70b3f">DrawInformations</a>  (const <a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;unit, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, const PixelPos &amp;screenPos)</dt>
-<dd><a class="anchor" id="_todo000110"></a>FIXME: The different styles should become a function call.  </dd>
+<dd><a class="anchor" id="_todo000111"></a>FIXME: The different styles should become a function call.  </dd>
 <dt>Member <a class="el" href="editloop_8cpp.html#ad3ff66f3f9bcda2952ef5af0e5a6e172">DrawMapCursor</a>  ()</dt>
 <dd><a class="anchor" id="_todo000016"></a>support for bigger cursors (2x2, 3x3 ...)  </dd>
 <dt>Member <a class="el" href="mainscr_8cpp.html#ab3ce35232d456098d6f5c58260910419">DrawResources</a>  ()</dt>
 <dd><a class="anchor" id="_todo000079"></a>FIXME : make DrawResources more configurable (format, font).  </dd>
 <dt>Member <a class="el" href="unit__draw_8cpp.html#a13fb43f5e7ea13632fc4032b8d6949cd">DrawShadow</a>  (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, int frame, const PixelPos &amp;screenPos)</dt>
-<dd><a class="anchor" id="_todo000109"></a>FIXME: combine new shadow code with old shadow code.  </dd>
+<dd><a class="anchor" id="_todo000110"></a>FIXME: combine new shadow code with old shadow code.  </dd>
 <dt>Member <a class="el" href="mainscr_8cpp.html#a321308ac4607c034a6fce5fe4c21755e">DrawTimer</a>  ()</dt>
 <dd><a class="anchor" id="_todo000082"></a>FIXME : make DrawTimer more configurable (Pos, format).  </dd>
-<dt>Member <a class="el" href="unittype_8cpp.html#ac7474b6a7c41bcbc2405398302fa70c1">DrawUnitType</a>  (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCPlayerColorGraphic.html">CPlayerColorGraphic</a> *sprite, int player, int frame, const PixelPos &amp;screenPos)</dt>
-<dd><a class="anchor" id="_todo000119"></a>Do screen position caculation in high level. Better way to handle in x mirrored sprites.  </dd>
+<dt>Member <a class="el" href="unittype_8cpp.html#a50fe3b132728d2a1fea34a440e04f0bb">DrawUnitType</a>  (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCPlayerColorGraphic.html">CPlayerColorGraphic</a> *sprite, int colorIndex, int frame, const PixelPos &amp;screenPos)</dt>
+<dd><a class="anchor" id="_todo000120"></a>Do screen position caculation in high level. Better way to handle in x mirrored sprites.  </dd>
 <dt>Member <a class="el" href="unit_8cpp.html#afa6b89bdbccec3d872231bc18105f1ae">DropOutNearest</a>  (<a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;unit, const Vec2i &amp;goalPos, const <a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> *container)</dt>
 <dd><a class="anchor" id="_todo000036"></a>more docu  </dd>
 <dt>Member <a class="el" href="unit_8cpp.html#a27194e108786a361c739344f403f85ea">DropOutOnSide</a>  (<a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;unit, int heading, const <a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> *container)</dt>
 <dd><a class="anchor" id="_todo000035"></a>more docu  </dd>
-<dt>Member <a class="el" href="editloop_8cpp.html#ae930841ce07566e2440800114d35cd57">EditorActionPlaceUnit</a>  (const Vec2i &amp;pos, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCPlayer.html" title="Revelation types.">CPlayer</a> *player)</dt>
+<dt>Member <a class="el" href="editloop_8cpp.html#ae930841ce07566e2440800114d35cd57">EditorActionPlaceUnit</a>  (const Vec2i &amp;pos, const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCPlayer.html" title="Diplomacy states for CommandDiplomacy.">CPlayer</a> *player)</dt>
 <dd><a class="anchor" id="_todo000015"></a>FIXME: Check if the player has already a start-point.  </dd>
 <dt>Member <a class="el" href="editor_8h.html#a421638b788e3fd0129f0758f22b744c6">EditorSaveMap</a>  (const std::string &amp;file)</dt>
 <dd><a class="anchor" id="_todo000017"></a>FIXME: Check if the map is valid, contains no failures. At least two players, one human slot, every player a startpoint ...  </dd>
-<dt>Member <a class="el" href="metaserver_2main_8cpp.html#af72ffbf669d1fe7972c09f05d66f3e06">EnableDebugPrint</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000125"></a>Needs code cleanup. </p>
-<p class="interdd">Needs compatibility checks. </p>
-<p class="enddd">Needs error message unification.  </p>
-</dd>
 <dt>Member <a class="el" href="script_8cpp.html#adf8b30ef271061aa2cdc79270eba5dbe">EvalNumber</a>  (const <a class="el" href="structNumberDesc.html">NumberDesc</a> *number)</dt>
 <dd><a class="anchor" id="_todo000065"></a>Manage better the error (div/0, unit==NULL, ...).  </dd>
 <dt>Member <a class="el" href="script_8cpp.html#adf8b30ef271061aa2cdc79270eba5dbe">EvalNumber</a>  (const <a class="el" href="structNumberDesc.html">NumberDesc</a> *number)</dt>
@@ -261,7 +258,7 @@ $(function() {
 <dt>Member <a class="el" href="unit_8cpp.html#ace8c59036621b4de5e70f53900325ba9">InReactRange</a>  (const <a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;unit, const <a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;target)</dt>
 <dd><a class="anchor" id="_todo000100"></a>: Do we have to check range from unit.Container pos if unit is bunkered or in transport? </dd>
 <dt>File <a class="el" href="intern__video_8h.html">intern_video.h</a>  </dt>
-<dd><a class="anchor" id="_todo000122"></a>FIXME: Currently some interfaces listed in <a class="el" href="video_8h.html">video.h</a> should be moved in here, this includes possible "extern" declarations in source-files themselves. The doxygen docs looks not good, but now contains all info.  </dd>
+<dd><a class="anchor" id="_todo000123"></a>FIXME: Currently some interfaces listed in <a class="el" href="video_8h.html">video.h</a> should be moved in here, this includes possible "extern" declarations in source-files themselves. The doxygen docs looks not good, but now contains all info.  </dd>
 <dt>Member <a class="el" href="botpanel_8cpp.html#aa29694adb09753b0364f1308e175430e">IsButtonAllowed</a>  (const <a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;unit, const <a class="el" href="classButtonAction.html" title="Action of button.">ButtonAction</a> &amp;buttonaction)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000070"></a>FIXME: better check. (dependency, resource, ...) </p>
 <p class="enddd">FIXME: make difference with impossible and not yet researched.  </p>
@@ -302,7 +299,7 @@ $(function() {
 <dt>Member <a class="el" href="sound_8cpp.html#a3a90b0e0c5710e1faebcf3993ac06ecd">RegisterSound</a>  (const std::vector&lt; std::string &gt; &amp;files)</dt>
 <dd><a class="anchor" id="_todo000055"></a>FIXME: Must handle the errors better.  </dd>
 <dt>Class <a class="el" href="classResourceInfo.html">ResourceInfo</a>  </dt>
-<dd><a class="anchor" id="_todo000117"></a>more configurable. </dd>
+<dd><a class="anchor" id="_todo000118"></a>more configurable. </dd>
 <dt>Member <a class="el" href="spells_8cpp.html#a277d0af399493a733628e26b65f25a03">SelectTargetUnitsOfAutoCast</a>  (<a class="el" href="classCUnit.html" title="The big unit structure.">CUnit</a> &amp;caster, const <a class="el" href="classSpellType.html">SpellType</a> &amp;spell)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000058"></a>FIXME: should be global (for AI) ??? </p>
 <p class="enddd">FIXME: write for position target.  </p>
@@ -335,7 +332,7 @@ $(function() {
 <dd><a class="anchor" id="_todo000006"></a>FIXME: find the best unit (most damaged, ...).  </dd>
 <dt>Member <a class="el" href="unittype_8cpp.html#aba928b4ccc76fb30c2bfb9e4623a08a8">UnitTypeHumanWall</a>  </dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000041"></a>this hardcoded unit-types must be removed!! </p>
-<p class="enddd"><a class="anchor" id="_todo000118"></a>find a way to make it configurable!  </p>
+<p class="enddd"><a class="anchor" id="_todo000119"></a>find a way to make it configurable!  </p>
 </dd>
 <dt>Member <a class="el" href="botpanel_8cpp.html#afaf1e8ab8576deadd99588301fba39de">UpdateButtonPanelMultipleUnits</a>  (std::vector&lt; ButtonAction &gt; *buttonActions)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000071"></a>FIXME : make UpdateButtonPanelMultipleUnits more configurable. </p>
@@ -356,7 +353,7 @@ $(function() {
 </div><!-- PageDoc -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

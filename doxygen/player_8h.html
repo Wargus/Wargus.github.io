@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -88,13 +88,14 @@ $(function() {
 <code>#include &quot;<a class="el" href="include_2color_8h_source.html">color.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="upgrade__structs_8h_source.html">upgrade_structs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vec2i_8h_source.html">vec2i.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
 </div>
 <p><a href="player_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayer.html">CPlayer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revelation types.  <a href="classCPlayer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diplomacy states for CommandDiplomacy.  <a href="classCPlayer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerRace.html">PlayerRace</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,35 +110,12 @@ player.h - The player headerfile.</h2></td></tr>
 <tr class="separator:ac4740046083af08f8642237d361ea9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7ca32a5d3cb08b4cc311155353c3ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a4c7ca32a5d3cb08b4cc311155353c3ac">SPEEDUP_FACTOR</a>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:a4c7ca32a5d3cb08b4cc311155353c3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4692c7c386fca50d00372e18f9bac5bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a4692c7c386fca50d00372e18f9bac5bb">PlayerNumNeutral</a>&#160;&#160;&#160;(<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a> - 1)</td></tr>
-<tr class="separator:a4692c7c386fca50d00372e18f9bac5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed47140a7d2804c3a3b7891b6f84b8e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a2ed47140a7d2804c3a3b7891b6f84b8e">_diplomacy_</a> { <a class="el" href="player_8h.html#a2ed47140a7d2804c3a3b7891b6f84b8ea21ff418a5d38f1dd3690bc339b727a05">DiplomacyAllied</a>, 
 <a class="el" href="player_8h.html#a2ed47140a7d2804c3a3b7891b6f84b8eaf9ac7e8691289012215cb640fe256f90">DiplomacyNeutral</a>, 
 <a class="el" href="player_8h.html#a2ed47140a7d2804c3a3b7891b6f84b8ea92b9526d75d6eacad5cb8d1871dc3342">DiplomacyEnemy</a>, 
 <a class="el" href="player_8h.html#a2ed47140a7d2804c3a3b7891b6f84b8ea5a42cbbea3beb8c42830037662c469ee">DiplomacyCrazy</a>
  }</td></tr>
 <tr class="separator:a2ed47140a7d2804c3a3b7891b6f84b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cdf9d41920e8d673d7bb9168d3eccf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccf">RevealTypes</a> { <a class="el" href="player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccfab3697c5b2c28717e7a3d117b13cdee5b">RevealTypes::cNoRevelation</a>, 
-<a class="el" href="player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccfa641a8a56c16d58d141005a9d1db9f304">RevealTypes::cAllUnits</a>, 
-<a class="el" href="player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccfa0be8a99cfd29edac064d47047a71cb09">RevealTypes::cBuildingsOnly</a>
- }</td></tr>
-<tr class="memdesc:a99cdf9d41920e8d673d7bb9168d3eccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diplomacy states for CommandDiplomacy.  <a href="player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccf">More...</a><br /></td></tr>
-<tr class="separator:a99cdf9d41920e8d673d7bb9168d3eccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3cae3f48dd322d7e0d01358e4940681"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#ab3cae3f48dd322d7e0d01358e4940681">PlayerRacesOld</a> { <a class="el" href="player_8h.html#ab3cae3f48dd322d7e0d01358e4940681a47b933b84867d864dc735569d5121dff">PlayerRaceHuman</a> = 0, 
-<a class="el" href="player_8h.html#ab3cae3f48dd322d7e0d01358e4940681ab2f874861d96eda48726adf35a56a1dd">PlayerRaceOrc</a> = 1
- }</td></tr>
-<tr class="separator:ab3cae3f48dd322d7e0d01358e4940681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e639c45a5bf85cf86fe81234f59c2b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3">PlayerTypes</a> { <br />
-&#160;&#160;<a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a508cc8633b1199f025a118a3ff580ff5">PlayerNeutral</a> = 2, 
-<a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a60429f6824d19ecd0692799065f95a06">PlayerNobody</a> = 3, 
-<a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a5261a842b3d458694d7e7d11c7a4208a">PlayerComputer</a> = 4, 
-<a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a0eafc5adafaab30fd7b44f0a9fb0f03c">PlayerPerson</a> = 5, 
-<br />
-&#160;&#160;<a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a319774412e485a78df259d144496e022">PlayerRescuePassive</a> = 6, 
-<a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3acbde4273d35ee07fbb9b295ca0dca23f">PlayerRescueActive</a> = 7
-<br />
- }</td></tr>
-<tr class="separator:a0e639c45a5bf85cf86fe81234f59c2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc4b6302e217e9dffab38d9dd5c02f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#addc4b6302e217e9dffab38d9dd5c02f8">NotifyType</a> { <a class="el" href="player_8h.html#addc4b6302e217e9dffab38d9dd5c02f8aeb7e8b55b56e9c1adeffe0e0076c0c05">NotifyRed</a>, 
 <a class="el" href="player_8h.html#addc4b6302e217e9dffab38d9dd5c02f8ae3bdba60c8da8f10a2cc4a5eecd770c1">NotifyYellow</a>, 
 <a class="el" href="player_8h.html#addc4b6302e217e9dffab38d9dd5c02f8a3bcec76ea12f0ce6e552645a1c96ec48">NotifyGreen</a>
@@ -145,7 +123,7 @@ player.h - The player headerfile.</h2></td></tr>
 <tr class="separator:addc4b6302e217e9dffab38d9dd5c02f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d99eda37d9d9511c05a105682500846"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a1d99eda37d9d9511c05a105682500846">NumPlayers</a></td></tr>
 <tr class="separator:a1d99eda37d9d9511c05a105682500846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be6b306b4034980b7022a27ed66a048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPlayer.html">CPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a1be6b306b4034980b7022a27ed66a048">Players</a> [<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td></tr>
+<tr class="memitem:a1be6b306b4034980b7022a27ed66a048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPlayer.html">CPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a1be6b306b4034980b7022a27ed66a048">Players</a> [<a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a>]</td></tr>
 <tr class="memdesc:a1be6b306b4034980b7022a27ed66a048"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many player slots used.  <a href="player_8h.html#a1be6b306b4034980b7022a27ed66a048">More...</a><br /></td></tr>
 <tr class="separator:a1be6b306b4034980b7022a27ed66a048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a539a5aa222220aa978fe7710f9739d7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPlayer.html">CPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a539a5aa222220aa978fe7710f9739d7a">ThisPlayer</a></td></tr>
@@ -154,15 +132,15 @@ player.h - The player headerfile.</h2></td></tr>
 <tr class="memitem:a3967abef04bbe141cbcbc41bb5b42ac9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a3967abef04bbe141cbcbc41bb5b42ac9">NoRescueCheck</a></td></tr>
 <tr class="memdesc:a3967abef04bbe141cbcbc41bb5b42ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player on local computer.  <a href="player_8h.html#a3967abef04bbe141cbcbc41bb5b42ac9">More...</a><br /></td></tr>
 <tr class="separator:a3967abef04bbe141cbcbc41bb5b42ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac36a7955bc12bf4801b558a03306717"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCColor.html">CColor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#aac36a7955bc12bf4801b558a03306717">PlayerColorsRGB</a> [<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td></tr>
-<tr class="memdesc:aac36a7955bc12bf4801b558a03306717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable rescue check.  <a href="player_8h.html#aac36a7955bc12bf4801b558a03306717">More...</a><br /></td></tr>
-<tr class="separator:aac36a7955bc12bf4801b558a03306717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f35af0f7f67364e9018a551a142401f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a1f35af0f7f67364e9018a551a142401f">PlayerColors</a> [<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td></tr>
-<tr class="memdesc:a1f35af0f7f67364e9018a551a142401f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player colors.  <a href="player_8h.html#a1f35af0f7f67364e9018a551a142401f">More...</a><br /></td></tr>
-<tr class="separator:a1f35af0f7f67364e9018a551a142401f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dba8d61b066740a2b6e3ed3313b0933"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a3dba8d61b066740a2b6e3ed3313b0933">PlayerColorNames</a> [<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td></tr>
-<tr class="memdesc:a3dba8d61b066740a2b6e3ed3313b0933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player colors.  <a href="player_8h.html#a3dba8d61b066740a2b6e3ed3313b0933">More...</a><br /></td></tr>
-<tr class="separator:a3dba8d61b066740a2b6e3ed3313b0933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c84854cdac29ef18fc3e004950dc4e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classCColor.html">CColor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a04c84854cdac29ef18fc3e004950dc4e">PlayerColorsRGB</a></td></tr>
+<tr class="memdesc:a04c84854cdac29ef18fc3e004950dc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable rescue check.  <a href="player_8h.html#a04c84854cdac29ef18fc3e004950dc4e">More...</a><br /></td></tr>
+<tr class="separator:a04c84854cdac29ef18fc3e004950dc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af437a44cd83b8f7d2aaa41e2bbc1e221"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; SDL_Color &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#af437a44cd83b8f7d2aaa41e2bbc1e221">PlayerColorsSDL</a></td></tr>
+<tr class="memdesc:af437a44cd83b8f7d2aaa41e2bbc1e221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player colors.  <a href="player_8h.html#af437a44cd83b8f7d2aaa41e2bbc1e221">More...</a><br /></td></tr>
+<tr class="separator:af437a44cd83b8f7d2aaa41e2bbc1e221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad633b026f2c2d9cab31b25f8dc900fb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#ad633b026f2c2d9cab31b25f8dc900fb1">PlayerColorNames</a></td></tr>
+<tr class="memdesc:ad633b026f2c2d9cab31b25f8dc900fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player colors.  <a href="player_8h.html#ad633b026f2c2d9cab31b25f8dc900fb1">More...</a><br /></td></tr>
+<tr class="separator:ad633b026f2c2d9cab31b25f8dc900fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af43daf7f30bdafc33c010f367bf642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayerRace.html">PlayerRace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a0af43daf7f30bdafc33c010f367bf642">PlayerRaces</a></td></tr>
 <tr class="memdesc:a0af43daf7f30bdafc33c010f367bf642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player color names.  <a href="player_8h.html#a0af43daf7f30bdafc33c010f367bf642">More...</a><br /></td></tr>
 <tr class="separator:a0af43daf7f30bdafc33c010f367bf642"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,9 +158,9 @@ player.h - The player headerfile.</h2></td></tr>
 <tr class="memitem:a507ac319e633d13b529024ef14dc659e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a507ac319e633d13b529024ef14dc659e">SavePlayers</a> (<a class="el" href="classCFile.html">CFile</a> &amp;file)</td></tr>
 <tr class="memdesc:a507ac319e633d13b529024ef14dc659e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save players.  <a href="player_8h.html#a507ac319e633d13b529024ef14dc659e">More...</a><br /></td></tr>
 <tr class="separator:a507ac319e633d13b529024ef14dc659e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84fc1a469107082db541eeb2f051c893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a84fc1a469107082db541eeb2f051c893">CreatePlayer</a> (int type)</td></tr>
-<tr class="memdesc:a84fc1a469107082db541eeb2f051c893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new player.  <a href="player_8h.html#a84fc1a469107082db541eeb2f051c893">More...</a><br /></td></tr>
-<tr class="separator:a84fc1a469107082db541eeb2f051c893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42580a37296d0eb0643aa7b1875b3ea1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a42580a37296d0eb0643aa7b1875b3ea1">CreatePlayer</a> (<a class="el" href="settings_8h.html#ac96a19353ef4ca8a210ad38cdae5ceec">PlayerTypes</a> type)</td></tr>
+<tr class="memdesc:a42580a37296d0eb0643aa7b1875b3ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new player.  <a href="player_8h.html#a42580a37296d0eb0643aa7b1875b3ea1">More...</a><br /></td></tr>
+<tr class="separator:a42580a37296d0eb0643aa7b1875b3ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8981e425bd510278e2092a2d17d86075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a8981e425bd510278e2092a2d17d86075">PlayersInitAi</a> ()</td></tr>
 <tr class="memdesc:a8981e425bd510278e2092a2d17d86075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the computer opponent AI.  <a href="player_8h.html#a8981e425bd510278e2092a2d17d86075">More...</a><br /></td></tr>
 <tr class="separator:a8981e425bd510278e2092a2d17d86075"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,9 +170,9 @@ player.h - The player headerfile.</h2></td></tr>
 <tr class="memitem:aed41c2545fbd756565ae0d064715395a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#aed41c2545fbd756565ae0d064715395a">PlayersEachSecond</a> (int player)</td></tr>
 <tr class="memdesc:aed41c2545fbd756565ae0d064715395a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each second for a given player handler (AI)  <a href="player_8h.html#aed41c2545fbd756565ae0d064715395a">More...</a><br /></td></tr>
 <tr class="separator:aed41c2545fbd756565ae0d064715395a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dea1fac6d2e74553b3e685d674b415e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a9dea1fac6d2e74553b3e685d674b415e">GraphicPlayerPixels</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCGraphic.html">CGraphic</a> &amp;sprite)</td></tr>
-<tr class="memdesc:a9dea1fac6d2e74553b3e685d674b415e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change current color set to new player of the sprite.  <a href="player_8h.html#a9dea1fac6d2e74553b3e685d674b415e">More...</a><br /></td></tr>
-<tr class="separator:a9dea1fac6d2e74553b3e685d674b415e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027bc651d1bbf018e322842d9ea83b0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a027bc651d1bbf018e322842d9ea83b0b">GraphicPlayerPixels</a> (int colorIndex, const <a class="el" href="classCGraphic.html">CGraphic</a> &amp;sprite)</td></tr>
+<tr class="memdesc:a027bc651d1bbf018e322842d9ea83b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change current color set to the player color of the sprite.  <a href="player_8h.html#a027bc651d1bbf018e322842d9ea83b0b">More...</a><br /></td></tr>
+<tr class="separator:a027bc651d1bbf018e322842d9ea83b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0797f0174df7169c59377a9ae4d2c972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a0797f0174df7169c59377a9ae4d2c972">DebugPlayers</a> ()</td></tr>
 <tr class="memdesc:a0797f0174df7169c59377a9ae4d2c972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output debug information for players.  <a href="player_8h.html#a0797f0174df7169c59377a9ae4d2c972">More...</a><br /></td></tr>
 <tr class="separator:a0797f0174df7169c59377a9ae4d2c972"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,20 +186,6 @@ player.h - The player headerfile.</h2></td></tr>
 <tr class="separator:a278344202b289a9a224b7541b7a519d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4692c7c386fca50d00372e18f9bac5bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4692c7c386fca50d00372e18f9bac5bb">&#9670;&nbsp;</a></span>PlayerNumNeutral</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PlayerNumNeutral&#160;&#160;&#160;(<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a> - 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4c7ca32a5d3cb08b4cc311155353c3ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c7ca32a5d3cb08b4cc311155353c3ac">&#9670;&nbsp;</a></span>SPEEDUP_FACTOR</h2>
 
@@ -326,94 +290,6 @@ player.h - The player headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3cae3f48dd322d7e0d01358e4940681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3cae3f48dd322d7e0d01358e4940681">&#9670;&nbsp;</a></span>PlayerRacesOld</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="player_8h.html#ab3cae3f48dd322d7e0d01358e4940681">PlayerRacesOld</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab3cae3f48dd322d7e0d01358e4940681a47b933b84867d864dc735569d5121dff"></a>PlayerRaceHuman&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3cae3f48dd322d7e0d01358e4940681ab2f874861d96eda48726adf35a56a1dd"></a>PlayerRaceOrc&#160;</td><td class="fielddoc"><p>belongs to human </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a0e639c45a5bf85cf86fe81234f59c2b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e639c45a5bf85cf86fe81234f59c2b3">&#9670;&nbsp;</a></span>PlayerTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3">PlayerTypes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Types for the player</p>
-<p><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a508cc8633b1199f025a118a3ff580ff5">PlayerNeutral</a></p>
-<p>This player is controlled by the computer doing nothing.</p>
-<p><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a60429f6824d19ecd0692799065f95a06" title="neutral">PlayerNobody</a></p>
-<p>This player is unused. Nobody controls this player.</p>
-<p><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a5261a842b3d458694d7e7d11c7a4208a" title="unused slot">PlayerComputer</a></p>
-<p>This player is controlled by the computer. CPlayer::AiNum selects the AI strategy.</p>
-<p><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a0eafc5adafaab30fd7b44f0a9fb0f03c" title="computer player">PlayerPerson</a></p>
-<p>This player is contolled by a person. This can be the player sitting on the local computer or player playing over the network.</p>
-<p><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3a319774412e485a78df259d144496e022" title="human player">PlayerRescuePassive</a></p>
-<p>This player does nothing, the game pieces just sit in the game (being passive)... when a person player moves next to a PassiveRescue unit/building, then it is "rescued" and becomes part of that persons team. If the city center is rescued, than all units of this player are rescued.</p>
-<p><a class="el" href="player_8h.html#a0e639c45a5bf85cf86fe81234f59c2b3acbde4273d35ee07fbb9b295ca0dca23f" title="rescued passive">PlayerRescueActive</a></p>
-<p>This player is controlled by the computer. CPlayer::AiNum selects the AI strategy. Until it is rescued it plays like an ally. The first person which reaches units of this player, can rescue them. If the city center is rescued, than all units of this player are rescued. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e639c45a5bf85cf86fe81234f59c2b3a508cc8633b1199f025a118a3ff580ff5"></a>PlayerNeutral&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0e639c45a5bf85cf86fe81234f59c2b3a60429f6824d19ecd0692799065f95a06"></a>PlayerNobody&#160;</td><td class="fielddoc"><p>neutral </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0e639c45a5bf85cf86fe81234f59c2b3a5261a842b3d458694d7e7d11c7a4208a"></a>PlayerComputer&#160;</td><td class="fielddoc"><p>unused slot </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0e639c45a5bf85cf86fe81234f59c2b3a0eafc5adafaab30fd7b44f0a9fb0f03c"></a>PlayerPerson&#160;</td><td class="fielddoc"><p>computer player </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0e639c45a5bf85cf86fe81234f59c2b3a319774412e485a78df259d144496e022"></a>PlayerRescuePassive&#160;</td><td class="fielddoc"><p>human player </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0e639c45a5bf85cf86fe81234f59c2b3acbde4273d35ee07fbb9b295ca0dca23f"></a>PlayerRescueActive&#160;</td><td class="fielddoc"><p>rescued passive </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a99cdf9d41920e8d673d7bb9168d3eccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99cdf9d41920e8d673d7bb9168d3eccf">&#9670;&nbsp;</a></span>RevealTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="player_8h.html#a99cdf9d41920e8d673d7bb9168d3eccf">RevealTypes</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Diplomacy states for CommandDiplomacy. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a99cdf9d41920e8d673d7bb9168d3eccfab3697c5b2c28717e7a3d117b13cdee5b"></a>cNoRevelation&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a99cdf9d41920e8d673d7bb9168d3eccfa641a8a56c16d58d141005a9d1db9f304"></a>cAllUnits&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a99cdf9d41920e8d673d7bb9168d3eccfa0be8a99cfd29edac064d47047a71cb09"></a>cBuildingsOnly&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a278344202b289a9a224b7541b7a519d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a278344202b289a9a224b7541b7a519d0">&#9670;&nbsp;</a></span>CanSelectMultipleUnits()</h2>
@@ -464,8 +340,8 @@ player.h - The player headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a84fc1a469107082db541eeb2f051c893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84fc1a469107082db541eeb2f051c893">&#9670;&nbsp;</a></span>CreatePlayer()</h2>
+<a id="a42580a37296d0eb0643aa7b1875b3ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42580a37296d0eb0643aa7b1875b3ea1">&#9670;&nbsp;</a></span>CreatePlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,7 +349,7 @@ player.h - The player headerfile.</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CreatePlayer </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="settings_8h.html#ac96a19353ef4ca8a210ad38cdae5ceec">PlayerTypes</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -528,8 +404,8 @@ player.h - The player headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a9dea1fac6d2e74553b3e685d674b415e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dea1fac6d2e74553b3e685d674b415e">&#9670;&nbsp;</a></span>GraphicPlayerPixels()</h2>
+<a id="a027bc651d1bbf018e322842d9ea83b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027bc651d1bbf018e322842d9ea83b0b">&#9670;&nbsp;</a></span>GraphicPlayerPixels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,8 +413,8 @@ player.h - The player headerfile.</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> GraphicPlayerPixels </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>player</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colorIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -554,7 +430,7 @@ player.h - The player headerfile.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change current color set to new player of the sprite. </p>
+<p>Change current color set to the player color of the sprite. </p>
 <p>Change current color set to new player.</p>
 <p>FIXME: use function pointer here.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -765,14 +641,14 @@ player.h - The player headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a3dba8d61b066740a2b6e3ed3313b0933"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dba8d61b066740a2b6e3ed3313b0933">&#9670;&nbsp;</a></span>PlayerColorNames</h2>
+<a id="ad633b026f2c2d9cab31b25f8dc900fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad633b026f2c2d9cab31b25f8dc900fb1">&#9670;&nbsp;</a></span>PlayerColorNames</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string PlayerColorNames[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td>
+          <td class="memname">std::vector&lt;std::string&gt; PlayerColorNames</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -781,36 +657,36 @@ player.h - The player headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f35af0f7f67364e9018a551a142401f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f35af0f7f67364e9018a551a142401f">&#9670;&nbsp;</a></span>PlayerColors</h2>
+<a id="a04c84854cdac29ef18fc3e004950dc4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c84854cdac29ef18fc3e004950dc4e">&#9670;&nbsp;</a></span>PlayerColorsRGB</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a>&gt; PlayerColors[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Player colors. </p>
-
-</div>
-</div>
-<a id="aac36a7955bc12bf4801b558a03306717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac36a7955bc12bf4801b558a03306717">&#9670;&nbsp;</a></span>PlayerColorsRGB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classCColor.html">CColor</a>&gt; PlayerColorsRGB[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="classCColor.html">CColor</a>&gt; &gt; PlayerColorsRGB</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Disable rescue check. </p>
 <p>Colors used for minimap. </p>
+
+</div>
+</div>
+<a id="af437a44cd83b8f7d2aaa41e2bbc1e221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af437a44cd83b8f7d2aaa41e2bbc1e221">&#9670;&nbsp;</a></span>PlayerColorsSDL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;SDL_Color&gt; &gt; PlayerColorsSDL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Player colors. </p>
 
 </div>
 </div>
@@ -838,7 +714,7 @@ player.h - The player headerfile.</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCPlayer.html">CPlayer</a> Players[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td>
+          <td class="memname"><a class="el" href="classCPlayer.html">CPlayer</a> Players[<a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -867,7 +743,7 @@ player.h - The player headerfile.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

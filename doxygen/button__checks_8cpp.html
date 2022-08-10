@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -116,8 +116,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac30847e04a5a2387a6ce332aba51600f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if allowed units exists.  <a href="button__checks_8cpp.html#ac30847e04a5a2387a6ce332aba51600f">More...</a><br /></td></tr>
 <tr class="separator:ac30847e04a5a2387a6ce332aba51600f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3584ad658b9f6dc5912c88e69727ddd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="button__checks_8cpp.html#ad3584ad658b9f6dc5912c88e69727ddd">ButtonCheckUnitsNot</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;button)</td></tr>
-<tr class="memdesc:ad3584ad658b9f6dc5912c88e69727ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if units don't exist.  <a href="button__checks_8cpp.html#ad3584ad658b9f6dc5912c88e69727ddd">More...</a><br /></td></tr>
+<tr class="memdesc:ad3584ad658b9f6dc5912c88e69727ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if not one unit exist.  <a href="button__checks_8cpp.html#ad3584ad658b9f6dc5912c88e69727ddd">More...</a><br /></td></tr>
 <tr class="separator:ad3584ad658b9f6dc5912c88e69727ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74119619b38c5b34afd982c86c45b562"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="button__checks_8cpp.html#a74119619b38c5b34afd982c86c45b562">ButtonCheckUnitsNor</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;button)</td></tr>
+<tr class="memdesc:a74119619b38c5b34afd982c86c45b562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if none of the units exist.  <a href="button__checks_8cpp.html#a74119619b38c5b34afd982c86c45b562">More...</a><br /></td></tr>
+<tr class="separator:a74119619b38c5b34afd982c86c45b562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65cda50c30eb141335d48c9cdb659518"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="button__checks_8cpp.html#a65cda50c30eb141335d48c9cdb659518">ButtonCheckNetwork</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;, const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;)</td></tr>
 <tr class="memdesc:a65cda50c30eb141335d48c9cdb659518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if have network play.  <a href="button__checks_8cpp.html#a65cda50c30eb141335d48c9cdb659518">More...</a><br /></td></tr>
 <tr class="separator:a65cda50c30eb141335d48c9cdb659518"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -618,6 +621,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a74119619b38c5b34afd982c86c45b562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74119619b38c5b34afd982c86c45b562">&#9670;&nbsp;</a></span>ButtonCheckUnitsNor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ButtonCheckUnitsNor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classButtonAction.html">ButtonAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>button</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if none of the units exist. </p>
+<p>Check for button enabled, if none of the units are available.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>Pointer to unit for button. </td></tr>
+    <tr><td class="paramname">button</td><td>Pointer to button to check/enable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if enabled. </dd></dl>
+
+</div>
+</div>
 <a id="ad3584ad658b9f6dc5912c88e69727ddd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3584ad658b9f6dc5912c88e69727ddd">&#9670;&nbsp;</a></span>ButtonCheckUnitsNot()</h2>
 
@@ -644,8 +686,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if units don't exist. </p>
-<p>Check for button enabled, if no unit is available.</p>
+<p>Check if not one unit exist. </p>
+<p>Check for button enabled, if not all units are available.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unit</td><td>Pointer to unit for button. </td></tr>
@@ -816,7 +858,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

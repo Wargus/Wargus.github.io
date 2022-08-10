@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -140,8 +140,13 @@ stratagus.cpp - The main file.</h2></td></tr>
 <tr class="memitem:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a041bc0ec5975683b7cbbed389d0dc0aa">EnableUnitDebug</a></td></tr>
 <tr class="memdesc:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, halt on assertion failures  <a href="stratagus_8cpp.html#a041bc0ec5975683b7cbbed389d0dc0aa">More...</a><br /></td></tr>
 <tr class="separator:a041bc0ec5975683b7cbbed389d0dc0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae278c9dda877182fb0b5b5d44bd8d474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#ae278c9dda877182fb0b5b5d44bd8d474">IsRestart</a></td></tr>
+<tr class="memdesc:ae278c9dda877182fb0b5b5d44bd8d474"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8cpp.html#ae278c9dda877182fb0b5b5d44bd8d474">More...</a><br /></td></tr>
+<tr class="separator:ae278c9dda877182fb0b5b5d44bd8d474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b973e5320a27415296f843da0724e92"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a9b973e5320a27415296f843da0724e92">OriginalArgv</a></td></tr>
+<tr class="memdesc:a9b973e5320a27415296f843da0724e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true, the game skips some things like title screens  <a href="stratagus_8cpp.html#a9b973e5320a27415296f843da0724e92">More...</a><br /></td></tr>
+<tr class="separator:a9b973e5320a27415296f843da0724e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#a3be4118c1d928572b36c6d3e8d6d9f28">IsDebugEnabled</a> {false}</td></tr>
-<tr class="memdesc:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">if enabled, a unit info dump will be created  <a href="stratagus_8cpp.html#a3be4118c1d928572b36c6d3e8d6d9f28">More...</a><br /></td></tr>
 <tr class="separator:a3be4118c1d928572b36c6d3e8d6d9f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd72ad929774d23801f2864f5541b700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stratagus_8cpp.html#afd72ad929774d23801f2864f5541b700">EnableWallsInSinglePlayer</a> {false}</td></tr>
 <tr class="memdesc:afd72ad929774d23801f2864f5541b700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is debug enabled? Flag to pass into lua code.  <a href="stratagus_8cpp.html#afd72ad929774d23801f2864f5541b700">More...</a><br /></td></tr>
@@ -642,6 +647,20 @@ stratagus.cpp - The main file.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="ae278c9dda877182fb0b5b5d44bd8d474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae278c9dda877182fb0b5b5d44bd8d474">&#9670;&nbsp;</a></span>IsRestart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsRestart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>if enabled, a unit info dump will be created </p>
 
 </div>
@@ -678,6 +697,22 @@ stratagus.cpp - The main file.</h2></td></tr>
 <p>Path for data directory. </p>
 <p>Text string: Name, Version, Copyright.</p>
 <p>Name, Version, Copyright </p>
+
+</div>
+</div>
+<a id="a9b973e5320a27415296f843da0724e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b973e5320a27415296f843da0724e92">&#9670;&nbsp;</a></span>OriginalArgv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; OriginalArgv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if true, the game skips some things like title screens </p>
 
 </div>
 </div>
@@ -742,7 +777,7 @@ stratagus.cpp - The main file.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

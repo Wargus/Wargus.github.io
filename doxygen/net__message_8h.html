@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -84,12 +84,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
 </div>
 <p><a href="net__message_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCNetworkHost.html">CNetworkHost</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSetupStateRacesArray.html">ServerSetupStateRacesArray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCServerSetup.html">CServerSetup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +109,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCInitMessage__Welcome.html">CInitMessage_Welcome</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCInitMessage__Map.html">CInitMessage_Map</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCInitMessage__MapFileFragment.html">CInitMessage_MapFileFragment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCInitMessage__State.html">CInitMessage_State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +161,8 @@ net_message.h - The network message header file.</h2></td></tr>
 <a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea86ecd9142dbc2c1eb0bc6d851aa1c278">ICMGo</a>, 
 <br />
 &#160;&#160;<a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea6a839ddd2b95f358e120a1cdc4d6f3fb">ICMAYT</a>, 
-<a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea12d41838f964d3f208a5dd69f65fe4db">ICMIAH</a>
+<a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea12d41838f964d3f208a5dd69f65fe4db">ICMIAH</a>, 
+<a class="el" href="net__message_8h.html#a415e95680bb7cc051bc962f1f141a99ea383e803f86bfbcabea98293501760d1d">ICMMapNeeded</a>
 <br />
  }</td></tr>
 <tr class="separator:a415e95680bb7cc051bc962f1f141a99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +224,12 @@ net_message.h - The network message header file.</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a24f45f4e768b50cdb77b806cb2aa53a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb861ea5a840846cbdc4940ce68d824d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__message_8h.html#adb861ea5a840846cbdc4940ce68d824d">SlotOption</a></td></tr>
+<tr class="separator:adb861ea5a840846cbdc4940ce68d824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa03aae20506b931ef8ab0327d273125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__message_8h.html#afa03aae20506b931ef8ab0327d273125">Computer</a></td></tr>
+<tr class="separator:afa03aae20506b931ef8ab0327d273125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7776d736b265904c8f957e7e215139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__message_8h.html#a6a7776d736b265904c8f957e7e215139">Closed</a></td></tr>
+<tr class="separator:a6a7776d736b265904c8f957e7e215139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="acf8f79c32185d938d986c3331abdcf2d"></a>
@@ -328,7 +340,8 @@ net_message.h - The network message header file.</h2></td></tr>
 <tr><td class="fieldname"><a id="a415e95680bb7cc051bc962f1f141a99ea6a839ddd2b95f358e120a1cdc4d6f3fb"></a>ICMAYT&#160;</td><td class="fielddoc"><p>Client is ready to run. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a415e95680bb7cc051bc962f1f141a99ea12d41838f964d3f208a5dd69f65fe4db"></a>ICMIAH&#160;</td><td class="fielddoc"><p>Server asks are you there. </p>
-<p>Client answers I am here </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a415e95680bb7cc051bc962f1f141a99ea383e803f86bfbcabea98293501760d1d"></a>ICMMapNeeded&#160;</td><td class="fielddoc"><p>Client answers I am here. </p>
 </td></tr>
 </table>
 
@@ -420,10 +433,53 @@ net_message.h - The network message header file.</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6a7776d736b265904c8f957e7e215139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7776d736b265904c8f957e7e215139">&#9670;&nbsp;</a></span>Closed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> Closed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa03aae20506b931ef8ab0327d273125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa03aae20506b931ef8ab0327d273125">&#9670;&nbsp;</a></span>Computer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> Computer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb861ea5a840846cbdc4940ce68d824d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb861ea5a840846cbdc4940ce68d824d">&#9670;&nbsp;</a></span>SlotOption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SlotOption</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

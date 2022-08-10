@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,16 @@ $(function() {
 <div class="title">netconnect.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="online__service_8h_source.html">online_service.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="netconnect_8h_source.html">netconnect.h</a>&quot;</code><br />
@@ -112,14 +121,11 @@ netconnect.cpp - The network high level connection code.</h2></td></tr>
 <tr class="separator:a1a05d6693178363f6756c2aa067d6a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d60beeaef695d9ec5d9ca6119d6f7f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a4d60beeaef695d9ec5d9ca6119d6f7f6">CLIENT_IS_DEAD</a>&#160;&#160;&#160;300</td></tr>
 <tr class="separator:a4d60beeaef695d9ec5d9ca6119d6f7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b945f5aedea5d50e830677599c550cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a7b945f5aedea5d50e830677599c550cc">HostsCount</a></td></tr>
-<tr class="memdesc:a7b945f5aedea5d50e830677599c550cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network players.  <a href="netconnect_8cpp.html#a7b945f5aedea5d50e830677599c550cc">More...</a><br /></td></tr>
-<tr class="separator:a7b945f5aedea5d50e830677599c550cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5fffa932443f11ea4dcb4fe496bc03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCNetworkHost.html">CNetworkHost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#aae5fffa932443f11ea4dcb4fe496bc03">Hosts</a> [<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td></tr>
-<tr class="memdesc:aae5fffa932443f11ea4dcb4fe496bc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of hosts.  <a href="netconnect_8cpp.html#aae5fffa932443f11ea4dcb4fe496bc03">More...</a><br /></td></tr>
+<tr class="memitem:aae5fffa932443f11ea4dcb4fe496bc03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCNetworkHost.html">CNetworkHost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#aae5fffa932443f11ea4dcb4fe496bc03">Hosts</a> [<a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a>]</td></tr>
+<tr class="memdesc:aae5fffa932443f11ea4dcb4fe496bc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network players.  <a href="netconnect_8cpp.html#aae5fffa932443f11ea4dcb4fe496bc03">More...</a><br /></td></tr>
 <tr class="separator:aae5fffa932443f11ea4dcb4fe496bc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab28cba8e30a37d320b492fcd113815a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#ab28cba8e30a37d320b492fcd113815a7">NetConnectRunning</a> = 0</td></tr>
-<tr class="memdesc:ab28cba8e30a37d320b492fcd113815a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host and ports of all players.  <a href="netconnect_8cpp.html#ab28cba8e30a37d320b492fcd113815a7">More...</a><br /></td></tr>
+<tr class="memdesc:ab28cba8e30a37d320b492fcd113815a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host, ports, and assigned player numbers of all players.  <a href="netconnect_8cpp.html#ab28cba8e30a37d320b492fcd113815a7">More...</a><br /></td></tr>
 <tr class="separator:ab28cba8e30a37d320b492fcd113815a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae900b94cad9f50fa7e20ceb038aad6ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#ae900b94cad9f50fa7e20ceb038aad6ad">NetConnectType</a> = 0</td></tr>
 <tr class="memdesc:ae900b94cad9f50fa7e20ceb038aad6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network menu: Setup mode active.  <a href="netconnect_8cpp.html#ae900b94cad9f50fa7e20ceb038aad6ad">More...</a><br /></td></tr>
@@ -136,9 +142,12 @@ netconnect.cpp - The network high level connection code.</h2></td></tr>
 <tr class="memitem:a4bb55efed1eb903f40e3ff7e3b08e40e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a4bb55efed1eb903f40e3ff7e3b08e40e">NetworkMapName</a></td></tr>
 <tr class="memdesc:a4bb55efed1eb903f40e3ff7e3b08e40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many network players.  <a href="netconnect_8cpp.html#a4bb55efed1eb903f40e3ff7e3b08e40e">More...</a><br /></td></tr>
 <tr class="separator:a4bb55efed1eb903f40e3ff7e3b08e40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae7f8d8b60b59046e13ba0051bb5bdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a0ae7f8d8b60b59046e13ba0051bb5bdd">NoRandomPlacementMultiplayer</a> = 0</td></tr>
-<tr class="memdesc:a0ae7f8d8b60b59046e13ba0051bb5bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the map received with ICMMap.  <a href="netconnect_8cpp.html#a0ae7f8d8b60b59046e13ba0051bb5bdd">More...</a><br /></td></tr>
-<tr class="separator:a0ae7f8d8b60b59046e13ba0051bb5bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36020b2053947b74edc283140cb4a219"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a36020b2053947b74edc283140cb4a219">NetworkMapFragmentName</a></td></tr>
+<tr class="memdesc:a36020b2053947b74edc283140cb4a219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the map received with ICMMap.  <a href="netconnect_8cpp.html#a36020b2053947b74edc283140cb4a219">More...</a><br /></td></tr>
+<tr class="separator:a36020b2053947b74edc283140cb4a219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f69d61332e5aa3a2a7665b884941b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#ab4f69d61332e5aa3a2a7665b884941b9">NoRandomPlacementMultiplayer</a> = false</td></tr>
+<tr class="memdesc:ab4f69d61332e5aa3a2a7665b884941b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the map currently loading via ICMMapNeeded.  <a href="netconnect_8cpp.html#ab4f69d61332e5aa3a2a7665b884941b9">More...</a><br /></td></tr>
+<tr class="separator:ab4f69d61332e5aa3a2a7665b884941b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63264fb5e6786f3e88ba09a167ac8f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCServerSetup.html">CServerSetup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a63264fb5e6786f3e88ba09a167ac8f95">ServerSetupState</a></td></tr>
 <tr class="memdesc:a63264fb5e6786f3e88ba09a167ac8f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the random placement of players in muliplayer mode.  <a href="netconnect_8cpp.html#a63264fb5e6786f3e88ba09a167ac8f95">More...</a><br /></td></tr>
 <tr class="separator:a63264fb5e6786f3e88ba09a167ac8f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +216,8 @@ netconnect.cpp - The network high level connection code.</h2></td></tr>
 <tr class="separator:af13dd0c075c4495bf759425418a820f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d1f2217ac2c8c7f99b3f00d74105b01"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a1d1f2217ac2c8c7f99b3f00d74105b01">CclNoRandomPlacementMultiplayer</a> (lua_State *l)</td></tr>
 <tr class="separator:a1d1f2217ac2c8c7f99b3f00d74105b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0d1a6c0a9199751fbef887c0a777f8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#aad0d1a6c0a9199751fbef887c0a777f8">CclUsesRandomPlacementMultiplayer</a> (lua_State *l)</td></tr>
+<tr class="separator:aad0d1a6c0a9199751fbef887c0a777f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8c45fd0e0adab0dddd6ce6c46f6536"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#a6e8c45fd0e0adab0dddd6ce6c46f6536">CclNetworkDiscoverServers</a> (lua_State *l)</td></tr>
 <tr class="separator:a6e8c45fd0e0adab0dddd6ce6c46f6536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff0dae072f5a24a10bea21dcb2b3a7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8cpp.html#aeff0dae072f5a24a10bea21dcb2b3a7b">NetworkCclRegister</a> ()</td></tr>
@@ -291,7 +302,40 @@ netconnect.cpp - The network high level connection code.</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Removes Randomization of Player position in Multiplayer mode</p>
+<p>Controls Randomization of Player position in Multiplayer mode. Without arguments, disables randomization. Otherwise, sets the NoRandomization flag to the boolean argument value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad0d1a6c0a9199751fbef887c0a777f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0d1a6c0a9199751fbef887c0a777f8">&#9670;&nbsp;</a></span>CclUsesRandomPlacementMultiplayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclUsesRandomPlacementMultiplayer </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return if player positions in multiplayer mode are randomized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l</td><td>Lua state. </td></tr>
@@ -513,7 +557,7 @@ netconnect.cpp - The network high level connection code.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Server user has finally hit the start game button. </p>
-<p>Multiplayer network game final race and player type setup. </p>
+<p>Multiplayer network game final copy of server settings to game settings. </p>
 
 </div>
 </div>
@@ -851,7 +895,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Server user has finally hit the start game button </p>
+<p>Server user has finally hit the start game button. (This is run on the server) </p>
 
 </div>
 </div>
@@ -923,23 +967,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCNetworkHost.html">CNetworkHost</a> Hosts[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Number of hosts. </p>
-
-</div>
-</div>
-<a id="a7b945f5aedea5d50e830677599c550cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b945f5aedea5d50e830677599c550cc">&#9670;&nbsp;</a></span>HostsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int HostsCount</td>
+          <td class="memname"><a class="el" href="classCNetworkHost.html">CNetworkHost</a> Hosts[<a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -991,6 +1019,8 @@ template&lt;typename T &gt; </div>
 <div class="line">        <span class="stringliteral">&quot;Go&quot;</span>,                      </div>
 <div class="line">        <span class="stringliteral">&quot;AreYouThere&quot;</span>,             </div>
 <div class="line">        <span class="stringliteral">&quot;IAmHere&quot;</span>,                 </div>
+<div class="line"> </div>
+<div class="line">        <span class="stringliteral">&quot;MapNeeded&quot;</span>,               </div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -1063,6 +1093,7 @@ template&lt;typename T &gt; </div>
 <div class="line">        <span class="stringliteral">&quot;ccs_started&quot;</span>,             </div>
 <div class="line">        <span class="stringliteral">&quot;ccs_incompatibleengine&quot;</span>,  </div>
 <div class="line">        <span class="stringliteral">&quot;ccs_incompatibleluafiles&quot;</span>, </div>
+<div class="line">        <span class="stringliteral">&quot;ccs_needmap&quot;</span>,             </div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -1079,7 +1110,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Host and ports of all players. </p>
+<p>Host, ports, and assigned player numbers of all players. </p>
 <p>Host, port, and number of all players. </p>
 
 </div>
@@ -1148,6 +1179,22 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a36020b2053947b74edc283140cb4a219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36020b2053947b74edc283140cb4a219">&#9670;&nbsp;</a></span>NetworkMapFragmentName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NetworkMapFragmentName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the map received with ICMMap. </p>
+
+</div>
+</div>
 <a id="a4bb55efed1eb903f40e3ff7e3b08e40e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bb55efed1eb903f40e3ff7e3b08e40e">&#9670;&nbsp;</a></span>NetworkMapName</h2>
 
@@ -1165,19 +1212,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0ae7f8d8b60b59046e13ba0051bb5bdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ae7f8d8b60b59046e13ba0051bb5bdd">&#9670;&nbsp;</a></span>NoRandomPlacementMultiplayer</h2>
+<a id="ab4f69d61332e5aa3a2a7665b884941b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f69d61332e5aa3a2a7665b884941b9">&#9670;&nbsp;</a></span>NoRandomPlacementMultiplayer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int NoRandomPlacementMultiplayer = 0</td>
+          <td class="memname">bool NoRandomPlacementMultiplayer = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Name of the map received with ICMMap. </p>
+<p>Name of the map currently loading via ICMMapNeeded. </p>
 <p>Network menu: Multiplayer Client Menu selections local state. </p>
 
 </div>
@@ -1217,14 +1264,14 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Disable the random placement of players in muliplayer mode. </p>
-<p>Name of the map received with ICMMap. </p>
+<p>Name of the map currently loading via ICMMapNeeded. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

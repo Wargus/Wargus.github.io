@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,7 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Copyright (c) 2004, 2005 darkbits                        Js_./</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * Per Larsson a.k.a finalman                          _RqZ{a&lt;^_aa</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * Olof Naessén a.k.a jansem/yakslem                _asww7!uY`&gt;  )\a//</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * Olof Naessï¿½n a.k.a jansem/yakslem                _asww7!uY`&gt;  )\a//</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *                                                 _Qhm`] _f &quot;&#39;c  1!5m</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Visit: http://guichan.darkbits.org             )Qk&lt;P ` _: :+&#39; .&#39;  &quot;{[</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *                                               .)j(] .d_/ &#39;-(  P .   S</span></div>
@@ -159,22 +159,28 @@ $(function() {
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> _announceDeath(<a class="code" href="classgcn_1_1Widget.html">Widget</a> *widget) = 0;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    };</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // end GCN_BASICCONTAINER_HPP</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classgcn_1_1BasicContainer.html#a50d773b7bc715c2e697b875f768b0ea8">  125</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgcn_1_1BasicContainer.html#a50d773b7bc715c2e697b875f768b0ea8">isParentOfWidget</a>(<a class="code" href="classgcn_1_1Widget.html">Widget</a> *widget) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">return</span> widget-&gt;<a class="code" href="classgcn_1_1Widget.html#aa45201a4f20d91ebb6371bb5c5726b8b">mParent</a> == <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    };</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // end GCN_BASICCONTAINER_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassgcn_1_1BasicContainer_html_a8b8486a14daf5809da70d19603dbf607"><div class="ttname"><a href="classgcn_1_1BasicContainer.html#a8b8486a14daf5809da70d19603dbf607">gcn::BasicContainer::~BasicContainer</a></div><div class="ttdeci">virtual ~BasicContainer()</div><div class="ttdef"><b>Definition:</b> basiccontainer.h:77</div></div>
 <div class="ttc" id="agraphics_8h_html"><div class="ttname"><a href="graphics_8h.html">graphics.h</a></div></div>
 <div class="ttc" id="aplatform_8h_html_ad35720164f68b93af6694d52731e0bed"><div class="ttname"><a href="platform_8h.html#ad35720164f68b93af6694d52731e0bed">GCN_CORE_DECLSPEC</a></div><div class="ttdeci">#define GCN_CORE_DECLSPEC</div><div class="ttdef"><b>Definition:</b> platform.h:59</div></div>
+<div class="ttc" id="aclassgcn_1_1BasicContainer_html_a50d773b7bc715c2e697b875f768b0ea8"><div class="ttname"><a href="classgcn_1_1BasicContainer.html#a50d773b7bc715c2e697b875f768b0ea8">gcn::BasicContainer::isParentOfWidget</a></div><div class="ttdeci">bool isParentOfWidget(Widget *widget)</div><div class="ttdef"><b>Definition:</b> basiccontainer.h:125</div></div>
 <div class="ttc" id="aclassgcn_1_1BasicContainer_html"><div class="ttname"><a href="classgcn_1_1BasicContainer.html">gcn::BasicContainer</a></div><div class="ttdef"><b>Definition:</b> basiccontainer.h:73</div></div>
 <div class="ttc" id="anamespacegcn_html"><div class="ttname"><a href="namespacegcn.html">gcn</a></div><div class="ttdef"><b>Definition:</b> cliprectangle.cpp:61</div></div>
 <div class="ttc" id="awidget_8h_html"><div class="ttname"><a href="widget_8h.html">widget.h</a></div></div>
+<div class="ttc" id="aclassgcn_1_1Widget_html_aa45201a4f20d91ebb6371bb5c5726b8b"><div class="ttname"><a href="classgcn_1_1Widget.html#aa45201a4f20d91ebb6371bb5c5726b8b">gcn::Widget::mParent</a></div><div class="ttdeci">BasicContainer * mParent</div><div class="ttdef"><b>Definition:</b> widget.h:695</div></div>
 <div class="ttc" id="aplatform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div></div>
 <div class="ttc" id="aclassgcn_1_1Widget_html"><div class="ttname"><a href="classgcn_1_1Widget.html">gcn::Widget</a></div><div class="ttdef"><b>Definition:</b> widget.h:93</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:31 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

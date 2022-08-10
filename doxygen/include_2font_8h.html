@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -113,6 +113,9 @@ include/font.h - The font headerfile.</h2></td></tr>
 <tr class="separator:a8129b93753e2a7b53d7648a1d847a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa446570b98e3fe1848a6ec80fc31aa4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2font_8h.html#aa446570b98e3fe1848a6ec80fc31aa4e">FontGrey</a>&#160;&#160;&#160;&quot;grey&quot;</td></tr>
 <tr class="separator:aa446570b98e3fe1848a6ec80fc31aa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df046c57d2a67f5adb2a6b5b82b2f4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2font_8h.html#a4df046c57d2a67f5adb2a6b5b82b2f4c">FontCodePage</a></td></tr>
+<tr class="memdesc:a4df046c57d2a67f5adb2a6b5b82b2f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">true when GameFont is provided  <a href="include_2font_8h.html#a4df046c57d2a67f5adb2a6b5b82b2f4c">More...</a><br /></td></tr>
+<tr class="separator:a4df046c57d2a67f5adb2a6b5b82b2f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c8f2249309b0b04ce2e2c5d3096aa7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFont.html">CFont</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2font_8h.html#a9c8f2249309b0b04ce2e2c5d3096aa7e">GetSmallFont</a> ()</td></tr>
 <tr class="separator:a9c8f2249309b0b04ce2e2c5d3096aa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea88411556e3012f56ce747f8ed1089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFont.html">CFont</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2font_8h.html#a9ea88411556e3012f56ce747f8ed1089">GetGameFont</a> ()</td></tr>
@@ -122,7 +125,7 @@ include/font.h - The font headerfile.</h2></td></tr>
 <tr class="memdesc:ace32afb03c93199e4ddfaefdccee886b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal font used in game.  <a href="include_2font_8h.html#ace32afb03c93199e4ddfaefdccee886b">More...</a><br /></td></tr>
 <tr class="separator:ace32afb03c93199e4ddfaefdccee886b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a457d4ec96d92b4d1d8c8eefe6900c85c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2font_8h.html#a457d4ec96d92b4d1d8c8eefe6900c85c">SetDefaultTextColors</a> (const std::string &amp;normal, const std::string &amp;reverse)</td></tr>
-<tr class="memdesc:a457d4ec96d92b4d1d8c8eefe6900c85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">true when GameFont is provided  <a href="include_2font_8h.html#a457d4ec96d92b4d1d8c8eefe6900c85c">More...</a><br /></td></tr>
+<tr class="memdesc:a457d4ec96d92b4d1d8c8eefe6900c85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default text colors for normal and reverse text.  <a href="include_2font_8h.html#a457d4ec96d92b4d1d8c8eefe6900c85c">More...</a><br /></td></tr>
 <tr class="separator:a457d4ec96d92b4d1d8c8eefe6900c85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adabe0ecb3e31de822b4aba50ebaf888f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2font_8h.html#adabe0ecb3e31de822b4aba50ebaf888f">GetDefaultTextColors</a> (std::string &amp;normalp, std::string &amp;reversep)</td></tr>
 <tr class="memdesc:adabe0ecb3e31de822b4aba50ebaf888f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default text colors for normal and reverse text.  <a href="include_2font_8h.html#adabe0ecb3e31de822b4aba50ebaf888f">More...</a><br /></td></tr>
@@ -461,8 +464,7 @@ include/font.h - The font headerfile.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>true when GameFont is provided </p>
-<p>Set the default text colors for normal and reverse text</p>
+<p>Set the default text colors for normal and reverse text. </p>
 <p>Set the default text colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -474,10 +476,27 @@ include/font.h - The font headerfile.</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a4df046c57d2a67f5adb2a6b5b82b2f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df046c57d2a67f5adb2a6b5b82b2f4c">&#9670;&nbsp;</a></span>FontCodePage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FontCodePage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true when GameFont is provided </p>
+
+</div>
+</div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

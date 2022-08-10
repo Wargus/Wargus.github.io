@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -132,31 +132,36 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCOrder__Build.html#aef58ab7736548c478d631b82dcf03f28">ParseSpecificData</a>(lua_State *l, <span class="keywordtype">int</span> &amp;j, <span class="keyword">const</span> <span class="keywordtype">char</span> *value, <span class="keyword">const</span> <a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#a6461aa7257aba0e4e8c3e8324be30488">Execute</a>(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classVec2T.html">PixelPos</a> <a class="code" href="classCOrder__Build.html#a7223cbb9335e11e9c06563306fc1dc81">Show</a>(<span class="keyword">const</span> <a class="code" href="classCViewport.html">CViewport</a> &amp;vp, <span class="keyword">const</span> <a class="code" href="classVec2T.html">PixelPos</a> &amp;lastScreenPos) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#aa5146f174abd88717cb7c8e01cb51a12">UpdatePathFinderData</a>(<a class="code" href="classPathFinderInput.html">PathFinderInput</a> &amp;input);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#a1a6d9c99131af7f9fa924bbce7c8e224">AiUnitKilled</a>(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classCOrder__Build.html#aaf74ac1dc516619f619e5fa996ff9824">   60</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="classCUnitType.html">CUnitType</a> &amp;<a class="code" href="classCOrder__Build.html#aaf74ac1dc516619f619e5fa996ff9824">GetUnitType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *Type; }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classVec2T.html">Vec2i</a> <a class="code" href="classCOrder__Build.html#afce94251a3b6b020b053d83ac2d6d91b">GetGoalPos</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#aba5bdf2b53aa30b0505eb83e24a8409d">Cancel</a>(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classVec2T.html">PixelPos</a> <a class="code" href="classCOrder__Build.html#a7223cbb9335e11e9c06563306fc1dc81">Show</a>(<span class="keyword">const</span> <a class="code" href="classCViewport.html">CViewport</a> &amp;vp, <span class="keyword">const</span> <a class="code" href="classVec2T.html">PixelPos</a> &amp;lastScreenPos) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#aa5146f174abd88717cb7c8e01cb51a12">UpdatePathFinderData</a>(<a class="code" href="classPathFinderInput.html">PathFinderInput</a> &amp;input);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#aefefde552823bafca8efa4bc08c1727a">UpdateUnitVariables</a>(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCOrder__Build.html#a1a6d9c99131af7f9fa924bbce7c8e224">AiUnitKilled</a>(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> MoveToLocation(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *CheckCanBuild(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">bool</span> StartBuilding(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit, <a class="code" href="classCUnit.html">CUnit</a> &amp;ontop);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> BuildFromOutside(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classCOrder__Build.html#aaf74ac1dc516619f619e5fa996ff9824">   63</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="classCUnitType.html">CUnitType</a> &amp;<a class="code" href="classCOrder__Build.html#aaf74ac1dc516619f619e5fa996ff9824">GetUnitType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *Type; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classVec2T.html">Vec2i</a> <a class="code" href="classCOrder__Build.html#afce94251a3b6b020b053d83ac2d6d91b">GetGoalPos</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *<a class="code" href="classCOrder__Build.html#af0ebf7c36c04a547e88425d81c606e75">GetBuildingUnit</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classCUnitType.html">CUnitType</a> *Type;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classCUnitPtr.html">CUnitPtr</a> BuildingUnit;  </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> State;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">int</span> Range;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classVec2T.html">Vec2i</a> goalPos;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // !__ACTION_BUILD_H__</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">bool</span> MoveToLocation(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classCUnit.html">CUnit</a> *CheckCanBuild(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">bool</span> StartBuilding(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit, <a class="code" href="classCUnit.html">CUnit</a> &amp;ontop);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> BuildFromOutside(<a class="code" href="classCUnit.html">CUnit</a> &amp;unit) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classCUnitType.html">CUnitType</a> *Type;        </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classCUnitPtr.html">CUnitPtr</a> BuildingUnit;  </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">int</span> State;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">int</span> Range;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classVec2T.html">Vec2i</a> goalPos;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // !__ACTION_BUILD_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassCOrder__Build_html_aaf74ac1dc516619f619e5fa996ff9824"><div class="ttname"><a href="classCOrder__Build.html#aaf74ac1dc516619f619e5fa996ff9824">COrder_Build::GetUnitType</a></div><div class="ttdeci">const CUnitType &amp; GetUnitType() const</div><div class="ttdef"><b>Definition:</b> action_build.h:60</div></div>
+<div class="ttc" id="aclassCOrder__Build_html_aaf74ac1dc516619f619e5fa996ff9824"><div class="ttname"><a href="classCOrder__Build.html#aaf74ac1dc516619f619e5fa996ff9824">COrder_Build::GetUnitType</a></div><div class="ttdeci">const CUnitType &amp; GetUnitType() const</div><div class="ttdef"><b>Definition:</b> action_build.h:63</div></div>
 <div class="ttc" id="aclassCOrder__Build_html_a1a6d9c99131af7f9fa924bbce7c8e224"><div class="ttname"><a href="classCOrder__Build.html#a1a6d9c99131af7f9fa924bbce7c8e224">COrder_Build::AiUnitKilled</a></div><div class="ttdeci">virtual void AiUnitKilled(CUnit &amp;unit)</div><div class="ttdef"><b>Definition:</b> action_build.cpp:170</div></div>
 <div class="ttc" id="aactions_8h_html_a415d4b41e405029c0de7dcf19bee1bd9aa0c59a55059f2caec2234f39e0c7cf1c"><div class="ttname"><a href="actions_8h.html#a415d4b41e405029c0de7dcf19bee1bd9aa0c59a55059f2caec2234f39e0c7cf1c">UnitActionBuild</a></div><div class="ttdeci">@ UnitActionBuild</div><div class="ttdoc">unit paroling area</div><div class="ttdef"><b>Definition:</b> actions.h:72</div></div>
 <div class="ttc" id="aclassCUnitPtr_html"><div class="ttname"><a href="classCUnitPtr.html">CUnitPtr</a></div><div class="ttdef"><b>Definition:</b> unitptr.h:41</div></div>
@@ -167,23 +172,26 @@ $(function() {
 <div class="ttc" id="aclassCOrder_html"><div class="ttname"><a href="classCOrder.html">COrder</a></div><div class="ttdef"><b>Definition:</b> actions.h:94</div></div>
 <div class="ttc" id="aclassVec2T_html_a71ce5251d618a6dbd4e0e7a0f867b6cf"><div class="ttname"><a href="classVec2T.html#a71ce5251d618a6dbd4e0e7a0f867b6cf">Vec2T::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> vec2i.h:43</div></div>
 <div class="ttc" id="aclassCViewport_html"><div class="ttname"><a href="classCViewport.html">CViewport</a></div><div class="ttdef"><b>Definition:</b> viewport.h:63</div></div>
-<div class="ttc" id="aclassCUnitType_html"><div class="ttname"><a href="classCUnitType.html">CUnitType</a></div><div class="ttdef"><b>Definition:</b> unittype.h:483</div></div>
-<div class="ttc" id="aclassCOrder__Build_html_a6461aa7257aba0e4e8c3e8324be30488"><div class="ttname"><a href="classCOrder__Build.html#a6461aa7257aba0e4e8c3e8324be30488">COrder_Build::Execute</a></div><div class="ttdeci">virtual void Execute(CUnit &amp;unit)</div><div class="ttdef"><b>Definition:</b> action_build.cpp:436</div></div>
+<div class="ttc" id="aclassCUnitType_html"><div class="ttname"><a href="classCUnitType.html">CUnitType</a></div><div class="ttdef"><b>Definition:</b> unittype.h:508</div></div>
+<div class="ttc" id="aclassCOrder__Build_html_a6461aa7257aba0e4e8c3e8324be30488"><div class="ttname"><a href="classCOrder__Build.html#a6461aa7257aba0e4e8c3e8324be30488">COrder_Build::Execute</a></div><div class="ttdeci">virtual void Execute(CUnit &amp;unit)</div><div class="ttdef"><b>Definition:</b> action_build.cpp:447</div></div>
 <div class="ttc" id="aclassCOrder__Build_html_ae7a065beecccc6f155e7828a9e4c581b"><div class="ttname"><a href="classCOrder__Build.html#ae7a065beecccc6f155e7828a9e4c581b">COrder_Build::Save</a></div><div class="ttdeci">virtual void Save(CFile &amp;file, const CUnit &amp;unit) const</div><div class="ttdef"><b>Definition:</b> action_build.cpp:93</div></div>
 <div class="ttc" id="aclassVec2T_html"><div class="ttname"><a href="classVec2T.html">Vec2T&lt; short int &gt;</a></div></div>
 <div class="ttc" id="aclassPathFinderInput_html"><div class="ttname"><a href="classPathFinderInput.html">PathFinderInput</a></div><div class="ttdef"><b>Definition:</b> pathfinder.h:67</div></div>
+<div class="ttc" id="aclassCOrder__Build_html_af0ebf7c36c04a547e88425d81c606e75"><div class="ttname"><a href="classCOrder__Build.html#af0ebf7c36c04a547e88425d81c606e75">COrder_Build::GetBuildingUnit</a></div><div class="ttdeci">CUnit * GetBuildingUnit() const</div><div class="ttdef"><b>Definition:</b> action_build.cpp:434</div></div>
 <div class="ttc" id="aactions_8h_html"><div class="ttname"><a href="actions_8h.html">actions.h</a></div></div>
 <div class="ttc" id="aclassCOrder_html_a40c190ff9e647bd3977103966925fe99"><div class="ttname"><a href="classCOrder.html#a40c190ff9e647bd3977103966925fe99">COrder::NewActionBuild</a></div><div class="ttdeci">static COrder * NewActionBuild(const CUnit &amp;builder, const Vec2i &amp;pos, CUnitType &amp;building)</div><div class="ttdef"><b>Definition:</b> action_build.cpp:72</div></div>
 <div class="ttc" id="aclassCOrder__Build_html_ac764719f5d4120426eaf8aafdf042938"><div class="ttname"><a href="classCOrder__Build.html#ac764719f5d4120426eaf8aafdf042938">COrder_Build::COrder_Build</a></div><div class="ttdeci">COrder_Build()</div><div class="ttdef"><b>Definition:</b> action_build.h:41</div></div>
-<div class="ttc" id="aclassCOrder__Build_html_afce94251a3b6b020b053d83ac2d6d91b"><div class="ttname"><a href="classCOrder__Build.html#afce94251a3b6b020b053d83ac2d6d91b">COrder_Build::GetGoalPos</a></div><div class="ttdeci">virtual const Vec2i GetGoalPos() const</div><div class="ttdef"><b>Definition:</b> action_build.cpp:489</div></div>
+<div class="ttc" id="aclassCOrder__Build_html_afce94251a3b6b020b053d83ac2d6d91b"><div class="ttname"><a href="classCOrder__Build.html#afce94251a3b6b020b053d83ac2d6d91b">COrder_Build::GetGoalPos</a></div><div class="ttdeci">virtual const Vec2i GetGoalPos() const</div><div class="ttdef"><b>Definition:</b> action_build.cpp:508</div></div>
+<div class="ttc" id="aclassCOrder__Build_html_aba5bdf2b53aa30b0505eb83e24a8409d"><div class="ttname"><a href="classCOrder__Build.html#aba5bdf2b53aa30b0505eb83e24a8409d">COrder_Build::Cancel</a></div><div class="ttdeci">virtual void Cancel(CUnit &amp;unit)</div><div class="ttdef"><b>Definition:</b> action_build.cpp:497</div></div>
 <div class="ttc" id="aclassCOrder__Build_html"><div class="ttname"><a href="classCOrder__Build.html">COrder_Build</a></div><div class="ttdef"><b>Definition:</b> action_build.h:37</div></div>
 <div class="ttc" id="aclassVec2T_html_a66ea295b52114b22de1f76cce1aa7f51"><div class="ttname"><a href="classVec2T.html#a66ea295b52114b22de1f76cce1aa7f51">Vec2T::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> vec2i.h:42</div></div>
+<div class="ttc" id="aclassCOrder__Build_html_aefefde552823bafca8efa4bc08c1727a"><div class="ttname"><a href="classCOrder__Build.html#aefefde552823bafca8efa4bc08c1727a">COrder_Build::UpdateUnitVariables</a></div><div class="ttdeci">virtual void UpdateUnitVariables(CUnit &amp;unit) const</div><div class="ttdef"><b>Definition:</b> action_build.cpp:439</div></div>
 <div class="ttc" id="aclassCOrder__Build_html_af89cbfb08d045bce930fe9f7edc69890"><div class="ttname"><a href="classCOrder__Build.html#af89cbfb08d045bce930fe9f7edc69890">COrder_Build::Clone</a></div><div class="ttdeci">virtual COrder_Build * Clone() const</div><div class="ttdef"><b>Definition:</b> action_build.h:47</div></div>
 <div class="ttc" id="aclassCFile_html"><div class="ttname"><a href="classCFile.html">CFile</a></div><div class="ttdef"><b>Definition:</b> iolib.h:102</div></div>
-<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:134</div></div>
+<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:135</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:31 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

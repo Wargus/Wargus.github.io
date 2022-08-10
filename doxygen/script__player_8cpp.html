@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7ffad3a30eb599ed1b3438419b0bdb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c92aff087f7ea4139709606f3c27158"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__player_8cpp.html#a0c92aff087f7ea4139709606f3c27158">CclChangeUnitsOwner</a> (lua_State *l)</td></tr>
 <tr class="separator:a0c92aff087f7ea4139709606f3c27158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3801501bfb54e2afa69411fcc50f4efe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__player_8cpp.html#a3801501bfb54e2afa69411fcc50f4efe">CclGiveUnitsToPlayer</a> (lua_State *l)</td></tr>
+<tr class="separator:a3801501bfb54e2afa69411fcc50f4efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af31fbd9bd83259bb3c64b4b26d26f884"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__player_8cpp.html#af31fbd9bd83259bb3c64b4b26d26f884">CclGetThisPlayer</a> (lua_State *l)</td></tr>
 <tr class="separator:af31fbd9bd83259bb3c64b4b26d26f884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a675b5d10c68bbf79b6a3cfad05586251"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__player_8cpp.html#a675b5d10c68bbf79b6a3cfad05586251">CclSetThisPlayer</a> (lua_State *l)</td></tr>
@@ -174,7 +176,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p><b>Description</b></p>
-<p>Change unit owner</p>
+<p>Change all units owned by one player or change only specific units owned by one player</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l</td><td>Lua state.</td></tr>
@@ -182,7 +184,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>&ndash; Changes the unit owner from player 0 to player 1 ChangeUnitsOwner({16, 17},{30, 32},0,1)</code></div> 
+<div class="example"><code>&ndash; Changes all units owned by player 0 and give to player 1 <b>ChangeUnitsOwner</b>({16, 17}, {30, 32}, 0, 1) &ndash; Changes all farms owned by player 0 and give to player 1 <b>ChangeUnitsOwner</b>({16, 17}, {30, 32}, 0, 1, "unit-farm")</code></div> 
 </div>
 </div>
 <a id="a93d00d920d0b01d3af5ab2263d712429"></a>
@@ -276,7 +278,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p><b>Description</b></p>
-<p>Define player colors</p>
+<p>Define player colors. Pass "false" as an optional second argument to add the colors to the existing ones.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l</td><td>Lua state.</td></tr>
@@ -284,7 +286,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>DefinePlayerColors({ "red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}}, "blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}}, "green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}}, "violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}}, "orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}}, "black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}}, "white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}}, "yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}}, "red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}}, "blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}}, "green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}}, "violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}}, "orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}}, "black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}}, "white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}}, "yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}}, })</code></div> 
+<div class="example"><code><b>DefinePlayerColors</b>({ "red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}}, "blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}}, "green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}}, "violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}}, "orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}}, "black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}}, "white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}}, "yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}}, "red", {{164, 0, 0}, {124, 0, 0}, {92, 4, 0}, {68, 4, 0}}, "blue", {{12, 72, 204}, {4, 40, 160}, {0, 20, 116}, {0, 4, 76}}, "green", {{44, 180, 148}, {20, 132, 92}, {4, 84, 44}, {0, 40, 12}}, "violet", {{152, 72, 176}, {116, 44, 132}, {80, 24, 88}, {44, 8, 44}}, "orange", {{248, 140, 20}, {200, 96, 16}, {152, 60, 16}, {108, 32, 12}}, "black", {{40, 40, 60}, {28, 28, 44}, {20, 20, 32}, {12, 12, 20}}, "white", {{224, 224, 224}, {152, 152, 180}, {84, 84, 128}, {36, 40, 76}}, "yellow", {{252, 252, 72}, {228, 204, 40}, {204, 160, 16}, {180, 116, 0}}, })</code></div> 
 </div>
 </div>
 <a id="a98410285f2eb54885100eb4b5a7c5e36"></a>
@@ -446,7 +448,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>GetPlayerData(0,"TotalNumUnits")</code></div> 
+<div class="example"><code><b>GetPlayerData</b>(0,"TotalNumUnits")</code></div> 
 </div>
 </div>
 <a id="af31fbd9bd83259bb3c64b4b26d26f884"></a>
@@ -481,7 +483,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>GetThisPlayer()</code></div> 
+<div class="example"><code><b>GetThisPlayer</b>()</code></div> 
 </div>
 </div>
 <a id="a93724da0561b5952182a73dec6256479"></a>
@@ -510,6 +512,45 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The unit pointer </dd></dl>
 
+</div>
+</div>
+<a id="a3801501bfb54e2afa69411fcc50f4efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3801501bfb54e2afa69411fcc50f4efe">&#9670;&nbsp;</a></span>CclGiveUnitsToPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclGiveUnitsToPlayer </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><b>Description</b></p>
+<p><b>GiveUnitsToPlayer(amount, type, fromPlayer, toPlayer)</b> <b>GiveUnitsToPlayer(amount, type, topLeft, bottomRight, fromPlayer, toPlayer)</b> Give some units of a specific type from a player to another player. Optionally only inside a rectangle. Returns number of units actually assigned. This can be smaller than the requested amount if the <code>fromPlayer</code> did not have enough units.<br  />
+</p>
+<p>Instead of a number you can pass "all" as the first argument, to hand over all units.<br  />
+</p>
+<p>Instead of a unit type name, you can pass "any", "unit", "building" as the second argument, to hand over anything, and unit, or any building.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example:</p>
+<div class="example"><code> &ndash; Give 2 peasants from player 4 to player 2 GiveUnitsToPlayer(2, "unit-peasant", 4, 2) &ndash; Give 4 knights from player 5 to player 1 inside the rectangle 2,2 - 14,14 GiveUnitsToPlayer(2, "unit-peasant", {2,2}, {14,14}, 4, 2) &ndash; Give any 4 units from player 5 to player 1 inside the rectangle 2,2 - 14,14 GiveUnitsToPlayer(2, "any", 4, 2) </code></div> 
 </div>
 </div>
 <a id="a8fdf64a14d21a701db4cd2970b278bf5"></a>
@@ -610,7 +651,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"> <code> &ndash; Player 1 has a passive A.I SetAiType(1, "Passive")</code></div> 
+<div class="example"> <code> &ndash; Player 1 has a passive A.I <b>SetAiType</b>(1, "Passive")</code></div> 
 </div>
 </div>
 <a id="aadc1bcc0fed0e441eb76d0077a96c43a"></a>
@@ -645,7 +686,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>SetAllPlayersBuildingLimit(200)</code></div> 
+<div class="example"><code><b>SetAllPlayersBuildingLimit</b>(200)</code></div> 
 </div>
 </div>
 <a id="a5be0d4aa6149a29d8f556c3d7a59d970"></a>
@@ -680,7 +721,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>SetAllPlayersTotalUnitLimit(400)</code></div> 
+<div class="example"><code><b>SetAllPlayersTotalUnitLimit</b>(400)</code></div> 
 </div>
 </div>
 <a id="ab752df54e3374e44b6ffcc9a6f51bbef"></a>
@@ -715,7 +756,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>SetAllPlayersUnitLimit(200)</code></div> 
+<div class="example"><code><b>SetAllPlayersUnitLimit</b>(200)</code></div> 
 </div>
 </div>
 <a id="a87479f9b659c3f77e7545376a1ba2fd4"></a>
@@ -751,7 +792,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>FIXME: should return old state.</dd></dl>
 <p>Example:</p>
-<div class="example"><code>SetDiplomacy(0,"allied",1) SetDiplomacy(1,"allied",0)</code></div><div class="example"><code> SetDiplomacy(0,"enemy",2) SetDiplomacy(1,"enemy",2)</code></div> 
+<div class="example"><code><b>SetDiplomacy</b>(0,"allied",1) <b>SetDiplomacy</b>(1,"allied",0)</code></div><div class="example"><code> <b>SetDiplomacy</b>(0,"enemy",2) <b>SetDiplomacy</b>(1,"enemy",2)</code></div> 
 </div>
 </div>
 <a id="a6600615e22d3307a99e13b192fe6dff2"></a>
@@ -786,7 +827,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>&ndash; 9 units can be selected together. SetMaxSelectable(9) &ndash; 18 units can be selected together. SetMaxSelectable(18) &ndash; 50 units can be selected together. SetMaxSelectable(50)</code></div> 
+<div class="example"><code>&ndash; 9 units can be selected together. <b>SetMaxSelectable</b>(9) &ndash; 18 units can be selected together. <b>SetMaxSelectable</b>(18) &ndash; 50 units can be selected together. <b>SetMaxSelectable</b>(50)</code></div> 
 </div>
 </div>
 <a id="ad1ce3eba2075e6f80b03489d09cc5751"></a>
@@ -821,7 +862,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>SetPlayerData(0,"Name","Nation of Stromgarde") SetPlayerData(0,"RaceName","human") SetPlayerData(0,"Resources","gold",1700)</code></div> 
+<div class="example"><code> <b>SetPlayerData</b>(0,"Name","Nation of Stromgarde") &ndash; set the name of this player <b>SetPlayerData</b>(0,"RaceName","human") &ndash; the the race to human <b>SetPlayerData</b>(0,"Resources","gold",1700) &ndash; set the player to have 1700 gold <b>SetPlayerData</b>(0, "Allow", "upgrade-paladin", "R") &ndash; give the player the Paladin upgrade </code></div> 
 </div>
 </div>
 <a id="a63d219ce27aa0c8c4e15eecced014bef"></a>
@@ -856,7 +897,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Example:</p>
-<div class="example"><code>SetRevelationType("no-revelation") SetRevelationType("buildings-only") SetRevelationType("all-units")</code></div> 
+<div class="example"><code><b>SetRevelationType</b>("no-revelation") <b>SetRevelationType</b>("buildings-only") <b>SetRevelationType</b>("all-units")</code></div> 
 </div>
 </div>
 <a id="ac32083316c2b918f1ff732e8f80bf3b2"></a>
@@ -892,7 +933,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>FIXME: should return old state.</dd></dl>
 <p>Example:</p>
-<div class="example"><code>SetSharedVision(0,true,1) SetSharedVision(1,true,0)</code></div><div class="example"><code> SetSharedVision(0,false,2) SetSharedVision(1,false,2)</code></div> 
+<div class="example"><code><b>SetSharedVision</b>(0,true,1) <b>SetSharedVision</b>(1,true,0)</code></div><div class="example"><code> <b>SetSharedVision</b>(0,false,2) <b>SetSharedVision</b>(1,false,2)</code></div> 
 </div>
 </div>
 <a id="a675b5d10c68bbf79b6a3cfad05586251"></a>
@@ -985,7 +1026,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

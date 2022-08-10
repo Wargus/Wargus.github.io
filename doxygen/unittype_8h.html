@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVarStaticSprite.html">CDecoVarStaticSprite</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">use to show specific frame in a sprite.  <a href="classCDecoVarStaticSprite.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDecoVarAnimatedSprite.html">CDecoVarAnimatedSprite</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">use to show specific frame in a sprite.  <a href="classCDecoVarAnimatedSprite.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuildRestriction.html">CBuildRestriction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuildRestrictionAnd.html">CBuildRestrictionAnd</a></td></tr>
@@ -186,112 +189,114 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 <a class="el" href="unittype_8h.html#ab96c61edcddf49116827ef61f0b41ac0abed2268a81494490a6ab7030e751876e">SELECT_ALL</a>
  }</td></tr>
 <tr class="separator:ab96c61edcddf49116827ef61f0b41ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77867ab4129f63159b37bca3b652a798"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a85d1637518ce766080785fe231bc1409">COWARD_INDEX</a> = 0, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a0a60a2520e5adeea3062971e74e1102f">BUILDING_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a0c8d7720ecc0ba7ff06ff8d1dce90d87">FLIP_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a145dcadb45ffa9d002178dd9e75c3898">REVEALER_INDEX</a>, 
+<tr class="memitem:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa85d1637518ce766080785fe231bc1409">COWARD_INDEX</a> = 0, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa0a60a2520e5adeea3062971e74e1102f">BUILDING_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa0c8d7720ecc0ba7ff06ff8d1dce90d87">FLIP_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa145dcadb45ffa9d002178dd9e75c3898">REVEALER_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a05e1b3a548683676dc57ca5827d5441d">LANDUNIT_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aef16ff6c7428dd2578de57d93967eec7">AIRUNIT_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aeb8470fa170d08ec6ac5ab092f6ade13">SEAUNIT_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a90aa273a8c7ea43dba1e5d701c69238a">EXPLODEWHENKILLED_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa05e1b3a548683676dc57ca5827d5441d">LANDUNIT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5faef16ff6c7428dd2578de57d93967eec7">AIRUNIT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5faeb8470fa170d08ec6ac5ab092f6ade13">SEAUNIT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa90aa273a8c7ea43dba1e5d701c69238a">EXPLODEWHENKILLED_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a2ac6e493ed17bc0039f05ca1bf05f5bb">VISIBLEUNDERFOG_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798ac5c69eb8875f5d4afe3b819f212d9959">PERMANENTCLOAK_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798ab131ab8734303ece9864ba70ea499093">DETECTCLOAK_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798ab8cedd718b5d64072ca80be51dcf096d">ATTACKFROMTRANSPORTER_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa2ac6e493ed17bc0039f05ca1bf05f5bb">VISIBLEUNDERFOG_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fac5c69eb8875f5d4afe3b819f212d9959">PERMANENTCLOAK_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fab131ab8734303ece9864ba70ea499093">DETECTCLOAK_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fab8cedd718b5d64072ca80be51dcf096d">ATTACKFROMTRANSPORTER_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a2308480cfa70e7e42d15ddc778cf4277">VANISHES_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a79b0e0da8806248513c6753ca08c7490">GROUNDATTACK_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a71404a569712f84ca1a2363312aa54da">SHOREBUILDING_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a9083bbe9d26fe68e1cc6cbf4ee59be3b">CANATTACK_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa2308480cfa70e7e42d15ddc778cf4277">VANISHES_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa79b0e0da8806248513c6753ca08c7490">GROUNDATTACK_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa71404a569712f84ca1a2363312aa54da">SHOREBUILDING_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa9083bbe9d26fe68e1cc6cbf4ee59be3b">CANATTACK_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a1c9595d409a064da9a7f4c1b21d987b4">BUILDEROUTSIDE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a080130e5daa2948c912fbc1a3595f43e">BUILDERLOST_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a37dfdaf1f4f907a1c2589fa9afdff233">CANHARVEST_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aab0b4db654991e1ba7a950a6dbfad107">HARVESTER_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa1c9595d409a064da9a7f4c1b21d987b4">BUILDEROUTSIDE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa080130e5daa2948c912fbc1a3595f43e">BUILDERLOST_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa37dfdaf1f4f907a1c2589fa9afdff233">CANHARVEST_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5faab0b4db654991e1ba7a950a6dbfad107">HARVESTER_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a32d3586706a90b0bbea21d201f8a39bc">SELECTABLEBYRECTANGLE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a65151bddbd5d01fb55368ad97e2cb0d5">ISNOTSELECTABLE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a5146ccd77d05d808a2b71510dea144d6">DECORATION_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a4f8805ae643be8faa730fa5270940b8f">INDESTRUCTIBLE_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa32d3586706a90b0bbea21d201f8a39bc">SELECTABLEBYRECTANGLE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa65151bddbd5d01fb55368ad97e2cb0d5">ISNOTSELECTABLE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa5146ccd77d05d808a2b71510dea144d6">DECORATION_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa4f8805ae643be8faa730fa5270940b8f">INDESTRUCTIBLE_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798ad5b8f14a2ce908608bcae1cd1ab959a3">TELEPORTER_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a3373291719be161c20d35cb474079568">SHIELDPIERCE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a1a687d5e81d6b2f808be5d0b509eb824">SAVECARGO_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a89f2682bfbc934a0f3f9406a2197614b">NONSOLID_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fad5b8f14a2ce908608bcae1cd1ab959a3">TELEPORTER_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa3373291719be161c20d35cb474079568">SHIELDPIERCE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa1a687d5e81d6b2f808be5d0b509eb824">SAVECARGO_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa89f2682bfbc934a0f3f9406a2197614b">NONSOLID_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aa6acb453a095128882aacc6d89976513">WALL_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a3eb7dff49f7aa76be67af23947872b9e">NORANDOMPLACING_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798abef970c8532a2493258900685680c479">ORGANIC_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aa9ebe68ffd295ef9492bad8eb2ef1606">SIDEATTACK_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5faa6acb453a095128882aacc6d89976513">WALL_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa3eb7dff49f7aa76be67af23947872b9e">NORANDOMPLACING_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fabef970c8532a2493258900685680c479">ORGANIC_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5faa9ebe68ffd295ef9492bad8eb2ef1606">SIDEATTACK_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798aaebcfc1ec00ba97f4a15b46efd5b3717">SKIRMISHER_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a2580767b6413206a85ed758c5a45c148">ALWAYSTHREAT_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a34b243cd4db26bcf51c720ea6c8a2313">ELEVATED_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a24a65ec115f6d3c82246e1bff606badb">NOFRIENDLYFIRE_INDEX</a>, 
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5faaebcfc1ec00ba97f4a15b46efd5b3717">SKIRMISHER_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa2580767b6413206a85ed758c5a45c148">ALWAYSTHREAT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa34b243cd4db26bcf51c720ea6c8a2313">ELEVATED_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa24a65ec115f6d3c82246e1bff606badb">NOFRIENDLYFIRE_INDEX</a>, 
 <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a28db5290f665e964eb635765a6c6a29a">MAINFACILITY_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a77867ab4129f63159b37bca3b652a798a06f9461311635e1aad1c4fe5fcbb2b4c">NBARALREADYDEFINED</a>
-<br />
- }</td></tr>
-<tr class="separator:a77867ab4129f63159b37bca3b652a798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16685eea158879e41b101ca3634de462"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a41716ecbb2daa9462d234c72ba16163b">HP_INDEX</a> = 0, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a2675cd324e420007a441e2e6f626c7bd">BUILD_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a30768fcac400ce795d4070a3e3af16df">MANA_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a24a55a4178bb29a1d162af6baf4d6929">TRANSPORT_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462af80d7cb10e082ed735071e4798d8f66f">RESEARCH_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462ae45a67e4e84dd800d7932c9fe441f06e">TRAINING_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a44e467409005681fdc38f2da5ba5cc24">UPGRADINGTO_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a619e9067bb17eabdbd50e7779b7a0beb">GIVERESOURCE_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a8b000cb6e889790bf80e48b27327e38b">CARRYRESOURCE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a1802527f26b8dffc3f40c9f1bdc746dd">XP_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a1f8cdba27304a053f50fb8590274e93e">KILL_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a54bb00b7e4b2093086a5417036b2c628">SUPPLY_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a9e1a18e4e054933dfecbb81a92a4f0dd">DEMAND_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462ab7cc33d14967d6a06f9339848e834833">ARMOR_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a468db3075be3c284834408669ccf826d">SIGHTRANGE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a3f88fd0bbd4c0c749ea15313f9fbd77f">ATTACKRANGE_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462adf492cea635bf4e16641b0706daf682c">PIERCINGDAMAGE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462aaffad201187e00cfe37752d7570f7b8c">BASICDAMAGE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a87e42f7de9a428546480d685ee09a692">POSX_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a5dddc8e0d76646f1517e4a25255520b6">POSY_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a9958b0d8b7c9540538aea83a40ead7f6">TARGETPOSX_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a2e8851dcda3863b606783da0603f6b13">TARGETPOSY_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a5afcca96046cfe5e2a6b7cf61db06f9c">RADAR_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462ac288f36fa45ca0ae0994f8b325a55e88">RADARJAMMER_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462aa5eb33489d1481cee969838ebffd5914">AUTOREPAIRRANGE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a761f3be9735af1ce23f2e715e8d2f77d">BLOODLUST_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a67f4916362f59b7514469ccecfb3e3b2">HASTE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a29b11bb897081454ad5a71347766e034">SLOW_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a3d507dd0c7a5e81f5958b04afeb3f66e">INVISIBLE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a13d831aaced280bcf3dea82090ee0c7b">UNHOLYARMOR_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462ace53202a54c248a4eb2db2b3d174839f">SLOT_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462aec9d703cb487f0e96b4e1a9119004271">SHIELD_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a030862b0714823c8fe04384ceca4cc06">POINTS_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462affbcfd93aab8d3453ed5272196b1cab6">MAXHARVESTERS_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a7e22de1c948299c1b9637c90bd330041">POISON_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a367294d3abe484393fef65f04dea928c">SHIELDPERMEABILITY_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462af1c55b9fcd8106e17aa1d8d89361f1be">SHIELDPIERCING_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a7855742bd86273a5e96fdddaf03b328a">ISALIVE_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a3094a13544860bc7f924823cc19f7aed">PLAYER_INDEX</a>, 
-<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a95dec10f4529d12876b745d58427e296">PRIORITY_INDEX</a>, 
-<br />
-&#160;&#160;<a class="el" href="unittype_8h.html#a16685eea158879e41b101ca3634de462a433aa824eb068908dd572ed54bb8cfdd">NVARALREADYDEFINED</a>
+&#160;&#160;<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa28db5290f665e964eb635765a6c6a29a">MAINFACILITY_INDEX</a>, 
+<a class="el" href="unittype_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa06f9461311635e1aad1c4fe5fcbb2b4c">NBARALREADYDEFINED</a>
 <br />
  }</td></tr>
-<tr class="separator:a16685eea158879e41b101ca3634de462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac205be2172292384dd687b5471a87edd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda41716ecbb2daa9462d234c72ba16163b">HP_INDEX</a> = 0, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda2675cd324e420007a441e2e6f626c7bd">BUILD_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda30768fcac400ce795d4070a3e3af16df">MANA_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda24a55a4178bb29a1d162af6baf4d6929">TRANSPORT_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddaf80d7cb10e082ed735071e4798d8f66f">RESEARCH_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddae45a67e4e84dd800d7932c9fe441f06e">TRAINING_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda44e467409005681fdc38f2da5ba5cc24">UPGRADINGTO_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda619e9067bb17eabdbd50e7779b7a0beb">GIVERESOURCE_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda8b000cb6e889790bf80e48b27327e38b">CARRYRESOURCE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda1802527f26b8dffc3f40c9f1bdc746dd">XP_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda1f8cdba27304a053f50fb8590274e93e">KILL_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda54bb00b7e4b2093086a5417036b2c628">SUPPLY_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda9e1a18e4e054933dfecbb81a92a4f0dd">DEMAND_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddab7cc33d14967d6a06f9339848e834833">ARMOR_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda468db3075be3c284834408669ccf826d">SIGHTRANGE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda3f88fd0bbd4c0c749ea15313f9fbd77f">ATTACKRANGE_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddadf492cea635bf4e16641b0706daf682c">PIERCINGDAMAGE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddaaffad201187e00cfe37752d7570f7b8c">BASICDAMAGE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda87e42f7de9a428546480d685ee09a692">POSX_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda5dddc8e0d76646f1517e4a25255520b6">POSY_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda6811d8fcb433b392670037d40f2a457e">POS_RIGHT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddac65b992078302309aad5444618739159">POS_BOTTOM_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda9958b0d8b7c9540538aea83a40ead7f6">TARGETPOSX_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda2e8851dcda3863b606783da0603f6b13">TARGETPOSY_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda5afcca96046cfe5e2a6b7cf61db06f9c">RADAR_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddac288f36fa45ca0ae0994f8b325a55e88">RADARJAMMER_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddaa5eb33489d1481cee969838ebffd5914">AUTOREPAIRRANGE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda761f3be9735af1ce23f2e715e8d2f77d">BLOODLUST_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda67f4916362f59b7514469ccecfb3e3b2">HASTE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda29b11bb897081454ad5a71347766e034">SLOW_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda3d507dd0c7a5e81f5958b04afeb3f66e">INVISIBLE_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda13d831aaced280bcf3dea82090ee0c7b">UNHOLYARMOR_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddace53202a54c248a4eb2db2b3d174839f">SLOT_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddaec9d703cb487f0e96b4e1a9119004271">SHIELD_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda030862b0714823c8fe04384ceca4cc06">POINTS_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddaffbcfd93aab8d3453ed5272196b1cab6">MAXHARVESTERS_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda7e22de1c948299c1b9637c90bd330041">POISON_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda367294d3abe484393fef65f04dea928c">SHIELDPERMEABILITY_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87eddaf1c55b9fcd8106e17aa1d8d89361f1be">SHIELDPIERCING_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda7855742bd86273a5e96fdddaf03b328a">ISALIVE_INDEX</a>, 
+<br />
+&#160;&#160;<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda3094a13544860bc7f924823cc19f7aed">PLAYER_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda95dec10f4529d12876b745d58427e296">PRIORITY_INDEX</a>, 
+<a class="el" href="unittype_8h.html#ac205be2172292384dd687b5471a87edda433aa824eb068908dd572ed54bb8cfdd">NVARALREADYDEFINED</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac205be2172292384dd687b5471a87edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe35dd4934363bb7626f498bdc947a4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittype_8h.html#afe35dd4934363bb7626f498bdc947a4a">UnitTypeType</a> { <a class="el" href="unittype_8h.html#afe35dd4934363bb7626f498bdc947a4aaa7fe620d2400ac9bd9b66f23f087edb8">UnitTypeLand</a>, 
 <a class="el" href="unittype_8h.html#afe35dd4934363bb7626f498bdc947a4aacbd9faef0b39518b393aa25439eafc40">UnitTypeFly</a>, 
 <a class="el" href="unittype_8h.html#afe35dd4934363bb7626f498bdc947a4aa9838fe3fdc5dda1b93e5ba994e31cd1c">UnitTypeNaval</a>
@@ -338,9 +343,9 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 <tr class="memitem:ab90edae888b1339523b5975e38ef1245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUnitType.html">CUnitType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittype_8h.html#ab90edae888b1339523b5975e38ef1245">NewUnitTypeSlot</a> (const std::string &amp;ident)</td></tr>
 <tr class="memdesc:ab90edae888b1339523b5975e38ef1245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the unit-type table.  <a href="unittype_8h.html#ab90edae888b1339523b5975e38ef1245">More...</a><br /></td></tr>
 <tr class="separator:ab90edae888b1339523b5975e38ef1245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7474b6a7c41bcbc2405398302fa70c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittype_8h.html#ac7474b6a7c41bcbc2405398302fa70c1">DrawUnitType</a> (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCPlayerColorGraphic.html">CPlayerColorGraphic</a> *sprite, int player, int frame, const <a class="el" href="vec2i_8h.html#a20cc8627b3e52515a26778e489bda2ae">PixelPos</a> &amp;screenPos)</td></tr>
-<tr class="memdesc:ac7474b6a7c41bcbc2405398302fa70c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the sprite frame of unit-type.  <a href="unittype_8h.html#ac7474b6a7c41bcbc2405398302fa70c1">More...</a><br /></td></tr>
-<tr class="separator:ac7474b6a7c41bcbc2405398302fa70c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fe3b132728d2a1fea34a440e04f0bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittype_8h.html#a50fe3b132728d2a1fea34a440e04f0bb">DrawUnitType</a> (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCPlayerColorGraphic.html">CPlayerColorGraphic</a> *sprite, int colorIndex, int frame, const <a class="el" href="vec2i_8h.html#a20cc8627b3e52515a26778e489bda2ae">PixelPos</a> &amp;screenPos)</td></tr>
+<tr class="memdesc:a50fe3b132728d2a1fea34a440e04f0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the sprite frame of unit-type.  <a href="unittype_8h.html#a50fe3b132728d2a1fea34a440e04f0bb">More...</a><br /></td></tr>
+<tr class="separator:a50fe3b132728d2a1fea34a440e04f0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5128d0be6f5fc4073ae9d9f3ac7dbe5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittype_8h.html#a5128d0be6f5fc4073ae9d9f3ac7dbe5c">InitUnitTypes</a> (int reset_player_stats)</td></tr>
 <tr class="separator:a5128d0be6f5fc4073ae9d9f3ac7dbe5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a544ed30c4c1c9b7c977150a142f6bc9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittype_8h.html#a544ed30c4c1c9b7c977150a142f6bc9b">LoadUnitTypeSprite</a> (<a class="el" href="classCUnitType.html">CUnitType</a> &amp;unittype)</td></tr>
@@ -539,8 +544,8 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a77867ab4129f63159b37bca3b652a798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77867ab4129f63159b37bca3b652a798">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a394b3903fbf00ba2b6243f60689a5a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394b3903fbf00ba2b6243f60689a5a5f">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,76 +556,76 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a85d1637518ce766080785fe231bc1409"></a>COWARD_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a0a60a2520e5adeea3062971e74e1102f"></a>BUILDING_INDEX&#160;</td><td class="fielddoc"><p>Unit will only attack if instructed. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa85d1637518ce766080785fe231bc1409"></a>COWARD_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa0a60a2520e5adeea3062971e74e1102f"></a>BUILDING_INDEX&#160;</td><td class="fielddoc"><p>Unit will only attack if instructed. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a0c8d7720ecc0ba7ff06ff8d1dce90d87"></a>FLIP_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a145dcadb45ffa9d002178dd9e75c3898"></a>REVEALER_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a05e1b3a548683676dc57ca5827d5441d"></a>LANDUNIT_INDEX&#160;</td><td class="fielddoc"><p>reveal the fog of war </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa0c8d7720ecc0ba7ff06ff8d1dce90d87"></a>FLIP_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa145dcadb45ffa9d002178dd9e75c3898"></a>REVEALER_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa05e1b3a548683676dc57ca5827d5441d"></a>LANDUNIT_INDEX&#160;</td><td class="fielddoc"><p>reveal the fog of war </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aef16ff6c7428dd2578de57d93967eec7"></a>AIRUNIT_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aeb8470fa170d08ec6ac5ab092f6ade13"></a>SEAUNIT_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a90aa273a8c7ea43dba1e5d701c69238a"></a>EXPLODEWHENKILLED_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a2ac6e493ed17bc0039f05ca1bf05f5bb"></a>VISIBLEUNDERFOG_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798ac5c69eb8875f5d4afe3b819f212d9959"></a>PERMANENTCLOAK_INDEX&#160;</td><td class="fielddoc"><p>Unit is visible under fog of war. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faef16ff6c7428dd2578de57d93967eec7"></a>AIRUNIT_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faeb8470fa170d08ec6ac5ab092f6ade13"></a>SEAUNIT_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa90aa273a8c7ea43dba1e5d701c69238a"></a>EXPLODEWHENKILLED_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa2ac6e493ed17bc0039f05ca1bf05f5bb"></a>VISIBLEUNDERFOG_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fac5c69eb8875f5d4afe3b819f212d9959"></a>PERMANENTCLOAK_INDEX&#160;</td><td class="fielddoc"><p>Unit is visible under fog of war. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798ab131ab8734303ece9864ba70ea499093"></a>DETECTCLOAK_INDEX&#160;</td><td class="fielddoc"><p>Is only visible by CloakDetectors. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fab131ab8734303ece9864ba70ea499093"></a>DETECTCLOAK_INDEX&#160;</td><td class="fielddoc"><p>Is only visible by CloakDetectors. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798ab8cedd718b5d64072ca80be51dcf096d"></a>ATTACKFROMTRANSPORTER_INDEX&#160;</td><td class="fielddoc"><p>Can see Cloaked units. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fab8cedd718b5d64072ca80be51dcf096d"></a>ATTACKFROMTRANSPORTER_INDEX&#160;</td><td class="fielddoc"><p>Can see Cloaked units. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a2308480cfa70e7e42d15ddc778cf4277"></a>VANISHES_INDEX&#160;</td><td class="fielddoc"><p>Can attack from transporter. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa2308480cfa70e7e42d15ddc778cf4277"></a>VANISHES_INDEX&#160;</td><td class="fielddoc"><p>Can attack from transporter. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a79b0e0da8806248513c6753ca08c7490"></a>GROUNDATTACK_INDEX&#160;</td><td class="fielddoc"><p>Corpses &amp; destroyed places. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa79b0e0da8806248513c6753ca08c7490"></a>GROUNDATTACK_INDEX&#160;</td><td class="fielddoc"><p>Corpses &amp; destroyed places. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a71404a569712f84ca1a2363312aa54da"></a>SHOREBUILDING_INDEX&#160;</td><td class="fielddoc"><p>Can do ground attack command. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa71404a569712f84ca1a2363312aa54da"></a>SHOREBUILDING_INDEX&#160;</td><td class="fielddoc"><p>Can do ground attack command. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a9083bbe9d26fe68e1cc6cbf4ee59be3b"></a>CANATTACK_INDEX&#160;</td><td class="fielddoc"><p>Building must be built on coast. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa9083bbe9d26fe68e1cc6cbf4ee59be3b"></a>CANATTACK_INDEX&#160;</td><td class="fielddoc"><p>Building must be built on coast. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a1c9595d409a064da9a7f4c1b21d987b4"></a>BUILDEROUTSIDE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a080130e5daa2948c912fbc1a3595f43e"></a>BUILDERLOST_INDEX&#160;</td><td class="fielddoc"><p>The builder stays outside during the construction. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa1c9595d409a064da9a7f4c1b21d987b4"></a>BUILDEROUTSIDE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa080130e5daa2948c912fbc1a3595f43e"></a>BUILDERLOST_INDEX&#160;</td><td class="fielddoc"><p>The builder stays outside during the construction. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a37dfdaf1f4f907a1c2589fa9afdff233"></a>CANHARVEST_INDEX&#160;</td><td class="fielddoc"><p>The builder is lost after the construction. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa37dfdaf1f4f907a1c2589fa9afdff233"></a>CANHARVEST_INDEX&#160;</td><td class="fielddoc"><p>The builder is lost after the construction. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aab0b4db654991e1ba7a950a6dbfad107"></a>HARVESTER_INDEX&#160;</td><td class="fielddoc"><p>Resource can be harvested. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faab0b4db654991e1ba7a950a6dbfad107"></a>HARVESTER_INDEX&#160;</td><td class="fielddoc"><p>Resource can be harvested. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a32d3586706a90b0bbea21d201f8a39bc"></a>SELECTABLEBYRECTANGLE_INDEX&#160;</td><td class="fielddoc"><p>Unit is a resource harvester. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa32d3586706a90b0bbea21d201f8a39bc"></a>SELECTABLEBYRECTANGLE_INDEX&#160;</td><td class="fielddoc"><p>Unit is a resource harvester. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a65151bddbd5d01fb55368ad97e2cb0d5"></a>ISNOTSELECTABLE_INDEX&#160;</td><td class="fielddoc"><p>Selectable with mouse rectangle. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa65151bddbd5d01fb55368ad97e2cb0d5"></a>ISNOTSELECTABLE_INDEX&#160;</td><td class="fielddoc"><p>Selectable with mouse rectangle. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a5146ccd77d05d808a2b71510dea144d6"></a>DECORATION_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a4f8805ae643be8faa730fa5270940b8f"></a>INDESTRUCTIBLE_INDEX&#160;</td><td class="fielddoc"><p>Unit is a decoration (act as tile). </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa5146ccd77d05d808a2b71510dea144d6"></a>DECORATION_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa4f8805ae643be8faa730fa5270940b8f"></a>INDESTRUCTIBLE_INDEX&#160;</td><td class="fielddoc"><p>Unit is a decoration (act as tile). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798ad5b8f14a2ce908608bcae1cd1ab959a3"></a>TELEPORTER_INDEX&#160;</td><td class="fielddoc"><p>Unit is indestructible (take no damage). </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fad5b8f14a2ce908608bcae1cd1ab959a3"></a>TELEPORTER_INDEX&#160;</td><td class="fielddoc"><p>Unit is indestructible (take no damage). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a3373291719be161c20d35cb474079568"></a>SHIELDPIERCE_INDEX&#160;</td><td class="fielddoc"><p>Can teleport other units. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa3373291719be161c20d35cb474079568"></a>SHIELDPIERCE_INDEX&#160;</td><td class="fielddoc"><p>Can teleport other units. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a1a687d5e81d6b2f808be5d0b509eb824"></a>SAVECARGO_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a89f2682bfbc934a0f3f9406a2197614b"></a>NONSOLID_INDEX&#160;</td><td class="fielddoc"><p>Unit unloads his passengers after death. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa1a687d5e81d6b2f808be5d0b509eb824"></a>SAVECARGO_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa89f2682bfbc934a0f3f9406a2197614b"></a>NONSOLID_INDEX&#160;</td><td class="fielddoc"><p>Unit unloads his passengers after death. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aa6acb453a095128882aacc6d89976513"></a>WALL_INDEX&#160;</td><td class="fielddoc"><p>Unit can be entered by other units. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faa6acb453a095128882aacc6d89976513"></a>WALL_INDEX&#160;</td><td class="fielddoc"><p>Unit can be entered by other units. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a3eb7dff49f7aa76be67af23947872b9e"></a>NORANDOMPLACING_INDEX&#160;</td><td class="fielddoc"><p>Use special logic for Direction field. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa3eb7dff49f7aa76be67af23947872b9e"></a>NORANDOMPLACING_INDEX&#160;</td><td class="fielddoc"><p>Use special logic for Direction field. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798abef970c8532a2493258900685680c479"></a>ORGANIC_INDEX&#160;</td><td class="fielddoc"><p>Don't use random frame rotation. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fabef970c8532a2493258900685680c479"></a>ORGANIC_INDEX&#160;</td><td class="fielddoc"><p>Don't use random frame rotation. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aa9ebe68ffd295ef9492bad8eb2ef1606"></a>SIDEATTACK_INDEX&#160;</td><td class="fielddoc"><p>Organic unit (used for death coil spell) </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faa9ebe68ffd295ef9492bad8eb2ef1606"></a>SIDEATTACK_INDEX&#160;</td><td class="fielddoc"><p>Organic unit (used for death coil spell) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798aaebcfc1ec00ba97f4a15b46efd5b3717"></a>SKIRMISHER_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a2580767b6413206a85ed758c5a45c148"></a>ALWAYSTHREAT_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a34b243cd4db26bcf51c720ea6c8a2313"></a>ELEVATED_INDEX&#160;</td><td class="fielddoc"><p>Unit always considered as threat for auto targeting algorihm, useful for unit without main attack ability, but which can cast spells (f.e. defiler in SC:BW) </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faaebcfc1ec00ba97f4a15b46efd5b3717"></a>SKIRMISHER_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa2580767b6413206a85ed758c5a45c148"></a>ALWAYSTHREAT_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa34b243cd4db26bcf51c720ea6c8a2313"></a>ELEVATED_INDEX&#160;</td><td class="fielddoc"><p>Unit always considered as threat for auto targeting algorihm, useful for unit without main attack ability, but which can cast spells (f.e. defiler in SC:BW) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a24a65ec115f6d3c82246e1bff606badb"></a>NOFRIENDLYFIRE_INDEX&#160;</td><td class="fielddoc"><p>Unit is elevated and can see over opaque tiles placed in the same ground level with the unit. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa24a65ec115f6d3c82246e1bff606badb"></a>NOFRIENDLYFIRE_INDEX&#160;</td><td class="fielddoc"><p>Unit is elevated and can see over opaque tiles placed in the same ground level with the unit. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a28db5290f665e964eb635765a6c6a29a"></a>MAINFACILITY_INDEX&#160;</td><td class="fielddoc"><p>Unit accepts friendly fire for splash attacks. </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa28db5290f665e964eb635765a6c6a29a"></a>MAINFACILITY_INDEX&#160;</td><td class="fielddoc"><p>Unit accepts friendly fire for splash attacks. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a77867ab4129f63159b37bca3b652a798a06f9461311635e1aad1c4fe5fcbb2b4c"></a>NBARALREADYDEFINED&#160;</td><td class="fielddoc"><p>Unit is a main building (Town Hall f. ex.) </p>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa06f9461311635e1aad1c4fe5fcbb2b4c"></a>NBARALREADYDEFINED&#160;</td><td class="fielddoc"><p>Unit is a main building (Town Hall f. ex.) </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a16685eea158879e41b101ca3634de462"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16685eea158879e41b101ca3634de462">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ac205be2172292384dd687b5471a87edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac205be2172292384dd687b5471a87edd">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,49 +636,51 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a41716ecbb2daa9462d234c72ba16163b"></a>HP_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a2675cd324e420007a441e2e6f626c7bd"></a>BUILD_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a30768fcac400ce795d4070a3e3af16df"></a>MANA_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a24a55a4178bb29a1d162af6baf4d6929"></a>TRANSPORT_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462af80d7cb10e082ed735071e4798d8f66f"></a>RESEARCH_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462ae45a67e4e84dd800d7932c9fe441f06e"></a>TRAINING_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a44e467409005681fdc38f2da5ba5cc24"></a>UPGRADINGTO_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a619e9067bb17eabdbd50e7779b7a0beb"></a>GIVERESOURCE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a8b000cb6e889790bf80e48b27327e38b"></a>CARRYRESOURCE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a1802527f26b8dffc3f40c9f1bdc746dd"></a>XP_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a1f8cdba27304a053f50fb8590274e93e"></a>KILL_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a54bb00b7e4b2093086a5417036b2c628"></a>SUPPLY_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a9e1a18e4e054933dfecbb81a92a4f0dd"></a>DEMAND_INDEX&#160;</td><td class="fielddoc"><p>Food supply. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda41716ecbb2daa9462d234c72ba16163b"></a>HP_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda2675cd324e420007a441e2e6f626c7bd"></a>BUILD_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda30768fcac400ce795d4070a3e3af16df"></a>MANA_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda24a55a4178bb29a1d162af6baf4d6929"></a>TRANSPORT_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaf80d7cb10e082ed735071e4798d8f66f"></a>RESEARCH_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddae45a67e4e84dd800d7932c9fe441f06e"></a>TRAINING_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda44e467409005681fdc38f2da5ba5cc24"></a>UPGRADINGTO_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda619e9067bb17eabdbd50e7779b7a0beb"></a>GIVERESOURCE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda8b000cb6e889790bf80e48b27327e38b"></a>CARRYRESOURCE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda1802527f26b8dffc3f40c9f1bdc746dd"></a>XP_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda1f8cdba27304a053f50fb8590274e93e"></a>KILL_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda54bb00b7e4b2093086a5417036b2c628"></a>SUPPLY_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda9e1a18e4e054933dfecbb81a92a4f0dd"></a>DEMAND_INDEX&#160;</td><td class="fielddoc"><p>Food supply. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462ab7cc33d14967d6a06f9339848e834833"></a>ARMOR_INDEX&#160;</td><td class="fielddoc"><p>Food demand. </p>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddab7cc33d14967d6a06f9339848e834833"></a>ARMOR_INDEX&#160;</td><td class="fielddoc"><p>Food demand. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a468db3075be3c284834408669ccf826d"></a>SIGHTRANGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a3f88fd0bbd4c0c749ea15313f9fbd77f"></a>ATTACKRANGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462adf492cea635bf4e16641b0706daf682c"></a>PIERCINGDAMAGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462aaffad201187e00cfe37752d7570f7b8c"></a>BASICDAMAGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a87e42f7de9a428546480d685ee09a692"></a>POSX_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a5dddc8e0d76646f1517e4a25255520b6"></a>POSY_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a9958b0d8b7c9540538aea83a40ead7f6"></a>TARGETPOSX_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a2e8851dcda3863b606783da0603f6b13"></a>TARGETPOSY_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a5afcca96046cfe5e2a6b7cf61db06f9c"></a>RADAR_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462ac288f36fa45ca0ae0994f8b325a55e88"></a>RADARJAMMER_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462aa5eb33489d1481cee969838ebffd5914"></a>AUTOREPAIRRANGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a761f3be9735af1ce23f2e715e8d2f77d"></a>BLOODLUST_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a67f4916362f59b7514469ccecfb3e3b2"></a>HASTE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a29b11bb897081454ad5a71347766e034"></a>SLOW_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a3d507dd0c7a5e81f5958b04afeb3f66e"></a>INVISIBLE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a13d831aaced280bcf3dea82090ee0c7b"></a>UNHOLYARMOR_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462ace53202a54c248a4eb2db2b3d174839f"></a>SLOT_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462aec9d703cb487f0e96b4e1a9119004271"></a>SHIELD_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a030862b0714823c8fe04384ceca4cc06"></a>POINTS_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462affbcfd93aab8d3453ed5272196b1cab6"></a>MAXHARVESTERS_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a7e22de1c948299c1b9637c90bd330041"></a>POISON_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a367294d3abe484393fef65f04dea928c"></a>SHIELDPERMEABILITY_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462af1c55b9fcd8106e17aa1d8d89361f1be"></a>SHIELDPIERCING_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a7855742bd86273a5e96fdddaf03b328a"></a>ISALIVE_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a3094a13544860bc7f924823cc19f7aed"></a>PLAYER_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a95dec10f4529d12876b745d58427e296"></a>PRIORITY_INDEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16685eea158879e41b101ca3634de462a433aa824eb068908dd572ed54bb8cfdd"></a>NVARALREADYDEFINED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda468db3075be3c284834408669ccf826d"></a>SIGHTRANGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda3f88fd0bbd4c0c749ea15313f9fbd77f"></a>ATTACKRANGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddadf492cea635bf4e16641b0706daf682c"></a>PIERCINGDAMAGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaaffad201187e00cfe37752d7570f7b8c"></a>BASICDAMAGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda87e42f7de9a428546480d685ee09a692"></a>POSX_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda5dddc8e0d76646f1517e4a25255520b6"></a>POSY_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda6811d8fcb433b392670037d40f2a457e"></a>POS_RIGHT_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddac65b992078302309aad5444618739159"></a>POS_BOTTOM_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda9958b0d8b7c9540538aea83a40ead7f6"></a>TARGETPOSX_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda2e8851dcda3863b606783da0603f6b13"></a>TARGETPOSY_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda5afcca96046cfe5e2a6b7cf61db06f9c"></a>RADAR_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddac288f36fa45ca0ae0994f8b325a55e88"></a>RADARJAMMER_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaa5eb33489d1481cee969838ebffd5914"></a>AUTOREPAIRRANGE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda761f3be9735af1ce23f2e715e8d2f77d"></a>BLOODLUST_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda67f4916362f59b7514469ccecfb3e3b2"></a>HASTE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda29b11bb897081454ad5a71347766e034"></a>SLOW_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda3d507dd0c7a5e81f5958b04afeb3f66e"></a>INVISIBLE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda13d831aaced280bcf3dea82090ee0c7b"></a>UNHOLYARMOR_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddace53202a54c248a4eb2db2b3d174839f"></a>SLOT_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaec9d703cb487f0e96b4e1a9119004271"></a>SHIELD_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda030862b0714823c8fe04384ceca4cc06"></a>POINTS_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaffbcfd93aab8d3453ed5272196b1cab6"></a>MAXHARVESTERS_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda7e22de1c948299c1b9637c90bd330041"></a>POISON_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda367294d3abe484393fef65f04dea928c"></a>SHIELDPERMEABILITY_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaf1c55b9fcd8106e17aa1d8d89361f1be"></a>SHIELDPIERCING_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda7855742bd86273a5e96fdddaf03b328a"></a>ISALIVE_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda3094a13544860bc7f924823cc19f7aed"></a>PLAYER_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda95dec10f4529d12876b745d58427e296"></a>PRIORITY_INDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda433aa824eb068908dd572ed54bb8cfdd"></a>NVARALREADYDEFINED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -833,8 +840,8 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 
 </div>
 </div>
-<a id="ac7474b6a7c41bcbc2405398302fa70c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7474b6a7c41bcbc2405398302fa70c1">&#9670;&nbsp;</a></span>DrawUnitType()</h2>
+<a id="a50fe3b132728d2a1fea34a440e04f0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fe3b132728d2a1fea34a440e04f0bb">&#9670;&nbsp;</a></span>DrawUnitType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -855,7 +862,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>player</em>, </td>
+          <td class="paramname"><em>colorIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -890,7 +897,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo:</a></b></dt><dd>Do screen position caculation in high level. Better way to handle in x mirrored sprites. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000120">Todo:</a></b></dt><dd>Do screen position caculation in high level. Better way to handle in x mirrored sprites. </dd></dl>
 
 </div>
 </div>
@@ -1255,7 +1262,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 <p>All unit-types. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>this hardcoded unit-types must be removed!! </dd></dl>
 <p>Next unit type are used hardcoded in the source.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo:</a></b></dt><dd>find a way to make it configurable! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo:</a></b></dt><dd>find a way to make it configurable! </dd></dl>
 
 </div>
 </div>
@@ -1306,7 +1313,7 @@ unittype.h - The unit-types headerfile.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

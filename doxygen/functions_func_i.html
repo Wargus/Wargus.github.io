@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -138,6 +138,7 @@ $(function() {
 , <a class="el" href="classCAnimation__SpawnUnit.html#ab86857d2488daa9524df9c56a209c5eb">CAnimation_SpawnUnit</a>
 , <a class="el" href="classCAnimation__Unbreakable.html#ac9d1175f54ac1e2d746eddb8c56bca0b">CAnimation_Unbreakable</a>
 , <a class="el" href="classCAnimation__Wait.html#a4afc9ae108f14c866c363ad9fdca26fc">CAnimation_Wait</a>
+, <a class="el" href="classCAnimation__Wiggle.html#a5c282e233e4763b25cec4131414b0011">CAnimation_Wiggle</a>
 , <a class="el" href="classCBlurer.html#ae43d55043a1d2ec1455f1555ad291e15">CBlurer</a>
 , <a class="el" href="classCBuildRestriction.html#a3850d873eac77dee0a858ad4a3c7c251">CBuildRestriction</a>
 , <a class="el" href="classCBuildRestrictionAddOn.html#a50a1712b72ef77a685564fbfacae4698">CBuildRestrictionAddOn</a>
@@ -156,7 +157,7 @@ $(function() {
 : <a class="el" href="classCParticleManager.html#a182289a34aba3359f1257a59ce5536ce">CParticleManager</a>
 </li>
 <li>Init()
-: <a class="el" href="classCPlayer.html#a4ea35f8d92d0298d1cc880f44e36779b">CPlayer</a>
+: <a class="el" href="classCPlayer.html#aa8a21a2111accb353e39d6b3a547ca16">CPlayer</a>
 , <a class="el" href="classCServer.html#af56bab2eb123aee0de2c79cf4ed5f860">CServer</a>
 , <a class="el" href="classCUnit.html#a11fc3cb5629dbb25836b2067ea6c58cb">CUnit</a>
 </li>
@@ -169,10 +170,15 @@ $(function() {
 , <a class="el" href="classCUnitTypeVar.html#a19d1b3b6596bcf34d967a2b1b1064de5">CUnitTypeVar</a>
 , <a class="el" href="classMissile.html#a9e6939b6928ddf678fd7da75b6b0b928">Missile</a>
 , <a class="el" href="classMissileType.html#ab28be6beadd828c6eb931770964112f9">MissileType</a>
+, <a class="el" href="structSettings.html#a933d2b05706b9ab0f57a9327b320d3af">Settings</a>
+, <a class="el" href="structSettingsPresets.html#a9bb9ddcf037508ec822433a983512942">SettingsPresets</a>
 , <a class="el" href="classTerrainTraversal.html#ab96dcb7a95a1a70b447272daf0b84418">TerrainTraversal</a>
 </li>
 <li>InitBlurer()
 : <a class="el" href="classCFogOfWar.html#a0b7253ba1bc685ed5f9b5d6da359f7e1">CFogOfWar</a>
+</li>
+<li>InitializeSettingsFromPreferences()
+: <a class="el" href="classCPreference.html#a4014861885d1660d863fe0e84aa96fc1">CPreference</a>
 </li>
 <li>Insert()
 : <a class="el" href="classAiForce.html#acd0b06861eb452162fe7b77e79723b5f">AiForce</a>
@@ -189,10 +195,10 @@ $(function() {
 : <a class="el" href="classIsADepositForResource.html#a281008592c326cae0fb08e3113080944">IsADepositForResource</a>
 </li>
 <li>IsAEnemyUnitOf()
-: <a class="el" href="classIsAEnemyUnitOf.html#a3d1e5cacd8b77eb934eb1419edc8b17e">IsAEnemyUnitOf</a>
+: <a class="el" href="classIsAEnemyUnitOf.html#a7051b42bb3bfa36823c2126dc16b3fcf">IsAEnemyUnitOf&lt; ignoreVisibility &gt;</a>
 </li>
 <li>IsAEnemyUnitWhichCanCounterAttackOf()
-: <a class="el" href="classIsAEnemyUnitWhichCanCounterAttackOf.html#a98b038d811324ec4282e8cccd81a8366">IsAEnemyUnitWhichCanCounterAttackOf</a>
+: <a class="el" href="classIsAEnemyUnitWhichCanCounterAttackOf.html#a22b2449f44d4beaf2e0200b82d65095e">IsAEnemyUnitWhichCanCounterAttackOf&lt; ignoreVisibility &gt;</a>
 </li>
 <li>IsAgressive()
 : <a class="el" href="classCUnit.html#a331ebed691c351c1990eec117595be12">CUnit</a>
@@ -358,7 +364,7 @@ $(function() {
 </li>
 <li>IsLoaded()
 : <a class="el" href="classCFont.html#aa077e80dfe0a9ce1cbc2fb2a3c264925">CFont</a>
-, <a class="el" href="classCGraphic.html#aa9aae7d2062b1a4f901ff9bf34477ed2">CGraphic</a>
+, <a class="el" href="classCGraphic.html#a811633893a469aa8509dbc95d8de7a15">CGraphic</a>
 </li>
 <li>isMarked()
 : <a class="el" href="classgcn_1_1CheckBox.html#a47a74c621f4d114c42aa85c6918b41c6">gcn::CheckBox</a>
@@ -392,6 +398,9 @@ $(function() {
 , <a class="el" href="classgcn_1_1TextBox.html#acf19584a872752770cd666a08a1fdba7">gcn::TextBox</a>
 , <a class="el" href="classgcn_1_1Window.html#afd6f988ede4555fce9f1299c636c3886">gcn::Window</a>
 </li>
+<li>isParentOfWidget()
+: <a class="el" href="classgcn_1_1BasicContainer.html#a50d773b7bc715c2e697b875f768b0ea8">gcn::BasicContainer</a>
+</li>
 <li>IsPlaying()
 : <a class="el" href="classMovie.html#a33a0a4d581817dbbca6c8622500b3123">Movie</a>
 </li>
@@ -399,7 +408,7 @@ $(function() {
 : <a class="el" href="classgcn_1_1Rectangle.html#a379a660c0bea75f36787834b69f4ae2c">gcn::Rectangle</a>
 </li>
 <li>IsPointOnMap()
-: <a class="el" href="classCMapInfo.html#a4d1b58a556e07d40e3d813522509586a">CMapInfo</a>
+: <a class="el" href="classCMapInfo.html#af9c030285b323b29a4fc94b1df4e6154">CMapInfo</a>
 </li>
 <li>isPressed()
 : <a class="el" href="classgcn_1_1Button.html#a573ce4acba936c45a37ff4c9b58d5098">gcn::Button</a>
@@ -442,13 +451,13 @@ $(function() {
 </li>
 <li>IsTeamed()
 : <a class="el" href="classCPlayer.html#af6a81e215323fd3853c2d8f88a1cf565">CPlayer</a>
-, <a class="el" href="classCUnit.html#af3c37d40a0f2e51d56aa0cbe38981136">CUnit</a>
+, <a class="el" href="classCUnit.html#a9b15458b21889f0642a0dcb782f38574">CUnit</a>
 </li>
 <li>IsTeamVisible()
 : <a class="el" href="classCMapFieldPlayerInfo.html#a0234f782e693a32d01a59e7cef55e0fe">CMapFieldPlayerInfo</a>
 </li>
 <li>IsTerrainResourceOnMap()
-: <a class="el" href="classCMapField.html#a641925d9be3f4f1377d2857037d659c9">CMapField</a>
+: <a class="el" href="classCMapField.html#a7c8f67adf78aeacdf56a3056dc2bb36e">CMapField</a>
 </li>
 <li>IsUnusable()
 : <a class="el" href="classCUnit.html#ac1ee548874cf88e3a810687639b418b9">CUnit</a>
@@ -457,7 +466,8 @@ $(function() {
 : <a class="el" href="classCHost.html#accca5a47f413b24d6f507a67eb955303">CHost</a>
 </li>
 <li>IsValid()
-: <a class="el" href="classCOrder.html#ab6924e22bfe7bf2f2cefab357ad1edbf">COrder</a>
+: <a class="el" href="classCNetworkHost.html#a2cea73402d006d8dc514dc4a882114b4">CNetworkHost</a>
+, <a class="el" href="classCOrder.html#ab6924e22bfe7bf2f2cefab357ad1edbf">COrder</a>
 , <a class="el" href="classCOrder__Attack.html#a373bb4c2ff63438067152ca820874e10">COrder_Attack</a>
 , <a class="el" href="classCOrder__Board.html#af0af10a9ff2808c5726e3b751ba327d3">COrder_Board</a>
 , <a class="el" href="classCOrder__Build.html#a0ec8b5ef6a3d735290fdabfbba5d4116">COrder_Build</a>
@@ -481,6 +491,9 @@ $(function() {
 , <a class="el" href="classCTCPSocket__Impl.html#aaaddaf345e37c82ef8a670c0d92decdd">CTCPSocket_Impl</a>
 , <a class="el" href="classCUDPSocket.html#a2f74968108fbebe11dae1c0f2eba2f5f">CUDPSocket</a>
 , <a class="el" href="classCUDPSocket__Impl.html#ae462d0bbf98914df37125a3f1efd6d98">CUDPSocket_Impl</a>
+</li>
+<li>isValid()
+: <a class="el" href="classGame.html#a780f05d90e46b1e591362bc5cae089fb">Game</a>
 </li>
 <li>isVisible()
 : <a class="el" href="classCChunkParticle.html#ab36d8a423180117f6d1ecf5397cb3136">CChunkParticle</a>
@@ -529,7 +542,7 @@ $(function() {
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:42 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:34 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

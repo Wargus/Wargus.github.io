@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -164,14 +164,14 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // !__AI_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Revelation types.</div><div class="ttdef"><b>Definition:</b> player.h:88</div></div>
+<div class="ttc" id="aclassCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Diplomacy states for CommandDiplomacy.</div><div class="ttdef"><b>Definition:</b> player.h:83</div></div>
 <div class="ttc" id="aai_8h_html_a0d1e6ec244182fe1f05c46f49c54ba41"><div class="ttname"><a href="ai_8h.html#a0d1e6ec244182fe1f05c46f49c54ba41">AiEachSecond</a></div><div class="ttdeci">void AiEachSecond(CPlayer &amp;player)</div><div class="ttdoc">Called each game cycle.</div><div class="ttdef"><b>Definition:</b> ai.cpp:1014</div></div>
 <div class="ttc" id="aai_8h_html_ae45ab9f63e29e49ec2190f3df492c899"><div class="ttname"><a href="ai_8h.html#ae45ab9f63e29e49ec2190f3df492c899">AiWorkComplete</a></div><div class="ttdeci">void AiWorkComplete(CUnit *unit, CUnit &amp;what)</div><div class="ttdoc">Called if AI unit has completed work.</div><div class="ttdef"><b>Definition:</b> ai.cpp:772</div></div>
 <div class="ttc" id="aai_8h_html_a4320bc05a6f9a1049a2d2b3764276b06"><div class="ttname"><a href="ai_8h.html#a4320bc05a6f9a1049a2d2b3764276b06">AiCanNotBuild</a></div><div class="ttdeci">void AiCanNotBuild(const CUnit &amp;unit, const CUnitType &amp;what)</div><div class="ttdoc">Called if AI unit can't build.</div><div class="ttdef"><b>Definition:</b> ai.cpp:793</div></div>
 <div class="ttc" id="aai_8h_html_a87bcafc04e7889aa0322f7c9c3340ff1"><div class="ttname"><a href="ai_8h.html#a87bcafc04e7889aa0322f7c9c3340ff1">AiHelpMe</a></div><div class="ttdeci">void AiHelpMe(const CUnit *attacker, CUnit &amp;defender)</div><div class="ttdoc">Called if AI unit is attacked.</div><div class="ttdef"><b>Definition:</b> ai.cpp:645</div></div>
 <div class="ttc" id="aai_8h_html_a8bb477337402981b764f8447ff3138c6"><div class="ttname"><a href="ai_8h.html#a8bb477337402981b764f8447ff3138c6">AiNeedMoreSupply</a></div><div class="ttdeci">void AiNeedMoreSupply(const CPlayer &amp;player)</div><div class="ttdoc">Called if AI needs more farms.</div><div class="ttdef"><b>Definition:</b> ai.cpp:940</div></div>
 <div class="ttc" id="aai_8h_html_a922a4b4b97d02779521335976215f05c"><div class="ttname"><a href="ai_8h.html#a922a4b4b97d02779521335976215f05c">AiUpgradeToComplete</a></div><div class="ttdeci">void AiUpgradeToComplete(CUnit &amp;unit, const CUnitType &amp;what)</div><div class="ttdoc">Called if AI unit has completed upgrade to.</div><div class="ttdef"><b>Definition:</b> ai.cpp:973</div></div>
-<div class="ttc" id="aclassCUnitType_html"><div class="ttname"><a href="classCUnitType.html">CUnitType</a></div><div class="ttdef"><b>Definition:</b> unittype.h:483</div></div>
+<div class="ttc" id="aclassCUnitType_html"><div class="ttname"><a href="classCUnitType.html">CUnitType</a></div><div class="ttdef"><b>Definition:</b> unittype.h:508</div></div>
 <div class="ttc" id="aai_8h_html_af046955a5aadd4d99a4dfdacc00947ed"><div class="ttname"><a href="ai_8h.html#af046955a5aadd4d99a4dfdacc00947ed">AiTrainingComplete</a></div><div class="ttdeci">void AiTrainingComplete(CUnit &amp;unit, CUnit &amp;what)</div><div class="ttdoc">Called if AI unit has completed training.</div><div class="ttdef"><b>Definition:</b> ai.cpp:952</div></div>
 <div class="ttc" id="aai_8h_html_a87cebc10782b5a340b45ed89840707a7"><div class="ttname"><a href="ai_8h.html#a87cebc10782b5a340b45ed89840707a7">AiAttackWithForceAt</a></div><div class="ttdeci">void AiAttackWithForceAt(unsigned int force, int x, int y)</div><div class="ttdoc">Register ccl features.</div><div class="ttdef"><b>Definition:</b> ai_force.cpp:742</div></div>
 <div class="ttc" id="aai_8h_html_aa3fd8a732614c1956d2b1961a5ee8d57"><div class="ttname"><a href="ai_8h.html#aa3fd8a732614c1956d2b1961a5ee8d57">InitAiModule</a></div><div class="ttdeci">void InitAiModule()</div><div class="ttdoc">Called each second.</div><div class="ttdef"><b>Definition:</b> ai.cpp:486</div></div>
@@ -189,10 +189,10 @@ $(function() {
 <div class="ttc" id="aai_8h_html_a859b26c4eea3360f9c8ac8edc6769050"><div class="ttname"><a href="ai_8h.html#a859b26c4eea3360f9c8ac8edc6769050">AiCanNotReach</a></div><div class="ttdeci">void AiCanNotReach(CUnit &amp;unit, const CUnitType &amp;what)</div><div class="ttdoc">Called if AI unit can't reach building place.</div><div class="ttdef"><b>Definition:</b> ai.cpp:809</div></div>
 <div class="ttc" id="aai_8h_html_a06b314a1812af6faa95a2691eb73ea1f"><div class="ttname"><a href="ai_8h.html#a06b314a1812af6faa95a2691eb73ea1f">AiUnitKilled</a></div><div class="ttdeci">void AiUnitKilled(CUnit &amp;unit)</div><div class="ttdoc">Called if AI unit is killed.</div><div class="ttdef"><b>Definition:</b> ai.cpp:742</div></div>
 <div class="ttc" id="aclassCFile_html"><div class="ttname"><a href="classCFile.html">CFile</a></div><div class="ttdef"><b>Definition:</b> iolib.h:102</div></div>
-<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:134</div></div>
+<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:135</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:31 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

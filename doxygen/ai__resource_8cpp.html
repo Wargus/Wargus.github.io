@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,8 @@ $(function() {
 <div class="title">ai_resource.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ai__local_8h_source.html">ai_local.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="action__build_8h_source.html">action/action_build.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="action__repair_8h_source.html">action/action_repair.h</a>&quot;</code><br />
@@ -101,9 +102,9 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIsAEnemyUnitOf.html">IsAEnemyUnitOf</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIsAEnemyUnitOf.html">IsAEnemyUnitOf&lt; ignoreVisibility &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIsAEnemyUnitWhichCanCounterAttackOf.html">IsAEnemyUnitWhichCanCounterAttackOf</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIsAEnemyUnitWhichCanCounterAttackOf.html">IsAEnemyUnitWhichCanCounterAttackOf&lt; ignoreVisibility &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcnode.html">cnode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,11 +125,11 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
 <tr class="separator:ab754cb45fa786e142f9607859cdc8e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b3496525d966b6c91c4726793477bc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a16b3496525d966b6c91c4726793477bc">AiCheckUnitTypeCosts</a> (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type)</td></tr>
 <tr class="separator:a16b3496525d966b6c91c4726793477bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a122dccb44e39f2ac1c36b5bcb25d4b2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a122dccb44e39f2ac1c36b5bcb25d4b2e">AiEnemyUnitsInDistance</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnitType.html">CUnitType</a> *type, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, unsigned range)</td></tr>
-<tr class="memdesc:a122dccb44e39f2ac1c36b5bcb25d4b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enemy units in distance.  <a href="ai__resource_8cpp.html#a122dccb44e39f2ac1c36b5bcb25d4b2e">More...</a><br /></td></tr>
-<tr class="separator:a122dccb44e39f2ac1c36b5bcb25d4b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317eb55ddab1d3630123d6495fb9854e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a317eb55ddab1d3630123d6495fb9854e">AiEnemyUnitsInDistance</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, unsigned range)</td></tr>
-<tr class="separator:a317eb55ddab1d3630123d6495fb9854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbaf5f79d615a05f7a569ba2c1bfc06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a0bbaf5f79d615a05f7a569ba2c1bfc06">AiEnemyUnitsInDistance</a> (const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;player, const <a class="el" href="classCUnitType.html">CUnitType</a> *type, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, unsigned range)</td></tr>
+<tr class="memdesc:a0bbaf5f79d615a05f7a569ba2c1bfc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there are enemy units in a given range (optionally of type)  <a href="ai__resource_8cpp.html#a0bbaf5f79d615a05f7a569ba2c1bfc06">More...</a><br /></td></tr>
+<tr class="separator:a0bbaf5f79d615a05f7a569ba2c1bfc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45558dc61a05dff037aead6814f8b0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#ae45558dc61a05dff037aead6814f8b0c">AiEnemyUnitsInDistance</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, unsigned range)</td></tr>
+<tr class="separator:ae45558dc61a05dff037aead6814f8b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55cfc6d174054a40d45370bab73406f3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a55cfc6d174054a40d45370bab73406f3">IsAlreadyWorking</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
 <tr class="separator:a55cfc6d174054a40d45370bab73406f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e8f61747f4302ea5e9fcda2fb391a4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a69e8f61747f4302ea5e9fcda2fb391a4">AiBuildBuilding</a> (const <a class="el" href="classCUnitType.html">CUnitType</a> &amp;type, <a class="el" href="classCUnitType.html">CUnitType</a> &amp;building, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;nearPos)</td></tr>
@@ -137,7 +138,7 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
 <tr class="separator:a0bbe30f5246d170c8f628aa6ccc8cf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95846913dccff64cdc6d201937560507"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a95846913dccff64cdc6d201937560507">cnode_cmp</a> (const <a class="el" href="structcnode.html">cnode</a> &amp;lhs, const <a class="el" href="structcnode.html">cnode</a> &amp;rhs)</td></tr>
 <tr class="separator:a95846913dccff64cdc6d201937560507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87594f2bea5a0b2b21fdfb443087ae0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a87594f2bea5a0b2b21fdfb443087ae0b">AiGetBuildRequestsCount</a> (const <a class="el" href="classPlayerAi.html">PlayerAi</a> &amp;pai, int(&amp;counter)[<a class="el" href="stratagus_8h.html#a8f4bebf69838b4fc3329656d608d22fe">UnitTypeMax</a>])</td></tr>
+<tr class="memitem:a87594f2bea5a0b2b21fdfb443087ae0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a87594f2bea5a0b2b21fdfb443087ae0b">AiGetBuildRequestsCount</a> (const <a class="el" href="classPlayerAi.html">PlayerAi</a> &amp;pai, int(&amp;counter)[<a class="el" href="settings_8h.html#a3a4b3733fa97e2476c055173b8accb28">UnitTypeMax</a>])</td></tr>
 <tr class="separator:a87594f2bea5a0b2b21fdfb443087ae0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1907b658686c118d97e78b60b87d89d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUnit.html">CUnit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ai__resource_8cpp.html#a1907b658686c118d97e78b60b87d89d4">FindDepositNearLoc</a> (<a class="el" href="classCPlayer.html">CPlayer</a> &amp;p, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int range, int resource)</td></tr>
 <tr class="separator:a1907b658686c118d97e78b60b87d89d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -681,14 +682,14 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
 
 </div>
 </div>
-<a id="a122dccb44e39f2ac1c36b5bcb25d4b2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a122dccb44e39f2ac1c36b5bcb25d4b2e">&#9670;&nbsp;</a></span>AiEnemyUnitsInDistance() <span class="overload">[1/2]</span></h2>
+<a id="a0bbaf5f79d615a05f7a569ba2c1bfc06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbaf5f79d615a05f7a569ba2c1bfc06">&#9670;&nbsp;</a></span>AiEnemyUnitsInDistance() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int AiEnemyUnitsInDistance </td>
+          <td class="memname">bool AiEnemyUnitsInDistance </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCPlayer.html">CPlayer</a> &amp;&#160;</td>
           <td class="paramname"><em>player</em>, </td>
@@ -719,8 +720,8 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enemy units in distance. </p>
-<p>Enemy units in distance.</p>
+<p>Check if there are enemy units in a given range (optionally of type) </p>
+<p>Check if there are enemy units in a given range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>Find enemies of this player </td></tr>
@@ -730,18 +731,18 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of enemy units. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If there are any enemy units in the range </dd></dl>
 
 </div>
 </div>
-<a id="a317eb55ddab1d3630123d6495fb9854e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a317eb55ddab1d3630123d6495fb9854e">&#9670;&nbsp;</a></span>AiEnemyUnitsInDistance() <span class="overload">[2/2]</span></h2>
+<a id="ae45558dc61a05dff037aead6814f8b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45558dc61a05dff037aead6814f8b0c">&#9670;&nbsp;</a></span>AiEnemyUnitsInDistance() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int AiEnemyUnitsInDistance </td>
+          <td class="memname">bool AiEnemyUnitsInDistance </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
           <td class="paramname"><em>unit</em>, </td>
@@ -759,7 +760,7 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enemy units in distance.</p>
+<p>Check if there are enemy units in a given range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unit</td><td>Find in distance for this unit. </td></tr>
@@ -767,7 +768,7 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of enemy units. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If there are any enemy units in the range </dd></dl>
 
 </div>
 </div>
@@ -1415,7 +1416,7 @@ ai_resource.cpp - AI resource manager.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

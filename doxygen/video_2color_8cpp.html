@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -84,10 +84,84 @@ $(function() {
 <code>#include &quot;color.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="script_8h_source.html">script.h</a>&quot;</code><br />
 <code>#include &quot;SDL.h&quot;</code><br />
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+color.h - The A platform independent color.</h2></td></tr>
+<tr class="memitem:a58e9e15784c144737a9f0e14f2189a93"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_2color_8cpp.html#a58e9e15784c144737a9f0e14f2189a93">TheScreen</a></td></tr>
+<tr class="memdesc:a58e9e15784c144737a9f0e14f2189a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal screen.  <a href="video_2color_8cpp.html#a58e9e15784c144737a9f0e14f2189a93">More...</a><br /></td></tr>
+<tr class="separator:a58e9e15784c144737a9f0e14f2189a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea120981a8d34a25d53cc8ab2a6a109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_2color_8cpp.html#a3ea120981a8d34a25d53cc8ab2a6a109">InterpolateColor</a> (<a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a> color1, <a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a> color2, float fraction)</td></tr>
+<tr class="separator:a3ea120981a8d34a25d53cc8ab2a6a109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a3ea120981a8d34a25d53cc8ab2a6a109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea120981a8d34a25d53cc8ab2a6a109">&#9670;&nbsp;</a></span>InterpolateColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a> InterpolateColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a>&#160;</td>
+          <td class="paramname"><em>color1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="include_2color_8h.html#a97f8557abb81c4aae916b9f2b6a45eb6">IntColor</a>&#160;</td>
+          <td class="paramname"><em>color2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fraction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>interpolate 2 RGB colors </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color1</td><td>integer containing color as 0x00RRGGBB </td></tr>
+    <tr><td class="paramname">color2</td><td>integer containing color as 0x00RRGGBB </td></tr>
+    <tr><td class="paramname">fraction</td><td>how much interpolation (0..1)<ul>
+<li>0: full color 1</li>
+<li>1: full color 2 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the new color after interpolation </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a58e9e15784c144737a9f0e14f2189a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e9e15784c144737a9f0e14f2189a93">&#9670;&nbsp;</a></span>TheScreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* TheScreen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal screen. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for modifiers for custom pixel manipulations.  <a href="classPixelModifier.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGraphic.html">CGraphic</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCGraphic_1_1frame__pos__t.html">CGraphic::frame_pos_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPlayerColorGraphic.html">CPlayerColorGraphic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,6 +279,8 @@ video.h - The video headerfile.</h2></td></tr>
 <tr class="separator:a352973a8ec9fa8e02d65cfb8080e44e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ffc0dd8e0bc6a9aaf6ed4b50be1606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a47ffc0dd8e0bc6a9aaf6ed4b50be1606">AddColorCyclingRange</a> (unsigned int begin, unsigned int end)</td></tr>
 <tr class="separator:a47ffc0dd8e0bc6a9aaf6ed4b50be1606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2116135d0f3be605b068d046449ba97c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a2116135d0f3be605b068d046449ba97c">SetColorCycleSpeed</a> (unsigned int speed)</td></tr>
+<tr class="separator:a2116135d0f3be605b068d046449ba97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8e0c4aef628a5b2af656a69d4b08c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a4d8e0c4aef628a5b2af656a69d4b08c7">SetColorCycleAll</a> (bool value)</td></tr>
 <tr class="separator:a4d8e0c4aef628a5b2af656a69d4b08c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a835b1a185f42f1961c77047d64fc649c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a835b1a185f42f1961c77047d64fc649c">RestoreColorCyclingSurface</a> ()</td></tr>
@@ -1074,6 +1078,25 @@ video.h - The video headerfile.</h2></td></tr>
 
 </div>
 </div>
+<a id="a2116135d0f3be605b068d046449ba97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2116135d0f3be605b068d046449ba97c">&#9670;&nbsp;</a></span>SetColorCycleSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SetColorCycleSpeed </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the <a class="el" href="classColor.html">Color</a> Cycle speed. </p><dl class="section return"><dt>Returns</dt><dd>the previous speed </dd></dl>
+
+</div>
+</div>
 <a id="a7bedf168928de2c29c4c256e2478f5c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bedf168928de2c29c4c256e2478f5c1">&#9670;&nbsp;</a></span>SetPlayersPalette()</h2>
 
@@ -1696,14 +1719,14 @@ video.h - The video headerfile.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Video synchronization speed. Synchronization time in percent. If =0, video framerate is not synchronized. 100 is exact CYCLES_PER_SECOND (30). <a class="el" href="classGame.html">Game</a> will try to redraw screen within intervals of VideoSyncSpeed, not more, not less. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="stratagus_8h.html#a32e0315586dc39327de201f159743d7c" title="Game cycles per second to simulate (original 30-40)">CYCLES_PER_SECOND</a> </dd></dl>
+<p>Video synchronization speed. Synchronization time in percent. If =0, video framerate is not synchronized. 100 is exact CYCLES_PER_SECOND (30). <a class="el" href="classGame.html">Game</a> will try to redraw screen within intervals of VideoSyncSpeed, not more, not less. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#abebea85d391f1e415049225563d0c6b1" title="Game cycles per second to simulate (original 30-40)">CYCLES_PER_SECOND</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

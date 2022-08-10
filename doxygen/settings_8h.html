@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -82,8 +82,12 @@ $(function() {
 <div class="title">settings.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;bitset&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 </div>
 <p><a href="settings_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -96,178 +100,138 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 settings.h - The game settings headerfile.</h2></td></tr>
-<tr class="memitem:a080b407db3a04421c8a0aece8de9e995"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a080b407db3a04421c8a0aece8de9e995">SettingsPresetMapDefault</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:a080b407db3a04421c8a0aece8de9e995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e530127f82e544bfe6b6b1aabad0da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a73e530127f82e544bfe6b6b1aabad0da">SettingsSinglePlayerGame</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a73e530127f82e544bfe6b6b1aabad0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e52507277b9cbefda2da3d9e85ce99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ae8e52507277b9cbefda2da3d9e85ce99">SettingsMultiPlayerGame</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ae8e52507277b9cbefda2da3d9e85ce99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93994a16367c56cc8b776db421376819"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819">GameTypes</a> { <br />
-&#160;&#160;<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819a2486ca73bf3a44cb0d896fd25d227258">SettingsGameTypeMapDefault</a> = SettingsPresetMapDefault, 
-<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819aa54f624054848fca373cdaaa9a57e1e1">SettingsGameTypeMelee</a> = 0, 
-<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819aed3e83673fe788d628903be51ba26592">SettingsGameTypeFreeForAll</a>, 
-<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819ad98b8b9e2d5f3fbe3ecbde4b414ac709">SettingsGameTypeTopVsBottom</a>, 
-<br />
-&#160;&#160;<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819ab9102b1123029b15764cc11e60c5bc9c">SettingsGameTypeLeftVsRight</a>, 
-<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819aa91393ca7c3dde55a5322bee64ea7156">SettingsGameTypeManVsMachine</a>, 
-<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819a2e4c0c9b3d1abdd6986e74401dc3de15">SettingsGameTypeManTeamVsMachine</a>, 
-<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819af07ddbfbf34a1566a4cb4ef5a6d95afc">SettingsGameTypeMachineVsMachine</a>, 
-<br />
-&#160;&#160;<a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819a29cc9d1e83afae4e2b4457273d5fa0a6">SettingsGameTypeMachineVsMachineTraining</a>
-<br />
- }</td></tr>
-<tr class="separator:a93994a16367c56cc8b776db421376819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe335f24a312b52bbd56c114ebf23fd6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6">MapRevealModes</a> { <a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a81cc937c0c085372517a0d25865d1e0e">cHidden</a> = 0, 
-<a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a1606d227732859dcb9507c4b76564f9a">cKnown</a>, 
-<a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6adba74c7c7e2a815278672586354aa9be">cExplored</a>, 
-<a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6a6f63acffde143cfb3823c84a80476b78">cNumOfModes</a>
- }</td></tr>
-<tr class="separator:abe335f24a312b52bbd56c114ebf23fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7798f1c21bff65b845d7fc5cb4738e5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a7798f1c21bff65b845d7fc5cb4738e5a">USING_TOLUAPP</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a7798f1c21bff65b845d7fc5cb4738e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105fb6d0b3fef917ed086f2c924e4e16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;&#160;&#160;enum</td></tr>
+<tr class="separator:a105fb6d0b3fef917ed086f2c924e4e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9e5b6720cddea4d18f3b2f313f6363"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a> = 16</td></tr>
+<tr class="separator:abb9e5b6720cddea4d18f3b2f313f6363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4b3733fa97e2476c055173b8accb28"><td class="memItemLeft" align="right" valign="top">constexpr unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a3a4b3733fa97e2476c055173b8accb28">UnitTypeMax</a> = 2048</td></tr>
+<tr class="memdesc:a3a4b3733fa97e2476c055173b8accb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many players are supported.  <a href="settings_8h.html#a3a4b3733fa97e2476c055173b8accb28">More...</a><br /></td></tr>
+<tr class="separator:a3a4b3733fa97e2476c055173b8accb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d26ecc7e5fd1aca2592ff716f5ca8e7"><td class="memItemLeft" align="right" valign="top">constexpr unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a4d26ecc7e5fd1aca2592ff716f5ca8e7">UpgradeMax</a> = 2048</td></tr>
+<tr class="memdesc:a4d26ecc7e5fd1aca2592ff716f5ca8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many unit types supported.  <a href="settings_8h.html#a4d26ecc7e5fd1aca2592ff716f5ca8e7">More...</a><br /></td></tr>
+<tr class="separator:a4d26ecc7e5fd1aca2592ff716f5ca8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4b1302f07dd3526958211e7e21ce53"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a8a4b1302f07dd3526958211e7e21ce53">MAX_RACES</a> = 8</td></tr>
+<tr class="memdesc:a8a4b1302f07dd3526958211e7e21ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many upgrades supported.  <a href="settings_8h.html#a8a4b1302f07dd3526958211e7e21ce53">More...</a><br /></td></tr>
+<tr class="separator:a8a4b1302f07dd3526958211e7e21ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308f92c52e6cfe332969b60c002f9fcc"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a308f92c52e6cfe332969b60c002f9fcc">PlayerNumNeutral</a> = <a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a> - 1</td></tr>
+<tr class="separator:a308f92c52e6cfe332969b60c002f9fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5a715006d7fb3739185ede6d1b3b31"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a0c5a715006d7fb3739185ede6d1b3b31">FRAMES_PER_SECOND</a> = 30</td></tr>
+<tr class="memdesc:a0c5a715006d7fb3739185ede6d1b3b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is the neutral player slot  <a href="settings_8h.html#a0c5a715006d7fb3739185ede6d1b3b31">More...</a><br /></td></tr>
+<tr class="separator:a0c5a715006d7fb3739185ede6d1b3b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebea85d391f1e415049225563d0c6b1"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#abebea85d391f1e415049225563d0c6b1">CYCLES_PER_SECOND</a> = 30</td></tr>
+<tr class="memdesc:abebea85d391f1e415049225563d0c6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html">Game</a> cycles per second to simulate (original 30-40)  <a href="settings_8h.html#abebea85d391f1e415049225563d0c6b1">More...</a><br /></td></tr>
+<tr class="separator:abebea85d391f1e415049225563d0c6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec875a201ac240a425ac349b7368c0d4"><td class="memItemLeft" align="right" valign="top">constexpr int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#aec875a201ac240a425ac349b7368c0d4">SettingsPresetMapDefault</a> = -1</td></tr>
+<tr class="separator:aec875a201ac240a425ac349b7368c0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96a19353ef4ca8a210ad38cdae5ceec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ac96a19353ef4ca8a210ad38cdae5ceec">PlayerTypes</a></td></tr>
+<tr class="memdesc:ac96a19353ef4ca8a210ad38cdae5ceec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special: Use map supplied.  <a href="settings_8h.html#ac96a19353ef4ca8a210ad38cdae5ceec">More...</a><br /></td></tr>
+<tr class="separator:ac96a19353ef4ca8a210ad38cdae5ceec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4ef118cde759b8f6f7b1841347c063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#adb4ef118cde759b8f6f7b1841347c063">PlayerUnset</a> = 0</td></tr>
+<tr class="memdesc:adb4ef118cde759b8f6f7b1841347c063"><td class="mdescLeft">&#160;</td><td class="mdescRight">use default  <a href="settings_8h.html#adb4ef118cde759b8f6f7b1841347c063">More...</a><br /></td></tr>
+<tr class="separator:adb4ef118cde759b8f6f7b1841347c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff1744655f2ba1f400f3e85db10bde8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a8ff1744655f2ba1f400f3e85db10bde8">PlayerNeutral</a> = 2</td></tr>
+<tr class="memdesc:a8ff1744655f2ba1f400f3e85db10bde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">not set  <a href="settings_8h.html#a8ff1744655f2ba1f400f3e85db10bde8">More...</a><br /></td></tr>
+<tr class="separator:a8ff1744655f2ba1f400f3e85db10bde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d9175e75977b8b00dbd2c395b86c37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a37d9175e75977b8b00dbd2c395b86c37">PlayerNobody</a> = 3</td></tr>
+<tr class="memdesc:a37d9175e75977b8b00dbd2c395b86c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">neutral  <a href="settings_8h.html#a37d9175e75977b8b00dbd2c395b86c37">More...</a><br /></td></tr>
+<tr class="separator:a37d9175e75977b8b00dbd2c395b86c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaefb46c1b4a892247319152aee35344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#aeaefb46c1b4a892247319152aee35344">PlayerComputer</a> = 4</td></tr>
+<tr class="memdesc:aeaefb46c1b4a892247319152aee35344"><td class="mdescLeft">&#160;</td><td class="mdescRight">unused slot  <a href="settings_8h.html#aeaefb46c1b4a892247319152aee35344">More...</a><br /></td></tr>
+<tr class="separator:aeaefb46c1b4a892247319152aee35344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068944afaf0488b9f1ecb2d4d20a9165"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a068944afaf0488b9f1ecb2d4d20a9165">PlayerPerson</a> = 5</td></tr>
+<tr class="memdesc:a068944afaf0488b9f1ecb2d4d20a9165"><td class="mdescLeft">&#160;</td><td class="mdescRight">computer player  <a href="settings_8h.html#a068944afaf0488b9f1ecb2d4d20a9165">More...</a><br /></td></tr>
+<tr class="separator:a068944afaf0488b9f1ecb2d4d20a9165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df13636a233b15b1d430348fd6dee7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a5df13636a233b15b1d430348fd6dee7d">PlayerRescuePassive</a> = 6</td></tr>
+<tr class="memdesc:a5df13636a233b15b1d430348fd6dee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">human player  <a href="settings_8h.html#a5df13636a233b15b1d430348fd6dee7d">More...</a><br /></td></tr>
+<tr class="separator:a5df13636a233b15b1d430348fd6dee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad484a847b23c2032b9da84e184320359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ad484a847b23c2032b9da84e184320359">PlayerRescueActive</a></td></tr>
+<tr class="memdesc:ad484a847b23c2032b9da84e184320359"><td class="mdescLeft">&#160;</td><td class="mdescRight">rescued passive  <a href="settings_8h.html#ad484a847b23c2032b9da84e184320359">More...</a><br /></td></tr>
+<tr class="separator:ad484a847b23c2032b9da84e184320359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2888b72e047bb1bd132b6f99d5c851e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#aa2888b72e047bb1bd132b6f99d5c851e">PlayerTypeNames</a> [static_cast&lt; int &gt;(<a class="el" href="settings_8h.html#ad484a847b23c2032b9da84e184320359">PlayerTypes::PlayerRescueActive</a>)+1]</td></tr>
+<tr class="separator:aa2888b72e047bb1bd132b6f99d5c851e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da1ac70740f6ddfa29acb6e92dfb371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a6da1ac70740f6ddfa29acb6e92dfb371">RevealTypes</a></td></tr>
+<tr class="separator:a6da1ac70740f6ddfa29acb6e92dfb371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b6eaeeafc52989f8b75299ec19f310"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#aa6b6eaeeafc52989f8b75299ec19f310">cAllUnits</a></td></tr>
+<tr class="separator:aa6b6eaeeafc52989f8b75299ec19f310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ee28570c10fd7657cb86194484c4ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a11ee28570c10fd7657cb86194484c4ff">cBuildingsOnly</a></td></tr>
+<tr class="separator:a11ee28570c10fd7657cb86194484c4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68cab0630bbce748cfc10ab73f302c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a68cab0630bbce748cfc10ab73f302c8d">NetGameTypes</a></td></tr>
+<tr class="memdesc:a68cab0630bbce748cfc10ab73f302c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revelation types.  <a href="settings_8h.html#a68cab0630bbce748cfc10ab73f302c8d">More...</a><br /></td></tr>
+<tr class="separator:a68cab0630bbce748cfc10ab73f302c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a46887b92704b17a263aa904e842a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a68a46887b92704b17a263aa904e842a3">SettingsMultiPlayerGame</a></td></tr>
+<tr class="separator:a68a46887b92704b17a263aa904e842a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b2ac5964deaef0f4f341e5ab0eadc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ab9b2ac5964deaef0f4f341e5ab0eadc4">Unset</a></td></tr>
+<tr class="separator:ab9b2ac5964deaef0f4f341e5ab0eadc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea1c659ed8b9491fb4b16aa90b07f75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a6ea1c659ed8b9491fb4b16aa90b07f75">GameTypes</a></td></tr>
+<tr class="separator:a6ea1c659ed8b9491fb4b16aa90b07f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c50136fb5c059876ee911f8a05e99e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a5c50136fb5c059876ee911f8a05e99e7">SettingsGameTypeMelee</a> = 0</td></tr>
+<tr class="separator:a5c50136fb5c059876ee911f8a05e99e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcef9316e82144bc76ef8fa4c839980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a7dcef9316e82144bc76ef8fa4c839980">SettingsGameTypeFreeForAll</a></td></tr>
+<tr class="separator:a7dcef9316e82144bc76ef8fa4c839980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810a78037cf75bce3da067ee43eb0f52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a810a78037cf75bce3da067ee43eb0f52">SettingsGameTypeTopVsBottom</a></td></tr>
+<tr class="separator:a810a78037cf75bce3da067ee43eb0f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd2a57a9cdb1ec290754506dd96e2df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a2fd2a57a9cdb1ec290754506dd96e2df">SettingsGameTypeLeftVsRight</a></td></tr>
+<tr class="separator:a2fd2a57a9cdb1ec290754506dd96e2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27de65dcc94b9181b1a16961cb7f7f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ae27de65dcc94b9181b1a16961cb7f7f6">SettingsGameTypeManVsMachine</a></td></tr>
+<tr class="separator:ae27de65dcc94b9181b1a16961cb7f7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86406d9eee849fe5ddfc8379df8e9a9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a86406d9eee849fe5ddfc8379df8e9a9b">SettingsGameTypeManTeamVsMachine</a></td></tr>
+<tr class="separator:a86406d9eee849fe5ddfc8379df8e9a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a77676dbbdbe6aa92d1bbfa0dacd262"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a1a77676dbbdbe6aa92d1bbfa0dacd262">SettingsGameTypeMachineVsMachine</a></td></tr>
+<tr class="separator:a1a77676dbbdbe6aa92d1bbfa0dacd262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2ca0b6ac0ee12980a6a0f4a141c2b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#acb2ca0b6ac0ee12980a6a0f4a141c2b9">SettingsGameTypeMachineVsMachineTraining</a></td></tr>
+<tr class="separator:acb2ca0b6ac0ee12980a6a0f4a141c2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897bcfaf452c8010b2a3f4572863e385"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a897bcfaf452c8010b2a3f4572863e385">MapRevealModes</a></td></tr>
+<tr class="separator:a897bcfaf452c8010b2a3f4572863e385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc4fb089bfd3d3575fd6f6c9233876c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a1cc4fb089bfd3d3575fd6f6c9233876c">cKnown</a></td></tr>
+<tr class="separator:a1cc4fb089bfd3d3575fd6f6c9233876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3885615920f660629159d208440c7f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#af3885615920f660629159d208440c7f5">cExplored</a></td></tr>
+<tr class="separator:af3885615920f660629159d208440c7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9837c8c2f5adb2141e594f10d2f57832"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a9837c8c2f5adb2141e594f10d2f57832">cNumOfModes</a></td></tr>
+<tr class="separator:a9837c8c2f5adb2141e594f10d2f57832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8a764b66d98ad96fbd9d64d03306fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a9b8a764b66d98ad96fbd9d64d03306fd">FieldOfViewTypes</a></td></tr>
+<tr class="separator:a9b8a764b66d98ad96fbd9d64d03306fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc455ca850f31852ac7dabc18aaf15e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#adc455ca850f31852ac7dabc18aaf15e0">cSimpleRadial</a></td></tr>
+<tr class="separator:adc455ca850f31852ac7dabc18aaf15e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3302862878ebcaae4838ea9ecc44d92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#af3302862878ebcaae4838ea9ecc44d92">NumOfTypes</a></td></tr>
+<tr class="separator:af3302862878ebcaae4838ea9ecc44d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6543ee9ef1980bb666980edb1c139fce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSettings.html">Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a6543ee9ef1980bb666980edb1c139fce">GameSettings</a></td></tr>
 <tr class="separator:a6543ee9ef1980bb666980edb1c139fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39790b20db143ab3475d632fec7a4ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a39790b20db143ab3475d632fec7a4ec5">ShowStats</a> ()</td></tr>
-<tr class="memdesc:a39790b20db143ab3475d632fec7a4ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html">Game</a> settings.  <a href="settings_8h.html#a39790b20db143ab3475d632fec7a4ec5">More...</a><br /></td></tr>
-<tr class="separator:a39790b20db143ab3475d632fec7a4ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ca7c82426f8881e4c3ee0e596209dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a02ca7c82426f8881e4c3ee0e596209dd">CreateGame</a> (const std::string &amp;filename, <a class="el" href="classCMap.html">CMap</a> *map)</td></tr>
-<tr class="memdesc:a02ca7c82426f8881e4c3ee0e596209dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a game.  <a href="settings_8h.html#a02ca7c82426f8881e4c3ee0e596209dd">More...</a><br /></td></tr>
-<tr class="separator:a02ca7c82426f8881e4c3ee0e596209dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1dd2992e52fb3be2d7d5ecea7c68ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ab1dd2992e52fb3be2d7d5ecea7c68ee3">InitSettings</a> ()</td></tr>
-<tr class="memdesc:ab1dd2992e52fb3be2d7d5ecea7c68ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Setting to default values.  <a href="settings_8h.html#ab1dd2992e52fb3be2d7d5ecea7c68ee3">More...</a><br /></td></tr>
+<tr class="memdesc:ab1dd2992e52fb3be2d7d5ecea7c68ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html">Game</a> settings.  <a href="settings_8h.html#ab1dd2992e52fb3be2d7d5ecea7c68ee3">More...</a><br /></td></tr>
 <tr class="separator:ab1dd2992e52fb3be2d7d5ecea7c68ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae8e52507277b9cbefda2da3d9e85ce99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e52507277b9cbefda2da3d9e85ce99">&#9670;&nbsp;</a></span>SettingsMultiPlayerGame</h2>
+<a id="a105fb6d0b3fef917ed086f2c924e4e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105fb6d0b3fef917ed086f2c924e4e16">&#9670;&nbsp;</a></span>ENUM_CLASS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SettingsMultiPlayerGame&#160;&#160;&#160;2</td>
+          <td class="memname">#define ENUM_CLASS&#160;&#160;&#160;enum</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a080b407db3a04421c8a0aece8de9e995"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a080b407db3a04421c8a0aece8de9e995">&#9670;&nbsp;</a></span>SettingsPresetMapDefault</h2>
+<a id="a7798f1c21bff65b845d7fc5cb4738e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7798f1c21bff65b845d7fc5cb4738e5a">&#9670;&nbsp;</a></span>USING_TOLUAPP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SettingsPresetMapDefault&#160;&#160;&#160;-1</td>
+          <td class="memname">#define USING_TOLUAPP&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a73e530127f82e544bfe6b6b1aabad0da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e530127f82e544bfe6b6b1aabad0da">&#9670;&nbsp;</a></span>SettingsSinglePlayerGame</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SettingsSinglePlayerGame&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Single or multiplayer settings </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a93994a16367c56cc8b776db421376819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93994a16367c56cc8b776db421376819">&#9670;&nbsp;</a></span>GameTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="settings_8h.html#a93994a16367c56cc8b776db421376819">GameTypes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>GameType settings </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819a2486ca73bf3a44cb0d896fd25d227258"></a>SettingsGameTypeMapDefault&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819aa54f624054848fca373cdaaa9a57e1e1"></a>SettingsGameTypeMelee&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819aed3e83673fe788d628903be51ba26592"></a>SettingsGameTypeFreeForAll&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819ad98b8b9e2d5f3fbe3ecbde4b414ac709"></a>SettingsGameTypeTopVsBottom&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819ab9102b1123029b15764cc11e60c5bc9c"></a>SettingsGameTypeLeftVsRight&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819aa91393ca7c3dde55a5322bee64ea7156"></a>SettingsGameTypeManVsMachine&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819a2e4c0c9b3d1abdd6986e74401dc3de15"></a>SettingsGameTypeManTeamVsMachine&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819af07ddbfbf34a1566a4cb4ef5a6d95afc"></a>SettingsGameTypeMachineVsMachine&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93994a16367c56cc8b776db421376819a29cc9d1e83afae4e2b4457273d5fa0a6"></a>SettingsGameTypeMachineVsMachineTraining&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="abe335f24a312b52bbd56c114ebf23fd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe335f24a312b52bbd56c114ebf23fd6">&#9670;&nbsp;</a></span>MapRevealModes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="settings_8h.html#abe335f24a312b52bbd56c114ebf23fd6">MapRevealModes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Map revealing modes: cHidden - unrevealed, cKnown - you can see unexplored tiles, but they are darker than explored cExplored - all tiles became explored, and covered only by the fog of war if it's enabled. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abe335f24a312b52bbd56c114ebf23fd6a81cc937c0c085372517a0d25865d1e0e"></a>cHidden&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abe335f24a312b52bbd56c114ebf23fd6a1606d227732859dcb9507c4b76564f9a"></a>cKnown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abe335f24a312b52bbd56c114ebf23fd6adba74c7c7e2a815278672586354aa9be"></a>cExplored&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abe335f24a312b52bbd56c114ebf23fd6a6f63acffde143cfb3823c84a80476b78"></a>cNumOfModes&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a02ca7c82426f8881e4c3ee0e596209dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02ca7c82426f8881e4c3ee0e596209dd">&#9670;&nbsp;</a></span>CreateGame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CreateGame </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classCMap.html">CMap</a> *&#160;</td>
-          <td class="paramname"><em>map</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a game. </p>
-<p>CreateGame.</p>
-<p>Load map, graphics, sounds, etc</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>map filename </td></tr>
-    <tr><td class="paramname">map</td><td>map loaded</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>FIXME: use in this function InitModules / LoadModules!!! </dd></dl>
-
-</div>
-</div>
 <a id="ab1dd2992e52fb3be2d7d5ecea7c68ee3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1dd2992e52fb3be2d7d5ecea7c68ee3">&#9670;&nbsp;</a></span>InitSettings()</h2>
 
@@ -283,33 +247,161 @@ settings.h - The game settings headerfile.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Init Setting to default values. </p>
+<p><a class="el" href="classGame.html">Game</a> settings. </p>
+<p>Init Setting to default values</p>
 <p>Init <a class="el" href="classGame.html">Game</a> Setting to default values</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>FIXME: this should not be executed for restart levels! </dd></dl>
 
 </div>
 </div>
-<a id="a39790b20db143ab3475d632fec7a4ec5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39790b20db143ab3475d632fec7a4ec5">&#9670;&nbsp;</a></span>ShowStats()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa6b6eaeeafc52989f8b75299ec19f310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b6eaeeafc52989f8b75299ec19f310">&#9670;&nbsp;</a></span>cAllUnits</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> ShowStats </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> cAllUnits</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classGame.html">Game</a> settings. </p>
-<p>Show stats </p>
+</div>
+</div>
+<a id="a11ee28570c10fd7657cb86194484c4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ee28570c10fd7657cb86194484c4ff">&#9670;&nbsp;</a></span>cBuildingsOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> cBuildingsOnly</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
+<a id="af3885615920f660629159d208440c7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3885615920f660629159d208440c7f5">&#9670;&nbsp;</a></span>cExplored</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> cExplored</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cc4fb089bfd3d3575fd6f6c9233876c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc4fb089bfd3d3575fd6f6c9233876c">&#9670;&nbsp;</a></span>cKnown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> cKnown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9837c8c2f5adb2141e594f10d2f57832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9837c8c2f5adb2141e594f10d2f57832">&#9670;&nbsp;</a></span>cNumOfModes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> cNumOfModes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc455ca850f31852ac7dabc18aaf15e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc455ca850f31852ac7dabc18aaf15e0">&#9670;&nbsp;</a></span>cSimpleRadial</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> cSimpleRadial</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abebea85d391f1e415049225563d0c6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebea85d391f1e415049225563d0c6b1">&#9670;&nbsp;</a></span>CYCLES_PER_SECOND</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned char CYCLES_PER_SECOND = 30</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classGame.html">Game</a> cycles per second to simulate (original 30-40) </p>
+
+</div>
+</div>
+<a id="a9b8a764b66d98ad96fbd9d64d03306fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8a764b66d98ad96fbd9d64d03306fd">&#9670;&nbsp;</a></span>FieldOfViewTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> FieldOfViewTypes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c5a715006d7fb3739185ede6d1b3b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5a715006d7fb3739185ede6d1b3b31">&#9670;&nbsp;</a></span>FRAMES_PER_SECOND</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned char FRAMES_PER_SECOND = 30</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>this is the neutral player slot </p>
+<p>Frames per second to display (original 30-40) </p>
+
+</div>
+</div>
 <a id="a6543ee9ef1980bb666980edb1c139fce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6543ee9ef1980bb666980edb1c139fce">&#9670;&nbsp;</a></span>GameSettings</h2>
 
@@ -324,10 +416,520 @@ settings.h - The game settings headerfile.</h2></td></tr>
 
 </div>
 </div>
+<a id="a6ea1c659ed8b9491fb4b16aa90b07f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea1c659ed8b9491fb4b16aa90b07f75">&#9670;&nbsp;</a></span>GameTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> GameTypes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GameType settings </p>
+
+</div>
+</div>
+<a id="a897bcfaf452c8010b2a3f4572863e385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897bcfaf452c8010b2a3f4572863e385">&#9670;&nbsp;</a></span>MapRevealModes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> MapRevealModes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Map revealing modes: cHidden - unrevealed, cKnown - you can see unexplored tiles, but they are darker than explored cExplored - all tiles became explored, and covered only by the fog of war if it's enabled. </p>
+
+</div>
+</div>
+<a id="a8a4b1302f07dd3526958211e7e21ce53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4b1302f07dd3526958211e7e21ce53">&#9670;&nbsp;</a></span>MAX_RACES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned char MAX_RACES = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many upgrades supported. </p>
+
+</div>
+</div>
+<a id="a68cab0630bbce748cfc10ab73f302c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cab0630bbce748cfc10ab73f302c8d">&#9670;&nbsp;</a></span>NetGameTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> NetGameTypes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Revelation types. </p>
+<p>Single or multiplayer settings </p>
+
+</div>
+</div>
+<a id="af3302862878ebcaae4838ea9ecc44d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3302862878ebcaae4838ea9ecc44d92">&#9670;&nbsp;</a></span>NumOfTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> NumOfTypes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeaefb46c1b4a892247319152aee35344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaefb46c1b4a892247319152aee35344">&#9670;&nbsp;</a></span>PlayerComputer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerComputer = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unused slot </p>
+
+</div>
+</div>
+<a id="abb9e5b6720cddea4d18f3b2f313f6363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9e5b6720cddea4d18f3b2f313f6363">&#9670;&nbsp;</a></span>PlayerMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned char PlayerMax = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ff1744655f2ba1f400f3e85db10bde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff1744655f2ba1f400f3e85db10bde8">&#9670;&nbsp;</a></span>PlayerNeutral</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerNeutral = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>not set </p>
+
+</div>
+</div>
+<a id="a37d9175e75977b8b00dbd2c395b86c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d9175e75977b8b00dbd2c395b86c37">&#9670;&nbsp;</a></span>PlayerNobody</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerNobody = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>neutral </p>
+
+</div>
+</div>
+<a id="a308f92c52e6cfe332969b60c002f9fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308f92c52e6cfe332969b60c002f9fcc">&#9670;&nbsp;</a></span>PlayerNumNeutral</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned char PlayerNumNeutral = <a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a> - 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a068944afaf0488b9f1ecb2d4d20a9165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068944afaf0488b9f1ecb2d4d20a9165">&#9670;&nbsp;</a></span>PlayerPerson</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerPerson = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>computer player </p>
+
+</div>
+</div>
+<a id="ad484a847b23c2032b9da84e184320359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad484a847b23c2032b9da84e184320359">&#9670;&nbsp;</a></span>PlayerRescueActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerRescueActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= 7                 </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>rescued passive </p>
+
+</div>
+</div>
+<a id="a5df13636a233b15b1d430348fd6dee7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df13636a233b15b1d430348fd6dee7d">&#9670;&nbsp;</a></span>PlayerRescuePassive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerRescuePassive = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>human player </p>
+
+</div>
+</div>
+<a id="aa2888b72e047bb1bd132b6f99d5c851e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2888b72e047bb1bd132b6f99d5c851e">&#9670;&nbsp;</a></span>PlayerTypeNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PlayerTypeNames[static_cast&lt; int &gt;(<a class="el" href="settings_8h.html#ad484a847b23c2032b9da84e184320359">PlayerTypes::PlayerRescueActive</a>)+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96a19353ef4ca8a210ad38cdae5ceec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96a19353ef4ca8a210ad38cdae5ceec">&#9670;&nbsp;</a></span>PlayerTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerTypes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Special: Use map supplied. </p>
+<p>Types for the player</p>
+<p><a class="el" href="settings_8h.html#a8ff1744655f2ba1f400f3e85db10bde8" title="not set">PlayerNeutral</a></p>
+<p>This player is controlled by the computer doing nothing.</p>
+<p><a class="el" href="settings_8h.html#a37d9175e75977b8b00dbd2c395b86c37" title="neutral">PlayerNobody</a></p>
+<p>This player is unused. Nobody controls this player.</p>
+<p><a class="el" href="settings_8h.html#aeaefb46c1b4a892247319152aee35344" title="unused slot">PlayerComputer</a></p>
+<p>This player is controlled by the computer. CPlayer::AiNum selects the AI strategy.</p>
+<p><a class="el" href="settings_8h.html#a068944afaf0488b9f1ecb2d4d20a9165" title="computer player">PlayerPerson</a></p>
+<p>This player is contolled by a person. This can be the player sitting on the local computer or player playing over the network.</p>
+<p><a class="el" href="settings_8h.html#a5df13636a233b15b1d430348fd6dee7d" title="human player">PlayerRescuePassive</a></p>
+<p>This player does nothing, the game pieces just sit in the game (being passive)... when a person player moves next to a PassiveRescue unit/building, then it is "rescued" and becomes part of that persons team. If the city center is rescued, than all units of this player are rescued.</p>
+<p><a class="el" href="settings_8h.html#ad484a847b23c2032b9da84e184320359" title="rescued passive">PlayerRescueActive</a></p>
+<p>This player is controlled by the computer. CPlayer::AiNum selects the AI strategy. Until it is rescued it plays like an ally. The first person which reaches units of this player, can rescue them. If the city center is rescued, than all units of this player are rescued. </p>
+
+</div>
+</div>
+<a id="adb4ef118cde759b8f6f7b1841347c063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4ef118cde759b8f6f7b1841347c063">&#9670;&nbsp;</a></span>PlayerUnset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> PlayerUnset = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>use default </p>
+
+</div>
+</div>
+<a id="a6da1ac70740f6ddfa29acb6e92dfb371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da1ac70740f6ddfa29acb6e92dfb371">&#9670;&nbsp;</a></span>RevealTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> RevealTypes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dcef9316e82144bc76ef8fa4c839980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcef9316e82144bc76ef8fa4c839980">&#9670;&nbsp;</a></span>SettingsGameTypeFreeForAll</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeFreeForAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fd2a57a9cdb1ec290754506dd96e2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd2a57a9cdb1ec290754506dd96e2df">&#9670;&nbsp;</a></span>SettingsGameTypeLeftVsRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeLeftVsRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a77676dbbdbe6aa92d1bbfa0dacd262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a77676dbbdbe6aa92d1bbfa0dacd262">&#9670;&nbsp;</a></span>SettingsGameTypeMachineVsMachine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeMachineVsMachine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb2ca0b6ac0ee12980a6a0f4a141c2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2ca0b6ac0ee12980a6a0f4a141c2b9">&#9670;&nbsp;</a></span>SettingsGameTypeMachineVsMachineTraining</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeMachineVsMachineTraining</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86406d9eee849fe5ddfc8379df8e9a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86406d9eee849fe5ddfc8379df8e9a9b">&#9670;&nbsp;</a></span>SettingsGameTypeManTeamVsMachine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeManTeamVsMachine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae27de65dcc94b9181b1a16961cb7f7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27de65dcc94b9181b1a16961cb7f7f6">&#9670;&nbsp;</a></span>SettingsGameTypeManVsMachine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeManVsMachine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c50136fb5c059876ee911f8a05e99e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c50136fb5c059876ee911f8a05e99e7">&#9670;&nbsp;</a></span>SettingsGameTypeMelee</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeMelee = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a810a78037cf75bce3da067ee43eb0f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810a78037cf75bce3da067ee43eb0f52">&#9670;&nbsp;</a></span>SettingsGameTypeTopVsBottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsGameTypeTopVsBottom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68a46887b92704b17a263aa904e842a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a46887b92704b17a263aa904e842a3">&#9670;&nbsp;</a></span>SettingsMultiPlayerGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> SettingsMultiPlayerGame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec875a201ac240a425ac349b7368c0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec875a201ac240a425ac349b7368c0d4">&#9670;&nbsp;</a></span>SettingsPresetMapDefault</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int8_t SettingsPresetMapDefault = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a4b3733fa97e2476c055173b8accb28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4b3733fa97e2476c055173b8accb28">&#9670;&nbsp;</a></span>UnitTypeMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned short UnitTypeMax = 2048</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many players are supported. </p>
+
+</div>
+</div>
+<a id="ab9b2ac5964deaef0f4f341e5ab0eadc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b2ac5964deaef0f4f341e5ab0eadc4">&#9670;&nbsp;</a></span>Unset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="settings_8h.html#a105fb6d0b3fef917ed086f2c924e4e16">ENUM_CLASS</a> Unset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d26ecc7e5fd1aca2592ff716f5ca8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d26ecc7e5fd1aca2592ff716f5ca8e7">&#9670;&nbsp;</a></span>UpgradeMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned short UpgradeMax = 2048</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many unit types supported. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

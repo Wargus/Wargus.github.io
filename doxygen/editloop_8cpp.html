@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -195,6 +195,9 @@ editloop.cpp - The editor main loop.</h2></td></tr>
 <tr class="separator:ab80183902ccb00ab50f004b29b4ce234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ec4c449fd788e8aceef2e55bc7ac27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editloop_8cpp.html#a33ec4c449fd788e8aceef2e55bc7ac27">CleanGame</a> ()</td></tr>
 <tr class="separator:a33ec4c449fd788e8aceef2e55bc7ac27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ca7c82426f8881e4c3ee0e596209dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editloop_8cpp.html#a02ca7c82426f8881e4c3ee0e596209dd">CreateGame</a> (const std::string &amp;filename, <a class="el" href="classCMap.html">CMap</a> *map)</td></tr>
+<tr class="memdesc:a02ca7c82426f8881e4c3ee0e596209dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward declaration  <a href="editloop_8cpp.html#a02ca7c82426f8881e4c3ee0e596209dd">More...</a><br /></td></tr>
+<tr class="separator:a02ca7c82426f8881e4c3ee0e596209dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9a21e1db06b611ed9979752d643fcb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editloop_8cpp.html#ade9a21e1db06b611ed9979752d643fcb">EditorUndoAction</a> ()</td></tr>
 <tr class="separator:ade9a21e1db06b611ed9979752d643fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33d04bd40fd4595a29073f6bb1118970"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editloop_8cpp.html#a33d04bd40fd4595a29073f6bb1118970">EditorRedoAction</a> ()</td></tr>
@@ -460,6 +463,46 @@ editloop.cpp - The editor main loop.</h2></td></tr>
 </div><div class="memdoc">
 <p>Cleanup game.</p>
 <p>Call each module to clean up. Contrary to CleanModules, maps can be restarted without reloading all lua files. </p>
+
+</div>
+</div>
+<a id="a02ca7c82426f8881e4c3ee0e596209dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ca7c82426f8881e4c3ee0e596209dd">&#9670;&nbsp;</a></span>CreateGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CreateGame </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCMap.html">CMap</a> *&#160;</td>
+          <td class="paramname"><em>map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>forward declaration </p>
+<p>CreateGame.</p>
+<p>Load map, graphics, sounds, etc</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>map filename </td></tr>
+    <tr><td class="paramname">map</td><td>map loaded</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>FIXME: use in this function InitModules / LoadModules!!! </dd></dl>
 
 </div>
 </div>
@@ -1498,7 +1541,7 @@ editloop.cpp - The editor main loop.</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>map tile coordinate. </td></tr>
-    <tr><td class="paramname">tile</td><td>Tile type to edit. </td></tr>
+    <tr><td class="paramname">tile</td><td>Tile type to edit or -1, to edit the tile under the brush according to the modifiers </td></tr>
   </table>
   </dd>
 </dl>
@@ -2310,7 +2353,7 @@ editloop.cpp - The editor main loop.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

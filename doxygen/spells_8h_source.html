@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -335,7 +335,7 @@ $(function() {
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#endif // !__SPELLS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Revelation types.</div><div class="ttdef"><b>Definition:</b> player.h:88</div></div>
+<div class="ttc" id="aclassCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Diplomacy states for CommandDiplomacy.</div><div class="ttdef"><b>Definition:</b> player.h:83</div></div>
 <div class="ttc" id="aclassSpellType_html_ac64fed15495bbf27e1c04fb08b7f91b6"><div class="ttname"><a href="classSpellType.html#ac64fed15495bbf27e1c04fb08b7f91b6">SpellType::Condition</a></div><div class="ttdeci">ConditionInfo * Condition</div><div class="ttdoc">Id of upgrade, -1 if no upgrade needed for cast the spell.</div><div class="ttdef"><b>Definition:</b> spells.h:228</div></div>
 <div class="ttc" id="aclassMissileType_html"><div class="ttname"><a href="classMissileType.html">MissileType</a></div><div class="ttdoc">Base structure of missile-types.</div><div class="ttdef"><b>Definition:</b> missile.h:343</div></div>
 <div class="ttc" id="aclassAutoCastInfo_html_a583483770be1620f754caf7ff6e7cf54"><div class="ttname"><a href="classAutoCastInfo.html#a583483770be1620f754caf7ff6e7cf54">AutoCastInfo::Attacker</a></div><div class="ttdeci">int Attacker</div><div class="ttdoc">If it should be casted in combat.</div><div class="ttdef"><b>Definition:</b> spells.h:195</div></div>
@@ -364,7 +364,7 @@ $(function() {
 <div class="ttc" id="aclassSpellType_html_a95aa7edd95a1a44af1b38007c19200ec"><div class="ttname"><a href="classSpellType.html#a95aa7edd95a1a44af1b38007c19200ec">SpellType::IsCasterOnly</a></div><div class="ttdeci">bool IsCasterOnly() const</div><div class="ttdoc">Sound played if cast.</div><div class="ttdef"><b>Definition:</b> spells.h:237</div></div>
 <div class="ttc" id="aclassSoundConfig_html"><div class="ttname"><a href="classSoundConfig.html">SoundConfig</a></div><div class="ttdef"><b>Definition:</b> unitsound.h:54</div></div>
 <div class="ttc" id="aspells_8h_html_ae5337313d392aa2906f09f8c1bbcf402"><div class="ttname"><a href="spells_8h.html#ae5337313d392aa2906f09f8c1bbcf402">CONDITION_FALSE</a></div><div class="ttdeci">#define CONDITION_FALSE</div><div class="ttdef"><b>Definition:</b> spells.h:150</div></div>
-<div class="ttc" id="aclassCUnitType_html"><div class="ttname"><a href="classCUnitType.html">CUnitType</a></div><div class="ttdef"><b>Definition:</b> unittype.h:483</div></div>
+<div class="ttc" id="aclassCUnitType_html"><div class="ttname"><a href="classCUnitType.html">CUnitType</a></div><div class="ttdef"><b>Definition:</b> unittype.h:508</div></div>
 <div class="ttc" id="aspells_8h_html_a64b90c580cd6d44910eb187c21c6e2ce"><div class="ttname"><a href="spells_8h.html#a64b90c580cd6d44910eb187c21c6e2ce">CanCastSpell</a></div><div class="ttdeci">bool CanCastSpell(const CUnit &amp;caster, const SpellType &amp;spell, const CUnit *target, const Vec2i &amp;goalPos)</div><div class="ttdoc">returns true if spell can be casted (enough mana, valid target)</div><div class="ttdef"><b>Definition:</b> spells.cpp:457</div></div>
 <div class="ttc" id="aclassSpellActionType_html_aab2b0e8ce3ea565f9729e1d8fdfafcb8"><div class="ttname"><a href="classSpellActionType.html#aab2b0e8ce3ea565f9729e1d8fdfafcb8">SpellActionType::Parse</a></div><div class="ttdeci">virtual void Parse(lua_State *l, int startIndex, int endIndex)=0</div></div>
 <div class="ttc" id="aclassTarget_html"><div class="ttname"><a href="classTarget.html">Target</a></div><div class="ttdef"><b>Definition:</b> spells.h:92</div></div>
@@ -387,7 +387,7 @@ $(function() {
 <div class="ttc" id="aspells_8h_html_af9bc7d31ecb43c77e8e57bc920894add"><div class="ttname"><a href="spells_8h.html#af9bc7d31ecb43c77e8e57bc920894add">AutoCastSpell</a></div><div class="ttdeci">int AutoCastSpell(CUnit &amp;caster, const SpellType &amp;spell)</div><div class="ttdoc">auto cast the spell if possible</div><div class="ttdef"><b>Definition:</b> spells.cpp:474</div></div>
 <div class="ttc" id="aclassSpellType_html_a7726853836defb1b696205b4b2f9598b"><div class="ttname"><a href="classSpellType.html#a7726853836defb1b696205b4b2f9598b">SpellType::Target</a></div><div class="ttdeci">TargetType Target</div><div class="ttdoc">Spell numeric identifier.</div><div class="ttdef"><b>Definition:</b> spells.h:217</div></div>
 <div class="ttc" id="aclassAutoCastInfo_html_ad2443e417f9681fd8d355baa12f0f605"><div class="ttname"><a href="classAutoCastInfo.html#ad2443e417f9681fd8d355baa12f0f605">AutoCastInfo::AutoCastInfo</a></div><div class="ttdeci">AutoCastInfo()</div><div class="ttdef"><b>Definition:</b> spells.h:176</div></div>
-<div class="ttc" id="aspells_8h_html_aa87df1995b823f2b13e91083fe8a0f8f"><div class="ttname"><a href="spells_8h.html#aa87df1995b823f2b13e91083fe8a0f8f">SpellCclRegister</a></div><div class="ttdeci">void SpellCclRegister()</div><div class="ttdoc">register fonction.</div><div class="ttdef"><b>Definition:</b> script_spell.cpp:425</div></div>
+<div class="ttc" id="aspells_8h_html_aa87df1995b823f2b13e91083fe8a0f8f"><div class="ttname"><a href="spells_8h.html#aa87df1995b823f2b13e91083fe8a0f8f">SpellCclRegister</a></div><div class="ttdeci">void SpellCclRegister()</div><div class="ttdoc">register fonction.</div><div class="ttdef"><b>Definition:</b> script_spell.cpp:437</div></div>
 <div class="ttc" id="aclassSpellActionType_html_ac294064d51b73c8d1d746a8b8c730fca"><div class="ttname"><a href="classSpellActionType.html#ac294064d51b73c8d1d746a8b8c730fca">SpellActionType::~SpellActionType</a></div><div class="ttdeci">virtual ~SpellActionType()</div><div class="ttdef"><b>Definition:</b> spells.h:67</div></div>
 <div class="ttc" id="aclassConditionInfo_html_a7a7450ee60792a2d3803dabaf632f5e3"><div class="ttname"><a href="classConditionInfo.html#a7a7450ee60792a2d3803dabaf632f5e3">ConditionInfo::BoolFlag</a></div><div class="ttdeci">char * BoolFlag</div><div class="ttdoc">Target is the same as the caster.</div><div class="ttdef"><b>Definition:</b> spells.h:157</div></div>
 <div class="ttc" id="aclassSpellType_html_a668fda7d60070dc412f6b53651136683"><div class="ttname"><a href="classSpellType.html#a668fda7d60070dc412f6b53651136683">SpellType::DependencyId</a></div><div class="ttdeci">int DependencyId</div><div class="ttdoc">How much time spell needs to be cast again.</div><div class="ttdef"><b>Definition:</b> spells.h:227</div></div>
@@ -420,7 +420,7 @@ $(function() {
 <div class="ttc" id="aspells_8h_html_a530404f7bf6971839efa3f254984d550"><div class="ttname"><a href="spells_8h.html#a530404f7bf6971839efa3f254984d550">ACP_NOVALUE</a></div><div class="ttdeci">#define ACP_NOVALUE</div><div class="ttdef"><b>Definition:</b> spells.h:174</div></div>
 <div class="ttc" id="aclassSpellType_html"><div class="ttname"><a href="classSpellType.html">SpellType</a></div><div class="ttdef"><b>Definition:</b> spells.h:205</div></div>
 <div class="ttc" id="aclassSpellType_html_a84dcf68e9c67d12da37019eb3f877226"><div class="ttname"><a href="classSpellType.html#a84dcf68e9c67d12da37019eb3f877226">SpellType::ForceUseAnimation</a></div><div class="ttdeci">bool ForceUseAnimation</div><div class="ttdef"><b>Definition:</b> spells.h:241</div></div>
-<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:134</div></div>
+<div class="ttc" id="aclassCUnit_html"><div class="ttname"><a href="classCUnit.html">CUnit</a></div><div class="ttdoc">The big unit structure.</div><div class="ttdef"><b>Definition:</b> unit.h:135</div></div>
 <div class="ttc" id="aspells_8h_html_a0d59972970c855496cb4c877501e668fa3d4d95b7f827c45eaf9a232ab7642ef3"><div class="ttname"><a href="spells_8h.html#a0d59972970c855496cb4c877501e668fa3d4d95b7f827c45eaf9a232ab7642ef3">TargetUnit</a></div><div class="ttdeci">@ TargetUnit</div><div class="ttdef"><b>Definition:</b> spells.h:83</div></div>
 <div class="ttc" id="aclassConditionInfo_html_ac7600bdfb82a1f8eef899ff92f42a294"><div class="ttname"><a href="classConditionInfo.html#ac7600bdfb82a1f8eef899ff92f42a294">ConditionInfo::Variable</a></div><div class="ttdeci">ConditionInfoVariable * Variable</div><div class="ttdoc">User defined boolean flag.</div><div class="ttdef"><b>Definition:</b> spells.h:159</div></div>
 <div class="ttc" id="aclassSpellType_html_a8df062a0c51c6d97ddda99251a0db3ae"><div class="ttname"><a href="classSpellType.html#a8df062a0c51c6d97ddda99251a0db3ae">SpellType::~SpellType</a></div><div class="ttdeci">~SpellType()</div><div class="ttdef"><b>Definition:</b> spells.cpp:586</div></div>
@@ -428,7 +428,7 @@ $(function() {
 <div class="ttc" id="aclassConditionInfoVariable_html_aada9fcecab8765c79bf73c2dba95b402"><div class="ttname"><a href="classConditionInfoVariable.html#aada9fcecab8765c79bf73c2dba95b402">ConditionInfoVariable::MinValue</a></div><div class="ttdeci">int MinValue</div><div class="ttdoc">Target mustn't have ExceptValue of it's value.</div><div class="ttdef"><b>Definition:</b> spells.h:121</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:37 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:31 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

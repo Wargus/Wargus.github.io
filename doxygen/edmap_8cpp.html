@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,10 @@ $(function() {
 <div class="title">edmap.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="editor_8h_source.html">editor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tileset_8h_source.html">tileset.h</a>&quot;</code><br />
@@ -90,18 +93,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="unit__manager_8h_source.html">unit_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="unittype_8h_source.html">unittype.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-edmap.cpp - Editor map functions.</h2></td></tr>
-<tr class="memitem:a6d8ad11e9f17c3a4f9a1865c7d502082"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a6d8ad11e9f17c3a4f9a1865c7d502082">WATER_TILE</a>&#160;&#160;&#160;0x10</td></tr>
-<tr class="separator:a6d8ad11e9f17c3a4f9a1865c7d502082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a1f495a2dc9b34add95806093dec76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a45a1f495a2dc9b34add95806093dec76">COAST_TILE</a>&#160;&#160;&#160;0x30</td></tr>
-<tr class="separator:a45a1f495a2dc9b34add95806093dec76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61834c32f1abcc0e7f89b4bfee904ee5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a61834c32f1abcc0e7f89b4bfee904ee5">GRASS_TILE</a>&#160;&#160;&#160;0x50</td></tr>
-<tr class="separator:a61834c32f1abcc0e7f89b4bfee904ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5890df6fd4ca7fdf8ecdb78a8bdae184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a5890df6fd4ca7fdf8ecdb78a8bdae184">WOOD_TILE</a>&#160;&#160;&#160;0x70</td></tr>
-<tr class="separator:a5890df6fd4ca7fdf8ecdb78a8bdae184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ddf61bf521e48c42a7778758ad45e08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a6ddf61bf521e48c42a7778758ad45e08">ROCK_TILE</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:a6ddf61bf521e48c42a7778758ad45e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">edmap.cpp - Editor map functions.</div></td></tr>
 <tr class="memitem:a51738cf9017e5724a9c2670eebea10ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a51738cf9017e5724a9c2670eebea10ef">EditorChangeSurrounding</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;lock_pos)</td></tr>
 <tr class="memdesc:a51738cf9017e5724a9c2670eebea10ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for changed tile (with locked position)  <a href="edmap_8cpp.html#a51738cf9017e5724a9c2670eebea10ef">More...</a><br /></td></tr>
 <tr class="separator:a51738cf9017e5724a9c2670eebea10ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,91 +103,26 @@ edmap.cpp - Editor map functions.</h2></td></tr>
 <tr class="separator:afc3b8e6a61d646e08b30793a9973d2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33b72f551b6b1bc99f91b64171943c2d"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a33b72f551b6b1bc99f91b64171943c2d">QuadFromTile</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos)</td></tr>
 <tr class="separator:a33b72f551b6b1bc99f91b64171943c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f67211d5a27f6d8bb34afb6f0a7b51b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a6f67211d5a27f6d8bb34afb6f0a7b51b">EditorChangeTile</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int tileIndex, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;lock_pos)</td></tr>
-<tr class="separator:a6f67211d5a27f6d8bb34afb6f0a7b51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1303aad394b08d291e62bfc71f4d94a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a1303aad394b08d291e62bfc71f4d94a4">EditorChangeTile</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int tileIndex, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;lock_pos, bool changeSurroundings)</td></tr>
+<tr class="separator:a1303aad394b08d291e62bfc71f4d94a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ea7cea3788f049cbd6a1d82eeeca18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a77ea7cea3788f049cbd6a1d82eeeca18">EditorTileChanged</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos)</td></tr>
 <tr class="memdesc:a77ea7cea3788f049cbd6a1d82eeeca18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update surroundings for tile changes.  <a href="edmap_8cpp.html#a77ea7cea3788f049cbd6a1d82eeeca18">More...</a><br /></td></tr>
 <tr class="separator:a77ea7cea3788f049cbd6a1d82eeeca18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe36ad2ee520f631fc3f528c172db6dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#abe36ad2ee520f631fc3f528c172db6dc">TileFill</a> (const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;pos, int tile, int size)</td></tr>
 <tr class="separator:abe36ad2ee520f631fc3f528c172db6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd9835728614b8179f8ea61b4393cd4"><td class="memItemLeft" align="right" valign="top">static std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#aedd9835728614b8179f8ea61b4393cd4">MersenneTwister</a> (std::chrono::steady_clock::now().time_since_epoch().count())</td></tr>
+<tr class="separator:aedd9835728614b8179f8ea61b4393cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330a8aa1bae92e54d18811d41e1bbf97"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a330a8aa1bae92e54d18811d41e1bbf97">rng</a> ()</td></tr>
+<tr class="separator:a330a8aa1bae92e54d18811d41e1bbf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaae5f308f51b5c9f656f0dcc6b3a404"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#acaae5f308f51b5c9f656f0dcc6b3a404">EditorRandomizeTile</a> (int tile, int count, int max_size)</td></tr>
 <tr class="separator:acaae5f308f51b5c9f656f0dcc6b3a404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6283c73d26294026f88807df641037d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#af6283c73d26294026f88807df641037d">EditorRandomizeUnit</a> (const char *unit_type, int count, int value)</td></tr>
-<tr class="separator:af6283c73d26294026f88807df641037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6fddc537bfd3c6e28dbd2b720945b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a1d6fddc537bfd3c6e28dbd2b720945b9">EditorRandomizeUnit</a> (const char *unit_type, int count, int value, int tileIndexUnderUnit)</td></tr>
+<tr class="separator:a1d6fddc537bfd3c6e28dbd2b720945b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a89eb8c7d5579b03f76724ca13712b6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#a9a89eb8c7d5579b03f76724ca13712b6">EditorDestroyAllUnits</a> ()</td></tr>
 <tr class="separator:a9a89eb8c7d5579b03f76724ca13712b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41a4834a2dfb34b64baa3ffac67f993"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edmap_8cpp.html#ab41a4834a2dfb34b64baa3ffac67f993">RandomizeTransition</a> (int x, int y)</td></tr>
+<tr class="separator:ab41a4834a2dfb34b64baa3ffac67f993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a45a1f495a2dc9b34add95806093dec76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45a1f495a2dc9b34add95806093dec76">&#9670;&nbsp;</a></span>COAST_TILE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COAST_TILE&#160;&#160;&#160;0x30</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61834c32f1abcc0e7f89b4bfee904ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61834c32f1abcc0e7f89b4bfee904ee5">&#9670;&nbsp;</a></span>GRASS_TILE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GRASS_TILE&#160;&#160;&#160;0x50</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ddf61bf521e48c42a7778758ad45e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddf61bf521e48c42a7778758ad45e08">&#9670;&nbsp;</a></span>ROCK_TILE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ROCK_TILE&#160;&#160;&#160;0x80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6d8ad11e9f17c3a4f9a1865c7d502082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8ad11e9f17c3a4f9a1865c7d502082">&#9670;&nbsp;</a></span>WATER_TILE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WATER_TILE&#160;&#160;&#160;0x10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5890df6fd4ca7fdf8ecdb78a8bdae184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5890df6fd4ca7fdf8ecdb78a8bdae184">&#9670;&nbsp;</a></span>WOOD_TILE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WOOD_TILE&#160;&#160;&#160;0x70</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="afc3b8e6a61d646e08b30793a9973d2aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc3b8e6a61d646e08b30793a9973d2aa">&#9670;&nbsp;</a></span>ChangeTile()</h2>
@@ -278,8 +207,8 @@ edmap.cpp - Editor map functions.</h2></td></tr>
 
 </div>
 </div>
-<a id="a6f67211d5a27f6d8bb34afb6f0a7b51b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f67211d5a27f6d8bb34afb6f0a7b51b">&#9670;&nbsp;</a></span>EditorChangeTile()</h2>
+<a id="a1303aad394b08d291e62bfc71f4d94a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1303aad394b08d291e62bfc71f4d94a4">&#9670;&nbsp;</a></span>EditorChangeTile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,7 +229,13 @@ edmap.cpp - Editor map functions.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;&#160;</td>
-          <td class="paramname"><em>lock_pos</em>&#160;</td>
+          <td class="paramname"><em>lock_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>changeSurroundings</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -398,8 +333,8 @@ edmap.cpp - Editor map functions.</h2></td></tr>
 
 </div>
 </div>
-<a id="af6283c73d26294026f88807df641037d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6283c73d26294026f88807df641037d">&#9670;&nbsp;</a></span>EditorRandomizeUnit()</h2>
+<a id="a1d6fddc537bfd3c6e28dbd2b720945b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6fddc537bfd3c6e28dbd2b720945b9">&#9670;&nbsp;</a></span>EditorRandomizeUnit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +358,13 @@ edmap.cpp - Editor map functions.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tileIndexUnderUnit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -476,6 +417,32 @@ edmap.cpp - Editor map functions.</h2></td></tr>
 
 </div>
 </div>
+<a id="aedd9835728614b8179f8ea61b4393cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd9835728614b8179f8ea61b4393cd4">&#9670;&nbsp;</a></span>MersenneTwister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::mt19937 MersenneTwister </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::steady_clock::now().time_since_epoch().count()&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a33b72f551b6b1bc99f91b64171943c2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33b72f551b6b1bc99f91b64171943c2d">&#9670;&nbsp;</a></span>QuadFromTile()</h2>
 
@@ -503,6 +470,67 @@ edmap.cpp - Editor map functions.</h2></td></tr>
 <p>A quad is a 32 bit value defining the content of the tile.</p>
 <p>A tile is split into 4 parts, the basic tile type of this part is stored as 8bit value in the quad.</p>
 <p>ab cd -&gt; abcd </p>
+
+</div>
+</div>
+<a id="ab41a4834a2dfb34b64baa3ffac67f993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41a4834a2dfb34b64baa3ffac67f993">&#9670;&nbsp;</a></span>RandomizeTransition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> RandomizeTransition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a330a8aa1bae92e54d18811d41e1bbf97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330a8aa1bae92e54d18811d41e1bbf97">&#9670;&nbsp;</a></span>rng()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int rng </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -561,7 +589,7 @@ edmap.cpp - Editor map functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

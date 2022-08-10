@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -127,18 +127,16 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 <a class="el" href="netconnect_8h.html#a87fd1f4f98eeb88b413d617ae57a3686a13d508c4906a076a781f739560d0e6ec">ccs_started</a>, 
 <br />
 &#160;&#160;<a class="el" href="netconnect_8h.html#a87fd1f4f98eeb88b413d617ae57a3686a2e6ebdee171706a22ff5811e6071a635">ccs_incompatibleengine</a>, 
-<a class="el" href="netconnect_8h.html#a87fd1f4f98eeb88b413d617ae57a3686a6e9c762303de19c9c98c023cf7d8ea19">ccs_incompatibleluafiles</a>
+<a class="el" href="netconnect_8h.html#a87fd1f4f98eeb88b413d617ae57a3686a6e9c762303de19c9c98c023cf7d8ea19">ccs_incompatibleluafiles</a>, 
+<a class="el" href="netconnect_8h.html#a87fd1f4f98eeb88b413d617ae57a3686abaa8212c600d02c4eb9b168c5e1aa357">ccs_needmap</a>
 <br />
  }</td></tr>
 <tr class="separator:a87fd1f4f98eeb88b413d617ae57a3686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a36f73a42f4c0aea76bcd67d42992e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a7a36f73a42f4c0aea76bcd67d42992e7">NetPlayers</a></td></tr>
 <tr class="memdesc:a7a36f73a42f4c0aea76bcd67d42992e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player number of local client.  <a href="netconnect_8h.html#a7a36f73a42f4c0aea76bcd67d42992e7">More...</a><br /></td></tr>
 <tr class="separator:a7a36f73a42f4c0aea76bcd67d42992e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b945f5aedea5d50e830677599c550cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a7b945f5aedea5d50e830677599c550cc">HostsCount</a></td></tr>
-<tr class="memdesc:a7b945f5aedea5d50e830677599c550cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network players.  <a href="netconnect_8h.html#a7b945f5aedea5d50e830677599c550cc">More...</a><br /></td></tr>
-<tr class="separator:a7b945f5aedea5d50e830677599c550cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5fffa932443f11ea4dcb4fe496bc03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCNetworkHost.html">CNetworkHost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#aae5fffa932443f11ea4dcb4fe496bc03">Hosts</a> [<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td></tr>
-<tr class="memdesc:aae5fffa932443f11ea4dcb4fe496bc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of hosts.  <a href="netconnect_8h.html#aae5fffa932443f11ea4dcb4fe496bc03">More...</a><br /></td></tr>
+<tr class="memitem:aae5fffa932443f11ea4dcb4fe496bc03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCNetworkHost.html">CNetworkHost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#aae5fffa932443f11ea4dcb4fe496bc03">Hosts</a> [<a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a>]</td></tr>
+<tr class="memdesc:aae5fffa932443f11ea4dcb4fe496bc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network players.  <a href="netconnect_8h.html#aae5fffa932443f11ea4dcb4fe496bc03">More...</a><br /></td></tr>
 <tr class="separator:aae5fffa932443f11ea4dcb4fe496bc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab28cba8e30a37d320b492fcd113815a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#ab28cba8e30a37d320b492fcd113815a7">NetConnectRunning</a></td></tr>
 <tr class="memdesc:ab28cba8e30a37d320b492fcd113815a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host, port, and number of all players.  <a href="netconnect_8h.html#ab28cba8e30a37d320b492fcd113815a7">More...</a><br /></td></tr>
@@ -155,15 +153,18 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 <tr class="memitem:a4bb55efed1eb903f40e3ff7e3b08e40e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a4bb55efed1eb903f40e3ff7e3b08e40e">NetworkMapName</a></td></tr>
 <tr class="memdesc:a4bb55efed1eb903f40e3ff7e3b08e40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player number of local client.  <a href="netconnect_8h.html#a4bb55efed1eb903f40e3ff7e3b08e40e">More...</a><br /></td></tr>
 <tr class="separator:a4bb55efed1eb903f40e3ff7e3b08e40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36020b2053947b74edc283140cb4a219"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a36020b2053947b74edc283140cb4a219">NetworkMapFragmentName</a></td></tr>
+<tr class="memdesc:a36020b2053947b74edc283140cb4a219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the map received with ICMMap.  <a href="netconnect_8h.html#a36020b2053947b74edc283140cb4a219">More...</a><br /></td></tr>
+<tr class="separator:a36020b2053947b74edc283140cb4a219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63264fb5e6786f3e88ba09a167ac8f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCServerSetup.html">CServerSetup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a63264fb5e6786f3e88ba09a167ac8f95">ServerSetupState</a></td></tr>
-<tr class="memdesc:a63264fb5e6786f3e88ba09a167ac8f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the map received with ICMMap.  <a href="netconnect_8h.html#a63264fb5e6786f3e88ba09a167ac8f95">More...</a><br /></td></tr>
+<tr class="memdesc:a63264fb5e6786f3e88ba09a167ac8f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the map currently loading via ICMMapNeeded.  <a href="netconnect_8h.html#a63264fb5e6786f3e88ba09a167ac8f95">More...</a><br /></td></tr>
 <tr class="separator:a63264fb5e6786f3e88ba09a167ac8f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46e88369fae125f8188bb966e02d3f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCServerSetup.html">CServerSetup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a46e88369fae125f8188bb966e02d3f2a">LocalSetupState</a></td></tr>
 <tr class="memdesc:a46e88369fae125f8188bb966e02d3f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network menu: Multiplayer Server Menu selections state.  <a href="netconnect_8h.html#a46e88369fae125f8188bb966e02d3f2a">More...</a><br /></td></tr>
 <tr class="separator:a46e88369fae125f8188bb966e02d3f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae7f8d8b60b59046e13ba0051bb5bdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a0ae7f8d8b60b59046e13ba0051bb5bdd">NoRandomPlacementMultiplayer</a></td></tr>
-<tr class="memdesc:a0ae7f8d8b60b59046e13ba0051bb5bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network menu: Multiplayer Client Menu selections local state.  <a href="netconnect_8h.html#a0ae7f8d8b60b59046e13ba0051bb5bdd">More...</a><br /></td></tr>
-<tr class="separator:a0ae7f8d8b60b59046e13ba0051bb5bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f69d61332e5aa3a2a7665b884941b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#ab4f69d61332e5aa3a2a7665b884941b9">NoRandomPlacementMultiplayer</a></td></tr>
+<tr class="memdesc:ab4f69d61332e5aa3a2a7665b884941b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network menu: Multiplayer Client Menu selections local state.  <a href="netconnect_8h.html#ab4f69d61332e5aa3a2a7665b884941b9">More...</a><br /></td></tr>
+<tr class="separator:ab4f69d61332e5aa3a2a7665b884941b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07027a04458d4178de7d49276788d595"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netconnect_8h.html#a07027a04458d4178de7d49276788d595">FindHostIndexBy</a> (const <a class="el" href="classCHost.html">CHost</a> &amp;host)</td></tr>
 <tr class="memdesc:a07027a04458d4178de7d49276788d595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the random placement of players in muliplayer mode.  <a href="netconnect_8h.html#a07027a04458d4178de7d49276788d595">More...</a><br /></td></tr>
 <tr class="separator:a07027a04458d4178de7d49276788d595"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,7 +353,8 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 <tr><td class="fieldname"><a id="a87fd1f4f98eeb88b413d617ae57a3686a2e6ebdee171706a22ff5811e6071a635"></a>ccs_incompatibleengine&#160;</td><td class="fielddoc"><p>Server has started game. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a87fd1f4f98eeb88b413d617ae57a3686a6e9c762303de19c9c98c023cf7d8ea19"></a>ccs_incompatibleluafiles&#160;</td><td class="fielddoc"><p>Incompatible engine version. </p>
-<p>Incompatible lua files </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a87fd1f4f98eeb88b413d617ae57a3686abaa8212c600d02c4eb9b168c5e1aa357"></a>ccs_needmap&#160;</td><td class="fielddoc"><p>Incompatible lua files. </p>
 </td></tr>
 </table>
 
@@ -432,7 +434,7 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Server user has finally hit the start game button. </p>
-<p>Multiplayer network game final race and player type setup. </p>
+<p>Multiplayer network game final copy of server settings to game settings. </p>
 
 </div>
 </div>
@@ -631,7 +633,7 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Server user has finally hit the start game button </p>
+<p>Server user has finally hit the start game button. (This is run on the server) </p>
 
 </div>
 </div>
@@ -681,23 +683,7 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCNetworkHost.html">CNetworkHost</a> Hosts[<a class="el" href="stratagus_8h.html#aa48d8f52111bc8d9119f59e8aff45a73">PlayerMax</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Number of hosts. </p>
-
-</div>
-</div>
-<a id="a7b945f5aedea5d50e830677599c550cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b945f5aedea5d50e830677599c550cc">&#9670;&nbsp;</a></span>HostsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int HostsCount</td>
+          <td class="memname"><a class="el" href="classCNetworkHost.html">CNetworkHost</a> Hosts[<a class="el" href="settings_8h.html#abb9e5b6720cddea4d18f3b2f313f6363">PlayerMax</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -803,6 +789,22 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 
 </div>
 </div>
+<a id="a36020b2053947b74edc283140cb4a219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36020b2053947b74edc283140cb4a219">&#9670;&nbsp;</a></span>NetworkMapFragmentName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NetworkMapFragmentName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the map received with ICMMap. </p>
+
+</div>
+</div>
 <a id="a4bb55efed1eb903f40e3ff7e3b08e40e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bb55efed1eb903f40e3ff7e3b08e40e">&#9670;&nbsp;</a></span>NetworkMapName</h2>
 
@@ -820,14 +822,14 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ae7f8d8b60b59046e13ba0051bb5bdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ae7f8d8b60b59046e13ba0051bb5bdd">&#9670;&nbsp;</a></span>NoRandomPlacementMultiplayer</h2>
+<a id="ab4f69d61332e5aa3a2a7665b884941b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f69d61332e5aa3a2a7665b884941b9">&#9670;&nbsp;</a></span>NoRandomPlacementMultiplayer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int NoRandomPlacementMultiplayer</td>
+          <td class="memname">bool NoRandomPlacementMultiplayer</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -849,8 +851,8 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Name of the map received with ICMMap. </p>
-<p>Name of the map received with ICMMap. </p>
+<p>Name of the map currently loading via ICMMapNeeded. </p>
+<p>Name of the map currently loading via ICMMapNeeded. </p>
 
 </div>
 </div>
@@ -859,7 +861,7 @@ netconnect.h - The network connection setup header file.</h2></td></tr>
 <div class="ttc" id="anetconnect_8h_html_a811a8b2b491eed8a2b76ad20c1c91dfc"><div class="ttname"><a href="netconnect_8h.html#a811a8b2b491eed8a2b76ad20c1c91dfc">NetworkProtocolMajorVersion</a></div><div class="ttdeci">#define NetworkProtocolMajorVersion</div><div class="ttdoc">Network protocol major version.</div><div class="ttdef"><b>Definition:</b> netconnect.h:44</div></div>
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

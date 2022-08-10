@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -106,10 +106,52 @@ graphic.cpp - The general graphic functions.</h2></td></tr>
 <tr class="separator:ab39c6e2e112016b51d19508e0210dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d9f72199f6b6c4f838ec345d723c42"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphic_8cpp.html#aa0d9f72199f6b6c4f838ec345d723c42">dither</a> (SDL_Surface *Surface)</td></tr>
 <tr class="separator:aa0d9f72199f6b6c4f838ec345d723c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ff470f4e3232ff605cc5a7176b09eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphic_8cpp.html#a48ff470f4e3232ff605cc5a7176b09eb">applyAlphaGrayscaleToSurface</a> (SDL_Surface **src, int alpha)</td></tr>
+<tr class="separator:a48ff470f4e3232ff605cc5a7176b09eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ccbde145275620db72a45899d4f970"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphic_8cpp.html#ac0ccbde145275620db72a45899d4f970">shrinkSurfaceFramesInY</a> (SDL_Surface **src, int shrink, int numFrames, <a class="el" href="structCGraphic_1_1frame__pos__t.html">CGraphic::frame_pos_t</a> *frameMap, int frameW, int frameH)</td></tr>
+<tr class="separator:ac0ccbde145275620db72a45899d4f970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d404f7bd79db405f1f6b936f528a6d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphic_8cpp.html#a81d404f7bd79db405f1f6b936f528a6d">shearSurface</a> (SDL_Surface *surface, int xOffset, int yOffset, int numFrames, <a class="el" href="structCGraphic_1_1frame__pos__t.html">CGraphic::frame_pos_t</a> *frameMap, int frameW, int frameH)</td></tr>
+<tr class="separator:a81d404f7bd79db405f1f6b936f528a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655636f919943b4db799b8074c6e2133"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphic_8cpp.html#a655636f919943b4db799b8074c6e2133">FreeGraphics</a> ()</td></tr>
 <tr class="separator:a655636f919943b4db799b8074c6e2133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a48ff470f4e3232ff605cc5a7176b09eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ff470f4e3232ff605cc5a7176b09eb">&#9670;&nbsp;</a></span>applyAlphaGrayscaleToSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> applyAlphaGrayscaleToSurface </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface **&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac9b274c366717a0d11e799fec893672f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9b274c366717a0d11e799fec893672f">&#9670;&nbsp;</a></span>ApplyGrayScale()</h2>
 
@@ -228,6 +270,132 @@ graphic.cpp - The general graphic functions.</h2></td></tr>
 
 </div>
 </div>
+<a id="a81d404f7bd79db405f1f6b936f528a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d404f7bd79db405f1f6b936f528a6d">&#9670;&nbsp;</a></span>shearSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> shearSurface </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numFrames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCGraphic_1_1frame__pos__t.html">CGraphic::frame_pos_t</a> *&#160;</td>
+          <td class="paramname"><em>frameMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameH</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0ccbde145275620db72a45899d4f970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ccbde145275620db72a45899d4f970">&#9670;&nbsp;</a></span>shrinkSurfaceFramesInY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> shrinkSurfaceFramesInY </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface **&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shrink</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numFrames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCGraphic_1_1frame__pos__t.html">CGraphic::frame_pos_t</a> *&#160;</td>
+          <td class="paramname"><em>frameMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameH</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a4ff0cc5e99828239e28a0c49c61a5dbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ff0cc5e99828239e28a0c49c61a5dbf">&#9670;&nbsp;</a></span>GraphicHash</h2>
@@ -298,7 +466,7 @@ graphic.cpp - The general graphic functions.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

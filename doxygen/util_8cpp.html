@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,8 @@ $(function() {
 <div class="title">util.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;random&gt;</code><br />
+<code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 <code>#include &quot;SDL.h&quot;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
@@ -88,7 +89,9 @@ $(function() {
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;malloc.h&gt;</code><br />
 <code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;intrin.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="st__backtrace_8h_source.html">st_backtrace.h</a>&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -99,6 +102,8 @@ util.cpp - General utilites.</h2></td></tr>
 <tr class="memitem:a30f4b713169e4fdba52893a2492f191b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a30f4b713169e4fdba52893a2492f191b">FileChecksums</a> = 0</td></tr>
 <tr class="memdesc:a30f4b713169e4fdba52893a2492f191b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sync random seed value.  <a href="util_8cpp.html#a30f4b713169e4fdba52893a2492f191b">More...</a><br /></td></tr>
 <tr class="separator:a30f4b713169e4fdba52893a2492f191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad768868c172722a84c70801c1382438f"><td class="memItemLeft" align="right" valign="top">static std::random_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ad768868c172722a84c70801c1382438f">dev</a></td></tr>
+<tr class="separator:ad768868c172722a84c70801c1382438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30f05ee1e2e5652f174a35c7875d25e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ae30f05ee1e2e5652f174a35c7875d25e">opterr</a> = 1</td></tr>
 <tr class="separator:ae30f05ee1e2e5652f174a35c7875d25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e1c16213bbee2d5e8cc363309f418c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ad5e1c16213bbee2d5e8cc363309f418c">optind</a> = 1</td></tr>
@@ -116,6 +121,10 @@ util.cpp - General utilites.</h2></td></tr>
 <tr class="memitem:a038af6a956dff54b300f59d3d0785587"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a038af6a956dff54b300f59d3d0785587">SyncRand</a> (int max)</td></tr>
 <tr class="memdesc:a038af6a956dff54b300f59d3d0785587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncron rand.  <a href="util_8cpp.html#a038af6a956dff54b300f59d3d0785587">More...</a><br /></td></tr>
 <tr class="separator:a038af6a956dff54b300f59d3d0785587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcb9369f155d2dcc6c737d668fc8512"><td class="memItemLeft" align="right" valign="top">static std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a0bcb9369f155d2dcc6c737d668fc8512">rng_engine</a> (<a class="el" href="util_8cpp.html#ad768868c172722a84c70801c1382438f">dev</a>())</td></tr>
+<tr class="separator:a0bcb9369f155d2dcc6c737d668fc8512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27e333eb15158c913d0610a3b5e11a2"><td class="memItemLeft" align="right" valign="top">static std::uniform_int_distribution&lt; std::mt19937::result_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#af27e333eb15158c913d0610a3b5e11a2">rng_dist</a> (0, RAND_MAX)</td></tr>
+<tr class="separator:af27e333eb15158c913d0610a3b5e11a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5665d4c73acbcb626e49749b0e4ab366"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a5665d4c73acbcb626e49749b0e4ab366">MyRand</a> ()</td></tr>
 <tr class="memdesc:a5665d4c73acbcb626e49749b0e4ab366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncron rand.  <a href="util_8cpp.html#a5665d4c73acbcb626e49749b0e4ab366">More...</a><br /></td></tr>
 <tr class="separator:a5665d4c73acbcb626e49749b0e4ab366"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +151,8 @@ util.cpp - General utilites.</h2></td></tr>
 <tr class="separator:a499da2e3b5778187cbf7c81d1e5551fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c0228a5dd2abb7bc91f29c88dec5fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a62c0228a5dd2abb7bc91f29c88dec5fb">GetClipboard</a> (std::string &amp;str)</td></tr>
 <tr class="separator:a62c0228a5dd2abb7bc91f29c88dec5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45151b3521fc71ae8203098edb69bbc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a45151b3521fc71ae8203098edb69bbc8">SetClipboard</a> (std::string &amp;str)</td></tr>
+<tr class="separator:a45151b3521fc71ae8203098edb69bbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac1eaa21f2fbfe2953fce0cf3786910"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a4ac1eaa21f2fbfe2953fce0cf3786910">UTF8GetPrev</a> (const std::string &amp;text, int curpos)</td></tr>
 <tr class="separator:a4ac1eaa21f2fbfe2953fce0cf3786910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a532b81815666c3cf143c21e4a5c9fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a1a532b81815666c3cf143c21e4a5c9fc">UTF8GetNext</a> (const std::string &amp;text, int curpos)</td></tr>
@@ -152,6 +163,14 @@ util.cpp - General utilites.</h2></td></tr>
 <tr class="separator:a3779e931c407722fd74d494598e12c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36dd610688bb1cd9e3f655dd8c1fca71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a36dd610688bb1cd9e3f655dd8c1fca71">PrintOnStdOut</a> (const char *format,...)</td></tr>
 <tr class="separator:a36dd610688bb1cd9e3f655dd8c1fca71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1dc4a1e73c832f2a98f95d35415628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a0d1dc4a1e73c832f2a98f95d35415628">supportsSSE2</a> ()</td></tr>
+<tr class="separator:a0d1dc4a1e73c832f2a98f95d35415628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6490b8ccb139718eb07b8023604faf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ac6490b8ccb139718eb07b8023604faf1">supportsAVX</a> ()</td></tr>
+<tr class="separator:ac6490b8ccb139718eb07b8023604faf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa4eb58b3172d37158f959845f4feb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a7aa4eb58b3172d37158f959845f4feb9">aligned_malloc</a> (size_t alignment, size_t size)</td></tr>
+<tr class="separator:a7aa4eb58b3172d37158f959845f4feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901a6a84dc112555050ce2659e6a93cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a901a6a84dc112555050ce2659e6a93cf">aligned_free</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> *block)</td></tr>
+<tr class="separator:a901a6a84dc112555050ce2659e6a93cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a3779e931c407722fd74d494598e12c26"></a>
@@ -183,6 +202,52 @@ util.cpp - General utilites.</h2></td></tr>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>conditionStr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a901a6a84dc112555050ce2659e6a93cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901a6a84dc112555050ce2659e6a93cf">&#9670;&nbsp;</a></span>aligned_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> aligned_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> *&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7aa4eb58b3172d37158f959845f4feb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa4eb58b3172d37158f959845f4feb9">&#9670;&nbsp;</a></span>aligned_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>* aligned_malloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>alignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -438,6 +503,86 @@ util.cpp - General utilites.</h2></td></tr>
 
 </div>
 </div>
+<a id="af27e333eb15158c913d0610a3b5e11a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27e333eb15158c913d0610a3b5e11a2">&#9670;&nbsp;</a></span>rng_dist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::uniform_int_distribution&lt;std::mt19937::result_type&gt; rng_dist </td>
+          <td>(</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RAND_MAX&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bcb9369f155d2dcc6c737d668fc8512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bcb9369f155d2dcc6c737d668fc8512">&#9670;&nbsp;</a></span>rng_engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::mt19937 rng_engine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="util_8cpp.html#ad768868c172722a84c70801c1382438f">dev</a>()&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45151b3521fc71ae8203098edb69bbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45151b3521fc71ae8203098edb69bbc8">&#9670;&nbsp;</a></span>SetClipboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> SetClipboard </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a10acc91fa932379489ed5e4ad3df8756"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10acc91fa932379489ed5e4ad3df8756">&#9670;&nbsp;</a></span>strcasestr()</h2>
 
@@ -615,6 +760,40 @@ util.cpp - General utilites.</h2></td></tr>
 
 </div>
 </div>
+<a id="ac6490b8ccb139718eb07b8023604faf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6490b8ccb139718eb07b8023604faf1">&#9670;&nbsp;</a></span>supportsAVX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool supportsAVX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d1dc4a1e73c832f2a98f95d35415628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1dc4a1e73c832f2a98f95d35415628">&#9670;&nbsp;</a></span>supportsSSE2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool supportsSSE2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a294fe13ed3e38a9e7bafc3eed984816e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a294fe13ed3e38a9e7bafc3eed984816e">&#9670;&nbsp;</a></span>SyncRand() <span class="overload">[1/2]</span></h2>
 
@@ -720,6 +899,28 @@ util.cpp - General utilites.</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ad768868c172722a84c70801c1382438f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad768868c172722a84c70801c1382438f">&#9670;&nbsp;</a></span>dev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::random_device dev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a30f4b713169e4fdba52893a2492f191b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30f4b713169e4fdba52893a2492f191b">&#9670;&nbsp;</a></span>FileChecksums</h2>
 
@@ -812,7 +1013,7 @@ util.cpp - General utilites.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

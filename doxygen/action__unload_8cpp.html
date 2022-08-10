@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -93,9 +93,18 @@ $(function() {
 <code>#include &quot;<a class="el" href="unittype_8h_source.html">unittype.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="video_8h_source.html">video.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">action_unload.cpp - The unload action.</div></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+action_unload.cpp - The unload action.</h2></td></tr>
+<tr class="memitem:a5776918d57295231ddd611b8fb78c737"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#a5776918d57295231ddd611b8fb78c737">MAX_SEARCH_RANGE</a> = 20</td></tr>
+<tr class="separator:a5776918d57295231ddd611b8fb78c737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5450db0754122d6302aadf16a392dcf2"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#a5450db0754122d6302aadf16a392dcf2">MAX_RETRIES</a> = 20</td></tr>
+<tr class="separator:a5450db0754122d6302aadf16a392dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66638953ebf1bf8844b26c18ee69b96"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#ae66638953ebf1bf8844b26c18ee69b96">FIND_DROPZONE_STATE</a> = 0</td></tr>
+<tr class="separator:ae66638953ebf1bf8844b26c18ee69b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21c75385accf3fda0005cae84c95520"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#ab21c75385accf3fda0005cae84c95520">MOVE_TO_DROPZONE_STATE</a> = 1</td></tr>
+<tr class="separator:ab21c75385accf3fda0005cae84c95520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab929f00ad12d512764b439a9395d566e"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#ab929f00ad12d512764b439a9395d566e">UNLOAD_STATE</a> = 2</td></tr>
+<tr class="separator:ab929f00ad12d512764b439a9395d566e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62fb48319271e86601262041feefe274"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#a62fb48319271e86601262041feefe274">FindUnloadPosition</a> (const <a class="el" href="classCUnit.html">CUnit</a> &amp;transporter, const <a class="el" href="classCUnit.html">CUnit</a> &amp;unit, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> startPos, int maxRange, <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> *res)</td></tr>
 <tr class="separator:a62fb48319271e86601262041feefe274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabf8a5638099a46bd828f9af95813d34"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#aabf8a5638099a46bd828f9af95813d34">UnloadUnit</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;transporter, <a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
@@ -106,8 +115,6 @@ Functions</h2></td></tr>
 <tr class="separator:a4bd1ede2a5038428ff4a7569756b014c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07995829d4e723098b7219a69402364d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#a07995829d4e723098b7219a69402364d">ClosestFreeDropZone</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;transporter, const <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> &amp;startPos, int maxRange, <a class="el" href="vec2i_8h.html#a5824c689f07870d960ebe92af31f90a8">Vec2i</a> *resPos)</td></tr>
 <tr class="separator:a07995829d4e723098b7219a69402364d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7327643ed74652755b04401f6feb00"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__unload_8cpp.html#a8b7327643ed74652755b04401f6feb00">MoveToDropZone</a> (<a class="el" href="classCUnit.html">CUnit</a> &amp;unit)</td></tr>
-<tr class="separator:a8b7327643ed74652755b04401f6feb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a07995829d4e723098b7219a69402364d"></a>
@@ -341,40 +348,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b7327643ed74652755b04401f6feb00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b7327643ed74652755b04401f6feb00">&#9670;&nbsp;</a></span>MoveToDropZone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int MoveToDropZone </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCUnit.html">CUnit</a> &amp;&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Move to dropzone.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">unit</td><td>Pointer to unit.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 if unreachable, True if reached, False otherwise. </dd></dl>
-
-</div>
-</div>
 <a id="aabf8a5638099a46bd828f9af95813d34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabf8a5638099a46bd828f9af95813d34">&#9670;&nbsp;</a></span>UnloadUnit()</h2>
 
@@ -420,10 +393,121 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae66638953ebf1bf8844b26c18ee69b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66638953ebf1bf8844b26c18ee69b96">&#9670;&nbsp;</a></span>FIND_DROPZONE_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int FIND_DROPZONE_STATE = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5450db0754122d6302aadf16a392dcf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5450db0754122d6302aadf16a392dcf2">&#9670;&nbsp;</a></span>MAX_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int MAX_RETRIES = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5776918d57295231ddd611b8fb78c737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5776918d57295231ddd611b8fb78c737">&#9670;&nbsp;</a></span>MAX_SEARCH_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int MAX_SEARCH_RANGE = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab21c75385accf3fda0005cae84c95520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21c75385accf3fda0005cae84c95520">&#9670;&nbsp;</a></span>MOVE_TO_DROPZONE_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int MOVE_TO_DROPZONE_STATE = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab929f00ad12d512764b439a9395d566e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab929f00ad12d512764b439a9395d566e">&#9670;&nbsp;</a></span>UNLOAD_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int UNLOAD_STATE = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:31 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

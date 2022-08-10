@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -164,6 +164,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac4b1841a26be14a319ac3ab11aa82c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0155d1079a8b5bc602f039c16b3fa62"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#ab0155d1079a8b5bc602f039c16b3fa62">CclSelectSingleUnit</a> (lua_State *l)</td></tr>
 <tr class="separator:ab0155d1079a8b5bc602f039c16b3fa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5b1b42cd1cec664b29c8031e04ad20"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#aca5b1b42cd1cec664b29c8031e04ad20">CclFindNextResource</a> (lua_State *l)</td></tr>
+<tr class="separator:aca5b1b42cd1cec664b29c8031e04ad20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a764cba1f5417bc81a29d913d7338a5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#a1a764cba1f5417bc81a29d913d7338a5">CclEnableSimplifiedAutoTargeting</a> (lua_State *l)</td></tr>
 <tr class="separator:a1a764cba1f5417bc81a29d913d7338a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb7752b5eaefcfa16da13e0619db432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__unit_8cpp.html#a3eb7752b5eaefcfa16da13e0619db432">UnitCclRegister</a> ()</td></tr>
@@ -275,6 +277,40 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 for success, 1 for wrong type; </dd></dl>
 
+</div>
+</div>
+<a id="aca5b1b42cd1cec664b29c8031e04ad20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5b1b42cd1cec664b29c8031e04ad20">&#9670;&nbsp;</a></span>CclFindNextResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclFindNextResource </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Find the next reachable resource unit that gives resource starting from a worker. Optional third argument is the range to search.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example:</p>
+<div class="example"><code> peon = CreateUnit("unit-peon", 5, {58, 8}) goldmine = <b>FindNextResource(peon, 0)</b></code></div> 
 </div>
 </div>
 <a id="a54c4bc412112bdf8e7d40fec4dbd0e0d"></a>
@@ -432,8 +468,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of units. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Array of units.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Get units from player 0 units = <b>GetUnits</b>(0) for i, id_unit in ipairs(units) do print(id_unit) end</code></div> 
 </div>
 </div>
 <a id="aa30284d411808711a774f8813e942496"></a>
@@ -610,8 +647,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the slot number of the made placed. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Returns the slot number of the made placed.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>&ndash; Create the unit footman = CreateUnit("unit-footman", 0, {7, 4}) &ndash; Move the unit to position 20 (x) and 10 (y) <b>MoveUnit</b>(footman,{20,10})</code></div> 
 </div>
 </div>
 <a id="ac9c843c3f9d6a7066e17558703983cbd"></a>
@@ -762,11 +800,12 @@ Functions</h2></td></tr>
 <p>Set cost multiplier to RepairCost for buildings additional workers helping (0 = no additional cost)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td>Lua state. </td></tr>
+    <tr><td class="paramname">l</td><td>Lua state.</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Example:</p>
+<div class="example"><code>&ndash; No cost <b>ResourcesMultiBuildersMultiplier</b>(0) &ndash; Each builder helping will cost 1 resource <b>ResourcesMultiBuildersMultiplier</b>(1) &ndash; Each builder helping will cost 10 resource <b>ResourcesMultiBuildersMultiplier</b>(10)</code></div> 
 </div>
 </div>
 <a id="ab0155d1079a8b5bc602f039c16b3fa62"></a>
@@ -835,8 +874,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The old state of the flag </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The old state of the flag</dd></dl>
+<p>Example:</p>
+<div class="example"><code><b>SetBuildingCapture</b>(true) <b>SetBuildingCapture</b>(false)</code></div> 
 </div>
 </div>
 <a id="a8112edade4e872f7f7078d63fcc75076"></a>
@@ -902,8 +942,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The old state of the flag </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>The old state of the flag</dd></dl>
+<p>Example:</p>
+<div class="example"><code><b>SetRevealAttacker</b>(true) <b>SetRevealAttacker</b>(false)</code></div> 
 </div>
 </div>
 <a id="aafd98f65e6069eb186bea5428a62880d"></a>
@@ -1008,7 +1049,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new value of the unit.</dd></dl>
 <p>Example:</p>
-<div class="example"><code>&ndash; Create a blacksmith for player 2 blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71}) &ndash; Specify the amount of hit points to assign to the blacksmith <b>SetUnitVariable</b>(blacksmith,"HitPoints",344)</code></div> 
+<div class="example"><code>&ndash; Create a blacksmith for player 2 blacksmith = CreateUnit("unit-human-blacksmith", 2, {66, 71}) &ndash; Specify the amount of hit points to assign to the blacksmith <b>SetUnitVariable</b>(blacksmith,"HitPoints",344) &ndash; Set the blacksmiths color to the color of player 4 <b>SetUnitVariable</b>(blacksmith,"Color",4) </code></div> 
 </div>
 </div>
 <a id="ac4b1841a26be14a319ac3ab11aa82c91"></a>
@@ -1111,9 +1152,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd><p class="startdd">Verify that vision table is always correct (transporter) </p>
-<p class="enddd">(PlaceUnit() and host-info). </p>
+<p class="enddd">(PlaceUnit() and host-info).</p>
 </dd></dl>
-
+<p>Example:</p>
+<div class="example"><code>footman = CreateUnit("unit-footman", 0, {0, 1}) &ndash; The unit will appear selected <b>Unit</b>(footman,{"selected"}) &ndash; The unit will be considered destroyed <b>Unit</b>(footman,{"destroyed"}) &ndash; The unit will be considered removed <b>Unit</b>(footman,{"removed"}) &ndash; The unit will be considered as a summoned unit <b>Unit</b>(footman,{"summoned",500}) &ndash; The unit will face on south <b>Unit</b>(footman,{"direction",0}) &ndash; The unit will be displayed with his 3rd frame <b>Unit</b>(footman,{"frame", 3}) &ndash; The footman will have a high sight <b>Unit</b>(footman,{"current-sight-range",9}) &ndash; Change the unit color to be the ones from player 1 <b>Unit</b>(footman,{"rescued-from",1})</code></div> 
 </div>
 </div>
 <a id="a3eb7752b5eaefcfa16da13e0619db432"></a>
@@ -1139,7 +1181,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

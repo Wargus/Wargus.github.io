@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -116,8 +116,8 @@ script.cpp - The configuration language.</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6dd7a6d2277649d6729081d3f3a129a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for lua function.  <a href="script_8cpp.html#a6dd7a6d2277649d6729081d3f3a129a4">More...</a><br /></td></tr>
 <tr class="separator:a6dd7a6d2277649d6729081d3f3a129a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70d748092b770ffc09d9f8d84ed9a24e"><td class="memItemLeft" align="right" valign="top">lua_State *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a70d748092b770ffc09d9f8d84ed9a24e">Lua</a></td></tr>
-<tr class="separator:a70d748092b770ffc09d9f8d84ed9a24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab362115099f55c47499b1ef3707162db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stratagus-gameutils_8h.html#a6f67b883118355e11822b5af4de6c16e">error</a> Missing the&lt; filesystem &gt; header lua_State *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#ab362115099f55c47499b1ef3707162db">Lua</a></td></tr>
+<tr class="separator:ab362115099f55c47499b1ef3707162db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff7aec0ad5d491ee2caeb434b8e484b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a6ff7aec0ad5d491ee2caeb434b8e484b">CclInConfigFile</a></td></tr>
 <tr class="memdesc:a6ff7aec0ad5d491ee2caeb434b8e484b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to work with lua files.  <a href="script_8cpp.html#a6ff7aec0ad5d491ee2caeb434b8e484b">More...</a><br /></td></tr>
 <tr class="separator:a6ff7aec0ad5d491ee2caeb434b8e484b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +302,8 @@ script.cpp - The configuration language.</h2></td></tr>
 <tr class="separator:ac67417a1cd75c975880cbaca6130e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbc077337c074a897a618a5c5f0adc42"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#abbc077337c074a897a618a5c5f0adc42">CclDebugPrint</a> (lua_State *l)</td></tr>
 <tr class="separator:abbc077337c074a897a618a5c5f0adc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3223919ec7f95a5004e7631cd7601677"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#a3223919ec7f95a5004e7631cd7601677">CclRestartStratagus</a> (lua_State *l)</td></tr>
+<tr class="separator:a3223919ec7f95a5004e7631cd7601677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af847d237611a1012da58c8bb2f5fc513"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html#af847d237611a1012da58c8bb2f5fc513">CclCommand</a> (const std::string &amp;command, bool exitOnError)</td></tr>
 <tr class="memdesc:af847d237611a1012da58c8bb2f5fc513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save user preferences.  <a href="script_8cpp.html#af847d237611a1012da58c8bb2f5fc513">More...</a><br /></td></tr>
 <tr class="separator:af847d237611a1012da58c8bb2f5fc513"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1697,6 +1699,33 @@ script.cpp - The configuration language.</h2></td></tr>
 
 </div>
 </div>
+<a id="a3223919ec7f95a5004e7631cd7601677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3223919ec7f95a5004e7631cd7601677">&#9670;&nbsp;</a></span>CclRestartStratagus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CclRestartStratagus </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Restart the entire game. This function only returns when an error happens. </p>
+
+</div>
+</div>
 <a id="ae28a00a4d42d9d44efe241cbad3dc7bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae28a00a4d42d9d44efe241cbad3dc7bb">&#9670;&nbsp;</a></span>CclSavePreferences()</h2>
 
@@ -2031,8 +2060,9 @@ script.cpp - The configuration language.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>equivalent lua table. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>equivalent lua table.</dd></dl>
+<p>Example:</p>
+<div class="example"><code>u_data = <b>UnitType</b>("unit-footman")</code></div> 
 </div>
 </div>
 <a id="a7da26d5149c982a0e4c73a3225101444"></a>
@@ -2663,7 +2693,7 @@ script.cpp - The configuration language.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 for success, else exit. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success, -1 if the file was not found, else exit. </dd></dl>
 
 </div>
 </div>
@@ -3390,14 +3420,14 @@ script.cpp - The configuration language.</h2></td></tr>
 
 </div>
 </div>
-<a id="a70d748092b770ffc09d9f8d84ed9a24e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70d748092b770ffc09d9f8d84ed9a24e">&#9670;&nbsp;</a></span>Lua</h2>
+<a id="ab362115099f55c47499b1ef3707162db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab362115099f55c47499b1ef3707162db">&#9670;&nbsp;</a></span>Lua</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">lua_State* Lua</td>
+          <td class="memname"><a class="el" href="stratagus-gameutils_8h.html#a6f67b883118355e11822b5af4de6c16e">error</a> Missing the&lt;filesystem&gt; header lua_State* Lua</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3455,7 +3485,7 @@ script.cpp - The configuration language.</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

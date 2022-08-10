@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -94,13 +94,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b1d14f7190c834621d707e60c561fb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#a0b1d14f7190c834621d707e60c561fb1">Init</a> ()</td></tr>
 <tr class="separator:a0b1d14f7190c834621d707e60c561fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">edmap.cpp - Editor map functions.</div></td></tr>
-<tr class="memitem:a8be2b6adddea6c7f433dfa25b1fa84f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#a8be2b6adddea6c7f433dfa25b1fa84f2">CreateRandomMap</a> () const</td></tr>
-<tr class="memdesc:a8be2b6adddea6c7f433dfa25b1fa84f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make random map.  <a href="classCEditor.html#a8be2b6adddea6c7f433dfa25b1fa84f2">More...</a><br /></td></tr>
-<tr class="separator:a8be2b6adddea6c7f433dfa25b1fa84f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba063c9054380b880eb1aeb38f2a19ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#aba063c9054380b880eb1aeb38f2a19ae">CreateRandomMap</a> (bool shuffleTransitions=false) const</td></tr>
+<tr class="memdesc:aba063c9054380b880eb1aeb38f2a19ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make random map.  <a href="classCEditor.html#aba063c9054380b880eb1aeb38f2a19ae">More...</a><br /></td></tr>
+<tr class="separator:aba063c9054380b880eb1aeb38f2a19ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a7df5b085ff4f9035b3ea1bb6cf979497"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#a7df5b085ff4f9035b3ea1bb6cf979497">BaseTileIndex</a></td></tr>
+<tr class="memdesc:a7df5b085ff4f9035b3ea1bb6cf979497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables for random map creation.  <a href="classCEditor.html#a7df5b085ff4f9035b3ea1bb6cf979497">More...</a><br /></td></tr>
+<tr class="separator:a7df5b085ff4f9035b3ea1bb6cf979497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade150cb3c5253b2c0d4b082db363de6a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; int, int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#ade150cb3c5253b2c0d4b082db363de6a">RandomTiles</a></td></tr>
+<tr class="memdesc:ade150cb3c5253b2c0d4b082db363de6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile to fill the map with initially;.  <a href="classCEditor.html#ade150cb3c5253b2c0d4b082db363de6a">More...</a><br /></td></tr>
+<tr class="separator:ade150cb3c5253b2c0d4b082db363de6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd407c034f8cdba698cb8ee43a39535"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; std::string, int, int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#abdd407c034f8cdba698cb8ee43a39535">RandomUnits</a></td></tr>
+<tr class="memdesc:abdd407c034f8cdba698cb8ee43a39535"><td class="mdescLeft">&#160;</td><td class="mdescRight">other tiles to fill randomly. (tile, count, area size)  <a href="classCEditor.html#abdd407c034f8cdba698cb8ee43a39535">More...</a><br /></td></tr>
+<tr class="separator:abdd407c034f8cdba698cb8ee43a39535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c4df2fef1189730c39c03f61747b7b4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#a9c4df2fef1189730c39c03f61747b7b4">UnitTypes</a></td></tr>
+<tr class="memdesc:a9c4df2fef1189730c39c03f61747b7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">neutral units to add randomly. (name, count, initial resources, tile under unit)  <a href="classCEditor.html#a9c4df2fef1189730c39c03f61747b7b4">More...</a><br /></td></tr>
 <tr class="separator:a9c4df2fef1189730c39c03f61747b7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6eb1368b5fb6992cf321397324258c3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCUnitType.html">CUnitType</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCEditor.html#af6eb1368b5fb6992cf321397324258c3">ShownUnitTypes</a></td></tr>
 <tr class="memdesc:af6eb1368b5fb6992cf321397324258c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorted editor unit-type table.  <a href="classCEditor.html#af6eb1368b5fb6992cf321397324258c3">More...</a><br /></td></tr>
@@ -209,8 +219,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8be2b6adddea6c7f433dfa25b1fa84f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8be2b6adddea6c7f433dfa25b1fa84f2">&#9670;&nbsp;</a></span>CreateRandomMap()</h2>
+<a id="aba063c9054380b880eb1aeb38f2a19ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba063c9054380b880eb1aeb38f2a19ae">&#9670;&nbsp;</a></span>CreateRandomMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +228,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> CEditor::CreateRandomMap </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shuffleTranslitions</em> = <code>false</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -248,6 +259,22 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7df5b085ff4f9035b3ea1bb6cf979497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df5b085ff4f9035b3ea1bb6cf979497">&#9670;&nbsp;</a></span>BaseTileIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CEditor::BaseTileIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variables for random map creation. </p>
+
+</div>
+</div>
 <a id="ad59ffad78e37c5a591d1751d829f6a74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad59ffad78e37c5a591d1751d829f6a74">&#9670;&nbsp;</a></span>CursorPlayer</h2>
 
@@ -339,6 +366,38 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade150cb3c5253b2c0d4b082db363de6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade150cb3c5253b2c0d4b082db363de6a">&#9670;&nbsp;</a></span>RandomTiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::tuple&lt;int, int, int&gt; &gt; CEditor::RandomTiles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tile to fill the map with initially;. </p>
+
+</div>
+</div>
+<a id="abdd407c034f8cdba698cb8ee43a39535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd407c034f8cdba698cb8ee43a39535">&#9670;&nbsp;</a></span>RandomUnits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::tuple&lt;std::string, int, int, int&gt; &gt; CEditor::RandomUnits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>other tiles to fill randomly. (tile, count, area size) </p>
 
 </div>
 </div>
@@ -578,6 +637,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>neutral units to add randomly. (name, count, initial resources, tile under unit) </p>
+
 </div>
 </div>
 <a id="acdf1970bfc05a4b5f9a1b17a4eb0b494"></a>
@@ -605,7 +666,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:39 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>

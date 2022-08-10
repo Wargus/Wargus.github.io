@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Stratagus
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.2</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,8 @@ $(function() {
 <div class="title">sound_server.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;numeric&gt;</code><br />
+<code>#include &quot;<a class="el" href="stratagus_8h_source.html">stratagus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sound__server_8h_source.html">sound_server.h</a>&quot;</code><br />
 <code>#include &quot;fluidsynth.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="iocompat_8h_source.html">iocompat.h</a>&quot;</code><br />
@@ -101,6 +102,8 @@ Classes</h2></td></tr>
 sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <tr class="memitem:a94219182f88d4dbed1021ed04db75e41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a94219182f88d4dbed1021ed04db75e41">MaxChannels</a>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:a94219182f88d4dbed1021ed04db75e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb6a242ac52c5d4b278dc40457f3657"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a5cb6a242ac52c5d4b278dc40457f3657">SDL_SOUND_FINISHED</a></td></tr>
+<tr class="separator:a5cb6a242ac52c5d4b278dc40457f3657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ed7575797096706e3774d9d30e3390"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a45ed7575797096706e3774d9d30e3390">SoundInitialized</a></td></tr>
 <tr class="separator:a45ed7575797096706e3774d9d30e3390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af81d1b2201fc66994ac134a432cf67e7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#af81d1b2201fc66994ac134a432cf67e7">MusicEnabled</a> = true</td></tr>
@@ -112,12 +115,34 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <tr class="separator:a4f69e30682d7a2d1508a0598b3b01b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269cb285ab22430a82a198277c89fe1a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a269cb285ab22430a82a198277c89fe1a">MusicVolume</a> = 0</td></tr>
 <tr class="separator:a269cb285ab22430a82a198277c89fe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff7784b83bcf116bdc92cb48c58d522"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a9ff7784b83bcf116bdc92cb48c58d522">MusicFinished</a></td></tr>
-<tr class="separator:a9ff7784b83bcf116bdc92cb48c58d522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b1cc541b189f4afd7402264c2f8911"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a44b1cc541b189f4afd7402264c2f8911">externalPlayerIsPlaying</a> = false</td></tr>
+<tr class="separator:a44b1cc541b189f4afd7402264c2f8911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fd3f536ad4f0a232f37142a45e3837"><td class="memItemLeft" align="right" valign="top">static HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a73fd3f536ad4f0a232f37142a45e3837">g_hStatusThread</a></td></tr>
+<tr class="separator:a73fd3f536ad4f0a232f37142a45e3837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a4d7e1ad851b914440c632046db669"><td class="memItemLeft" align="right" valign="top">static HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#ad0a4d7e1ad851b914440c632046db669">g_hDebugThread</a></td></tr>
+<tr class="separator:ad0a4d7e1ad851b914440c632046db669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9fa2944ec3493ee18ba67cc5c07111"><td class="memItemLeft" align="right" valign="top">static HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a8a9fa2944ec3493ee18ba67cc5c07111">g_hChildStd_IN_Wr</a></td></tr>
+<tr class="separator:a8a9fa2944ec3493ee18ba67cc5c07111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8e2bf7c56ae454b6a897d683b1d73d"><td class="memItemLeft" align="right" valign="top">static PROCESS_INFORMATION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a></td></tr>
+<tr class="separator:a9a8e2bf7c56ae454b6a897d683b1d73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f170e8f1da8799be1986c21e249d8b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structSoundChannel.html">SoundChannel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a24f170e8f1da8799be1986c21e249d8b">Channels</a> [<a class="el" href="sound__server_8cpp.html#a94219182f88d4dbed1021ed04db75e41">MaxChannels</a>]</td></tr>
 <tr class="separator:a24f170e8f1da8799be1986c21e249d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb56d0b50d5766b387d2593b51be1fa2"><td class="memItemLeft" align="right" valign="top">static Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#abb56d0b50d5766b387d2593b51be1fa2">currentMusic</a> = NULL</td></tr>
 <tr class="separator:abb56d0b50d5766b387d2593b51be1fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec5867050548617382088eb1d714eb9"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a2ec5867050548617382088eb1d714eb9">StatusThreadFunction</a> (LPVOID lpParam)</td></tr>
+<tr class="separator:a2ec5867050548617382088eb1d714eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f425f6f4c5a64570117b190134b009"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a89f425f6f4c5a64570117b190134b009">DebugThreadFunction</a> (LPVOID lpParam)</td></tr>
+<tr class="separator:a89f425f6f4c5a64570117b190134b009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b80ffa1536c2705a19e191ab5e9ac0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#ad8b80ffa1536c2705a19e191ab5e9ac0">KillPlayingProcess</a> ()</td></tr>
+<tr class="separator:ad8b80ffa1536c2705a19e191ab5e9ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6626966f8b6c4767ecc2b0c37da4f36"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#aa6626966f8b6c4767ecc2b0c37da4f36">External_Play</a> (const std::string &amp;file)</td></tr>
+<tr class="separator:aa6626966f8b6c4767ecc2b0c37da4f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038f2e1f76a697c0aeb5f41bb4572980"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a038f2e1f76a697c0aeb5f41bb4572980">External_IsPlaying</a> ()</td></tr>
+<tr class="separator:a038f2e1f76a697c0aeb5f41bb4572980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256ebb6b01b68cb0a7182affb40d2533"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a256ebb6b01b68cb0a7182affb40d2533">External_Stop</a> ()</td></tr>
+<tr class="separator:a256ebb6b01b68cb0a7182affb40d2533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ce5aac31701b5d2fae4f94e39041d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#af5ce5aac31701b5d2fae4f94e39041d9">External_Volume</a> (int volume, int oldVolume)</td></tr>
+<tr class="separator:af5ce5aac31701b5d2fae4f94e39041d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a5bbe56c7bbd6409ac2797e759ea84"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a74a5bbe56c7bbd6409ac2797e759ea84">ChannelFinished</a> (int channel)</td></tr>
 <tr class="separator:a74a5bbe56c7bbd6409ac2797e759ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331194e8044604dec4e1d69ba0d31ed7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a331194e8044604dec4e1d69ba0d31ed7">SampleIsPlaying</a> (Mix_Chunk *sample)</td></tr>
@@ -126,15 +151,14 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <tr class="memitem:aff53cd67ffb0db33c039960a65404b9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#aff53cd67ffb0db33c039960a65404b9f">UnitSoundIsPlaying</a> (<a class="el" href="structOrigin.html">Origin</a> *origin)</td></tr>
 <tr class="memdesc:aff53cd67ffb0db33c039960a65404b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this unit plays some sound.  <a href="sound__server_8cpp.html#aff53cd67ffb0db33c039960a65404b9f">More...</a><br /></td></tr>
 <tr class="separator:aff53cd67ffb0db33c039960a65404b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce2067042c1994bb2b6df7877f5b082"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a6ce2067042c1994bb2b6df7877f5b082">HandleSoundEvent</a> (SDL_Event &amp;<a class="el" href="midiplayer_8c.html#a565d71e8ad36560cb72c7f6edd56ba63">event</a>)</td></tr>
+<tr class="separator:a6ce2067042c1994bb2b6df7877f5b082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d8020ba99073b29dbe77203dbadc4ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a7d8020ba99073b29dbe77203dbadc4ec">SetChannelVolume</a> (int channel, int volume)</td></tr>
 <tr class="memdesc:a7d8020ba99073b29dbe77203dbadc4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel volume.  <a href="sound__server_8cpp.html#a7d8020ba99073b29dbe77203dbadc4ec">More...</a><br /></td></tr>
 <tr class="separator:a7d8020ba99073b29dbe77203dbadc4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90eaedeb31c7c76efbce8b6cb10dc073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a90eaedeb31c7c76efbce8b6cb10dc073">SetChannelStereo</a> (int channel, int stereo)</td></tr>
 <tr class="memdesc:a90eaedeb31c7c76efbce8b6cb10dc073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel stereo.  <a href="sound__server_8cpp.html#a90eaedeb31c7c76efbce8b6cb10dc073">More...</a><br /></td></tr>
 <tr class="separator:a90eaedeb31c7c76efbce8b6cb10dc073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338e08b171c7a7823ca7fe2729569463"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a338e08b171c7a7823ca7fe2729569463">SetChannelFinishedCallback</a> (int channel, <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*callback)(int channel))</td></tr>
-<tr class="memdesc:a338e08b171c7a7823ca7fe2729569463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel's callback for when a sound finishes playing.  <a href="sound__server_8cpp.html#a338e08b171c7a7823ca7fe2729569463">More...</a><br /></td></tr>
-<tr class="separator:a338e08b171c7a7823ca7fe2729569463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93862bccc5bf3982df06e38446d850bc"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a93862bccc5bf3982df06e38446d850bc">GetChannelSample</a> (int channel)</td></tr>
 <tr class="memdesc:a93862bccc5bf3982df06e38446d850bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sample playing on a channel.  <a href="sound__server_8cpp.html#a93862bccc5bf3982df06e38446d850bc">More...</a><br /></td></tr>
 <tr class="separator:a93862bccc5bf3982df06e38446d850bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +170,8 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <tr class="separator:ae00fd85fc5ee2cda542426422b73ecfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b1d1ef91e29baad8bffc3407117cf0c"><td class="memItemLeft" align="right" valign="top">static Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a0b1d1ef91e29baad8bffc3407117cf0c">LoadMusic</a> (const char *name)</td></tr>
 <tr class="separator:a0b1d1ef91e29baad8bffc3407117cf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5668729c7db1e14d2133e376a2294735"><td class="memItemLeft" align="right" valign="top">static Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a5668729c7db1e14d2133e376a2294735">ForceLoadSample</a> (const char *name)</td></tr>
+<tr class="separator:a5668729c7db1e14d2133e376a2294735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148e9eacb9219c396a201e16ef0bd0e4"><td class="memItemLeft" align="right" valign="top">static Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a148e9eacb9219c396a201e16ef0bd0e4">LoadSample</a> (const char *name)</td></tr>
 <tr class="separator:a148e9eacb9219c396a201e16ef0bd0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00ad4cff7780a2922fba9bca3d436d3"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#ae00ad4cff7780a2922fba9bca3d436d3">LoadMusic</a> (const std::string &amp;name)</td></tr>
@@ -154,9 +180,16 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <tr class="memitem:a95c59fa233441b7521063f04769989c3"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a95c59fa233441b7521063f04769989c3">LoadSample</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:a95c59fa233441b7521063f04769989c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sample.  <a href="sound__server_8cpp.html#a95c59fa233441b7521063f04769989c3">More...</a><br /></td></tr>
 <tr class="separator:a95c59fa233441b7521063f04769989c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac015c0e6c0b870aafcd6cf44b3b56cc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#ac015c0e6c0b870aafcd6cf44b3b56cc4">FreeSample</a> (Mix_Chunk *sample)</td></tr>
+<tr class="separator:ac015c0e6c0b870aafcd6cf44b3b56cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f05cea75fefee58bf9481a91ab7d8d7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a6f05cea75fefee58bf9481a91ab7d8d7">PlaySample</a> (Mix_Chunk *sample, <a class="el" href="structOrigin.html">Origin</a> *origin, <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*callback)(int channel))</td></tr>
+<tr class="separator:a6f05cea75fefee58bf9481a91ab7d8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb50112894a4eca206d991f7820a5e47"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#aeb50112894a4eca206d991f7820a5e47">PlaySample</a> (Mix_Chunk *sample, <a class="el" href="structOrigin.html">Origin</a> *origin)</td></tr>
 <tr class="memdesc:aeb50112894a4eca206d991f7820a5e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a sample.  <a href="sound__server_8cpp.html#aeb50112894a4eca206d991f7820a5e47">More...</a><br /></td></tr>
 <tr class="separator:aeb50112894a4eca206d991f7820a5e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e450dc94fe43150e3e341b8c81ce37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#ac9e450dc94fe43150e3e341b8c81ce37">PlaySample</a> (Mix_Chunk *sample, <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*callback)(int channel))</td></tr>
+<tr class="memdesc:ac9e450dc94fe43150e3e341b8c81ce37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a sample, registering a "finished" callback.  <a href="sound__server_8cpp.html#ac9e450dc94fe43150e3e341b8c81ce37">More...</a><br /></td></tr>
+<tr class="separator:ac9e450dc94fe43150e3e341b8c81ce37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775aff7653ee79e2c8b89a49f105526f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a775aff7653ee79e2c8b89a49f105526f">SetEffectsVolume</a> (int volume)</td></tr>
 <tr class="memdesc:a775aff7653ee79e2c8b89a49f105526f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set effects volume.  <a href="sound__server_8cpp.html#a775aff7653ee79e2c8b89a49f105526f">More...</a><br /></td></tr>
 <tr class="separator:a775aff7653ee79e2c8b89a49f105526f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,9 +205,6 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <tr class="memitem:aaac2f308cfce04107e0486431edee97d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#aaac2f308cfce04107e0486431edee97d">SetMusicFinishedCallback</a> (<a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*callback)())</td></tr>
 <tr class="memdesc:aaac2f308cfce04107e0486431edee97d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the music finished callback.  <a href="sound__server_8cpp.html#aaac2f308cfce04107e0486431edee97d">More...</a><br /></td></tr>
 <tr class="separator:aaac2f308cfce04107e0486431edee97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6af70fb19ca419696c29b047364b0d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#ac6af70fb19ca419696c29b047364b0d7">PlayMusic</a> (Mix_Music *sample)</td></tr>
-<tr class="memdesc:ac6af70fb19ca419696c29b047364b0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a music file.  <a href="sound__server_8cpp.html#ac6af70fb19ca419696c29b047364b0d7">More...</a><br /></td></tr>
-<tr class="separator:ac6af70fb19ca419696c29b047364b0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d0c73b0a5aa9494a6989916c44c837"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound__server_8cpp.html#a82d0c73b0a5aa9494a6989916c44c837">PlayMusic</a> (const std::string &amp;file)</td></tr>
 <tr class="memdesc:a82d0c73b0a5aa9494a6989916c44c837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a music file.  <a href="sound__server_8cpp.html#a82d0c73b0a5aa9494a6989916c44c837">More...</a><br /></td></tr>
 <tr class="separator:a82d0c73b0a5aa9494a6989916c44c837"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,6 +281,195 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 </div>
 </div>
+<a id="a89f425f6f4c5a64570117b190134b009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f425f6f4c5a64570117b190134b009">&#9670;&nbsp;</a></span>DebugThreadFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DWORD WINAPI DebugThreadFunction </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a038f2e1f76a697c0aeb5f41bb4572980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038f2e1f76a697c0aeb5f41bb4572980">&#9670;&nbsp;</a></span>External_IsPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool External_IsPlaying </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6626966f8b6c4767ecc2b0c37da4f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6626966f8b6c4767ecc2b0c37da4f36">&#9670;&nbsp;</a></span>External_Play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool External_Play </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a256ebb6b01b68cb0a7182affb40d2533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256ebb6b01b68cb0a7182affb40d2533">&#9670;&nbsp;</a></span>External_Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool External_Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5ce5aac31701b5d2fae4f94e39041d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ce5aac31701b5d2fae4f94e39041d9">&#9670;&nbsp;</a></span>External_Volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool External_Volume </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>oldVolume</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5668729c7db1e14d2133e376a2294735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5668729c7db1e14d2133e376a2294735">&#9670;&nbsp;</a></span>ForceLoadSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Mix_Chunk* ForceLoadSample </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac015c0e6c0b870aafcd6cf44b3b56cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac015c0e6c0b870aafcd6cf44b3b56cc4">&#9670;&nbsp;</a></span>FreeSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> FreeSample </td>
+          <td>(</td>
+          <td class="paramtype">Mix_Chunk *&#160;</td>
+          <td class="paramname"><em>sample</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free a sample loaded with LoadSample.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sample</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a93862bccc5bf3982df06e38446d850bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93862bccc5bf3982df06e38446d850bc">&#9670;&nbsp;</a></span>GetChannelSample()</h2>
 
@@ -309,6 +528,24 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 <p>Get music volume. </p>
 <p>Get music volume </p>
+
+</div>
+</div>
+<a id="a6ce2067042c1994bb2b6df7877f5b082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce2067042c1994bb2b6df7877f5b082">&#9670;&nbsp;</a></span>HandleSoundEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> HandleSoundEvent </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Event &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -427,6 +664,31 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8b80ffa1536c2705a19e191ab5e9ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b80ffa1536c2705a19e191ab5e9ac0">&#9670;&nbsp;</a></span>KillPlayingProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> KillPlayingProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0b1d1ef91e29baad8bffc3407117cf0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b1d1ef91e29baad8bffc3407117cf0c">&#9670;&nbsp;</a></span>LoadMusic() <span class="overload">[1/2]</span></h2>
 
@@ -537,7 +799,7 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 </div>
 </div>
 <a id="a82d0c73b0a5aa9494a6989916c44c837"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82d0c73b0a5aa9494a6989916c44c837">&#9670;&nbsp;</a></span>PlayMusic() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d0c73b0a5aa9494a6989916c44c837">&#9670;&nbsp;</a></span>PlayMusic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +815,7 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Play a music file. </p>
-<p>Play a music file.</p>
+<p>Play a music file. This also enables the music finished callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>Name of music file, format is automatically detected.</td></tr>
@@ -564,36 +826,8 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6af70fb19ca419696c29b047364b0d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6af70fb19ca419696c29b047364b0d7">&#9670;&nbsp;</a></span>PlayMusic() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PlayMusic </td>
-          <td>(</td>
-          <td class="paramtype">Mix_Music *&#160;</td>
-          <td class="paramname"><em>sample</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Play a music file. </p>
-<p>Play a music file.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sample</td><td>Music sample.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if music is playing, -1 if not. </dd></dl>
-
-</div>
-</div>
 <a id="aeb50112894a4eca206d991f7820a5e47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb50112894a4eca206d991f7820a5e47">&#9670;&nbsp;</a></span>PlaySample()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb50112894a4eca206d991f7820a5e47">&#9670;&nbsp;</a></span>PlaySample() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,6 +853,48 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Play a sample. </p>
+
+</div>
+</div>
+<a id="a6f05cea75fefee58bf9481a91ab7d8d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f05cea75fefee58bf9481a91ab7d8d7">&#9670;&nbsp;</a></span>PlaySample() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int PlaySample </td>
+          <td>(</td>
+          <td class="paramtype">Mix_Chunk *&#160;</td>
+          <td class="paramname"><em>sample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structOrigin.html">Origin</a> *&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*)(int channel)&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 <p>Play a sound sample</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -627,6 +903,36 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Channel number, -1 for error </dd></dl>
+
+</div>
+</div>
+<a id="ac9e450dc94fe43150e3e341b8c81ce37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e450dc94fe43150e3e341b8c81ce37">&#9670;&nbsp;</a></span>PlaySample() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PlaySample </td>
+          <td>(</td>
+          <td class="paramtype">Mix_Chunk *&#160;</td>
+          <td class="paramname"><em>sample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*)(int channel)&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play a sample, registering a "finished" callback. </p>
 
 </div>
 </div>
@@ -668,44 +974,6 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 <p>Check, if this sample is already playing. </p>
 <p>Check if this sound is already playing </p>
-
-</div>
-</div>
-<a id="a338e08b171c7a7823ca7fe2729569463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a338e08b171c7a7823ca7fe2729569463">&#9670;&nbsp;</a></span>SetChannelFinishedCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a> SetChannelFinishedCallback </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>channel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="shaders_8cpp.html#a7206f6ae7a09ba9ca63f80e09015869c">void</a>(*)(int channel)&#160;</td>
-          <td class="paramname"><em>callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the channel's callback for when a sound finishes playing. </p>
-<p>Set the channel's callback for when a sound finishes playing</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">channel</td><td>Channel to set </td></tr>
-    <tr><td class="paramname">callback</td><td>Callback to call when the sound finishes </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -924,6 +1192,32 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 </div>
 </div>
+<a id="a2ec5867050548617382088eb1d714eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec5867050548617382088eb1d714eb9">&#9670;&nbsp;</a></span>StatusThreadFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DWORD WINAPI StatusThreadFunction </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae00fd85fc5ee2cda542426422b73ecfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae00fd85fc5ee2cda542426422b73ecfa">&#9670;&nbsp;</a></span>StopAllChannels()</h2>
 
@@ -987,7 +1281,7 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop music playing. </p>
-<p>Stop the current playing music. </p>
+<p>Stop the current playing music. This does not trigger the music finished callback. </p>
 
 </div>
 </div>
@@ -1078,6 +1372,94 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 </div>
 </div>
+<a id="a44b1cc541b189f4afd7402264c2f8911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b1cc541b189f4afd7402264c2f8911">&#9670;&nbsp;</a></span>externalPlayerIsPlaying</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool externalPlayerIsPlaying = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a9fa2944ec3493ee18ba67cc5c07111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9fa2944ec3493ee18ba67cc5c07111">&#9670;&nbsp;</a></span>g_hChildStd_IN_Wr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE g_hChildStd_IN_Wr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0a4d7e1ad851b914440c632046db669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a4d7e1ad851b914440c632046db669">&#9670;&nbsp;</a></span>g_hDebugThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE g_hDebugThread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73fd3f536ad4f0a232f37142a45e3837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fd3f536ad4f0a232f37142a45e3837">&#9670;&nbsp;</a></span>g_hStatusThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE g_hStatusThread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af81d1b2201fc66994ac134a432cf67e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af81d1b2201fc66994ac134a432cf67e7">&#9670;&nbsp;</a></span>MusicEnabled</h2>
 
@@ -1102,20 +1484,6 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ff7784b83bcf116bdc92cb48c58d522"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ff7784b83bcf116bdc92cb48c58d522">&#9670;&nbsp;</a></span>MusicFinished</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool MusicFinished</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a269cb285ab22430a82a198277c89fe1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a269cb285ab22430a82a198277c89fe1a">&#9670;&nbsp;</a></span>MusicVolume</h2>
 
@@ -1134,6 +1502,42 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a8e2bf7c56ae454b6a897d683b1d73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a8e2bf7c56ae454b6a897d683b1d73d">&#9670;&nbsp;</a></span>pi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PROCESS_INFORMATION pi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cb6a242ac52c5d4b278dc40457f3657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb6a242ac52c5d4b278dc40457f3657">&#9670;&nbsp;</a></span>SDL_SOUND_FINISHED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SDL_SOUND_FINISHED</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1185,7 +1589,7 @@ sound_server.cpp - The sound server (hardware layer and so on)</h2></td></tr>
 </div><!-- contents -->
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 24 2021 21:24:38 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
+Generated on Wed Aug 10 2022 20:03:32 for Stratagus by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17</small></address>
 <!-- Begin of Stratagus footer -->
 (C) Copyright 1998-2012 by The <a href="https://launchpad.net/stratagus">Stratagus</a> Project under the <a href="../gpl.html">GNU General Public License</a>.<br/>
 All trademarks and copyrights on this page are owned by their respective owners.<br/>
