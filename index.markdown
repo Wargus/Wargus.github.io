@@ -3,8 +3,8 @@ layout: default
 title: Wargus
 package_title: wargus
 icon: wargus.svg
-version: 3.3.1
-next_version: 3.3.2
+version: 3.3.2
+next_version: 3.3.3
 ---
 ### About Wargus
 
