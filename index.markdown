@@ -3,8 +3,8 @@ layout: default
 title: Wargus
 package_title: wargus
 icon: wargus.svg
-version: 3.2.0
-next_version: 3.2.1
+version: 3.3.1
+next_version: 3.3.2
 ---
 ### About Wargus
 
@@ -37,6 +37,8 @@ Warcraft 2 fans for Warcraft 2 fans. You need a copy of the original Warcraft 2.
 Warcraft is a registered trademark of Blizzard Entertainment. 
 
 ### Community
+
+Join us on [Discord](https://discord.gg/dQGxaw3QfB)!
 
 There is a page on [gamebanana](https://gamebanana.com/games/8682) with custom stuff like:
 
