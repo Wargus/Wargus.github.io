@@ -34,6 +34,13 @@ We have an [index](/lua_bindings.html) of exported Lua functions and the
 associated documentation, which is of interest if you want to work on the game
 lua scripts.
 
+If you use [ZeroBrane Studio](https://studio.zerobrane.com/) for developing Lua code for Stratagus
+games, you can use our [plugin](/img/zerobrane-stratagus-plugin.lua). It gives
+auto-completion for functions and exposed objects and shows some documentation
+in the IDE. See the [ZeroBrane Plugin docs](https://studio.zerobrane.com/doc-plugin#plugin-installation)
+for where to place this file. You can then select "Stratagus" as the interpreter
+in ZeroBrane for your Stratagus projects.
+
 We have [doxygen code documentation](/doxygen/index.html), which is of interest
 if you want to work on the core engine.
 
