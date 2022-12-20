@@ -14,7 +14,7 @@ the original Warcraft, but improves the gameplay mechanisms with many modern
 conveniences that the Stratagus engine allows, such as modern mouse controls,
 named groups, larger group selection, more player factions in multiplayer games,
 a map editor, and multiple towns. This screenshot gives a feeling of what it is
-like: ![](img/screenshotWar1gus.png)
+like: ![](img/promoScreenWar1gus.png)
 
 ### Installation
 
