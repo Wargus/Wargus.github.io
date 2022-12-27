@@ -33,9 +33,9 @@ Entertainment.
 
 ### Community
 
-There is a page on [gamebanana](https://gamebanana.com/games/9777) with custom stuff like:
+Check out what people made on those websites:
 
-- [Maps](https://gamebanana.com/mods/cats/12553)
+- [![GameBanana Logo](https://images.gamebanana.com/static/img/logo.png)](https://gamebanana.com/games/9777)
 
 ### Development
 
