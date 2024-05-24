@@ -40,5 +40,5 @@ Entertainment.
 ### Development
 
 Stargus is an open source software. It is developed at
-[![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
+[![](img/github.svg)GitHub](https://github.com/Wargus/stargus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
