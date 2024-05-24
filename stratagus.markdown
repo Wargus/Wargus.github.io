@@ -27,7 +27,7 @@ can download Stratagus from [GitHub](https://github.com/Wargus/stratagus){:targe
 ### Development
 
 Stratagus is an open source software. It is developed at
-[![](img/github.svg)GitHub](https://github.com/Wargus/wargus){:target="_blank"}
+[![](img/github.svg)GitHub](https://github.com/Wargus/stratagus){:target="_blank"}
 where you can submit bugs, request features and observe progress via issues.
 
 We have an [index](/lua_bindings.html) of exported Lua functions and the
