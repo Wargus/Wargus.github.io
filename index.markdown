@@ -20,9 +20,10 @@ Starcraft and other more modern RTS games.
 ### Installation
 
 On first launch you will be asked for a copy of the original Warcraft2, so that
-the installer can extract the data.  There's also [a video
-tutorial](https://www.youtube.com/watch?v=fnY13i105LE&feature=youtu.be){:target="_blank"}
-on how to install Wargus.
+the installer can extract the data.  There are also video tutorials on how to install Wargus on Windows and Linux.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1qng_zZSlaY?si=Ja47_vEdDhHbtFuY" title="How to install Wargus on Windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L2-ydknOdH0?si=pwkJ_4rscgMmXLel" title="How to install Wargus on Linux (Ubuntu based distros)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### The benefits of Wargus over original Warcraft 2
 
