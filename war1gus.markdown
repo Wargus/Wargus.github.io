@@ -24,6 +24,8 @@ versions should work. Extracting the data from demo, shareware, or the Mac OS
 versions is not fully supported at this time and the resulting data set will
 fail to launch.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-5MuIhPcKiU?si=MT4dt0SUZ-1pjAip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Disclaimer
 
 War1gus is not an official Blizzard product, its a Stratagus and Warcraft
